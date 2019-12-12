@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73713131"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune’da bir cihazın geçiş kodunu sıfırlama veya kaldırma
@@ -35,7 +35,7 @@ Bu belgede, Android Enterprise 'ta (eski adıyla Android for Work veya AfW) ciha
 | ---- | ---- |
 | Sürüm 6.x veya öncesindeki Android cihazları | Evet |
 | Bilgi noktası modundaki Android kurumsal cihazlar | Evet |
-| iOS cihazları | Evet |
+| iOS aygıtları: | Evet |
 | Kullanıcı kaydıyla kaydedilen iOS cihazları | Hayır |
 | İş profiliyle kaydedilmiş Android cihazları | Hayır |
 | Sürüm 7.0 veya üzeri Android cihazlar | Hayır |

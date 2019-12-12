@@ -18,10 +18,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74465779"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>İş için Windows Hello ile Microsoft Intune tümleştirmesi  
@@ -53,7 +53,7 @@ Tüm kuruluşunuzu hedefleyen bir varsayılan İş İçin Windows Hello ilkesi o
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>İş İçin Windows Hello ilkesi oluşturma
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi] (https://go.microsoft.com/fwlink/?linkid=2109431oturum açın.
+1. [Microsoft Endpoint Manager Yönetim Merkezi] (https://go.microsoft.com/fwlink/?linkid=2109431 oturum açın.
 
 2. **Cihazlara > kayıt** * * > **cihazları kaydet** > **Windows kaydını** **iş için Windows Hello** > . Iş için Windows Hello bölmesi açılır.
 

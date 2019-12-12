@@ -1,7 +1,7 @@
 ---
 title: USB hata ayıklamayı kapatmanız gerekir | Microsoft Docs
 titlesuffix: Microsoft Intune
-description: Cihazımızda USB hata ayıklamayı kapatmanız gerekir.
+description: Bizim cihazda USB hata ayıklamayı kapatmanız gerekir.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -19,10 +19,10 @@ ROBOTS: ''
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 397244755457e784899438d307053bdf6f754fd0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72500456"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>USB hata ayıklamayı kapatmanız gerekir

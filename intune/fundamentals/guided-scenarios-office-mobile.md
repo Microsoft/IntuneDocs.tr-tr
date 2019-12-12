@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585894"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Kılavuzlu senaryo-güvenli Microsoft Office mobil uygulamalar 
@@ -37,7 +37,7 @@ Etkinleştirdiğiniz uygulama koruması aşağıdaki eylemleri uygular:
 - Cihaz 720 dakika boyunca çevrimdışıysa, çalışma dosyalarına erişimi engelleyin.
 - Cihaz 90 gün boyunca çevrimdışı ise iş dosyalarını kaldırın. 
 
-## <a name="background"></a>Arka plan
+## <a name="background"></a>Arka Plan
 
 Office Mobile Apps 'in yanı sıra mobil için Microsoft Edge, ikili kimlik desteği. Çift kimlik, uygulamaların iş dosyalarını kişisel dosyalardan ayrı olarak yönetmesine olanak tanır. 
 
@@ -65,7 +65,7 @@ Intune yönetici izinlerini takip etmeniz gerekir:
    - İlke ayarları okuma, oluşturma ve atama izinleri
    - Kuruluş okuma izni
 
-## <a name="step-1---introduction"></a>1\. adım-giriş
+## <a name="step-1---introduction"></a>Adım 1 - Giriş
 
 **Intune uygulama koruması** Kılavuzlu senaryoyu izleyerek verilerin kuruluşunuz dışında paylaşılmasını veya sızmasını önleyecaksınız. 
 
@@ -112,7 +112,7 @@ Bu adımda, bu uygulamalardaki kurumsal dosyalara ve e-postalara erişmek ve bun
 | Daha sonra erişim gereksinimlerini yeniden denetle (dakika dışı) | İlke ile yönetilen uygulama, belirtilen işlem yapılmayan dakika sayısından daha uzun bir süre boyunca etkin değilse, uygulama erişim gereksinimlerini ister (ör. Uygulama başlatıldıktan sonra yeniden denetlenecek PIN, koşullu başlatma ayarları). | 30 |
 | Kuruluş verilerini yazdırma | Engellenirse, uygulama korumalı verileri yazdıramaz. | Engelle |
 | Yönetilmeyen tarayıcılarda ilkeyle yönetilen uygulama bağlantılarını açın | Engellenirse, ilkeyle yönetilen uygulama bağlantıları yönetilen bir tarayıcı açılmalıdır. | Engelle |
-| Yönetilmeyen uygulamalara veri kopyalama | Engellenirse, yönetilen veriler yönetilen uygulamalarda kalır. | Açılmasına |
+| Yönetilmeyen uygulamalara veri kopyalama | Engellenirse, yönetilen veriler yönetilen uygulamalarda kalır. | Allow |
 
 ## <a name="step-5---assignments"></a>5\. adım-atamalar
 

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506355"
 ---
 # <a name="encrypting-your-android-device"></a>Android cihazınızı şifreleme
@@ -62,7 +62,7 @@ Android 4,4 ve öncesini çalıştıran cihazlarda **güvenli başlangıç** se�
     * Şirket Portalı kullanıcılar: cihazınızı seçin ve **cihaz ayarlarını denetle**' ye dokunun.  
     * Microsoft Intune kullanıcılar: sayfa güncellene kadar beklemeniz gerekir, ancak bunu yaparken şifreleme durumunuz uyumlu olarak değiştirilmelidir.
 
-## <a name="troubleshoot"></a>Sorun giderme  
+## <a name="troubleshoot"></a>Sorunları Gider  
 **Sorun**: cihazınızı zaten şifreledi ve
 
 - Şifreleme düğmesi devre dışı.

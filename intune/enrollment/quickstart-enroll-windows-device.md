@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 91f20411f668428c8bf3af8b0bd4ae6f4b0b545f
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73713509"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Hızlı Başlangıç: Windows 10 cihazınızı kaydetme
@@ -92,7 +92,7 @@ Windows 10 Masaüstü cihazınızı kaydetmeden önce yüklü olan Windows sür�
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Intune’da cihaz kaydınızı onaylama
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) genel yönetici veya Intune Hizmet Yöneticisi olarak oturum açın.
-2. Intune 'da kayıtlı cihazları görüntülemek için **cihazlar** >  **' i seçin** .
+2. Intune 'da kayıtlı cihazları görüntülemek için **tüm cihazlar** > **cihazları** seçin.
 3. Intune’a kayıtlı bir ek cihazınız olduğunu doğrulayın.
 
    ![Intune’a kayıtlı cihazların ekran görüntüsü](./media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)

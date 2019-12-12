@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503426"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
@@ -85,7 +85,7 @@ KayıtSayısı **varlığı,** bir cihaz kaydının etkinliğini gösterir.
 | Kayıt%0 kategori anahtarı  | Kayıt hatası kategorisinin anahtarı (kayıt başarısız olduysa).        |
 | Kayıtefailurereasonkey    | Kayıt hatası nedeninin anahtarı (kayıt başarısız olursa).          |
 | osVersion                     | Cihazın işletim sistemi sürümü.                               |
-| Biriktirme                         | Yukarıdaki sınıflandırmalarla eşleşen kayıt etkinliklerinin toplam sayısı.  |
+| count                         | Yukarıdaki sınıflandırmalarla eşleşen kayıt etkinliklerinin toplam sayısı.  |
 
 ## <a name="enrollmenteventstatuses"></a>kayıt \ Menteventdurumlar 
 KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
@@ -118,7 +118,7 @@ KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
 | Uygulanamaz                  | Kayıt hatası kategorisi geçerli değil.                                                            |
 | Kullanılamıyor                   | Kayıt hatası kategorisi kullanılamıyor.                                                             |
 | Bilinmiyor                         | Bilinmeyen hata.                                                                                                |
-| Kimlik doğrulama                  | Kimlik doğrulama başarısız oldu.                                                                                        |
+| Kimlik doğrulama                  | Kimlik doğrulaması gerçekleştirilemedi.                                                                                        |
 | Yetkilendirme                   | Çağrının kimliği doğrulandı, ancak kaydolma yetkisi yok.                                                         |
 | AccountValidation               | Kayıt için Hesap doğrulanamadı. (Hesap engellendi, kayıt etkin değil)                      |
 | Kullanıcı doğrulaması                  | Kullanıcı doğrulanamadı. (Kullanıcı yok, Lisans eksik)                                           |
@@ -170,7 +170,7 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 | ownerTypeName |Cihazların sahip türünü temsil eder:  <br>Şirket-cihaz, kuruluşa aittir. <br>Kişisel - cihaz kişiye aittir (KCG).  <br>Bilinmiyor - bu cihazda bilgi yok. |Şirket kişisel bilinmiyor |
 
 > [!Note]  
-> Cihazlar için dinamik gruplar oluştururken AzureAD içindeki `ownerTypeName` için, `deviceOwnership` filtre değerini `Company` olarak ayarlamanız gerekir. Daha fazla bilgi için bkz. [Cihazlar Için kurallar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Cihazlar için dinamik gruplar oluştururken AzureAD içindeki `ownerTypeName` için, `deviceOwnership` filtre değerini `Company`olarak ayarlamanız gerekir. Daha fazla bilgi için bkz. [Cihazlar Için kurallar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="managementstates"></a>managementStates
 
@@ -228,7 +228,7 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 |          Özellik          |                                                                                       Description                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | deviceKey                  | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar.                                                                                                               |
-| DeviceID                   | Cihazın benzersiz tanımlayıcısı.                                                                                                                                                     |
+| deviceId                   | Cihazın benzersiz tanımlayıcısı.                                                                                                                                                     |
 | deviceName                 | Cihaz adlandırmaya izin veren platformlardaki cihaz adı. Diğer platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik tüm cihazlarda kullanılamaz. |
 | deviceTypeKey              | Bu cihazın cihaz türü özniteliğinin anahtarı.                                                                                                                                    |
 | deviceRegistrationState    | Bu cihazın istemci kayıt durumu özniteliğinin anahtarı.                                                                                                                      |
@@ -245,7 +245,7 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 | osVersion                  | Cihazın işletim sistemi sürümü.                                                                                                                                                |
 | Easdeviceıd                | Cihazın Exchange ActiveSync KIMLIĞI.                                                                                                                                                  |
 | serialNumber               | SerialNumber                                                                                                                                                                           |
-| UserID                     | Cihazla ilişkili kullanıcının Benzersiz Tanımlayıcısı.                                                                                                                           |
+| userId                     | Cihazla ilişkili kullanıcının Benzersiz Tanımlayıcısı.                                                                                                                           |
 | rowLastModifiedDateTimeUTC | Bu cihazın veri ambarında son değiştirilme tarihi ve saati (UTC).                                                                                                       |
 | üretici               | Cihazın üreticisi                                                                                                                                                             |
 | model                      | Cihazın modeli                                                                                                                                                                    |

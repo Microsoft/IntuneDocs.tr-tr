@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d03859d5775193e6bbc482c06b28942a1a5bce2f
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712153"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907211"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Intune cihazlarını uzaktan yönetmek için TeamViewer kullanma
 
@@ -48,7 +48,7 @@ TeamViewer'ı kullanarak TeamViewer for Intune Connector'ın TeamViewer oturumla
 Cihazlara uzaktan yardım sağlamak için, Intune TeamViewer bağlayıcısını aşağıdaki adımları kullanarak yapılandırın:
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-2. **TeamViewer bağlayıcısı** > **cihazları** seçin.
+2.  >  **bağlayıcıları ve belirteçleri** > **TeamViewer Bağlayıcısı**' nı seçin.
 3. **Bağlan**’ı seçin ve lisans sözleşmesini kabul edin.
 4. **Yetkilendirmek için TeamViewer'da Oturum Aç**'ı seçin.
 5. TeamViewer sitesine bir web sayfası açılır. TeamViewer lisansı kimlik bilgilerinizi girin ve ardından **Oturum Açın**.
@@ -59,7 +59,7 @@ Bağlayıcı yapılandırıldıktan sonra bir cihazı uzaktan yönetebilirsiniz.
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
-3. Listeden uzaktan yönetmek istediğiniz cihazı seçin. Cihaz özelliklerinde **Yeni Uzaktan Yardım Oturumu**’nu seçin.
+3. Listeden uzaktan yönetmek istediğiniz cihazı seçin > **...** **Yeni uzaktan yardım oturumu** > .
 4. Intune TeamViewer hizmetine bağlandıktan sonra cihaz hakkında bazı bilgiler göreceksiniz. Uzak oturumu başlatmak için **Bağlanın**.
 
 ![TeamViewer kullanarak Android cihazı uzaktan yönetme - örnek](./media/teamviewer-support/android-teamviewer.png)

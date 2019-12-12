@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d9c385ff8c08f9f1df00a081bca1f61a2a5015a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832559"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946672"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -231,7 +231,7 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
   Her zaman açık VPN'yi tüm VPN istemcilerinde devre dışı bırakmak için **Yapılandırılmadı**'yı seçin.
 
   > [!IMPORTANT]
-  > Bir cihaza yalnızca bir tane Her Zaman Açık VPN ilkesi dağıttığınızdan emin olun. Bir cihaza birden çok Her Zaman Açık VPN ilkesi dağıtma desteklenmez.
+  > Tek bir cihaza yalnızca bir adet her zaman açık VPN ilkesi dağıttığınızdan emin olun. Birden çok her sürekli VPN ilkesinin tek bir cihaza dağıtımı desteklenmez.
 
 - **VPN istemcisi**: Her Zaman Açık'ı destekleyen bir VPN istemcisini seçin. Seçenekleriniz şunlardır:
   - Cisco AnyConnect
@@ -244,6 +244,7 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
   > [!IMPORTANT]
   > - Seçtiğiniz VPN istemcisinin cihaza yüklenmesi ve cihazın uygulama başına VPN iş profillerini desteklemesi gerekir. Aksi takdirde bir hata oluşur. 
   > - VPN istemci uygulamasını yine de **Yönetilen Google Play Mağazası**'nda onaylamanız, uygulamayı Intune ile eşitlemeniz ve cihaza dağıtmanız gerekir. Bu yapıldıktan sonra uygulama kullanıcının iş profiline yüklenir.
+  > - VPN istemcisini yine de bir [VPN profiliyle](vpn-settings-android-enterprise.md)veya bir [uygulama yapılandırma profilinde](../apps/app-configuration-policies-use-android.md)yapılandırmanız gerekir.
   > - Bilinen sorunlar vardır uygulama başına VPN Android 3.0.4 için F5'e erişim ile kullanırken. Bkz: [Android 3.0.4 için F5'e erişim için F5'ın sürüm notları](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) daha fazla bilgi için.
 
 - **Kilitleme modu**: tüm ağ trafiğinin VPN tüneli kullanmasını zorlamak için **Etkinleştir** ' i seçin. VPN'e bir bağlantı oluşturulmazsa, cihazın ağ erişimi olmaz.

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506702"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>Intune 'da çekirdek uzantılarını yapılandırmak ve kullanmak için macOS cihaz ayarları
@@ -58,12 +58,12 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra m
 
 - **Izin verilen çekirdek uzantıları**: belirli çekirdek uzantılarına izin vermek için bu ayarı kullanın. Yalnızca girdiğiniz çekirdek uzantılarına izin verilir veya güvenilir. 
 
-  Yüklemek istediğiniz bir çekirdek uzantısının paket tanımlayıcısını ve takım tanımlayıcısını **ekleyin** . İmzasız eski çekirdek uzantıları için boş bir takım tanımlayıcısı kullanın. Birden çok çekirdek uzantısı ekleyebilirsiniz. Takım tanımlayıcısının alfasayısal (harfler ve rakamlar) olması ve 10 karaktere sahip olması gerekir. Örneğin, **paket kimliği**için `com.contoso.appname.macos` ve **takım tanımlayıcısı**için `ABCDE12345` girin.
+  Yüklemek istediğiniz bir çekirdek uzantısının paket tanımlayıcısını ve takım tanımlayıcısını **ekleyin** . İmzasız eski çekirdek uzantıları için boş bir takım tanımlayıcısı kullanın. Birden çok çekirdek uzantısı ekleyebilirsiniz. Takım tanımlayıcısının alfasayısal (harfler ve rakamlar) olması ve 10 karaktere sahip olması gerekir. Örneğin, **paket kimliği**için `com.contoso.appname.macos` girin ve **takım tanımlayıcısı**için `ABCDE12345`.
 
   > [!TIP]
   > Bir macOS cihazında çekirdek uzantısının paket KIMLIĞINI (KEXT) almak için şunları yapabilirsiniz:
   >
-  > 1. Terminalde `kextstat | grep -v com.apple` ' ı çalıştırın ve çıktıyı aklınızda edin. İstediğiniz yazılımı veya KEXT 'yi yükler. @No__t-0 ' ı yeniden çalıştırın ve değişiklikler olup olmadığına bakın.
+  > 1. Terminalde `kextstat | grep -v com.apple`çalıştırın ve çıktıyı aklınızda edin. İstediğiniz yazılımı veya KEXT 'yi yükler. `kextstat | grep -v com.apple` yeniden çalıştırın ve değişiklikler olup olmadığına bakın.
   >
   >    Terminalde `kextstat`, işletim sistemindeki tüm çekirdek uzantılarını listeler. 
   >

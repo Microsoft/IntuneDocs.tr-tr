@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/22/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72aa710e5997593cca6a18f7c3cd421f792985bd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832705"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000389"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -54,13 +54,29 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-decmeber-2-2019"></a>Decmeber 2 haftası, 2019
+## <a name="week-of-december-9-2019"></a>9 Aralık 2019 haftası
 
-#### <a name="new-system-center-configuration-manager-co-management-licensing--5027281--"></a>Yeni System Center Configuration Manager ortak yönetim lisansı<!--5027281-->
-Yazılım Güvencesi kapsamındaki müşterilerin, ortak yönetim için ek bir Intune lisansı satın almak zorunda kalmadan Intune bılgısayar yönetim haklarına sahip System Center Configuration Manager olanak sağlayan yeni bir lisans kullanıma sunulmuştur. Müşterilerin artık son kullanıcılarına ayrı Intune/EMS lisansları ataması gerekmez.
-- System Center Configuration Manager tarafından yönetilen ve ortak yönetime kaydedilen cihazlar, tek başına Intune ile yönetilen bir BILGISAYAR ile neredeyse aynı haklara sahiptir. Ancak, sıfırlandıktan sonra AutopIlot kullanılarak yeniden sağlanamazlar.
+#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>Yönetilen gözatma senaryolarında Microsoft Edge 'e geçiş<!-- 5173762 -->
+
+Intune Managed Browser emekliliğe yaklaşarak, kullanıcılarınızı uçtan uca taşımak için gereken adımları basitleştirmek amacıyla uygulama koruma ilkelerinde değişiklikler yaptık. Uygulama koruma ilkesi ayarı, **diğer uygulamalarla Web içeriği aktarımını kısıtla** seçeneklerini, aşağıdakilerden biri olacak şekilde güncelleştirdik:
+
+- Herhangi bir uygulama
+- Intune Yönetilen Tarayıcı
+- Microsoft Edge
+- Yönetilmeyen tarayıcı 
+
+**Microsoft Edge**' i seçtiğinizde, son kullanıcılarınız Microsoft Edge 'in yönetilen gözatma senaryolarında gerekli olduğunu bildiren koşullu erişim mesajlaşmasını görür. Henüz yapmadıysanız, bu kullanıcıların AAD hesaplarıyla Microsoft Edge 'i indirmesi ve oturum açması istenir.  Bu, MAM özellikli uygulamalarınızı, uygulama yapılandırma ayarıyla `com.microsoft.intune.useEdge` **true**olarak ayarlanmış şekilde hedefleyen bir değer olacaktır. **İlke ile yönetilen tarayıcılar** ayarının kullanıldığı mevcut uygulama koruma ilkeleri artık **Intune Managed Browser** seçili olacak ve davranışta hiçbir değişiklik görmez. Bu, **useedge** uygulama yapılandırma ayarını **doğru**olarak ayarladıysanız kullanıcılarınızın Microsoft Edge 'i kullanmak için mesajlaşma göreceği anlamına gelir. Yönetilen gözatma senaryolarından yararlanan tüm müşterilerin, Microsoft Edge 'e geçiş yapmak için uygun Kılavuzu görmesini sağlamak üzere, kullanıcıların bağlantıları hangi uygulamadan başlatdıklarından emin olmak için, uygulama koruma ilkelerini **diğer uygulamalarla kısıtla** . 
+
+<!-- ########################## -->
+## <a name="week-of-december-2-2019"></a>2 Aralık 2019 haftası
+
+#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>Yeni Microsoft uç noktası Configuration Manager ortak yönetim lisansı<!--5027281-->
+Yazılım Güvencesi kapsamındaki müşterilerin, ortak yönetim için ek bir Intune lisansı satın almak zorunda kalmadan Windows 10 bilgisayarları için Intune ortak yönetimine sahip Configuration Manager olanak sağlayan yeni bir lisans kullanıma sunulmuştur. Müşteriler, Windows 10 ' un ortak yönetimi için son kullanıcılarına ayrı Intune/EMS lisansları atamaya gerek kalmaz.
+- Configuration Manager tarafından yönetilen ve ortak yönetime kaydedilen cihazlar, Intune tek başına MDM ile yönetilen bilgisayarlar ile neredeyse aynı haklara sahiptir. Ancak, sıfırlandıktan sonra Autopilot kullanılarak yeniden sağlanamazlar.
 - Diğer yollarla Intune 'a kayıtlı Windows 10 cihazları tam Intune lisansları gerektirir.
 - Diğer platformlardaki cihazlarda hala tam Intune lisansları gerekir.
+
+Daha fazla bilgi için bkz. [Lisans koşulları](https://www.microsoft.com/en-us/Licensing/product-licensing/products).
 
 
 <!-- ########################## -->
@@ -70,6 +86,10 @@ Yazılım Güvencesi kapsamındaki müşterilerin, ortak yönetim için ek bir I
 ### <a name="app-management"></a>Uygulama yönetimi
 
 #### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>İOS için Microsoft Outlook ile S/MIME desteği<!-- 2669398 idready -->
+
+   > [!NOTE]
+   > Bu özellik gecikti, ancak yakında yayımlanacak.
+
 Intune, iOS cihazlarda iOS için Outlook ile kullanılabilen S/MIME imzalama ve şifreleme sertifikalarının teslim edilmesini destekler. Daha fazla bilgi için bkz. [iOS Için Outlook Için S/MIME yapılandırma](~/apps/app-configuration-policies-outlook-smime.md).
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>Uygulama verilerini seçmeli olarak silme sırasında kullanıcı arabirimi güncelleştirmesi<!-- 4102028 -->
@@ -385,7 +405,7 @@ Yapılandırabileceğiniz ayarı görmek için [Android kurumsal cihaz ayarları
 - Android kurumsal iş profili
 
 #### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices---4816339-----"></a>Android kurumsal cihaz sahibi cihazlarda genel HTTP proxy oluşturma<!-- 4816339   -->
-Android kurumsal cihazlarda, kuruluşunuzun Web tarama standartlarını (**cihaz yapılandırma** > **profilleri** > ve **Android Enterprise** > **profil oluşturmak** için genel bir http proxy 'si yapılandırabilirsiniz. Platform > **cihaz sahibi >** profil türü > **bağlantı**) için cihaz kısıtlamaları. Yapılandırıldıktan sonra tüm HTTP trafiği bu proxy 'yi kullanır.
+Android kurumsal cihazlarda, kuruluşunuzun Web tarama standartlarını (**cihaz yapılandırma** > **profilleri** > Için bir genel http proxy 'si yapılandırabilirsiniz. Bu, > **Android Enterprise** for platform > **cihaz sahibi >** **profil türü** > **bağlantı**için cihaz kısıtlamaları). Yapılandırıldıktan sonra tüm HTTP trafiği bu proxy 'yi kullanır.
 
 Bu özelliği yapılandırmak ve yapılandırdığınız tüm ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 

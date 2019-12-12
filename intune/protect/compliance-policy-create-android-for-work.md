@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810252"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz Android Kurumsal ayarları
@@ -43,7 +43,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 ## <a name="device-owner"></a>Cihaz sahibi
 
-### <a name="device-health"></a>Cihaz durumu
+### <a name="device-health"></a>Cihaz Sistem Durumu
 
 - **Cihazın cihaz tehdit düzeyinde veya bunun altında olmasını gerektir**: [Mobile Threat Defense hizmetiniz](mobile-threat-defense.md)tarafından değerlendirilen izin verilen maksimum cihaz tehdit düzeyini seçin. Bu tehdit düzeyini aşan cihazlar uyumsuz olarak işaretlenir. Bu ayarı kullanmak için izin verilen tehdit düzeyini seçin:
 
@@ -115,7 +115,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
     - **Gerekli harf olmayan karakter sayısı**: parolanın, 0 ile 16 karakter arasında olması gereken harf olmayan karakter sayısını (alfabedeki harfler dışında bir şey) girin.
 
-    - **Gerekli sayısal karakter sayısı**: parolanın 0 ile 16 karakter arasında olması gereken sayısal karakter sayısını (`1`, `2`, `3` vb.) girin.
+    - **Gerekli sayısal karakter sayısı**: parolanın 0 ile 16 karakter arasında olması gereken sayısal karakter sayısını (`1`, `2`, `3`vb.) girin.
     
     - **Gerekli simge karakter sayısı**: parolanın 0 ile 16 karakter arasında olması gereken simge karakterlerinin (`&`, `#`, `%`vb.) sayısını girin.
  
@@ -139,7 +139,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 ## <a name="work-profile"></a>İş profili
 
-### <a name="device-health"></a>Cihaz durumu
+### <a name="device-health"></a>Cihaz Sistem Durumu
 
 - **Kök erişim izni verilmiş cihazlar**: 
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
@@ -169,7 +169,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
   - **Temel bütünlük ve sertifikalı cihaz denetimi**
 
 > [!NOTE]
-> Android Kurumsal cihazlardaki **Uygulamalarda tehdit taraması**, bir cihaz yapılandırma ilkesidir. Yöneticiler, yapılandırma ilkesini kullanarak bu ayarı cihazlarda etkinleştirebilir. Bkz. [Android Kurumsal cihaz kısıtlama ayarları](../configuration/device-restrictions-android-for-work.md).
+> Android Kurumsal cihazlardaki **Uygulamalarda tehdit taraması**, bir cihaz yapılandırma ilkesidir. Yöneticiler, yapılandırma ilkesini kullanarak bu ayarı cihazlarda etkinleştirebilir. Bkz. [Android için Intune cihaz kısıtlama ayarları](../configuration/device-restrictions-android-for-work.md).
 
 ### <a name="device-properties"></a>Cihaz Özellikleri
 

@@ -16,10 +16,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72584465"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune için Windows Update ayarları  
@@ -28,7 +28,7 @@ Microsoft Intune ile [yapılandırabileceğiniz ve yönetebileceğiniz](windows-
 
 Intune 'da Windows 10 güncelleştirme halkaları için ayarları yapılandırdığınızda Windows Update ayarlarını yapılandırıyorsunuz. Bir Windows Update ayarında Windows 10 sürüm bağımlılığı varsa, ayarlar ayrıntıları ' nda sürüm bağımlılığı belirtilir.  
 
-## <a name="update-settings"></a>Güncelleştirme ayarları  
+## <a name="update-settings"></a>Ayarları güncelle  
 
 Güncelleştirme ayarları, bir cihazın indirileceği bitleri ve ne zaman yapılacağını denetler. Her ayarın davranışı hakkında daha fazla bilgi için, Windows başvuru belgelerine bakın.  
 
@@ -248,7 +248,7 @@ Kullanıcı deneyimi ayarları, cihaz yeniden başlatma ve anımsatıcıları i�
     **Varsayılan**: Evet Windows Update CSP: [Update/Configuredeadlinenooto reboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 
     Cihazın son tarihten önce otomatik olarak yeniden başlatılması gerekip gerekmediğini belirtir.
-    - **Yes**
+    - **Evet**
     - **Hayır**
 
 ### <a name="delivery-optimization-download-mode"></a>Teslim iyileştirme indirme modu  

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563631"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
@@ -149,13 +149,13 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 
 | Alan | Description | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
-| Gezinti menüsü | Gezinti | Alt + a |
-|  | Giriş | Alt + H |
+| Gezinti menüsü | Gezinti | Alt+M |
+|  | Giriş | Alt+H |
 |  | Tüm uygulamalar | Alt + A |
 |  | Yüklenen uygulamalar | Alt+I |
-|  | Geri bildirim gönder | Alt + F |
-|  | Profilim | Alt + U |
-|  | Ayarlar | Alt + T |
+|  | Geri bildirim gönder | Alt+F |
+|  | Profilim | Alt+U |
+|  | Ayarlar | Alt+T |
 | Giriş - Cihaz kutucuğu | Yeniden Adlandır | F2 |
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
@@ -163,7 +163,7 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
 | Uygulama ayrıntıları | Yükle | Ctrl+I |
-| Cihazlar | Kullanılabilir | CTRL + D |
+| Cihazlar | Kullanılabilir | Ctrl+D |
 
 Son kullanıcılar, Windows Şirket Portalı uygulamasında kullanılabilen kısayolları da görebilir.
 
@@ -187,12 +187,12 @@ Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez
 |  | Windows 10<sup>(3)</sup> | iOS/ıpados<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
 | Devre dışı bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
-| Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | YANA | Kullanılabilir<sup>(7)</sup> |
+| Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | NA | Kullanılabilir<sup>(7)</sup> |
 | Yeniden Adlandır<sup>(4)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
-| Eşitleme | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
+| Eşitle | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
 | Uzaktan Kilitleme | Yalnızca Windows Phone | Kullanılabilir | Kullanılabilir | Kullanılabilir |
-| Geçiş kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir<sup>(8)</sup> | YANA | Kullanılabilir<sup>(6)</sup> |
-| Anahtar kurtarma | YANA | YANA | Kullanılabilir<sup>(2)</sup> | YANA |
+| Geçiş Kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir<sup>(8)</sup> | NA | Kullanılabilir<sup>(6)</sup> |
+| Anahtar Kurtarma | NA | NA | Kullanılabilir<sup>(2)</sup> | NA |
 
 <sup>(1)</sup> **devre dışı BıRAKMA** , Azure AD 'ye katılmış Windows cihazlarında her zaman engellenir.<br>
 <sup>(2)</sup> MacOS Için **anahtar kurtarma** yalnızca Web portalı aracılığıyla kullanılabilir.<br>

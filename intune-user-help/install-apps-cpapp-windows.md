@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74126204"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Cihazınızda uygulama yükleme ve paylaşma
@@ -97,4 +97,4 @@ Bu sayfaya ulaşmak için, gezinti menüsüne gidin ve **yüklü uygulamalar**' 
 
 Uygulamalar atama türünü, yayımcıyı, ada göre alfabetik olarak veya yayımlama tarihine göre kronolojik olarak yeniden düzenlemek için **sıralama ölçütü** ' nu kullanın. Yükleme durumuna göre gördüğünüz uygulamaları sınırlamak için **filtre ölçütü** ' ni kullanın.  Kullanılabilir uygulama yoksa, hiçbir şirket uygulaması yüklenmediğini belirten bir ileti görürsünüz.  
 
-Ek Yardım mı gerekiyor? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
+Daha fazla yardıma ihtiyacınız var mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  

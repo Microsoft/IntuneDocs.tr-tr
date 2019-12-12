@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a9529f5b3047a8d4ca2a1e9c22d2c4427761078c
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73754923"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune kullanarak Microsoft Defender ATP tarafından tanımlanan güvenlik açıklarını düzeltin
@@ -45,7 +45,7 @@ Düzeltme için genel eylemler şunları içerir:
 - Güvenlik açığını etkilemek için yapılandırmayı **devre dışı bırakın** veya **etkinleştirin** .
 - Sağlanması gereken uygun bir öneri olmadığında yöneticiye **dikkat edin** .
 
-Örnek iş akışı:
+Örnek bir iş akışı:
 
 - Microsoft Defender ATP içinde, contoso Media Player v4 adlı bir uygulamaya yönelik bir güvenlik açığı bulunur ve bir yönetici bu uygulamayı güncelleştirmek için bir güvenlik görevi oluşturur. Contoso medya oynatıcı, Intune ile dağıtılan yönetilmeyen bir uygulamadır.
 

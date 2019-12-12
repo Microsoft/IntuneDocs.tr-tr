@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74562419"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple Kullanıcı kaydıyla desteklenen Intune eylemleri ve seçenekleri
@@ -46,7 +46,7 @@ Yöneticiler, Kullanıcı kayıt cihazlarında aşağıdaki eylemleri ve seçene
 - Devre dışı bırakma
 - Sil
 - Uzaktan Kilitleme
-- Eşitleme
+- Eşitle
 
 Diğer tüm eylemler desteklenmez.
 

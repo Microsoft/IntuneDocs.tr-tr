@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7b2083a493fd723c649bdfe2b709dbaa4c0ec663
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810270"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Ağ erişim denetimini (NAC) Intune ile tümleştirme
@@ -75,7 +75,7 @@ Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin na
   - Citrix Gateway 12.0.59 veya üstünü kullanın.  
   - Kullanıcıların Citrix SSO 1.1.6 veya sonraki bir sürümü yüklü olmalıdır.
   - Citrix ürün belgelerinde açıklandığı gibi [, NetScaler 'ı NAC Için Intune Ile tümleştirin](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) .
-  - VPN profilinde **temel ayarlar** > **ağ Access Control etkinleştir (NAC)** seçeneğini belirleyin > **kabul**ediyorum ' u seçin.
+  - VPN profilinde, **temel ayarlar** ' ı seçin > **ağ Access Control (NAC) etkinleştir** > **kabul**ediyorum ' u seçin.
 
   Güvenlik nedenleriyle VPN bağlantısının her 24 saatte bir bağlantısı kesilir. VPN hemen yeniden bağlanabilir.
 
@@ -83,7 +83,7 @@ Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin na
 
   - F5 BIG-IP 13.1.1.5 kullanın. BÜYÜK IP 14 desteklenmez.
   - NAC için büyük IP 'yi Intune ile tümleştirin. [Genel bakış: Endpoint Management sistemleri ile cihaz gönderme denetimleri IÇIN APM yapılandırma](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Guide adımları listeler.
-  - VPN profilinde **temel ayarlar** > **ağ Access Control etkinleştir (NAC)** seçeneğini belirleyin > **kabul**ediyorum ' u seçin.
+  - VPN profilinde, **temel ayarlar** ' ı seçin > **ağ Access Control (NAC) etkinleştir** > **kabul**ediyorum ' u seçin.
 
   Güvenlik nedenleriyle VPN bağlantısının her 24 saatte bir bağlantısı kesilir. VPN hemen yeniden bağlanabilir.
 

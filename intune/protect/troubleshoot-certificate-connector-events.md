@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2d9556cc0357e76ee617ac0770a3efc2e3a1957f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508876"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Intune sertifika Bağlayıcısı olayları ve tanılama kodları
@@ -33,7 +33,7 @@ Sürüm 6.1806.x.x’ten itibaren Intune Bağlayıcısı Hizmeti, olayları **Ol
 
 ## <a name="event-ids-and-descriptions"></a>Olay kimlikleri ve açıklamaları
 
-| Olay KIMLIĞI      | Olay Adı    | Olay Açıklaması | İlgili Tanılama Kodları |
+| Olay Kimliği      | Olay Adı    | Olay Açıklaması | İlgili Tanılama Kodları |
 | ------------- | ------------- | -------------     | -------------            |
 | 10010 | StartedConnectorService  | Bağlayıcı hizmeti başlatıldı | 0x00000000, 0x0FFFFFFF |
 | 10020 | StoppedConnectorService  | Bağlayıcı hizmeti durduruldu | 0x00000000, 0x0FFFFFFF |

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1a94f3d175fe5c036c5e90635a66467263b23122
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72499124"
 ---
 # <a name="protecting-application-extensions"></a>Uygulama uzantılarını koruma
@@ -37,7 +37,7 @@ Son kullanıcılarınızın Outlook eklentilerine erişmesini ve bunları yükle
 
 - Kullanıcıların Office Mağazası eklentilerini yüklemesini engellemek için, onlardan Marketim rolünü kaldırın.
 - Kullanıcıların dışarıdan eklenti yüklemesini engellemek için, onlardan Özel Uygulamalarım rolünü kaldırın.
-- Kullanıcılar tüm eklentilerin yüklemesini engellemek için, onlardan hem Özel Uygulamalarım rolünü hem de Marketim rolünü kaldırın.
+- Kullanıcıların tüm eklentileri yüklemesini engellemek için, onlardan hem Özel Uygulamalarım rolünü hem de Marketim rolünü kaldırın.
 
 Bu yönergeler Office 365, Exchange 2016, Exchange 2013’te Web üzerinde Outlook genelinde, Windows, Mac ve mobil için geçerlidir.
 
@@ -69,7 +69,7 @@ Bir kullanıcı, Office eklentilerinde olduğu gibi hesaplar arasında veri payl
 |[Kişiler](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions) için okuma izinleri     |Uygulamanın oturum açan kullanıcıyla ilgili kişilerin puanlanmış bir listesini okumasına izin verir. Liste; yerel kişileri, sosyal ağ veya kuruluşunuzun dizinindeki kişileri ve son iletişim kurulan kişileri (e-posta ve Skype gibi) içerebilir.         |
 |[Takvimler](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions) için okuma izinleri     |Uygulamanın kullanıcı takvimlerindeki etkinlikleri okumasına izin verir. Oturum açan kullanıcının takvimindeki toplantıları, zamanlarını, yerlerini ve katılımcıları içerir.         |
 |[Kullanıcı Profili](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions) için okuma izinleri     |Kullanıcıların uygulamada oturum açmasını sağlar ve uygulamanın oturum açan kullanıcıların profilini okumasına izin verir. Ayrıca uygulamanın oturum açan kullanıcılar için temel şirket bilgilerini okumasına izin verir.         |
-|Subscriptions     |Bu kapsam mevcut değil ve henüz kullanılmıyor. Kullanıcının kuruluşu tarafından sağlanan Office 365 gibi Microsoft uygulamaları ve hizmetleri aboneliklerini içerir.         |
+|Abonelikler     |Bu kapsam mevcut değil ve henüz kullanılmıyor. Kullanıcının kuruluşu tarafından sağlanan Office 365 gibi Microsoft uygulamaları ve hizmetleri aboneliklerini içerir.         |
 |İçgörüler     |Bu kapsam mevcut değil ve henüz kullanılmıyor. Oturum açan kullanıcı hesabıyla ilişkili Microsoft hizmetleri kullanımını temel alan ilgi alanlarını içerir.         |
 
 ### <a name="learn-more"></a>Daha fazlasını öğrenin

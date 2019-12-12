@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73445331"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Microsoft Intune ' de türetilmiş kimlik bilgilerini kullan
@@ -160,7 +160,7 @@ Türetilmiş kimlik bilgilerini elde etmek için kullandığınız bir işleme e
 
 Türetilmiş bir kimlik bilgisinin kullanılması gereken ilkeler oluşturmadan önce, Intune konsolunda bir kimlik bilgisi veren ayarlayın. Türetilmiş bir kimlik bilgisi veren, kiracı genelinde bir ayardır. Kiracılar aynı anda yalnızca tek bir veren destekler.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve**türetilmiş kimlik bilgileri** >  **cihaz yapılandırması** ' na gidin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **türetilmiş kimlik bilgileri** > **cihaz yapılandırması** ' na gidin.
 
    ![Konsolundaki türetilmiş kimlik bilgilerini yapılandırma](./media/derived-credentials/configure-provider.png)
 
@@ -203,7 +203,7 @@ Uygulamayı Intune ile dağıtmaya ek olarak, DıŞA Popurebred uygulaması içi
 
 Aşağıdaki profil türleri ve amaçları için **türetilmiş kimlik bilgilerini** belirtebilirsiniz:
 
-- [Uygulamaları](#use-derived-credentials-for-app-authentication)
+- [Uygulamalar](#use-derived-credentials-for-app-authentication)
 - [E-posta](../configuration/email-settings-ios.md)
 - [VPN](../configuration/vpn-settings-ios.md)
 - [S/MIME imzalama ve şifreleme](certificates-s-mime-encryption-sign.md)
@@ -218,7 +218,7 @@ Aşağıdaki profil türleri ve amaçları için **türetilmiş kimlik bilgileri
 
 Web siteleri ve uygulamalarına sertifika tabanlı kimlik doğrulaması için türetilmiş kimlik bilgilerini kullanın. Uygulama kimlik doğrulaması için türetilmiş bir kimlik bilgisi teslim etmek üzere Intune konsolunda aşağıdaki adımları uygulayın:  
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz yapılandırma**  > **profiller** ' e gidin ve **Profil oluştur**' u seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz yapılandırma** > **profiller** ' e gidin ve **Profil oluştur**' u seçin.
 
 2. **Ad**' ın altındaki profil için bir kolay ad girin.
 
@@ -252,7 +252,7 @@ Veren 'i değiştirdikten sonra kullanıcılardan yeni veren tarafından yeni bi
 > [!IMPORTANT]  
 > Sertifikayı bir veren siler ve hemen yeniden yapılandırırsanız, bu veren 'ten türetilmiş kimlik bilgilerini kullanmak için profilleri ve cihazları yine de güncelleştirmeniz gerekir. Veren silinmeden önce elde edilen türetilmiş kimlik bilgileri artık geçerli değil.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve**türetilmiş kimlik bilgileri** >  **cihaz yapılandırması** ' na gidin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **türetilmiş kimlik bilgileri** > **cihaz yapılandırması** ' na gidin.
 
 2. Geçerli türetilmiş kimlik bilgisi verenini kaldırmak için **Sil** ' i seçin.
 

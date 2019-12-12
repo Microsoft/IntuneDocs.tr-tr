@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059510"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Microsoft Intune kullanarak cihazlarda Windows 10 sürümlerini yükseltme veya S modunu değiştirme
@@ -61,15 +61,15 @@ Aşağıdaki tabloda, Windows 10 sürümü yükseltme profili için desteklenen 
 
 | Kaynak yükseltme sürümü | Hedef yükseltme sürümü |
 |---|---|
-| Windows 10 Pro | Windows 10 eğitimi <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
+| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
 | Windows 10 Pro N sürümü | Windows 10 Education N sürümü <br/>Windows 10 Enterprise N sürümü <br/>Windows 10 Pro Education N sürümü | 
-| Windows 10 Pro Education | Windows 10 eğitimi | 
+| Windows 10 Pro Education | Windows 10 Education | 
 | Windows 10 Pro Education N sürümü | Windows 10 Education N sürümü |
-| Windows 10 Cloud | Windows 10 eğitimi <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
+| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
 | Windows 10 Cloud N sürümü | Windows 10 Education N sürümü <br/>Windows 10 Enterprise N sürümü <br/>Windows 10 Pro N sürümü <br/>Windows 10 Pro Education N sürümü | 
-| Windows 10 Enterprise | Windows 10 eğitimi | 
+| Windows 10 Enterprise | Windows 10 Education | 
 | Windows 10 Enterprise N sürümü | Windows 10 Education N sürümü | 
-| Windows 10 Core | Windows 10 eğitimi <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
+| Windows 10 Core | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
 | Windows 10 Core N sürümü | Windows 10 Education N sürümü <br/>Windows 10 Enterprise N sürümü <br/>Windows 10 Pro Education N sürümü | 
 | Windows 10 Holographic | Windows 10 Holographic for Business |
 | Windows 10 Mobile | Windows 10 Mobile Enterprise |
@@ -100,7 +100,7 @@ Aşağıdaki tabloda, Windows 10 sürümü yükseltme profili için desteklenen 
 2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
-    - **Ad**: Yeni profil için açıklayıcı bir ad girin. Örneğin `Windows 10 edition upgrade profile` veya `Windows 10 switch off S mode` gibi bir ad girin.
+    - **Ad**: Yeni profil için açıklayıcı bir ad girin. Örneğin, `Windows 10 edition upgrade profile` veya `Windows 10 switch off S mode`gibi bir ad girin.
     - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
     - **Platform**: **Windows 10 ve üstünü**seçin.
     - **Profil türü**: **sürüm yükseltme**' yi seçin.

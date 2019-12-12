@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74564261"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme
@@ -75,7 +75,7 @@ Yapılandırma değeri olarak değişken seçerseniz şunlar arasından seçim y
 | Etki Alanı | contoso.com |
 | Mail | john@contoso.com |
 | Kısmi UPN | john |
-| Kullanıcı KIMLIĞI | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| Kullanıcı Kimliği | 3ec2c00f-b125-4519-acf0-302ac3761822 |
 | Kullanıcı adı | John Doe |
 | Kullanıcı asıl adı | john@contoso.com |
 
@@ -86,7 +86,7 @@ Android cihazlarda aşağıdaki anahtar/değer çiftlerini kullanın:
 
 | **Anahtar** | com.microsoft.intune.mam.AllowedAccountUPNs |
 |---|---|
-| **Deðerler** | <ul><li>Bir veya daha fazla <code>;</code> ile sınırlandırılmış UPN.</li><li>Yalnızca bu anahtar ile tanımlanan yönetilen kullanıcı hesaplarına izin verilir.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul> |
+| **Değerler** | <ul><li>Bir veya daha fazla <code>;</code> ile sınırlandırılmış UPN.</li><li>Yalnızca bu anahtar ile tanımlanan yönetilen kullanıcı hesaplarına izin verilir.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul> |
 
    > [!NOTE]
    > Yalnızca birden çok kimliği olan yapılandırılmış kuruluş hesaplarına izin verirken Android 2.2.222 ve üzeri, Word, Excel, Android 16.0.9327.1000 ve üzeri ya da OneDrive for Android 5,28 ve üzeri için Outlook 'U kullanmanız gerekir.<p></p>

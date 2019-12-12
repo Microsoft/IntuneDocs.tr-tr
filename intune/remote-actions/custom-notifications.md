@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713231"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907296"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
 
@@ -45,8 +45,8 @@ Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler gönd
 - Cihazın MDM kaydı yapılmalıdır.
 
 **İzinler**:
-- Gruplara bildirim göndermek için, hesabınız Intune 'da aşağıdaki RBAC iznine sahip olmalıdır: *Organization* > **Update**.
-- Bir cihaza bildirim göndermek için, hesabınız Intune 'da şu RBAC iznine sahip olmalıdır: *uzak görevler* > **özel bildirimler gönderin**.
+- Gruplara bildirim göndermek için, hesabınız Intune 'da şu RBAC iznine sahip olmalıdır: *kuruluş* > **güncelleştirmesi**.
+- Bir cihaza bildirim göndermek için, hesabınız Intune 'da şu RBAC iznine sahip olmalıdır: *uzak görevler* > **özel bildirimler gönder**.
 
 **Bildirimler oluşturuluyor**:  
 - Bir ileti oluşturmak için, **kuruluş**için **güncelleştirme** izni içeren bir Intune rolü atanmış bir hesap kullanın. Bir kullanıcıya izin atamak için bkz. [rol atamaları](../fundamentals/role-based-access-control.md#role-assignments)  
@@ -69,7 +69,7 @@ Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler gönd
 
 ## <a name="send-a-custom-notification-to-groups"></a>Gruplara özel bildirim gönder  
 
-1. Bildirim oluşturma ve gönderme izinlerine sahip bir hesapla [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın ve **özel bildirimler göndermek** > **cihazlar** ' a gidin.  
+1. Bildirim oluşturma ve gönderme izinlerine sahip bir hesapla [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın ve **Kiracı Yönetimi** > **özel bildirimler**' e gidin.  
 
 2. Temel bilgiler sekmesinde, aşağıdakileri belirtin ve devam etmek için **İleri** ' yi seçin.  
    - **Title** : Bu bildirim için bir başlık belirtin. Başlıklar 50 karakterle sınırlıdır.  
@@ -93,7 +93,7 @@ Intune, göndereceğiniz özel bildirimleri izlemez ve cihazlar, bilgileri cihaz
 
 2. Bildirim göndermek istediğiniz cihazı seçin.  
 
-3. Cihazlara **genel bakış** sayfasında... öğesini seçin **.** Sayfanın sol üst tarafında daha fazla seçenek.  
+3. Cihazlara **genel bakış** sayfasında, sayfanın sağ üst tarafındaki **.** .. (üç nokta) seçeneğini belirleyin.  
 
 4. Aşağıdaki ileti ayrıntılarını belirten *özel bildirim gönder* bölmesini açmak Için **özel bildirim cihazı gönder** eylemini seçin:  
 

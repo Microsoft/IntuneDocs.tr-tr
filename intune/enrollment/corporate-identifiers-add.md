@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503309"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955482"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -85,9 +85,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Kurumsal tanımlayıcıları içeren .csv listesini karşıya yükleme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > **Add** > **CSV dosyasını karşıya yükle**' yi seçin.
-
-   ![Kurumsal cihaz tanımlayıcısı çalışma alanı ile Ekle düğmesinin vurgulanmış hali](./media/corporate-identifiers-add/add-corp-id.png)
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, cihazlar ** > ** **cihazları** > **ŞIRKET cihaz tanımlayıcıları** >  > **karşıya yükleme CSV dosyası** **Ekle** ' yi seçin.
 
 2. **Tanımlayıcı ekle** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI**veya **Seri**.
 
@@ -97,7 +95,7 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 
 ## <a name="manually-enter-corporate-identifiers"></a>Kurumsal tanımlayıcıları el ile girme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları** > **Ekle** > **el ile girin**.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, cihazlar ** > ** cihazları > **şirket cihaz tanımlayıcıları** > **kaydetme** > **el ile** **Ekle** ' ye tıklayın.
 
 2. **Tanımlayıcı ekle** dikey penceresinde tanımlayıcı türünü belirtin: **IMEI**veya **Seri**.
 
@@ -111,7 +109,7 @@ Yeni cihaz tanımlayıcılarını görmek için **Yenile**'ye tıklayabilirsiniz
 
 ## <a name="delete-corporate-identifiers"></a>Kurumsal tanımlayıcıları silme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihaz kaydı** > **Kurumsal cihaz tanımlayıcıları**' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın **, cihazlar ' ı seçerek** cihazları **kurumsal cihaz tanımlayıcıları** > **kaydedin** > .
 2. Silmek istediğiniz cihaz tanımlayıcılarını seçin ve **Sil**’e dokunun.
 3. Silmeyi onaylayın.
 
@@ -125,7 +123,7 @@ Uluslararası Mobil Donanım Kimlikleri (IMEI) hakkındaki ayrıntılı belirtim
 Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** görüntülenir. Yönetici olarak, cihazları **Kişisel** veya **Şirkete ait** olarak belirtebilirsiniz. Bir cihazın sahiplik türü kişisel iken şirkete değiştirildiğinde, Intune, daha önce bu cihazdan toplanan tüm uygulama bilgilerini 7 gün içinde siler. Uygulanabiliyorsa, Intune kayıttaki telefon numarasını da siler. 
 
 **Cihaz sahipliğini değiştirmek için:**
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihazlar** ' a gidin ve cihazı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, **cihazlar** > **tüm cihazlar** ' ı seçin > cihazı seçin.
 2. **Özellikler**’i seçin.
 3. **Cihaz sahipliği**’ni **Kişisel** veya **Şirkete ait** olarak belirtin.
 

@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 358a396e762f1f20051abadfc2f3df80f37ca8c8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502303"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 'da MacOS Endpoint Protection ayarları  
@@ -46,15 +46,15 @@ Bu makalede, macOS çalıştıran cihazlar için yapılandırabileceğiniz Endpo
 
   **Varsayılan**: yapılandırılmadı  
 
-## <a name="firewall"></a>Duvarını  
+## <a name="firewall"></a>Güvenlik duvarı  
 
 Bağlantı noktası yerine uygulama başına bağlantıları denetlemek için güvenlik duvarı kullanın. Uygulama başına ayarlar kullanmak, güvenlik duvarı korumasından faydalanmayı kolaylaştırır. Ayrıca istenmeyen uygulamaların, güvenilen uygulamalara açık olan ağ bağlantı noktalarının kontrolünü ele geçirmelerini önler.  
 
 **Genel**
-- **Duvarını**  
+- **Güvenlik duvarı**  
   Gelen bağlantıların ortamınızda nasıl işleneceğini yapılandırmak için güvenlik duvarını etkinleştirin.  
   - **Yapılandırılmadı**  
-  - **Etkinleştirebilir**  
+  - **Enable**  
 
   **Varsayılan**: yapılandırılmadı  
 
@@ -76,7 +76,7 @@ Bağlantı noktası yerine uygulama başına bağlantıları denetlemek için g�
   - **Gizli mod**  
     Bilgisayarın yoklama isteklerine yanıt vermesini engellemek için gizli modu etkinleştirin. Cihaz, yetkilendirilmiş uygulamalardan gelen istekleri yanıtlamaya devam eder. ICMP (ping) gibi beklenmedik istekler yoksayılır.  
     - **Yapılandırılmadı**  
-    - **Etkinleştirebilir**  
+    - **Enable**  
 
     **Varsayılan**: yapılandırılmadı  
 
@@ -89,7 +89,7 @@ Apple Filekasası ayarları hakkında daha fazla bilgi için Apple geliştirici 
 - **FileVault**  
   MacOS 10,13 ve üstünü çalıştıran cihazlarda Filekasasıyla XTS-AES 128 kullanarak tam disk şifrelemeyi *etkinleştirebilirsiniz* .  
   - **Yapılandırılmadı**  
-  - **Etkinleştirebilir**  
+  - **Enable**  
 
   **Varsayılan**: yapılandırılmadı  
 

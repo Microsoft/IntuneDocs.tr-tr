@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503183"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Tamamlanmamış Kullanıcı kayıtları raporu
@@ -79,7 +79,7 @@ Aşağıdaki tablolarda, tamamlanmamış bir kayıt isteminde bulunarak nitelend
 | EnrollmentWrapUp | Sayfayı Şirket Portalı’nda açmaya yönelik istem | iOS/Android | **İptal** |
 | EnrollmentWrapUp | **Şirket kaynakları yükleniyor** işlemi tamamlanana kadar gösterilen cihaz kaydetme ekranı | iOS/Android | 30 dakikadan fazla sürdü |
 | DeviceCategory | **Bitti** düğmesine tıklanana kadar görüntülenen Cihaz Kategorisi seçimi (yönetici tarafından yapılandırılmışsa) | iOS/Android | 30 dakikadan fazla sürdü |
-| PreEnrollmentWizard | Kaydı başlattıktan sonra Erişimi ayarlama ekranına dönüldüğünde gösterilen Erişimi ayarlama ekranı | iOS/Android| **Sonrasına** |
+| PreEnrollmentWizard | Kaydı başlattıktan sonra Erişimi ayarlama ekranına dönüldüğünde gösterilen Erişimi ayarlama ekranı | iOS/Android| **Ertele** |
 | PreEnrollmentWizard | **Sırada Ne Var** ekranında **Sonraki** düğmesine tıklanana kadar görüntülenen Erişimi ayarlama ekranı | iOS/Android | 30 dakikadan fazla sürdü |
 
 #### <a name="platform-screens-section"></a>Platform ekranları bölümü
@@ -106,9 +106,9 @@ Aşağıdaki tablolarda, tamamlanmamış bir kayıt isteminde bulunarak nitelend
 
 | Eylem adı | Ekran veya akış | Platfveyam | Eylem |
 | ---- |---- |---- |---- |
-| Uyumluluk | Cihaz uyumluluğu (yönetici yapılandırmışsa), kayıt sonrası erişim kurulumunda yeşil dışındaki bir renkte gösterilir| iOS/Android | **Sonrasına** |
+| Uyumluluk | Cihaz uyumluluğu (yönetici yapılandırmışsa), kayıt sonrası erişim kurulumunda yeşil dışındaki bir renkte gösterilir| iOS/Android | **Ertele** |
 | Uyumluluk | Cihaz uyumluluğu, yeşil görünecek şekilde güncelleştirilene kadar yeşil dışındaki bir renkte gösterilir | iOS/Android | 30 dakikadan fazla sürdü |
-| Öğesiyle | Kayıt etkinleştirme (yönetici yapılandırmışsa), erişim kurulumunda yeşil dışındaki bir renkte gösterilir | iOS/Android | **Sonrasına** |
+| Etkinleştirme | Kayıt etkinleştirme (yönetici yapılandırmışsa), erişim kurulumunda yeşil dışındaki bir renkte gösterilir | iOS/Android | **Ertele** |
 | Uyumluluk | Cihaz etkinleştirme, yeşil görünecek şekilde güncelleştirilene kadar yeşil dışındaki bir renkte gösterilir | iOS/Android | 30 dakikadan fazla sürdü |
 
 ## <a name="next-steps"></a>Sonraki adımlar

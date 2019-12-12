@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390473"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946691"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -71,7 +71,7 @@ Intune 'u JAMF Pro ile bağlamak için:
 2. Intune 'u JAMF Pro ile tümleşecek şekilde etkinleştirin.
 3. JAMF Pro 'da koşullu erişimi yapılandırın.
 
-### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory bir uygulama oluşturma
+### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory’de uygulama oluşturma
 
 1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **uygulama kayıtları**' na gidin ve ardından **Yeni kayıt**' ı seçin.
 
@@ -90,13 +90,21 @@ Intune 'u JAMF Pro ile bağlamak için:
    > [!IMPORTANT]
    > Bu sayfadan ayrılmadan önce, istemci sırrı için değeri kopyalayın ve daha sonra kullanmak üzere kaydedin. Sonraki yordamlarda bu değere ihtiyacınız olacaktır. Bu değer, uygulama kaydını yeniden oluşturmadan tekrar kullanılamaz.
 
-6. **Yönet**altında **API izinleri** ' ni seçin. Mevcut izinleri seçin ve ardından bu izinleri silmek için **Izni kaldır** ' ı seçin. Yeni bir izin ekleyeceğiniz için tüm mevcut izinlerin kaldırılması gerekir ve uygulama yalnızca tek gerekli izni varsa işe yarar.
+6. **Yönet** altındaki **API izinleri**’ni seçin. 
 
-7. Yeni bir izin atamak için **Izin Ekle**' yi seçin. **API Izinleri iste** sayfasında, **Intune**' u seçin ve ardından **Uygulama izinleri**' ni seçin. Yalnızca **update_device_attributes**onay kutusunu seçin.
+7. API izinleri sayfasında, yeni izin eklemek için **Izin Ekle** ' yi seçin. **API Izinleri iste** sayfasında, **Intune**' u seçin ve ardından **Uygulama izinleri**' ni seçin. Yalnızca **update_device_attributes**onay kutusunu seçin.
 
-   Bu yapılandırmayı kaydetmek için **Izin Ekle** ' yi seçin.
+8. Yeni iznin etkili olabilmesi için birkaç dakika bekleyin. Ardından,  **_kiracınızı >\<_ Için yönetici onayı ver**' i seçin. Yeni pencerede hesabınızın kimliğini doğrulayın ve istemleri izleyerek uygulamaya erişim izni verin.  
 
-8. **API izinleri** sayfasında,  **_kiracı >\<_ için yönetici onayı ver**' i seçin ve ardından **Evet**' i seçin.  Uygulama başarıyla kaydedildikten sonra, API izinleri aşağıdaki gibi görünmelidir:
+9. Yönetici izninin etkili olabilmesi için birkaç dakika beklemeniz gerekebilir.
+
+10. Sayfanın üst kısmındaki **Yenile** düğmesine tıklayarak sayfayı yenileyin. **Update_device_attributes** izni için yönetici onayı verildiğini doğrulayın. 
+
+11. Yönetici onayını **Kullanıcı.** **.. menüsünü seçerek** ve **yönetici onayını Iptal et**' i seçerek Oku iznini kaldırın.
+
+12. Ayrıca **Kullanıcı. oku** iznini de kaldırmanız gerekecektir. Kullanıcıya göre **...** menüsünü seçin **. oku** ve **Kaldır iznini**seçin. 
+
+8. Uygulama başarıyla kaydedildikten sonra, API izinleri yalnızca **update_device_attributes** adlı bir izin içermeli ve aşağıdaki gibi görünmelidir:
 
    ![Başarılı izinler](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

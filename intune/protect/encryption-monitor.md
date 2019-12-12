@@ -18,10 +18,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74164665"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini izleme
@@ -124,7 +124,7 @@ Raporu bulmak için [Microsoft Endpoint Manager Yönetim Merkezi](https://go.mic
 
     *Göz önünde bulundurun: MacOS sürüm 10,15 (Catalina) Ile başlayarak, kullanıcının onayladığı kayıt ayarları, kullanıcıların dosya kasasını şifrelemeyi el ile onaylama gereksinimine neden olabilir. Daha fazla bilgi için bkz. Intune belgelerinde [Kullanıcı onaylı kayıt](../enrollment/macos-enroll.md)* .
 
-  - Bilinmeyen.
+  - Bilinmiyor.
 
     *Göz önünde bulundurun: bilinmeyen bir durumun nedeni, cihazın kilitlenmesinden ve Intune 'un Emanet veya şifreleme işlemini başlatamamasına neden olabilir. Cihazın kilidi açıldıktan sonra, ilerleme devam edebilir*.
 

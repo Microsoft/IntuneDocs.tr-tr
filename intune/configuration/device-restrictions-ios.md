@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465658"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992942"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-Bu makalede iOS ve ıpados cihazlarında denetleyebileceğinizi belirten farklı ayarlar listelenir. Mobil cihaz yönetimi (MDM) çözümünüz kapsamında bu ayarları kullanabilir ve bu sayede özellikleri etkinleştirip devre dışı bırakabilir, parola kuralları uygulayabilir, belirli uygulamalara izin verebilir veya bunları kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
+Bu makalede iOS ve ıpados cihazlarında denetleyebileceğinizi belirten farklı ayarlar listelenir. Mobil cihaz yönetimi (MDM) yönteminizin bir parçası olarak bu ayarları kullanabilir ve bu sayede özellikleri etkinleştirip devre dışı bırakabilir, parola kuralları uygulayabilir, belirli uygulamalara izin verebilir veya bunları kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
 
 Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra iOS cihazlarınıza atanır veya dağıtılır.
 
@@ -47,12 +45,12 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 - **Kullanım verilerini paylaşma**: cihazın Apple 'a tanılama ve kullanım verileri göndermesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı bu verilerin gönderilmesine izin verir.
 
-- **Ekran yakalama**: cihazda ekran görüntülerini veya ekran yakalamalarını engellemek için **Engelle** ' yi seçin. İOS 9,0 ve üzeri sürümlerde ekran kayıtlarını da engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının ekran içeriğini bir resim veya video olarak yakalamasına olanak tanır.
+- **Ekran Yakalama**: seçin **blok** cihazın ekran veya ekran görüntüleri önlemek için. İOS 9,0 ve üzeri sürümlerde ekran kayıtlarını da engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının ekran içeriğini bir resim veya video olarak yakalamasına olanak tanır.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
 - **GÜVENILMEYEN TLS sertifikaları**: cihazda güvenilmeyen aktarım katmanı GÜVENLIĞI (TLS) sertifikalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı TLS sertifikalarına izin verir.
-- **Kablosuz PKI güncelleştirmelerine Izin ver**: **izin ver** , kullanıcılarınızın cihazlarını bir bilgisayara bağlamadan yazılım güncelleştirmeleri almasına izin verir.
+- **Kablosuz PKI güncelleştirmelerini engelle**: **blok** , kullanıcılarınızın cihazlarını bir bilgisayara bağlamadan yazılım güncelleştirmelerini almasını engeller. **Yapılandırılmadı** (varsayılan), cihazda bu ayarı güncelleştirmez.
 - **Ad Izlemeyi sınırla**: cihaz reklam tanımlayıcısını devre dışı bırakmak için **sınır** ' ı seçin. **Yapılandırılmadı** (varsayılan) bu tanımlayıcının etkin kalmasını sağlar.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
@@ -95,7 +93,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 - **Yapılandırma profili değişiklikleri**: **blok** , cihazdaki yapılandırma profili değişikliklerini engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının yapılandırma profillerini yüklemesine izin verir.
 - **Etkinleştirme Kilidi**: denetimli iOS cihazlarında Etkinleştirme Kilidi etkinleştirmek Için **izin ver** ' i seçin. Etkinleştirme Kilidi, kaybolan veya çalınan bir cihazın yeniden etkinleştirilmesini zorlaştırır.
 - **Uygulama kaldırmayı engelle**: kullanıcıların uygulamaları kaldırmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı kullanıcıların cihazdan uygulama kaldırmasına izin verir.
-- **Bloklar USB kısıtlı modu**: DENETIMLI cihazlarda USB kısıtlı modu devre dışı bırakmak için **Engelle** ' yi seçin. USB kısıtlı modu, USB aksesuarları 'nin bir saatten daha fazla kilitlenen bir cihazla veri alışverişi yapılmasını engeller. **Yapılandırılmadı** (varsayılan) ayarı USB Kısıtlı moduna izin verir.
+- **Cihaz KILITLIYKEN USB donatılara Izin ver**: **ızın ver** , USB aksesuarları 'nin bir saatten daha fazla kilitlenmiş bir cihazla veri alışverişi yapmasına olanak sağlar. **Yapılandırılmamış** (varsayılan) cihazda USB kısıtlı modu güncelleştirmez.
 - **Otomatik tarih ve saati zorla**: **gerekli** cihazların otomatik olarak tarih & zamanını ayarlamaya zorlar. Cihazın hücresel bağlantıları olduğunda veya konum hizmetleriyle arasında Wi-Fi etkinleştirildiğinde saat dilimi güncelleştirilir.
 - **Öğrencilerden** **ayrılmaları için** öğrencilerin ders uygulamasını kullanarak yönetilmeyen bir kursa kaydolmaya izin istemesini gerektir: **Yapılandırılmadı** (varsayılan) ayarı öğrencinin izin istemesini zorunlu tutmaz.
 
@@ -202,7 +200,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
-- **Geçiş kodu değişikliği**: geçiş kodunun değiştirilmesini, eklenmesini veya kaldırılmasını durdurmak için **Engelle** ' yi seçin. Bu özellik engellendikten sonra denetimli cihazlarda geçiş kodu kısıtlamalarında yapılan değişiklikler yoksayılır. **Yapılandırılmadı** (varsayılan) ayarı geçiş kodu ekleme, değiştirme veya kaldırma işlemlerine izin verir.
+- **Geçiş kodu değişikliği**: geçiş kodunun değiştirilmesini, eklenmesini veya kaldırılmasını durdurmak için **Engelle** ' yi seçin. Bu özellik engellendikten sonra denetimli cihazlarda geçiş kodu kısıtlamalarında yapılan değişiklikler yoksayılır. **Yapılandırılmadı** (varsayılan) ayarı, geçiş kodu ekleme, değiştirme veya kaldırma işlemlerine izin verir.
 
   - **Dokunma kimliği ve yüz kimliği değişikliği**: **engelleme** , kullanıcının TouchID parmak izlerini ve yüz kimliğini değiştirmesini, eklemesini veya kaldırmasını engeller. **Yapılandırılmadı** (varsayılan), kullanıcının cihazdaki TouchID parmak Izlerini ve yüz kimliğini güncelleştirmesine izin verir.
 
@@ -325,7 +323,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
-- **Kamera**: cihazdaki kameraya erişimi engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, cihazın kamerasına erişim sağlar.
+- **Kamera**: seçin **blok** için cihaz kameranızı erişimi engellemek için. **Yapılandırılmadı** (varsayılan) ayarı, cihazın kamerasına erişim sağlar.
 
   İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
 
@@ -491,7 +489,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
-- **AirDrop**: **Block** cihazda AirDrop kullanımını engelliyor. **Yapılandırılmadı** (varsayılan) ayarı yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verir.
+- **AirDrop**: **Block** cihazda AirDrop kullanımını engelliyor. **Yapılandırılmadı** (varsayılan) ayarı, yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verir.
 - **Apple Watch eşleştirme**: **blok** bir Apple Watch eşlemeyi engeller. **Yapılandırılmadı** (varsayılan) ayarı cihazın Apple Watch ile eşleştirilmesine izin verir.
 - **Bluetooth değişikliği**: **blok** son kullanıcının cihazdaki Bluetooth ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının bu ayarları değiştirmesine izin verir.
 - **İOS cihazının eşleştirilebileceği cihazları denetlemek Için konak eşleştirme**: **Yapılandırılmadı** (varsayılan), yöneticinin bir iOS cihazının hangi cihazlara eşlenebileceğini denetlemesine izin vermek için konak eşleştirmesine izin verir. **Engelle** ayarı konak eşleştirmeyi önler.

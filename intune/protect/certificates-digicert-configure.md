@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ca76ffe0c8fa42f1c2cf24fcdefd287140231220
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801636"
 ---
 # <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>DigiCert PKI platformu için Intune sertifika bağlayıcısını ayarlama
@@ -95,7 +95,7 @@ Bağlayıcıyı yalnızca DigiCert CA 'sı ile kullanacaksanız, bağlayıcıyı
 
    b. Sertifika için bir kolay ad sağlayın.
 
-   c. **Devam**' ı seçin.
+   c. Seçin **devam**.
 
    d. RA sertifikasını yerel bilgisayarınıza indirmek için, belirtilen bağlantıyı kullanın.
 
@@ -115,7 +115,7 @@ Bağlayıcıyı yalnızca DigiCert CA 'sı ile kullanacaksanız, bağlayıcıyı
 
    g. DigiCert CA 'dan indirdiğiniz RA sertifikasının konumunu seçin ve ardından **İleri**' yi seçin.
 
-   olsun. **Kişisel sertifika depolama** > **İleri ' yi**seçin.
+   h. **Kişisel sertifika depolama** > **İleri ' yi**seçin.
 
    i. RA sertifikasını ve özel anahtarını **yerel makine-kişisel** mağazaya aktarmak için **son** ' u seçin.
 
@@ -157,7 +157,7 @@ Bağlayıcıyı yalnızca DigiCert CA 'sı ile kullanacaksanız, bağlayıcıyı
 
 4. .NET Framework 3.5 yükleme:
 
-   a. **Denetim masası** > **programlar ve Özellikler** > **Windows özelliklerini açın veya kapatın**.
+   a.  >  **Programlar ve > Özellikler ' i** açarak **Windows özelliklerini açın veya kapatın**.
 
    b. **.NET Framework 3.5**’i seçin ve yükleyin.
 

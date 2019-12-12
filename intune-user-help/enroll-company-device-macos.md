@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 961c081b17d380bd00965708b6acd57b8059b2e0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506313"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Kuruluş tarafından sağlanan macOS cihazınızı yönetime kaydedin
@@ -70,7 +70,7 @@ macOS cihazınızı yönetime kaydetmek için aşağıdaki adımları tamamlayı
 
 Cihazınızda Mac OS için Intune Şirket Portalı uygulamasını indirin. Uygulama, cihazınızı yönetimde izlemenize, eşitlemenize, eklemenize ve kaldırmanıza, ayrıca uygulamalar yüklemenize olanak tanır. Bu adımlar ayrıca cihazınızı Şirket Portalı'na kaydetmeyi de anlatmaktadır.
 
-1. MacOS cihazınızda [https://portal.manage.microsoft.com/EnrollmentRedirect.aspx](https://portal.manage.microsoft.com/EnrollmentRedirect.aspx)' e gidin.
+1. MacOS cihazınızda [https://portal.manage.microsoft.com/EnrollmentRedirect.aspx](https://portal.manage.microsoft.com/EnrollmentRedirect.aspx)' a gidin.
 2. İş veya okul hesabınızla Şirket Portalı web sitesinde oturum açın. 
 3. Mac OS için Şirket Portalı yükleyicisini indirmek için **Uygulamayı Al**'a tıklayın.
 4. İstendiğinde .pkg dosyasını açın ve yükleme adımlarını tamamlayın.

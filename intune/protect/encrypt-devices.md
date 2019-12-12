@@ -18,10 +18,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390318"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini kullanma
@@ -77,7 +77,7 @@ Intune ile yönetebileceğiniz Filekasası ayarı hakkında ayrıntılı bilgi i
    >
    > **Oturumu kapatma sırasında Istemi devre dışı bırak** ayarı *Yapılandırılmadı*olarak ayarlandığında, **atlamaya izin verilen zaman sayısı** *yapılandırılmaz* veya bir değere sahip olabilir.
    >
-   > Bu sorun, gelecekteki bir güncelleştirmede çözümlenir.
+   > Bu sorun gelecekteki bir güncellemede çözülecektir.
 
 8. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.  
 
@@ -114,7 +114,7 @@ Windows 10 veya sonraki bir platformda Endpoint Protection için bir [cihaz yap�
 
 6. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.
 
-### <a name="manage-bitlocker"></a>BitLocker 'ı yönetme
+### <a name="manage-bitlocker"></a>seçin,
 
 Intune bir Windows 10 cihazını BitLocker ile şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken BitLocker kurtarma anahtarlarını görüntüleyebilir ve alabilirsiniz.
 
@@ -153,5 +153,5 @@ Yönetmek için şifreleme raporunu kullanın:
 
 Intune ile yapılandırabileceğiniz şifreleme ayarlarını inceleyerek şunları yapabilirsiniz:
 
-- [Kurulumu](endpoint-protection-windows-10.md#windows-encryption)
+- [BitLocker](endpoint-protection-windows-10.md#windows-encryption)
 - [FileVault](endpoint-protection-macos.md#filevault)

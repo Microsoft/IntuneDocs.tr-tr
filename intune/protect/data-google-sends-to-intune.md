@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 914ce3aa15099b7692d524dbfa368f99f0d092e8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504498"
 ---
 # <a name="data-google-sends-to-intune"></a>Google’ın Intune’a gönderdiği veriler
@@ -34,7 +34,7 @@ Bir cihazda Android kurumsal cihaz yönetimi etkinleştirildiğinde Microsoft In
 Aşağıdaki tabloda, bir cihazda cihaz yönetimi etkinleştirildiğinde Google’ın Intune’a gönderdiği veriler listelenmiştir:
 
 
-| Google’ın Intune’a gönderdiği veriler | Details | Kullanıldığı yer | Örnek |
+| Google’ın Intune’a gönderdiği veriler | Details | Kullanım alanı: | Örnek |
 |:---:|:---:|:---:|:---:|
 | Kurumsal veriler | Müşterinin Google’daki kuruluş tanımlayıcıları. | Intune ve Google arasında müşteri bilgileriyle ilgili bağlantı kurar. | **enterpriseId** örnek: LC04eik8a6.<br>**Ad**. Android kurumsal yapılandırılırken girilen Yönetici adı. Örnek: Joe Smith.<br>**Yönetici e-postası**. Android kurumsal yapılandırılırken kullanılan YourAdmin@gmail.com. |
 | Uygulama verileri | Yönetilen Play Store uygulamaları için veriler. | Uygulamayı kullanılabilir veya gerekli olarak kullanıcılara veya cihazlara hedefler. | **Uygulama Adı** örnek: Contoso Ambar Envanteri Uygulaması.<br>**Uygulamayı temsil eden Benzersiz Tanımlayıcı** örnek: app:com.Contoso.Warehouse.InventoryTracking |

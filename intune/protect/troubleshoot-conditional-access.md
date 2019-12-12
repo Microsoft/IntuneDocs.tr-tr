@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c662de98ffa497c5fbc89ac1b78ed8537ff0d80c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71729233"
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
@@ -42,7 +42,7 @@ Koşullu erişimin çalışması için aşağıdaki gereksinimlerin karşılanma
 
 - Gerek kullanıcı, gerekse cihaz, atanan Intune ilkeleriyle uyumlu olmalıdır.
 
-- Kullanıcıya varsayılan olarak bir cihaz uyumluluk ilkesi atanmış olmalıdır. Bu, Intune yönetim portalındaki **cihaz uyumluluğu** > **Uyumluluk ilkesi ayarları** altında olan **hiçbir uyumluluk ilkesi atanmamış ayar işareti cihazlarının** yapılandırmasına bağlıdır.
+- Kullanıcıya varsayılan olarak bir cihaz uyumluluk ilkesi atanmış olmalıdır. Bu, Intune yönetim portalında **cihaz uyumluluğu** > **Uyumluluk ilkesi ayarları** ' nın altında olan **Uyumluluk ilkesi atanmamış ayar işareti cihazlarının** yapılandırmasına bağlıdır.
 
 - Kullanıcı Outlook yerine cihazın yerel posta istemcisini kullanıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir. Bu, iOS, Windows Phone ve Android Knox cihazları için otomatik olarak gerçekleşir.
 
@@ -93,7 +93,7 @@ Azure Yönetim Portalı’nda ve cihaz envanteri raporunda her cihaz için bu ko
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Cihazlar uyumsuz, ancak kullanıcılar engellenmiyor
 
-- Windows bilgisayarları için koşullu erişim yalnızca yerel e-posta uygulamasını, modern kimlik doğrulaması ile Office 2013 veya Office 2016 ' i engeller. Outlook 'un önceki sürümlerini veya Windows bilgisayarlarda tüm posta uygulamalarını engellemek, [Azure Active Directory Koşullu Için SharePoint Online ve Exchange Online kurulumu UYARıNCA AAD cihaz kaydı ve Active Directory Federasyon Hizmetleri (AD FS) (AD FS) yapılandırması gerektirir Erişim](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication).
+- Windows bilgisayarları için koşullu erişim yalnızca yerel e-posta uygulamasını, modern kimlik doğrulaması ile Office 2013 veya Office 2016 ' i engeller. Outlook 'un önceki sürümlerinin veya Windows bilgisayarlarda tüm posta uygulamalarının engellenmesi, [Azure Active Directory Koşullu erişim Için SharePoint Online ve Exchange Online kurulumu](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication)uyarınca AAD cihaz kaydı ve Active Directory Federasyon Hizmetleri (AD FS) (AD FS) yapılandırmalarının kullanılmasını gerektirir.
 
 - Cihaz seçmeli olarak temizlendiğinde veya Intune kullanımından kaldırıldığında, erişimi birkaç saat daha devam edebilir. Bunun nedeni, Exchange 'in altı saat boyunca erişim haklarının önbelleğe alınır. Bu senaryoda, kullanımdan kaldırılan cihazlardaki verileri korumanın başka yöntemlerini göz önünde bulundurun.
 

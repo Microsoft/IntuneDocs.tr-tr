@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 383469c848726eb2cfbcd7d863931f1e84f2275a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504504"
 ---
 # <a name="data-apple-sends-to-intune"></a>Apple’ın Intune’a gönderdiği veriler
@@ -43,7 +43,7 @@ Microsoft Intune’un bir bağlantı kurabilmesi için, önce Apple hizmetlerini
 
 Aşağıdaki tablo, bir Apple cihazın Intune’a gönderdiği verileri listelemektedir. [Intune da Apple’a veri gönderir](data-intune-sends-to-apple.md). 
 
-| Hizmet | İleti | Intune’a gönderilen veriler | Kullanıldığı yer |
+| Hizmet | İleti | Intune’a gönderilen veriler | Kullanım alanı: |
 |:---:|:---:|:---:| ---|
 | [Indirin](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Kimlik doğrulaması | MessageType | İleti türü: kimlik doğrulaması. |
 | [Indirin](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Kimlik doğrulaması | Konu | Cihazın dinleyeceği konu. |
@@ -88,7 +88,7 @@ Aşağıdaki tablo, bir Apple cihazın Intune’a gönderdiği verileri listelem
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Belirteci | assignedCount | Bir uygulamaya atanmış lisans sayısı. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Belirteci | availableCount | Bir uygulamaya atanmamış lisans sayısı. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Belirteci | bundleId | Bir uygulamanın bundleId kimliği. |
-| [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Belirteci | yaptırımlar | Bir uygulamanın telif hakkı bilgileri. |
+| [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Belirteci | telif hakkı | Bir uygulamanın telif hakkı bilgileri. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Belirteci | CountryCode | Bir VPP programının ülke kodu. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Belirteci | deviceAssignable | Yönetici bir uygulama için cihaz lisansı atayabiliyorsa Apple bunu true olarak döndürür. Aksi takdirde false döndürülür. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Belirteci | facilitatorMemberId | Bir VPP hesabı yöneticisinin üye kimliği.  |

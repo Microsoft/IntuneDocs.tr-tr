@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74691718"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune 'da bilgi noktası olarak çalıştırılacak Windows 10 ve üzeri cihaz ayarları
@@ -165,7 +165,7 @@ Bu modda uygulamalar Başlat menüsünde sağlanır. Bu uygulamalar, yalnızca k
       > [!NOTE]
       > Microsoft bilgi noktası tarayıcısı kullanılarak otomatik oturum açma özelliği etkinleştirilmiş Windows 10 kiosks, Microsoft Store Iş için çevrimdışı bir lisans kullanmalıdır. Bu gereksinim, otomatik oturum açma 'nın Azure Active Directory (AD) kimlik bilgileri olmayan bir yerel kullanıcı hesabı kullanması nedeniyle oluşur. Bu nedenle, çevrimiçi lisanslar değerlendirilemiyor. Daha fazla bilgi için bkz. [çevrimdışı uygulamaları dağıtma](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
-  - **Uygulamaları**
+  - **Uygulamalar**
 
     - **Mağaza uygulaması ekle**: İş İçin Microsoft Store’dan bir uygulama ekleyin. Listede hiç uygulama yoksa uygulama edilebilir ve [bunları Intune’a ekleyebilirsiniz](../apps/store-apps-windows.md). Örneğin Bilgi Noktası Tarayıcısı, Excel, OneNote gibi pek çok uygulama ekleyebilirsiniz.
 

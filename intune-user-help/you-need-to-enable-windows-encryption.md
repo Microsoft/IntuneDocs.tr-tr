@@ -1,7 +1,7 @@
 ---
 title: Şifrelemeyi etkinleştirmeniz gerekiyor | Microsoft Docs
 titlesuffix: Microsoft Intune
-description: Cihazınızda şifrelemeyi etkinleştirmeniz gerekir.
+description: Cihazınızda şifrelemeyi etkinleştirmeniz gerekiyor.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -21,10 +21,10 @@ ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1d0e2f3c87feb1b2a28cc41dbd6e7f179f61eafb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507859"
 ---
 # <a name="you-need-to-enable-encryption"></a>Şifrelemeyi etkinleştirmeniz gerekiyor

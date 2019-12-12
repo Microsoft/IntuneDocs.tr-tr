@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b94be3e1454c60f16ff40e73ce37f8c4e349126d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72813331"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune Veri Ambarı’nda kullanıcı ömrü gösterimi
@@ -39,14 +39,14 @@ Bir varlığın ömrünü incelerseniz bu senaryoyu daha iyi anlayabilirsiniz.
  
 | GörünenAd | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| John Smith | YANLÝÞ | 06/01/2017 | 12/31/9999 | DEĞERI
+| John Smith | Yanlış | 06/01/2017 | 12/31/9999 | TRUE
  
 John Smith, 25/07/2017 tarihinde lisansından vazgeçti. **Kullanıcı** tablosunda aşağıdaki girdiler bulunur. Var olan kayıtlardaki değişiklikler `marked`. 
 
 | GörünenAd | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| John Smith | YANLÝÞ | 06/01/2017 | `07/26/2017` | `FALSE` 
-| John Smith | DEĞERI | 07/26/2017 | 12/31/9999 | DEĞERI 
+| John Smith | Yanlış | 06/01/2017 | `07/26/2017` | `FALSE` 
+| John Smith | TRUE | 07/26/2017 | 12/31/9999 | TRUE 
 
 İlk satır, John Smith'in 06.01.2017 - 07/25/2017 arasındaki Intune'da var olduğunu belirtir. İkinci kayıt, kullanıcının 07/25/2017 tarihinde silindiği ve artık Intune'de bulunmadığını belirtir.
 
@@ -54,9 +54,9 @@ John Smith, 25/07/2017 tarihinde lisansından vazgeçti. **Kullanıcı** tablosu
  
 | GörünenAd | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| John Smith | YANLÝÞ | 06/01/2017 | 07/26/2017 | YANLÝÞ 
-| John Smith | DEĞERI | 07/26/2017 | `08/31/2017` | `FALSE` 
-| John Smith | YANLÝÞ | 08/31/2017 | 12/31/9999 | DEĞERI 
+| John Smith | Yanlış | 06/01/2017 | 07/26/2017 | Yanlış 
+| John Smith | TRUE | 07/26/2017 | `08/31/2017` | `FALSE` 
+| John Smith | Yanlış | 08/31/2017 | 12/31/9999 | TRUE 
  
 Tüm kullanıcıların mevcut durumunu görmek isteyen bir kişi, `IsCurrent = TRUE`de bir filtre uygulamak ister. 
  

@@ -18,10 +18,10 @@ search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3a1af2e7c8aff281e04e92344b3e2c762bb23e0a
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74465754"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>Mevcut şirket içi proxy sunucularıyla çalışma
@@ -91,11 +91,11 @@ Yapılandırma dosyaları değiştirildikten sonra, Intune Bağlayıcısı hizme
 
 1. **Services. msc**dosyasını açın.
 2. **Intune ODJConnector hizmetini**bulun ve seçin.
-3. **Yeniden Başlat**' ı seçin.
+3. Seçin **yeniden**.
 
 ![Hizmetin yeniden başlatılması ekran görüntüsü](./media/autopilot-hybrid-connector-proxy/service-restart.png)
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Cihazlarınızı yönetin](../remote-actions/device-management.md)
+[Cihazlarınızı yönetme](../remote-actions/device-management.md)

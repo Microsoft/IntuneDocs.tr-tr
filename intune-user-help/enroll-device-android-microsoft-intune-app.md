@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506301"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Kurumsal cihazınızı Microsoft Intune uygulamasına kaydetme
@@ -34,10 +34,10 @@ Kaydolmak için dört yol vardır. Kuruluşunuz hangi seçeneği kullanacağın�
  
 * Yakın alan Iletişimi (NFC)  
 * Belirteç  
-* QR kodu   
+* QR Kodu   
 * Google sıfır Touch  
 
-## <a name="enroll-device"></a>Cihazı kaydetme 
+## <a name="enroll-device"></a>Cihaz kaydetme 
 Cihazınızı ayarlamak ve kaydetmek için aşağıdaki adımları uygulayın.  
 
 > [!NOTE]
@@ -119,7 +119,7 @@ Bu bölümde, şirketinizin sunduğu belirteci girersiniz. İşiniz bittiğinde 
 
 4. **Kodu girin**' i seçin.  
 
-5. **Tarama veya kod girme** ekranında, kuruluşunuzun size verdiği kodu yazın.  ardından **İleri**' ye tıklayın.  
+5. **Tarama veya kod girme** ekranında, kuruluşunuzun size verdiği kodu yazın.  Ardından **İleri**'ye tıklayın.  
 
    ![Taramanın örnek görüntüsü veya kod girme, Ileri vurgu düğmesi.](./media/token-intune-app-04.png)  
 

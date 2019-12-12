@@ -17,10 +17,10 @@ ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 122872eff92a37c8724fd4a853091e51a0a54c66
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506536"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Intune kullanarak VPN bağlantıları eklemek için Windows 10 ve Windows holographic cihaz ayarları
@@ -152,7 +152,7 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
   - **Etki alanı**: kuralı uygulamak için tam etki alanı adını (FQDN) veya bir DNS sonekini girin. Ayrıca, DNS son ekinin başındaki bir nokta (.) girebilirsiniz. Örneğin `contoso.com` veya `.allcontososubdomains.com` girin.
   - **DNS sunucuları**: etki ALANıNı çözen IP ADRESINI veya DNS sunucusunu girin. Örneğin `10.0.0.3` veya `vpn.contoso.com` girin.
   - **Proxy**: etki alanını çözen Web proxy sunucusunu girin. Örneğin, şunu girin: `http://proxy.com`.
-  - **Otomatik bağlan**: **etkinleştirildiğinde**, cihaz girdiğiniz bir etki alanına BAĞLANDıĞıNDA cihaz otomatik olarak VPN 'ye bağlanır, örneğin `contoso.com`. **Yapılandırılmadığında** (varsayılan) cihaz VPN 'ye otomatik olarak bağlanmaz
+  - **Otomatik bağlan**: **etkinleştirildiğinde**, cihaz, girdiğiniz `contoso.com`gibi bir etki alanına bağlandığında, cihaz otomatik olarak VPN 'e bağlanır. **Yapılandırılmadığında** (varsayılan) cihaz VPN 'ye otomatik olarak bağlanmaz
   - **Persistent**: **etkin**olarak AYARLANDıĞıNDA, kural, VPN bağlantısı kesildikten sonra bile cihazdan El Ile kaldırılana kadar ad çözümleme ilkesi tablosunda (NRPT) kalır. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, VPN BAĞLANTıSı kesildiğinde VPN profilindeki NRPT kuralları cihazdan kaldırılır.
 
 ## <a name="proxy-settings"></a>Proxy ayarları
@@ -177,7 +177,7 @@ Bir Kullanıcı listede bir DNS sonekine bağlıysa, Kullanıcı otomatik olarak
 
 Örneğin, Kullanıcı zaten güvenilir bir DNS sonekine bağlandıysa, aşağıdaki yeniden Tetikleyiciler yok sayılır. Özellikle, listedeki DNS sonekleri, aşağıdakiler de dahil olmak üzere tüm diğer bağlantı oto tetikleyicilerini iptal eder:
 
-- Her zaman açık
+- Her zaman etkin
 - Uygulama tabanlı tetikleyici
 - DNS oto tetikleyicisi
 

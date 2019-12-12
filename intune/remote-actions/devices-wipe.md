@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a7e58fc0ceafe428646b631c55c42a6d2b119e4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832668"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991769"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -47,7 +47,7 @@ ms.locfileid: "74832668"
 
 **Kayıt durumu ve kullanıcı hesabını koru** seçeneği yalnızca Windows 10 sürüm 1709 veya sonraki sürümlerde kullanılabilir.
 
-**Korumalı silme gerçekleştir** seçeneği, cihazı kapatarak Temizleme eyleminin atlalanamadığından emin olur. Korumalı silme işlemi başarılı olana kadar cihazı sıfırlamaya çalışmaya devam edecektir. Bazı yapılandırmalarda bu eylem, cihazın yeniden başlatılamamasından bırakabilir.
+**Korumalı silme gerçekleştir** seçeneği, cihazı kapatarak Temizleme eyleminin atlalanamadığından emin olur. Korumalı silme işlemi başarılı olana kadar cihazı sıfırlamaya çalışmaya devam edecektir. Bazı yapılandırmalarda bu eylem cihazın yeniden başlatılamamasından çıkamayabilir.
 
 MDM ilkeleri, cihazın Intune’a bir sonraki bağlanışında yeniden uygulanır.
 
@@ -59,7 +59,7 @@ Silme, cihazı yeni bir kullanıcıya vermeden önce veya cihaz kaybolduğunda/�
 3. **Cihazlar** > **Tüm cihazlar**’ı seçin.
 4. Silme eylemini uygulamak istediğiniz cihazın adını seçin.
 5. Cihaz adının gösterildiği bölmede **Sil**’i seçin.
-6. Windows 10 sürüm 1709 veya sonraki sürümlerde, **Kayıt durumunu ve kullanıcı hesabını tut** seçeneği de sağlanır. 
+6. Windows 10 sürüm 1709 veya üzeri için, ayrıca **silme cihazına sahip olursunuz, ancak kayıt durumunu ve ilişkili kullanıcı hesabı seçeneğini saklayın** . 
     
     |Silme sırasında tutuldu |Tutulmadı|
     | -------------|------------|

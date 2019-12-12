@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73414695"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
@@ -34,7 +34,7 @@ Bir Intune Yöneticisi olarak, Şirket Portalı uygulaması da dahil olmak üzer
 
 Windows 10 ' da, dışarıdan yükleme Windows 'un önceki sürümlerinden farklıdır:
 
-- Kurumsal bir ilke kullanarak dışarıdan yükleme için bir cihazın kilidini açabilirsiniz. Intune, "güvenilir uygulama yüklemesi" adlı bir cihaz yapılandırma ilkesi sağlar. Bunun <allow> olarak ayarlanması, appx uygulamasını imzalamak için kullanılan sertifikaya zaten güvenecek olan cihazlar için gereklidir.
+- Kurumsal bir ilke kullanarak dışarıdan yükleme için bir cihazın kilidini açabilirsiniz. Intune, "güvenilir uygulama yüklemesi" adlı bir cihaz yapılandırma ilkesi sağlar. Bunu <allow> olarak ayarlamak, appx uygulamasını imzalamak için kullanılan sertifikaya zaten güvenecek olan cihazlar için gereklidir.
 
 - Symantec telefon sertifikaları ve dışarıdan yükleme lisans anahtarları gerekli değildir. Ancak, şirket içi bir sertifika yetkilisi yoksa, bir genel sertifika yetkilisinden kod imzalama sertifikası edinmeniz gerekebilir. Daha fazla bilgi için bkz. [kod Imzalamaya giriş](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing).
 

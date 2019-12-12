@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 170ed2fbf300299796401b10a906d875b6f50bf5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490452"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune Veri Ambarı API uç noktası
@@ -64,7 +64,7 @@ Beta sürümünü kullanarak Veri Ambarı’nın en yeni işlevlerini deneyebili
 
 ## <a name="odata-query-options"></a>OData sorgu seçenekleri
 
-Geçerli sürüm şu OData sorgu parametrelerini destekliyor: `$filter`, `$select`, `$skip,` ve `$top`. @No__t-0 ' da, sütunlar geçerliyse yalnızca `DateKey` veya `RowLastModifiedDateTimeUTC` desteklenebilir ve diğer özellikler hatalı bir istek tetikleyecektir.
+Geçerli sürüm şu OData sorgu parametrelerini destekliyor: `$filter`, `$select`, `$skip,` ve `$top`. `$filter`, sütunlar geçerli olduğunda yalnızca `DateKey` veya `RowLastModifiedDateTimeUTC` desteklenebilir ve diğer özellikler hatalı bir istek tetikleyecektir.
 
 ## <a name="datekey-range-filters"></a>DateKey Aralık Filtreleri
 
@@ -80,8 +80,8 @@ Geçerli sürüm şu OData sorgu parametrelerini destekliyor: `$filter`, `$selec
 
 |                             Filtrele                             |           Performansı En İyi Duruma Getirme           |                                          Description                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-|    `maxhistorydays=7`                                            |    Tümünü                                      |    `DateKey` ile 20180214 ve 20180221 arasında veri döndürülür.                                     |
-|    `$filter=DateKey eq 20180214`                                 |    Tümünü                                      |    `DateKey` ile 20180214’e eşit veri döndürülür.                                                    |
-|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Tümünü                                      |    `DateKey` ile 20180214 ve 20180220 arasında veri döndürülür.                                     |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Tümünü                                      |    `DateKey` ile 20180214’e eşit veri döndürülür. `maxhistorydays` yoksayılır.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Tümünü                                       |    @No__t-0 olan dönüş verileri `2018-02-21T23:18:51.3277273Z` ' den büyük veya buna eşit                             |
+|    `maxhistorydays=7`                                            |    Tam                                      |    `DateKey` ile 20180214 ve 20180221 arasında veri döndürülür.                                     |
+|    `$filter=DateKey eq 20180214`                                 |    Tam                                      |    `DateKey` ile 20180214’e eşit veri döndürülür.                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Tam                                      |    `DateKey` ile 20180214 ve 20180220 arasında veri döndürülür.                                     |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Tam                                      |    `DateKey` ile 20180214’e eşit veri döndürülür. `maxhistorydays` yoksayılır.                            |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Tam                                       |    `RowLastModifiedDateTimeUTC` ile dönüş verileri `2018-02-21T23:18:51.3277273Z` büyüktür veya eşittir                             |

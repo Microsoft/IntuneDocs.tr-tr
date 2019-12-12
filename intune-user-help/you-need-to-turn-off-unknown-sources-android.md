@@ -1,7 +1,7 @@
 ---
 title: Bilinmeyen kaynakları kapatmanız gerekir | Microsoft Docs
 titlesuffix: Microsoft Intune
-description: Bilinmeyen kaynaklardan yükleme devre dışı bırakılmalıdır.
+description: Bilinmeyen kaynaklardan yüklemelerin devre dışı bırakılması gerekir.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -19,10 +19,10 @@ ROBOTS: ''
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6183f6740030ab3e00710b75f9b23b9c239055c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72500550"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Bilinmeyen kaynakları kapatmanız gerekir

@@ -15,10 +15,10 @@ ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
 ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68354397"
 ---
 # <a name="metadata-and-markdown-template"></a>Meta Veriler ve Markdown Şablonu
@@ -34,11 +34,11 @@ Tüm meta veriler bloğu, gerekli ve isteğe bağlı alanlara bölünmüş halde
 
 - İki nokta (:) işareti ve meta veri öğesinin değeri arasında bir boşluk bulunması **gereklidir**.
 - İsteğe bağlı bir meta veri öğesi için bir değer yoksa, # karakterini kullanarak öğeyi açıklama satırı yapın (boş bırakmayın veya “na” kullanmayın); açıklama satırı yapılmış bir öğe için bir değer ekliyorsanız, # karakterini kaldırmayı unutmayın.
-- Değer (ör. bir başlık) içerisindeki iki nokta işaretleri meta veri ayrıştırıcısını durdurur. Yerine, HTML kodlamasını kullanın &#58; (örneğin, "Başlık: Azure Rights Management&#58; temel bilgiler | Azure RMS ").
+- Değer (ör. bir başlık) içerisindeki iki nokta işaretleri meta veri ayrıştırıcısını durdurur. Bunun yerine, &#58; karakterine ait HTML kodlamasını kullanın; (ör. "başlık: Azure Rights Management&#58; temeller | Azure RMS").
 - **başlık**: Bu başlık, arama motoru sonuçlarında görünür. Başlık bir dikey çizgi (|) ile bitmeli ve ardından hizmetin adı gelmelidir (bir örneği için yukarıya bakın). Başlık, H1 başlığınızda yer alan başlığın aynısı olmak zorunda değildir (aynısı olmaması daha iyi olabilir). Yaklaşık 65 karakter uzunluğunda olmalıdır (| HİZMET ADI kısmı dahil olmak üzere).
-- **Yazar**, **yönetici**, **Gözden geçiren**: Yazar alanı, diğer adı değil, yazarın **GitHub Kullanıcı adını** içermelidir.  Öte yandan, “yönetici” ve “gözden geçiren” alanları, diğer adlar içermelidir. ms.reviewer, makale veya hizmetle ilişkili proje yöneticisinin adını belirtir.
-- **MS. assetid**: Bu, büyük harflerin bulunduğu bir makalenin GUID 'sidir. Yeni bir markaşağı dosyası oluştururken, öğesinden [https://www.guidgenerator.com](https://www.guidgenerator.com)bir GUID alın. 
-- **MS. prod**, **MS. Service**, **MS. Technology**, **MS. devlang**, **MS. Topic**, **MS. TGT _pltfrm**: Bu öğeler için olası değerler [burada](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default)bulunabilir.
+- **yazar**, **yönetici**, **gözden geçiren**: Yazar alanı, yazarın diğer adını değil **Github kullanıcı adını** içermelidir.  Öte yandan, “yönetici” ve “gözden geçiren” alanları, diğer adlar içermelidir. ms.reviewer, makale veya hizmetle ilişkili proje yöneticisinin adını belirtir.
+- **ms.assetid**: Makalenin CAPS’ten gelen GUID’idir. Yeni bir markı dosyası oluştururken [https://www.guidgenerator.com](https://www.guidgenerator.com)bir GUID alın. 
+- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Bu öğeler için olası değerler [burada](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default) bulunabilir.
 
 ## <a name="basic-markdown-and-gfm"></a>Temel Markdown ve GFM
 
@@ -47,7 +47,7 @@ Tüm temel ve Github özellikli markdown’lar desteklenir. Bunlar hakkında dah
 - [Temel markdown söz dizimi](https://daringfireball.net/projects/markdown/syntax)
 - [Github özellikli markdown (GFM) belgeleri](https://guides.github.com/features/mastering-markdown)
 
-## <a name="headings"></a>Başlıkları
+## <a name="headings"></a>Başlıklar
 
 Birinci ve ikinci düzey başlık örnekleri yukarıda görülebilir. 
 
@@ -70,7 +70,7 @@ Konunuzda yalnızca bir adet birinci düzey başlık **bulunmalıdır**. Bu baş
 
 
 
-## <a name="links"></a>Bağlantılar
+## <a name="links"></a>Links
 
 Aynı depodaki bir markdown dosyasına bağlantı sağlamak için [göreli bağlantıları](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2) kullanın. 
 
@@ -78,7 +78,7 @@ Aynı depodaki bir markdown dosyasına bağlantı sağlamak için [göreli bağl
 
 Aynı markdown dosyasındaki bir üst bilgiye bağlantı sağlamak için, yayımlanan makalenin kaynağını görüntüleyerek üst bilginin kimliğini bulun (ör. `id="blockquote"`) ve # + kimlik şeklinde kullanarak bağlantıyı oluşturun (ör. `#blockquote`).
 
-- Örnek: [Alıntı blokları](#blockquote)
+- Örnek: [Alıntı Blokları](#blockquote)
 
 Aynı depoda bulunan bir markdown dosyasındaki bir üst bilgiye bağlantı sağlamak için, göreli bağlantı sağlama ve diyez etiketli bağlantı sağlamayı birlikte kullanın.
 
@@ -112,7 +112,7 @@ Markdown dosyasında bir URL görünürse, bu URL tıklanabilir bir bağlantıya
     1. Deniz Acar
     1. Turgay Elmas
 1. sıralı
-1. list
+1. liste
 
 
 ### <a name="unordered-lists"></a>Sırasız listeler
@@ -121,14 +121,14 @@ Markdown dosyasında bir URL görünürse, bu URL tıklanabilir bir bağlantıya
 - bir
 - madde
 - madde işaretli
-- list
+- liste
 
 
 #### <a name="unordered-list-with-an-embedded-lists"></a>İçinde katıştırılmış bir liste bulunan sırasız liste
 
 - Bu 
 - madde işaretli 
-- list
+- liste
   - Emel Mert
   - Murat Arslan
 - içerir  
@@ -183,7 +183,7 @@ Bu bir `in-line code` örneğidir.
 
 ![animasyonlu gif](./media/hololens.gif)
 
-## <a name="alerts"></a>Uyarılar
+## <a name="alerts"></a>Alerts
 
 ### <a name="note"></a>Not
 

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73414663"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Microsoft Intune’a kaydolma veya Intune’da oturum açma
@@ -68,7 +68,7 @@ Intune Azure portal: https://portal.azure.com/#blade/Microsoft_Intune_DeviceSett
 
 Eğitim için Intune: https://intuneeducation.portal.azure.com
 
-Klasik Intune Portalı: https://manage.microsoft.com Intune klasik portalı yalnızca Intune PC yazılım istemcisi ile kaydedilen cihazları yönetmek için kullanılır
+Klasik Intune Portalı: https://manage.microsoft.com klasik Intune portalı, yalnızca Intune PC yazılım istemcisi ile kaydedilen cihazları yönetmek için kullanılır
 
 ### <a name="urls-for-intune-services-provided-by-office-365"></a>Office 365 tarafından sunulan Intune Hizmetleri için URL 'Ler
 

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563712"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
@@ -50,7 +50,7 @@ Uygulama bölmesinde, ortamınızdaki bir uygulamanın durumu hakkındaki ayrın
  | **Uygulama ayrıntıları**            | **Açıklama**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Yayımcı**          | Uygulamanın yayımcısı.                                            |
-| **İşletim Sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
+| **İşletim sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
 | **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat. <b>**Note**: Bu tarih değeri, bir BT Yöneticisi uygulama meta verilerini değiştirdiğinde (uygulama kategorisi veya uygulama açıklaması gibi) güncelleştirilir.                        |
 | **Atanan**           | Uygulamanın atanıp atanmadığı (**Evet** veya **Hayır**).                  |
 
@@ -59,9 +59,9 @@ Grafikler aşağıdaki durumlar için uygulamaların sayısını gösterir:
 
 | **Cihaz durumu**       | **Açıklama**                                       |
 |-----------------------|-------------------------------------------------------|
-| **Yüklendiyse**         | Yüklenen uygulamaların sayısı.                         |
+| **Yüklendi**         | Yüklenen uygulamaların sayısı.                         |
 | **Yüklü Değil**     | Yüklenmemiş uygulamaların sayısı.                     |
-| **Başaramadı**            | Başarısız olan yüklemelerin sayısı.                   |
+| **Başarısız**            | Başarısız olan yüklemelerin sayısı.                   |
 | **Yükleme Bekletiliyor**   | Yüklenme sürecinde olan uygulamaların sayısı. |
 | **Uygulanamaz**           | Durumun uygulanamadığı uygulamaların sayısı.            |
 

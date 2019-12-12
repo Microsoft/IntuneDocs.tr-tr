@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059834"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune 'da önceden paylaşılan anahtarla bir WiFi profili oluşturmak için özel cihaz profili kullanma
@@ -70,7 +70,7 @@ Bu özellik şunları destekler:
         > [!NOTE]
         > Başına nokta karakterini eklediğinizden emin olun.
 
-        SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, Wi-Fi `Hotspot-1` olarak adlandırılmışsa, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` girin.
+        SSID, ilkeyi oluşturmakta olduğunuz SSID’dir. Örneğin, Wi-Fi adı `Hotspot-1`, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`girin.
 
     4. **Veri türü**: **dize**seçin.
 
@@ -92,7 +92,7 @@ Aşağıdaki örnek bir Android veya Windows Wi-Fi profili için XML kodu örne�
 
 - `<hex>53534944</hex>`, `<name><SSID of wifi profile></name>` onaltılı değerine ayarlanmalıdır. Windows 10 cihazları yanlış bir `x87D1FDE8 Remediation failed` hatası döndürebilir, ancak cihaz hala profili içerir.
 
-- XML, `&` (ampersan) gibi özel karakterler içerir. Özel karakterlerin kullanılması, XML 'nin beklenen şekilde çalışmasını engelleyebilir. 
+- XML 'de `&` (ampersan) gibi özel karakterler vardır. Özel karakterlerin kullanılması, XML 'nin beklenen şekilde çalışmasını engelleyebilir. 
 
 ### <a name="example"></a>Örnek
 
@@ -229,10 +229,10 @@ Ayrıca, var olan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilir
 
 1. C:\WiFi. gibi, dışarıya aktarılmış W-Fi profilleri için yerel bir klasör oluşturun
 2. Yönetici olarak bir komut istemi açın ( **yönetici olarak çalıştır** > `cmd`sağ tıklayın).
-3. `netsh wlan show profiles`çalıştırın. Tüm profillerin adları listelenir.
-4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`çalıştırın. Bu komut c:\Wifi. içinde `Wi-Fi-YourProfileName.xml` adlı bir dosya oluşturur
+3. `netsh wlan show profiles` öğesini çalıştırın. Tüm profillerin adları listelenir.
+4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi` öğesini çalıştırın. Bu komut, c:\Wifi. içinde `Wi-Fi-YourProfileName.xml` adlı bir dosya oluşturur
 
-    - Önceden paylaşılan anahtar içeren bir Wi-Fi profilini dışarı aktarıyorsanız, komutuna `key=clear` ekleyin:
+    - Önceden paylaşılan anahtar içeren bir Wi-Fi profilini dışarı aktarıyorsanız komuta `key=clear` ekleyin:
   
         `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 
@@ -241,7 +241,7 @@ Ayrıca, var olan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilir
 XML dosyasına sahip olduktan sonra, XML sözdizimini kopyalayıp OMA-URI ayarları > **veri türü**' ne yapıştırın. [Özel bir profil oluşturma](#create-a-custom-profile) (Bu makalede) adımları listeler.
 
 > [!TIP]
-> `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`, tüm profilleri XML biçiminde de içerir.
+> `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` tüm profilleri XML biçiminde de içerir.
 
 ## <a name="best-practices"></a>En iyi uygulamalar
 

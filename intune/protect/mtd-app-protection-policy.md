@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188508"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Intune ile Mobile Threat Defense uygulama koruma ilkesi oluşturma
@@ -61,7 +61,7 @@ MTD ile uygulama koruma ilkesi önkoşulları:
 
   **Eylem**seçenekleri:
 
-  - **Hizmete erişimi**
+  - **Erişimi engelle**
   - **Verileri silme**
 
 - **Atamalar**: ilkeyi Kullanıcı gruplarına atayın.  Grubun üyeleri tarafından kullanılan cihazlar, Intune uygulama koruması aracılığıyla hedeflenen uygulamalardaki şirket verilerine erişim için değerlendirilir.

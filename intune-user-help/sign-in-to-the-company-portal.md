@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508291"
 ---
 # <a name="sign-in-to-company-portal"></a>Şirket Portalı oturum açın  
@@ -40,7 +40,7 @@ Aşağıdaki adımlarda iOS için Şirket Portalı ekran görüntüleri gösteri
 
 1. Uygulamayı cihazınızda açın ve **oturum aç**' a dokunun.  
 
-   [![Örnek Şirket Portalı oturum açma sayfasının ekran görüntüsü. ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [Şirket Portalı oturum açma sayfasının örnek ekran görüntüsünü ![.](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. **İş veya okul hesabınızı** girin ve **İleri**’ye dokunun.
@@ -79,7 +79,7 @@ Aşağıdaki adımlarda iOS için Şirket Portalı ekran görüntüleri gösteri
 
    ![İş bilgisayarınızdan benzersiz bir geçiş kodu ile https://microsoft.com/devicelogin sayfasına gidip oturum açmak için bu kodu kullanmaya ilişkin yönergeler sağlanır.](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. Diğer cihazınızda (kimlik doğrulamak için kullandığınız) tarayıcınızı açın ve [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)' e gidin. Kodu girin veya yapıştırın.  
+3. Diğer cihazınızda (kimlik doğrulamak için kullandığınız) tarayıcınızı açın ve [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)gidin. Kodu girin veya yapıştırın.  
 
    ![Kullanıcının Şirket Portalı uygulamasındaki tarayıcı yerine iş bilgisayarındaki tarayıcısının bir resmi. Görüntülenen "Cihaz oturum açma" sayfası kullanıcıdan Şirket Portalı uygulamasından aldığı kodu girmesini ister.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 

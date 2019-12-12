@@ -5,7 +5,7 @@ description: Microsoft Defender Gelişmiş tehdit koruması 'nı yönetmek için
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 85d0b28de6c133ece5116dd78b1646f497ff2f6b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060063"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882335"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune için Microsoft Defender Gelişmiş tehdit koruması temel ayarları
 
@@ -429,7 +429,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
 ## <a name="microsoft-defender-firewall"></a>Microsoft Defender güvenlik duvarı
 Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) bölümüne bakın.
 
-- **Silinmeden önce güvenlik ilişkilendirmesi boşta kalma süresi**  - mdmstore/Global/saıdsaati   
+- **Silinmeden önce güvenlik ilişkilendirmesi boşta kalma süresi** *mdmstore/Global/saıdsaati*  -    
   Güvenlik ilişkilendirmeleri, bu sayıda saniye boyunca ağ trafiği görülmediğinde silinir.  
   **Varsayılan**: 300
 
@@ -590,11 +590,21 @@ Daha fazla bilgi için Windows belgelerindeki [güvenlik DUVARı CSP](https://do
 
 Daha fazla bilgi için Windows belgelerindeki [Passportforwork CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) bölümüne bakın.
 
-- **İş için Windows Hello**  - tenantıd/policies/usepassportforwork yapılandırma    
+- **İş için Windows Hello** *tenantıd/policies/usepassportforwork yapılandırma*  -     
   Iş için Windows Hello, parolaları, akıllı kartları ve sanal akıllı kartları değiştirerek Windows 'da oturum açmak için alternatif bir yöntemdir.  
 
-  - *Evet*olarak ayarlandığında, bu ilkeyi etkinleştirir ve cihaz Iş Için Windows Hello 'yu hazırlar.  
-  - *Yapılandırılmadı*olarak ayarlandığında, taban çizgisi cihazın ilke ayarını etkilemez. Bu, Iş için Windows Hello 'nun bir cihazda devre dışı bırakıldığı durumlarda devre dışı kaldığı anlamına gelir. Etkinse, etkin kalır. 
+
+  > [!IMPORTANT]
+  > Bu ayarın seçenekleri, örtülü anlamlarından ters çevrilir. Ters çevrilirken, *Evet* değeri Windows Hello 'yu etkinleştirmez ve bunun yerine *yapılandırılmamış*olarak değerlendirilir. Bu ayar *Yapılandırılmadı*olarak ayarlandığında, bu temeli alan cihazlarda Windows Hello etkinleştirilir.
+  >
+  > Aşağıdaki açıklamalar bu davranışı yansıtacak şekilde düzenlendi. Ayarların ters çevrilmesi, bu güvenlik temeline yönelik gelecekteki bir güncelleştirmede düzeltilecektir.
+
+  - *Yapılandırılmadı*olarak ayarlandığında Windows Hello etkinleştirilmiştir ve cihaz Iş Için Windows Hello 'yu sağlar.
+  - *Evet*olarak ayarlandığında, taban çizgisi cihazın ilke ayarını etkilemez. Bu, Iş için Windows Hello 'nun bir cihazda devre dışı bırakıldığı durumlarda devre dışı kaldığı anlamına gelir. Etkinleştirilirse, etkin kalır.
+  <!-- expected behavior 
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   Bu taban çizgisi aracılığıyla Iş için Windows Hello 'Yu devre dışı bırakayükleyemezsiniz. [Windows kaydını](windows-hello.md)yapılandırırken veya [kimlik koruması](identity-protection-configure.md)için bir cihaz yapılandırma profilinin parçası olarak Iş için Windows Hello 'yu devre dışı bırakabilirsiniz.  
 

@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 02293b29f8634161582af2348b1cb30039ca3c52
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73415575"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-intercede"></a>İOS veya ıpados cihazını Şirket Portalı ve ıntercede ile ayarlama
@@ -36,7 +36,7 @@ Kayıt sırasında, bir türetilmiş kimlik bilgisini cihazınıza de yüklersin
 * Okul veya iş uygulamalarında oturum açma, Wi-Fi ve sanal özel ağlar (VPN)
 * Okul veya iş e-postalarını S/MIME sertifikaları kullanarak imzalama ve şifreleme  
 
-Bu makalede şunları yapmanız gerekir:  
+Bu makalede şunları yapacaksınız:  
 
 * Intune Şirket Portalı ile bir mobil iOS veya ıpados cihazı kaydedin.  
 * Kuruluşunuzun türetilmiş kimlik bilgisi sağlayıcısından, [ıntercede](https://www.intercede.com/)tarafından türetilmiş bir kimlik bilgisi alın.   
@@ -61,7 +61,7 @@ Türetilmiş kimlik bilgileri, özel yayın (SP) 800-157 kapsamında türetilmi�
 * Cihazınızda yüklü iOS ve Idos Intune Şirket Portalı uygulaması
 
 
-## <a name="enroll-device"></a>Cihazı kaydetme  
+## <a name="enroll-device"></a>Cihaz kaydetme  
 1. Mobil cihazınızda iOS için Şirket Portalı App/ıpados ' i açın ve iş hesabınızla oturum açın.  
 2. Ekranda görüntülenen kodu yazın.  
 

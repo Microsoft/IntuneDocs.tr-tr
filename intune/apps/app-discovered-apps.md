@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564255"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899405"
 ---
 # <a name="intune-discovered-apps"></a>Intune bulunan uygulamalar
 
@@ -60,12 +60,13 @@ Aşağıdaki liste, uygulama platformu türünü, kişisel cihazlar için izlene
 | Windows Phone 8 | Yalnızca yönetilen uygulamalar | Yalnızca yönetilen uygulamalar | Her 7 günde bir cihaz kaydı |
 | Windows RT | Yalnızca yönetilen uygulamalar | Yalnızca yönetilen uygulamalar | Her 7 günde bir cihaz kaydı |
 | iOS | Yalnızca yönetilen uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
-| Mac OS | Cihazda yüklü tüm uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
+| Mac OS | Yalnızca yönetilen uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
 | Android | Yalnızca yönetilen uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
 | Android Kurumsal | Yalnızca yönetilen uygulamalar | Yalnızca Iş profilinde yüklü olan uygulamalar | Her 7 günde bir cihaz kaydı |
 
 > [!NOTE]
-> Windows 10 karma Azure AD 'ye katılmış cihazlar Configuration Manager içindeki uygulama yönetimi iş yükünde gösterildiği gibi, şu anda uygulama envanterini yukarıdaki zamanlamaya göre Intune yönetim uzantısı (IME) aracılığıyla toplamamaktadır. Bu sorunu azaltmak için, IME 'nin cihaza yüklenebilmesi için Configuration Manager içindeki uygulama yönetimi iş yükünün Intune 'a geçiş yapması gerekir (Win32 envanter ve PowerShell dağıtımı için IME gereklidir). Bu davranıştaki tüm değişikliklerin veya güncelleştirmelerin [geliştirme](../fundamentals/in-development.md) ve [/veya yenilikler](../fundamentals/whats-new.md)' de duyurulduğunu unutmayın.
+> - Windows 10 karma Azure AD 'ye katılmış cihazlar Configuration Manager içindeki uygulama yönetimi iş yükünde gösterildiği gibi, şu anda uygulama envanterini yukarıdaki zamanlamaya göre Intune yönetim uzantısı (IME) aracılığıyla toplamamaktadır. Bu sorunu azaltmak için, IME 'nin cihaza yüklenebilmesi için Configuration Manager içindeki uygulama yönetimi iş yükünün Intune 'a geçiş yapması gerekir (Win32 envanter ve PowerShell dağıtımı için IME gereklidir). Bu davranıştaki tüm değişikliklerin veya güncelleştirmelerin [geliştirme](../fundamentals/in-development.md) ve [/veya yenilikler](../fundamentals/whats-new.md)' de duyurulduğunu unutmayın.
+> - , Kasım 2019 ' den önce kaydedilen kişiye ait macOS cihazları, cihazlar yeniden kaydedilinceye kadar cihazda yüklü olan tüm uygulamaları göstermeye devam edebilir.
 
 Bulunan uygulamaların sayısı uygulama yükleme durumu sayısıyla eşleşmeyebilir. Tutarsızlıkların olası nedenleri:
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635359"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899139"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Intune destekli senaryolara genel bakış 
 
@@ -33,7 +33,7 @@ Kılavuzlu senaryolar, Intune 'un normal iş akışlarından farklı bir yöneti
 
 ## <a name="types-of-guided-scenarios"></a>Kılavuzlu senaryo türleri 
 
-Kolaylık sağlaması için, tüm Kılavuzlu senaryolar <link>kapsam etiketleri, dışlama grupları ve sanal Grup atamaları <link>karmaşık kapsam özelliklerini atlayın. Bir Kılavuzlu senaryo tarafından oluşturulan tüm kaynaklar, senaryoyu tamamlayan yöneticinin her kapsam etiketini miras alır. Belirli senaryolar, yaygın olarak ilgili senaryoları kapsayan ortak ayar için bir özelleştirme düzeyi sunar. Bu senaryolar, Grup atamasını yalnızca gruplara dahil etmek için destekler. Diğer Kılavuzlu senaryolar için, tüm senaryo hiçbir özelleştirme teklifi sunarak tutarlı bir deneyim sağlar ve tüm atamaları alacak şekilde otomatik olarak yeni bir grup oluşturur. Kılavuzlu senaryo tamamlandıktan sonra, varolan ilke, uygulama ve profil iş yükleri aracılığıyla doğrudan daha gelişmiş atamalar kullanabilirsiniz.  
+Basitlik sağlamak için, tüm Kılavuzlu senaryolar kapsam etiketleri, dışlama grupları ve sanal Grup atamaları gibi karmaşık kapsam özelliklerini atlayın. Bir Kılavuzlu senaryo tarafından oluşturulan tüm kaynaklar, senaryoyu tamamlayan yöneticinin her kapsam etiketini miras alır. Belirli senaryolar, yaygın olarak ilgili senaryoları kapsayan ortak ayar için bir özelleştirme düzeyi sunar. Bu senaryolar, Grup atamasını yalnızca gruplara dahil etmek için destekler. Diğer Kılavuzlu senaryolar için, tüm senaryo hiçbir özelleştirme teklifi sunarak tutarlı bir deneyim sağlar ve tüm atamaları alacak şekilde otomatik olarak yeni bir grup oluşturur. Kılavuzlu senaryo tamamlandıktan sonra, varolan ilke, uygulama ve profil iş yükleri aracılığıyla doğrudan daha gelişmiş atamalar kullanabilirsiniz.  
 
 Aşağıdaki senaryolar Kılavuzlu: 
 - Mobil için Microsoft Edge dağıtma 
@@ -72,7 +72,7 @@ Kılavuzlu senaryolar, ilk oluşturma işleminden ayrı olarak mevcut kaynaklar�
 
 Kılavuzlu senaryolar, ilk dağıtımda hata sırasında otomatik temizliğin dışında, mevcut kaynakları devre dışı bırakmak için kullanılamaz. Oluşturulduktan sonra tüm kaynakların, grupların ve atamaların mevcut iş yükleri kullanılarak Kullanımdan kaldırılmış olması gerekir. 
 
-### <a name="updating"></a>Bilen
+### <a name="updating"></a>Güncelleştirme
 
 Teknoloji geliştikçe, Intune zaman zaman, kullanıcının deneyimini, güvenliğini veya senaryonun diğer yönlerini geliştirmek üzere kılavuzlu bir senaryoyu güncelleştirebilir. Bu güncelleştirme, yalnızca Kılavuzlu senaryo tarafından yapılan yeni dağıtımları etkiler. Intune, daha önce Kılavuzlu senaryo tarafından oluşturulan mevcut kaynakları, yeni en iyi yöntemler veya önerilere uyacak şekilde güncelleştirmez.  
 

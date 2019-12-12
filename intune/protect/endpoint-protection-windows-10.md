@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058421"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
@@ -67,7 +67,7 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
 
   İzin verilen Pano içeriğini seçin.  
   - **Yapılandırılmadı**  
-  - **Metin**  
+  - **Text**  
   - **Görüntüler**  
   - **Metin ve görüntüler**  
 
@@ -87,12 +87,12 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
 
   Yazdırmaya *izin* aldığınızda, aşağıdaki ayarı yapılandırabilirsiniz:
   - **Yazdırma türleri** Aşağıdaki seçeneklerden birini veya daha fazlasını seçin:  
-    - BELGESINI  
+    - PDF  
     - XPS  
     - Yerel yazıcılar
     - Ağ yazıcıları  
 
-- **Günlükleri topla**  
+- **Günlük toplama**  
   **Varsayılan**: yapılandırılmadı  
   Application Guard CSP: [Denetim/AuditApplicationGuard](https://go.microsoft.com/fwlink/?linkid=872418)  
 
@@ -642,7 +642,7 @@ Bu ayarlar, belirli işletim sistemi veri sürücüleri için geçerlidir.
     
     Bu ayar, bir işletim sistemi sürücü kurtarmasından sonra (Bootmgr veya WinRE kullanarak) istemci tabanlı bir kurtarma parolası dönüşü başlatır.  
 
-    - Yapılandırılmamış  
+    - Yapılandırılmadı  
     - Anahtar döndürme devre dışı  
     - Azure AD 'ye katılmış ana için anahtar döndürme etkinleştirildi  
     - Azure AD ve Hibriya katılmış cihazlar için anahtar döndürme etkinleştirildi  
@@ -739,7 +739,7 @@ Bu ayarlar özellikle sabit veri sürücülerine uygulanır.
     
     Bu ayar, bir işletim sistemi sürücü kurtarmasından sonra (Bootmgr veya WinRE kullanarak) istemci tabanlı bir kurtarma parolası dönüşü başlatır.  
 
-    - Yapılandırılmamış  
+    - Yapılandırılmadı  
     - Anahtar döndürme devre dışı  
     - Azure AD 'ye katılmış ana için anahtar döndürme etkinleştirildi  
     - Azure AD ve Hibriya katılmış cihazlar için anahtar döndürme etkinleştirildi  
@@ -939,7 +939,7 @@ Fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden [değerli 
   Dosya ve klasörleri kötü amaçlı uygulamaların yetkisiz değişikliklerinden korur.  
 
   - **Yapılandırılmadı**  
-  - **Etkinleştir**  
+  - **Enable**  
   - **Yalnızca denetim**  
   - **Disk değişikliğini engelle**  
   - **Disk değişikliğini denetleme**  
@@ -1135,7 +1135,7 @@ Microsoft Defender Güvenlik Merkezi uygulamasının çeşitli bölümlerine Son
   TPM 'YI Temizle düğmesinin görüntülenmesini yapılandırın.  
   
   - **Yapılandırılmadı**  
-  - **Dıı**  
+  - **Devre Dışı Bırak**  
 
 - **TPM bellenim güncelleştirme uyarısı**  
   **Varsayılan**: yapılandırılmadı  
@@ -1211,7 +1211,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
    - **Engelle** -yalnızca boş parolalara sahip yerel hesapların cihazın klavyesini kullanarak oturum açmasını sağlar.  
    - **Yapılandırılmadı** -boş parolalara sahip yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasını sağlar.  
 
-#### <a name="admin"></a>Yönetici  
+#### <a name="admin"></a>Yönetim  
 
 - **Yerel yönetici hesabı**  
   **Varsayılan**: yapılandırılmadı  
@@ -1403,7 +1403,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
   
   Bu güvenlik ayarı, bir sunucunun 128 bitlik şifreleme ve/veya NTLMv2 oturum güvenliği için anlaşma sağlamasına izin verir.  
 
-  - **Yok**  
+  - **Yok.**  
   - **NTLMv2 oturum güvenliği gerektir**  
   - **128 bit şifreleme gerektir**  
   - **Ntlmv2'yi ve 128 bit şifreleme**  
@@ -1414,7 +1414,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
 
   Bu güvenlik ayarı, ağ oturum açmaları için hangi sınama/yanıt kimlik doğrulama protokolünün kullanıldığını belirler.  
 
-  - **Yok**  
+  - **Yok.**  
   - **NTLMv2 oturum güvenliği gerektir**  
   - **128 bit şifreleme gerektir**  
   - **Ntlmv2'yi ve 128 bit şifreleme**  
@@ -1596,7 +1596,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
   CSP: [TaskScheduler/EnableXboxGameSaveTask](https://go.microsoft.com/fwlink/?linkid=875480)  
    
   Bu ayar, Xbox oyunu kaydet görevinin etkin veya devre dışı olduğunu belirler.  
-  - **Etkinletir**
+  - **Etkin**
   - **Yapılandırılmadı**
 
 - **Xbox donatı yönetim hizmeti**  

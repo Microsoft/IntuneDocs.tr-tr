@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74694956"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune'daki cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama
@@ -115,7 +115,7 @@ Bu özellik şunları destekler:
 - iOS/ıpados
 - Mac OS
 - Windows 10 ve üzeri
-- Windows 10 ekibi
+- Windows 10 Team
 
 ## <a name="edition-upgrade"></a>Sürüm yükseltme
 
@@ -161,7 +161,7 @@ Bu özellik şunları destekler:
 
 - Windows 10 Fall Creators Update ve üzeri
 
-## <a name="extensions"></a>Uzantılardan
+## <a name="extensions"></a>Uzantılar
 
 [Çekirdek uzantıları](kernel-extensions-overview-macos.md) , yöneticilerin MacOS cihazlarında çekirdek düzeyinde özellik veya program eklemesine olanak tanır. Bu ayarları, belirli bir geliştirici veya iş ortağındaki tüm uzantılara güvenmek veya belirli çekirdek uzantılarına izin vermek üzere yapılandırın.
 
@@ -196,7 +196,7 @@ Bu özellik şunları destekler:
 
 - Android Kurumsal (OEMConfig)
 
-## <a name="powershell-scripts"></a>PowerShell betikleri
+## <a name="powershell-scripts"></a>PowerShell komut dosyaları
 
 [Windows 10 cihazlarında PowerShell betikleri](../apps/intune-management-extension.md) , Intune 'da PowerShell betiklerinizi karşıya yüklemek Için Intune yönetim uzantısını kullanır ve ardından bu betikleri cihazlarınızda çalıştırır. Ayrıca, uzantıyı kullanmak için gerekenleri, Intune 'a nasıl ekleneceğini ve diğer önemli bilgileri görün.
 

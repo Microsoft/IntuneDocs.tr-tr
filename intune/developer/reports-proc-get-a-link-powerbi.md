@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8d7a5f67dfd8f7256559cb54d873ed48205ad751
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490416"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI ile Veri Ambarına bağlanma
@@ -80,7 +80,7 @@ Azure AD’de istemci kimliği doğrulandığı zaman OData URL’si, Veri Ambar
 3. Raporlama dikey penceresinden özel akış URL 'sini alın, örneğin:<br>
     `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. **Power BI Desktop**’ı açın.
-5. **Dosya** > **veri al**' ı seçin. **OData akışı**’nı seçin.
+5. **Veri al** > **Dosya** ' yı seçin. **OData akışı**’nı seçin.
 6. **Temel**’i seçin.
 7. URL kutusuna **OData URL’sini** yazın veya yapıştırın.
 8. **Tamam**’ı seçin.
@@ -88,7 +88,7 @@ Azure AD’de istemci kimliği doğrulandığı zaman OData URL’si, Veri Ambar
     1. **Kuruluş hesabını** seçin.  
     2. Kullanıcı adınızı ve parolanızı yazın.  
     3. **Oturum aç**’ı seçin.  
-    4. **Bağlan**' ı seçin.  
+    4. **Bağlan**’ı seçin.  
 10. **Yükle**’yi seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar

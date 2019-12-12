@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74164574"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Kılavuzlu senaryo-bulutta yönetilen modern masaüstü
@@ -43,7 +43,7 @@ Bulutta yönetilen bir modern masaüstünü kendi kuruluşunuzda değerlendirmek
   - Güvenlik temelleri okuma, oluşturma, silme, atama ve güncelleştirme
   - İlke ayarları okuma, oluşturma, silme, atama ve güncelleştirme
 
-## <a name="step-1---introduction"></a>1\. adım-giriş
+## <a name="step-1---introduction"></a>Adım 1 - Giriş
 
 Bu Kılavuzlu senaryoyu kullanarak bir test kullanıcısı ayarlayabilir, bir cihazı Intune 'a kaydedebilir ve Intune tarafından önerilen ayarlarla, ayrıca Windows 10 ve Office ProPlus ile cihazı dağıtabilirsiniz. [Bu korumayı Intune 'da etkinleştirmeyi](~/protect/advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune)seçerseniz cihazınız Microsoft Defender Gelişmiş tehdit koruması için de yapılandırılır. Ayarladığınız Kullanıcı ve Kaydolmakta olduğunuz cihaz yeni bir güvenlik grubuna eklenir ve güvenlik ve üretkenlik için önerilen ayarlarla yapılandırılır. 
 

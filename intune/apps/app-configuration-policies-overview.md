@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 42d17c15a2a32f828c5715dfad51f34c5e531e76
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507555"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
@@ -89,7 +89,7 @@ Aşağıdaki üç yöntemi kullanarak uygulama yapılandırma ilkesini doğrulay
 
       ![Uygulama yapılandırması ekran görüntüsü](./media/app-configuration-policies-overview/app-configuration.png)
 
-## <a name="diagnostic-logs"></a>Tanılama günlükleri
+## <a name="diagnostic-logs"></a>Tanılama Günlükleri
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>yönetilmeyen cihazlarda iOS yapılandırması
 
@@ -97,7 +97,7 @@ Yönetilen uygulama yapılandırması için, yönetilmeyen cihazlarda **Intune t
 
 1. Cihazda zaten yüklü değilse, **Intune Managed Browser** App Store 'dan indirin ve yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
 2. **Intune Managed Browser** başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
-3. **Başlarken**' e tıklayın.
+3. **Get Started** düğmesine tıklayın.
 4. **Günlükleri paylaşma**' ya tıklayın.
 5. Bilgisayarınızda görüntülenebilmeleri için günlüğü kendinize göndermek üzere seçtiğiniz posta uygulamasını kullanın. 
 6. Metin dosyası görüntüleyicinizdeki **ıntunemamdiagnostics. txt dosyasını** gözden geçirin.
@@ -141,7 +141,7 @@ Yönetilen uygulama yapılandırması için, yönetilen cihazlarda **Intune tan�
 
 1. Cihazda zaten yüklü değilse, **Intune Managed Browser** App Store 'dan indirin ve yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
 2. **Intune Managed Browser** başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
-3. **Başlarken**' e tıklayın.
+3. **Get Started** düğmesine tıklayın.
 4. **Günlükleri paylaşma**' ya tıklayın.
 5. Bilgisayarınızda görüntülenebilmeleri için günlüğü kendinize göndermek üzere seçtiğiniz posta uygulamasını kullanın. 
 6. Metin dosyası görüntüleyicinizdeki **ıntunemamdiagnostics. txt dosyasını** gözden geçirin.

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74558178"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune ve Windows Autopilot kullanarak karma Azure AD 'ye katılmış cihazları dağıtma
@@ -44,7 +44,7 @@ Kaydedilecek cihazlar ayrıca:
 
 1. Azure 'da oturum açın, sol bölmede **Azure Active Directory**' yi seçin.
 
-   ![Azure portal](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
+   ![Azure portalı](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
 1. **Mobility (MDM ve MAM)** seçeneğini belirleyin.
 
@@ -111,7 +111,7 @@ Active Directory için Intune Bağlayıcısı, Windows Server 2016 veya üstün�
 2. Bağlayıcıyı indirmek için yönergeleri izleyin.
 3. Bağlayıcıyı yüklemek için, yüklenen bağlayıcı kurulum dosyasını *Odjconnectorbootstrapper. exe*' yi açın.
 4. Kurulumun sonunda **Yapılandır**' ı seçin.
-5. **Oturum aç '** ı seçin.
+5. **Oturum aç**'ı seçin.
 6. Kullanıcı genel yöneticisi veya Intune yönetici rolü kimlik bilgilerini girin.  
    Kullanıcı hesabının atanmış bir Intune lisansı olmalıdır.
 7. Active Directory için **windows > ** **Windows kayıt** > **Intune Bağlayıcısı** > **cihazlar** ' a gidin ve ardından bağlantı durumunun **etkin**olduğunu doğrulayın.

@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188243"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Windows 10 cihazlarda Iş için Windows Hello 'Yu kullanma
@@ -65,7 +65,7 @@ Bu makalede bir cihaz yapılandırma profili oluşturma konusu gösterilmektedir
 
    - **Oturum açma için güvenlik anahtarlarını kullan**: Windows Hello güvenlik anahtarını Kiracıdaki tüm bilgisayarlar için oturum açma kimlik bilgileri olarak etkinleştirin.
 
-     - **Etkinleştir**
+     - **Enable**
      - **Yapılandırılmadı** (varsayılan)
 
 5. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.

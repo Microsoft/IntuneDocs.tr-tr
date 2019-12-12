@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563582"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Microsoft Intune kullanarak macOS cihazlarına Microsoft Edge ekleme
@@ -61,7 +61,7 @@ Bu adımda, bu uygulama dağıtımı hakkında bilgi sağlarsınız. Bu bilgiler
     - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
 3. **Tamam**’ı seçin.
 
-## <a name="configure-microsoft-edge-settings"></a>Microsoft Edge ayarlarını yapılandır
+## <a name="configure-microsoft-edge-settings"></a>Microsoft Edge ayarlarını yapılandırma
 Bu adımda, uygulama için yükleme seçeneklerini yapılandırın.
 
 1. **Uygulama Ekle** bölmesinde **uygulama ayarları**' nı seçin.

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7d89f512c06dcfbf6f6ddaba5e17ac9ca6f0becf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506796"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>Intune kullanarak Windows 10 cihazlarda bir test alma uygulaması yapılandırma
@@ -34,7 +34,7 @@ Profili yapılandırdıktan sonra öğrencilerinize atayıp dağıtın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Bir cihaz yapılandırma profili oluşturun](education-settings-configure.md#create-a-device-profile).
+[Bir cihaz yapılandırma profili oluşturma](education-settings-configure.md#create-a-device-profile).
 
 ## <a name="take-a-test-settings"></a>Test ayarları yapın
 Bir cihaz yapılandırma profili oluşturduktan sonra, **profil türü** ' ne gidin ve **güvenli değerlendirme (eğitim)** seçeneğini belirleyin. Aşağıdaki bir test uygulaması ayarlarını yapın. 

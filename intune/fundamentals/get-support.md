@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390757"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune için destek alma
@@ -54,7 +54,7 @@ Intune için yeni oluşturulmuş bir kiracı kullandığınızda, *Yardım ve de
 
 Hata ayrıntıları bir *oturum kimliği*, *uzantı* ayrıntıları ve daha fazlasını içerir. 
  
-Bu sorun, yeni kiracı hesabınızı https://admin.microsoft.com'de **M365 Yönetim Merkezi** veya https://portal.office.com**Office 365 Portalı** aracılığıyla henüz doğrulamadığınızda meydana gelir. Bu sorunu çözmek için, iletideki *M365 yönetim merkezine* yönelik bağlantıyı seçin veya https://portal.office.comziyaret edin ve oturum açın. Her iki sitede da aşağıdaki kimlik doğrulaması, Intune için *Yardım ve destek* erişilebilir hale gelir.
+Bu sorun, yeni kiracı hesabınızı https://admin.microsoft.com 'de **M365 Yönetim Merkezi** veya https://portal.office.com**Office 365 Portalı** aracılığıyla henüz doğrulamadığınızda meydana gelir. Bu sorunu çözmek için, iletideki *M365 yönetim merkezine* yönelik bağlantıyı seçin veya https://portal.office.com ziyaret edin ve oturum açın. Her iki sitede da aşağıdaki kimlik doğrulaması, Intune için *Yardım ve destek* erişilebilir hale gelir.
 
 
 **Yardım ve desteğe erişin**:
@@ -90,7 +90,7 @@ Bu sorun, yeni kiracı hesabınızı https://admin.microsoft.com'de **M365 Yöne
 
   *Yardım mı gerekiyor?* *çözüm bul* bölmesine açılır. Ancak etkin bir destek örneğine sahipseniz, etkin ve kapalı destek durumlarınız hakkındaki ayrıntıları görüntüleyebileceğiniz *hizmet istekleri* bölmesinde pencere açılır.
 
-#### <a name="find-solutions"></a>Çözüm bulma
+#### <a name="find-solutions"></a>Çözümler bulun
 
 ![Çözüm bul bölmesini seçin](./media/get-support/find-solutions.png)
 
@@ -149,7 +149,7 @@ Sol gezinti bölmesi **Yardım + Destek**' i kullandığınızda veya **?** *Yar
 
 Bu sayfadan **+ Yeni destek isteği** ' ni seçerek *Yardım + destek + yeni destek Isteği* sayfasının *temel bilgiler* sekmesini açın.
 
-![Yardım ve destek](./media/get-support/help-plus-support.png)
+![Yardım + destek](./media/get-support/help-plus-support.png)
 
 Bu sayfada:
 

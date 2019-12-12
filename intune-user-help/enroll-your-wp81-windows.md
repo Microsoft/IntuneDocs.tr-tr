@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506158"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1 cihazınızı Intune'a kaydetme  
@@ -35,7 +35,7 @@ Cihazınızı Intune 'a kaydetmek için izinleriniz veya geçerli hesap durumlar
 ## <a name="enroll-through-company-portal"></a>Şirket Portalı kaydetme  
 Microsoft Store Şirket Portalı uygulamayı yükleyebiliyorsanız bu adımları izleyin. 
 
-1. @No__t-1**depolamaya** **başla**' ya dokunun.  
+1.  > **Store** **Başlat** ' a dokunun.  
 
 2. **Ara**’ya dokunun, sonra **şirket portalı** yazın.  
 

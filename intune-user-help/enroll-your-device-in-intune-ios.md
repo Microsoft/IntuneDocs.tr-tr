@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e468042ab81d563c9fa4b272661508a340d61aa9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506240"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Şirket kaynaklarınıza iOS cihaz erişimi ayarlayın  
@@ -95,7 +95,7 @@ Kayıt sırasında birkaç dakikadan uzun bir süre durakladığında uygulaman�
 
 8. Ayarlar uygulamasına gidin ve **profil indirildi**' a dokunun.  
 
-    **Indirilen profil** bir seçenek olarak görünmezse, **genel** > **profillerine**gidin. Profili hala görmüyorsanız, yeniden indirmeniz gerekebilir.  
+    **Indirilen profil** bir seçenek olarak görünmezse, **genel** > **profiller**' e gidin. Profili hala görmüyorsanız, yeniden indirmeniz gerekebilir.  
 
     ![Ayarlar uygulaması, profil Indirilen ayarı örnek ekran görüntüsü.](./media/ios-1904-settings-badge.PNG)  
 

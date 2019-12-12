@@ -12,10 +12,10 @@ ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504810"
 ---
 # <a name="using-the-intune-docs"></a>Intune belgelerini kullanma
@@ -28,15 +28,15 @@ Intune için genel yardım ve destek için bkz. [Intune için destek alın](../g
 
  İhtiyacınız olan bilgileri bulmanıza yardımcı olması için aşağıdaki arama ipuçlarını kullanın:  
 
-- Microsoft Intune için içerik bulmak üzere tercih ettiğiniz arama altyapısını kullanırken, arama anahtar sözcüklerinizle birlikte `Intune` ' ı ekleyin.  
+- Microsoft Intune için içerik bulmak üzere tercih ettiğiniz arama altyapısını kullanırken, arama anahtar kelimelerinizle birlikte `Intune` ekleyin.  
 
   - Docs.microsoft.com 'deki sonuçlara bakın. Technet.microsoft.com veya msdn.microsoft.com ' den kaynaklanan sonuçlar eski ürün sürümleri içindir.  
 
-  - Arama sonuçlarını geçerli içerik kitaplığına daha fazla odaklanmak için, arama altyapısının kapsamına `site:docs.microsoft.com` ekleyin.  
+  - Arama sonuçlarını geçerli içerik kitaplığına daha fazla odaklanmak için, arama altyapısının kapsamına `site:docs.microsoft.com` dahil edin.  
 
 - Kullanıcı arabirimindeki ve çevrimiçi belgelerdeki terminoloji ile eşleşen arama terimlerini kullanın. Topluluk içeriğinde görebileceğiniz resmi olmayan terimlerin veya kısaltmaların önüne kaçının.
 
-- Görüntülemekte olduğunuz bir makale içinde arama yapmak için tarayıcınızın **bul** özelliğini kullanın. Modern Web tarayıcıları sayesinde **Ctrl**+**F** tuşlarına basın ve ardından arama terimlerinizi girin.  
+- Görüntülemekte olduğunuz bir makale içinde arama yapmak için tarayıcınızın **bul** özelliğini kullanın. Modern Web tarayıcıları sayesinde, **Ctrl**+**F** tuşlarına basın ve arama terimlerinizi girin.  
 
 - Docs.microsoft.com üzerindeki her makale, içeriği aramanıza yardımcı olmak için aşağıdaki alanları içerir:  
 

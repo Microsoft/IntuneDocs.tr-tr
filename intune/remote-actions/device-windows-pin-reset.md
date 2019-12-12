@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713094"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907228"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune kullanarak Windows cihazlarında geçiş kodunu sıfırlama
 
@@ -66,8 +66,8 @@ Bu CSP için değeri **True** olarak ayarlayın.
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın. 
 2. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
-3. Geçiş kodunu sıfırlamak istediğiniz cihazı seçin. Cihaz özelliklerinde **Yeni geçiş kodu**'nu seçin.
-4. Onaylamak için **Evet** ' i seçin. Böylece geçiş kodu oluşturulur ve gelecek yedi gün boyunca portalda görüntülenir.
+3. Geçiş kodunu sıfırlamak istediğiniz cihazı seçin. Cihaz özellikleri ' nde **geçiş kodunu Sıfırla**' yı seçin.
+4. Onaylamak için **Evet**’i seçin. Böylece geçiş kodu oluşturulur ve gelecek yedi gün boyunca portalda görüntülenir.
 
 ## <a name="next-step"></a>Sonraki adım
 

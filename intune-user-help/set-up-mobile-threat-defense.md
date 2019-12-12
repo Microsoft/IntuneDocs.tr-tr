@@ -18,10 +18,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72987451"
 ---
 # <a name="install-mobile-threat-defense"></a>Mobil tehdit savunması 'nı yükler   
@@ -43,7 +43,7 @@ Kuruluşunuz, kişisel uygulamalarınızda metin, e-posta ve resim gibi verileri
 * Uygulama paketi ve dinamik Boyut: bir uygulamanın cihazınızda kullandığı alan miktarı. 
 
 
-## <a name="install-app"></a>Uygulamayı yükler    
+## <a name="install-app"></a>Uygulamayı yükleme    
 Korumalı bir uygulamada oturum açtığınızda, otomatik olarak bir MTD uygulaması kurmanız istenir. Yüklemeyi tamamlamaya yönelik ekrandaki adımları izleyin. Ek Yardım için bu bölümdeki adımları kullanın.  
  
 Cihazınızı kaydetmeniz de istenebilir. Kayıt, kimliğinizi doğrulamak ve okul veya iş hesabınızı cihazınıza bağlamak için gereklidir. Kaydolmadıysanız, MTD uygulamasını yüklemeden önce bu kurulum üzerinden otomatik olarak gezinirsiniz. **Erişim al** ekranına geldiğinizde, yükleme adımlarını başlatabilirsiniz.  

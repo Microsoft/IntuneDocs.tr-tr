@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 77f5787509438ec3280f29be8449d78979806042
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74542331"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune 'de Wi-Fi cihaz yapılandırma profillerinin sorunlarını giderme
@@ -194,7 +194,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   1. **İş veya okula erişim** > **Ayarlar** > **hesaplar** ' a gidin.
   2. İş veya okul hesabınızın **bilgilerini**> seçin.
   3. **Ayarlar** sayfasının en altında **rapor oluştur**' u seçin.
-  4. Günlük dosyalarının yolunu gösteren bir pencere açılır. **Dışarı aktar**' ı seçin.
+  4. Günlük dosyalarının yolunu gösteren bir pencere açılır. **Export** (Dışarı aktar) öğesini seçin.
   5. `\Users\Public\Documents\MDMDiagnostics` yoluna gidin ve raporu görüntüleyin:
 
       > [!div class="mx-imgBorder"]

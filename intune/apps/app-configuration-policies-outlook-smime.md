@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564199"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000423"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>İOS için Outlook ile S/MIME yapılandırma
 
 Güvenli/çok amaçlı Internet posta uzantıları (S/MIME), bir Exchange ActiveSync (EAS) hesabına ve bu hesaptan gönderilen e-posta için ek bir güvenlik katmanı sağlar. [Microsoft Outlook](https://aka.ms/omsmime) , kullanıcıların hem giden iletileri hem de ekleri şifrelemesine olanak tanımak için S/MIME kullanabilir ve Office 365 hesaplarını kullanırken yalnızca amaçlanan alıcının ileti içeriğini okuyabilmesini ve erişebilmesini sağlar. Kullanıcılar ayrıca bir iletiyi dijital olarak imzalayabilir ve bu da alıcıların, gönderenin kimliğini doğrulamasını ve iletinin kurcalanmadığını onaylamasını sağlar. Bu yetenek, sertifikalar kullanılarak mümkündür. Daha fazla bilgi için bkz. [S/MIME anlama](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN).
+
+> [!NOTE]
+> Bu özellik gecikti, ancak yakında yayımlanacak.
 
 > [!NOTE]
 > Bu konu başlığı altında, güvenilen kök sertifikalarının [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)aracılığıyla nasıl dağıtılacağı açıklanmaktadır. Microsoft Uç Nokta Yöneticisi, tüm uç noktalarınızı yönetmek için tek ve tümleşik bir uç nokta yönetim platformudur. Bu Microsoft Endpoint Manager Yönetim Merkezi ConfigMgr ve Microsoft Intune tümleştirir.
@@ -78,9 +81,6 @@ Aşağıdaki adımlar, Endpoint Manager 'da iOS için Outlook/MIME ilkesini olu�
 6. Yapılandırma ayarlarını eklemek için **yapılandırma ayarları** ' na tıklayın. 
     - Yapılandırma **ayarları biçimi** ' nin yanında **yapılandırma tasarımcısını kullan** ' ı seçin ve varsayılan ayarları kabul edin. Daha fazla bilgi için bkz. [Microsoft Outlook yapılandırma ayarları](~/apps/app-configuration-policies-outlook.md).
 7. **Outlook s/MIME ayarlarını**göstermek için **s/MIME** ' ye tıklayın.
-
-    ![İOS S/MIME ayarları için Outlook ekran görüntüsü](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. **S/MIME 'Yi etkinleştir** ayarını **Evet**olarak belirleyin.
 9. **Intune 'dan/MIME sertifikalarını** **Evet**olarak ayarlayın.
 10. **Sertifika profili türü**' nün yanındaki **sertifikaları imzalama** altında, aşağıdaki seçeneklerden birini belirleyin:

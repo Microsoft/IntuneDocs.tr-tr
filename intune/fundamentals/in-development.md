@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540730"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Microsoft Intune için geliştirme sırasında-Aralık 2019
@@ -91,13 +91,13 @@ Android kurumsal cihaz sahibi cihazlarda, kullanıcıların yönetilen anahtar d
 
 Geçerli ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Uygulama hedefi:
+Şunlara uygulanır
 - Adanmış ve tam olarak yönetilen cihazlar dahil Android kurumsal cihaz sahibi
 
 ### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686-idready---"></a>MacOS cihazları için kablolu ağ cihaz yapılandırma profilleri<!-- 3508686 idready -->
 MacOS cihazlarında, gelecekteki bir güncelleştirme, kablolu ağları yapılandıran yeni bir cihaz yapılandırma profili (**cihaz yapılandırma** > **profilleri** ** > ,** > Platform için **MacOS** > profil türü için **kablolu ağ** ) içerir. Kablolu ağları yönetmek için 802.1 x profilleri oluşturmak ve bu kablolu ağları macOS cihazlarınıza dağıtmak için bu özelliği kullanın.
 
-Uygulama hedefi:
+Şunlara uygulanır
 - Mac OS
 
 ### <a name="add-automatic-proxy-settings-to-wi-fi-profiles-for-android-enterprise-work-profiles---4490822-idready---"></a>Android kurumsal iş profillerine yönelik Wi-Fi profillerine otomatik ara sunucu ayarları ekleme<!-- 4490822 idready -->
@@ -107,7 +107,7 @@ Gelecekteki bir güncelleştirmede kurumsal tür ' i seçtiğinizde, `proxy.cont
 
 Yapılandırabileceğiniz geçerli Wi-Fi ayarlarını görmek için [Microsoft Intune ' de Android Enterprise ve Android bilgi noktası çalıştıran cihazlar Için Wi-Fi ayarları ekle](../configuration/wi-fi-settings-android-enterprise.md)' ye gidin.
 
-Uygulama hedefi:
+Şunlara uygulanır
 - Android kurumsal iş profili
 
 ### <a name="enable-network-access-control-nac-with-cisco-anyconnect-vpn-on-ios-devices---4860111-idready---"></a>İOS cihazlarında Cisco AnyConnect VPN ile ağ erişim denetimi 'ni (NAC) etkinleştirme<!-- 4860111 idready -->
@@ -120,7 +120,7 @@ Gelecekteki bir güncelleştirmede, Cisco AnyConnect ile ağ erişim denetimi 'n
 
 Tüm kullanılabilir VPN ayarlarını görmek için [iOS CIHAZLARıNDA VPN ayarlarını yapılandırma](../configuration/vpn-settings-ios.md)bölümüne gidin.
 
-Uygulama hedefi:
+Şunlara uygulanır
 - iOS
 
 ### <a name="updated-single-sign-on-experience-for-apps-and-websites-on-your-ios-ipados-and-macos-devices---4999578-idready---"></a>İOS, ıpados ve macOS cihazlarınızdaki uygulamalar ve Web siteleri için çoklu oturum açma deneyimi güncelleştirildi<!-- 4999578 idready -->
@@ -130,7 +130,7 @@ OAuth ve SAML2 gibi modern kimlik doğrulama yöntemlerini kullanan uygulamalar 
 
 Yapılandırabileceğiniz SSO uygulama uzantısı ayarlarını görmek için, [macOS 'Ta](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)IOS ve SSO ['daki SSO](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) ' ya gidin.
 
-Uygulama hedefi:
+Şunlara uygulanır
 - iOS/ıpados
 - Mac OS
 
@@ -138,15 +138,15 @@ Uygulama hedefi:
 Yönetilen Android uygulamalarında kullanılmak üzere onaylanan klavyeler listesini belirleyebileceksiniz. Yönetilen uygulamadan, kullanıcının cihazlarından zaten yüklü olan onaylanmış klavyelerin birine geçmesi istenir veya gerekirse, onaylanan klavyelerin birini indirmek ve ayarlamak için Google Play Store yönlendirilir. Kullanıcı, yönetilen bir uygulamadaki metin alanlarını yalnızca etkin klavyesi onaylanan klavyeleri kullanıyorsa düzenleyebilecektir.
 
 ### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>Windows 10 ve üzeri cihazlarda Wi-Fi profilleriyle PKCS sertifikaları kullanma<!-- 3246388  -->
-Şu anda Windows Wi-Fi profillerinin kimlik doğrulamasını, SCEP sertifikaları (**cihaz yapılandırma** > **profilleri** > için **windows 10 ve üzeri** platform > **Wi-Fi** için > **oluşturma** > **kurumsal** > **EAP türü**) profil türü. Windows Wi-Fi profilleriniz ile PKCS sertifikalarını kullanabileceksiniz. Bu özellik, kiracınızdaki yeni veya mevcut PKCS sertifika profillerini kullanarak Wi-Fi profillerinin kimlik doğrulamasından geçmesini sağlar. 
+Şu anda, Windows Wi-Fi profillerinin kimlik doğrulamasını, SCEP sertifikaları (**cihaz yapılandırma** > **profilleri** > profil **oluşturma** > **Windows 10 ve üzeri** için, > **kurumsal** > **EAP türü**) için bir for platform > **Wi-Fi** . Windows Wi-Fi profilleriniz ile PKCS sertifikalarını kullanabileceksiniz. Bu özellik, kiracınızdaki yeni veya mevcut PKCS sertifika profillerini kullanarak Wi-Fi profillerinin kimlik doğrulamasından geçmesini sağlar. 
 
 Wi-Fi profilleri hakkında daha fazla bilgi için bkz. [Intune 'Da Windows 10 ve üzeri cihazlar Için Wi-Fi ayarları ekleme](../configuration/wi-fi-settings-windows.md).
 
-Uygulama hedefi:
+Şunlara uygulanır
 - Windows 10 ve üzeri
 
 ### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>İOS cihazlarında bir e-posta cihaz yapılandırma profili oluştururken yeni ExchangeActiveSync ayarları<!-- 4892824  --> 
-İOS/ıpados cihazlarında, bir cihaz yapılandırma profilinde (**cihaz yapılandırma** > **profiller** > **profil oluşturma** > **IOS/ıpados** > **e-posta** ile e-posta bağlantısını yapılandırabilirsiniz profil türü için). 
+İOS/ıpados cihazlarında, bir cihaz yapılandırma profilinde e-posta bağlantısını yapılandırabilirsiniz (**cihaz yapılandırma** > **profilleri** > profil **oluşturmak** > için **IOS/ıpados** > profil türü **e-postası** ). 
 
 Aşağıdakiler dahil olmak üzere yeni ExchangeActiveSync ayarları kullanılabilir olacaktır:
 - E-posta, takvim ve kişiler gibi eşitlenecek Hizmetleri (veya eşitlemeyi engellemeyi) seçin.
@@ -154,7 +154,7 @@ Aşağıdakiler dahil olmak üzere yeni ExchangeActiveSync ayarları kullanılab
 
 Geçerli ayarları görmek için [Intune 'Da iOS cihazları Için e-posta profili ayarları](../configuration/email-settings-ios.md)' na gidin.
 
-Uygulama hedefi:
+Şunlara uygulanır
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
 
@@ -163,18 +163,18 @@ Kullanıcıların Android kurumsal cihaz sahibine ve adanmış cihazlara (**ciha
 
 Yapılandırabileceğiniz geçerli ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Uygulama hedefi:
+Şunlara uygulanır
 - Android kurumsal cihaz sahibi
 - Android kurumsal adanmış cihazlar
 
 ### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Siri komutları ayarı için sunucu tarafı günlüğü, iOS cihaz kısıtlamaları profilinde kaldırılıyor<!-- 5468501  -->
-İOS cihazlarında, Siri komutları için sunucu tarafında günlüğe kaydetmeyi yapılandıran bir cihaz kısıtlama profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > platform Için **iOS/ıpados** > **profil oluşturma** > **Yerleşik uygulamalar**> profil türü için **cihaz kısıtlamalarını** . **Siri komutları Için sunucu tarafı günlüğü** ayarı kaldırılır.
+İOS cihazlarında, Siri komutları için sunucu tarafında günlüğe kaydetmeyi yapılandıran bir cihaz kısıtlama profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > profil > **oluşturmak** Için **iOS/ıpados** > **cihaz kısıtlamaları** > **yerleşik uygulamalar**). **Siri komutları Için sunucu tarafı günlüğü** ayarı kaldırılır.
 
 Bu ayar, Intune yönetim konsolundan kaldırılacak. Bu ayarın yapılandırılmış olduğu mevcut ilkeler ayarı göstermeye devam edebilse de, bu ayarın cihaz üzerinde hiçbir etkisi yoktur. Bu ayarı mevcut ilkelerden kaldırmak istiyorsanız, ilkeye gidin, küçük bir düzenleme yapın, kaydedin ve ilke güncelleştirilir.
 
 Yapılandırabileceğiniz ayarları görmek için bkz. [Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak Için iOS ve ıpados cihaz ayarları](../configuration/device-restrictions-ios.md).
 
-Uygulama hedefi:
+Şunlara uygulanır
 - iOS
 
 <!-- ***********************************************-->

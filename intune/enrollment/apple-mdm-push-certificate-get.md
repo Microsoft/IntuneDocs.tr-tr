@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d15fd73a608c799745c92c4b07df4b9705d00106
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490324"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955465"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM anında iletme sertifikası alma
 
@@ -41,7 +41,7 @@ Bir anında iletme sertifikasının süresi dolduğunda bunu yenilemeniz gerekir
 
 
 ## <a name="steps-to-get-your-certificate"></a>Sertifikanızı almak için adımlar
-[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihaz kaydı** > **Apple kaydı** > **Apple MDM anında iletme sertifikası**' yı seçin ve ardından [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da bu adımları izleyin.
+[Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, **cihazlar** > **Apple kayıt** > **Apple MDM anında iletme sertifikası** ** > cihazları seçin** ve ardından bu adımları izleyin.
 
 ### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>1\. Adım Microsoft’un Apple’a kullanıcı ve cihaz bilgilerini göndermesine izin verin
 **Kabul ediyorum**’u seçerek Microsoft’un Apple’a veri göndermesine izin verin.
@@ -68,7 +68,7 @@ Apple MDM anında iletme sertifikası bir yıl için geçerlidir ve iOS ve macOS
 
 Sertifika, onu oluşturmak için kullanılan Apple Kimliği ile ilişkilidir. MDM anında iletme sertifikasını oluştururken kullandığınız Apple Kimliği ile sertifikayı yenileyin.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın, **cihaz kaydı** > **Apple kaydı**' nı seçin ve ardından Ayrıntılar alanında **Apple MDM anında iletme sertifikası** kutucuğunu seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın **, > cihazları** > **Apple kayıt** > **Apple MDM anında iletme sertifikası** **Kaydet** ' i seçin.
 2. **CSR’nizi indirin** öğesini seçerek istek dosyasını indirin ve yerel olarak kaydedin. Bu dosya, Apple Anında İletme Sertifikaları Portalı’ndan bir güven ilişkisi sertifikası istemek için kullanılır.
 3. Apple Anında İletme Sertifikası Portalı’na gitmek için **MDM Anında İletme Sertifikanızı oluşturun** öğesini seçin. Yenilemek istediğiniz sertifikayı bulun ve **Yenile**’yi seçin.
 4. **Anında İletme Sertifikasını Yenileme** ekranında, ileride sertifikayı tanımanıza yardımcı olacak notlar sağlayın, indirdiğiniz yeni istek dosyasına gözatmak için **Dosya Seçin**’e tıklayın ve **Karşıya Yükle**’yi seçin.

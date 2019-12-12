@@ -18,10 +18,10 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 810a898a3b2d1981babc231f32ed386bde37a856
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74465795"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Öğretici: yönetilmeyen cihazlarda Exchange Online e-postasını koruma
@@ -79,7 +79,7 @@ Bu öğreticide, uygulama düzeyinde koruma sağlamak üzere Outlook uygulaması
 
    ![Outlook uygulama koruma ilkesi verilerini değiştirme ayarlarını seçin](./media/tutorial-protect-email-on-unmanaged-devices/data-protection-settings.png)
 
-   Devam etmek için **İleri ' yi** seçin.
+   Devam etmek için **İleri**’yi seçin.
 
 6. **Erişim gereksinimleri** sayfası, kullanıcıların iş bağlamındaki uygulamalara erişmek için KARŞıLAMASı gereken PIN ve kimlik bilgisi gereksinimlerini yapılandırmanıza izin veren ayarları sağlar. Aşağıdaki ayarları, diğer tüm ayarları varsayılan değerlerinde bırakarak yapılandırın:
 
@@ -88,7 +88,7 @@ Bu öğreticide, uygulama düzeyinde koruma sağlamak üzere Outlook uygulaması
 
    ![Outlook uygulama koruma ilkesi erişim eylemlerini seçin](./media/tutorial-protect-email-on-unmanaged-devices/access-requirements-settings.png)
 
-   Devam etmek için **İleri ' yi** seçin.
+   Devam etmek için **İleri**’yi seçin.
 
 7. **Koşullu başlatma** sayfası, uygulama koruma ilkeniz için oturum açma güvenlik gereksinimlerini ayarlamaya yönelik ayarları sağlar. Bu öğreticide, bu ayarları yapılandırmanız gerekmez.
 
@@ -237,7 +237,7 @@ Test ilkelerine artık ihtiyacınız kalmadığında bunları kaldırabilirsiniz
 
 4. **Uç nokta güvenliği** > **koşullu erişim**' i seçin.
 
-5. **Ilke adı** listesinde, test ilkelerinizin her biri için bağlam menüsünü ( **...** ) seçin ve **Sil**' i seçin. Onaylamak için **Evet** ' i seçin.
+5. **Ilke adı** listesinde, test ilkelerinizin her biri için bağlam menüsünü ( **...** ) seçin ve **Sil**' i seçin. Onaylamak için **Evet**’i seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Bu öğreticide, kullanıcının Outlook uygulamasıyla neler yapabileceğini sınırlamak için uygulama koruma ilkeleri oluşturdunuz ve Outlook uygulamasını gerektirecek ve modern kimlik doğrulama istemcileri için MFA gerektirirken koşullu erişim ilkeleri oluşturdunuz. Diğer uygulama ve hizmetleri korumak için Intune 'U koşullu erişimle kullanma hakkında bilgi edinmek için bkz. [koşullu erişimi ayarlama](conditional-access.md).

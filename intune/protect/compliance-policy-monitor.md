@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/14/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410155"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992992"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
@@ -98,9 +98,8 @@ Farklı cihaz uyumluluk ilkesi durumlarının açıklamaları:
 
 ![Uyumsuz durumunu seçme](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-Bu eylem **cihaz uyumluluk** penceresini açar ve cihazları bir **cihaz durumu** grafiğinde görüntüler. Grafik, işletim sistemi platformu, son iade tarihi ve daha fazlası dahil olmak üzere söz konusu durumdaki cihazlar hakkında daha fazla ayrıntı gösterir. 
-
-![Pano görüntüsü, bu durumdaki cihazlar hakkında daha fazla ayrıntı sağlar](./media/compliance-policy-monitor/drill-down-details.png)
+Bu eylem **cihaz uyumluluk** penceresini açar ve cihazları bir **cihaz durumu** grafiğinde görüntüler. Grafik, işletim sistemi platformu, son iade tarihi ve daha fazlası dahil olmak üzere söz konusu durumdaki cihazlar hakkında daha fazla ayrıntı gösterir.
+![Pano görüntüsü bu belirli durumda cihaz hakkında daha fazla ayrıntı gösterir](./media/compliance-policy-monitor/drill-down-details.png)
 
 Belirli bir kullanıcıya ait tüm cihazları görmek istiyorsanız kullanıcının e-postasını yazarak grafik raporunu filtreleyebilirsiniz.
 
@@ -132,7 +131,7 @@ Kutucuğu seçtiğinizde uyumluluk ilkeleri olmayan cihazlar görüntülenir. Ay
 
 - **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle** güvenlik ayarı için uyumluluk ilkesi olmayan cihazları belirlemek önemlidir. Cihazlar belirlendikten sonra bunlara en az bir uyumluluk ilkesi atayabilirsiniz.
 
-  Bu güvenlik ayarı, Intune portalında yapılandırılabilir. **Cihazlara** , uyumluluk **ilkeleri** > **Uyumluluk ilkesi ayarları** > . Daha sonra **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle** seçeneğini **Uyumlu** veya **Uyumsuz** olarak ayarlayın. 
+  Bu güvenlik ayarı, Intune portalında yapılandırılabilir. **Cihazlara** , uyumluluk **ilkeleri** > **Uyumluluk ilkesi ayarları** > . Daha sonra **Uyumluluk ilkesi atanmamış cihazları şu şekilde işaretle** seçeneğini **Uyumlu** veya **Uyumsuz** olarak ayarlayın.
 
   Bu [Intune hizmetinde güvenlik geliştirmesi](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) hakkında daha fazla bilgi edinin.
 
@@ -140,7 +139,7 @@ Kutucuğu seçtiğinizde uyumluluk ilkeleri olmayan cihazlar görüntülenir. Ay
 
 ### <a name="per-policy-device-compliance"></a>İlkeye göre cihaz uyumluluğu
 
-**İlke uyumluluk** grafiği, ilkeleri ve kaç cihazın uyumlu ve uyumsuz olduğunu gösterir. 
+**İlke uyumluluk** grafiği, ilkeleri ve kaç cihazın uyumlu ve uyumsuz olduğunu gösterir.
 
 ![İlke listesi ile ilke için uyumlu ve uyumsuz cihaz sayısını görme](./media/compliance-policy-monitor/idc-8.png)
 
@@ -149,11 +148,6 @@ Kutucuğu seçtiğinizde uyumluluk ilkeleri olmayan cihazlar görüntülenir. Ay
 **Ayar uyumluluğu** grafiği tüm uyumluluk ilkelerinden tüm cihaz uyumluluk ilkesi ayarlarını, ilke ayarlarının uygulandığı platformları ve uyumlu olmayan cihazların sayısını gösterir.
 
 ![Farklı ilkelerdeki ayar listesini görme](./media/compliance-policy-monitor/idc-10.png)
-
-> [!NOTE]
-> Bir ilke bir cihaza ve aynı cihazdaki bir kullanıcıya atanabilir. Bazı senaryolarda, cihaz yeniden başlatıldığında olduğu gibi, Kullanıcı oturum açmadan önce bir cihaz eşitlenebilir. Uyumluluk bu kullanıcıyı değerlendirebilir ve cihazı uyumlu değil olarak gösterebilir. Bu davranış, sistem hesabını uyumlu olmayan bir kullanıcı olarak da gösterebilir.
->
-> Bu, çok kullanıcılı Windows 10 cihazlarındaki bilinen bir sorundur. Bu davranıştaki herhangi bir değişiklik veya güncelleştirme, [geliştirme](../fundamentals/in-development.md) ve [/veya yenilikler](../fundamentals/whats-new.md)' de içinde duyurulur.
 
 ## <a name="view-compliance-reports"></a>Uyumluluk raporlarını görüntüle
 
@@ -183,14 +177,15 @@ Bu özellik cihaz durumu bildirimine eklenmiştir:
 2. Bir ilke seçin ve **Genel Bakış**'ı seçin. Bu görünümde, ilke ataması aşağıdaki durumları içerir:
 
     - **Başarılı**: ilke uygulandı
-    - **Hata**: ilke uygulanamadı. Bu ileti, genellikle bir açıklamaya bağlantı veren bir hata kodu görüntüler. 
+    - **Hata**: ilke uygulanamadı. Bu ileti, genellikle bir açıklamaya bağlantı veren bir hata kodu görüntüler.
     - **Çakışma**: aynı cihaza iki ayar uygulanır ve Intune çakışmayı sıralayamazsınız. Yöneticinin gözden geçirmesi gerekir.
-    - **Bekliyor**: cihaz, ilkeyi henüz alacak şekilde Intune ile iade edilmedi. 
-    - **Uygulanamaz**: cihaz ilkeyi alamıyor. Örneğin ilke, iOS 11.1’e özel bir ayarı güncelleştiriyor ancak cihaz iOS 10 kullanıyor. 
+    - **Bekliyor**: cihaz, ilkeyi henüz alacak şekilde Intune ile iade edilmedi.
+    - **Uygulanamaz**: cihaz ilkeyi alamıyor. Örneğin ilke, iOS 11.1’e özel bir ayarı güncelleştiriyor ancak cihaz iOS 10 kullanıyor.
 
 3. Bu ilkeyi kullanan cihazlarla ilgili ayrıntıları görmek için, durumlardan birini seçin. Örneğin **Başarılı**'yı seçin. Sonraki pencerede, cihaz adı ve dağıtım durumu gibi belirli cihaz ayrıntıları listelenir.
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Intune ilke çakışmalarını nasıl çözümler?
+
 Bir cihaza birden çok Intune ilkesi uygulandığında ilke çakışmaları olabilir. İlke ayarları çakışırsa, Intune tüm çakışmaları aşağıdaki kuralları kullanarak çözer:
 
 - Çakışan ayarlar bir Intune yapılandırma ilkesine ve bir uyumluluk ilkesine aitse, uyumluluk ilkesindeki ayarlar yapılandırma ilkesindeki ayarlara göre önceliklidir. Bu, yapılandırma ilkesindeki ayarlar daha güvenli olsa bile gerçekleşir.

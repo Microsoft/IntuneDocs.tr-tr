@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bc29a7a5026691371370b167a4445bfd70cc76bd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72489795"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 cihaz kısıtlama ayarları
@@ -80,7 +80,7 @@ Uygulamanın sayfasını açın ve URL'yi panoya kopyalayın. Artık bunu izin v
 
 ### <a name="additional-options"></a>Ek seçenekler
 
-Ayrıca, **Içeri aktar** ' a tıklayarak listeyi <*uygulama URL 'si*>, <*uygulama adı*>, <*uygulama yayımcısı*> veya kısıtlanmış Içeriğini içeren bir CSV dosyası oluşturmak için **dışarı aktar** ' a tıklayabilirsiniz. Aynı biçimdeki uygulamalar listesi.
+Ayrıca, **Içeri aktar** ' a tıklayarak listeyi <*uygulama URL 'si*>, uygulama*adı*> < uygulama*yayımcısı*< veya aynı biçimde kısıtlanmış uygulamalar listesinin Içeriğini içeren bir CSV dosyası oluşturmak için **dışarı aktar** ' a tıklayabilirsiniz.
 
 
 ## <a name="browser"></a>Tarayıcı

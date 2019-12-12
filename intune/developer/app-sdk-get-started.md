@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592015"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899394"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -164,7 +164,7 @@ Yapı numarası|CFBundleVersion|PackageVersionCode |Bu numara, uygulama kodunda 
 
   * Uygulamanızı Son Kullanıcı hesabı kullanarak bir mobil cihazda test ediyorsanız, bir yönetici hesabıyla oturum açtıktan sonra Microsoft 365 Yönetim Merkezi Web sitesinde bu hesaba bir Intune lisansı vermiş olduğunuzdan emin olun, bkz. [Microsoft Intune lisansı atama](../fundamentals/licenses-assign.md).
 
-* **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak amacıyla her ilke ayarı için beklenen davranışı bilmeniz gerekir. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](../apps/app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](../apps/app-protection-policy-settings-android.md). Uygulamanız Intune SDK 'sını tümleştirdiyse, ancak henüz hedeflenen bir uygulama olarak Azure portal listelenmiyorsa, "+ daha fazla uygulama" seçeneğini belirleyerek ve metin kutusuna paket KIMLIĞI (iOS) veya paket adı (Android) sağlayarak bunu bir ilkeyle hedefleyebilirsiniz.
+* **Intune uygulama koruma ilkeleri**: Uygulamanızı tüm Intune uygulama koruma ilkelerine karşı sınamak amacıyla her ilke ayarı için beklenen davranışı bilmeniz gerekir. Açıklamalar için bkz. [iOS uygulama koruma ilkeleri](../apps/app-protection-policy-settings-ios.md) ve [Android uygulama koruma ilkeleri](../apps/app-protection-policy-settings-android.md). Uygulamanız Intune SDK 'sını tümleştirdiyse, ancak hedeflenebilir uygulamaları listesinde listelenmemişse, ' özel uygulamalar ' ı seçerken uygulamanın paket KIMLIĞINI (iOS) veya paket adını (Android) metin kutusunda belirtebilirsiniz. 
 
 * **Sorun giderme**: Uygulamanızın kullanıcı deneyimini el ile test ederken herhangi bir sorunla karşılaşırsanız bkz. [Uygulama yükleme sorunlarını giderme](../apps/troubleshoot-app-install.md). 
 

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
-ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74098213"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
@@ -58,13 +58,13 @@ Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif b
 
 Aşağıdaki ekranlar, Android iş profili kaydı için güncelleştirilmiş denetim listesini gösterir:
 
-|Güncellendi|Öncekini|  
+|Güncelleştirme tarihi|Önceki|  
 |---|---|  
 |![Şirket Portalı 'de iş profili kurulumunun örnek görüntüsü, Basitleştirilmiş denetim listesi ve yeni simgeler gösteriliyor.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Bir busier denetim listesi gösteren Şirket Portalı önceki iş profili kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
 
 Aşağıdaki ekranlar, Android Cihaz Yöneticisi kaydı için güncelleştirilmiş denetim listesini gösterir:  
 
-|Güncellendi|Öncekini|  
+|Güncelleştirme tarihi|Önceki|  
 |---|---|  
 |![Şirket Portalı 'de, Basitleştirilmiş denetim listesi ve yeni simgeleri gösteren Android Cihaz Yöneticisi kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/android-checklist-1911.png)|![Bir busier denetim listesi gösteren Şirket Portalı önceki Android Cihaz Yöneticisi kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
@@ -175,7 +175,7 @@ Karşılaşacağınız güncelleştirmeler şunlardır:
 - Büyük uygulama katalogları için iyileştirilmiş performans
 - Tüm kullanıcılar için artırılmış erişilebilirlik  
 
-|Güncellendi|Öncekini|
+|Güncelleştirme tarihi|Önceki|
 |---|---|
 |![Güncelleştirilmiş cihaz sayfası, tam liste üzerinde açılmak yerine cihaz bilgileri üzerinde düzgün bir şekilde hizalı olarak gösteriliyor.](./media/whats-new-app-ui/iwp-device-after-1803.png)|![Cihaz sayfasının önceki sürümü.](./media/whats-new-app-ui/iwp-device-before-1803.png)|
 |![Güncelleştirilmiş uygulama yükleme sayfası; yayımlanma tarihi, sürüm ve uygulama türü gibi çeşitli yükleme bilgileri ve açıklama üzerinde uygulamayı düzgün bir şekilde gösteriyor.](./media/whats-new-app-ui/iwp-app-install-after-1803.png)|![Uygulama yükleme sayfasının önceki sürümü.](./media/whats-new-app-ui/iwp-app-install-before-1803.png)|  
@@ -222,7 +222,7 @@ iOS için Şirket Portalı uygulamasına büyük bir kullanıcı deneyimi günce
 |Önce|Sonra|
 |---|---|
 |![01](./media/whats-new-app-ui/cp_iosRedesign_before_1803_01.png)|![01](./media/whats-new-app-ui/cp_iosRedesign_after_1803_01.png)|
-|*Önceki adımla birlikte*|![sayısı](./media/whats-new-app-ui/cp_iosRedesign_after_1803_02.png)|
+|*Önceki adımla birlikte*|![02](./media/whats-new-app-ui/cp_iosRedesign_after_1803_02.png)|
 |![03](./media/whats-new-app-ui/cp_iosRedesign_before_1803_02.png)|![03](./media/whats-new-app-ui/cp_iosRedesign_after_1803_03.png)|
 
 ### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Windows için Şirket Portalı uygulamasında dil iyileştirmeleri <!-- 1683758 -->
@@ -231,7 +231,7 @@ Daha kullanıcı dostu ve şirketinize özgü olabilmesi için Windows 10 için 
 |Önce|Sonra|
 |---|---|
 |![01](./media/whats-new-app-ui/windows_enroll_before_1803.png)|![01](./media/whats-new-app-ui/windows_enroll_after_1803.png)|
-|![sayısı](./media/whats-new-app-ui/windows_view_policy_issues_before_1803.png)|![sayısı](./media/whats-new-app-ui/windows_view_policy_issues_after_1803.png)
+|![02](./media/whats-new-app-ui/windows_view_policy_issues_before_1803.png)|![02](./media/whats-new-app-ui/windows_view_policy_issues_after_1803.png)
 
 ## <a name="week-of-march-12-2018"></a>12 Mart 2018 Haftası
 
@@ -242,10 +242,10 @@ Android için Şirket Portalı uygulamasını, Android'in [Materyal Tasarım](ht
 |Önce|Sonra|
 |---|---|
 |![01](./media/whats-new-app-ui/android_about_before_1803.png)|![01](./media/whats-new-app-ui/androidCP_about_after_1803.png)|
-|![sayısı](./media/whats-new-app-ui/android_contact_it_before_1803.png)|![sayısı](./media/whats-new-app-ui/android_contact_it_after_1803.png)|
+|![02](./media/whats-new-app-ui/android_contact_it_before_1803.png)|![02](./media/whats-new-app-ui/android_contact_it_after_1803.png)|
 |![03](./media/whats-new-app-ui/android_devices_before_1803.png)|![03](./media/whats-new-app-ui/androidCP_devicelist_after_1803.png)|
-|![04](./media/whats-new-app-ui/android_device_details_before_1803.png)|![Mart](./media/whats-new-app-ui/androidCP_devicedetails_1_after1803.png)|
-|![Mart](./media/whats-new-app-ui/android_device_details_update_settings_before_1803.png)|![Mart](./media/whats-new-app-ui/androidCP_devicedetails_red_box_2_after1803.png)|
+|![04](./media/whats-new-app-ui/android_device_details_before_1803.png)|![05](./media/whats-new-app-ui/androidCP_devicedetails_1_after1803.png)|
+|![05](./media/whats-new-app-ui/android_device_details_update_settings_before_1803.png)|![05](./media/whats-new-app-ui/androidCP_devicedetails_red_box_2_after1803.png)|
 |![06](./media/whats-new-app-ui/android_profile_before_1803.png)|![06](./media/whats-new-app-ui/android_profile_after_1803.png)|
 |![07](./media/whats-new-app-ui/androidCP_Setup01_before_1803.png)|![07](./media/whats-new-app-ui/androidCP_Setup01_after_1803.png)|
 
@@ -270,10 +270,10 @@ IOS için Şirket Portalı uygulamasında cihaz kurulum iş akışını gelişti
 |Önce|Sonra|
 |---|---|
 |![01](./media/whats-new-app-ui/ios_cp_enroll_01_before_1711.png)|![01](./media/whats-new-app-ui/ios_cp_enroll_01_after_1711.png)|
-|![sayısı](./media/whats-new-app-ui/ios_cp_enroll_02_before_1711.png)|*Önceki adımla birlikte*|
+|![02](./media/whats-new-app-ui/ios_cp_enroll_02_before_1711.png)|*Önceki adımla birlikte*|
 |![03](./media/whats-new-app-ui/ios_cp_enroll_03_before_1711.png)|![03](./media/whats-new-app-ui/ios_cp_enroll_03_after_1711.png)|
 |![04](./media/whats-new-app-ui/ios_cp_enroll_04_before_1711.png)|![04](./media/whats-new-app-ui/ios_cp_enroll_04_after_1711.png)|
-|![Mart](./media/whats-new-app-ui/ios_cp_enroll_05_before_1711.png)|![Mart](./media/whats-new-app-ui/ios_cp_enroll_05_after_1711.png)|
+|![05](./media/whats-new-app-ui/ios_cp_enroll_05_before_1711.png)|![05](./media/whats-new-app-ui/ios_cp_enroll_05_after_1711.png)|
 |![06](./media/whats-new-app-ui/ios_cp_enroll_06_before_1711.png)|![06](./media/whats-new-app-ui/ios_cp_enroll_06_after_1711.png)|
 |![07](./media/whats-new-app-ui/ios_cp_enroll_07_before_1711.png)|![07](./media/whats-new-app-ui/ios_cp_enroll_07_after_1711.png)|
 
@@ -285,7 +285,7 @@ Windows 10 için Şirketi Portalı uygulamasındaki Ayarlar sayfası, ayarların
 
 |Önce|Sonra|
 |---|---|
-|![01](./media/whats-new-app-ui/w10-share-logs.png)|![sayısı](./media/whats-new-app-ui/w10-share-logs-after-1711.png)|
+|![01](./media/whats-new-app-ui/w10-share-logs.png)|![02](./media/whats-new-app-ui/w10-share-logs-after-1711.png)|
 
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>Şirket Portalı uygulamalar ve Web sitesinde iyileştirmeler üzerinde arama yapın <!-- 1418189 -->
@@ -316,7 +316,7 @@ Android için Şirket Portalı uygulamasında cihaz kurulum iş akışını iyil
 |---|---|
 |![01](./media/whats-new-app-ui/android_cp_enroll_01_post_1709.png)|![01](./media/whats-new-app-ui/android_cp_enroll_01_1709_new.png)|
 |![01a](./media/whats-new-app-ui/android_cp_enroll_01_before_1710.png)| *Önceki adımla birlikte* |
-|![sayısı](./media/whats-new-app-ui/android_cp_enroll_02_before_1710.png)|![sayısı](./media/whats-new-app-ui/android_cp_enroll_02_after_1710.png)|
+|![02](./media/whats-new-app-ui/android_cp_enroll_02_before_1710.png)|![02](./media/whats-new-app-ui/android_cp_enroll_02_after_1710.png)|
 |![03](./media/whats-new-app-ui/android_cp_enroll_03_before_1710.png)|![03](./media/whats-new-app-ui/android_cp_enroll_03_after_1710.png)|
 
 Android iş profili cihazlarında ek adımlar iyileştirildi.
@@ -324,7 +324,7 @@ Android iş profili cihazlarında ek adımlar iyileştirildi.
 |Önce|Sonra|
 |---|---|
 |![04](./media/whats-new-app-ui/android_work_cp_enroll_01_before_1710.png)|![04](./media/whats-new-app-ui/android_work_cp_enroll_01_after_1710.png)|
-|![Mart](./media/whats-new-app-ui/android_work_cp_enroll_02_before_1710.png)| *Önceki adımla birlikte* |
+|![05](./media/whats-new-app-ui/android_work_cp_enroll_02_before_1710.png)| *Önceki adımla birlikte* |
 |![06](./media/whats-new-app-ui/android_work_cp_enroll_03_before_1710.png)|![06](./media/whats-new-app-ui/android_work_cp_enroll_03_after_1710.png)|
 |![07](./media/whats-new-app-ui/android_work_cp_enroll_04_before_1710.png)|![07](./media/whats-new-app-ui/android_work_cp_enroll_04_after_1710.png)|
 |![08](./media/whats-new-app-ui/android_work_cp_enroll_05_before_1710.png)| *Önceki adımla birlikte* |
@@ -345,10 +345,10 @@ Android için Şirket Portalı uygulamasında kayıt işlemi, son kullanıcılar
 |Önce|Sonra|
 |---|---|
 |![01](./media/whats-new-app-ui/android_cp_enroll_01_before_1709.png)|![01](./media/whats-new-app-ui/android_cp_enroll_01_post_1709.png)|
-|![sayısı](./media/whats-new-app-ui/android_cp_enroll_02_before_1709.png)|![sayısı](./media/whats-new-app-ui/android_cp_enroll_02_post_1709.png)|
+|![02](./media/whats-new-app-ui/android_cp_enroll_02_before_1709.png)|![02](./media/whats-new-app-ui/android_cp_enroll_02_post_1709.png)|
 |![03](./media/whats-new-app-ui/android_cp_enroll_03_before_1709.png)|![03](./media/whats-new-app-ui/android_cp_enroll_03_post_1709.png)|
 |![04](./media/whats-new-app-ui/android_cp_enroll_04_before_1709.png)|![04](./media/whats-new-app-ui/android_cp_enroll_04_post_1709.png)|
-|![Mart](./media/whats-new-app-ui/android_cp_enroll_05_before_1709.png)|![Mart](./media/whats-new-app-ui/android_cp_enroll_05_post_1709.png)|
+|![05](./media/whats-new-app-ui/android_cp_enroll_05_before_1709.png)|![05](./media/whats-new-app-ui/android_cp_enroll_05_post_1709.png)|
 
 
 ## <a name="august-2017"></a>Ağustos 2017

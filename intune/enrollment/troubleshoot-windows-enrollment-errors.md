@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e4f8768129ab035b4a935a900f62ab6f3379edd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832639"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991809"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -205,7 +205,7 @@ Hata: "bir sorun oluştu. Kuruluşunuz bu Windows sürümünü desteklemiyor.  (
 #### <a name="resolution"></a>Çözüm
 Tek başına bir Intune ortamında bu sorunu onarmak için aşağıdaki adımları izleyin: 
  
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **kayıt kısıtlamaları** ' nı seçer > bir cihaz türü kısıtlayıcı seçin.    
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **kayıt kısıtlamaları** ' nı seçer > bir cihaz türü kısıtlaması seçin.    
 2.  > **Özellikler** ( **Platform ayarları**' nın yanında) **Windows (MDM)** > **izin ver** ' i seçin.    
 3. **Gözden geçir + kaydet**' e tıklayın.    
  

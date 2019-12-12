@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73713480"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
@@ -198,9 +198,9 @@ Aşağıdaki komut satırı parametrelerini Uygulama Sarmalama Aracı ile birlik
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Uygulama Sarmalama Aracı için kullanılabilir komut satırı özellikleri hakkında ayrıntılı kullanım bilgilerini gösterir. |
-|**-aa**|(İsteğe bağlı) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` örn `login.windows.net/common` |
-|**-AC**|(İsteğe bağlı) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` Bu, Istemci KIMLIĞI alanındaki GUID 'in uygulama kaydı dikey penceresindeki uygulamanızın listesinden olması. |
-|**-Ar**|(İsteğe bağlı) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` Bu, uygulama kaydlarınızın yapılandırılmış yeniden yönlendirme URI 'sidir. Genellikle, Microsoft Authenticator uygulamanın aracılı kimlik doğrulamasından sonra geri döndürdüğü uygulamanın URL protokolü olur. |
+|**-aa**|(İsteğe bağlı) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` ör `login.windows.net/common` |
+|**-AC**|(İsteğe bağlı) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` bunun Istemci KIMLIĞI alanındaki GUID 'in uygulama kaydı dikey penceresindeki uygulamanızın listesinden olması. |
+|**-Ar**|(İsteğe bağlı) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` bu, uygulama kaydlarınızın yapılandırılmış yeniden yönlendirme URI 'sidir. Genellikle, Microsoft Authenticator uygulamanın aracılı kimlik doğrulamasından sonra geri döndürdüğü uygulamanın URL protokolü olur. |
 |**-v**| (İsteğe bağlı) Konsola ayrıntılı ileti çıkışı yapar. Bu bayrağın hataları ayıklamak için kullanılması önerilir. |
 |**-e**| (İsteğe bağlı) Uygulama Sarmalama Aracının uygulamayı işlerken eksik yetkilendirmeleri kaldırmasını sağlamak için bu bayrağı kullanın. Daha fazla ayrıntı için [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements) bölümüne bakın.|
 |**-xe**| (İsteğe bağlı) Uygulamadaki iOS uzantıları hakkında bilgi ve bunları kullanmak için hangi yetkilendirmelerin gerektiğini yazdırır. Daha fazla ayrıntı için [Uygulama yetkilendirmelerini ayarlama](#setting-app-entitlements) bölümüne bakın. |

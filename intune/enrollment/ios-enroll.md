@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2fb5208cd7df6dc68bcd20455ae9e06a9dbd7ff5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503155"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune’da iOS cihazları kaydetme
@@ -44,7 +44,7 @@ iOS cihazları etkinleştirmeden önce aşağıdaki adımları tamamlayın:
 Kullanıcıların kendi cihazlarını Intune yönetimine kaydetmesine izin verebilirsiniz. Bu, “kendi cihazını getir” veya KCG olarak bilinir. Kullanıcıları kaydetmek için üç seçenek vardır:
 - Uygulama koruma Ilkeleri size yalnızca uygulama düzeyinde yönetim sağlayan en hafif KCG deneyimini sağlar. Bununla birlikte, cihazı 6 basamaklı bir karmaşık PIN ile de korumak istiyorsanız, bu ilkeleri kullanıcı kaydıyla birlikte kullanabilirsiniz.
 - Cihaz kaydı, tipik KCG kaydı olarak düşünebilir. Yöneticilere çok çeşitli yönetim seçenekleri sağlar.
-- Kullanıcı kaydı, yöneticilere cihaz yönetimi seçeneklerinin bir alt kümesini sağlayan daha kolay bir kayıt işlemidir. Bu özellik şu anda önizleme aşamasındadır. 
+- Kullanıcı kaydı, yöneticilere cihaz yönetimi seçeneklerinin bir alt kümesini sağlayan daha kolay bir kayıt işlemidir. Bu özellik şu anda önizleme sürümündedir. 
 
 Önkoşulları ve atanan kullanıcı lisanslarını tamamladıktan sonra, kullanıcılar Intune Şirket Portalı uygulamayı App Store 'dan indirebilir ve uygulamadaki kayıt talimatlarını takip edebilir. [Gizlilik bildirimi özelleştirmesi](../apps/company-portal-app.md#privacy-statement-customization)bölümünde açıklandığı gibi iOS cihazlarında Şirket portalı gizlilik bildirimini özelleştirebilirsiniz.
 

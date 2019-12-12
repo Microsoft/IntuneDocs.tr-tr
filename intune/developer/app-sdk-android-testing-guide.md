@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9eada01f2b1e876d6d3b47140c671e3ff7eeab02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503500"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-testing-guide"></a>Android için uygulama SDK 'Sı test Kılavuzu Microsoft Intune
@@ -55,7 +55,7 @@ Aşağıdaki test çalışmaları yapılandırma ve onay adımları sağlar. Int
 2. Aşağıdaki koşulları onaylayın:
     - Uygulama başlatma, PIN girişi veya Şirket Portalı kayıt sırasında kullanılan üretim kullanıcısı için bir istem sunmalıdır.
     - Geçerli bir oturum açma istemi sunamaması, özellikle Azure Active Directory kimlik doğrulaması kitaplığı (ADAL) Tümleştirmesi (SkipBroker, ClientID ve Authority) için değerler olarak yanlış yapılandırılmış bir Android bildiriminin nedeni olabilir.
-    - Herhangi bir istem sunma hatası yanlış tümleşik `MAMActivity` değerinden kaynaklanıyor olabilir. @No__t-0 hakkında daha fazla bilgi için bkz. [Android Için uygulama SDK 'sı geliştirici kılavuzu Microsoft Intune](app-sdk-android.md).
+    - Herhangi bir istem sunma hatası, yanlış tümleşik `MAMActivity` bir değer olabilir. `MAMActivity`hakkında daha fazla bilgi için bkz. [Android Için uygulama SDK 'sı geliştirici kılavuzu Microsoft Intune](app-sdk-android.md).
 
 > [!NOTE] 
 > Önceki test çalışmıyorsa, aşağıdaki testler de başarısız olur. [SDK](app-sdk-android.md##sdk-integration) ve [adal](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) tümleştirmesini gözden geçirin.
@@ -104,7 +104,7 @@ Yönetilen uygulamaları, şirket e-posta ve belgelerinin bulunduğu bir şekild
 1. Azure portal, [silme](../apps/apps-selective-wipe.md)işlemi yapın.
 2. Uygulamanız herhangi bir silme işleyicisine kaydolmazsa, aşağıdaki koşulları onaylayın:
     - Uygulamanın tam temizleme işlemi gerçekleşir.
-3. Uygulamanız `WIPE_USER_DATA` veya `WIPE_USER_AUXILARY_DATA` için kaydedilmişse, aşağıdaki koşulları onaylayın:
+3. Uygulamanız `WIPE_USER_DATA` veya `WIPE_USER_AUXILARY_DATA`için kaydedilmişse, aşağıdaki koşulları onaylayın:
     - Yönetilen içerik uygulamadan kaldırılır. Daha fazla bilgi için bkz. [Android Için Intune uygulama SDK 'sı Geliştirici Kılavuzu-seçmeli silme](app-sdk-android.md#selective-wipe).
 
 ### <a name="multi-identity-support"></a>Çoklu kimlik desteği

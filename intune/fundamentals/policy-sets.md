@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e539f44fc9c9b4e7382368c0f3ad9f79bb1c98b1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585878"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Yönetim nesnelerinin koleksiyonlarını gruplamak için ilke kümelerini kullanma
@@ -57,7 +57,7 @@ Bir ilke kümesi oluşturduğunuzda, tek bir atama birimi oluşturur ve farklı 
 ## <a name="how-to-create-a-policy-set"></a>İlke kümesi oluşturma
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Intune** dikey penceresinde **Ilke kümeleri**  > **ilke** kümeleri  > **Oluştur**' u seçin.
+2. **Intune** dikey penceresinde **Ilke kümeleri** > **ilke** kümeleri > **Oluştur**' u seçin.
 3. **Temel bilgiler** sayfasında, aşağıdaki değerleri ekleyin:
     - **İlke kümesi adı** -Bu ilke kümesi için bir ad sağlayın.
     - **Açıklama** -isteğe bağlı olarak, ilke kümesi için bir açıklama sağlayın.

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 86aeb2b54d45f111864d71e65b8c90fce7205868
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508032"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune Şirket Portalı Windows cihaz kaydı  
@@ -62,8 +62,8 @@ Kayıt adımları farklı Windows 10 cihazlarının sürümleri için farklılı
 
 4. Sürümünüz  
 
-    * __1607 veya üzeri__: [ > **hesabı** > **erişim iş veya okul** rotası **ayarlarına**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)göre cihazınızı kaydedin.   
-    * __1511 veya önceki sürümler__: [**Hesap** yönlendirmenize  > **Hesap** >  **ayarları**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)yoluyla cihazınızı kaydedin.  
+    * __1607 veya üzeri__: [ > **Hesap** > **iş veya okul rotası erişimine erişim** ](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)için cihazınızı kaydedin.   
+    * __1511 veya önceki sürümler__: hesap [yönlendirmenize > **ayarları** > **Hesap** ](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)yoluyla cihazınızı kaydedin.  
 
 ### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile cihazları
 
@@ -72,8 +72,8 @@ Kayıt adımları farklı Windows 10 cihazlarının sürümleri için farklılı
 3. __Cihaz bilgileri__altında __sürümü__bulun.  
 4. Sürümünüz  
 
-    * __1607 veya üzeri__: [ > **erişimli Iş veya okul** rotası **ayarlarını**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)kullanarak cihazınızı kaydedin.   
-    * __1511 veya önceki sürümler__: [ **ayarları** > **Hesap** yolunu](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)kullanarak cihazınızı kaydedin.  
+    * __1607 veya üzeri__: [ **Iş veya okul rotası erişimi** > **ayarları** ](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)kullanarak cihazınızı kaydedin.   
+    * __1511 veya önceki sürümler__: [ **ayarları** > **hesapları** yolunu](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)kullanarak cihazınızı kaydedin.  
 
 ## <a name="enroll-non-windows-10-devices"></a>Windows 10 olmayan cihazları kaydetme  
 Şirket Portalı Web sitesi aracılığıyla desteklenen diğer Windows cihazlarını kaydetmek için aşağıdaki makaleleri kullanın:   

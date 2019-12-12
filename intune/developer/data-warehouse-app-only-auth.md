@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dacf8b6498175e9e7658689bee3a527e684cc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bce5d4377a1f5a591c71ff704937afeaccabf429
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490720"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899353"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune Veri Ambarı uygulaması - yalnızca kimlik doğrulama
 
@@ -77,7 +77,7 @@ Bu bölümde Azure AD, uygulamanız için bir anahtar değeri oluşturur.
 Bu bölümde, uygulamalara izinler vereceksiniz.
 
 1. **Ayarlar** dikey penceresinde **Gerekli izinler**’i seçin.
-2. **Ekle**' ye tıklayın.
+2. **Ekle**'ye tıklayın.
 3. **Bir API ekle**’yi seçerek **Bir API seç** dikey penceresini görüntüleyin.
 4. **Microsoft Intune API (MicrosoftIntuneAPI)** ’yi seçin ve daha sonra **Bir API seç** dikey penceresinden **Seç**’e tıklayın. **İzinleri seç** adımı seçilir ve **Erişim Ver** dikey penceresi görüntülenir.
 5. **Uygulama İzinleri** bölümüden **Microsoft Intune’dan veri ambarı bilgileri al**’ı seçin.
@@ -93,7 +93,7 @@ Visual Studio’yu kullanarak .NET Framework’ü destekleyen ve kodlama dili ol
 2. Sol tarafta **Visual C#** ’yi seçerek tüm .NET Framework projelerini görüntüleyin.
 3. **Konsol Uygulaması (.NET Framework)** ’nı seçin, bir uygulama adı ekleyin ve **Tamam**’a tıklayarak uygulamayı oluşturun.
 4. **Çözüm Gezgini**’nde **Program.cs**’yi seçerek kodu görüntüleyin.
-5. Çözüm Gezgini, derleme `System.Configuration` ' a bir başvuru ekleyin.
+5. Çözüm Gezgini, derleme `System.Configuration`bir başvuru ekleyin.
 6. Açılan menüde **Ekle** > **Yeni öğe**’yi seçin. **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
 7. Sol tarafta, **Visual C#** altında **Kod**’u seçin.
 8. **Sınıf** seçin, sınıfın adını *IntuneDataWarehouseClass.cs* olarak değiştirin ve **Ekle**’ye tıklayın.

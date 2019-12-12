@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502232"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Intune 'da Iş için Windows Hello 'Yu etkinleştirmek için Windows 10 cihaz ayarları
@@ -115,7 +115,7 @@ Intune 'da Iş için Windows Hello profilleri hakkında daha fazla bilgi edinmek
 
     **Varsayılan**: yapılandırılmadı
 
-  - **Kullanılabildiğinde, gelişmiş yanıltma koruması kullan**  
+  - **Kullanılabilir olduğunda gelişmiş yanıltma koruması kullan**  
     Windows Hello’nun yanıltmaya karşı koruma özelliklerinin bunu destekleyen cihazlarda kullanılıp kullanılmayacağını yapılandırır (örneğin, gerçek yüz yerine yüzün fotoğrafı olduğunu algılama).  
     - **Etkinleştir** -Windows, desteklendiğinde yüz özellikleri için tüm kullanıcıların yanıltma koruması kullanmasını gerektirir.
     - **Yapılandırılmadı** -Windows cihazda kimlik sahtekarlığı önleme yapılandırmasını alır.

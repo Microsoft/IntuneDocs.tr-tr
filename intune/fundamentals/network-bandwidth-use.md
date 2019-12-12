@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73415106"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune ağ yapılandırma gereksinimleri ve bant genişliği
@@ -44,15 +44,12 @@ Bu tabloda her istemci için ağ üzerinden geçen ortak içeriğin yaklaşık b
 |Operations Manager aracısı|11 MB|**Bir kez**<br /><br />Bu içerik türü için güncelleştirmeler olduğunda ek indirmeler yapılabilir.|
 |İlke aracısı|3 MB|**Bir kez**<br /><br />Bu içerik türü için güncelleştirmeler olduğunda ek indirmeler yapılabilir.|
 |Microsoft Easy Assist aracısı üzerinden Uzak Yardım|6 MB|**Bir kez**<br /><br />Bu içerik türü için güncelleştirmeler olduğunda ek indirmeler yapılabilir.|
-|Günlük istemci işlemleri|6 MB|**Günlük**<br /><br />Intune istemcisi, güncelleştirmeleri ve ilkeleri denetlemek ve istemcinin durumunu hizmete raporlamak üzere Intune hizmetiyle düzenli olarak iletişim kurar.
-|
+|Günlük istemci işlemleri|6 MB|**Günlük**<br /><br />Intune istemcisi güncelleştirmeleri ve ilkeleri denetlemek ve istemcinin durumunu hizmete raporlamak üzere Intune hizmetiyle düzenli olarak iletişim kurar.|
 |Endpoint Protection kötü amaçlı yazılım tanımı güncelleştirmeleri|Değişir<br /><br />Genellikle 40 KB ile 2 MB arasında|**Günlük**<br /><br />Günde en fazla üç kez.|
 |Endpoint Protection altyapı güncelleştirmesi|5 MB|**Aylık**|
 |Yazılım güncelleştirmeleri|Değişir<br /><br />Boyut, dağıttığınız güncelleştirmelere bağlıdır.|**Aylık**<br /><br />Genellikle, yazılım güncelleştirmeleri her ayın ikinci Salı günü yayınlanır.<br /><br />Yeni kaydedilen veya dağıtılan bir bilgisayar, daha önce yayınlanmış güncelleştirmelerinin tamamını indirirken daha fazla ağ bant genişliği kullanabilir.|
-|Hizmet paketleri|Değişir<br /><br />Boyut, dağıttığınız her bir hizmet paketi için değişir.|**Değişir**<br /><br />Hizmet paketlerini ne zaman dağıttığınıza bağlıdır.
-|
-|Yazılım dağıtımı|Değişir<br /><br />Boyut, dağıttığınız yazılıma bağlıdır.|**Değişir**<br /><br />Yazılımı ne zaman dağıttığınıza bağlıdır.
-|
+|Hizmet paketleri|Değişir<br /><br />Boyut, dağıttığınız her bir hizmet paketi için değişir.|**Değişir**<br /><br />Hizmet paketlerini ne zaman dağıttığınızda bağlıdır.|
+|Yazılım dağıtımı|Değişir<br /><br />Boyut, dağıttığınız yazılıma bağlıdır.|**Değişir**<br /><br />Yazılımı ne zaman dağıttığınızda bağlıdır.|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>Ağ bant genişliği kullanımını azaltmanın yolları
 
@@ -71,7 +68,7 @@ Intune istemcileri için içerikleri önbelleğe alan bir proxy sunucunun kullan
 |----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Önbellek boyutu         |             5 GB ila 30 GB             | Bu değer, ağınızdaki istemci bilgisayarların sayısına ve kullandığınız yapılandırmalara bağlı olarak değişir. Dosyaların çok kısa sürede silinmesini önlemek için ortamınıza yönelik önbellek boyutunu ayarlayın. |
 | Tek önbellek dosyası boyutu |                950 MB                 |                                                                     Bu ayar, tüm önbelleğe alan proxy sunucularında kullanılamayabilir.                                                                     |
-|   Önbelleğe alınacak nesne türleri    | istemcileri iki protokolü de kullandığından, proxy sunucusu hem<br /><br />hem de<br /><br />BITS |                                               Intune paketleri HTTP üzerinden Arka Plan Akıllı Aktarım Hizmeti (BITS) indirmesi tarafından alınan CAB dosyalarıdır.                                               |
+|   Önbelleğe alınacak nesne türleri    | istemcileri iki protokolü de kullandığından, proxy sunucusu hem<br /><br />hem de<br /><br />BİT |                                               Intune paketleri HTTP üzerinden Arka Plan Akıllı Aktarım Hizmeti (BITS) indirmesi tarafından alınan CAB dosyalarıdır.                                               |
 > [!NOTE]
 > İçerik isteklerini önbelleğe almak için bir ara sunucu kullanıyorsanız, istemci ile ara sunucu arasındaki ve ara sunucudan Intune'a giden trafik şifrelenir. İstemci ile Intune arasındaki bağlantıda uçtan uca şifreleme uygulanmaz.
 
@@ -82,11 +79,11 @@ Intune istemcileri için içerikleri önbelleğe alan bir proxy sunucunun kullan
 Ağ bant genişliğini azaltmak için belirlediğiniz saatlerde Windows yüklü bir bilgisayar üzerinde BITS hizmetini kullanabilirsiniz. BITS ilkesini Intune Aracısı ilkesinin **Ağ bant genişliği** sayfasında yapılandırabilirsiniz.
 
 > [!NOTE]
-> Windows üzerinde MDM yönetimi için, yalnızca işletim sisteminin MobileMSI uygulama türüne ait yönetim arabirimi, indirme işlemleri için BITS hizmetini kullanır. AppX/MsiX, kendi BITS olmayan indirme yığınını kullanırken Intune aracısı üzerinden erişilen Win32 uygulamaları da BITS yerine Teslim İyileştirme özelliğinden faydalanır.
+> Windows üzerinde MDM yönetimi için yalnızca işletim sisteminin MobileMSI uygulama türüne ait yönetim arabirimi indirme işlemler için BITS hizmetini kullanır. AppX/MsiX, kendi BITS olmayan indirme yığınını kullanırken Intune aracısı üzerinden erişilene Win32 uygulamaları da BITS yerine Teslim İyileştirme özelliğinden faydalanır.
 
 BITS ve Windows bilgisayarlar hakkında daha fazla bilgi için TechNet Kitaplığında [Arka Plan Akıllı Aktarım Hizmeti](https://technet.microsoft.com/library/bb968799.aspx) konusuna bakın.
 
-### <a name="delivery-optimization"></a>Teslim Iyileştirme
+### <a name="delivery-optimization"></a>Teslim İyileştirme
 
 Teslim Iyileştirme, Windows 10 cihazlarınız uygulamaları ve güncelleştirmeleri indirdiğinizde bant genişliği tüketimini azaltmak için Intune 'U kullanmanızı sağlar. Kendini düzenleme dağıtılan bir önbellek kullanarak, indirme işlemleri geleneksel sunuculardan ve diğer kaynaklardan (ağ eşleri gibi) çekerek yapılabilir.
 

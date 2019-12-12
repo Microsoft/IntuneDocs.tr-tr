@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188257"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860239"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da uyumluluk ilkesi oluşturma
 
@@ -100,7 +100,7 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
 
      Örneğin Konumlar özelliğini kullanıyor ve uyumluluk ilkesinde bir konum ekliyorsunuz. En az bir konum seçtiğinizde uyumsuzluk için varsayılan eylem uygulanır. Cihaz, seçili konumlara bağlı değilse hemen uyumsuz olarak değerlendirilir. Kullanıcılarınıza bir gün gibi bir yetkisiz kullanım süresi tanıyabilirsiniz.
 
-   - **Kapsam (Etiketler)** : kapsam etiketleri, ilkeleri satış, ık ve tüm ABD-NC çalışanları gibi belirli gruplara atamak ve filtrelemek için harika bir yoldur. Uyumluluk ilkelerinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. [İlke filtrelemek için kapsam etiketleri kullanma](../fundamentals/scope-tags.md) sayfası bu konuda faydalı bir kaynaktır.
+   - **Kapsam (Etiketler)** : kapsam etiketleri, ilkeleri `US-NC IT Team` veya `JohnGlenn_ITDepartment`gibi belirli gruplara filtrelemek için harika bir yoldur. Uyumluluk ilkelerinize ayar ekledikten sonra bir kapsam etiketi de ekleyebilirsiniz. [İlke filtrelemek için kapsam etiketleri kullanma](../fundamentals/scope-tags.md) sayfası bu konuda faydalı bir kaynaktır.
 
 4. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Tamam** > **Oluştur**'u seçin. İlke oluşturulur ve listede gösterilir. Şimdi ilkeyi gruplarınıza atayın.
 
@@ -139,7 +139,7 @@ For example, you're using the Locations feature, and add a location in a complia
 Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
 -->
 
-## <a name="refresh-cycle-times"></a>Yenileme döngüsü süreleri
+## <a name="refresh-cycle-times"></a>Yenileme döngü süreleri
 
 Intune, uyumluluk ilkelerine yönelik güncelleştirmeleri denetlemek için farklı yenileme döngüleri kullanır. Cihaz yakın zamanda kaydedildiyse, iade etme daha sık çalışır. [İlke ve profil yenileme döngüleri](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) tahmini yenileme zamanlarını listeler.
 

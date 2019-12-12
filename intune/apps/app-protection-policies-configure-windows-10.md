@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74564234"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 için uygulama koruma ilkeleri yapılandırmaya hazırlanma 
@@ -35,7 +35,7 @@ Azure AD’de MAM sağlayıcısını ayarlayarak Windows 10 için mobil uygulama
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm hizmetler** ' i seçin ve panoları değiştirmek için **M365 Azure Active Directory** seçin.
-3. **Azure Active Directory**seçin.
+3. **Azure Active Directory**'yi seçin.
 4. **Yönet** grubunda **Mobilite (MDM ve MAM)** öğesini seçin.
 5. **Microsoft Intune**’a tıklayın.
 6. **Yapılandırma** BÖLMESINDEKI **varsayılan mam URL 'lerini geri yükle** grubundaki ayarları yapılandırın.

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503461"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
@@ -106,7 +106,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
 
     ![Intune Uygulama SDK’sı iOS: bağlantılı çerçeveler ve kitaplıklar](./media/app-sdk-ios/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
-    `-force_load {PATH_TO_LIB}/libIntuneMAM.a` öğesini Intune Uygulama SDK'sı konumu ile değiştirerek `{PATH_TO_LIB}` öğesini aşağıdakilerden birine ekleyin:
+    `{PATH_TO_LIB}` öğesini Intune Uygulama SDK'sı konumu ile değiştirerek `-force_load {PATH_TO_LIB}/libIntuneMAM.a` öğesini aşağıdakilerden birine ekleyin:
    * Projenin `OTHER_LDFLAGS` derleme yapılandırması ayarı.
    * Xcode Kullanıcı arabiriminin **diğer bağlayıcı bayrakları**.
 
@@ -208,13 +208,13 @@ Uygulamanız kimlik doğrulaması için zaten ADAL veya MSAL kullanıyorsa ve ke
 
 Uygulamanız zaten ADAL veya MSAL kullanıyorsa, aşağıdaki konfigürasyonlar gereklidir:
 
-1. Projenin Info.plist dosyasında, **anahtar adlı**IntuneMAMSettings`ADALClientId` sözlüğü altında, ADAL çağrıları için kullanılacak istemci kimliği değerini belirtin.
+1. Projenin Info.plist dosyasında, `ADALClientId` anahtar adlı **IntuneMAMSettings** sözlüğü altında, ADAL çağrıları için kullanılacak istemci kimliği değerini belirtin.
 
-2. Yine **anahtar adlı**IntuneMAMSettings`ADALAuthority` sözlüğü altında, Azure AD yetkilisini belirtin.
+2. Yine `ADALAuthority` anahtar adlı **IntuneMAMSettings** sözlüğü altında, Azure AD yetkilisini belirtin.
 
-3. Yine **anahtar adlı**IntuneMAMSettings`ADALRedirectUri` sözlüğü altında, ADAL çağrıları için kullanılacak yeniden yönlendirme URI'si değerini belirtin. Alternatif olarak, uygulamanın yeniden yönlendirme URI'si `ADALRedirectScheme` biçimindeyse bunun yerine `scheme://bundle_id` belirtebilirsiniz.
+3. Yine `ADALRedirectUri` anahtar adlı **IntuneMAMSettings** sözlüğü altında, ADAL çağrıları için kullanılacak yeniden yönlendirme URI'si değerini belirtin. Alternatif olarak, uygulamanın yeniden yönlendirme URI'si `scheme://bundle_id` biçimindeyse bunun yerine `ADALRedirectScheme` belirtebilirsiniz.
 
-Ayrıca, uygulamalar çalışma zamanında bu Azure AD ayarlarını geçersiz kılabilir. Bunu yapmak için `aadAuthorityUriOverride` örneğinde `aadClientIdOverride`, `aadRedirectUriOverride` ve `IntuneMAMPolicyManager` özelliklerini ayarlamanız yeterlidir.
+Ayrıca, uygulamalar çalışma zamanında bu Azure AD ayarlarını geçersiz kılabilir. Bunu yapmak için `IntuneMAMPolicyManager` örneğinde `aadAuthorityUriOverride`, `aadClientIdOverride` ve `aadRedirectUriOverride` özelliklerini ayarlamanız yeterlidir.
 
 4. İOS uygulama izinlerinizi uygulama koruma ilkesi (APP) hizmetine verme adımlarının izlendiğinden emin olun. "[Uygulamanızın Intune uygulama koruma hizmeti 'ne erişmesine Izin verin (isteğe bağlı)](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" altındaki [Intune SDK 'sını](app-sdk-get-started.md#next-steps-after-integration) kullanmaya başlama yönergelerini kullanın.  
 
@@ -243,7 +243,7 @@ IntuneMAMSettings sözlüğü altında, Intune Uygulama SDK'sını yapılandırm
 
 Bu ayarlardan bazıları önceki bölümlerde ele alınmış olabilir ve bazıları tüm uygulamalar için geçerli değildir.
 
-Ayar  | Tür  | Tanım | Gerekli mi?
+Ayar  | Tür  | Definition | Gerekli mi?
 --       |  --   |   --       |  --
 ADALClientId  | Dize  | Uygulamanın Azure AD istemci tanımlayıcısı. | Intune olmayan bir AAD kaynağına erişen MSAL ve herhangi bir ADAL uygulamasını kullanan tüm uygulamalar için gereklidir. |
 ADALAuthority | Dize | Uygulamanın Azure AD yetkilisi kullanımda. AAD hesaplarının yapılandırıldığı ortamınızı kullanmanız gerekir. | Uygulama, Intune olmayan bir AAD kaynağına erişmek için ADAL veya MSAL kullanıyorsa gereklidir. Bu değer yoksa, Intune varsayılanı kullanılır.|
@@ -273,7 +273,7 @@ WebViewHandledURLSchemes | Dize Dizisi | Uygulamanızın WebView’unun işledi�
 
 ## <a name="receive-app-protection-policy"></a>Uygulama koruma ilkesini alma
 
-### <a name="overview"></a>Genel bakış
+### <a name="overview"></a>İlke
 
 Intune uygulama koruma ilkesini almak için, uygulamaların Intune MAM hizmetiyle bir kayıt isteği başlatmaları gerekir. Uygulamalar, Intune konsolunda cihaz kaydıyla veya cihaz kaydı olmadan uygulama koruma ilkesini almak için yapılandırılabilir. Kayıt olmadan uygulama koruma ilkesi (**APP-WE** veya MAM-WE olarak da bilinir), uygulamaların Intune mobil cihaz yönetimine (MDM) kaydedilmeden Intune tarafından yönetilmesine izin verir. Her iki durumda da, ilkeyi almak için Intune MAM hizmetine kaydolmak gereklidir.
 
@@ -304,7 +304,7 @@ Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. K
 
 ### <a name="apps-that-do-not-use-adal-or-msal"></a>ADAL veya MSAL kullanmayan uygulamalar
 
-ADAL veya MSAL kullanarak Kullanıcı oturumu olmayan uygulamalar, API 'yi çağırarak SDK 'nın bu kimlik doğrulamasını işlemesini sağlamak için Intune MAM hizmetinden uygulama koruma ilkesi alabilir. Azure AD ile bir kullanıcının kimlik doğrulamasını gerçekleştirmeyip, yine de verilerin korunmasına yardımcı olmak için uygulama koruma ilkesi alması gereken uygulamaların bu tekniği kullanması gerekir. Örneğin uygulamada oturum açmak için başka bir kimlik doğrulaması hizmeti kullanılıyor veya uygulama oturum açmayı hiç desteklemiyorsa. Bunu yapmak için, uygulamanın `loginAndEnrollAccount`örneğinden `IntuneMAMEnrollmentManager` yöntemini çağırabilir:
+ADAL veya MSAL kullanarak Kullanıcı oturumu olmayan uygulamalar, API 'yi çağırarak SDK 'nın bu kimlik doğrulamasını işlemesini sağlamak için Intune MAM hizmetinden uygulama koruma ilkesi alabilir. Azure AD ile bir kullanıcının kimlik doğrulamasını gerçekleştirmeyip, yine de verilerin korunmasına yardımcı olmak için uygulama koruma ilkesi alması gereken uygulamaların bu tekniği kullanması gerekir. Örneğin uygulamada oturum açmak için başka bir kimlik doğrulaması hizmeti kullanılıyor veya uygulama oturum açmayı hiç desteklemiyorsa. Bunu yapmak için, uygulamanın `IntuneMAMEnrollmentManager`örneğinden `loginAndEnrollAccount` yöntemini çağırabilir:
 
 ```objc
 /**
@@ -332,7 +332,7 @@ Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. K
 
 Intune SDK 'sının, uygulamanızın başlatılması tamamlanmadan önce ADAL/MSAL ve kayıt kullanarak tüm kimlik doğrulamasını işlemesini istiyorsanız ve uygulamanız her zaman uygulama ilkesi gerektirdiğinde, `loginAndEnrollAccount` API kullanmanız gerekmez. Uygulamanın Info.plist dosyasındaki IntuneMAMSettings sözlüğünde aşağıdaki iki ayarı EVET olarak ayarlamanız yeterli olur.
 
-Ayar  | Tür  | Tanım |
+Ayar  | Tür  | Definition |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Boole değeri| Mevcut bir yönetilen kimlik tespit edilirse ve bu kimlik henüz kaydedilmemişse uygulama başlatıldığında otomatik olarak kaydetmeye çalışılıp çalışılmayacağını belirtir. Varsayılan ayar HAYIR’dır. <br><br> Note: yönetilen kimlik bulunamazsa veya ADAL/MSAL önbelleğinde kimlik için geçerli bir belirteç yoksa, uygulama aynı zamanda MAMPolicyRequired Evet olarak ayarlanmadığı takdirde kayıt girişimi kimlik bilgileri istenmeden sessizce başarısız olur. |
 MAMPolicyRequired| Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: MAMPolicyRequired ayarı EVET olarak belirlenmişse uygulamalar App Store’a gönderilemez. MAMPolicyRequired EVET olarak ayarlandığında AutoEnrollOnLaunch da EVET olarak ayarlanmalıdır. |
@@ -458,7 +458,7 @@ Bu yöntemin dönüş değeri, uygulamanın gerekli yeniden başlatma işlemini 
 
 Intune Uygulama SDK'sında, uygulamaya dağıtılan Intune APP ilkesi hakkında bilgi almak için çağırabileceğiniz birkaç API vardır. Uygulamanızın davranışını özelleştirmek için bu verileri kullanabilirsiniz. Aşağıdaki tabloda, kullanacağınız bazı temel Intune sınıfları hakkında bilgi verilmektedir.
 
-Sınıf | Açıklama
+Sınıf | Description
 ----- | -----------
 IntuneMAMPolicyManager.h | IntuneMAMPolicyManager sınıfı, uygulamaya dağıtılan Intune APP ilkesini gösterir. Özellikle, [Çoklu kimliği etkinleştirme](app-sdk-ios.md#enable-multi-identity-optional) için faydalı olan API’leri gösterir. |
 IntuneMAMPolicy.h | IntuneMAMPolicy sınıfı uygulamaya uygulanan bazı MAM ilkesi ayarlarını gösterir. Bu ilke ayarları, uygulamanın kendi kullanıcı arabirimini özelleştirebilmesi için gösterilir. İlke ayarlarının çoğu uygulama değil SDK tarafından zorlanır. Uygulamada kullanılması gereken tek ayar Farklı kaydet denetimidir. Bu sınıf Farklı kaydet'i uygulamak için gereken bazı API'leri gösterir. |
@@ -467,7 +467,7 @@ IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager sınıfı, uyg
 
 ## <a name="implement-save-as-controls"></a>Farklı kaydet denetimlerini uygulama
 
-Intune, BT yöneticilerinin yönetilen bir uygulamanın verilerini hangi depolama konumlarına kaydedebileceğini seçmesine olanak tanır. Uygulamalar izin verilen depolama konumları için `isSaveToAllowedForLocation` içinde tanımlanan `IntuneMAMPolicy.h` API’sini kullanarak Intune Uygulama SDK'sını sorgulayabilir.
+Intune, BT yöneticilerinin yönetilen bir uygulamanın verilerini hangi depolama konumlarına kaydedebileceğini seçmesine olanak tanır. Uygulamalar izin verilen depolama konumları için `IntuneMAMPolicy.h` içinde tanımlanan `isSaveToAllowedForLocation` API’sini kullanarak Intune Uygulama SDK'sını sorgulayabilir.
 
 Yönetilen verileri bulut depolama alanına veya yerel konumlara kaydetmeden önce, BT yöneticisinin o konuma veri kaydedilmesine izin verip vermediğini öğrenmek için uygulamaların `isSaveToAllowedForLocation` API’sini denetlemesi gerekir.
 
@@ -510,7 +510,7 @@ Sürüm 8.0.2'den başlayarak, yalnızca Intune tarafından yönetilen paylaşı
 
 5. Uzantının Info.plist dosyasındaki IntuneMAMSettings ayarında EVET değerine sahip bir `OpenInActionExtension` Boole ayarı ekleyin.
 
-6. `NSExtensionActivationRule` kuralını, tek dosyayı ve uygulamanın `CFBundleDocumentTypes` ön ekli `com.microsoft.intune.mam` listesindeki tüm türleri destekleyecek şekilde yapılandırın. Örneğin uygulama public.text ve public.image destekliyorsa, etkinleştirme kuralı şu şekilde olur:
+6. `NSExtensionActivationRule` kuralını, tek dosyayı ve uygulamanın `com.microsoft.intune.mam` ön ekli `CFBundleDocumentTypes` listesindeki tüm türleri destekleyecek şekilde yapılandırın. Örneğin uygulama public.text ve public.image destekliyorsa, etkinleştirme kuralı şu şekilde olur:
 
     ```objc
     SUBQUERY (
@@ -647,13 +647,13 @@ Alternatif olarak, uygulamalar `IntuneMAMFilePolicyManager` kullanarak sahip kim
 
 ### <a name="shared-data"></a>Paylaşılan veriler
 
-Uygulama hem yönetilen hem de yönetilmeyen kullanıcı verilerini içeren dosyalar oluşturursa, yönetilen kullanıcının verilerini şifrelemek uygulamanın sorumluluğundadır. `protect` içindeki `unprotect` ve `IntuneMAMDataProtectionManager` API'lerini kullanarak veri şifreleyebilirsiniz.
+Uygulama hem yönetilen hem de yönetilmeyen kullanıcı verilerini içeren dosyalar oluşturursa, yönetilen kullanıcının verilerini şifrelemek uygulamanın sorumluluğundadır. `IntuneMAMDataProtectionManager` içindeki `protect` ve `unprotect` API'lerini kullanarak veri şifreleyebilirsiniz.
 
 `protect` yöntemi, bir kimliği yönetilen veya yönetilmeyen kullanıcı olarak kabul eder. Kullanıcı yönetiliyorsa, veriler şifrelenir. Kullanıcı yönetilmiyorsa, kimliği kodlayan verilere bir üst bilgi eklenir ancak veriler şifrelenmez. Verilerin sahibini almak için `protectionInfo` yöntemini kullanabilirsiniz.
 
 ### <a name="share-extensions"></a>Paylaşım uzantıları
 
-Uygulama bir paylaşım uzantısı içeriyorsa, paylaşılan öğenin sahibi `protectionInfoForItemProvider` içindeki `IntuneMAMDataProtectionManager` yöntemiyle alınabilir. Paylaşılan öğe bir dosya ise, dosya sahibi ayarı SDK tarafından yapılır. Paylaşılan öğenin veri olması durumunda; bu veri bir dosyaya sabitlenmişse dosya sahibini ayarlamak ve bu veriyi UI’da göstermeden önce `setUIPolicyIdentity` API’sini çağırmak uygulamanın görevidir.
+Uygulama bir paylaşım uzantısı içeriyorsa, paylaşılan öğenin sahibi `IntuneMAMDataProtectionManager` içindeki `protectionInfoForItemProvider` yöntemiyle alınabilir. Paylaşılan öğe bir dosya ise, dosya sahibi ayarı SDK tarafından yapılır. Paylaşılan öğenin veri olması durumunda; bu veri bir dosyaya sabitlenmişse dosya sahibini ayarlamak ve bu veriyi UI’da göstermeden önce `setUIPolicyIdentity` API’sini çağırmak uygulamanın görevidir.
 
 ### <a name="turn-on-multi-identity"></a>Çoklu kimliği açma
 
@@ -668,13 +668,13 @@ Varsayılan olarak, uygulamalar tek kimlikli olarak değerlendirilir. SDK, kayı
 
     Başlatma sırasında, çoklu kimlik uygulamaları bilinmeyen, yönetilmeyen bir hesap altında çalışıyor gibi kabul edilir. Koşullu başlatma UI’si çalışmaz ve uygulamada hiçbir ilke uygulanmaz. Kimliğin değiştirilmesi gerektiğinde bunu SDK’ya bildirmek uygulamanın sorumluluğudur. Genellikle, bu durum uygulamanın belirli bir kullanıcı hesabına ait verileri göstermek üzere olduğu sırada gerçekleşir.
 
-    Kullanıcının bir dizüstü bilgisayarda bir belge, posta kutusu veya sekme açmayı denemesi örnek olarak gösterilebilir. Dosya, posta kutusu veya sekme gerçekten açılmadan uygulamanın SDK’ya bildirimde bulunması gerekir. Bu `setUIPolicyIdentity` içindeki `IntuneMAMPolicyManager` API’si üzerinden yapılır. Bu API, kullanıcı yönetilse de yönetilmese de çağrılmalıdır. Kullanıcı yönetiliyorsa, SDK koşullu başlatma denetimleri gerçekleştirir (jailbreak algılama, PIN ve kimlik doğrulama gibi).
+    Kullanıcının bir dizüstü bilgisayarda bir belge, posta kutusu veya sekme açmayı denemesi örnek olarak gösterilebilir. Dosya, posta kutusu veya sekme gerçekten açılmadan uygulamanın SDK’ya bildirimde bulunması gerekir. Bu `IntuneMAMPolicyManager` içindeki `setUIPolicyIdentity` API’si üzerinden yapılır. Bu API, kullanıcı yönetilse de yönetilmese de çağrılmalıdır. Kullanıcı yönetiliyorsa, SDK koşullu başlatma denetimleri gerçekleştirir (jailbreak algılama, PIN ve kimlik doğrulama gibi).
 
     Kimlik değişiminin sonucu, uygulamaya bir tamamlama işleyicisi üzerinden zaman uyumsuz olarak döndürülür. Uygulama; belge, posta kutusu veya sekmeyi açmayı başarılı sonuç kodu döndürülünceye kadar ertelemelidir. Kimlik değişimi başarısız olursa, uygulamanın görevi iptal etmesi gerekir.
 
 * **SDK tarafından başlatılan kimlik değişimi**:
 
-    SDK’nın uygulamadan belirli bir kimliğe değiştirilmesini istemesini gerektiren durumlar vardır. Çoklu kimlik uygulamalarının bu isteği işlemek için `identitySwitchRequired` içindeki `IntuneMAMPolicyDelegate` yöntemini uygulaması gerekir.
+    SDK’nın uygulamadan belirli bir kimliğe değiştirilmesini istemesini gerektiren durumlar vardır. Çoklu kimlik uygulamalarının bu isteği işlemek için `IntuneMAMPolicyDelegate` içindeki `identitySwitchRequired` yöntemini uygulaması gerekir.
 
     Bu yöntem çağrıldığı zaman, uygulama belirli kimliğe değiştirilme isteğini yerine getirebiliyorsa, `IntuneMAMAddIdentityResultSuccess` öğesini tamamlama işleyicisine geçirmesi gerekir. Kimliği değiştirme işlemini yerine getiremiyorsa, uygulamanın `IntuneMAMAddIdentityResultFailed` öğesini tamamlama işleyicisine geçirmesi gerekir.
 
@@ -682,7 +682,7 @@ Varsayılan olarak, uygulamalar tek kimlikli olarak değerlendirilir. SDK, kayı
 
 * **Seçmeli silme**:
 
-    Uygulama seçmeli silme ile temizlendiğinde, SDK `wipeDataForAccount` içindeki `IntuneMAMPolicyDelegate` yönetimini çağırır. Belirtilen kullanıcı hesabını ve onunla ilişkili tüm verileri kaldırmak uygulamanın sorumluluğudur. SDK, kullanıcının sahip olduğu tüm dosyaları kaldırma özelliğine sahiptir ve uygulamanın `wipeDataForAccount` çağrısından FALSE sonucu getirmesi durumunda bunu uygular.
+    Uygulama seçmeli silme ile temizlendiğinde, SDK `IntuneMAMPolicyDelegate` içindeki `wipeDataForAccount` yönetimini çağırır. Belirtilen kullanıcı hesabını ve onunla ilişkili tüm verileri kaldırmak uygulamanın sorumluluğudur. SDK, kullanıcının sahip olduğu tüm dosyaları kaldırma özelliğine sahiptir ve uygulamanın `wipeDataForAccount` çağrısından FALSE sonucu getirmesi durumunda bunu uygular.
 
     Bu yöntemin bir arka plan iş parçacığından çağrıldığını unutmayın. Kullanıcıya yönelik tüm veriler kaldırılana kadar uygulama bir değer döndürmemelidir (uygulama FALSE döndürürse dosyalar hariç olmak üzere).
 

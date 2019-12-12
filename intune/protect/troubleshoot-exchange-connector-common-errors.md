@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508866"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Intune Exchange Connector için sık karşılaşılan hataları çözme
@@ -77,7 +77,7 @@ Microsoft Intune Exchange Connector yapılandırmayı denediğinizde aşağıdak
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Bu hata, Internet 'e bağlanmak için bir proxy sunucusu kullanılıyorsa ve Intune hizmetine gelen trafiği engelliyorsa meydana gelebilir. Bir proxy 'nin kullanımda olup olmadığını belirlemek için, **Denetim masası** > **Internet seçenekleri**' ne gidin, **bağlantı** sekmesini seçin ve ardından **LAN ayarları**' na tıklayın.
+Bu hata, Internet 'e bağlanmak için bir proxy sunucusu kullanılıyorsa ve Intune hizmetine gelen trafiği engelliyorsa meydana gelebilir. Bir proxy 'nin kullanımda olup olmadığını belirlemek için **Denetim masası** > **Internet seçenekleri**' ne gidin, **bağlantı** sekmesini seçin ve ardından **LAN ayarları**' na tıklayın.
 
 **Çözüm**:  
 
@@ -123,20 +123,20 @@ Bu hata, Internet 'e bağlanmak için bir proxy sunucusu kullanılıyorsa ve Int
    Domain and account: .\WIEC_USER
    This service account does not have the required user right "Log on as a service."  
 ```
-Bu sorun, **WIEC_User** hesabının yerel ilkede **hizmet olarak oturum aç** kullanıcı hakkına sahip olmaması durumunda ortaya çıkabilir.
+Bu sorun, **WIEC_User** hesabının yerel ilkede **hizmet olarak oturum aç '** a sahip olmaması durumunda meydana gelebilir.
 
 **Çözüm**:  
-Intune Exchange bağlayıcısını çalıştıran bilgisayarda, **hizmet olarak oturum** açma kullanıcı hesabını **WIEC_User** hizmeti hesabına atayın. Bilgisayar, bir kümede yer alıyorsa, kümedeki tüm düğümlerde *hizmet olarak oturum* açma kullanıcı hakkını, küme hizmeti hesabına atadığınızdan emin olun.  
+Intune Exchange bağlayıcısını çalıştıran bilgisayarda, **hizmet olarak oturum** açma kullanıcı hesabını **WIEC_User** hizmet hesabına atayın. Bilgisayar, bir kümede yer alıyorsa, kümedeki tüm düğümlerde *hizmet olarak oturum* açma kullanıcı hakkını, küme hizmeti hesabına atadığınızdan emin olun.  
 
-Bilgisayardaki **WIEC_User** hizmet hesabına **bir hizmet olarak oturum** açma hakkı atamak için şu adımları izleyin:
+**Bir hizmet olarak oturum** açma kullanıcı hesabını bilgisayardaki **WIEC_User** hizmet hesabına atamak için aşağıdaki adımları izleyin:
 
 1. Bilgisayarda yönetici olarak veya Yöneticiler grubunun bir üyesi olarak oturum açın.
 2. Yerel güvenlik Ilkesini açmak için **secpol. msc** dosyasını çalıştırın.
-3. **Güvenlik ayarları** > **Yerel ilkeler**' e gidin ve **Kullanıcı hakları ataması**' nı seçin.
+3. **Yerel ilkeler** > **güvenlik ayarları** ' na gidin ve **Kullanıcı hakları ataması**' nı seçin.
 4. Sağ bölmede, **hizmet olarak oturum**aç ' a çift tıklayın.
 5. **Kullanıcı veya Grup Ekle**' yi seçin, ilkeye **WIEC_USER** ekleyin ve ardından iki kez **Tamam** ' ı seçin.
 
-**Bir hizmet olarak oturum** açma hakkı **WIEC_User** , ancak daha sonra kaldırıldıysa, Grup İlkesi bir ayarın üzerine yazılmasını öğrenmek için etki alanı yöneticisiyle iletişim kurun.  
+**Bir hizmet olarak oturum** açma hakkı **WIEC_User** , ancak daha sonra kaldırılmışsa, bir Grup İlkesi ayarının üzerine yazılmasını öğrenmek için etki alanı yöneticisiyle iletişim kurun.  
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 

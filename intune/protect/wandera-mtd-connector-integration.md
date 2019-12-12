@@ -16,10 +16,10 @@ ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f42acb38d84394a6b61fa16072de6320b84a67b5
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72681302"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Wandera Mobile Threat Protection 'ı Intune ile tümleştirme  
@@ -56,7 +56,7 @@ Wandera Mobile Threat Defense uygulaması yetkilendirme işlemi:
 Wandera için *EMM Connect* kurulumu, hem Intune hem de wandera konsollarında tamamladığınız tek seferlik bir yapılandırma işlemi gerektirir. Yapılandırma işlemi yaklaşık 15 dakika sürer. Bu yapılandırmayı, Wandera teknik hesabınızla veya destek temsilcinizle koordine etmeden tamamlayabilirsiniz.  
 
 ### <a name="enable-support-for-wandera-in-intune"></a>Intune 'da Wandera desteğini etkinleştir
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz uyumluluğu** > **Mobil tehdit savunması** > gidin ve **Ekle**' yi seçin.
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz uyumluluğu** > **Mobile Threat** Defense > ' a gidin ve **Ekle**' yi seçin.
 
 2. **Bağlayıcı Ekle** sayfasında, açılan menüyü kullanın ve **wandera**' yı seçin. Sonra **Oluştur**' u seçin.  
 
@@ -116,13 +116,13 @@ Daha fazla bilgi için bkz. [uygulamaları dağıtma](../apps/apps-deploy.md)
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>Wandera uygulamalarını eşitleme grubuna atama  
 İOS ve Android için oluşturduğunuz Wandera uygulaması için aşağıdaki yordamı tekrarlayın.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **istemci uygulamaları** > **uygulamalar** ' a gidin ve wandera uygulamasını seçin.  
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **Istemci uygulamaları** > **uygulamalar** ' a gidin ve wandera uygulamasını seçin.  
 
 2. **Atamalar** ' ı ve sonra **Grup Ekle**' yi seçin.  
 
 3. *Grup Ekle* bölmesinde *atama türü* için **gerekli**' yi seçin.
 
-4. **Dahil edilen gruplar**' ı seçin ve ardından **dahil edilecek grupları seçin**. Wandera eşitlemesi için oluşturduğunuz grubu belirtin ve sonra**tamam** ** >   > ** **Seç** ' e tıklayın. Grup atamasını gerçekleştirmek için **Kaydet** ' i seçin.  
+4. **Dahil edilen gruplar**' ı seçin ve ardından **dahil edilecek grupları seçin**. Wandera eşitlemesi için oluşturduğunuz grubu belirtin ve sonra **tamam** ** >  > ** **Seç** ' e tıklayın. Grup atamasını gerçekleştirmek için **Kaydet** ' i seçin.  
  
 
 ## <a name="next-steps"></a>Sonraki Adımlar  

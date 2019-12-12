@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3980720101489d32b27957a2e2d3e0e951e58da6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509007"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
@@ -61,7 +61,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-AppRuntime](https://docs
   
   **Varsayılan**: etkin  
 
-### <a name="application-management"></a>Uygulama yönetimi  
+### <a name="application-management"></a>Uygulama Yönetimi  
 
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) bölümüne bakın.  
 
@@ -119,7 +119,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-BitLocker](https://docs.
   - **Şifreleme yöntemi**  
     **Varsayılan**: AES 256BIT XTS  
 
-### <a name="browser"></a>Browser  
+### <a name="browser"></a>Tarayıcı  
 
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) bölümüne bakın.  
 
@@ -361,7 +361,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Patıguard](https://docs
   
   **Varsayılan**: *örnek XML sağlanır* 
  
-### <a name="file-explorer"></a>Dosya Gezgini  
+### <a name="file-explorer"></a>Dosya Gezgini'ni  
 
 Daha fazla bilgi için Windows belgelerindeki [POLICY CSP-FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) bölümüne bakın.  
 
@@ -1127,7 +1127,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-MSSLegacy](https://docs.
 - **Ağ ıCMP yeniden yönlendirmeleri geçersiz kılma OSPF oluşturulan**  
   **Varsayılan**: devre dışı
   
-### <a name="power"></a>Açılma  
+### <a name="power"></a>Aç/Kapa  
 
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-güç](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) bölümüne bakın.  
 
@@ -1241,7 +1241,7 @@ Daha fazla bilgi için bkz. [Ilke CSP-](https://docs.microsoft.com/windows/clien
   
 **Varsayılan**: Evet
   
-### <a name="smart-screen"></a>Akıllı ekran  
+### <a name="smart-screen"></a>Akıllı Ekran  
 
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) bölümüne bakın.  
 
@@ -1419,7 +1419,7 @@ Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-Defender](https://docs.m
   
   **Varsayılan**: engelle
 
-### <a name="windows-ink-workspace"></a>Windows Ink çalışma alanı  
+### <a name="windows-ink-workspace"></a>Windows Ink Çalışma Alanı  
 
 Daha fazla bilgi için Windows belgelerindeki [Ilke CSP-WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) bölümüne bakın.  
 

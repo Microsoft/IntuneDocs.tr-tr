@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563471"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarında PowerShell betikleri kullanma
@@ -66,7 +66,7 @@ Intune yönetim uzantısında aşağıdaki Önkoşullar bulunur. Önkoşullar ka
   
     - [Ortak yönetim nedir?](https://docs.microsoft.com/sccm/comanage/overview) 
     - [İstemci uygulamaları iş yükü](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Configuration Manager iş yüklerini Intune 'a değiştirme](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [Configuration Manager iş yüklerinin Intune'a geçişi](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > Cihazların Azure AD 'ye [katılmış](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) olduğundan emin olun. Yalnızca Azure AD 'de [kayıtlı](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) olan cihazlar betiklerinizi almaz.
@@ -115,7 +115,7 @@ Intune yönetim uzantısında aşağıdaki Önkoşullar bulunur. Önkoşullar ka
 
 7. **İnceleme + Ekle**' de, yapılandırdığınız ayarların bir özeti gösterilir. Betiği kaydetmek için **Ekle** ' yi seçin. **Ekle**' yi seçtiğinizde, ilke seçtiğiniz gruplara dağıtılır.
 
-## <a name="important-considerations"></a>Önemli konular
+## <a name="important-considerations"></a>Önemli noktalar
 
 - Betikler Kullanıcı bağlamı olarak ayarlandığında ve son kullanıcının yönetici hakları varsa, varsayılan olarak, PowerShell betiği yönetici ayrıcalığıyla çalışır.
 
@@ -142,7 +142,7 @@ Azure portalda kullanıcılar ve cihazlar için PowerShell betiklerinin çalış
 
 **PowerShell betikleri**'nde, betiği sağ tıklayın ve **Sil**'i seçin.
 
-## <a name="common-issues-and-resolutions"></a>Yaygın sorunlar ve çözümleri
+## <a name="common-issues-and-resolutions"></a>Sık karşılaşılan sorunlar ve çözümleri
 
 ### <a name="issue-intune-management-extension-doesnt-download"></a>Sorun: Intune yönetim uzantısı indirmiyor
 
@@ -185,7 +185,7 @@ Cihazın otomatik olarak kayıtlı olup olmadığını görmek için şunları y
 - Betik sorunlarını yalıtmak için şunları yapabilirsiniz:
 
   - Cihazlarınızda PowerShell yürütme yapılandırmasını gözden geçirin. Rehberlik için [PowerShell yürütme ilkesine](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) bakın.
-  - Intune yönetim uzantısını kullanarak bir örnek komut dosyası çalıştırın. Örneğin, `C:\Scripts` dizini oluşturun ve herkese tam denetim verin. Aşağıdaki betiği çalıştırın:
+  - Intune yönetim uzantısını kullanarak bir örnek komut dosyası çalıştırın. Örneğin, `C:\Scripts` dizini oluşturun ve herkese tam denetim verin. Şu betiği çalıştırın:
 
     ```powershell
     write-output "Script worked" | out-file c:\Scripts\output.txt

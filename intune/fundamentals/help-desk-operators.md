@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510262"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Şirketinizdeki kullanıcılara yardımcı olmak için sorun giderme portalını kullanma
@@ -253,13 +253,13 @@ Kayıt Hataları tablosu, başarısız olan kayıt denemelerini listeler. Aşağ
 | Kayıt başlangıç | Kullanıcının kaydı ilk kez başlattığı saat. |
 | İşletim sistemi | Cihazın işletim sistemi. |
 | İşletim sistemi sürümü | Cihazın işletim sistemi sürümü. |
-| Hataları | Hatanın nedeni. |
+| Başarısız | Hatanın nedeni. |
 
 ### <a name="failure-details"></a>Hata ayrıntıları
 
 Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 
-| Kısmı | Description |
+| `Section` | Description |
 |-------------|----------|
 | Hata ayrıntıları | Hatanın daha ayrıntılı bir açıklaması. |
 | Toplam düzeltme sayısı | Hatayı gidermek için önerilen adımlar. Bazı hataların düzeltmeleri olmayabilir. |
@@ -287,7 +287,7 @@ Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 | Autopilot cihazı kaldırıldı | Kaydedilmeye çalışan cihaz, bu hesap için Autopilot sisteminden kaldırıldı. |
 | Cihaz sınırına ulaşıldı | Bu kayıt, yönetici tarafından yapılandırılmış bir cihaz sınırı nedeniyle engellendi. |
 | Apple ekleme işlemi | Intune bir Apple MDM anında iletme sertifikası eksik olduğu veya sertifikanın süresi dolduğu için tüm iOS cihazlarının kaydı dönemde engellendi. |
-| Cihaz önceden kayıtlı değil | Cihaz önceden kurumsal olarak kaydedilmemiş ve tüm kişisel kayıtlar bir yönetici tarafından engellenmiş. |
+| Cihaz önceden kayıtlı değil | Kurumsal önceden şirkete ait olarak kaydedilmediğinden tüm kişisel kayıtlar bir yönetici tarafından engellendi. |
 | Özellik desteklenmiyor | Kullanıcı büyük olasılıkla Intune yapılandırmanız ile uyumlu olmayan bir yöntem aracılığıyla kaydolmaya çalışıyordu. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Mobil cihazdan kullanılabilir verileri toplama

@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74781150"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihazlarına VPN ayarları ekleme
@@ -28,7 +28,7 @@ Microsoft Intune, iOS cihazlarınıza dağıtılabilir pek çok VPN ayarı içer
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Bir cihaz yapılandırma profili oluşturun](vpn-settings-configure.md).
+[Bir cihaz yapılandırma profili oluşturma](vpn-settings-configure.md).
 
 > [!NOTE]
 > Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](../enrollment/ios-enroll.md).
@@ -143,7 +143,7 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
 
 - **Güvenlik ilişkisi parametrelerini yapılandırma**: **Yapılandırılmadı** (varsayılan) iOS sistemi varsayılanını kullanır. VPN sunucusuyla güvenlik ilişkilendirmeleri oluştururken kullanılan parametreleri girmek için **Etkinleştir** ' i seçin:
   - **Şifreleme algoritması**: istediğiniz algoritmayı seçin:
-    - MADDESINI
+    - DES
     - 3DES
     - AES-128
     - AES-256 (varsayılan)
@@ -156,13 +156,13 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
     - SHA2-384
     - SHA2-512
   - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2`.
-  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440`.
+  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). `1440` varsayılan değerdir.
 
 - **Alt güvenlik ilişkilendirmeleri için ayrı bir parametre kümesi yapılandırın**: IOS, Ike bağlantısı için ayrı parametreleri ve tüm alt bağlantıları yapılandırmanıza olanak tanır. 
 
   **Yapılandırılmadı** (varsayılan), önceki **güvenlik ilişkisi parametrelerini Yapılandır** ayarında girdiğiniz değerleri kullanır. VPN sunucusu ile *alt* güvenlik ilişkilendirmeleri oluştururken kullanılan parametreleri girmek için **Etkinleştir** ' i seçin:
   - **Şifreleme algoritması**: istediğiniz algoritmayı seçin:
-    - MADDESINI
+    - DES
     - 3DES
     - AES-128
     - AES-256 (varsayılan)
@@ -175,7 +175,7 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
     - SHA2-384
     - SHA2-512
   - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2`.
-  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440`.
+  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). `1440` varsayılan değerdir.
 
 ## <a name="automatic-vpn-settings"></a>Otomatik VPN ayarları
 
@@ -197,8 +197,8 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
   - **Eylem**: Aşağıdaki öğelerden birini seçin:
     - Bağlanma
     - Bağlantıyı değerlendir
-    - Yoksay
-    - Ayır
+    - Yoksayma
+    - Bağlantıyı Kes
 
 ## <a name="proxy-settings"></a>Proxy ayarları
 

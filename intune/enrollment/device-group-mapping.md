@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505489"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955380"
 ---
 # <a name="categorize-devices-into-groups"></a>Cihazları gruplar halinde kategorilere ayırma
 
@@ -45,11 +45,10 @@ Cihaz kategorileri aşağıdaki iş akışını kullanır:
 ## <a name="how-to-configure-device-categories"></a>Cihaz kategorilerini yapılandırma
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>1\. Adım: Azure portalının Intune dikey penceresinde cihaz kategorileri oluşturma
-1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihaz kaydı**’nı seçin.
-2. **Cihaz kaydı** dikey penceresinde **Cihaz kategorileri**’ni seçin.
-3. **Cihaz kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
-4. **Cihaz kategorisi oluştur** dikey penceresinde, yeni kategori için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
-5. İşiniz bittiğinde **Oluştur**’u seçin. Kategori listesinde yeni kategoriyi görebilirsiniz.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, **cihazlar** > **cihaz kategorileri**' ni seçin.
+2. **Cihaz kategorileri** sayfasında, yeni kategori eklemek için **Oluştur**’u seçin.
+3. **Cihaz kategorisi oluştur** dikey penceresinde, yeni kategori için bir **Ad** ve isteğe bağlı bir **Açıklama** girin.
+4. İşiniz bittiğinde **Oluştur**’u seçin. Kategori listesinde yeni kategoriyi görebilirsiniz.
 
 2\. adımda Azure Active Directory (Azure AD) güvenlik grupları oluştururken cihaz kategorisi adını kullanacaksınız.
 
@@ -64,20 +63,16 @@ Siz cihaz gruplarını yapılandırdıktan ve kullanıcılar cihazlarını kayde
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>Yönettiğiniz cihazların kategorilerini görüntüleme
 
-1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihazlar**’ı seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın, **cihazlar** > **tüm cihazlar**' ı seçin.
 
-2. **Yönet** altında **Tüm cihazlar**’ı seçin.
+2. Cihaz listesinde **Cihaz kategorisi** sütununu inceleyin.
 
-3. Cihaz listesinde **Cihaz kategorisi** sütununu inceleyin.
-
-**Cihaz kategorisi** sütununu göremiyorsanız **Sütunlar**’ı seçin. Listeden **Cihaz kategorisi**’ni seçin ve daha sonra **Uygula**’ya tıklayın.
+**Cihaz kategorisi** sütunu gösterilmemişse **, > ** **Kategori** > **Uygula**' yı seçin.
 
 ### <a name="change-the-category-of-a-device"></a>Bir cihazın kategorisini değiştirme
 
-1. [Azure portalında Intune](https://aka.ms/intuneportal)’da, **Cihazlar**’ı seçin.
-2. **Yönet** kısmındaki **Cihazlar** dikey penceresinde **Tüm cihazlar**’ı seçin.
-3. Cihazlar listesinde istediğiniz cihazı seçin. Daha sonra **Yönet** bölümü altındaki cihaz özellikleri dikey penceresinde **Özellikler**’i seçin.
-4. Sonraki dikey pencerede, seçili cihazın **Cihaz kategorisi**’ni daha önce yapılandırmış olduğunuz herhangi bir kategori adıyla değiştirebilirsiniz.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, **cihazlar** > **tüm cihazlar** ' ı seçin > **özellikleri**> istediğiniz cihazı seçin.
+2. Sonraki dikey pencerede, seçili cihazın **Cihaz kategorisi**’ni daha önce yapılandırmış olduğunuz herhangi bir kategori adıyla değiştirebilirsiniz.
 
 ## <a name="after-you-configure-device-groups"></a>Cihaz gruplarını yapılandırdıktan sonra
 

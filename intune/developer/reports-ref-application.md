@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74290957"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
@@ -42,8 +42,8 @@ ms.locfileid: "74290957"
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | appKey |Uygulamanın benzersiz tanımlayıcısı. |123 |
-| Uygulama |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
-| uncaya |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
+| applicationId |Uygulamanın benzersiz tanımlayıcısı - AppKey’e benzer ancak doğal anahtardır. |b66bc706-ffff-7437-0340-032819502773 |
+| revision |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
 | title |Uygulama başlığı. |Excel |
 | publisher |Uygulama yayımcısı. |Microsoft |
 | uploadState |Uygulamanın karşıya yüklenme durumu. |1 |

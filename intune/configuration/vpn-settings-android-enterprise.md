@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f52d3a7c40f27555a07682adf86b0339cef616
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491921"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946640"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Intune 'da VPN yapılandırmak için Android kurumsal cihaz ayarları
 
@@ -31,6 +31,9 @@ Bu makalede, Android kurumsal cihazlarda denetleyebilmeniz için kullanabileceğ
 Bir Intune Yöneticisi olarak, Android kurumsal cihazlarına VPN ayarları oluşturabilir ve atayabilirsiniz. 
 
 Intune 'da VPN profilleri hakkında daha fazla bilgi edinmek için bkz. [VPN profilleri](vpn-settings-configure.md).
+
+> [!NOTE]
+> Always on VPN 'yi yapılandırmak için, bir VPN profili oluşturmanız ve ayrıca her zaman açık VPN ayarıyla bir [cihaz kısıtlamaları](device-restrictions-android-for-work.md#connectivity) profili oluşturmanız gerekir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 

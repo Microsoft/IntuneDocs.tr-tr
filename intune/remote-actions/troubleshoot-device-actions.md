@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 239dd8630eb361da8609e3a34eb2c9346a64dab0
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508503"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907194"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Intune 'da cihaz eylemlerinin sorunlarını giderme
 
@@ -32,7 +32,7 @@ Microsoft Intune, cihazlarınıza yardımcı olacak çok sayıda eyleme sahiptir
 ## <a name="bypass-activation-lock-action"></a>Etkinleştirme Kilidi eylemini atla
 
 ### <a name="i-clicked-the-bypass-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Portalda "Etkinleştirme Kilidi atla" eylemine tıkladım, ancak cihazda hiçbir şey yapılmadı.
-Bu beklenen bir değer. Etkinleştirme Kilidi atlama eylemini başlattıktan sonra, Intune Apple 'dan güncelleştirilmiş bir kod istedi. Cihazınız Etkinleştirme Kilidi ekranında olduktan sonra kodu geçiş kodu alanına el ile girersiniz. Bu kod yalnızca 15 gün için geçerlidir. bu nedenle, silme işlemini gerçekleştirmeden önce eyleme tıkladıktan sonra kodu kopyalamanız gerekir.
+Bu beklenmektedir. Etkinleştirme Kilidi atlama eylemini başlattıktan sonra, Intune Apple 'dan güncelleştirilmiş bir kod istedi. Cihazınız Etkinleştirme Kilidi ekranında olduktan sonra kodu geçiş kodu alanına el ile girersiniz. Bu kod yalnızca 15 gün için geçerlidir. bu nedenle, silme işlemini gerçekleştirmeden önce eyleme tıkladıktan sonra kodu kopyalamanız gerekir.
 
 ### <a name="why-dont-i-see-the-bypass-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>İOS cihazımın donanımla genel bakış dikey penceresinde atlama Etkinleştirme Kilidi kodunu neden görmüyorum?
 En olası nedenler şunlardır:
@@ -54,7 +54,7 @@ Hayır. Ve kısa çizgileri girmeniz gerekmez.
 ## <a name="remove-devices-action"></a>Cihazları kaldır eylemi
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Nasıl yaparım? devre dışı bırakmayı/silmeyi kimin başlatdığına söylüyorsunuz?
-**Cihaz eylemleri** > **Intune** > **cihazlar** ' a gidin ve **başlatılan** sütunu işaretleyin >.
+[Microsoft Uç Nokta Yöneticisi Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Denetim günlükleri** > **kiracı yönetimi** ' ne gidin > **başlatılan** sütununa bakın.
 Giriş görmüyorsanız, eylemi başlatan en olası kişi cihazın kullanıcısı olur. Büyük olasılıkla Şirket Portalı uygulamasını veya portal.manage.microsoft.com kullandık.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Uygulamam kullanımdan kaldırıldıktan sonra neden kaldırılamadı?
@@ -69,7 +69,7 @@ Bu beklenen bir davranıştır. Google, Iş profili cihazlarının MDM sağlayı
 Bir cihazı devre dışı bırakma, erişim belirteçlerini iptal etmez. Bu durumu azaltmak için koşullu erişim ilkelerini kullanabilirsiniz.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Devre dışı bırakma/silme eylemini verildikten sonra nasıl izleyebilirim?
-**Cihaz eylemleri** > **Intune** > **cihazlar** 'a gidin.
+[Microsoft Uç Nokta Yöneticisi Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), **Kiracı Yönetimi** > **Denetim günlükleri**' ne gidin.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Wpes neden bazen süresiz olarak bekliyor olarak gösterilmelidir?
 Cihazların durumu, sıfırlama başlatılmadan önce her zaman Intune hizmetine rapor vermez. Bu nedenle, eylem beklemede olarak gösterilir. Eylemi başarıyla onayladıysanız, cihazı hizmetten silin.

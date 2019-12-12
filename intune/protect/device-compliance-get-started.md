@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure’da cihaz uyumluluk ilkeleri | Microsoft Docs
-description: Cihaz uyumluluk ilkelerini kullanma, durum ve önem düzeylerine genel bakış, Yetkisizkullanımsüresinde durumunu kullanma, koşullu erişim ile çalışma, cihazları atanmış bir ilke olmadan işleme ve Azure portal ve uyumluluk farklılıkları ile çalışmaya başlama Microsoft Intune 'de klasik Portal
+description: Cihaz uyumluluk ilkelerini kullanma, durum ve önem düzeylerine genel bakış, Yetkisizkullanımsüresinde durumunu kullanma, koşullu erişimle çalışma ve cihazları atanan bir ilke olmadan işleme ile çalışmaya başlayın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749169"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860304"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune'u kullanarak kuruluşunuzdaki kaynaklara erişim izni verme amacıyla cihazlarda kural oluşturun
 
-Çoğu mobil cihaz yönetimi (MDM) çözümü, kullanıcıların ve cihazların bazı gereksinimleri karşılamasını şart koşarak kuruluş verilerin korunmasına yardımcı olmaktadır. Intune'da bu özellik "uyumluluk ilkeleri" olarak adlandırılır. Uyumluluk ilkeleri, kullanıcıların ve cihazların uyumlu olmak için karşılaması gereken kuralları ve ayarları tanımlar. Yönetici, koşullu erişim ile birleştirildiğinde, kuralları karşılamayan kullanıcıları ve cihazları engelleyebilirler.
+Çoğu mobil cihaz yönetimi (MDM) çözümü, kullanıcıların ve cihazların bazı gereksinimleri karşılamasını şart koşarak kuruluş verilerin korunmasına yardımcı olmaktadır. Intune'da bu özellik "uyumluluk ilkeleri" olarak adlandırılır. Uyumluluk ilkeleri, kullanıcıların ve cihazların uyumlu olmak için karşılaması gereken kuralları ve ayarları tanımlar. Yöneticiler, bunları koşullu erişim özellikleriyle birlikte kullanarak kurallara uymayan kullanıcıları ve cihazları engelleyebilir.
 
 Örneğin bir Intune yöneticisi şunları gerekli kılabilir:
 
@@ -64,11 +64,11 @@ Remember that you need to implement Conditional Access policies in addition to c
 
 ## <a name="device-compliance-policies-work-with-azure-ad"></a>Cihaz uyumluluk ilkeleri Azure AD ile birlikte çalışır
 
-Intune, uyumluluk uygulanmasını sağlamak için Azure Active Directory (AD) [koşullu erişim](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) (başka bir docs Web sitesi açar) kullanır. Bir cihaz Intune'a kaydedildiğinde Azure AD kayıt işlemi başlar ve Azure AD'deki cihaz bilgileri güncelleştirilir. En önemli bilgilerden biri, cihaz uyumluluk durumudur. Bu uyumluluk durumu, e-posta ve diğer kuruluş kaynaklarına erişimi engellemek veya erişime izin vermek için koşullu erişim ilkeleri tarafından kullanılır.
+Intune, uyumluluk uygulanmasını sağlamak için Azure Active Directory (AD) [koşullu erişim](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) (başka bir docs Web sitesi açar) kullanır. Bir cihaz Intune'a kaydedildiğinde Azure AD kayıt işlemi başlar ve Azure AD'deki cihaz bilgileri güncelleştirilir. En önemli bilgilerden biri, cihaz uyumluluk durumudur. Bu uyumluluk durumu, e-posta veya diğer kuruluş kaynaklarına erişimi engellemek veya erişim izni vermek için koşullu erişim ilkeleri tarafından kullanılır.
 
 - [Azure Active Directory'de cihaz yönetimi nedir?](https://docs.microsoft.com/azure/active-directory/device-management-introduction) sayfasında cihazların Azure AD'ye kayıt nedeni ve yöntemi hakkında ayrıntılı bilgiler verilmektedir.
 
-- [Koşullu erişim](conditional-access.md) ve [koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md) , Intune ile ilgili olarak bu özelliği tanımlar.
+- [Koşullu erişim](conditional-access.md) ve [koşullu erişimi kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md) sayfalarında bu özelliğin Intune ile kullanımı ele alınmaktadır.
 
 ## <a name="ways-to-use-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini kullanma yolları
 
@@ -115,12 +115,12 @@ Aşağıdaki tabloda, bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıl
 |**İlke ayarı**| **Platform** |
 | --- | ----|
 | **PIN veya Parola yapılandırması** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı  <br>  <br>- **iOS 8,0 ve üzeri**: düzeltildi<br>- **MacOS 10,11 ve üzeri**: düzeltildi  <br>  <br>- **Windows 8.1 ve üzeri**: düzeltildi<br>- **Windows Phone 8,1 ve üzeri**: düzeltildi|
-| **Cihaz şifrelemesi** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı<br><br>- **iOS 8,0 ve üzeri**: DÜZELTILDI (PIN ayarlanarak)<br>- **MacOS 10,11 ve üzeri**: DÜZELTILDI (PIN ayarlanarak)<br><br>- **Windows 8.1 ve üzeri**: uygulanamaz<br>- **Windows Phone 8,1 ve üzeri**: düzeltildi |
-| **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | - **Android 4,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **Android Enterprise**: karantinaya alındı (ayar değil)<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **MacOS 10,11 ve üzeri**: uygulanamaz<br><br>- **Windows 8.1 ve üzeri**: uygulanamaz<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
-| **E-posta profili** | - **Android 4,0 ve üzeri**: uygulanamaz<br>- **Samsung KNOX Standard 4,0 ve üzeri**: uygulanamaz<br>- **Android Enterprise**: uygulanamaz<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı<br>- **MacOS 10,11 ve üzeri**: karantinaya alındı<br><br>- **Windows 8.1 ve üzeri**: uygulanamaz<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
+| **Cihaz şifrelemesi** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı<br><br>- **iOS 8,0 ve üzeri**: DÜZELTILDI (PIN ayarlanarak)<br>- **MacOS 10,11 ve üzeri**: DÜZELTILDI (PIN ayarlanarak)<br><br>- **Windows 8.1 ve üzeri**: geçerli değil<br>- **Windows Phone 8,1 ve üzeri**: düzeltildi |
+| **Jailbreak uygulanmış veya kök erişim izni verilmiş cihaz** | - **Android 4,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **Android Enterprise**: karantinaya alındı (ayar değil)<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı (ayar değil)<br>- **MacOS 10,11 ve üzeri**: uygulanamaz<br><br>- **Windows 8.1 ve üzeri**: geçerli değil<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
+| **E-posta profili** | - **Android 4,0 ve üzeri**: geçerli değil<br>- **Samsung KNOX Standard 4,0 ve üzeri**: uygulanamaz<br>- **Android Enterprise**: uygulanamaz<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı<br>- **MacOS 10,11 ve üzeri**: karantinaya alındı<br><br>- **Windows 8.1 ve üzeri**: geçerli değil<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
 | **En düşük işletim sistemi sürümü** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı<br>- **MacOS 10,11 ve üzeri**: karantinaya alındı<br><br>- **Windows 8.1 ve üzeri**: karantinaya alındı<br>- **Windows Phone 8,1 ve üzeri**: karantinaya alındı |
 | **En yüksek işletim sistemi sürümü** | - **Android 4,0 ve üzeri**: karantinaya alındı<br>- **Samsung KNOX Standard 4,0 ve üzeri**: karantinaya alındı<br>- **Android Enterprise**: karantinaya alındı<br><br>- **iOS 8,0 ve üzeri**: karantinaya alındı<br>- **MacOS 10,11 ve üzeri**: karantinaya alındı<br><br>- **Windows 8.1 ve üzeri**: karantinaya alındı<br>- **Windows Phone 8,1 ve üzeri**: karantinaya alındı |
-| **Windows durum kanıtlama** | - **Android 4,0 ve üzeri**: uygulanamaz<br>- **Samsung KNOX Standard 4,0 ve üzeri**: uygulanamaz<br>- **Android Enterprise**: uygulanamaz<br><br>- **iOS 8,0 ve üzeri**: uygulanamaz<br>- **MacOS 10,11 ve üzeri**: uygulanamaz<br><br>- **Windows 10 ve Windows 10 Mobile**: karantinaya alındı<br>- **Windows 8.1 ve üzeri**: karantinaya alındı<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
+| **Windows durum kanıtlama** | - **Android 4,0 ve üzeri**: geçerli değil<br>- **Samsung KNOX Standard 4,0 ve üzeri**: uygulanamaz<br>- **Android Enterprise**: uygulanamaz<br><br>- **iOS 8,0 ve üzeri**: geçerli değil<br>- **MacOS 10,11 ve üzeri**: uygulanamaz<br><br>- **Windows 10 ve Windows 10 Mobile**: karantinaya alındı<br>- **Windows 8.1 ve üzeri**: karantinaya alındı<br>- **Windows Phone 8,1 ve üzeri**: uygulanamaz |
 
 ---------------------------
 
@@ -130,21 +130,6 @@ Aşağıdaki tabloda, bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıl
 
 - Kullanıcı için bir koşullu erişim ilkesi geçerliyse cihaz engellenir.
 - Şirket Portalı uygulaması, tüm uyumluluk sorunları hakkında kullanıcıya bildirim gönderir.
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Klasik Azure portalı ve Azure portal karşılaştırması
-
-Cihaz uyumluluk ilkelerini Azure portalında kullanırken göreceğiniz temel fark:
-
-- Azure Portalı’nda uyumluluk ilkeleri, desteklenen her platform için ayrı oluşturulur
-- Klasik Azure portalında ise desteklenen tüm platformlarda tek bir cihaz uyumluluk ilkesi ortak kullanılır
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-[Klasik portalda](https://manage.microsoft.com) oluşturulan cihaz uyumluluk ilkeleri, [Azure portalında](https://portal.azure.com) görünmez. Ancak bunlar yine de kullanıcılara hedeflenmiştir ve klasik Intune portalı kullanılarak yönetilebilir.
-
-Azure portalındaki yeni cihaz uyumluluk özelliklerini kullanmak için doğrudan bu portalda yeni cihaz uyumluluk ilkeleri oluşturmanız gerekir. Klasik portalda cihaz uyumluluk ilkesi atanmış bir kullanıcıya Azure portalında bir cihaz uyumluluk ilkesi atarsanız, Azure portalından gelen cihaz uyumluluk ilkeleri klasik portalda oluşturulanlardan önceliklidir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7da927754971fb66a5d8442d0cdf18e0ebfbcd4a
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059071"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune’da yazılım güncelleştirmesi sorunlarını giderme
@@ -41,7 +41,7 @@ Microsoft Intune istemcileri aşağıdaki belirtilerden birini veya daha fazlas�
 
 Bu sorun, yenisiyle değiştirilen güncelleştirmeler (güncelleştirmeler başka bir güncelleştirmeyle değiştirilirse) uzun bir süre reddedilmemişse oluşabilir. Bir uygulamayı yükleme gibi belirli işlemlerde Windows, güncelleştirmelerin ve ardıllarını doğru şekilde eşlenmelidir şekilde sırayla yenisiyle değiştirilen tüm güncelleştirmeleri denetler. Yenisiyle değiştirilen güncelleştirmelerin listesi çok büyük alırsa, bu denetim görevi, işlem yükü ve gereken süre nedeniyle yüksek CPU kullanımına neden olabilir. Bu sorun, Windows 7 ' de bulunan çok sayıda yenisiyle değiştirilen çok sayıda güncelleştirme nedeniyle Windows 7 cihazlarını etkiler. Daha yeni işletim sistemleri, yenisiyle değiştirilen çok sayıda güncelleştirmeye sahip olmayabilir ve bu soruna maruz kalabilir.
 
-**Çözünürlüğüne**
+**Çözümleme**
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Yazılım güncelleştirmelerini**seçin.

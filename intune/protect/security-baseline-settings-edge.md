@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c75029c60609b0383e2f647e5b94144d4186248c
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73754867"
 ---
 # <a name="microsoft-edge-baseline-settings-for-intune"></a>Intune için Microsoft Edge taban çizgisi ayarları
@@ -45,9 +45,9 @@ Microsoft Intune tarafından desteklenen Microsoft Edge Web tarayıcısı taban 
 
   SSL 'nin desteklenen en düşük sürümünü ayarlayın. Bu ilkeyi *Yapılandırılmadı*olarak ayarlarsanız, Microsoft Edge varsayılan en düşük *TLS 1,0*sürümünü kullanır. *Etkin*olarak ayarlandığında, aşağıdaki değerlerden en düşük sürümü seçebilirsiniz:
 
-  - TLS 1,0
-  - TLS 1,1
-  - TLS 1,2
+  - TLS 1.0
+  - TLS 1.1
+  - TLS 1.2
 
   - **En düşük SSL sürümü etkin**  
     **Varsayılan**: TLS 1,2
@@ -98,8 +98,8 @@ Microsoft Intune tarafından desteklenen Microsoft Edge Web tarayıcısı taban 
  
   - **Desteklenen kimlik doğrulama şemaları**  
     Aşağıdaki seçeneklerden seçim yapın: 
-    - Basit
-    - bilgisi
+    - Temel
+    - Bilgisi
     - NTLM *(varsayılan olarak seçilidir)*
     - Anlaş *(varsayılan olarak seçilidir)*
 

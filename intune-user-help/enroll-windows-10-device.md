@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ca8b24a1e8d0da4386ab185533fec38d9b34eb21
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506263"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Windows 10 cihazlarını Intune Şirket Portalı kaydetme
@@ -39,14 +39,14 @@ Bu adımlar, Windows 10, sürüm 1607 ve üzeri sürümlerde çalışan bir ciha
 
 1. **Başlat**'a gidin. Windows 10 Mobile cihazında çalışıyorsanız **tüm uygulamalar** listesine devam edin.
 
-2. **Ayarlar** uygulamasını açın. Uygulama, uygulamalar listenizde hazır değilse, arama çubuğuna gidin ve "Ayarlar" yazın.
+2. **Ayarlar** uygulamasını başlatın. Uygulama, uygulamalar listenizde hazır değilse, arama çubuğuna gidin ve "Ayarlar" yazın.
 
 3. **Hesaplar** > **İş veya okula erişim** > **Bağlan**’ı seçin.  
 
 
     ![İş veya okul hesabına erişimi seçme](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. Kuruluşunuzun Intune oturum açma sayfasına ulaşmak için iş veya okul e-posta adresinizi girin. Ardından **İleri**' yi seçin.  
+4. Kuruluşunuzun Intune oturum açma sayfasına ulaşmak için iş veya okul e-posta adresinizi girin. Ardından **İleri**’yi seçin.  
 
 
    ![İş veya okul hesabınızı girme](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  
@@ -74,7 +74,7 @@ Bu adımlar, Windows 10, sürüm 1511 ve önceki sürümlerde çalışan bir cih
 
 1. **Başlat**'a gidin. Windows 10 Mobile cihazında çalışıyorsanız **tüm uygulamalar** listesine devam edin.
 
-2. **Ayarlar** uygulamasını açın. Uygulama, uygulamalar listenizde hazır değilse, arama çubuğuna gidin ve "Ayarlar" yazın.
+2. **Ayarlar** uygulamasını başlatın. Uygulama, uygulamalar listenizde hazır değilse, arama çubuğuna gidin ve "Ayarlar" yazın.
 
 3. **Hesabınız** > **hesaplar** ' ı seçin.  
 

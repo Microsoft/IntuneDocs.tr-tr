@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563672"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Windows 10 cihazlarına Office 365 uygulamaları ekleme
@@ -171,8 +171,8 @@ O365 uygulamalarını bir cihaza yükleyemezseniz, sorunun Intune ile ilgili olu
 - Cihazda etkin bir ağ bağlantısı var. Cihaz uçak modundaysa, kapalıysa veya hizmeti olmayan bir konumdaysa, ağ bağlantısı kurulana kadar ilke uygulanmaz.
 - Hem Intune hem de Office 365 ağ gereksinimleri karşılanır ve ilgili IP aralıkları aşağıdaki makalelere göre erişilebilir:
 
-  - [Intune ağ yapılandırma gereksinimleri ve bant genişliği](https://docs.microsoft.com/intune/network-bandwidth-use)
-  - [Office 365 URL 'Leri ve IP adresi aralıkları](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+  - [Intune ağ yapılandırması gereksinimleri ve bant genişliği](https://docs.microsoft.com/intune/network-bandwidth-use)
+  - [Office 365 URL’leri ve IP adresi aralıkları](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 - Doğru gruplara O365 uygulama paketi atanmıştır. 
 
@@ -186,7 +186,7 @@ Hem Intune hem de ağ altyapısının beklendiği gibi çalıştığını sonuç
   [Aynı bilgisayarda Tıkla-Çalıştır ve Windows Installer ile yüklenen Office desteklenmez](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
 - Oturum açma kullanıcısının cihaza uygulama yüklemesi için izni olmalıdır.
 - Windows Olay Görüntüleyicisi günlük **Windows günlükleri** -> **uygulamalarına**dayalı bir sorun olmadığını onaylayın.
-- Yükleme sırasında Office yükleme ayrıntılı günlüklerini yakalayın. Bunu yapmak için şu adımları izleyin:<br>
+- Yükleme sırasında Office yükleme ayrıntılı günlüklerini yakalayın. Bunu yapmak için aşağıdaki adımları izleyin:<br>
     1. Hedef makinelerde Office yüklemesi için ayrıntılı günlük kaydını etkinleştirin. Bunu yapmak için, kayıt defterini değiştirmek için aşağıdaki komutu çalıştırın:<br>
         `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
     2. Office 365 paketini hedef cihazlara yeniden dağıtın.<br>

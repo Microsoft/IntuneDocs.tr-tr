@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059212"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için Wi-Fi ayarları ekleme
@@ -75,7 +75,7 @@ Bu makalede bu ayarlar açıklanır.
 
   - **EAP-TLS**: Ayrıca şunları girin:
 
-    - **Sunucu güveni** - **sertifika sunucu adları**: güvenilir SERTIFIKA yetkiliniz (CA) tarafından verilen sertifikalarda kablosuz ağ erişim sunucularınıza kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin `mywirelessserver.contoso.com` veya `mywirelessserver` ' i ekleyin. Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
+    - **Sunucu güveni** - **sertifika sunucusu adları**: güvenilir SERTIFIKA yetkiliniz (CA) tarafından kablosuz ağ erişim sunucularınıza verilen sertifikalarda kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin, `mywirelessserver.contoso.com` veya `mywirelessserver`ekleyin. Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
     - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemcinin kablosuz ağ erişim sunucusunun sertifikasına güvenmesini sağlar.
 
     - **Istemci kimlik doğrulaması** Bir **kimlik doğrulama yöntemi**seçin. Seçenekleriniz şunlardır:
@@ -88,7 +88,7 @@ Bu makalede bu ayarlar açıklanır.
 
   - **EAP-TTLS**: Ayrıca şunları girin:
 
-    - **Sunucu güveni** - **sertifika sunucu adları**: güvenilir SERTIFIKA yetkiliniz (CA) tarafından verilen sertifikalarda kablosuz ağ erişim sunucularınıza kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin `mywirelessserver.contoso.com` veya `mywirelessserver` ' i ekleyin. Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
+    - **Sunucu güveni** - **sertifika sunucusu adları**: güvenilir SERTIFIKA yetkiliniz (CA) tarafından kablosuz ağ erişim sunucularınıza verilen sertifikalarda kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin, `mywirelessserver.contoso.com` veya `mywirelessserver`ekleyin. Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
     - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemcinin kablosuz ağ erişim sunucusunun sertifikasına güvenmesini sağlar.
 
     - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:
@@ -108,7 +108,7 @@ Bu makalede bu ayarlar açıklanır.
 
   - **PEAP**: Ayrıca şunları girin:
 
-    - **Sunucu güveni** - **sertifika sunucu adları**: güvenilir SERTIFIKA yetkiliniz (CA) tarafından verilen sertifikalarda kablosuz ağ erişim sunucularınıza kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin `mywirelessserver.contoso.com` veya `mywirelessserver` ' i ekleyin. Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
+    - **Sunucu güveni** - **sertifika sunucusu adları**: güvenilir SERTIFIKA yetkiliniz (CA) tarafından kablosuz ağ erişim sunucularınıza verilen sertifikalarda kullanılan bir veya daha fazla ortak ad **ekleyin** . Örneğin, `mywirelessserver.contoso.com` veya `mywirelessserver`ekleyin. Bu bilgiyi girdikten sonra bu Wi-Fi ağına bağlanırken kullanıcının cihazında görüntülenen dinamik güven penceresini atlayabilirsiniz.
     - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. Bu sertifika, istemcinin kablosuz ağ erişim sunucusunun sertifikasına güvenmesini sağlar.
 
     - **İstemci Kimlik Doğrulaması** - Bir **Kimlik doğrulama yöntemi** seçin. Seçenekleriniz şunlardır:

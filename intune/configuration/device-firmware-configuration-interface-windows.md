@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059601"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Windows cihazlarında cihaz üretici yazılımı yapılandırma arabirimi profillerini Microsoft Intune (Genel Önizleme) kullanma
@@ -148,7 +148,7 @@ Ayrıca, [iade edilecek cihazlara sinyal](../remote-actions/device-sync.md)gönd
 
 ## <a name="reuse-retire-or-recover-the-device"></a>Cihazı yeniden kullanma, devre dışı bırakma veya kurtarma
 
-### <a name="reuse"></a>Pencereleri
+### <a name="reuse"></a>Yeniden kullanma
 
 Windows 'u cihaza yeniden amaçlandırın olarak sıfırlamayı planlıyorsanız, [cihazı](../remote-actions/devices-wipe.md)silin. Autopilot cihaz **kaydını kaldırmayın.**
 
@@ -167,7 +167,7 @@ Bu adımlar cihazın UEFı (BIOS) menülerini kaldırır. Değerler profille ayn
 
 Artık Cihazı temizlemeye hazırsınız. Cihaz temizlenmeden sonra, Autopilot kaydını silin. Kaydın silinmesi cihazın yeniden başlatıldığında otomatik olarak yeniden kaydedilmesini önler.
 
-### <a name="recover"></a>Kurtarılamıyor
+### <a name="recover"></a>Kurtar
 
 Bir cihazı siler ve UEFı (BIOS) menülerinin kilidini açmadan önce Autopilot kaydını silerseniz, menüler kilitli kalır. Intune, kilidini açmak için profil güncelleştirmeleri gönderemiyor.
 

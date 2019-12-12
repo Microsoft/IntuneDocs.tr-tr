@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563391"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Öğretici: EMM ve uygulama yapılandırması için Intune 'U kullanmak üzere bolluk yapılandırma
 
 Bolluk, Microsoft Intune kullanabileceğiniz bir işbirliği uygulamasıdır.   
 
-Bu öğreticide şunları yapmanız gerekir:
+Bu öğreticide şunları yapacaksınız:
 > [!div class="checklist"]
 > - Intune 'U, bolluk kurumsal kılavuzunuzda Enterprise Mobility Management (EMM) sağlayıcısı olarak ayarlayın. Kılavuza ait çalışma alanlarınıza erişimi Intune tarafından yönetilen cihazlara sınırlayabilirsiniz.
 > - İOS 'ta EMM için bolluk uygulamasını ve Android iş profili cihazları için bolluk uygulamasını yönetmek üzere uygulama yapılandırma ilkeleri oluşturun.
@@ -66,7 +66,7 @@ EMM için, Intune 'da yönetilen bir iOS uygulaması olarak bolluk ekleyin ve bo
     - "Tüm Üyeler (konuklar dahil)" seçeneğini belirlediyseniz **Kayıtlı cihazlar Için kullanılabilir** "veya
     - "Tüm Üyeler (konukları hariç)" veya "Isteğe bağlı" seçeneğini belirlediyseniz **kayıt olmadan veya bunlarla birlikte kullanılabilir** .
 9. **Dahil edilen grupları** seçin ve bu uygulamayı tüm kullanıcılar Için kullanılabilir yap altında **Evet**' i seçin.
-10. **Tamam**' a ve ardından yeniden **Tamam** ' a tıklayın.
+10. **Tamam** ve ardından da tekrar **Tamam** öğesine tıklayın.
 11. **Kaydet**'e tıklayın.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>EMM için bolluk için bir uygulama yapılandırma ilkesi ekleyin
@@ -117,7 +117,7 @@ Intune 'da bir yönetilen Google Play uygulaması olarak bolluk ekleyin ve bollu
     - "Tüm Üyeler (konuklar dahil)" seçeneğini belirlediyseniz **Kayıtlı cihazlar Için kullanılabilir** "veya
     - "Tüm Üyeler (konukları hariç)" veya "Isteğe bağlı" seçeneğini belirlediyseniz **kayıt olmadan veya bunlarla birlikte kullanılabilir** .
 8. Dahil edilen grupları seçin ve bu uygulamayı tüm kullanıcılar için kullanılabilir yap altında **Evet**' i seçin.
-9. **Tamam**' a ve ardından yeniden **Tamam** ' a tıklayın.
+9. **Tamam** ve ardından da tekrar **Tamam** öğesine tıklayın.
 10. **Kaydet**'e tıklayın.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Bolluk için bir uygulama yapılandırma ilkesi ekleyin
@@ -151,7 +151,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
     - Parola istenmeden önce ekran kilitlenmesinden sonra geçen en uzun dakika için **15 dakika**seçin.
     - Parola kullanım süresi (gün) için 41 girin.
     - Yeniden kullanılmasını önleyen önceki parolaların sayısı için 5 girin.
-8. **Tamam**' a ve ardından yeniden **Tamam** ' a tıklayın.
+8. **Tamam** ve ardından da tekrar **Tamam** öğesine tıklayın.
 9. **Oluştur**'a tıklayın.
 
 ## <a name="launch-slack"></a>Başlatma bolluğu

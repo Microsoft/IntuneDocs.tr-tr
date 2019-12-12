@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74284170"
 ---
 
@@ -39,7 +39,7 @@ ms.locfileid: "74284170"
 > [!NOTE]
 > Tüm Windows sürümleri, MDM aracılığıyla yapılandırılmakta olan tüm kullanılabilir işletim sistemi özelliklerini desteklemez. Bkz. [Windows yapılandırma hizmeti sağlayıcısı başvuru belgeleri](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Her CSP, hangi Windows sürümlerinin desteklendiğini vurgular.
 
-Enterprise Management + Security (EMS) kullanan müşteriler, [Windows 10 cihazlarını kaydetmek için Azure Active Directory (Azure AD)](/intune/windows-enroll)de kullanabilir.
+Enterprise Management + Security (EMS) müşterileri de kullanabilir [Azure Active Directory (Windows 10 cihazlarını kaydetmek için Azure AD)](/intune/windows-enroll).
 
 Intune ile Windows 10 sanal makinelerini kullanma hakkında yönergeler için bkz. [Windows 10 sanal makinelerini kullanma](../fundamentals/windows-10-virtual-machines.md).
 

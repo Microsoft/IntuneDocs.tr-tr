@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506098"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Şirket Portalı Web sitesinden uygulamaları yönetme 
@@ -80,7 +80,7 @@ Filtre ve sıralama seçeneklerini görmek için **iyileştir** ' i seçin. **T�
 * Yayımcı adı, artan veya azalan alfabetik  
 * Yayımlama tarihi, en eski veya en son  
 
-Ek Yardım mı gerekiyor? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
+Daha fazla yardıma ihtiyacınız var mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
 
 ### <a name="available-and-required-apps"></a>Kullanılabilir ve gerekli uygulamalar
 Uygulamalar size kuruluşunuz tarafından atanır ve kullanılabilir ya da gerekli olarak etiketlenir. **Yüklü uygulamalar** sayfasında, **atama türü** sütunu altında sahip olduğunuz uygulamalar gösterilir. 

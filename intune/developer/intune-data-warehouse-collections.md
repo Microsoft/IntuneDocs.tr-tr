@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4aad4e2295cb7b85abcb73a9c8e94ed7501348be
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490491"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899238"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
@@ -98,7 +98,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | DateKey           | Uyumluluk ilkesi için özet oluşturulduğu ana ait tarih anahtarı.                                                                                                                   | 20161219 |
 | PolicyKey         | Özetin oluşturulduğu uyumluluk ilkesi için anahtar.                                                                                                                   | 10178    |
 | PolicyPlatformKey | Özetin oluşturulduğu uyumluluk ilkesinin platform türü için anahtar.                                                                                            | 5        |
-| Bilinmiyor           | Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı.                                                                           | hatası       |
+| Bilinmiyor           | Çevrimdışı olan veya Intune ya da Azure AD ile başka bir nedenle iletişim kuramayan cihaz sayısı.                                                                           | 13       |
 | NotApplicable     | Yönetici tarafından hedeflenen cihaz uyumluluk ilkelerinin uygulanabilir olmadığı cihaz sayısı.                                                                                     | 3        |
 | Uyumlu         | Yönetici tarafından hedeflenen bir veya daha fazla cihaz uyumluluk ilkesini başarıyla uygulayan cihaz sayısı.                                                                        | 45       |
 | YetkisizKullanımSüresinde     | Uyumlu olmayan ancak yönetici tarafından belirlenen yetkisiz kullanım süresinde olan cihaz sayısı.                                                                                  | 3        |
@@ -116,9 +116,9 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 
 |  complianceStatus  |                       Description                      |
 |:------------------:|:------------------------------------------------------:|
-|    Bilinmiyor         |    Bilinmeyen.                                                                        |
+|    Bilinmiyor         |    Bilinmiyor.                                                                        |
 |    Uyumlu       |    Uyumlu.                                                                      |
-|    İzde    |       Cihazın durumu uyumsuz ve şirket kaynaklarına erişimi engelli.             |
+|    Uyumsuz    |       Cihazın durumu uyumsuz ve şirket kaynaklarına erişimi engelli.             |
 |    Çakışma        |    Diğer kurallarla çakışıyor.                                                      |
 |    Hata           |       Hata.                                                                       |
 |    ConfigManager   |    Yapılandırma Yöneticisi tarafından yönetiliyor.                                                      |
@@ -279,7 +279,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | 10           | IPod              | iPod cihaz                                         |
 | 11           | Android           | Cihaz Yöneticisi ile yönetilen Android cihaz   |
 | 12           | ISocConsumer      | iSoc Consumer cihaz                                |
-| hatası           | Unix              | Unix cihaz                                         |
+| 13           | Unix              | Unix cihaz                                         |
 | 14           | MacMDM            | Yerleşik MDM aracısıyla yönetilen Mac OS X cihaz |
 | 15           | HoloLens          | HoloLens cihazı                                       |
 | 16           | SurfaceHub        | Surface Hub cihaz                                  |
@@ -326,7 +326,7 @@ KayıtSayısı **varlığı,** bir cihaz kaydının etkinliğini gösterir.
 | Kayıt%0 kategori anahtarı  | Kayıt hatası kategorisinin anahtarı (kayıt başarısız olduysa).        |
 | Kayıtefailurereasonkey    | Kayıt hatası nedeninin anahtarı (kayıt başarısız olursa).          |
 | osVersion                     | Cihazın işletim sistemi sürümü.                               |
-| Biriktirme                         | Yukarıdaki sınıflandırmalarla eşleşen kayıt etkinliklerinin toplam sayısı.  |
+| count                         | Yukarıdaki sınıflandırmalarla eşleşen kayıt etkinliklerinin toplam sayısı.  |
 
 ## <a name="enrollmenteventstatuses"></a>kayıt \ Menteventdurumlar 
 KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
@@ -359,7 +359,7 @@ KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
 | Uygulanamaz                  | Kayıt hatası kategorisi geçerli değil.                                                            |
 | Kullanılamıyor                   | Kayıt hatası kategorisi kullanılamıyor.                                                             |
 | Bilinmiyor                         | Bilinmeyen hata.                                                                                                |
-| Kimlik doğrulama                  | Kimlik doğrulama başarısız oldu.                                                                                        |
+| Kimlik doğrulama                  | Kimlik doğrulaması gerçekleştirilemedi.                                                                                        |
 | Yetkilendirme                   | Çağrının kimliği doğrulandı, ancak kaydolma yetkisi yok.                                                         |
 | AccountValidation               | Kayıt için Hesap doğrulanamadı. (Hesap engellendi, kayıt etkin değil)                      |
 | Kullanıcı doğrulaması                  | Kullanıcı doğrulanamadı. (Kullanıcı yok, Lisans eksik)                                           |
@@ -418,7 +418,7 @@ KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
 |      Özellik     |                   Description                  | Örnek |
 |:-----------------:|:----------------------------------------------:|:-------:|
 | ExtensionStateKey | Sistem durumunun benzersiz tanımlayıcısı.           | 2       |
-| ExtensionState    | Bir IntuneManagementExtension uzantısının durumu. | Sağlıklı |
+| ExtensionState    | Bir IntuneManagementExtension uzantısının durumu. | Sorunsuz |
 
 ## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 **IntuneManagementExtensionVersion** varlığı, **IntuneManagementExtension** tarafından kullanılan tüm sürümleri listeler.
@@ -576,8 +576,8 @@ Microsoft Intune yoluyla Mobil Uygulama Yönetimini kullanarak bir hedef cihaz t
 | AppKey             | AppRevision örneğini tanımlamak için kullanılan mobil uygulamanın anahtarı.                                                          |
 | DeviceTypeKey      | Mobil Uygulama ile ilişkili Cihaz Türü anahtarı.                                                              |
 | AppInstallStateKey | MobileAppInstallState örneğini tanımlamak için kullanılan uygulama yükleme durumunun anahtarı.                                         |
-| Raporladı          | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |
-| Biriktirme              | Toplam miktar.                                                                                                                  |
+| hata kodu          | Uygulama yükleyicisi, mobil platform veya uygulamanın yüklemesiyle ilgili hizmet tarafından döndürülen hata kodu. |
+| Count              | Toplam miktar.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
 **ownerType** varlığı; bir cihazın sahipliğinin şirket, kişisel veya bilinmeyen olduğunu gösterir.
@@ -589,7 +589,7 @@ Microsoft Intune yoluyla Mobil Uygulama Yönetimini kullanarak bir hedef cihaz t
 | ownerTypeName | Cihazların sahip türünü temsil eder: Kurumsal cihaz kuruluşa aittir.  Kişisel - Cihaz kişiye aittir (KCG).   Bilinmiyor - Bu cihazda bilgi yok. | Şirket kişisel bilinmiyor |
 
 > [!Note]  
-> Cihazlar için dinamik gruplar oluştururken AzureAD içindeki `ownerTypeName` filtresi için, `deviceOwnership` değerini `Company` olarak ayarlamanız gerekir. Daha fazla bilgi için bkz. [Cihazlar Için kurallar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Cihazlar için dinamik gruplar oluştururken AzureAD içindeki `ownerTypeName` filtresi için, `deviceOwnership` değer `Company`olarak ayarlamanız gerekir. Daha fazla bilgi için bkz. [Cihazlar Için kurallar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>ilkeler
 **İlke** varlığı, cihaz yapılandırma profillerini, uygulama yapılandırma profillerini ve uyumluluk ilkelerini listeler. Kuruluşunuzda bir gruba Mobil Cihaz Yönetimi (MDM) ilkeleri atayabilirsiniz.
@@ -686,7 +686,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 | IsDeleted          | Kullanıcının cihaz kaydını kaldırdığını ve ilişkinin artık geçerli olmadığını gösterir. | Doğru/Yanlış      |
 | EndedDateTimeUTC   | IsDeleted değerinin True olarak değiştirildiği tarih ve UTC diliminde saat.                                               | 23.6.2017 0:00  |
 
-## <a name="users"></a>Kullanıcılarına
+## <a name="users"></a>kullanıcılar
 **user** varlığı, kuruluşunuzda kendisine lisans atanmış olan tüm Azure Active Directory (Azure AD) kullanıcılarını listeler.
 
 **Kullanıcı** varlık koleksiyonu, kullanıcı verilerini içerir. Bu kayıtlar, kullanıcı kaldırıldıysa dahi, veri toplama döneminde kullanıcı durumlarını içerir. Örneğin, bir kullanıcı Intune'a eklenebilir ve son bir ay içerisinde kaldırılabilir. Bu kullanıcı, raporun olduğu saatte bulunmasa da kullanıcı ve durum, önceki ayın verilerinde bulunuyor. Kullanıcının verilerinizdeki varlığının süresini gösterecek bir rapor oluşturabilirsiniz.
@@ -696,7 +696,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 | UserKey                    | Veri ambarındaki kullanıcının benzersiz tanımlayıcısı - vekil anahtar.                                                                                                                                                         | 123                                  |
 | UserId                     | Kullanıcının benzersiz tanımlayıcısı - UserKey’e benzerdir ancak doğal bir anahtardır.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Kullanıcının e-posta adresi.                                                                                                                                                                                                     | John@constoso.com                    |
-| UserPrincipalName                        | Kullanıcının kullanıcı asıl adı.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | Kullanıcının kullanıcı asıl adı.                                                                                                                                                                                               | John@constoso.com                    |
 | GörünenAd                | Kullanıcının görünen adı.                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | Kullanıcının Intune lisansı olup olmadığını belirtir.                                                                                                                                                                              | Doğru/Yanlış                           |
 | IsDeleted                  | Kullanıcının tüm lisanslarının geçerliliğini yitirip yitirmediğini ve kullanıcının buna bağlı olarak Intune’dan kaldırılıp kaldırılmadığını belirtir. Tek bir kayıt için bu bayrak değişmez. Bunun yerine, yeni bir kullanıcı durumu için yeni bir kayıt oluşturulur. | Doğru/Yanlış                           |

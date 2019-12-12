@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb025e6b698eba3deeabbda788fcd990a19105f
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 78daf56f7e1d22b88d7134ac6cea86f1d999f0c6
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781184"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860307"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Windows 10 (ve üzeri) cihaz ayarları
 
@@ -33,7 +33,7 @@ Bu ayarlar, Intune 'da bir cihaz yapılandırma profiline eklenir ve ardından W
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Bir cihaz yapılandırma profili oluşturun](device-restrictions-configure.md#create-the-profile).
+[Bir cihaz yapılandırma profili oluşturma](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="app-store"></a>Uygulama Mağazası
 
@@ -42,11 +42,11 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [ApplicationManageme
 - **App Store** (yalnızca mobil): **Yapılandırılmadı** (varsayılan), son kullanıcıların mobil cihazlarda App Store 'a erişmesine izin verir. **Blok** , uygulama mağazasının kullanımını engeller.
 - **Mağazadan uygulamaları otomatik güncelleştir**: **Yapılandırılmadı** (varsayılan) Microsoft Store yüklenen uygulamaların otomatik olarak güncelleştirilmesini sağlar. **Blok** , güncelleştirmelerin otomatik olarak yüklenmesini engeller.
 - **Güvenilen uygulama yüklemesi**: Microsoft Store olmayan uygulamalar yüklenebiliyorsa, dışarıdan yükleme olarak da bilinen ' yi seçin. Dışarıdan yükleme, Microsoft Store tarafından sertifikasız bir uygulamayı yüklüyor ve çalıştırmıyor. Örneğin, yalnızca şirket içi bir uygulama. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı** (varsayılan): işletim sistemi varsayılanını kullanır.
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
   - **Engelle**: dışarıdan yüklemeyi engeller. Microsoft Store olmayan uygulamalar yüklenemez.
   - **Izin ver**: dışarıdan yüklemeyi sağlar. Microsoft Store olmayan uygulamalar yüklenebilir.
 - **Geliştirici kilidi açma**: dışarıdan yüklenen uygulamaların son kullanıcılar tarafından değiştirilmesine izin verme gibi Windows Geliştirici ayarlarına izin verin. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı** (varsayılan): işletim sistemi varsayılanını kullanır.
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
   - **Engelle**: Geliştirici modunu ve dışarıdan yükleme uygulamalarını engeller.
   - **Izin ver**: geliştirici modu ve dışarıdan yükleme uygulamalarına izin verir.
 
@@ -87,7 +87,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listelenecek olan [bağlantı i
 - [Wi-Fi ilkesi CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
 
 - **Hücresel veri kanalı**: son kullanıcıların, hücresel ağa bağlıyken Web 'e göz atma gibi verileri kullanıp kullanmadığı seçin. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı** (varsayılan): hücresel veri kanalına izin verebilecek işletim sistemi varsayılanını kullanır. Son kullanıcılar devre dışı bırakabilirsiniz.
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez. Son kullanıcılar devre dışı bırakabilirsiniz.
   - **Engelle**: hücresel veri kanalına izin verme. Son kullanıcılar açamaz.
   - **Izin ver (düzenlenemez)** : hücresel veri kanalına izin verir. Son kullanıcılar bu uygulamayı kapatamaz.
 
@@ -139,24 +139,24 @@ Bu ayarlar [Enterprisecloudprint ILKESI CSP](https://docs.microsoft.com/windows/
 ## <a name="control-panel-and-settings"></a>Denetim Masası ve Ayarlar
 
 - **Settings App**: **Block** , son kullanıcıların Windows ayarları uygulamasına erişmesini önler. **Yapılandırılmadı** (varsayılan), kullanıcıların cihazda Ayarlar uygulamasını açmasına olanak sağlar.
-  - **System**: **Block** , ayarlar uygulamasının sistem alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
+  - **System**: **Block** , ayarlar uygulamasının sistem alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
     - **Güç ve uyku ayarlarının değiştirilmesi** (yalnızca masaüstü): **Block** , son kullanıcıların cihazdaki güç ve uyku ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların güç ve uyku ayarlarını değiştirmesine izin verir.
-  - **Cihazlar**: **blok** cihazdaki ayarlar uygulamasının cihazlar alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-  - **Ağ Internet**: **Block** , cihazdaki ayarlar uygulamasının ağ & Internet alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-  - **Kişiselleştirme**: **blok** cihazdaki ayarlar uygulamasının kişiselleştirme alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-  - **Uygulamalar**: **blok** cihazdaki ayarlar uygulamasının uygulamalar alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-  - **Hesaplar**: **blok** cihazdaki ayarlar uygulamasının hesaplar alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-  - **Zaman ve dil**: **blok** cihazdaki ayarlar uygulamasının zaman & dil alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-    - **Sistem saati değişikliği**: **Block** , son kullanıcıların cihazdaki tarih ve saat ayarlarını değiştirmesini engeller. **Yapılandırılmadı** , kullanıcıların bu ayarları değiştirmesine izin verir.
-    - **Bölge ayarlarının değiştirilmesi** (yalnızca masaüstü): **Block** , son kullanıcıların cihazdaki bölge ayarlarını değiştirmesini engeller. **Yapılandırılmadı** , kullanıcıların bu ayarları değiştirmesine izin verir.
-    - **Dil ayarlarının değiştirilmesi (yalnızca masaüstü)** : **Block** , son kullanıcıların cihazdaki dil ayarlarını değiştirmesini engeller. **Yapılandırılmadı** , kullanıcıların bu ayarları değiştirmesine izin verir.
+  - **Cihazlar**: **blok** cihazdaki ayarlar uygulamasının cihazlar alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Ağ Internet**: **Block** , cihazdaki ayarlar uygulamasının ağ & Internet alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Kişiselleştirme**: **blok** cihazdaki ayarlar uygulamasının kişiselleştirme alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Uygulamalar**: **blok** cihazdaki ayarlar uygulamasının uygulamalar alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Hesaplar**: **blok** cihazdaki ayarlar uygulamasının hesaplar alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Zaman ve dil**: **blok** cihazdaki ayarlar uygulamasının zaman & dil alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+    - **Sistem saati değişikliği**: **Block** , son kullanıcıların cihazdaki tarih ve saat ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Kullanıcılar bu ayarları değiştirebilir.
+    - **Bölge ayarlarının değiştirilmesi** (yalnızca masaüstü): **Block** , son kullanıcıların cihazdaki bölge ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Kullanıcılar bu ayarları değiştirebilir.
+    - **Dil ayarlarının değiştirilmesi (yalnızca masaüstü)** : **Block** , son kullanıcıların cihazdaki dil ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Kullanıcılar bu ayarları değiştirebilir.
 
       [Ayarlar ilkesi CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
-  - **Oyun**: **Block** , cihazdaki ayarlar uygulamasının oyun alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-  - **Erişim kolaylığı**: **blok** cihazdaki ayarlar uygulamasının erişim kolaylığı alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-  - **Gizlilik**: **blok** cihazdaki ayarlar uygulamasının gizlilik alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
-  - **Update ve Security**: **Block** , cihazdaki ayarlar uygulamasının Update & Security alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
+  - **Oyun**: **Block** , cihazdaki ayarlar uygulamasının oyun alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Erişim kolaylığı**: **blok** cihazdaki ayarlar uygulamasının erişim kolaylığı alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Gizlilik**: **blok** cihazdaki ayarlar uygulamasının gizlilik alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Update ve Security**: **Block** , cihazdaki ayarlar uygulamasının Update & Security alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 
 ## <a name="display"></a>Görüntüle
 
@@ -178,31 +178,31 @@ Ayrıca, uygulama listesiyle bir. csv dosyasını **Içeri aktarabilirsiniz** .
 
 Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience)'yi kullanır; Ayrıca, desteklenen Windows sürümlerini de listeler. 
 
-- **Ekran yakalama** (yalnızca mobil): **Block** , son kullanıcıların cihazda ekran görüntüleri almasını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Kopyala ve Yapıştır (yalnızca mobil)** : **Block** , son kullanıcıların cihazdaki uygulamalar arasında Kopyala ve Yapıştır kullanmasını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **El ile kayıt kaldırma**: **blok** , son kullanıcıların cihazdaki çalışma alanı denetim masasını kullanarak çalışma alanı hesabını silmesini engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
+- **Ekran yakalama** (yalnızca mobil): **Block** , son kullanıcıların cihazda ekran görüntüleri almasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Kopyala ve Yapıştır (yalnızca mobil)** : **Block** , son kullanıcıların cihazdaki uygulamalar arasında Kopyala ve Yapıştır kullanmasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **El ile kayıt kaldırma**: **blok** , son kullanıcıların cihazdaki çalışma alanı denetim masasını kullanarak çalışma alanı hesabını silmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 
   Bu ilke ayarı, bilgisayar Azure AD 'ye katılırsa ve otomatik kayıt etkinse uygulanmaz.
 
-- **El ile kök sertifika yüklemesi** (yalnızca mobil): **blok** , son kullanıcıların kök sertifikaları ve ara Cap sertifikalarını el ile yüklemesini engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Kamera**: **blok** son kullanıcıların cihazdaki kamerayı kullanmasını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
+- **El ile kök sertifika yüklemesi** (yalnızca mobil): **blok** , son kullanıcıların kök sertifikaları ve ara Cap sertifikalarını el ile yüklemesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Kamera**: **blok** son kullanıcıların cihazdaki kamerayı kullanmasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 
   [Kamera CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
 
-- **OneDrive dosya eşitleme**: **blok** son kullanıcıların dosyaları OneDrive 'a cihazdan eşitlemesini engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Çıkarılabilir depolama birimi**: **blok** , son kullanıcıların cihazla SD kartlar gibi dış depolama cihazlarını kullanmasını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Coğrafi konum**: **blok** son kullanıcıların cihazdaki konum hizmetlerini açmasını önler. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **İnternet paylaşımı**: **engelleme** cihazda İnternet bağlantısı paylaşımını önler. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Telefon sıfırlaması**: **blok** son kullanıcıların cihazda fabrika sıfırlaması gerçekleştirmesini engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **USB bağlantısı**: **blok** , cihazdaki bir USB bağlantısı aracılığıyla dış depolama cihazlarına erişimi engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir. USB ücretlendirme bu ayardan etkilenmez.
-- **Hırsızlık önleme modu** (yalnızca mobil): **Block** son kullanıcıların cihazda antihırsızlık modu tercihini seçmesini önler. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
+- **OneDrive dosya eşitleme**: **blok** son kullanıcıların dosyaları OneDrive 'a cihazdan eşitlemesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Çıkarılabilir depolama birimi**: **blok** , son kullanıcıların cihazla SD kartlar gibi dış depolama cihazlarını kullanmasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Coğrafi konum**: **blok** son kullanıcıların cihazdaki konum hizmetlerini açmasını önler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **İnternet paylaşımı**: **engelleme** cihazda İnternet bağlantısı paylaşımını önler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Telefon sıfırlaması**: **blok** son kullanıcıların cihazda fabrika sıfırlaması gerçekleştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **USB bağlantısı**: **blok** , cihazdaki bir USB bağlantısı aracılığıyla dış depolama cihazlarına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. USB ücretlendirme bu ayardan etkilenmez.
+- **Hırsızlık önleme modu** (yalnızca mobil): **Block** son kullanıcıların cihazda antihırsızlık modu tercihini seçmesini önler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 - **Cortana**: **blok** , cihazda Cortana sesli yardımcısını devre dışı bırakır. Cortana devre dışı bırakıldığında, kullanıcılar hala cihazdaki öğeleri bulmak için arama yapabilir. **Yapılandırılmadı** (varsayılan) Cortana 'ya izin verir.
 - **Ses kaydı** (yalnızca mobil): **blok** , son kullanıcıların cihazda cihaz ses kaydedicisi 'ni kullanmasını engeller. **Yapılandırılmadı** (varsayılan), uygulamalar için ses kaydına izin verir.
-- **Cihaz adı değişikliği** (yalnızca mobil): **Block** , son kullanıcıların cihaz adını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Sağlama paketleri ekleme**: **blok** , cihaza sağlama paketlerini yükleyen çalışma zamanı yapılandırma aracısını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Sağlama paketlerini kaldır**: **blok** , kaynak sağlama paketlerini cihazdan kaldıran çalışma zamanı yapılandırma aracısını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Cihaz bulma**: **blok** cihazın diğer cihazlar tarafından bulunmasını engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
-- **Görev değiştirici** (yalnızca mobil): **blok** cihazda görev değiştirmeyi engeller. **Yapılandırılmadı** (varsayılan) bu özelliğe izin verir.
+- **Cihaz adı değişikliği** (yalnızca mobil): **Block** , son kullanıcıların cihaz adını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Sağlama paketleri ekleme**: **blok** , cihaza sağlama paketlerini yükleyen çalışma zamanı yapılandırma aracısını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Sağlama paketlerini kaldır**: **blok** , kaynak sağlama paketlerini cihazdan kaldıran çalışma zamanı yapılandırma aracısını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Cihaz bulma**: **blok** cihazın diğer cihazlar tarafından bulunmasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Görev değiştirici** (yalnızca mobil): **blok** cihazda görev değiştirmeyi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 - **SIM kart hatası iletişim kutusu** (yalnızca mobil): bir SIM kart algılanmazsa cihazda hata Iletilerinin gösterilmesini **engelleyin** . **Yapılandırılmadı** (varsayılan) hata iletilerini gösterir.
 - **Mürekkep çalışma alanı**: kullanıcının mürekkep çalışma alanına erişip erişene olduğunu ve nasıl erişebileceğini seçin. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı** (varsayılan): mürekkep çalışma alanını açar ve kullanıcının bu dosyayı kilit ekranı üzerinde kullanmasına izin verilir.
@@ -247,7 +247,7 @@ Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-manag
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
-## <a name="messaging"></a>Gönderip
+## <a name="messaging"></a>Mesajlaşma
 
 Bu ayarlar, [ileti ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging)'sini kullanır; Ayrıca, desteklenen Windows sürümlerini de listeler.
 
@@ -331,13 +331,13 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
   - **Tüm sayfalarda**: tüm sayfalarda Sık Kullanılanlar çubuğunu gösterir. Son kullanıcılar bu ayarı değiştiremezler.
   - **Gizli**: tüm sayfalarda Sık Kullanılanlar çubuğunu gizler. Son kullanıcılar bu ayarı değiştiremezler.
 - **Sık kullanılanlara değişikliklere Izin ver**: **Evet** (varsayılan), kullanıcıların listeyi değiştirmesine izin veren işletim sistemi varsayılanını kullanır. **Hayır** , son kullanıcıların sık kullanılanlar listesini eklemesini, içeri aktarmayı, sıralamasını veya düzenlemesini engeller.
-  - **Sık Kullanılanlar listesi**: Sık Kullanılanlar dosyasına URL 'lerin bir listesini ekleyin. Örneğin, `http://contoso.com/favorites.html`ekleyin.
+  - **Sık Kullanılanlar listesi**: Sık Kullanılanlar dosyasına URL 'lerin bir listesini ekleyin. Örneğin, `http://contoso.com/favorites.html` ekleyin.
 - **Microsoft tarayıcıları arasında sık kullanılanları Eşitle** (yalnızca masaüstü): **Evet** , Windows 'un Internet Explorer ve Microsoft Edge arasında sık kullanılanları eşitlemesine zorlar. Sık Kullanılanlar için eklemeler, silmeler, değişiklikler ve düzen değişiklikleri, tarayıcılar arasında paylaşılır.  **Hayır** (varsayılan) işletim sistemi varsayılanını kullanır, bu da kullanıcılara tarayıcılar arasında sık kullanılanları eşitleme seçeneği verebilir.
 - **Varsayılan arama motoru**: cihazda varsayılan arama altyapısını seçin. Son kullanıcılar bu değeri istediği zaman değiştirebilir. Seçenekleriniz şunlardır:
   - İstemci Microsoft Edge ayarları 'nda arama altyapısı
-  - Cıları
+  - Bing
   - Google
-  - Yahoo!
+  - Yahoo
   - Özel değer: **OpenSearch XML URL 'Si**içinde, kısa adı ve arama altyapısının URL 'sini IÇEREN BIR https URL 'sini en düşük düzeyde girin. Örneğin, şunu girin: `https://www.contoso.com/opensearch.xml`.
 - **Arama önerilerini göster**: **Evet** (varsayılan) arama motorunuzun, adres çubuğuna arama ifadeleri yazarken site önermesine izin verir. **Hayır** bu özelliği engeller.
 - **Arama altyapısında değişikliklere Izin ver**: **Evet** (varsayılan), kullanıcıların yeni arama motorları eklemesine veya Microsoft Edge 'de varsayılan arama altyapısını değiştirmesine izin verir. Kullanıcıların arama altyapısını özelleştirmesini engellemek için **Hayır** ' ı seçin.
@@ -367,7 +367,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
 - **Canlı kutucuk veri toplamaya Izin ver**: **Evet** (varsayılan), Microsoft Edge 'In Başlat menüsüne sabitlenmiş canlı kutucuktan bilgi toplamasına izin verir. **Hayır** , kullanıcılara sınırlı bir deneyim sağlayabilen bu bilgilerin toplanmasını engeller.
 - **Kullanıcı sertifika hatalarını geçersiz kılabilir**: **Evet** (varsayılan), kullanıcıların Güvenli Yuva Katmanı/Aktarım katmanı GÜVENLIĞI (SSL/TLS) hataları olan Web sitelerine erişmesine izin verir. **Hayır** (Artırılmış güvenlik için önerilir), kullanıcıların Web sitelerine SSL veya TLS hatalarıyla erişmesini önler.
 
-### <a name="additional"></a>Fazladan
+### <a name="additional"></a>Ek
 
 - **Microsoft Edge tarayıcısına Izin ver** (yalnızca mobil): **Evet** (varsayılan) mobil cihazda Microsoft Edge Web tarayıcısının kullanılmasına izin verir. **Hayır** , cihazda Microsoft Edge kullanımını engeller. **Hayır**' ı seçerseniz, diğer tek ayarlar yalnızca masaüstü için geçerlidir.
 - **Adres çubuğu açılır listesine Izin ver**: **Evet** (varsayılan), Microsoft Edge 'in adres çubuğu açılır listesini öneriler listesiyle göstermesini sağlar. **Hayır** , Microsoft Edge 'in, yazarken açılan listede öneriler listesi göstermesini engeller. **Hayır**olarak ayarlandığında, şunları yapabilirsiniz:
@@ -420,21 +420,21 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [DeviceLock ILKESI C
   - **Önceki parolaların yeniden kullanılmasını engelle**: daha önce kullanılan ve 1-24 'den kullanılamayan parolaların sayısını girin. Örneğin, kullanıcıların geçerli parolasına veya önceki dört parolalarından birine yeni bir parola ayarlayamaması için `5` girin.
   - **Cihaz boşta durumundan çıktığında parola iste** (Mobile ve holographic): **gerektir** ' i seçin, böylece kullanıcılar, boşta kaldıktan sonra cihazın kilidini açmak için bir parola girmelidir. **Yapılandırılmadı** (varsayılan) cihaz boşta durumundan çıktığında PIN veya parola gerektirmez.
   - **Basit parolalar**: kullanıcıların `1234` veya `1111`gibi basit parolalar oluşturmaması için **Engelle** olarak ayarlayın. Kullanıcıların `1234` veya `1111`gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** (varsayılan) olarak ayarlayın. Bu ayar, Windows resimli parolalarının kullanımına izin verir veya bunu engeller.
-- **Aayarlaması sırasında otomatik şifreleme**: **blok** , cihaz Azure AD 'ye katılmış olduğunda otomatik BitLocker cihaz şifrelemesini engeller. **Yapılandırılmadı** (varsayılan), şifrelemeyi etkinleştirebilen işletim sistemi varsayılanını kullanır. [BitLocker cihaz şifrelemesi](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)hakkında daha fazla bilgi.
+- **Aayarlaması sırasında otomatik şifreleme**: **blok** , cihaz Azure AD 'ye katılmış olduğunda otomatik BitLocker cihaz şifrelemesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. [BitLocker cihaz şifrelemesi](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)hakkında daha fazla bilgi.
 
   [Güvenlik/koruyucu Tautomaticdeviceencryptionforazureadjoineddevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Federal bilgi Işleme standardı (FIPS) ilkesi**: **izin ver** , şifreleme, karma ve imzalama için ABD devlet standardı olan Federal BILGI işleme standardı (FIPS) ilkesini kullanır. **Yapılandırılmadı** (varsayılan), FIPS kullanmayan işletim sistemi varsayılanını kullanır.
+- **Federal bilgi Işleme standardı (FIPS) ilkesi**: **izin ver** , şifreleme, karma ve imzalama için ABD devlet standardı olan Federal BILGI işleme standardı (FIPS) ilkesini kullanır. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. İşletim sistemi varsayılanı FIPS kullanamaz.
 
   [Şifreleme/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello cihaz kimlik doğrulaması**: kullanıcıların bir Windows 10 bilgisayarında oturum açmak için telefon, uygunluk bandı veya IoT cihazı gibi bir Windows Hello yardımcı cihazı kullanmasına **izin verin** . **Yapılandırılmamış** (varsayılan) işletim sistemi varsayılanını kullanır, bu da Windows Hello yardımcı cihazlarının Windows ile kimlik doğrulamasını engelleyebilir.
+- **Windows Hello cihaz kimlik doğrulaması**: kullanıcıların bir Windows 10 bilgisayarında oturum açmak için telefon, uygunluk bandı veya IoT cihazı gibi bir Windows Hello yardımcı cihazı kullanmasına **izin verin** . **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. İşletim sistemi varsayılanı, Windows Hello yardımcı cihazlarının Windows ile kimlik doğrulamasından engel olabilir.
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
 - **Web 'de oturum açma**: ADFS olmayan (Active Directory Federasyon Hizmetleri (AD FS)) Federasyon sağlayıcıları için SECURITY ASSERTION MARKUP Language (SAML) gibi Windows oturum açma desteği sunar. SAML, Web tarayıcıları çoklu oturum açma (SSO) deneyimi sağlayan güvenli belirteçler kullanır. Seçenekleriniz şunlardır:
 
-  - **Yapılandırılmadı** (varsayılan): cihazdaki işletim sistemi varsayılanını kullanır.
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
   - **Etkin**: Web kimlik bilgisi sağlayıcısı oturum açma için etkinleştirildi.
   - **Devre dışı**: Web kimlik bilgisi sağlayıcısı oturum açma için devre dışı bırakıldı.
 
@@ -451,7 +451,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [DeviceLock ILKESI C
 - **Paket adı**: uygulama paketi aile adı.
 - **Uygulama adı**: uygulamanın adı.
 
-### <a name="exceptions"></a>Larý
+### <a name="exceptions"></a>Özel Durumlar
 
 - **Hesap bilgileri**: Bu uygulamanın kullanıcı adına, resmine ve diğer kişi bilgilerine erişip erişemeyeceğini tanımlayın.
 - **Arka plan uygulamaları**: Bu uygulamanın arka planda çalıştırılıp çalıştırılamayacağını tanımlayın.
@@ -478,7 +478,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Kişiselleştirme I
 
 - **Masaüstü arka plan resmi URL 'si (yalnızca masaüstü)** : Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz. jpg,. jpeg veya. png biçimindeki bir resmin URL 'sini girin. Kullanıcılar bu resmi değiştiremez. Örneğin, şunu girin: `https://contoso.com/logo.png`.
 
-## <a name="printer"></a>Yazıcıda
+## <a name="printer"></a>Yazıcı
 
 - **Yazıcılar**: eklenen yerel yazıcıların listesi.
 - **Varsayılan yazıcı**: varsayılan yazıcıyı ayarlayın.
@@ -491,11 +491,11 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Gizlilik ILKESI CSP
 - **Giriş kişiselleştirme**: **blok** , dikte Için ses kullanımını ve Cortana ile Microsoft bulut tabanlı konuşma tanımayı kullanan diğer uygulamalarla konuşmasını önler. Devre dışıdır ve kullanıcılar, ayarları kullanarak çevrimiçi konuşma tanımayı etkinleştiremez. **Yapılandırılmadı** (varsayılan) kullanıcıların seçmesini sağlar. Bu hizmetlere izin verirseniz, Microsoft, hizmeti geliştirmek için ses verileri toplayabilir.
 - **Eşleştirme ve gizlilik Kullanıcı onay Istemlerini otomatik olarak kabul**et: **izin ver** ' i seçin. bu nedenle Windows, uygulamaları çalıştırırken eşleştirmeyi ve gizlilik izin iletilerini otomatik olarak kabul edebilir **Yapılandırılmadı** (varsayılan), uygulamalar açılırken eşleştirme ve gizlilik Kullanıcı onay penceresinin otomatik kabulüne engel olur.
 - **Kullanıcı etkinliklerini Yayımla**: **blok** , paylaşılan deneyimleri ve etkinlik akışındaki son kullanılan kaynakları bulmayı engeller. **Yapılandırılmadı** (varsayılan), uygulamaların son kullanıcı etkinliklerini yayımlayabilmesi için bu özelliği sunar.
-- **Yalnızca yerel etkinlikler**: **blok** , paylaşılan deneyimleri ve yalnızca yerel etkinliğe bağlı olarak görev değiştiricisinde son kullanılan kaynakların bulunmasını engeller. **Yapılandırılmadı** (varsayılan), bu özelliği sunar.
+- **Yalnızca yerel etkinlikler**: **blok** , paylaşılan deneyimleri ve yalnızca yerel etkinliğe bağlı olarak görev değiştiricisinde son kullanılan kaynakların bulunmasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 
 Cihazdaki tüm uygulamaların erişebileceği bilgileri yapılandırabilirsiniz. Ayrıca, **uygulama başına gizlilik özel durumlarını**kullanarak uygulama temelinde özel durumlar tanımlayın.
 
-### <a name="exceptions"></a>Larý
+### <a name="exceptions"></a>Özel Durumlar
 
 - **Hesap bilgileri**: Bu uygulamanın kullanıcı adına, resmine ve diğer kişi bilgilerine erişip erişemeyeceğini tanımlayın.
 - **Arka plan uygulamaları**: Bu uygulamanın arka planda çalıştırılıp çalıştırılamayacağını tanımlayın.
@@ -536,7 +536,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [kablolu Lessdisplay
   [System/Allowtelemetri CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
 
 - **Microsoft Edge tarama verilerini Microsoft 365 Analytics 'e gönder**: Bu özelliği kullanmak için, **kullanım verilerini paylaşma** ayarlarını **Gelişmiş** veya **tam**olarak ayarlayın. Bu özellik, Microsoft Edge 'in yapılandırılmış ticari KIMLIĞI olan kurumsal cihazlarda Microsoft 365 Analytics 'e gönderdiği verileri denetler. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı**: hiçbir göz atma geçmişi verisi gönderemeyebilir, işletim sistemi varsayılanını kullanır
+  - **Yapılandırılmadı**: Intune bu ayarı değiştirmez veya güncelleştirmez. İşletim sistemi varsayılanı, hiçbir göz atma geçmişi verisi gönderemeyebilir.
   - **Yalnızca intranet verilerini Gönder**: yöneticinin intranet veri geçmişini göndermesini sağlar
   - **Yalnızca internet verilerini Gönder**: yöneticinin internet veri geçmişini göndermesini sağlar
   - **Intranet ve internet verileri gönderme**: yöneticinin intranet ve internet veri geçmişini göndermesini sağlar
@@ -591,11 +591,11 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Başlangıç ILKESI
 - **Kullanıcı kutucuğu**: **blok** , Kullanıcı kutucuğunun başlangıç menüsünde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) Kullanıcı kutucuğunu gösterir ve ayrıca aşağıdaki ayarları Ayarlar:
   - **Kilit**: **blok** **kilit** seçeneğinin başlangıç menüsündeki Kullanıcı kutucuğunda gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) **Lock** seçeneğini gösterir.
   - **Oturumu**kapat: **Engelle** , **oturumu** kapat seçeneğinin başlangıç menüsündeki Kullanıcı kutucuğunda gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) **oturumu** Kapat seçeneğini gösterir.
-- **Kapat**: **Engelle** , **Güncelleştir ve Kapat** ve **Kapat** seçeneklerinin başlangıç menüsündeki güç düğmesinde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) bu seçenekleri gösterir.
-- **Sleep**: **blok** , **uyku** seçeneğinin başlangıç menüsündeki güç düğmesinde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) bu seçeneği gösterir.
-- **Hazırda Beklet**: **Engelle** , **Hazırda Beklet** seçeneğinin başlangıç menüsündeki güç düğmesinde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) bu seçeneği gösterir.
-- **Hesap değiştir**: **Engelle** , **Switch hesabının** başlangıç menüsündeki Kullanıcı kutucuğunda gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) bu seçeneği gösterir.
-- **Yeniden başlatma seçenekleri**: **blok** , **güncelleştirme ve yeniden başlatma** ve **yeniden başlatma** seçeneklerinin başlangıç menüsündeki güç düğmesinde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) bu seçenekleri gösterir.
+- **Kapat**: **Engelle** , **Güncelleştir ve Kapat** ve **Kapat** seçeneklerinin başlangıç menüsündeki güç düğmesinde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Sleep**: **blok** , **uyku** seçeneğinin başlangıç menüsündeki güç düğmesinde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Hazırda Beklet**: **Engelle** , **Hazırda Beklet** seçeneğinin başlangıç menüsündeki güç düğmesinde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Hesap değiştir**: **Engelle** , **Switch hesabının** başlangıç menüsündeki Kullanıcı kutucuğunda gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Yeniden başlatma seçenekleri**: **blok** , **güncelleştirme ve yeniden başlatma** ve **yeniden başlatma** seçeneklerinin başlangıç menüsündeki güç düğmesinde gösterilmesini gizler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 - **Başlangıç 'Ta belgeler**: Windows Başlat menüsünde Belgeler klasörünü gizleyin veya gösterin. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı** (varsayılan): hiçbir ayar zorunlu değildir. Kullanıcılar kısayolu göstermeyi veya gizlemeyi seçer.
   - **Gizle**: kısayol gizlenir ve Ayarlar uygulamasındaki ayarı devre dışı bırakır.
@@ -659,9 +659,9 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [deneyim ILKESI CSP]
 
 - **Windows spot**: **blok** kilit ekranında Windows spot 'u, Windows ipuçlarını, Microsoft tüketici özelliklerini ve diğer ilgili özellikleri kapatır. Amacınız, cihazlardan gelen ağ trafiğini en aza indirmektir, bunu **Engelle**olarak ayarlayın. **Yapılandırılmadı** (varsayılan), Windows spot özelliklerine izin verir ve son kullanıcılar tarafından denetlenebilir. Etkinleştirildiğinde, aşağıdaki ayarları da izin verebilir veya engelleyebilirsiniz:
 
-  - **Kilit ekranında Windows spot**: **blok** Windows spot 'un cihaz kilitleme ekranında bilgi göstermesini engeller. **Yapılandırılmadı** (varsayılan), bu özelliği sunar.
+  - **Kilit ekranında Windows spot**: **blok** Windows spot 'un cihaz kilitleme ekranında bilgi göstermesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
   - **Windows spot 'Ta üçüncü taraf önerileri**: blok Windows spot 'un Microsoft tarafından yayımlanmamış içerik önermasını **önleyemez** . **Yapılandırılmadı** (varsayılan); kilit ekranı servisleri, başlangıç menüsünde önerilen uygulamalar ve Windows Ipuçları gibi Windows spot özelliklerinde iş ortağı yazılım yayımcılarından uygulama ve içerik önerilerine izin verir.
-  - **Tüketici özellikleri**: **engelleme** , genellikle yalnızca tüketiciler için, başlangıç önerileri, üyelik bildirimleri, kutudan çıkarma deneyimi uygulama yüklemesi ve yeniden yönlendirme kutucukları gibi deneyimleri kapatır. **Yapılandırılmadı** (varsayılan) ayarı bu özelliklere izin verir.
+  - **Tüketici özellikleri**: **engelleme** , genellikle yalnızca tüketiciler için, başlangıç önerileri, üyelik bildirimleri, kutudan çıkarma deneyimi uygulama yüklemesi ve yeniden yönlendirme kutucukları gibi deneyimleri kapatır. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
   - **Windows ipuçları**: **blok** açılır pencere ipuçlarını devre dışı bırakır. **Yapılandırılmadı** (varsayılan), Windows ipuçlarının gösterilmesini sağlar.
   - **İşlem merkezi 'Nde Windows spot**: **blok** , Windows spot bildirimlerinin işlem merkezinde gösterilmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların Windows 'da daha üretken olmalarını sağlamak için uygulama veya özellik öneren işlem merkezinde bildirimleri gösterebilir.
   - **Windows spot kişiselleştirme**: **blok** , Windows 'un kullanıcıya özelleştirilmiş deneyimler sağlaması için tanılama verilerini kullanmasını engeller. **Yapılandırılmadı** (varsayılan), Microsoft 'un Kullanıcı Ihtiyaçlarına göre Windows 'u uyarlamak üzere kişiselleştirilmiş öneriler, ipuçları ve teklifler sunmak için tanılama verilerini kullanmasına izin verir.
@@ -673,7 +673,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Gerçek zamanlı izleme**: **Etkinleştir** kötü amaçlı yazılım, casus yazılım ve diğer istenmeyen yazılım için gerçek zamanlı taramayı etkinleştirir. Kullanıcılar bu uygulamayı kapatamaz. 
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu özelliği etkinleştirir ve kullanıcıların değiştirmesini sağlar.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu özelliği etkinleştirir ve kullanıcıların değiştirmesini sağlar.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -681,7 +681,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Davranış izleme**: **etkinleştirme** davranış izlemeyi etkinleştirir ve cihazlarda bilinen şüpheli etkinlik desenlerini denetler. Kullanıcılar davranış izlemeyi kapatamaz. 
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi davranış Izlemeyi etkinleştirir ve kullanıcıların bunu değiştirmesine izin verir.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi davranış Izlemeyi etkinleştirir ve kullanıcıların bunu değiştirmesine izin verir.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -691,7 +691,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   **Etkinleştir** ayarı, ağ koruması ve ağ engellemeyi etkinleştirir. Kullanıcılar bu uygulamayı kapatamaz. Etkinleştirildiğinde, kullanıcıların bilinen güvenlik açıklarına bağlanması engellenir.
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi NIS 'yi etkinleştirir ve kullanıcıların bunu değiştirmesine izin verir.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi NIS 'yi etkinleştirir ve kullanıcıların bunu değiştirmesine izin verir.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -699,7 +699,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Tüm Indirmeleri Tara**: **Etkinleştir** ayarı bu ayarı açar ve Defender, Internet 'ten indirilen tüm dosyaları tarar. Kullanıcılar bu ayarı kapatamaz. 
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu ayarı etkinleştirir ve kullanıcıların değiştirmesini sağlar.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu ayarı etkinleştirir ve kullanıcıların değiştirmesini sağlar.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -707,7 +707,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Microsoft Web tarayıcılarında yüklenen dosyaları tara**: **Etkinleştir** , Defender 'ın Internet Explorer 'da kullanılan betikleri taramasını sağlar. Kullanıcılar bu ayarı kapatamaz. 
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu ayarı etkinleştirir ve kullanıcıların değiştirmesini sağlar.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu ayarı etkinleştirir ve kullanıcıların değiştirmesini sağlar.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -715,7 +715,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Defender 'A Son Kullanıcı erişimi**: **blok** , Microsoft Defender Kullanıcı arabirimini son kullanıcılardan gizler. Tüm Microsoft Defender bildirimleri de bastırılır.
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı engeller ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi Microsoft Defender Kullanıcı arabirimine Kullanıcı erişimine izin verir ve kullanıcıların bunu değiştirmesine izin verir.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı engeller ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi Microsoft Defender Kullanıcı arabirimine Kullanıcı erişimine izin verir ve kullanıcıların bunu değiştirmesine izin verir.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -725,7 +725,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Güvenlik Zekası güncelleştirme aralığı (saat)** : Defender 'ın, 0-24 adresinden yeni güvenlik zekasını denetlediği aralığı girin. Seçenekleriniz şunlardır:
 
-  - **Yapılandırılmadı** (varsayılan): her 8 saatte bir güncelleştirmeleri denetleyin.
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez. İşletim sistemi varsayılanı, güncelleştirmeleri her 8 saatte bir denetleyebilir.
   - **Denetleme**: Defender yeni güvenlik zekası güncelleştirmelerini denetlemez.
   - **1-24**: her saatte bir denetim `1`, `2` her iki saatte bir denetim `24` denetler ve bu şekilde devam eder.
   
@@ -733,7 +733,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
   
 - **Dosya ve program etkinliğini izle**: Defender 'ın cihazlarda dosya ve program etkinliğini izlemesine izin verir. Seçenekleriniz şunlardır:
 
-  - **Yapılandırılmadı** (varsayılan): tüm dosyaları izler
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez. İşletim sistemi varsayılanı tüm dosyaları izleyebilir.
   - **İzleme devre dışı**
   - **Tüm dosyaları izle**
   - **Yalnızca gelen dosyaları izle**
@@ -748,7 +748,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 - **Tarama sırasında CPU kullanım sınırı**: taramaların kullanmasına ızın verilen CPU miktarını, `0` `100`ile sınırlayın.
 - **Arşiv dosyalarını Tara**: **Enable** , zip veya CAB dosyaları gibi arşiv dosyalarını taramak için Defender 'ı etkinleştirir. Kullanıcılar bu ayarı kapatamaz.
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu taramayı etkinleştirir ve kullanıcıların değiştirmesini sağlar.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu taramayı etkinleştirir ve kullanıcıların değiştirmesini sağlar.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -756,7 +756,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Gelen posta Iletilerini Tara**: **Enable** , Defender 'ın cihaza geldikçe e-posta iletilerini taramasını sağlar. Etkinleştirildiğinde, altyapı posta gövdesini ve eklerini çözümlemek için posta kutusu ve posta dosyalarını ayrıştırır. . PST (Outlook),. dbx,. mbx, MIME (Outlook Express) ve BinHex (Mac) biçimlerini tarayabilirsiniz.
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu taramayı kapatır ve kullanıcıların bunu değiştirmesine izin verir.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu taramayı kapatır ve kullanıcıların bunu değiştirmesine izin verir.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -764,7 +764,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Tam tarama sırasında çıkarılabilir sürücüleri Tara**: **Etkinleştir** ayarı, tam tarama sırasında Defender çıkarılabilir sürücü taramalarını etkinleştirir. Kullanıcılar bu ayarı kapatamaz.
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi Defender 'ın USB sürücüleri gibi çıkarılabilir sürücüleri taramasını sağlar ve kullanıcıların bu ayarı değiştirmesine izin verir.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi Defender 'ın USB sürücüleri gibi çıkarılabilir sürücüleri taramasını sağlar ve kullanıcıların bu ayarı değiştirmesine izin verir.
 
   Bir hızlı tarama sırasında, çıkarılabilir sürücüler yine de taranabilecek.
 
@@ -774,7 +774,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Tam tarama sırasında eşlenmiş ağ sürücülerine Tara**: **Etkinleştir** , Defender tarafından eşlenen ağ sürücülerindeki dosyaları tarar. Sürücüdeki dosyalar salt okunurdur, Defender bu bilgisayarlarda bulunan herhangi bir kötü amaçlı yazılımı kaldıramıyor. Kullanıcılar bu ayarı kapatamaz.
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu özelliği etkinleştirir ve kullanıcıların değiştirmesini sağlar.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi bu özelliği etkinleştirir ve kullanıcıların değiştirmesini sağlar.
 
   Hızlı tarama sırasında, eşlenmiş ağ sürücüleri yine de taranamaz.
 
@@ -784,7 +784,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Ağ klasörlerinden açılan dosyaları tara**: **Enable** Defender, bir UNC yolundan erişilen dosyalar gibi ağ klasörlerinden veya paylaşılan ağ sürücülerinden açılan dosyaları tarar. Kullanıcılar bu ayarı kapatamaz. Sürücüdeki dosyalar salt okunurdur, Defender bu bilgisayarlarda bulunan herhangi bir kötü amaçlı yazılımı kaldıramıyor.
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi Ağ klasörlerinden açılan dosyaları tarar ve kullanıcıların bunu değiştirmesine izin verir.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi Ağ klasörlerinden açılan dosyaları tarar ve kullanıcıların bunu değiştirmesine izin verir.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -792,7 +792,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Bulut koruması**: **etkinleştirme** , yönettiğiniz cihazlardan gelen kötü amaçlı yazılım etkinlikleri hakkında bilgi almak için Microsoft etkin koruma hizmeti açar. Kullanıcılar bu ayarı değiştiremezler. 
 
-  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayara dokunmaz. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi Microsoft Etkin Koruma Hizmeti bilgi almasına izin verir ve kullanıcıların bu ayarı değiştirmesine izin verir.
+  **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Ayarı etkinleştirir ve sonra **Yapılandırılmadı**olarak değiştirirseniz, Intune ayarı daha önce yapılandırılmış durumda bırakır. Varsayılan olarak, işletim sistemi Microsoft Etkin Koruma Hizmeti bilgi almasına izin verir ve kullanıcıların bu ayarı değiştirmesine izin verir.
 
   Intune bu özelliği devre dışı bırakır. Devre dışı bırakmak için özel bir URI kullanın.
 
@@ -800,7 +800,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 - **Örnek gönderimi yapmadan önce kullanıcılara sor**: daha fazla analiz gerektirebilecek kötü amaçlı olabilecek dosyaların otomatik olarak Microsoft 'a gönderilip gönderilmeyeceğini denetler. Seçenekleriniz şunlardır:
 
-  - **Yapılandırılmadı** (varsayılan): güvenli örnekleri otomatik olarak gönderin.
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez. İşletim sistemi varsayılanı, güvenli örnekleri otomatik olarak gönderebilir.
   - **Her zaman sor**
   - **Kişisel verileri göndermeden önce sor**
   - **Hiçbir şekilde veri gönderme**
@@ -864,6 +864,88 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 - **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosya ve klasörler**: dışlamalar listesine **C:\path** veya **%ProgramFiles%\yol\filename.exe** gibi bir veya daha fazla dosya ve klasör ekler. Bu dosya ve klasörler gerçek zamanlı veya zamanlanmış hiçbir taramaya katılmaz.
 - **Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosya uzantıları**: dışlamalar listesine **jpg** veya **txt** gibi bir veya daha fazla dosya uzantısı ekleyin. Bu uzantılara sahip tüm dosyalar gerçek zamanlı veya zamanlanmış taramalara dahil değildir.
 - **Taramaların ve gerçek zamanlı korumanın dışında tutulacak süreçler**: dışlamalar listesine **. exe**, **. com**veya **. scr** türünde bir veya daha fazla işlem ekleyin. Bu süreçler gerçek zamanlı veya zamanlanmış taramalara dahil değildir.
+
+## <a name="power-settings"></a>Güç ayarları
+
+### <a name="battery"></a>Pil
+
+- **Enerji tasarrufunu açmak Için pil düzeyi**: cihaz pil gücünü kullanırken, 0-100 adresinden enerji tasarrufu 'nı açmak için pil ücreti düzeyini girin. Pil ücreti düzeyini gösteren bir yüzde değeri girin. Varsayılan değer %70 ' dir. %70 olarak ayarlandığında enerji tasarrufu, pilin %70 ' i veya daha az kullanılabilir olduğunu açık hale getirir.
+
+  [Güç/enerji Gysaverbatteryıthresholdonpili CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
+
+- **Kapağı kapatma (yalnızca mobil)** : cihaz pil gücünü kullanırken, kapak kapatıldığında ne olacağını seçin. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Eylem yok**: cihaz açık kalır ve pil gücünü kullanmaya devam eder.
+  - **Uyku**: Cihaz uyku moduna geçer ve az miktarda pil ücreti kullanır. Bilgisayar hala açık ve açık uygulamalar ve dosyalar rasgele erişimli bellek (RAM) içinde depolanır.
+  - **Hazırda Beklet**: cihaz hazırda bekleme moduna girer. Açık uygulamalar ve dosyalar sabit diskte depolanır ve cihaz kapanır.
+  - **Kapat**: Cihaz kapanıyor. Açık uygulamalar ve dosyalar kaydedilmeden kapalıdır.
+
+  [Power/Selectlidcloseactiononpili CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
+
+- **Güç düğmesi**: cihaz pil gücünü kullanırken, güç düğmesi seçildiğinde ne olacağını seçin. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Eylem yok**: cihaz açık kalır ve pil gücünü kullanmaya devam eder.
+  - **Uyku**: Cihaz uyku moduna geçer ve az miktarda pil ücreti kullanır. Bilgisayar hala açık ve açık uygulamalar ve dosyalar rasgele erişimli bellek (RAM) içinde depolanır.
+  - **Hazırda Beklet**: cihaz hazırda bekleme moduna girer. Açık uygulamalar ve dosyalar sabit diskte depolanır ve cihaz kapanır.
+  - **Kapat**: Cihaz kapanıyor. Açık uygulamalar ve dosyalar kaydedilmeden kapalıdır.
+
+  [Power/Selectpowerbuttonactiononpili CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactiononbattery)
+
+- **Uyku düğmesi**: cihaz pil gücünü kullanırken, uyku düğmesi seçildiğinde ne olacağını seçin. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Eylem yok**: cihaz açık kalır ve pil gücünü kullanmaya devam eder.
+  - **Uyku**: Cihaz uyku moduna geçer ve az miktarda pil ücreti kullanır. Bilgisayar hala açık ve açık uygulamalar ve dosyalar rasgele erişimli bellek (RAM) içinde depolanır.
+  - **Hazırda Beklet**: cihaz hazırda bekleme moduna girer. Açık uygulamalar ve dosyalar sabit diskte depolanır ve cihaz kapanır.
+  - **Kapat**: Cihaz kapanıyor. Açık uygulamalar ve dosyalar kaydedilmeden kapalıdır.
+
+  [Power/Selecttur Epbuttonactiononpili CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactiononbattery)
+
+- **Karma uyku**: cihaz pil gücünü kullanırken, **devre dışı bırakma** , cihazın karma uyku moduna geçmesini önler. Karma uyku modundayken, açılan uygulamalar ve dosyalar rastgele erişim belleği (RAM) ve sabit disk üzerinde depolanır. Bu, az miktarda pil ücreti kullanır. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+
+  [Power/Turnoffhybridstaeponpili CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeponbattery)
+
+### <a name="pluggedin"></a>Pluggedın
+
+- **Enerji tasarrufunu açmak Için pil düzeyi**: cihaz prize takılıyken, 0-100 adresinden enerji tasarrufu 'nı açmak için pil ücreti düzeyini girin. Pil ücreti düzeyini gösteren bir yüzde değeri girin. Varsayılan değer %70 ' dir. %70 olarak ayarlandığında enerji tasarrufu, pilin %70 ' i veya daha az kullanılabilir olduğunu açık hale getirir.
+
+  [Güç/enerji Gysaverbatteryıthresholdpluggedın CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
+
+- **Kapağı kapatma (yalnızca mobil)** : cihaz prize takılıyken, kapak kapatıldığında ne olacağını seçin. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Eylem yok**: cihaz açık kalır.
+  - **Uyku**: Cihaz uyku moduna girer. Bilgisayar hala açık ve açık uygulamalar ve dosyalar rasgele erişimli bellek (RAM) içinde depolanır.
+  - **Hazırda Beklet**: cihaz hazırda bekleme moduna girer. Açık uygulamalar ve dosyalar sabit diskte depolanır ve cihaz kapanır.
+  - **Kapat**: Cihaz kapanıyor. Açık uygulamalar ve dosyalar kaydedilmeden kapalıdır.
+  
+    [Power/Selectlidcloseactionpluggedın CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
+  
+- **Güç düğmesi**: cihaz prize takılıyken, güç düğmesi seçildiğinde ne olacağını seçin. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Eylem yok**: cihaz açık kalır.
+  - **Uyku**: Cihaz uyku moduna girer. Bilgisayar hala açık ve açık uygulamalar ve dosyalar rasgele erişimli bellek (RAM) içinde depolanır.
+  - **Hazırda Beklet**: cihaz hazırda bekleme moduna girer. Açık uygulamalar ve dosyalar sabit diskte depolanır ve cihaz kapanır.
+  - **Kapat**: Cihaz kapanıyor. Açık uygulamalar ve dosyalar kaydedilmeden kapalıdır.
+
+  [Power/Selectpowerbuttonactionpluggedın CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactionpluggedin)
+
+- **Uyku düğmesi**: cihaz prize takılıyken, uyku düğmesi seçildiğinde ne olacağını seçin. Seçenekleriniz şunlardır:
+
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
+  - **Eylem yok**: cihaz açık kalır.
+  - **Uyku**: Cihaz uyku moduna girer. Bilgisayar hala açık ve açık uygulamalar ve dosyalar rasgele erişimli bellek (RAM) içinde depolanır.
+  - **Hazırda Beklet**: cihaz hazırda bekleme moduna girer. Açık uygulamalar ve dosyalar sabit diskte depolanır ve cihaz kapanır.
+  - **Kapat**: Cihaz kapanıyor. Açık uygulamalar ve dosyalar kaydedilmeden kapalıdır.
+
+  [Power/Selecttur Epbuttonactionpluggedın CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactionpluggedin)
+
+- **Karma uyku**: cihaz prize takılıyken, **devre dışı bırak ayarı** cihazın karma uyku moduna geçmesini önler. Karma uyku modundayken, açılan uygulamalar ve dosyalar rastgele erişim belleği (RAM) ve sabit disk üzerinde depolanır. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+
+  [Power/Turnoffhybridstaeppluggedın CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeppluggedin)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

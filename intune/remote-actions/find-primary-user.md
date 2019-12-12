@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73712243"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune cihazının birincil kullanıcısını bulma
@@ -72,7 +72,7 @@ Intune, kayıt sırasında veya hemen sonrasında cihazlara birincil kullanıcı
 | Android | Android şirkete ait, adanmış cihazlar | Yok. | Not applicable |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>Birincil Kullanıcı ve Azure AD cihaz sahibi
-Bazı durumlarda, Intune birincil Kullanıcı Azure AD cihazının **Owner** özelliğinden ( **cihazlarda**görüntülenebilir  > **Azure AD cihazlarından**) farklı olabilir. Azure AD cihaz sahibi, cihazın kaydı sırasında Azure Active Directory eklenir.
+Bazı durumlarda, Intune birincil Kullanıcı Azure AD cihazının **Owner** özelliğinden farklı olabilir ( **azure ad cihazlarında** > **cihazlarda** görüntülenebilir). Azure AD cihaz sahibi, cihazın kaydı sırasında Azure Active Directory eklenir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Intune cihazlarınızı yönetin.](device-management.md)

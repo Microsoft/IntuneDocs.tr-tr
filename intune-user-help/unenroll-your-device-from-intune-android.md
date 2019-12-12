@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bb1538d484590a19eb7525a1451b5082ebab245d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506038"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Android cihazınızın yönetim kaydını silme  
@@ -52,14 +52,14 @@ Kayıtlı bir Android cihazın kuruluşunuz tarafından yönetilmesini sonlandı
 
 Android için Şirket Portalı uygulamasının cihazınızda depoladığı tüm verileri kaldırmak üzere:
 
-- Uygulama verilerini, **uygulamalar** > **[*uygulamanın adı*]**  > **şifresiz verileri**dokunarak temizleyin.
+- **Uygulamalar** > **[*uygulamanın adı*]**  > **verileri temizle**' ya dokunarak uygulama verilerini temizleyin.
 - Şu klasörü silin: \storage\ınternal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
 ## <a name="uninstall-the-company-portal-app"></a>Şirket Portalı uygulamasını kaldırma
 
 Şirket Portalı bir cihaz yönetimi uygulamasıdır. Cihazınızın yönetimine kaydoluncaya kadar kaldırılamaz. Bu işlemi tamamladıysanız Şirket Portalı uygulamasının simgesine dokunun ve **Kaldır** seçeneğini görene kadar basılı tutun. **Kaldır**’a dokunarak uygulamayı cihazınızdan kaldırın.  
 
-Alternatif olarak, **ayarlar** > **uygulamalar** > **Şirket portalı** > **Kaldır**' a dokunun.  
+Alternatif olarak, **ayarlar** > **uygulamalar** > **Şirket portalı** **kaldırmak** > ' a dokunun.  
 
 ### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>Şirket Portalı uygulamasını bir cihaz yöneticisi olarak kaldırma
 
@@ -71,12 +71,12 @@ Son çare olarak, uygulamayı cihazınızdan bir cihaz yöneticisi olarak kaldı
 
 **Seçenek 1**:  
 
-1. @No__t **ayarları**seçin-1**güvenlik** > **ek güvenlik ayarları** > **cihaz yöneticileri**.  
+1. **Ayarlar** > **güvenlik** > **cihaz yöneticileri** > **ek güvenlik ayarları** ' nı seçin.  
 2. **Şirket portalı** seçimini temizleyin.  
 
 **Seçenek 2**:
 
-1. @No__t **ayarları**seçin-1**kilit ekranı ve güvenlik** > **diğer güvenlik ayarları** > **Cihaz Yöneticisi uygulamaları**.
+1. **Ayarlar** > **kilit ekranı ve güvenlik** > **Cihaz Yöneticisi uygulamaları** > **diğer güvenlik ayarları** ' nı seçin.
 2. **Şirket portalı** seçimini temizleyin.
 
 Bu bilgiler yardımcı olmadı mı? Şirketinizin destek bölümüne başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.

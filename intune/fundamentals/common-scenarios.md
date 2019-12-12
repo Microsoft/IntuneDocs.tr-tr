@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73414017"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune’u kullanmanın yaygın yolları
@@ -53,13 +53,13 @@ Böyle durumlarda, şirket verilerine erişmenin tek yolu cihazı yönetime kayd
 
 Office 365’teki şirket verilerinin (e-posta, belgeler, anlık iletiler, kişiler) korunması sizin için bundan kolay ve kullanıcılarınız için bundan rahat olamazdı.
 
-Intune ve Microsoft Enterprise Mobility + Security, şirketinizin uyumluluk gereksinimlerini karşılamayan hiçbir kullanıcının, uygulamanın veya cihazın Office 365 verilerine erişememesini sağlayan benzersiz bir şekilde tümleştirilmiş koşullu erişim çözümü sağlar ( [ ](../enrollment/multi-factor-authentication.md)yönetilen uygulama, desteklenen işletim sistemi sürümü, cihaz pin 'i, düşük Kullanıcı riski profili, vb. kullanarak Intune 'a kayıtlı Multi-Factor Authentication.
+Intune ve [Microsoft Enterprise Mobility + Security, şirketinizin](../enrollment/multi-factor-authentication.md)uyumluluk gereksinimlerini (yönetilen uygulama, desteklenen işletim sistemi sürümü, cihaz pin 'i, düşük Kullanıcı riski profili, vb. kullanarak, Intune 'a kayıtlı) karşılamayan hiçbir kullanıcının, uygulamanın veya cihazın Office 365 verilerine erişememesini sağlayan benzersiz bir şekilde tümleştirilmiş koşullu erişim çözümü sağlar.
 
 Uygulama mağazalarındaki Office mobil uygulamaları, Intune üzerinden yapılandırabileceğiniz veri kapsama ilkelerine sahiptir. Bu özellikler, BT tarafından yönetilmeyen uygulamalarla (yerel e-posta uygulaması gibi) ve depolama konumlarıyla (Dropbox gibi) veri paylaşılmasını engellemenizi sağlar. Bu işlevsellik tümüyle Office 365 ve EMS’de yerleşik olarak bulunur. Bu değerli işlevselliği elde etmek için ek altyapı dağıtımı yapmanız gerekmez.
 
 Yaygın bir Office 365 dağıtım uygulaması, şirkete ait cihazlardaki yaygın bir senaryo olarak şirket uygulamaları, sertifikalar, Wi-Fi veya VPN yapılandırmaları ile tam olarak ayarlanması gereken cihazların yönetime kaydolmalarını gerektirmektir.  
 
-Ancak, yalnızca kişisel cihazlarda olduğu gibi, kullanıcının yalnızca şirket e-postasına ve belgelerine erişmesi gerekiyorsa, kullanıcının Office mobil uygulamalarını ( [Uygulama koruma ilkelerini](../apps/app-protection-policies.md) uyguladığınız ve kaydetmeyi atlayan) kullanmasını zorunlu kılabilirsiniz Cihaz tamamen.  
+Ancak, yalnızca kişisel cihazlarda olduğu gibi, kullanıcının yalnızca şirket e-postasına ve belgelerine erişmesi gerekiyorsa, kullanıcının Office mobil uygulamalarını ( [Uygulama koruma ilkelerini](../apps/app-protection-policies.md) uyguladığınız ve cihazı kaydetme işlemini tamamen atlayarak) kullanmasını zorunlu kılabilirsiniz.  
 
 Her iki yöntemde de, Office 365 verilerinin güvenliği sizin tanımladığınız ilkelerle sağlanır.
 
