@@ -46,7 +46,7 @@ DEM kullanıcı hesapları ve bir DEM kullanıcı hesabıyla kaydedilen cihazlar
 
 ## <a name="add-a-device-enrollment-manager"></a>Cihaz kayıt yöneticisi ekleme
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, cihazlar ** > ** **cihazları** > **Cihaz Kayıt yöneticileri**' ni seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum **açın, cihazlar ** > ** cihazları** > **Cihaz Kayıt yöneticileri**' ni seçin.
 
 2. **Ekle**’yi seçin.
 
@@ -67,6 +67,6 @@ Cihaz kayıt yöneticisinin kaldırılması, kayıtlı cihazları etkilemez.
 
 **Cihaz kayıt yöneticisi kaldırmak için**
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, cihazlar ** > ** **cihazları** > **Cihaz Kayıt yöneticileri**' ni seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum **açın, cihazlar ** > ** cihazları** > **Cihaz Kayıt yöneticileri**' ni seçin.
 2. **Cihaz kayıt yöneticileri** dikey penceresinde DEM kullanıcısını ve **Sil**’i seçin.
 

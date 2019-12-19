@@ -374,7 +374,7 @@ Bu sorun şu koşullarda oluşabilir:
 4. Kullanıcıya kayıt işlemini yeniden başlatmasını söyleyin.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>VPP belirtecinde bir şeyin yanlış gidip gitmediğini belirleyin
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **IOS** > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **profilleri** > profil adı > > **özelliklerini** **Yönet** ' i seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431), **'nde,**  > **IOS** > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **profilleri** > profil adı > > **özelliklerini** **Yönet** ' i seçin.
 2. Aşağıdaki gibi bir hata olup olmadığını görmek özellikleri gözden geçirin:
     - Bu belirtecin süresi sona erdi.
     - Bu belirtecin Şirket Portalı lisansları bitti.
@@ -384,7 +384,7 @@ Bu sorun şu koşullarda oluşabilir:
 3. Belirtecin sorunlarını giderin.
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>VPP belirteci tarafından engellenen cihazları belirleme
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **ios**k > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **cihazları**' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) , **'nde** > **ios**k > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **cihazları**' nı seçin.
 2. **Profil durumu** sütununu **Engellendi**'ye göre filtreleyin.
 3. **Engellenen** tüm cihazların seri numaralarını not edin.
 

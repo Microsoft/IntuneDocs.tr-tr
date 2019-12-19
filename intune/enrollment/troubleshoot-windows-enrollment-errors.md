@@ -71,7 +71,7 @@ Bu soruna yönelik birkaç olası çözüm vardır:
 > Bu yöntem, yalnızca etkilenen kullanıcıyı değil, tüm kullanıcılar için cihaz kayıt sınırını artırır.
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-2. **Cihazlar** > **Kayıt kısıtlamaları** ' na gidin ** > (** **cihaz sınırı kısıtlamaları**' nın altında) > ** > ** **Özellikler** (cihaz **sınırının**yanında) >, **cihaz sınırını** (en fazla 15) > **Gözden geçirme + kaydet**' i yükseltin.    
+2. **Cihazlar** > **Kayıt kısıtlamaları ' na gidin**  >  **(** cihaz sınırı **kısıtlamaları**' nın altında **) >**  > **Özellikler**(cihaz **sınırının**yanında) >, **cihaz sınırını** (en fazla 15) > **Gözden geçirme + kaydet**' i yükseltin.    
  
 
 ##### <a name="check-device-type-restrictions"></a>Cihaz türü kısıtlamalarını denetle
