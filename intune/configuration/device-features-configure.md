@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992931"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206729"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune’da iOS veya macOS cihaz özelliği ayarları ekleme
 
@@ -46,7 +46,7 @@ Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. macOS 'ta iOS
 
 AirPrint hakkında daha fazla bilgi için Apple 'ın Web sitesinde [AirPrint hakkında](https://support.apple.com/HT201311) bölümüne bakın.
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - iOS 7,0 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -60,7 +60,7 @@ Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerind
 
 Bu özellik hakkında daha fazla bilgi için bkz. Apple 'ın Web sitesindeki [Bildirimler](https://developer.apple.com/notifications/) .
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - iOS 9,3 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -78,7 +78,7 @@ Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [macOS 'Ta il
 
 Bu özellik hakkında daha fazla bilgi için bkz. Apple 'ın Web sitesinde [bir uygulamanın Ilişkili etki alanlarını ayarlama](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains) .
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - macOS 10,15 ve üzeri
 
@@ -91,7 +91,7 @@ Bu ayarlar, iOS ve ıpados cihazlarında yerleştirme ve giriş ekranlarındaki 
 
 Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS 'Ta giriş ekranı düzeni](ios-device-features-settings.md#home-screen-layout).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - iOS 9,3 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -104,7 +104,7 @@ Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerind
 
 Kilit ekranı Iletisi hakkında daha fazla bilgi için bkz. Apple 'ın Web sitesinde [Lockscreenmessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) .
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - iOS 9,3 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -115,7 +115,7 @@ Kullanıcılar cihazlarda oturum açtıklarında açık olan uygulamaları, öze
 
 Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [macOS 'Ta oturum açma öğeleri](macos-device-features-settings.md#login-items).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - macOS 10,13 ve üzeri
 
@@ -125,7 +125,7 @@ Oturum açmadan önce kullanıcılara sunulan oturum açma ekranının ve işlev
 
 Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [macOS 'Ta oturum açma penceresi](macos-device-features-settings.md#login-window).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - macOS 10,7 ve üzeri
 
@@ -142,7 +142,7 @@ Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [macOS 'Ta ot
 
 Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS 'Ta çoklu oturum açma](ios-device-features-settings.md#single-sign-on).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - iOS 7,0 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -175,19 +175,19 @@ SSO uygulama uzantısı geliştirme hakkında daha fazla bilgi için Apple 'ın 
 >
 > - Yerleşik Kerberos **Çoklu oturum açma uygulaması uzantısı** , Web sayfaları ve uygulamaları Için yalnızca **Çoklu oturum**açma gibi Kerberos sorunlarını işler. Bununla birlikte, yerleşik Kerberos uzantısı, parola değişikliklerini destekler ve kurumsal ağlarda daha iyi davranır. Kerberos **Çoklu oturum açma uygulaması uzantısı** ve **Çoklu oturum açma**arasında karar verirken, gelişmiş performans ve yetenekler nedeniyle uzantının kullanılmasını öneririz.
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
 - macOS 10,15 ve üzeri
 
-## <a name="wallpaper"></a>Duvar Kağıdı
+## <a name="wallpaper"></a>Duvar
 
 Denetimli iOS cihazlarınıza özel bir. png,. jpg veya. JPEG görüntüsü ekleyin. Örneğin, cihazlarınızdaki kilit ekranına bir şirket logosu eklemek için Intune ' u kullanın.
 
 Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde duvar kağıdı](ios-device-features-settings.md#wallpaper).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - iOS
 - ıpados 13,0 ve üzeri
@@ -198,7 +198,7 @@ Bu ayarlar Apple 'ın yerleşik otomatik filtre algoritmasını, Web sayfaların
 
 Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde Web içeriği filtresi](ios-device-features-settings.md#web-content-filter).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - iOS 7,0 ve üzeri
 - ıpados 13,0 ve üzeri

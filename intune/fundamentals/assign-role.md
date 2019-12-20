@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9e337d47757e3c5507c94433f90d5c2863bc1b0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503017"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207171"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Intune kullanıcısına rol atama
 
@@ -32,27 +32,23 @@ Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de a
 - **Genel Yönetici**
 - **Intune Hizmet Yöneticisi**
 
-1. [Azure portalında](https://portal.azure.com) oturum açın.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **tüm roller** > **Roller** ' i seçin.
 
-2. **Tüm hizmetler** > **Intune**’u seçin. Intune, **İzleme + Yönetim** bölümünde bulunur.
+2. **Intune rolleri-tüm roller** dikey penceresinde, atamak istediğiniz yerleşik rolü seçin.
 
-3. **Intune** dikey penceresinde, **tüm roller** > **Roller** ' i seçin.
+3. *Rol adı*>- **genel bakış** dikey penceresinde **Yönet** > **atamaları**' nı seçin.
 
-4. **Intune rolleri-tüm roller** dikey penceresinde, atamak istediğiniz yerleşik rolü seçin.
+4. Özel rol dikey penceresinde, **Ata**'yı seçin.
 
-5. *Rol adı*>- **genel bakış** dikey penceresinde **Yönet** > **atamaları**' nı seçin.
+5. **Rol atamaları** dikey penceresinde atama Için bir **atama adı** ve isteğe bağlı **atama açıklaması** girin.
 
-6. Özel rol dikey penceresinde, **Ata**'yı seçin.
+6. **Üyeler (gruplar)** için izinleri vermek istediğiniz kullanıcıyı içeren bir grup seçin.
 
-7. **Rol atamaları** dikey penceresinde atama Için bir **atama adı** ve isteğe bağlı **atama açıklaması** girin.
+7. **Kapsam (gruplar)** için, yukarıdaki üyenin yönetmesine izin verilecek kullanıcıları/cihazları içeren bir grup seçin.
 
-8. **Üyeler (gruplar)** için izinleri vermek istediğiniz kullanıcıyı içeren bir grup seçin.
+8. **Kapsam (Etiketler)** için, bu rol atamasının uygulanacağı Etiketler ' i seçin.
 
-9. **Kapsam (gruplar)** için, yukarıdaki üyenin yönetmesine izin verilecek kullanıcıları/cihazları içeren bir grup seçin.
-
-10. **Kapsam (Etiketler)** için, bu rol atamasının uygulanacağı Etiketler ' i seçin.
-
-11. İşiniz bittiğinde **Tamam**’ı seçin. Yeni atama, atamalar listesinde görüntülenir.
+9. İşiniz bittiğinde **Tamam**’ı seçin. Yeni atama, atamalar listesinde görüntülenir.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

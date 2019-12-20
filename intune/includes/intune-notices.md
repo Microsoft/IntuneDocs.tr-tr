@@ -7,14 +7,30 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MT
+ms.openlocfilehash: a6ac1a5435104c1eeae203621179e62aa2b17568
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74828826"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207306"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Güncelleştirilmiş özellik: Intune 'a gelen yeni RBAC rolü<!--4253397-->
+Intune hizmet güncelleştirmesinde, Intune 'da yeni bir güvenlik rolü bırakmaya planlıyoruz. Bu rolü, Intune 'da "Endpoint Security Manager" olarak listelenmiş ve rol ise Azure AD 'den "Güvenlik Yöneticisi" rolünün bir genişletmesinden görürsünüz.
+ 
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Bugün, Azure AD 'de güvenlik uzmanlarınız için kullanabileceğiniz üç rol vardır:
+- Azure AD 'de, Intune 'a salt okuma erişimi veren güvenlik okuyucusu rolü.
+- Azure AD 'de, Intune 'a salt okuma erişimi veren güvenlik Işletmeni rolü.
+- Azure AD 'de Güvenlik Yöneticisi. Intune Ocak güncelleştirmesini, Intune 'a yönelik salt okuma izinleriyle birlikte sevk edildiğinde, uç nokta güvenlik yöneticisi rolü tarafından verilen yeni izinler aşağıdaki gibidir:
+    - Cihaz uyumluluk Ilkelerini okuyun, oluşturun, güncelleştirin, silin ve atayın
+    - Yönetilen cihazları okuma, silme ve güncelleştirme
+    - Güvenlik temellerini okuyun, oluşturun, güncelleştirin, silin ve atayın
+    - Güvenlik görevlerini okuyun ve güncelleştirin
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
+Intune RBAC rollerinizi bugün inceleyin. Şu anda yalnızca rol olarak genel yöneticileriniz varsa, hiçbir değişiklik yapmanız gerekmez. Rolleri kullanıyorsanız ve Endpoint Security Manager 'ın sağladığı ayrıntı düzeyini beğenmezseniz, bu rolü kullanılabilir olduğunda atayın. Güncel Intune sürüm bilgileri için Intune [yenilikleri](../fundamentals/whats-new.md) sayfasını inceleyin. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>' Intune için Adobe Acrobat Reader ' mobil uygulaması için destek özeti güncelleştirildi<!--5746776-->
 Ağustos ayının sonunda MC188653 ' de paylaşıyoruz. Bu, Intune mobil uygulaması için Adobe Acrobat Reader 'ın 1 Aralık 2019 ' de sona erecek ve Adobe uygulamasının, ana Acrobat Reader uygulaması içinde Intune 'un uygulama koruma ilkelerini desteklemeyi planlıyor olması. Bundan sonra, BT yöneticilerinin hedeflemesini sağlamak için daha fazla zaman sunduğumuz ve son kullanıcıların Intune için Adobe Acrobat Reader kullanmaya başlamasını sağlayan müşteri geri bildirimi aldık. Son Kullanıcı cihazlarında Intune için Adobe Acrobat Reader 'ın yüksek kullanımı ve kurumsal senaryolarda önem derecesi verildiğinde, tüm deneyimin kuruluşunuzun uygulama koruma ihtiyaçlarını karşıladığından emin olmak istiyoruz. 
@@ -27,7 +43,7 @@ Bu iletiyi, raporumuz kuruluşunuzdaki bir veya daha fazla ilkeyi Intune için A
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Son kullanıcılarınıza ve yardım masasına bu değişikliğin haberdar olmasına izin verin. Intune ile ilgili sorulara yönelik bir kanal oluşturmak için [Şirket portalı destek bilgileri işlevselliğini](../apps/company-portal-app.md#support-information) kullanabilirsiniz.
 
-#### <a name="additional-information"></a>Ek Bilgiler
+#### <a name="additional-information"></a>Ek bilgi
 https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 
 

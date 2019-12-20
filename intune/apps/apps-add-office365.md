@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563672"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205981"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Windows 10 cihazlarına Office 365 uygulamaları ekleme
 
@@ -171,7 +171,7 @@ O365 uygulamalarını bir cihaza yükleyemezseniz, sorunun Intune ile ilgili olu
 - Cihazda etkin bir ağ bağlantısı var. Cihaz uçak modundaysa, kapalıysa veya hizmeti olmayan bir konumdaysa, ağ bağlantısı kurulana kadar ilke uygulanmaz.
 - Hem Intune hem de Office 365 ağ gereksinimleri karşılanır ve ilgili IP aralıkları aşağıdaki makalelere göre erişilebilir:
 
-  - [Intune ağ yapılandırması gereksinimleri ve bant genişliği](https://docs.microsoft.com/intune/network-bandwidth-use)
+  - [Intune ağ yapılandırma gereksinimleri ve bant genişliği](https://docs.microsoft.com/intune/network-bandwidth-use)
   - [Office 365 URL’leri ve IP adresi aralıkları](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 - Doğru gruplara O365 uygulama paketi atanmıştır. 
@@ -186,7 +186,7 @@ Hem Intune hem de ağ altyapısının beklendiği gibi çalıştığını sonuç
   [Aynı bilgisayarda Tıkla-Çalıştır ve Windows Installer ile yüklenen Office desteklenmez](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
 - Oturum açma kullanıcısının cihaza uygulama yüklemesi için izni olmalıdır.
 - Windows Olay Görüntüleyicisi günlük **Windows günlükleri** -> **uygulamalarına**dayalı bir sorun olmadığını onaylayın.
-- Yükleme sırasında Office yükleme ayrıntılı günlüklerini yakalayın. Bunu yapmak için aşağıdaki adımları izleyin:<br>
+- Yükleme sırasında Office yükleme ayrıntılı günlüklerini yakalayın. Bunu yapmak için şu adımları izleyin:<br>
     1. Hedef makinelerde Office yüklemesi için ayrıntılı günlük kaydını etkinleştirin. Bunu yapmak için, kayıt defterini değiştirmek için aşağıdaki komutu çalıştırın:<br>
         `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
     2. Office 365 paketini hedef cihazlara yeniden dağıtın.<br>
@@ -197,7 +197,7 @@ Hem Intune hem de ağ altyapısının beklendiği gibi çalıştığını sonuç
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>Uygulama paketinin yüklenmesi sırasında karşılaşılan hatalar
 
-Ayrıntılı yükleme günlüklerinin nasıl görüntüleneceği hakkında bilgi için bkz. [Office 365 ProPlus ULS günlüğünü etkinleştirme](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) .
+Ayrıntılı yükleme günlüklerinin nasıl görüntüleneceği hakkında bilgi için bkz. [Office 365 ProPlus ULS günlüğünü etkinleştirme](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging) .
 
 Karşınıza çıkabilecek yaygın hata kodları ve anlamları, aşağıdaki tablolarda listelenmiştir.
 

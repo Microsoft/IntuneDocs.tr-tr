@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f4c7b5e3cca06a3ec10ea1b3dfc5e45546c841f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d7a166e97cb9161df7c6d024e200adec0974715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563915"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204978"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir Windows iş kolu uygulaması ekleme
 
@@ -34,13 +34,13 @@ ms.locfileid: "74563915"
 > [!IMPORTANT]
 > *. Msi* uzantısına sahip bir yükleme dosyası kullanarak Win32 uygulamaları dağıttığınızda, [Intune yönetim uzantısı](../apps/intune-management-extension.md)'nı kullanmayı düşünün. AutoPilot kaydı sırasında Win32 uygulamaları ve iş kolu uygulamaları yüklemesini karıştırırsanız, uygulama yüklemesi başarısız olabilir.  
 
-## <a name="step-1-specify-the-software-setup-file"></a>1\. Adım: Yazılım kurulum dosyasını belirtme
+## <a name="step-1-specify-the-software-setup-file"></a>1. Adım: Yazılım kurulum dosyasını belirtme
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
 3. **Uygulama Ekle** bölmesinde, **uygulama türü**olarak **iş kolu uygulaması** ' nı seçin.
 
-## <a name="step-2-configure-the-app-package-file"></a>2\. Adım: Uygulama paketi dosyasını yapılandırma
+## <a name="step-2-configure-the-app-package-file"></a>2. Adım: Uygulama paketi dosyasını yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
 2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra **.msi**, **.appx** veya **.appxbundle** uzantısına sahip bir Windows yükleme dosyası seçin.
@@ -51,7 +51,7 @@ ms.locfileid: "74563915"
 1. İşiniz bittiğinde **Tamam**’a tıklayın.
 
 
-## <a name="step-3-configure-app-information"></a>3\. Adım: Uygulama bilgilerini yapılandırma
+## <a name="step-3-configure-app-information"></a>3. Adım: Uygulama bilgilerini yapılandırma
 
 1. **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
 2. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
@@ -70,12 +70,12 @@ ms.locfileid: "74563915"
     - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na gözatarken uygulamayla birlikte görüntülenir.
 3. İşiniz bittiğinde **Tamam**’a tıklayın.
 
-## <a name="step-4-finish-up"></a>4\. Adım: Bitirme
+## <a name="step-4-finish-up"></a>4. Adım: Bitirme
 
 1. **Uygulama ekle** bölmesinde, uygulama bilgilerini doğru yapılandırdığınızı onaylayın.
 2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
 
-## <a name="step-5-update-a-line-of-business-app"></a>5\. Adım: Bir iş kolu uygulamasını güncelleştirme
+## <a name="step-5-update-a-line-of-business-app"></a>5. Adım: Bir iş kolu uygulamasını güncelleştirme
 
 [!INCLUDE [shared-proc-lob-updateapp](../includes/shared-proc-lob-updateapp.md)]
 
@@ -97,3 +97,5 @@ Bu yetenek, bir yarış durumuna girmeyi önlemek açısından kullanışlıdır
 - Uygulamanızın özelliklerini ve atamasını izleme yolları hakkında daha fazla bilgi edinin. [Uygulama bilgilerini ve atamaları izleme](apps-monitor.md) makalesine bakın.
 
 - Intune’da uygulamanızın bağlamı hakkında daha fazla bilgi edinin. Bkz. [Microsoft Intune'da uygulama yaşam döngüsüne genel bakış](app-lifecycle.md).
+
+- Win32 uygulamaları hakkında daha fazla bilgi edinin. Bkz. [Win32 uygulama yönetimi](~/apps/apps-win32-app-management.md).

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72776877"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206559"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune'u kullanarak özelliklere izin vermeyi veya bunları kısıtlamayı sağlayan macOS cihaz ayarları
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Bu makalede macOS cihazlarda denetleyebileceğiniz farklı ayarlar listelenmekte ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) yönteminizin bir parçası olarak bu ayarları kullanabilir ve bu sayede özellikleri etkinleştirip devre dışı bırakabilir, parola kuralları uygulayabilir, belirli uygulamalara izin verebilir veya bunları kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
 
@@ -90,12 +90,12 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra m
     Bu özellik şu platformlarda geçerlidir:  
     - macOS 10.10.3 ve üzeri
 
-  - **Paroladaki alfasayısal olmayan karakter sayısı**: parolada gereken karmaşık karakter sayısını belirtin (**0** ile **4**arasında).<br>Karmaşık bir karakter, “ **?** ” gibi bir simgedir.
+  - **Paroladaki alfasayısal olmayan karakter sayısı**: parolada gereken karmaşık karakter sayısını belirtin (**0** ile **4**arasında).<br>Karmaşık bir karakter, “**?**” gibi bir simgedir.
   - **Minimum parola uzunluğu**: bir kullanıcının yapılandırması gereken parola uzunluğu alt sınırını girin ( **4** ile **16** karakter arasında).
   - **Basit parolalar**: **0000** veya **1234**gibi basit parolaların kullanılmasına izin verin.
   - **Parola istenmeden önce ekran kilitlenmesinden sonra geçen en fazla dakika**: kilidini açmak için bir parola istenmeden önce bilgisayarın ne kadar süreyle devre dışı olması gerektiğini belirtin.
   - **Ekran kilitlenmeden önce geçen işlem yapılmayan dakika sayısı**: ekran kilitlenmeden önce bilgisayarın boşta olması gereken sürenin uzunluğunu belirtin.
-  - **Parola kullanım süresi (gün)** : kullanıcının parolayı değiştirmesi gereken gün sayısını belirtin (**1** ile **255** gün arasında).
+  - **Parola kullanım süresi (gün)**: kullanıcının parolayı değiştirmesi gereken gün sayısını belirtin (**1** ile **255** gün arasında).
   - **Önceki parolaların yeniden kullanılmasını engelle**: daha önce kullanılan parolaların sayısını **1** ile **24**arasında girin.
 
 - **Kullanıcının geçiş kodunu değiştirmesini engelle**: geçiş kodunun değiştirilmesini, eklenmesini veya kaldırılmasını durdurmak için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, geçiş kodu ekleme, değiştirme veya kaldırma işlemlerine izin verir.

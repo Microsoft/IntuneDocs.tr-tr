@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 704da2ee4f0f2e6dce222c89704c83a35368c02c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059531"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206576"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune’da cihaz kısıtlama ayarlarını yapılandırma
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune, yöneticilerin Android, iOS, macOS ve Windows cihazlarını denetlemesine yardımcı olan cihaz kısıtlama ilkeleri içerir. Bu kısıtlamalar, kuruluşunuzun kaynaklarını korumak için çok çeşitli ayarları ve özellikleri denetlemenize olanak tanır. Örneğin, yöneticiler şunları yapabilir:
 

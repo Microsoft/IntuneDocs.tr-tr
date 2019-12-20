@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4c2ec3ab62c6effd80d6a02d6ae9052b41fed23c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504949"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207340"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış BT için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanma
 
@@ -43,10 +43,11 @@ Varsayılan kapsam etiketi özelliği, System Center Configuration Manager güve
 
 ## <a name="to-create-a-scope-tag"></a>Kapsam etiketi oluşturmak için
 
-1. Intune ' da, **rol** > **kapsam (Etiketler)**  > **Oluştur**' u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **kiracı yönetimi** > **Roller** > **kapsam (Etiketler)** > **Oluştur**' u seçin.
 
     ![Kapsam etiketi oluşturma ekranının ekran görüntüsü.](./media/scope-tags/create-scope-tag.png)
 
+2. Bir **ad** ve isteğe bağlı bir **Açıklama**girin.
 3. Belirli gruplardaki tüm cihazları istiyorsanız, **seçili gruplardaki tüm cihazlara kapsam etiketi ata**' yı seçin.
     1. **Dahil edilecek grupları seçin** sayfasında, bu kapsam etiketini atamak istediğiniz cihazları içeren grupları seçin.
     2. **Seçin** öğesini belirleyin.
@@ -54,16 +55,13 @@ Varsayılan kapsam etiketi özelliği, System Center Configuration Manager güve
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Kapsam etiketini bir role atamak için
 
-1. Intune 'da **tüm roller** > **Roller** ' i seçin > bir rol > **atamalar** > **ata**' yı seçin.
-
-    ![Role kapsam atama ekran görüntüsü.](./media/scope-tags/assign-scope-to-role.png)
-
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **tüm roller** >  > **Roller** ' i seçin > bir rol > **atamaları** seçin > **ata**' **yı seçin.**
 2. **Atama adı** ve **açıklaması**sağlayın.
 3. **Eklemek** > **Üyeler (gruplar)** seçin > Bu atamanın bir parçası olarak istediğiniz grupları seçin > > **Tamam ' ı** **seçin** . Bu gruptaki kullanıcıların, kapsamdaki kullanıcıları/cihazları yönetme izinleri olacaktır (gruplar).
 
     ![Üye gruplarının Seç ekran görüntüsü.](./media/scope-tags/select-member-groups.png)
 
-4. Belirli bir grup kümesindeki kullanıcıları/cihazları yönetmek istiyorsanız **kapsam (gruplar)**  > **Seçili gruplar** > ' ı seçin.**dahil edilecek grupları seçin** > grupları seçin  >  **Tamam ' ı** **seçin**. Bu gruptaki tüm kullanıcılar/cihazlar, Üyeler (Grup) içindeki Yöneticiler tarafından yönetilecektir.
+4. Belirli bir grup kümesindeki kullanıcıları/cihazları yönetmek istiyorsanız **kapsam (gruplar)** > **Seçili gruplar** > ' ı seçin.**dahil edilecek grupları seçin** > grupları seçin  >  **Tamam ' ı** **seçin**. Bu gruptaki tüm kullanıcılar/cihazlar, Üyeler (Grup) içindeki Yöneticiler tarafından yönetilecektir.
 
     ![Kapsam gruplarının Seç ekran görüntüsü.](./media/scope-tags/select-scope-groups.png)
 
@@ -81,11 +79,9 @@ Varsayılan kapsam etiketi özelliği, System Center Configuration Manager güve
 
 Kapsam etiketlerini destekleyen nesneler için, kapsam etiketleri genellikle **Özellikler**altında görünür. Örneğin, bir yapılandırma profiline bir kapsam etiketi atamak için aşağıdaki adımları izleyin:
 
-1. Intune 'da **cihaz yapılandırma** > **profiller** ' i seçin > bir profil seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **yapılandırma profilleri** ' ni seçin > bir profil seçin.
 
-    ![Profil seçme ekran görüntüsü.](./media/scope-tags/choose-profile.png)
-
-2. **Ekle** > **kapsam (Etiketler)**  > **Özellikler** ' i seçin.
+2. **Ekle** > **kapsam (Etiketler)** > **Özellikler** ' i seçin.
 
     ![Kapsam etiketleri Ekle ekran görüntüsü.](./media/scope-tags/add-scope-tags.png)
 

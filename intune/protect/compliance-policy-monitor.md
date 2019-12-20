@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992992"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206083"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune Cihaz uyumluluk ilkelerini izleme
 
@@ -36,9 +36,9 @@ Uyumluluk raporları, cihaz uyumluluğunu gözden geçirmenize ve kuruluşunuzda
 
 **Intune cihaz uyumluluğu panosunu** açın:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. **Cihaz uyumluluğu** > **Genel Bakış**’ı seçin. **Cihaz uyumluluğu panosu** açılacaktır.
+2. **Cihazların** > **genel bakış** > **uyumluluk durumu** sekmesini seçin.
 
 > [!IMPORTANT]
 > Cihaz uyumluluk ilkelerini almak için, cihazların Intune'a kayıtlı olmaları gerekir.
@@ -151,7 +151,7 @@ Kutucuğu seçtiğinizde uyumluluk ilkeleri olmayan cihazlar görüntülenir. Ay
 
 ## <a name="view-compliance-reports"></a>Uyumluluk raporlarını görüntüle
 
-*Uyumluluk durumundaki*grafikleri kullanmanın yanı sıra, yönetim merkezinin *izleyici* sayfasından Uyumluluk raporlarını görüntüleyebilirsiniz.
+*Uyumluluk durumundaki*grafikleri kullanmanın yanı sıra, **cihaz uyumluluğu** > **raporlar** ' a gidebilirsiniz.
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
@@ -191,3 +191,7 @@ Bir cihaza birden çok Intune ilkesi uygulandığında ilke çakışmaları olab
 - Çakışan ayarlar bir Intune yapılandırma ilkesine ve bir uyumluluk ilkesine aitse, uyumluluk ilkesindeki ayarlar yapılandırma ilkesindeki ayarlara göre önceliklidir. Bu, yapılandırma ilkesindeki ayarlar daha güvenli olsa bile gerçekleşir.
 
 - Birden çok uyumluluk ilkesi dağıttıysanız, Intune bu ilkelerin en güvenli olanını kullanır.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+[Uyumluluk ilkelerine genel bakış](device-compliance-get-started.md)

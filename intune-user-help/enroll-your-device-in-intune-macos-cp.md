@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f26594435689a4f7a178035264e006a497719d3e
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098168"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205522"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Şirket Portalı uygulamasını kullanarak macOS cihazınızı kaydetme  
 
@@ -67,18 +67,17 @@ MacOS cihazınızı kuruluşunuza kaydetmek için aşağıdaki adımları kullan
 
 1. İş veya okul hesabınızla Şirket Portalı için oturum açın.  
 2. Uygulama açıldığında **Başlat**' ı seçin.  
-3. Kuruluşunuzun kayıtlı cihazınızda [neleri görebileceğini ve neleri görebileceklerini](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) gözden geçirin. Sonra **Devam**'ı seçin.  
-4. **Yönetim profilini yükle** ekranında **profil indir**' i seçin.   
+3. Kuruluşunuzun kayıtlı cihazınızda neleri görebileceğini ve neleri görebileceklerini gözden geçirin. Sonra **Devam**'ı seçin.
+4.  İstenirse, **Yönetim profili yüklemesi** ekranında cihaz parolanızı girin.
 
-    ![Şirket Portalı örnek ekran görüntüsü, yönetim profilini yükle ekranının, "profil Indir" düğmesinin vurgulanması.](./media/install-mgmt-profile-mac-1911.PNG)   
-5. Cihazınızın sistem tercihleri açılır. **Yüklemeyi** seçin ve sonra yeniden **Kur** ' u seçin. İstenirse, cihaz parolanızı girin.  
+    ![Şirket Portalı örnek ekran görüntüsü, yönetim profilini yükler ekranı, parola istemi 'ni vurgular.](./media/install-management-profile-macos-1912.PNG)   
+5. **Cihaz yönetimini Onayla** ekranında **sistem tercihlerini aç**' ı seçin.  
 
-    ![MacOS sistem tercihlerinin örnek ekran görüntüsü, yükleme istemi, "yükleme" düğmesinin vurgulanması.](./media/system-preference-install-1911.PNG)  
-6. Profil yüklendikten sonra, **Yönetim profili** altındaki profiller listesinde görünür.  
-
-   ![Yüklü yönetim profilini vurgulayan macOS sistem tercihleri, profiller ekranının örnek ekran görüntüsü.](./media/system-preference-verify-1911.PNG)   
-7. Şirket Portalı dön.   
-8. Kuruluşunuz, cihaz ayarlarınızı güncelleştirmenizi gerektirebilir. Ayarları güncelleştirmeyi tamamladığınızda **ayarları denetle**' yi seçin.  
+    ![Cihaz yönetimini Onayla ekranının örnek ekran görüntüsü, "sistem tercihlerini aç" düğmesini vurgulıyorum.](./media/confirm-device-management-macos-1912.PNG)  
+6. Cihazınızın sistem tercihleri açılır. Cihaz profilleri listesinden **Yönetim profili** ' **ni seçin ve ardından Onayla > Onayla** ' yı **seçin.**  
+    Sistem Tercihleri, Yönetim profili ekranının, "Onayla" düğmesinin örnek ekran görüntüsünü ![.](./media/management-profile-approve-macos-1912.PNG)   
+1. Şirket Portalı dönün ve **devam**' ı seçin.    
+2. Kuruluşunuz, cihaz ayarlarınızı güncelleştirmenizi gerektirebilir. Ayarları güncelleştirmeyi tamamladığınızda **ayarları denetle**' yi seçin.  
 
     ![Şirket Portalı örnek ekran görüntüsü, cihaz ayarlarını güncelleştirme ekranının "ayarları denetle" düğmesinin vurgulanması.](./media/update-settings-mac-1911.PNG)  
 9. Kurulum tamamlandığında **bitti**' yi seçin.  

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564261"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205046"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -34,15 +34,15 @@ Microsoft Intune içindeki uygulama yapılandırma ilkeleri, yönetilen Android 
 > [!NOTE]  
 > Tüm uygulamalar, uygulama yapılandırmasını desteklemez. Uygulamanın uygulama yapılandırma ilkelerini destekleyip desteklemediğini görmek için uygulama geliştiricisine danışın.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'Da, **uygulama yapılandırma Ilkeleri** ** >  >  ** **Ekle**' yi seçin.
-2. Aşağıdaki özellikleri girin:
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **uygulamalar** > **uygulama yapılandırma ilkeleri** ' ni seçin >   > **yönetilen cihaz** **ekleyin** .
+2. Aşağıdaki özellikleri ekleyin:
 
     - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı **tüm şirket Için Android kurumsal dokuz iş uygulaması ilkesidir**.
     - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Cihaz kayıt türü**: **yönetilen cihazlar**' ı seçin.
+    - **Cihaz kayıt türü**: Bu ayar **yönetilen cihazlar**olarak ayarlanır.
     - **Platform**: **Android**' i seçin.
 
-3. **Ilişkili uygulama**' yı seçin. Bir uygulama yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçin. Onaylanan ve Intune ile eşitlenen yönetilen Google Play uygulamalar listesinden seçim yapın.
+3. **Ilişkili uygulama**' yı seçin. Bu uygulama yapılandırma ilkesinin ilişkilendirileceği Android uygulamasını seçin. [Onaylanan ve Intune ile eşitlenen yönetilen Google Play uygulamalar](~/apps/apps-add-android-for-work.md)listesinden seçim yapın.
 4. **İzinler**’i seçin. Yapılandırmaları ayarlamak için şunları kullanabilirsiniz:
 
     - [Yapılandırma tasarımcısı](#use-the-configuration-designer)
@@ -110,12 +110,12 @@ Ayrıca, Android cihaz özelliklerine erişmek için uygulama izinlerini öncede
 
 Örneğin, bir uygulama cihazın mikrofonunu kullanır. Kullanıcıdan mikrofonu kullanmak için uygulamaya izin vermesi istenir.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'Da, **uygulama yapılandırma Ilkeleri** ** >  >  ** **Ekle**' yi seçin.
-2. Aşağıdaki özellikleri girin:
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **uygulamalar** > **uygulama yapılandırma ilkeleri** ' ni seçin >   > **yönetilen cihaz** **ekleyin** .
+2. Aşağıdaki özellikleri ekleyin:
 
     - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı, **tüm şirket Için Android kurumsal istem izinleri uygulama ilkesidir**.
     - **Açıklama**. Profil için açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
-    - **Cihaz kayıt türü**: **yönetilen cihazlar**' ı seçin.
+    - **Cihaz kayıt türü**: Bu ayar **yönetilen cihazlar**olarak ayarlanır.
     - **Platform**: **Android**' i seçin.
 
 3. **Ilişkili uygulama**' yı seçin. Yapılandırma ilkesi tanımlamak istediğiniz uygulamayı seçin. Onaylanan ve Intune ile eşitlenen Android iş profili uygulamaları listesinden seçim yapın.

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1362f6c6453569d1c306cd16397cc9a7f83736e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6ed1f43e7c7e6f0580cb22513a489fb32c30e5f6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72495337"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206763"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Intune’da Windows Phone 8.1 cihazlar için özel ayarlar kullanma
 
@@ -33,21 +33,21 @@ Bu makale, Windows Phone 8.1 cihazlar için özel profil oluşturma işlemini g�
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz yapılandırması** > **Profiller** > **Profil oluştur**'u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: Profil için `windows phone custom profile` gibi bir ad girin.
-    - **Açıklama**: Profil için bir açıklama girin.
-    - **Platform**: **Windows Phone 8.1**’i seçin.
-    - **Profil türü**: **Özel**’i seçin.
+    - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı **Windows Phone özel profilidir**.
+    - **Açıklama**: Ayara genel bir bakış sağlayan ve diğer önemli ayrıntıları veren bir açıklama girin.
+    - **Platform**: **Windows Phone 8,1**' u seçin.
+    - **Profil türü**: **özel**' i seçin.
 
 4. **Özel OMA-URI Ayarları**’nda **Ekle**’yi seçin. Aşağıdaki ayarları girin:
 
     - **Ad**: Ayarlar listesinde tanımanıza yardımcı olması için OMA-URI ayarına benzersiz bir ad girin.
     - **Açıklama**: Ayara genel bir bakış sağlayan ve profili bulmanıza yardımcı olacak diğer ek bilgileri içeren bir açıklama girin.
-    - **OMA-URI**  (büyük/küçük harfe duyarlı): Ayar olarak kullanmak istediğiniz OMA-URI’yi girin.
-    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü girin. Seçenekleriniz şunlardır:
+    - **OMA-URI ** (büyük/küçük harfe duyarlı): Ayar olarak kullanmak istediğiniz OMA-URI’yi girin.
+    - **Veri türü**: Bu OMA-URI ayarı için kullanacağınız veri türünü seçin. Seçenekleriniz şunlardır:
 
         - Dize
         - Dize (XML dosyası)
@@ -57,16 +57,16 @@ Bu makale, Windows Phone 8.1 cihazlar için özel profil oluşturma işlemini g�
         - Boole değeri
         - Base64 (dosya)
 
-    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değerini girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin **Tarih ve saat**’i seçtiğinizde, değeri tarih seçiciden belirleyin.
+    - **Değer**: Girdiğiniz OMA-URI ile ilişkilendirmek istediğiniz veri değerini girin. Değer, seçtiğiniz veri türüne bağlıdır. Örneğin, **Tarih ve saat**' i seçerseniz, bir tarih seçicisinden değeri seçin.
 
     Bazı ayarları ekledikten sonra **Dışarı Aktar**’ı seçebilirsiniz. **Dışarı Aktar**, virgülle ayrılmış değerler (.csv) dosyasına eklediğiniz tüm değerlerin listesini oluşturur.
 
 5. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin. Gerekirse diğer ayarları eklemeye devam edin.
-6. İşiniz bittiğinde, Intune profilini oluşturmak için **Tamam** > **Oluştur**’u seçin. Profiliniz oluşturulduğunda **Cihaz yapılandırması - Profiller** listesinde görünür.
+6. İşiniz bittiğinde, Intune profilini oluşturmak için **tamam** > **Oluştur** ' u seçin. Bu tamamlandığında, profiliniz **cihazlar-yapılandırma profilleri** listesinde gösterilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, Windows 8.1 telefon cihazlarının taşıyıcı kapsam alanı dışında seyahat edildiğinde hücresel ağları değiştirmesi engellenir.
+Aşağıdaki örnekte, Windows 8.1 telefon cihazlarının taşıyıcı kapsam alanı dışına geçiş yaparken hücresel ağların değiştirilmesi engellenir.
 
 - **Ad**: hücresel veri dolaşımına izin ver
 - **Açıklama**: hücresel veri dolaşımına izin ver veya izin verme
@@ -76,6 +76,6 @@ Aşağıdaki örnekte, Windows 8.1 telefon cihazlarının taşıyıcı kapsam al
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Daha sonra, [profili atayın](device-profile-assign.md).
+Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Ardından [profili atayın](../device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
 
-[Windows 10 cihazlarda](../custom-settings-windows-10.md) bir özel profili nasıl oluşturacağınızı görün.
+[Windows 10 cihazlarında özel bir profil](../custom-settings-windows-10.md)oluşturun.

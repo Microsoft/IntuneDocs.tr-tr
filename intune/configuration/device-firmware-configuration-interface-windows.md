@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1d07066bcd599dc0cdbaf8fcf90ac1ee76be45fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059601"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206695"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Windows cihazlarında cihaz üretici yazılımı yapılandırma arabirimi profillerini Microsoft Intune (Genel Önizleme) kullanma
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Autopilot cihazlarını yönetmek için Intune kullandığınızda, cihaz üretici yazılımı yapılandırma arabirimini (DFCı) kullanarak, UEFı (BIOS) ayarlarını, kaydolduktan sonra yönetebilirsiniz. Avantajlar, senaryolar ve önkoşullara genel bakış için bkz. [DFCı 'Ya genel bakış](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
@@ -104,7 +104,7 @@ Bu profil, yapılandırdığınız DFCı ayarlarını içerir.
         - **Yapılandırılmadı**: Intune bu özelliğe dokunmaz ve tüm ayarları olduğu gibi bırakır.
         - **Etkin**: UEFı (BIOS) tarafından doğrudan yönetilen tüm yerleşik mikrofonlar ve hoparlörler etkindir. USB cihazları gibi çevre birimleri etkilenmez.
         - **Devre dışı**: UEFı (BIOS) tarafından doğrudan yönetilen tüm yerleşik mikrofonlar ve hoparlörler devre dışı bırakılır. USB cihazları gibi çevre birimleri etkilenmez.
-    - **Radyolar (Bluetooth, Wi-Fi, NFC vb.)** : seçenekleriniz:
+    - **Radyolar (Bluetooth, Wi-Fi, NFC vb.)**: seçenekleriniz:
         - **Yapılandırılmadı**: Intune bu özelliğe dokunmaz ve tüm ayarları olduğu gibi bırakır.
         - **Etkin**: UEFı (BIOS) tarafından doğrudan yönetilen tüm yerleşik radyolar etkindir. USB cihazları gibi çevre birimleri etkilenmez.
         - **Devre dışı**: UEFı (BIOS) tarafından doğrudan yönetilen tüm yerleşik radyolar devre dışı bırakıldı. USB cihazları gibi çevre birimleri etkilenmez.
@@ -148,7 +148,7 @@ Ayrıca, [iade edilecek cihazlara sinyal](../remote-actions/device-sync.md)gönd
 
 ## <a name="reuse-retire-or-recover-the-device"></a>Cihazı yeniden kullanma, devre dışı bırakma veya kurtarma
 
-### <a name="reuse"></a>Yeniden kullanma
+### <a name="reuse"></a>Pencereleri
 
 Windows 'u cihaza yeniden amaçlandırın olarak sıfırlamayı planlıyorsanız, [cihazı](../remote-actions/devices-wipe.md)silin. Autopilot cihaz **kaydını kaldırmayın.**
 
@@ -167,7 +167,7 @@ Bu adımlar cihazın UEFı (BIOS) menülerini kaldırır. Değerler profille ayn
 
 Artık Cihazı temizlemeye hazırsınız. Cihaz temizlenmeden sonra, Autopilot kaydını silin. Kaydın silinmesi cihazın yeniden başlatıldığında otomatik olarak yeniden kaydedilmesini önler.
 
-### <a name="recover"></a>Kurtar
+### <a name="recover"></a>Kurtarılamıyor
 
 Bir cihazı siler ve UEFı (BIOS) menülerinin kilidini açmadan önce Autopilot kaydını silerseniz, menüler kilitli kalır. Intune, kilidini açmak için profil güncelleştirmeleri gönderemiyor.
 

@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: df5fb0ba370bff4f5ec99852484dfb1fd2cc9f60
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059500"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206508"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Windows Holographic for Business izin vermek veya Intune kullanarak özellikleri kısıtlamak için cihaz ayarları
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Bu makale, listeler ve farklı ayarları denetleyebilirsiniz gibi Microsoft Hololens cihazları Windows Holographic for Business açıklar. Mobil cihaz Yönetimi (MDM) çözümünüzün bir parçası olarak, izin veya özellikler, güvenlik denetimi ve daha fazla devre dışı için bu ayarları kullanın.
 
@@ -101,7 +101,7 @@ Aşağıdaki ayarları girin:
 
     Herkese açık ortamlarda bulunan ve otomatik oturum açma etkin bilgi noktaları için olabildiğince az ayrıcalığa sahip bir kullanıcı türü (yerel standart kullanıcı hesabı gibi) kullanılmalıdır. Bir Azure Active Directory (AD) hesabını bilgi noktası moduna yapılandırmak için `AzureAD\user@contoso.com` biçimini kullanın.
 
-- **Uygulama kullanıcı modeli kimliği (AUMID)** : bilgi noktası uygulamasının AUMID'sini girin. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+- **Uygulama kullanıcı modeli kimliği (AUMID)**: bilgi noktası uygulamasının AUMID'sini girin. Daha fazla bilgi için bkz. [Yüklü bir uygulamanın Uygulama Kullanıcı Model Kimliğini bulma](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
 ## <a name="reporting-and-telemetry"></a>Raporlama ve Telemetri
 

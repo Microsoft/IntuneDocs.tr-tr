@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78daf56f7e1d22b88d7134ac6cea86f1d999f0c6
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: ae2f3b2b9d620a9b0a6822edc8aa15e656361a74
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860307"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206967"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Windows 10 (ve üzeri) cihaz ayarları
 
@@ -89,7 +89,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listelenecek olan [bağlantı i
 - **Hücresel veri kanalı**: son kullanıcıların, hücresel ağa bağlıyken Web 'e göz atma gibi verileri kullanıp kullanmadığı seçin. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez. Son kullanıcılar devre dışı bırakabilirsiniz.
   - **Engelle**: hücresel veri kanalına izin verme. Son kullanıcılar açamaz.
-  - **Izin ver (düzenlenemez)** : hücresel veri kanalına izin verir. Son kullanıcılar bu uygulamayı kapatamaz.
+  - **Izin ver (düzenlenemez)**: hücresel veri kanalına izin verir. Son kullanıcılar bu uygulamayı kapatamaz.
 
 - **Veri dolaşımı**: **blok** , cihazda hücresel veri dolaşımını önler. **Yapılandırılmadı** (varsayılan), verilere erişirken ağlar arasında dolaşıma izin verir.
 - **Hücresel ağ üzerinden VPN**: **blok** cihazın BIR hücresel ağa bağlıyken VPN bağlantılarına erişmesini önler. **Yapılandırılmadı** (varsayılan), VPN 'nin hücresel dahil herhangi bir bağlantı kullanmasına izin verir.
@@ -149,7 +149,7 @@ Bu ayarlar [Enterprisecloudprint ILKESI CSP](https://docs.microsoft.com/windows/
   - **Zaman ve dil**: **blok** cihazdaki ayarlar uygulamasının zaman & dil alanına erişimi engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
     - **Sistem saati değişikliği**: **Block** , son kullanıcıların cihazdaki tarih ve saat ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Kullanıcılar bu ayarları değiştirebilir.
     - **Bölge ayarlarının değiştirilmesi** (yalnızca masaüstü): **Block** , son kullanıcıların cihazdaki bölge ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Kullanıcılar bu ayarları değiştirebilir.
-    - **Dil ayarlarının değiştirilmesi (yalnızca masaüstü)** : **Block** , son kullanıcıların cihazdaki dil ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Kullanıcılar bu ayarları değiştirebilir.
+    - **Dil ayarlarının değiştirilmesi (yalnızca masaüstü)**: **Block** , son kullanıcıların cihazdaki dil ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Kullanıcılar bu ayarları değiştirebilir.
 
       [Ayarlar ilkesi CSP 'si](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
@@ -179,7 +179,7 @@ Ayrıca, uygulama listesiyle bir. csv dosyasını **Içeri aktarabilirsiniz** .
 Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience)'yi kullanır; Ayrıca, desteklenen Windows sürümlerini de listeler. 
 
 - **Ekran yakalama** (yalnızca mobil): **Block** , son kullanıcıların cihazda ekran görüntüleri almasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
-- **Kopyala ve Yapıştır (yalnızca mobil)** : **Block** , son kullanıcıların cihazdaki uygulamalar arasında Kopyala ve Yapıştır kullanmasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
+- **Kopyala ve Yapıştır (yalnızca mobil)**: **Block** , son kullanıcıların cihazdaki uygulamalar arasında Kopyala ve Yapıştır kullanmasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 - **El ile kayıt kaldırma**: **blok** , son kullanıcıların cihazdaki çalışma alanı denetim masasını kullanarak çalışma alanı hesabını silmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez.
 
   Bu ilke ayarı, bilgisayar Azure AD 'ye katılırsa ve otomatik kayıt etkinse uygulanmaz.
@@ -226,12 +226,12 @@ Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-manag
 
 ## <a name="locked-screen-experience"></a>Kilit ekranı deneyimi
 
-- **İşlem merkezi bildirimleri (yalnızca mobil)** : **blok** , cihaz kilitleme ekranında işlem merkezi bildirimlerinin gösterilmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların hangi uygulamaların kilit ekranında bildirimleri göstermesini seçmesine izin verir.
+- **İşlem merkezi bildirimleri (yalnızca mobil)**: **blok** , cihaz kilitleme ekranında işlem merkezi bildirimlerinin gösterilmesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların hangi uygulamaların kilit ekranında bildirimleri göstermesini seçmesine izin verir.
 
   [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
-- **Kilitli ekran resmi URL 'si (yalnızca masaüstü)** : Windows kilit ekranı duvar kağıdı olarak kullanılan jpg, JPEG veya PNG biçiminde bir resmin URL 'sini girin. Örneğin, şunu girin: `https://contoso.com/image.png`. Bu ayar görüntüyü kilitler ve daha sonra değiştirilemez.
-- **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** : **izin ver** kullanıcıların ekran zaman aşımını yapılandırmasına izin verir. **Yapılandırılmadı** (varsayılan), kullanıcılara bu seçeneği vermez.
+- **Kilitli ekran resmi URL 'si (yalnızca masaüstü)**: Windows kilit ekranı duvar kağıdı olarak kullanılan jpg, JPEG veya PNG biçiminde bir resmin URL 'sini girin. Örneğin, şunu girin: `https://contoso.com/image.png`. Bu ayar görüntüyü kilitler ve daha sonra değiştirilemez.
+- **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)**: **izin ver** kullanıcıların ekran zaman aşımını yapılandırmasına izin verir. **Yapılandırılmadı** (varsayılan), kullanıcılara bu seçeneği vermez.
 
   [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
@@ -243,17 +243,17 @@ Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-manag
 
   [AboveLock/Allowtoine CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts)
 
-- **Ekran zaman aşımı (yalnızca mobil)** : ekran kilitlemeden ekrana kadar geçen süreyi (saniye cinsinden) ayarlayın. Desteklenen değerler 11-1800 ' dir. Örneğin, bu zaman aşımını 5 dakikaya ayarlamak için `300` girin.
+- **Ekran zaman aşımı (yalnızca mobil)**: ekran kilitlemeden ekrana kadar geçen süreyi (saniye cinsinden) ayarlayın. Desteklenen değerler 11-1800 ' dir. Örneğin, bu zaman aşımını 5 dakikaya ayarlamak için `300` girin.
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
-## <a name="messaging"></a>Mesajlaşma
+## <a name="messaging"></a>Gönderip
 
 Bu ayarlar, [ileti ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging)'sini kullanır; Ayrıca, desteklenen Windows sürümlerini de listeler.
 
-- **İleti eşitleme (yalnızca mobil)** : **blok** metin iletilerinin yedeklenmesini ve geri yüklenmesini devre dışı bırakır ve Windows cihazları arasında ileti eşitlemeye engel olmaz. Devre dışı bırakma, bilgilerin kuruluşun denetimi dışındaki sunucularda depolanmasını önlemeye yardımcı olur. **Yapılandırılmadı** (varsayılan), kullanıcıların bu ayarları değiştirmesine ve iletilerini eşitlemesine izin verir.
-- **MMS (yalnızca mobil)** : **blok** , cihazda MMS gönderme ve alma işlevini devre dışı bırakır. Kuruluşlar için bu ilkeyi, denetim veya yönetim gereksiniminin parçası olarak cihazlarda MMS 'yi devre dışı bırakmak için kullanın. **Yapılandırılmadı** (varsayılan), MMS gönderme ve alma sağlar.
-- **RCS (yalnızca mobil)** : **blok** , cihaza zengin iletişim hizmetleri (RCS) gönderme ve alma işlevini devre dışı bırakır. Kuruluşlar için bu ilkeyi, denetim veya yönetim gereksiniminin parçası olarak cihazlarda RCS 'yi devre dışı bırakmak için kullanın. **Yapılandırılmadı** (varsayılan) RCS 'nin gönderme ve alma yapmasına izin verir.
+- **İleti eşitleme (yalnızca mobil)**: **blok** metin iletilerinin yedeklenmesini ve geri yüklenmesini devre dışı bırakır ve Windows cihazları arasında ileti eşitlemeye engel olmaz. Devre dışı bırakma, bilgilerin kuruluşun denetimi dışındaki sunucularda depolanmasını önlemeye yardımcı olur. **Yapılandırılmadı** (varsayılan), kullanıcıların bu ayarları değiştirmesine ve iletilerini eşitlemesine izin verir.
+- **MMS (yalnızca mobil)**: **blok** , cihazda MMS gönderme ve alma işlevini devre dışı bırakır. Kuruluşlar için bu ilkeyi, denetim veya yönetim gereksiniminin parçası olarak cihazlarda MMS 'yi devre dışı bırakmak için kullanın. **Yapılandırılmadı** (varsayılan), MMS gönderme ve alma sağlar.
+- **RCS (yalnızca mobil)**: **blok** , cihaza zengin iletişim hizmetleri (RCS) gönderme ve alma işlevini devre dışı bırakır. Kuruluşlar için bu ilkeyi, denetim veya yönetim gereksiniminin parçası olarak cihazlarda RCS 'yi devre dışı bırakmak için kullanın. **Yapılandırılmadı** (varsayılan) RCS 'nin gönderme ve alma yapmasına izin verir.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge Tarayıcısı
 
@@ -264,10 +264,10 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [tarayıcı ILKESI C
 Kullanılabilir ayarlar, seçtiğiniz seçeneğe göre değişir. Seçenekleriniz şunlardır:
 
 - **Hayır** (varsayılan): Microsoft Edge bilgi noktası modunda çalışmıyor. Tüm Microsoft Edge ayarları, değişiklik ve yapılandırma için kullanılabilir.
-- **Dijital/Etkileşimli imza (tek uygulama bilgi noktası)** : yalnızca Windows 10 tek uygulama kiosks ' de kullanılmak üzere dijital/Etkileşimli imza için geçerli olan Microsoft Edge ayarlarını filtreler. Bir URL tam ekran açmak için bu ayarı seçin ve yalnızca bu Web sitesindeki içeriği gösterin. [Dijital Işaretleri ayarla](https://docs.microsoft.com/windows/configuration/setup-digital-signage) özelliği, bu özellik hakkında daha fazla bilgi sağlar.
-- **InPrivate genel göz atma (tek uygulama bilgi noktası)** : Windows 10 tek uygulama kiosları 'nda kullanılmak üzere InPrivate genel göz atma modu için geçerli olan Microsoft Edge ayarlarını filtreler. Microsoft Edge 'in çok sekmeli bir sürümünü çalıştırır.
-- **Normal mod (çok uygulama bilgi noktası)** : normal Microsoft Edge bilgi noktası modu için geçerli olan Microsoft Edge ayarlarını filtreler. Tüm göz atma özellikleriyle Microsoft Edge 'in tam bir sürümünü çalıştırır.
-- **Genel göz atma (çok uygulama bilgi noktası)** : bir Windows 10 çok uygulama bilgi noktasında genel göz atma için geçerli olan Microsoft Edge ayarlarını filtreler.  Microsoft Edge InPrivate 'ın çok bölgeli bir sürümünü çalıştırır.
+- **Dijital/Etkileşimli imza (tek uygulama bilgi noktası)**: yalnızca Windows 10 tek uygulama kiosks ' de kullanılmak üzere dijital/Etkileşimli imza için geçerli olan Microsoft Edge ayarlarını filtreler. Bir URL tam ekran açmak için bu ayarı seçin ve yalnızca bu Web sitesindeki içeriği gösterin. [Dijital Işaretleri ayarla](https://docs.microsoft.com/windows/configuration/setup-digital-signage) özelliği, bu özellik hakkında daha fazla bilgi sağlar.
+- **InPrivate genel göz atma (tek uygulama bilgi noktası)**: Windows 10 tek uygulama kiosları 'nda kullanılmak üzere InPrivate genel göz atma modu için geçerli olan Microsoft Edge ayarlarını filtreler. Microsoft Edge 'in çok sekmeli bir sürümünü çalıştırır.
+- **Normal mod (çok uygulama bilgi noktası)**: normal Microsoft Edge bilgi noktası modu için geçerli olan Microsoft Edge ayarlarını filtreler. Tüm göz atma özellikleriyle Microsoft Edge 'in tam bir sürümünü çalıştırır.
+- **Genel göz atma (çok uygulama bilgi noktası)**: bir Windows 10 çok uygulama bilgi noktasında genel göz atma için geçerli olan Microsoft Edge ayarlarını filtreler.  Microsoft Edge InPrivate 'ın çok bölgeli bir sürümünü çalıştırır.
 
 > [!TIP]
 > Bu seçeneklerin ne yaptığı hakkında daha fazla bilgi için bkz. [Microsoft Edge bilgi noktası modu yapılandırma türleri](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
@@ -302,7 +302,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
   - **Giriş düğmesi URL 'si**: açılacak URL 'yi girin. Örneğin `https://www.bing.com` veya `https://www.contoso.com` girin.
   - **Giriş düğmesini Gizle**: giriş düğmesini gizler
 - **Kullanıcıların giriş düğmesini değiştirmesine Izin ver**: **Evet** seçeneği, kullanıcıların giriş düğmesini değiştirmesine izin verir. Kullanıcının değişiklikleri, giriş düğmesine tüm yönetici ayarlarını geçersiz kılar. **Hayır** (varsayılan), kullanıcıların giriş düğmesini yöneticinin nasıl yapılandırmasıyla değiştirmesini engeller.
-- **Ilk çalıştırma deneyimini göster sayfası (yalnızca mobil)** : **Evet** (varsayılan) Microsoft Edge 'de ilk kullanıma giriş sayfasını gösterir. **Hayır** , Microsoft Edge 'i ilk kez çalıştırdığınızda giriş sayfasının gösterilmesini engeller. Bu özellik, bu sayfayı engellemek için sıfır emisyonlarını yapılandırmasına kayıtlı kuruluşlar gibi kuruluşlara izin verir.
+- **Ilk çalıştırma deneyimini göster sayfası (yalnızca mobil)**: **Evet** (varsayılan) Microsoft Edge 'de ilk kullanıma giriş sayfasını gösterir. **Hayır** , Microsoft Edge 'i ilk kez çalıştırdığınızda giriş sayfasının gösterilmesini engeller. Bu özellik, bu sayfayı engellemek için sıfır emisyonlarını yapılandırmasına kayıtlı kuruluşlar gibi kuruluşlara izin verir.
 - **Ilk çalıştırma DENEYIMI URL listesi konumu** (yalnızca Windows 10 Mobile): ilk çalıştırma sayfa URL 'SINI içeren XML dosyasına işaret eden URL 'yi girin. Örneğin, şunu girin: `https://www.contoso.com/sites.xml`.
 
 - **Boşta kalma zamanından sonra tarayıcıyı yenile**: 0-1440 dakika içinde tarayıcı yenilenene kadar boşta kalma dakikalarının sayısını girin. Varsayılan değer `5` dakikadır. `0` (sıfır) olarak ayarlandığında tarayıcı, boşta kaldıktan sonra yenilenmez.
@@ -331,13 +331,13 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
   - **Tüm sayfalarda**: tüm sayfalarda Sık Kullanılanlar çubuğunu gösterir. Son kullanıcılar bu ayarı değiştiremezler.
   - **Gizli**: tüm sayfalarda Sık Kullanılanlar çubuğunu gizler. Son kullanıcılar bu ayarı değiştiremezler.
 - **Sık kullanılanlara değişikliklere Izin ver**: **Evet** (varsayılan), kullanıcıların listeyi değiştirmesine izin veren işletim sistemi varsayılanını kullanır. **Hayır** , son kullanıcıların sık kullanılanlar listesini eklemesini, içeri aktarmayı, sıralamasını veya düzenlemesini engeller.
-  - **Sık Kullanılanlar listesi**: Sık Kullanılanlar dosyasına URL 'lerin bir listesini ekleyin. Örneğin, `http://contoso.com/favorites.html` ekleyin.
+  - **Sık Kullanılanlar listesi**: Sık Kullanılanlar dosyasına URL 'lerin bir listesini ekleyin. Örneğin, `http://contoso.com/favorites.html`ekleyin.
 - **Microsoft tarayıcıları arasında sık kullanılanları Eşitle** (yalnızca masaüstü): **Evet** , Windows 'un Internet Explorer ve Microsoft Edge arasında sık kullanılanları eşitlemesine zorlar. Sık Kullanılanlar için eklemeler, silmeler, değişiklikler ve düzen değişiklikleri, tarayıcılar arasında paylaşılır.  **Hayır** (varsayılan) işletim sistemi varsayılanını kullanır, bu da kullanıcılara tarayıcılar arasında sık kullanılanları eşitleme seçeneği verebilir.
 - **Varsayılan arama motoru**: cihazda varsayılan arama altyapısını seçin. Son kullanıcılar bu değeri istediği zaman değiştirebilir. Seçenekleriniz şunlardır:
   - İstemci Microsoft Edge ayarları 'nda arama altyapısı
-  - Bing
+  - Cıları
   - Google
-  - Yahoo
+  - Yahoo!
   - Özel değer: **OpenSearch XML URL 'Si**içinde, kısa adı ve arama altyapısının URL 'sini IÇEREN BIR https URL 'sini en düşük düzeyde girin. Örneğin, şunu girin: `https://www.contoso.com/opensearch.xml`.
 - **Arama önerilerini göster**: **Evet** (varsayılan) arama motorunuzun, adres çubuğuna arama ifadeleri yazarken site önermesine izin verir. **Hayır** bu özelliği engeller.
 - **Arama altyapısında değişikliklere Izin ver**: **Evet** (varsayılan), kullanıcıların yeni arama motorları eklemesine veya Microsoft Edge 'de varsayılan arama altyapısını değiştirmesine izin verir. Kullanıcıların arama altyapısını özelleştirmesini engellemek için **Hayır** ' ı seçin.
@@ -367,7 +367,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
 - **Canlı kutucuk veri toplamaya Izin ver**: **Evet** (varsayılan), Microsoft Edge 'In Başlat menüsüne sabitlenmiş canlı kutucuktan bilgi toplamasına izin verir. **Hayır** , kullanıcılara sınırlı bir deneyim sağlayabilen bu bilgilerin toplanmasını engeller.
 - **Kullanıcı sertifika hatalarını geçersiz kılabilir**: **Evet** (varsayılan), kullanıcıların Güvenli Yuva Katmanı/Aktarım katmanı GÜVENLIĞI (SSL/TLS) hataları olan Web sitelerine erişmesine izin verir. **Hayır** (Artırılmış güvenlik için önerilir), kullanıcıların Web sitelerine SSL veya TLS hatalarıyla erişmesini önler.
 
-### <a name="additional"></a>Ek
+### <a name="additional"></a>Fazladan
 
 - **Microsoft Edge tarayıcısına Izin ver** (yalnızca mobil): **Evet** (varsayılan) mobil cihazda Microsoft Edge Web tarayıcısının kullanılmasına izin verir. **Hayır** , cihazda Microsoft Edge kullanımını engeller. **Hayır**' ı seçerseniz, diğer tek ayarlar yalnızca masaüstü için geçerlidir.
 - **Adres çubuğu açılır listesine Izin ver**: **Evet** (varsayılan), Microsoft Edge 'in adres çubuğu açılır listesini öneriler listesiyle göstermesini sağlar. **Hayır** , Microsoft Edge 'in, yazarken açılan listede öneriler listesi göstermesini engeller. **Hayır**olarak ayarlandığında, şunları yapabilirsiniz:
@@ -416,7 +416,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [DeviceLock ILKESI C
     Bu ayarın Ayrıca sürüme bağlı olarak farklı etkileri vardır. Bu ayar hakkında ayrıntılı bilgi için bkz. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Ekran kilitlenmeden önce geçen işlem yapılmayan dakika sayısı**: ekran kilitlenmeden önce cihazın boşta kalması gereken sürenin uzunluğunu girin.
-  - **Parola kullanım süresi (gün)** : cihaz parolasının değiştirilme tarihi olan 1-365 ' dan gün cinsinden süre uzunluğunu girin. Örneğin, 90 gün sonra parolayı sona erdirmek için `90` girin.
+  - **Parola kullanım süresi (gün)**: cihaz parolasının değiştirilme tarihi olan 1-365 ' dan gün cinsinden süre uzunluğunu girin. Örneğin, 90 gün sonra parolayı sona erdirmek için `90` girin.
   - **Önceki parolaların yeniden kullanılmasını engelle**: daha önce kullanılan ve 1-24 'den kullanılamayan parolaların sayısını girin. Örneğin, kullanıcıların geçerli parolasına veya önceki dört parolalarından birine yeni bir parola ayarlayamaması için `5` girin.
   - **Cihaz boşta durumundan çıktığında parola iste** (Mobile ve holographic): **gerektir** ' i seçin, böylece kullanıcılar, boşta kaldıktan sonra cihazın kilidini açmak için bir parola girmelidir. **Yapılandırılmadı** (varsayılan) cihaz boşta durumundan çıktığında PIN veya parola gerektirmez.
   - **Basit parolalar**: kullanıcıların `1234` veya `1111`gibi basit parolalar oluşturmaması için **Engelle** olarak ayarlayın. Kullanıcıların `1234` veya `1111`gibi parolalar oluşturmalarına izin vermek için **Yapılandırılmadı** (varsayılan) olarak ayarlayın. Bu ayar, Windows resimli parolalarının kullanımına izin verir veya bunu engeller.
@@ -476,9 +476,9 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [DeviceLock ILKESI C
 
 Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Kişiselleştirme ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)'sini kullanır.
 
-- **Masaüstü arka plan resmi URL 'si (yalnızca masaüstü)** : Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz. jpg,. jpeg veya. png biçimindeki bir resmin URL 'sini girin. Kullanıcılar bu resmi değiştiremez. Örneğin, şunu girin: `https://contoso.com/logo.png`.
+- **Masaüstü arka plan resmi URL 'si (yalnızca masaüstü)**: Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz. jpg,. jpeg veya. png biçimindeki bir resmin URL 'sini girin. Kullanıcılar bu resmi değiştiremez. Örneğin, şunu girin: `https://contoso.com/logo.png`.
 
-## <a name="printer"></a>Yazıcı
+## <a name="printer"></a>Yazıcıda
 
 - **Yazıcılar**: eklenen yerel yazıcıların listesi.
 - **Varsayılan yazıcı**: varsayılan yazıcıyı ayarlayın.
@@ -561,7 +561,7 @@ Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
 Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [arama ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search)'sini kullanır. 
 
-- **Güvenli Arama (yalnızca mobil)** : Cortana 'nın, arama sonuçlarında yetişkinlere yönelik içeriği nasıl filtreleyeceğini denetleyin. Seçenekleriniz şunlardır:
+- **Güvenli Arama (yalnızca mobil)**: Cortana 'nın, arama sonuçlarında yetişkinlere yönelik içeriği nasıl filtreleyeceğini denetleyin. Seçenekleriniz şunlardır:
   - **Kullanıcı tanımlı**: son kullanıcıların kendi ayarlarını seçmesine izin verin.
   - **Katı**: yetişkin içerikli en yüksek filtreleme.
   - **Orta**: yetişkinlere yönelik içeriğe göre orta filtreleme. Geçerli arama sonuçları filtrelenmez.
@@ -687,7 +687,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
-- **Ağ İnceleme sistemi (NIS)** : NIS, cihazları ağ tabanlı saldırılara karşı korumaya yardımcı olur. Kötü amaçlı trafiği algılamaya ve engellemeye yardımcı olmak için Microsoft Endpoint Protection Center’dan bilinen açıkların imzalarını kullanır.
+- **Ağ İnceleme sistemi (NIS)**: NIS, cihazları ağ tabanlı saldırılara karşı korumaya yardımcı olur. Kötü amaçlı trafiği algılamaya ve engellemeye yardımcı olmak için Microsoft Endpoint Protection Center’dan bilinen açıkların imzalarını kullanır.
 
   **Etkinleştir** ayarı, ağ koruması ve ağ engellemeyi etkinleştirir. Kullanıcılar bu uygulamayı kapatamaz. Etkinleştirildiğinde, kullanıcıların bilinen güvenlik açıklarına bağlanması engellenir.
 
@@ -723,7 +723,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
-- **Güvenlik Zekası güncelleştirme aralığı (saat)** : Defender 'ın, 0-24 adresinden yeni güvenlik zekasını denetlediği aralığı girin. Seçenekleriniz şunlardır:
+- **Güvenlik Zekası güncelleştirme aralığı (saat)**: Defender 'ın, 0-24 adresinden yeni güvenlik zekasını denetlediği aralığı girin. Seçenekleriniz şunlardır:
 
   - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez. İşletim sistemi varsayılanı, güncelleştirmeleri her 8 saatte bir denetleyebilir.
   - **Denetleme**: Defender yeni güvenlik zekası güncelleştirmelerini denetlemez.
@@ -846,6 +846,8 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
 
+- **Örnek gönderme onayı**: Şu anda bu ayarın etkisi yoktur. Bu ayarı kullanmayın. Gelecekteki bir sürümde kaldırılabilir.
+
 - **Algılanan kötü amaçlı yazılım tehditleri eylemleri**: kötü amaçlı yazılım iş parçacıklarını nasıl işlemek istediğinizi seçin. **Yapılandırılmadı** (varsayılan) Microsoft Defender 'ın en iyi seçeneği seçmesini sağlar. **Etkinleştir**olarak ayarlandığında, Defender 'ın algıladığı her tehdit düzeyi için hangi eylemleri istediğini seçin: düşük, orta, yüksek ve önemli. Seçenekleriniz şunlardır:
   
   - **Temizle**
@@ -867,13 +869,13 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 ## <a name="power-settings"></a>Güç ayarları
 
-### <a name="battery"></a>Pil
+### <a name="battery"></a>Ak
 
 - **Enerji tasarrufunu açmak Için pil düzeyi**: cihaz pil gücünü kullanırken, 0-100 adresinden enerji tasarrufu 'nı açmak için pil ücreti düzeyini girin. Pil ücreti düzeyini gösteren bir yüzde değeri girin. Varsayılan değer %70 ' dir. %70 olarak ayarlandığında enerji tasarrufu, pilin %70 ' i veya daha az kullanılabilir olduğunu açık hale getirir.
 
   [Güç/enerji Gysaverbatteryıthresholdonpili CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
 
-- **Kapağı kapatma (yalnızca mobil)** : cihaz pil gücünü kullanırken, kapak kapatıldığında ne olacağını seçin. Seçenekleriniz şunlardır:
+- **Kapağı kapatma (yalnızca mobil)**: cihaz pil gücünü kullanırken, kapak kapatıldığında ne olacağını seçin. Seçenekleriniz şunlardır:
 
   - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
   - **Eylem yok**: cihaz açık kalır ve pil gücünü kullanmaya devam eder.
@@ -913,7 +915,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
   [Güç/enerji Gysaverbatteryıthresholdpluggedın CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
 
-- **Kapağı kapatma (yalnızca mobil)** : cihaz prize takılıyken, kapak kapatıldığında ne olacağını seçin. Seçenekleriniz şunlardır:
+- **Kapağı kapatma (yalnızca mobil)**: cihaz prize takılıyken, kapak kapatıldığında ne olacağını seçin. Seçenekleriniz şunlardır:
 
   - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
   - **Eylem yok**: cihaz açık kalır.

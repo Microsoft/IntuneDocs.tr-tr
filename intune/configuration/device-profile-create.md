@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860392"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206678"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
@@ -39,7 +39,7 @@ Bu makalede:
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Aşağıdaki seçenekler mevcuttur:
+2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Aşağıdaki seçenekleriniz vardır:
 
     - **Genel bakış**: profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar.
     - **Yönetin**: cihaz profilleri oluşturun, profil içinde çalıştırılacak özel [PowerShell betikleri](../apps/intune-management-extension.md) yükleyin ve [esım](esim-device-configuration.md)kullanarak cihazlara veri planları ekleyin.
@@ -105,7 +105,7 @@ Kapsam etiketleri ve yapabilecekleriniz hakkında daha fazla bilgi için bkz. [D
 
 ## <a name="applicability-rules"></a>Uygulanabilirlik kuralları
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - Windows 10 ve üzeri
 
@@ -134,7 +134,7 @@ Bu senaryolara yaklaşımak için şunları yapın:
 
 Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlevi görür ve yalnızca ölçütlerinizi karşılayan cihazları hedefleyin.
 
-### <a name="add-a-rule"></a>Kural ekleme
+### <a name="add-a-rule"></a>Kural Ekle
 
 1. **Uygulanabilirlik kuralları**' nı seçin. **Kural**, **özellik**ve **işletim sistemi sürümünü**seçebilirsiniz:
 

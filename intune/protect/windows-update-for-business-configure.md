@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691781"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207460"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune 'da Windows 10 yazılım güncelleştirmelerini yönetme
 
@@ -34,7 +34,7 @@ Intune, güncelleştirmeleri yönetmek için aşağıdaki ilke türlerini sağla
 
 - **Windows 10 güncelleştirme halkası**: Bu Ilke, Windows 10 güncelleştirmelerinin yüklendiği zaman yapılandıran ayarların bir koleksiyonudur.
 
-- **Windows 10 özellik güncelleştirmeleri (Genel Önizleme)** : Bu ilke, cihazları belirttiğiniz Windows sürümüne getirir ve bunları daha sonraki bir Windows sürümü ile güncelleştirmeyi seçinceye kadar bu cihazlarda dondurur.  Özellik sürümü statik olmaya devam ederken, cihazlar Özellik sürümleri için kullanılabilen kalite ve güvenlik güncelleştirmelerini yüklemeye devam edebilir.
+- **Windows 10 özellik güncelleştirmeleri (Genel Önizleme)**: Bu ilke, cihazları belirttiğiniz Windows sürümüne getirir ve bunları daha sonraki bir Windows sürümü ile güncelleştirmeyi seçinceye kadar bu cihazlarda dondurur.  Özellik sürümü statik olmaya devam ederken, cihazlar Özellik sürümleri için kullanılabilen kalite ve güvenlik güncelleştirmelerini yüklemeye devam edebilir.
 
 Cihaz gruplarına Windows 10 güncelleştirme halkaları ve Windows 10 özellik güncelleştirmeleri için ilkeler atarsınız. Windows 10 cihazlarınız için yazılım güncelleştirmelerini yönetmek ve iş gereksinimlerinizi yansıtan bir güncelleştirme stratejisi oluşturmak için aynı Intune ortamında her iki ilke türünü de kullanabilirsiniz.
 
@@ -69,9 +69,6 @@ Intune 'da Windows 10 cihazları için Windows güncelleştirmelerini kullanmak 
 
   Cihaz profilleri hakkında daha fazla bilgi için bkz. [cihaz kısıtlama ayarlarını yapılandırma](../configuration/device-restrictions-configure.md).
 
-- Klasik Azure portalını kullanıyorsanız, [ayarlarınızı Azure Portal geçirin](#migrate-update-settings-to-the-azure-portal).
-
-
 ## <a name="windows-10-update-rings"></a>Windows 10 güncelleştirme halkaları
 
 Windows 10 cihazlarınızı özellik ve kalite güncelleştirmeleriyle nasıl ve ne zaman güncelleştirmelerini belirten güncelleştirme halkaları oluşturun. Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. En son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
@@ -93,7 +90,7 @@ Windows 10 güncelleştirme halkaları [kapsam etiketlerini](../fundamentals/sco
 
    Hazırlandığınızda, *atamalara*devam etmek için **İleri** ' yi seçin.
 
-6. **Atamalar**' ın altında **+ dahil edilecek grupları seçin** ve ardından güncelleştirme halkasını bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için **+ Select grupları** kullanın. Devam etmek için **İleri**’yi seçin.
+6. **Atamalar**' ın altında **+ dahil edilecek grupları seçin** ve ardından güncelleştirme halkasını bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için **+ Select grupları** kullanın. Devam etmek için **İleri ' yi** seçin.
 
 7. **Gözden geçir + oluştur**bölümünde ayarları gözden geçirin ve ardından Windows 10 güncelleştirme halkasını kaydetmeye hazırsanız **Oluştur** ' u seçin. Yeni güncelleştirme halkalarınız, güncelleştirme halkaları listesinde görüntülenir.
 
@@ -105,9 +102,9 @@ Bu sayfadan, halkalar atama durumunu görüntüleyebilir ve güncelleştirme hal
 
 - [Sil](#delete)
 - [Tamazsınız](#pause)
-- [Resume](#resume)
+- [Bilmeniz](#resume)
 - [Genişletmeyi](#extend)
-- [Kaldır](#uninstall)
+- [Kaldırma](#uninstall)
 
 ![Kullanılabilir eylemler](./media/windows-update-for-business-configure/overview-actions.png)
 
@@ -227,7 +224,7 @@ Bir cihaz Windows 10 özellik güncelleştirmeleri ilkesi aldığında:
 
 3. **Temel bilgiler**altında bir ad, açıklama (isteğe bağlı) belirtin ve **dağıtılacak Özellik Güncelleştirmesi**için, istediğiniz özellik kümesiyle Windows sürümünü seçin ve ardından **İleri**' yi seçin.
 
-4. **Atamalar**' ın altında **+ dahil edilecek grupları seçin** ve ardından güncelleştirme halkasını bir veya daha fazla gruba atayın. Devam etmek için **İleri**’yi seçin.
+4. **Atamalar**altında **+ dahil edilecek grupları seç** ' i seçin ve ardından özellik güncelleştirme dağıtımını bir veya daha fazla gruba atayın. Devam etmek için **İleri ' yi** seçin.
 
 5. **Gözden geçir + oluştur**altında, ayarları gözden geçirin ve Windows 10 özellik güncelleştirmeleri ilkesini kaydetmeye hazırsanız **Oluştur** ' u seçin.  
 
@@ -240,17 +237,6 @@ Bu bölmeden şunları yapabilirsiniz:
 - İlkeyi Intune 'dan silmek ve cihazlardan kaldırmak için **Sil** ' i seçin.
 - Dağıtımı değiştirmek için **Özellikler** ' i seçin.  *Özellikler* bölmesinde, dağıtım *ayarları veya atamalar*' ı açmak için **Düzenle** ' yi seçin, burada dağıtımı değiştirebilirsiniz.
 - İlke hakkındaki bilgileri görüntülemek için **Son Kullanıcı güncelleştirme durumu** ' nu seçin.
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Güncelleştirme ayarlarını Azure portal geçirme
-
-Ayrıca Azure klasik portalındaki cihaz yapılandırma profilinde de sınırlı sayıda Windows 10 güncelleştirme ayarı bulunur. Azure portal geçiş yaparken bu ayarlardan herhangi biri yapılandırılırsa, aşağıdaki eylemleri yapmanızı kesinlikle öneririz:
-
-1. Azure portalında ihtiyaç duyduğunuz ayarlara sahip Windows 10 güncelleştirme kademeleri oluşturun. **Yayın öncesi özelliklere izin ver** ayarı, en son Windows 10 derlemelerinde geçerli olmadığından Azure portal’da desteklenmez. Güncelleştirme halkaları oluştururken diğer üç ayarı ve diğer Windows 10 güncelleştirme ayarlarını yapılandırabilirsiniz.
-
-   > [!NOTE]
-   > Klasik portalda oluşturulan Windows 10 güncelleştirme ayarları geçişten sonra Azure portalında görüntülenmez. Ancak bu ayarlar uygulanır. Bu ayarlardan herhangi birini geçirir ve geçirilen ilkeyi Azure portalından düzenlerseniz söz konusu ayarlar ilkeden kaldırılır.
-
-2. Güncelleştirme ayarlarını klasik portaldan silin. Azure portalına geçiş yaptıktan ve aynı ayarları bir güncelleştirme halkasına ekledikten sonra, olası ilke çakışmalarını önlemek için ayarları klasik portalda silmeniz gerekir. Örneğin, aynı ayar farklı değerlerle yapılandırıldığında bir çakışma vardır. Klasik portalda yapılandırılan ayar Azure portal görüntülenmediğinden, bildiğiniz kolay bir yol yoktur.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

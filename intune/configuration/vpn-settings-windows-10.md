@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122872eff92a37c8724fd4a853091e51a0a54c66
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506536"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207069"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Intune kullanarak VPN bağlantıları eklemek için Windows 10 ve Windows holographic cihaz ayarları
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune kullanarak aygıtlar için VPN bağlantıları ekleyebilir ve yapılandırabilirsiniz. Bu makalede, sanal özel ağlar (VPN 'Ler) oluştururken yaygın olarak kullanılan ayarlar ve özellikler listelenmiştir ve açıklanmaktadır. Bu VPN ayarları ve özellikleri, Intune 'da gönderilen veya cihazlara dağıtılan cihaz yapılandırma profillerinde kullanılır.
 
@@ -125,7 +125,7 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
 
 - **Bu VPN bağlantısı Için koşullu erişim**: istemciden cihaz uyumluluk akışını mümkün olarak sunar. Etkinleştirildiğinde, VPN istemcisi kimlik doğrulama için kullanmak üzere bir sertifika almak için Azure Active Directory (AD) ile iletişim kurar. VPN’nin sertifika kimlik doğrulamasını kullanacak şekilde ayarlanmış olması ve VPN sunucusunun Azure AD tarafından döndürülen sunucuya güvenmesi gerekir.
 
-- **Alternatif sertifika ile çoklu oturum açma (SSO)** : Cihaz uyumluluğu amacıyla Kerberos kimlik doğrulaması için VPN kimlik doğrulama sertifikasından farklı bir sertifika kullanın. Aşağıdaki ayarlarla sertifikayı girin:
+- **Alternatif sertifika ile çoklu oturum açma (SSO)**: Cihaz uyumluluğu amacıyla Kerberos kimlik doğrulaması için VPN kimlik doğrulama sertifikasından farklı bir sertifika kullanın. Aşağıdaki ayarlarla sertifikayı girin:
 
   - **Ad**: Genişletilmiş anahtar kullanımı (EKU) adı
   - **Nesne Tanımlayıcısı**: EKU için nesne tanımlayıcısı
@@ -177,7 +177,7 @@ Bir Kullanıcı listede bir DNS sonekine bağlıysa, Kullanıcı otomatik olarak
 
 Örneğin, Kullanıcı zaten güvenilir bir DNS sonekine bağlandıysa, aşağıdaki yeniden Tetikleyiciler yok sayılır. Özellikle, listedeki DNS sonekleri, aşağıdakiler de dahil olmak üzere tüm diğer bağlantı oto tetikleyicilerini iptal eder:
 
-- Her zaman etkin
+- Her zaman açık
 - Uygulama tabanlı tetikleyici
 - DNS oto tetikleyicisi
 

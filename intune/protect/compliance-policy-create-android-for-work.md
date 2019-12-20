@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 42127964f72177bda1808bf4b9285af52cf32b80
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810252"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303031"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz Android Kurumsal ayarları
 
@@ -56,6 +56,8 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 > [!NOTE] 
 > Aşağıdaki Mobile Threat Defence (MTD) sağlayıcıları, uygulama yapılandırması kullanılarak Android kurumsal cihaz sahibi dağıtımlarını destekler:
 > - Daha iyi mobil 
+> - Check Point SandBlast Mobile
+> - Lookout for Work
 > - Pradeo
 > - Sophos Mobile
 > - Zimperium 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: b6afd80517df3496e0c1402fc0c76f3fc24969fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946672"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206610"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -211,6 +211,7 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
   > [!NOTE]
   > Bu ayar cihaz sahibi (tam yönetilen) cihazlarda kabul edilemez. Bu ayarı yapılandırırsanız, ayar yok sayılır ve herhangi bir etkisi yoktur.
 
+- **Kullanıcı kimlik bilgilerini yapılandırabilir**: **blok** kullanıcıların cihazlara atanan sertifikaları yapılandırmalarını, hatta bir kullanıcı hesabı ile ilişkilendirilmemiş cihazları değiştirmesini engeller. **Yapılandırılmadı** , kullanıcıların anahtar deposunda bunlara erişirken kimlik bilgilerini yapılandırmasına veya değiştirmesine olanak sağlayabilir. 
 - **Kişisel Google hesapları**: **Block** , kullanıcıların kişisel Google hesabını cihaza eklemesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcıların kişisel Google hesabını eklemesine izin verir.
 
 ### <a name="applications"></a>Uygulamalar
@@ -292,6 +293,9 @@ Bu ayarlar, Intune 'un yalnızca bir kişisel veya kendi cihazındaki (BYOD) And
 
 - **Hesap ekleme ve kaldırma**: seçin **blok** son kullanıcıların, el ile eklemek veya iş profilinde hesaplarının kaldırılmasını önlemek için. Örneğin, Gmail uygulamasını bir Android iş profiline dağıttığınızda, son kullanıcıların bu iş profiline hesap eklemesini veya buradan kaldırmasını engelleyebilirsiniz. **Yapılandırılmamış** iş profilinde hesap ekleme sağlar.  
 
+  > [!NOTE]
+  > Google hesapları bir iş profiline eklenemez.
+
 - **Bluetooth ile kişi paylaşımı**: Bluetooth kullanarak eşleştirilmiş bir cihazdan, örneğin araba, iş kişilerine erişime izin verir. Bu ayar varsayılan olarak yapılandırılmamıştır ve iş profili kişileri gösterilmez. Bu paylaşıma izin verip iş profili kişilerini görüntülemek için **Etkinleştir**’i seçin. Bu ayar, Android OS v6.0 ve üzeri sürümlerde Android iş profili cihazları için geçerlidir. Bu ayarı etkinleştirmek, bazı Bluetooth cihazlarının ilk bağlantı sırasında iş kişilerini önbelleğe almasına izin verebilir. İlk eşleme/eşitleme sonrasına bunu devre dışı bırakmak ise Bluetooth cihazından iş kişilerini kaldırmayabilir.
 
 - **Ekran Yakalama**: seçin **blok** iş profili olan cihazlarda ekran veya ekran görüntüleri önlemek için. Ayrıca güvenli bir video çıkışına sahip olmayan görüntü cihazlarında gösterilen içeriği engeller. **Yapılandırılmamış** ekran görüntüleri alma sağlar.
@@ -312,7 +316,7 @@ Bu ayarlar, Intune 'un yalnızca bir kişisel veya kendi cihazındaki (BYOD) And
 - **En düşük parola uzunluğu**: Kullanıcı parolalarında olması gereken en düşük rakam veya karakter sayısını **4**-**16** arasından belirtin.
 - **İş profili kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: İş profili kilitlenmeden önce geçmesi gereken süreyi seçin. Daha sonra kullanıcının kimlik bilgilerini girerek tekrar erişim kazanması gerekir.
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: İş profili cihazdan silinmeden önce girilebilecek hatalı parola sayısını girin.
-- **Parola kullanım süresi sonu (gün)** : Son kullanıcı parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını girin (**1**-**255** arası).
+- **Parola kullanım süresi sonu (gün)**: Son kullanıcı parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını girin (**1**-**255** arası).
 - **Gerekli parola türü**: Cihazda ayarlanması gereken parola türünü seçin. Aşağıdakilerden birini seçin:
   - **Cihaz varsayılanı**
   - **Düşük güvenlik biyometriği**
@@ -333,7 +337,7 @@ Bu parola ayarlar, bir iş profili kullanan cihazlardaki kişisel profiller içi
 - **En düşük parola uzunluğu**: Kullanıcı parolalarında olması gereken en düşük rakam veya karakter sayısını **4**-**14** arasından belirtin.
 - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**: Etkin olmayan bir cihaz otomatik olarak kilitlenmeden önce geçmesi gereken süreyi seçin
 - **Cihaz silinmeden önceki oturum açma hatası sayısı**: Tüm veriler cihazdan silinmeden önce girilebilecek hatalı parola sayısını girin
-- **Parola kullanım süresi sonu (gün)** : Son kullanıcı parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını girin (**1**-**255** arası)
+- **Parola kullanım süresi sonu (gün)**: Son kullanıcı parolasının değiştirilmesi gerekmeden önce geçmesi gereken gün sayısını girin (**1**-**255** arası)
 - **Gerekli parola türü**: Cihazda ayarlanması gereken parola türünü seçin. Aşağıdakilerden birini seçin:
   - **Cihaz varsayılanı**
   - **Düşük güvenlik biyometriği**

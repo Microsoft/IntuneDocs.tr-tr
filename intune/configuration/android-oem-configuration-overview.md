@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e514c10ea61bb12ef3c4626b077aa105b66866f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390834"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206882"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune 'de OEMConfig ile Android kurumsal cihazlarını kullanma ve yönetme
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune 'de, Android Kurumsal cihazları için OEM 'e özgü ayarları eklemek, oluşturmak ve özelleştirmek üzere OEMConfig ' i kullanabilirsiniz. OEMConfig, genellikle Intune 'da yerleşik olmayan ayarları yapılandırmak için kullanılır. Farklı orijinal ekipman üreticileri (OEM) farklı ayarlar içerir. Kullanılabilir ayarlar, OEM 'lerin OEMConfig uygulamasında neleri içerdiğine bağlıdır.
 

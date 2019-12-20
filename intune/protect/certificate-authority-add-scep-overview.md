@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74540809"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206066"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP kullanarak Intune'da iş ortağı sertifika yetkilisi ekleme
 
@@ -72,7 +72,7 @@ Aşağıdaki diyagramda Intune'la üçüncü taraf SCEP tümleştirmesinin ayrı
 
 Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emin olun. Azure AD belgelerinde [gerekli izinlere](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions)bakın.
 
-#### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory’de uygulama oluşturma  
+#### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory bir uygulama oluşturma  
 
 1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **uygulama kayıtları**' na gidin ve ardından **Yeni kayıt**' ı seçin.  
 
@@ -89,7 +89,7 @@ Azure AD uygulamasını kaydetmek için gerekli izinlere sahip olduğunuzdan emi
    > [!IMPORTANT]  
    > Bu sayfadan ayrılmadan önce, istemci sırrı için değeri kopyalayın ve daha sonra üçüncü taraf CA uygulamanız ile kullanmak üzere kaydedin. Bu değer bir daha gösterilmez. Üçüncü taraf sertifika yetkilinizin kılavuzunu, uygulama KIMLIĞI, kimlik doğrulama anahtarı ve kiracı KIMLIĞI 'nin nasıl yapılandırılacağını istediğlerine göre gözden geçirdiğinizden emin olun.  
 
-6. **KIRACı kimliğinizi**kaydedin. Kiracı KIMLIĞI, hesabınızdaki @ işaretinden sonra gelen etki alanı metindir. Örneğin, hesabınız *admin@name.onmicrosoft.com* , kiracı kimliğiniz **Name.onmicrosoft.com**olur.  
+6. **KIRACı kimliğinizi**kaydedin. Kiracı KIMLIĞI, hesabınızdaki @ işaretinden sonra gelen etki alanı metindir. Örneğin, hesabınız *admin@name.onmicrosoft.com*, kiracı kimliğiniz **Name.onmicrosoft.com**olur.  
 
 7. Uygulamanın gezinti bölmesinde, **Yönet**' ın altındaki **API izinleri** ' ne gidin ve **izin Ekle**' yi seçin.  
 
@@ -119,7 +119,7 @@ Cihazın kaydını kaldırdığınızda veya cihazı temizlediğinizde, sertifik
 ## <a name="third-party-certification-authority-partners"></a>Üçüncü taraf kök sertifika yetkilisi iş ortakları
 Aşağıdaki üçüncü taraf sertifika yetkilileri Intune'u destekler:
 
-- [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
+- [Entrust Datacard](https://go.entrustdatacard.com/pki/intune/)
 - [EJBCA GitHub açık kaynak sürümü](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)

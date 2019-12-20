@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563391"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206916"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Öğretici: EMM ve uygulama yapılandırması için Intune 'U kullanmak üzere bolluk yapılandırma
 
@@ -48,32 +48,31 @@ Ayrıca, bir [bolluk kurumsal kılavuz](https://get.slack.help/hc/articles/36000
 [Bolluk yönergelerini](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm) Izleyerek bolluk kurumsal kılavuz PLANıNıZ için EMM 'yi açın ve kılavuz planınızın kimlik sağlayıcısı (IDP) olarak [Azure Active Directory bağlayın](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) .
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
-[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da Genel Yönetici veya Intune Hizmet Yöneticisi olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
+[Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) genel yönetici veya Intune Hizmet Yöneticisi olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>İOS cihazlarında EMM için bolluk ayarlama
 Kuruluşunuzun iOS kullanıcılarının bir EMM sağlayıcısı olarak Intune ile bolluk 'e erişmesini sağlamak için, bir uygulama yapılandırma ilkesi oluşturmak üzere EMM için iOS uygulama bolluğu ' ni ekleyin.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Intune 'a EMM için bolluk ekleme
 EMM için, Intune 'da yönetilen bir iOS uygulaması olarak bolluk ekleyin ve bolluk kullanıcılarınızı atayın. Uygulamalar platforma özgüdür, bu nedenle Android cihazlarda bolluk kullanıcılarınız için ayrı bir Intune uygulaması eklemeniz gerekir.
-1. Intune 'da, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin.
-2. Uygulama türü altında **mağaza app-iOS**' ı seçin.
-3. **App Store’da Ara**’yı seçin. "EMM için bolluk" arama terimini girin ve uygulamayı seçin.
-4. **Uygulama bilgileri** ' ni seçin ve tüm değişiklikleri uygun gördüğünüz şekilde yapılandırın.
-5. **Ekle**’yi seçin.
-6. Arama çubuğuna "EMM için bolluk" yazın ve yeni eklediğiniz uygulamayı seçin.
-7. Yönet ' den **atamalar**' ı seçin.
-8. **Grup Ekle**' yi seçin. Bolluk için EMM 'i açtığınızda kimin etkilenmesini seçtiğinize bağlı olarak, **atama türü** altında şunları seçebilirsiniz:
+1. Yönetim merkezinde, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin.
+2. **Uygulama türü**altında **iOS** Mağazası uygulamasını seçin.
+3. **App Store’da Ara**’yı seçin. "EMM için bolluk" arama terimini girin ve uygulamayı seçin. **App Store 'Da ara** bölmesinde **Seç** ' e tıklayın.
+4. **Uygulama bilgileri** ' ni seçin ve tüm değişiklikleri uygun gördüğünüz şekilde yapılandırın. Uygulama bilgilerinizi ayarlamak için **Tamam ' ı** seçin.
+5. **Ekle**'ye tıklayın.
+6. **Atamalar**’ı seçin.
+7. **Grup ekle**’ye tıklayın. Bolluk için EMM 'i açtığınızda kimin etkilenmesini seçtiğinize bağlı olarak, **atama türü** altında şunları seçebilirsiniz:
     - "Tüm Üyeler (konuklar dahil)" seçeneğini belirlediyseniz **Kayıtlı cihazlar Için kullanılabilir** "veya
     - "Tüm Üyeler (konukları hariç)" veya "Isteğe bağlı" seçeneğini belirlediyseniz **kayıt olmadan veya bunlarla birlikte kullanılabilir** .
-9. **Dahil edilen grupları** seçin ve bu uygulamayı tüm kullanıcılar Için kullanılabilir yap altında **Evet**' i seçin.
-10. **Tamam** ve ardından da tekrar **Tamam** öğesine tıklayın.
-11. **Kaydet**'e tıklayın.
+8. **Dahil edilen grupları** seçin ve **Bu uygulamayı tüm kullanıcılar için kullanılabilir yap** altında **Evet**' i seçin.
+9. **Tamam**' a tıklayın ve ardından grubu eklemek Için yeniden **Tamam** ' a tıklayın.
+10. **Kaydet**'e tıklayın.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>EMM için bolluk için bir uygulama yapılandırma ilkesi ekleyin
 EMM iOS için bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgüdür. bu nedenle, Android cihazlarda bolluk kullanıcılarınıza ayrı bir ilke eklemeniz gerekir.
-1. Intune 'da, **uygulama yapılandırma ilkeleri** ** >  > ** **Ekle**' yi seçin.
-2. Ad alanına bolluk uygulama yapılandırma ilkesi testi girin.
-3. Cihaz kayıt türü ' nün altında, **yönetilen cihazlar**' ı seçin.
+1. Yönetim Merkezi 'nde **uygulamalar** > **uygulama yapılandırma ilkeleri** ' ni seçin >  > **yönetilen cihaz** **ekleyin** .
+2. Ad alanına ' bolluk uygulama yapılandırma ilkesi test ' girin.
+3. Cihaz kayıt türü ' nün altında, **yönetilen cihazların** ayarlandığını onaylayın.
 4. Platform altında **iOS**' u seçin.
 5. **İlişkili uygulama**' yı seçin.
 6. Arama çubuğuna "EMM için bolluk" yazın ve uygulamayı seçin.
@@ -86,7 +85,7 @@ EMM iOS için bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetile
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>Seçim İOS cihaz uyumluluk ilkesi oluşturma
 Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune cihaz uyumluluk ilkesi ayarlayın. Bu öğreticide iOS cihazlar için bir cihaz uyumluluk ilkesi oluşturacağız. Uyumluluk ilkeleri platforma özgüdür, bu nedenle Android cihazlarda bolluk kullanıcılarınız için ayrı bir ilke oluşturmanız gerekir.
-1. Intune’da **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**’u seçin.
+1. Yönetim merkezinde, **Ilke oluştur** > **cihaz uyumluluk** > **ilkeleri** ' ni seçin.
 2. Ad alanına "iOS uyumluluk ilkesi sınaması" yazın.
 3. Açıklama ' da "iOS uyumluluk ilkesi sınaması" yazın.
 4. Platform altında **iOS**' u seçin.
@@ -117,7 +116,7 @@ Intune 'da bir yönetilen Google Play uygulaması olarak bolluk ekleyin ve bollu
     - "Tüm Üyeler (konuklar dahil)" seçeneğini belirlediyseniz **Kayıtlı cihazlar Için kullanılabilir** "veya
     - "Tüm Üyeler (konukları hariç)" veya "Isteğe bağlı" seçeneğini belirlediyseniz **kayıt olmadan veya bunlarla birlikte kullanılabilir** .
 8. Dahil edilen grupları seçin ve bu uygulamayı tüm kullanıcılar için kullanılabilir yap altında **Evet**' i seçin.
-9. **Tamam** ve ardından da tekrar **Tamam** öğesine tıklayın.
+9. **Tamam**' a ve ardından yeniden **Tamam** ' a tıklayın.
 10. **Kaydet**'e tıklayın.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Bolluk için bir uygulama yapılandırma ilkesi ekleyin
@@ -151,7 +150,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
     - Parola istenmeden önce ekran kilitlenmesinden sonra geçen en uzun dakika için **15 dakika**seçin.
     - Parola kullanım süresi (gün) için 41 girin.
     - Yeniden kullanılmasını önleyen önceki parolaların sayısı için 5 girin.
-8. **Tamam** ve ardından da tekrar **Tamam** öğesine tıklayın.
+8. **Tamam**' a ve ardından yeniden **Tamam** ' a tıklayın.
 9. **Oluştur**'a tıklayın.
 
 ## <a name="launch-slack"></a>Başlatma bolluğu

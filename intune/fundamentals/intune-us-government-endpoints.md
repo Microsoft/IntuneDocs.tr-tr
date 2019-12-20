@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000406"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207392"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune için ABD devlet uç noktaları
 
@@ -37,6 +37,8 @@ Güvenlik duvarı ve ara sunucular arkasındaki cihazları yönetmek için Intun
 Ara sunucu ayarlarını istemci bilgisayarlardan değiştirebilirsiniz. Belirtilen ara sunucu arkasında yer alan tüm istemci bilgisayarların ayarlarını değiştirmek için Grup İlkesi ayarlarını da kullanabilirsiniz.
 
 Yönetilen cihazlar, **Tüm Kullanıcıların** güvenlik duvarları üzerinden hizmetlere erişmesine izin veren yapılandırmalar gerektirir.
+
+ABD kamu müşterileri için Windows 10 otomatik kaydı ve cihaz kaydı hakkında daha fazla bilgi için bkz. [Windows cihazları için kayıt ayarlama](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration).
 
 Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hizmetler listelenir:
 
@@ -63,7 +65,7 @@ Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune tarafından yönetil
 
 ## <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
 
-|**İçin kullanılan**|**Ana bilgisayar adı (IP adresi/alt ağ)**|**Protokolü**|**Bağlantı noktası**|
+|**İçin kullanılan**|**Ana bilgisayar adı (IP adresi/alt ağ)**|**Protokolü**|**Bağ**|
 |------------|-----------|------------|-----------|
 |Apple sunucularından içerik alma ve görüntüleme|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|istemcileri iki protokolü de kullandığından, proxy sunucusu hem|80|
 |APNS sunucularıyla iletişim|#-courier.push.apple.com<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|TCP|5223 ve 443|
@@ -78,4 +80,3 @@ Daha fazla bilgi için bkz.:
 ## <a name="next-steps"></a>Sonraki adımlar
 [Microsoft Intune için ağ uç noktaları](intune-endpoints.md)
 
-[Windows 10 otomatik kayıt ve cihaz kaydı](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

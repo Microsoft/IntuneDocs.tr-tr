@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe2377bfd353dc00ddfdf53a6d091c486644194
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d0ef42e301efe2c323ea98265272ba71596a8083
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059369"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206406"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune - Genel önizleme’de eSIM hücresel profilleri yapılandırma
 
@@ -66,12 +66,12 @@ Aşağıdaki cihazların eSIM özellikli olduğu bildirilmiştir ve bugün satı
 - HP Spectre Folio 13
 - Lenovo Yoga C630
 
-## <a name="step-1-add-cellular-activation-codes"></a>1\. Adım: Hücresel etkinleştirme kodlarını ekleme
+## <a name="step-1-add-cellular-activation-codes"></a>1. Adım: Hücresel etkinleştirme kodlarını ekleme
 
 Hücresel etkinleştirme kodları cep telefonu operatörünüz tarafından virgülle ayrılmış bir dosyada (csv) sağlanır. Bu dosyayı aldığınızda aşağıdaki adımları izleyerek Intune’a ekleyin:
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-2.  >  ** > ** Ekle ' yi seçin.
+2.  > ** > ** Ekle **** ' yi seçin. ****
 3. Etkinleştirme kodlarınızı içeren CSV dosyasını seçin.
 4. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
 
@@ -95,11 +95,11 @@ Etkinleştirme kodlarını içeren csv dosyasıyla çalışırken cep telefonu o
 
         ![Cep telefonu operatörü etkinleştirme kodunun örnek csv dosyası](./media/esim-device-configuration/url-activation-code-examples.png)
 
-3. CSV dosyasının adı Azure portalında hücresel abonelik havuzunun adı olur. Önceki görüntüde dosya adı `UnlimitedDataSkynet.csv`‘dir. Bu nedenle Intune `UnlimitedDataSkynet.csv` abonelik havuzunu adlandırır:
+3. CSV dosya adı, Endpoint Manager Yönetim merkezinde hücresel abonelik havuzu adı olur. Önceki görüntüde dosya adı `UnlimitedDataSkynet.csv`‘dir. Bu nedenle Intune `UnlimitedDataSkynet.csv` abonelik havuzunu adlandırır:
 
     ![Hücresel abonelik havuzu, etkinleştirme kodu örneği csv dosya adını alır](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 
-## <a name="step-2-create-an-azure-ad-device-group"></a>2\. Adım: Azure AD cihazı grubunu oluşturma
+## <a name="step-2-create-an-azure-ad-device-group"></a>2. Adım: Azure AD cihazı grubunu oluşturma
 
 eSIM özellikli cihazları içeren bir Cihaz grubu oluşturun. [Grup ekleme](../fundamentals/groups-add.md) altında adımlar listelenir.
 
@@ -107,7 +107,7 @@ eSIM özellikli cihazları içeren bir Cihaz grubu oluşturun. [Grup ekleme](../
 > - Yalnızca cihazlar hedeflenir: kullanıcılar hedeflenmez.
 > - eSIM cihazlarınızı içeren bir statik Azure AD cihazı grubu oluşturmanızı öneririz. Grup kullanarak, yalnızca eSIM cihazlarını hedefleyebilirsiniz.
 
-## <a name="step-3-assign-esim-activation-codes-to-devices"></a>3\. Adım: Cihazlara eSIM etkinleştirme kodları atama
+## <a name="step-3-assign-esim-activation-codes-to-devices"></a>3. Adım: Cihazlara eSIM etkinleştirme kodları atama
 
 eSIM cihazlarınızı içeren Azure AD grubuna profili atayın.
 
@@ -123,7 +123,7 @@ eSIM cihazlarınızı içeren Azure AD grubuna profili atayın.
 
 eSIM etkinleştirme kodları tek bir kez kullanılır. Intune bir cihaza etkinleştirme kodu yüklerse eSIM modülü hücresel profili indirmek için cep telefonu operatörüyle iletişim kurar. Bu iletişimle, cihazı cep telefonu operatörü ağına kaydetme işlemi tamamlanır.
 
-## <a name="step-4-monitor-deployment"></a>4\. Adım: Dağıtımı izleme
+## <a name="step-4-monitor-deployment"></a>4. Adım: Dağıtımı izleme
 
 ### <a name="review-the-deployment-status"></a>Dağıtım durumunu gözden geçirme
 

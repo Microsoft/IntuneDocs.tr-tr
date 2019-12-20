@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b25b761b3857fdf91bbbe827d288d09e350a1a7a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415016"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206100"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Kullanıcı ekleme ve Intune'a yönetici izni verme
 
@@ -57,22 +57,20 @@ Intune aboneliğinize [Microsoft 365 yönetim merkezi](https://admin.microsoft.c
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Azure portalında Intune kullanıcıları ekleme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Kullanıcılar** > **Tüm kullanıcılar**'ı seçin.
-3. Yönetim merkezinde **Yeni kullanıcı**’yı seçin.
-   ![Yeni Kullanıcı ekle için ekran görüntüsü](./media/users-add/intune-add-user.png)
-4. Kullanıcıya ait şu ayrıntıları belirtin:
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **Kullanıcılar** > **tüm kullanıcılar**' ı seçin.
+2. Yönetim merkezinde **Yeni kullanıcı**’yı seçin.
+3. Kullanıcıya ait şu ayrıntıları belirtin:
    - **Ad**
    - **Kullanıcı adı** - Azure Active Directory portalındaki yeni ad ![Ad ve kullanıcı adı ekleme için ekran görüntüsü](./media/users-add/intune-add-user-info.png) Devam etmek için **Tamam**’ı seçin.
-5. İsteğe bağlı olarak, aşağıdaki kullanıcı özelliklerini de belirtebilirsiniz:
+4. İsteğe bağlı olarak, aşağıdaki kullanıcı özelliklerini de belirtebilirsiniz:
    - **Profil** - **İş unvanı** ve **Departman** dahil olmak üzere iş bilgileri
    - **Gruplar** - Kullanıcı için eklenecek grupları seçin
    - **Dizin rolü** - Kullanıcıya, Intune hizmet yöneticisi rolü dahil olmak üzere yönetim izinleri verin.
 
    Yeni kullanıcıyı Intune’a eklemek için **Oluştur**’u seçin.
-6. **Profil**’i seçin, daha sonra yeni kullanıcı için bir **Kullanım konumu** seçin. Yeni kullanıcıya bir Intune lisansı atayabilmeniz için kullanım konumu gerekir. Devam etmek için **Kaydet**’i seçin.
+5. **Profil**’i seçin, daha sonra yeni kullanıcı için bir **Kullanım konumu** seçin. Yeni kullanıcıya bir Intune lisansı atayabilmeniz için kullanım konumu gerekir. Devam etmek için **Kaydet**’i seçin.
     ![Kullanım konumunun ekran görüntüsü](./media/users-add/intune-add-user-loc.png)
-7. Bu kullanıcıya bir Intune lisansı atamak için **Lisanslar**’ı, ardından **Ata**’yı seçin. Cihazları kaydetmek veya şirket kaynaklarına erişmek için bir Intune lisansı gerekir. Sırasıyla **Ürünler**, lisans türü, **Seç** ve **Ata**’yı seçin.
+6. Bu kullanıcıya bir Intune lisansı atamak için **Lisanslar**’ı, ardından **Ata**’yı seçin. Cihazları kaydetmek veya şirket kaynaklarına erişmek için bir Intune lisansı gerekir. Sırasıyla **Ürünler**, lisans türü, **Seç** ve **Ata**’yı seçin.
 
 ## <a name="grant-admin-permissions"></a>Yönetim izinleri verme
 

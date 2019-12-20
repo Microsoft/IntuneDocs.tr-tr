@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445331"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207221"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Microsoft Intune ' de türetilmiş kimlik bilgilerini kullan
 
@@ -160,28 +160,30 @@ Türetilmiş kimlik bilgilerini elde etmek için kullandığınız bir işleme e
 
 Türetilmiş bir kimlik bilgisinin kullanılması gereken ilkeler oluşturmadan önce, Intune konsolunda bir kimlik bilgisi veren ayarlayın. Türetilmiş bir kimlik bilgisi veren, kiracı genelinde bir ayardır. Kiracılar aynı anda yalnızca tek bir veren destekler.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **türetilmiş kimlik bilgileri** > **cihaz yapılandırması** ' na gidin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Kiracı yönetimi** > **bağlayıcılar ve belirteçler** > **türetilmiş kimlik bilgileri**' ni seçin.
 
-   ![Konsolundaki türetilmiş kimlik bilgilerini yapılandırma](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![, konsolunda türetilen kimlik bilgilerini yapılandırmak](./media/derived-credentials/configure-provider.png)
 
-2. Türetilmiş kimlik bilgisi veren ilkesi için kolay bir **görünen ad** belirtin.  Bu ad, cihaz kullanıcılarınıza gösterilmez.
+3. Türetilmiş kimlik bilgisi veren ilkesi için kolay bir **görünen ad** belirtin.  Bu ad, cihaz kullanıcılarınıza gösterilmez.
 
-3. **Türetilmiş kimlik bilgisi veren**için, kiracınız için seçtiğiniz türetilmiş kimlik bilgisi verenini seçin:
+4. **Türetilmiş kimlik bilgisi veren**için, kiracınız için seçtiğiniz türetilmiş kimlik bilgisi verenini seçin:
    - DıŞA purebred
    - Entrust Datacard
    - Intercede  
 
-4. Kullanıcıların kuruluşunuz için türetilmiş kimlik bilgilerini elde etmenize yardımcı olacak özel yönergeler içeren bir konum bağlantısı sağlamak için **türetilmiş bir kimlik bilgisi yardım URL 'si** belirtin. Yönergeler kuruluşunuza ve seçtiğiniz sertifika vereninizden bir kimlik bilgisi almak için gereken iş akışına özgü olmalıdır. Bağlantı Şirket Portalı uygulamasında görüntülenir ve cihazdan erişilebilir olmalıdır.
+5. Kullanıcıların kuruluşunuz için türetilmiş kimlik bilgilerini elde etmenize yardımcı olacak özel yönergeler içeren bir konum bağlantısı sağlamak için **türetilmiş bir kimlik bilgisi yardım URL 'si** belirtin. Yönergeler kuruluşunuza ve seçtiğiniz sertifika vereninizden bir kimlik bilgisi almak için gereken iş akışına özgü olmalıdır. Bağlantı Şirket Portalı uygulamasında görüntülenir ve cihazdan erişilebilir olmalıdır.
 
    Kendi URL 'nizi belirtmezseniz, Intune tüm senaryoları kapsaymamakta olan genel ayrıntılara bir bağlantı sağlar. Bu genel kılavuz, ortamınız için doğru olmayabilir.
 
-5. **Bildirim türü**için bir veya daha fazla seçenek belirleyin. Bildirim türleri, kullanıcıları aşağıdaki senaryolar hakkında bilgilendirmek için kullandığınız yöntemlerdir:
+6. **Bildirim türü**için bir veya daha fazla seçenek belirleyin. Bildirim türleri, kullanıcıları aşağıdaki senaryolar hakkında bilgilendirmek için kullandığınız yöntemlerdir:
 
    - Yeni bir türetilmiş kimlik bilgisi almak için bir cihazı veren ile kaydedin.
    - Geçerli kimlik bilgisi sona ermeden yeni bir türetilmiş kimlik bilgisi alın.
    - Wi-Fi, VPN, e-posta veya uygulama kimlik doğrulaması ve S/MIME imzalama ve şifreleme için bir ilkeyle türetilmiş bir kimlik bilgisi kullanın.
 
-6. Hazırlandığınızda, türetilmiş kimlik bilgisi verenin yapılandırmasını tamamladıktan sonra **Kaydet** ' i seçin.
+7. Hazırlandığınızda, türetilmiş kimlik bilgisi verenin yapılandırmasını tamamladıktan sonra **Kaydet** ' i seçin.
 
 Yapılandırmayı kaydettikten sonra, *türetilmiş kimlik bilgisi veren*hariç tüm alanlarda değişiklik yapabilirsiniz.  Sertifikayı veren değiştirmek için bkz. [türetilmiş kimlik bilgisi vereni değiştirme](#change-the-derived-credential-issuer).
 
@@ -203,7 +205,7 @@ Uygulamayı Intune ile dağıtmaya ek olarak, DıŞA Popurebred uygulaması içi
 
 Aşağıdaki profil türleri ve amaçları için **türetilmiş kimlik bilgilerini** belirtebilirsiniz:
 
-- [Uygulamalar](#use-derived-credentials-for-app-authentication)
+- [Uygulamaları](#use-derived-credentials-for-app-authentication)
 - [E-posta](../configuration/email-settings-ios.md)
 - [VPN](../configuration/vpn-settings-ios.md)
 - [S/MIME imzalama ve şifreleme](certificates-s-mime-encryption-sign.md)
@@ -216,19 +218,20 @@ Aşağıdaki profil türleri ve amaçları için **türetilmiş kimlik bilgileri
 
 ### <a name="use-derived-credentials-for-app-authentication"></a>Uygulama kimlik doğrulaması için türetilmiş kimlik bilgilerini kullan
 
-Web siteleri ve uygulamalarına sertifika tabanlı kimlik doğrulaması için türetilmiş kimlik bilgilerini kullanın. Uygulama kimlik doğrulaması için türetilmiş bir kimlik bilgisi teslim etmek üzere Intune konsolunda aşağıdaki adımları uygulayın:  
+Web siteleri ve uygulamalarına sertifika tabanlı kimlik doğrulaması için türetilmiş kimlik bilgilerini kullanın. Uygulama kimlik doğrulaması için türetilmiş bir kimlik bilgisi teslim etmek için:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz yapılandırma** > **profiller** ' e gidin ve **Profil oluştur**' u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
+3. Aşağıdaki ayarları girin:
 
-2. **Ad**' ın altındaki profil için bir kolay ad girin.
+    - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı, **iOS cihazlar profili Için türetilmiş kimlik bilgileridir**.
+    - **Açıklama**: Ayara genel bir bakış sağlayan ve diğer önemli ayrıntıları veren bir açıklama girin.
+    - **Platform**: **IOS/ıpados**' ı seçin.
+    - **Profil türü**: **türetilmiş kimlik bilgilerini**seçin.
 
-3. **Platform** olarak **iOS**’u seçin.
-
-4. **Profil türü**için **türetilmiş kimlik bilgisi**' ni seçin.
-
-5. **Tamam** ' ı seçin ve ardından **Oluştur**' a tıklayın.
-
-6. Hangi grupların ilkeyi alacağını seçmek için **atamalar** ' ı seçin.
+4. Değişikliklerinizi kaydetmek için **Tamam**’ı seçin.
+5. İşiniz bittiğinde, Intune profilini oluşturmak için **tamam** > **Oluştur** ' u seçin. Bu tamamlandığında, profiliniz **cihazlar-yapılandırma profilleri** listesinde gösterilir.
+6. Yeni profilinizi > **atamaları**' nı seçin. İlkeyi alması gereken grupları seçin.
  
 Kullanıcılar, türetilmiş kimlik bilgileri verenini ayarlarken belirttiğiniz ayarlara bağlı olarak uygulamayı veya e-posta bildirimini alır. Bildirim, kullanıcıdan türetilmiş kimlik bilgileri ilkelerinin işlenebilmesi için Şirket Portalı başlatması konusunda bilgilendirir.
 
@@ -252,11 +255,10 @@ Veren 'i değiştirdikten sonra kullanıcılardan yeni veren tarafından yeni bi
 > [!IMPORTANT]  
 > Sertifikayı bir veren siler ve hemen yeniden yapılandırırsanız, bu veren 'ten türetilmiş kimlik bilgilerini kullanmak için profilleri ve cihazları yine de güncelleştirmeniz gerekir. Veren silinmeden önce elde edilen türetilmiş kimlik bilgileri artık geçerli değil.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **türetilmiş kimlik bilgileri** > **cihaz yapılandırması** ' na gidin.
-
-2. Geçerli türetilmiş kimlik bilgisi verenini kaldırmak için **Sil** ' i seçin.
-
-3. Yeni bir veren yapılandırın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Kiracı yönetimi** > **bağlayıcılar ve belirteçler** > **türetilmiş kimlik bilgileri**' ni seçin.
+3. Geçerli türetilmiş kimlik bilgisi verenini kaldırmak için **Sil** ' i seçin.
+4. Yeni bir veren yapılandırın.
 
 ### <a name="update-profiles-that-use-derived-credentials"></a>Türetilmiş kimlik bilgilerini kullanan profilleri güncelleştirme
 
@@ -268,4 +270,4 @@ Bir veren sildikten sonra yeni bir tane ekledikten sonra cihaz kullanıcıları 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Cihaz yapılandırma profilleri oluşturma](../configuration/device-profile-create.md)
+[Cihaz yapılandırma profilleri oluşturun](../configuration/device-profile-create.md).

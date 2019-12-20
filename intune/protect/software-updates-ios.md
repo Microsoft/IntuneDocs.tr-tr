@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984189"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207494"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune 'A iOS yazılım güncelleştirme ilkeleri ekleme
 
@@ -32,8 +32,8 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Bir güncelleştirme varsa, cihaz, k
 
 ## <a name="configure-the-policy"></a>İlkeyi yapılandırma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Yazılım güncelleştirilmeleri** > **iOS için güncelleştirme ilkeleri** > **Oluştur**’u seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Cihaz** seçin > **iOS için güncelleştirme ilkeleri** > **Oluştur**' a tıklayın.
 3. **Temel bilgiler** sekmesinde, bu ilke için bir ad belirtin, bir açıklama (isteğe bağlı) belirtin ve ardından **İleri**' yi seçin.
 
    ![Temel bilgiler sekmesi](./media/software-updates-ios/basics-tab.png) 
@@ -77,10 +77,10 @@ Intune destek ekibinin Kılavuzu için bkz. [denetimli cihazlar Için Intune 'da
 ## <a name="edit-a-policy"></a>Bir ilkeyi düzenleme
 Varolan bir ilkeyi, sınırlı zamanları değiştirme dahil olmak üzere düzenleyebilirsiniz:
 
-1. **Yazılım güncelleştirmeleri**' nde **iOS için güncelleştirme ilkeleri** ' ni seçin ve ardından düzenlemek istediğiniz ilkeyi seçin.
+1. **İOS Için güncelleştirme ilkelerini** > **cihazlar** ' ı seçin. Düzenlemek istediğiniz ilkeyi seçin.
 
 2. İlke **özelliklerini**görüntülerken, değiştirmek istediğiniz ilke sayfası için **Düzenle** ' yi seçin.  
-   poliie](./media/software-updates-ios/edit-policy.png) ![düzenleme   
+   ![](./media/software-updates-ios/edit-policy.png) bir ilkeyi düzenleme   
 
 3. Bir değişikliği gönderdikten sonra, düzenlemelerinizi kaydetmek için **gözden geçir + kaydet** > **Kaydet** ' i seçin ve ilkeler *özelliklerine*geri dönün.  
  

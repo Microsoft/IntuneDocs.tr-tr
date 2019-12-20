@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cddb9b74d9132ace07c17a3156e61148b720d66
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098192"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207188"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune’da macOS cihazların kaydını ayarlama
 
@@ -78,11 +78,9 @@ Parallels Desktop kullanırsanız, Intune’un sanal makineleri tanıyabilmesi i
 VMware Fusion kullanırsanız, sanal makinenin donanım türü ve seri numarasını ayarlamak için [.vmx dosyasını düzenlemeniz](https://kb.vmware.com/s/article/1014782) gerekir. Sanal makineleri çalıştıran cihazın donanım türünü, oluşturduğunuz sanal makinelerin donanım türüyle eşleştirmenizi öneririz. Bu donanım türünü **Apple menüsü** > **Bu Mac hakkında** > **Sistem Raporu** > **Model Tanımlayıcı**’da bulabilirsiniz. 
 
 ## <a name="user-approved-enrollment"></a>Kullanıcı Onaylı kayıt
-Kullanıcı Onaylı MDM kaydı, güvenlik açısından hassas bazı ayarları yönetmek için kullanabileceğiniz bir macOS kayıt türüdür. Daha fazla bilgi için [Apple'ın destek belgelerine](https://support.apple.com/HT208019) bakın.
-
-2019 Kasım 'Dan itibaren, kullanıcının başarıyla kaydedilmesi için yönetim profilini el ile yüklemesi gerektiğinden, yeni kullanıcıya ait tüm macOS kayıtları Kullanıcı tarafından onaylanır. [Kayıt işlemi](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)sırasında Kullanıcı, Apple Yönetim profilini **Sistem Tercihleri** > **profillerine**yükler.  Yönetim profilini yüklemeye yönelik yönergeler macOS Şirket Portalı uygulamasında bulunabilir.
-
-Kullanıcı yönetim profilini el ile onaylamadıysa 2019 Kasım 'dan önce kaydedilen cihazlar Kullanıcı onaylı olmayabilir. Ancak, kullanıcılar **sistem tercihleri** > **profiller** ' e giderek yönetim profilini onaylayabilir ve > **Yönetim profilini** seçin > **Onayla**' ya tıklayın.
+Kullanıcı Onaylı MDM kaydı, güvenlik açısından hassas bazı ayarları yönetmek için kullanabileceğiniz bir macOS kayıt türüdür. Daha fazla bilgi için [Apple'ın destek belgelerine](https://support.apple.com/HT208019) bakın.  
+ 
+KCG kayıt işlemi sırasında, kullanıcıdan Apple Yönetim profilini el ile onaylaması istenir. Yönergeler macOS için Şirket Portalı uygulamasında sunulmaktadır. Kayıt işleminin tamamlanabilmesi için yönetim profili onayı gerekli olmasa da, Intune kullanıcı onaylı kayıtları önerir. Kullanıcı kayıt sırasında profili onaylamadıysanız, Kullanıcı **sistem tercihleri** > **profiller**' e gidebilir, yönetim profilini seçebilir ve **Onayla**' yı seçebilirler.    
 
 ### <a name="find-out-if-a-device-is-user-approved"></a>Bir cihazın Kullanıcı tarafından onaylanmış olup olmadığını bulma
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.

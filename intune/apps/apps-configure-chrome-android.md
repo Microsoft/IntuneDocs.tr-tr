@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c02ea34417073091e2f2841b363edfb9966ce558
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564038"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205913"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Intune kullanarak Android cihazları için Google Chrome 'U yapılandırma 
 
@@ -48,12 +48,16 @@ Intune 'a yönetilen Google Play uygulaması ekleme hakkında daha fazla bilgi i
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>Yönetilen AE cihazları için uygulama yapılandırması Ekle
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) bölmesinde, **Ekle** > **uygulama yapılandırma ilkeleri** ' ni seçin.
-2. İlke adınızı ekleyin, cihaz kayıt türü ve platform altında **Android** altında **yönetilen cihazlar** ' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nden **uygulamalar** > **uygulama yapılandırma ilkeleri** ' ni seçin >  > **yönetilen cihaz** **ekleyin** .
+2. Aşağıdaki bilgileri ayarlayın:
+    - **Ad** - Azure portalında görünen profil adı.
+    - **Açıklama** - Azure portalında görünen profil açıklaması.
+    - **Cihaz kayıt türü** -Bu ayar, **yönetilen cihazlar**olarak ayarlanır.
+    - **Platform** - **Android**' i seçin.
 
     ![Google Chrome yapılandırma ilkesi Ekle](~/apps/media/apps-configure-chrome-android/add-policy.png)
 
-3. **İlişkili uygulama** ' ya tıklayın ve **Google Chrome**' ı seçin.
+3. İlişkili **uygulama** bölmesini göstermek için **ilişkili uygulama** ' ya tıklayın. **Google Chrome**bulun ve seçin. Bu liste [, Intune ile onaylanmış ve eşitlenmiş yönetilen Google Play uygulamalarını](~/apps/apps-add-android-for-work.md)içerir.
 
     ![Ilişkili uygulama altında Google Chrome seçin](~/apps/media/apps-configure-chrome-android/associated-app.png)
 

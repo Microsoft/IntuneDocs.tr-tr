@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563618"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204910"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S modundaki cihazlarda Win32 uygulamalarını etkinleştirme
 
@@ -57,7 +57,7 @@ Win32 uygulamalarının bir Windows 10 cihazında S modunda çalışmasına izin
 
 Bir Windows 10 S modu ek ilkesi oluşturmak için aşağıdaki adımları kullanın:
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Ilke oluştur** > **uygulamalar** > **S mod ek ilkeleri** ' ni seçin.
 3. **İlke dosyasını**eklemeden önce, onu oluşturmanız ve imzalamanız gerekir. Daha fazla bilgi için bkz.:
     - [PowerShell araçlarını kullanarak bir WDAC ilkesi oluşturun ve bunu ikili biçime dönüştürün](https://go.microsoft.com/fwlink/?linkid=2095387)

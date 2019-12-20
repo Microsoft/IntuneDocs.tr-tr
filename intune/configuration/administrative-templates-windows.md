@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9b848bc3cd6461b5c31e940ffbe330bc60374795
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74547983"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206899"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune 'de Grup İlkesi ayarlarını yapılandırmak için Windows 10 şablonlarını kullanın
 
@@ -41,7 +41,7 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
 
 - Windows ayarları [Windows Ilkesi CSP 'leri](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies)kullanır. CSP 'Ler Home, Professional, Enterprise vb. gibi farklı Windows sürümlerinde çalışır. CSP 'nin belirli bir sürümde çalışıp çalışmadığını görmek için [Windows Ilke CSP 'leri](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies)' ne gidin.
 
-## <a name="create-a-template"></a>Bir şablon oluşturun
+## <a name="create-a-template"></a>Şablon oluşturma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
@@ -92,7 +92,7 @@ Bu şablonlarda yüzlerce ayar bulunur. Belirli ayarları bulmayı kolaylaştır
 
   ![Intune 'daki yönetim şablonlarında Grup İlkesi veya ADMX yolu tarafından gruplanmış tüm ayarları göstermek için yol ' a tıklayın](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Şablonunuzda, belirli ayarları bulmak için **arama** kutusunu kullanın. Başlık veya yol ayarlayarak arama yapabilirsiniz. Örneğin, `copy`araması yapın. `copy` olan tüm ayarlar gösterilir:
+- Şablonunuzda, belirli ayarları bulmak için **arama** kutusunu kullanın. Başlık veya yol ayarlayarak arama yapabilirsiniz. Örneğin, `copy`için arama yapın. `copy` olan tüm ayarlar gösterilir:
 
   ![Intune 'da yönetim şablonlarındaki tüm Windows ve Office ayarlarını göstermek için Kopyala araması yapın](./media/administrative-templates-windows/search-copy-settings.png) 
 

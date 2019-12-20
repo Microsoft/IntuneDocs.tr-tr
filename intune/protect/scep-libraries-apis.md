@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9b44e50300c3bd034ca2bb3b0454a5ce953dc18
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058233"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206984"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>API’leri kullanarak Intune’a SCEP için üçüncü taraf CA’ları ekleme
 
@@ -202,7 +202,7 @@ Parametreler:
 
     - transactionId           SCEP İşlem Kimliği
     - certificateRequest      Dize olarak kodlanmış DER kodlu PKCS #10 Sertifika İsteği Base64
-    - certThumprint           Sağlanan sertifikanın parmak izi
+    - Certthtrfer, sağlanan sertifikanın parmak izinin SHA1 karmasını
     - certSerialNumber        Sağlanan sertifikanın seri numarası
     - certExpirationDate      Sağlanan sertifikanın sona erme tarihi. Tarih saat dizesi web UTC saati (YYYY-AA-DDThh:mm:ss.sssTZD) ISO 8601 olarak biçimlendirilmelidir.
     - certIssuingAuthority    Sertifikayı veren yetkilinin adı

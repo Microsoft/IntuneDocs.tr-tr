@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf872387d6e6f4f91af9f074f54695b081b79119
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dcd1948899ec4023a65c62f7106298b065b46883
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74549538"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206933"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>Microsoft Intune Yönetim Şablonları ile Office 365 güncelleştirmek için kanalı güncelleştirme ve hedef sürüm ayarlarını kullanın
 
@@ -30,7 +30,7 @@ Bu senaryoda, cihazlarınızda Office 365 ' u güncelleştiren bir yönetim şab
 
 Yönetim Şablonları hakkında daha fazla bilgi için bkz. [Windows 10 şablonları Grup İlkesi ayarlarını yapılandırmak için](administrative-templates-windows.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - Windows 10 ve üzeri
 - Office 365
@@ -75,7 +75,7 @@ Office uygulamalarınız için [Office365 ProPlus otomatik güncelleştirmelerin
     ![Yönetim şablonu L_Updatebranch kayıt defteri anahtarı örneği](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
-    > [Office 365 ProPlus](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) 'ı, değerleri Configuration Manager listeler ve bunların ne anlama geldiğini yönetin. Kayıt defteri değerleri, seçilen dağıtım kanalını temel alır:
+    > [Office 365 ProPlus](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) 'ı, değerleri Configuration Manager listeler ve bunların ne anlama geldiğini yönetin. Kayıt defteri değerleri, seçilen dağıtım kanalını temel alır:
     >
     >- Aylık kanal-değer = "geçerli"
     >- Aylık kanal (hedeflenen)-değer = "geçerli"
@@ -95,9 +95,9 @@ Bu noktada, Intune ilkesi cihaza başarıyla uygulandı.
     - `UpdateChannel`: yapılandırılan ayarlara bağlı olarak değişen dinamik anahtar.
     - `CDNBaseUrl`: Office 365 cihaza yüklendiğinde ayarlanır.
 
-3. `UpdateChannel` değerine bakın. Bu değer, Office 'in ne sıklıkla güncelleştirileceğini söyler. [Office 365 ProPlus](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) ' ı, değerleri Configuration Manager listeler ve ne ayarlandıklarından birlikte yönetin.
+3. `UpdateChannel` değerine bakın. Bu değer, Office 'in ne sıklıkla güncelleştirileceğini söyler. [Office 365 ProPlus](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) ' ı, değerleri Configuration Manager listeler ve ne ayarlandıklarından birlikte yönetin.
 
-    Aşağıdaki örneğe **bakarak, `UpdateChannel`** `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`olarak ayarlandığını görürsünüz:
+    Aşağıdaki örneğe **bakarak, `UpdateChannel`**`http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`olarak ayarlandığını görürsünüz:
 
     ![Yönetim şablonu Office UpdateChannel kayıt defteri anahtarı örneği](./media/administrative-templates-update-office/admx-update-channel-office-registry-key.png)
 
@@ -134,7 +134,7 @@ Bu noktada, Office güncelleştirme kanalı cihazda başarıyla değiştirilmiş
 
 Daha fazlasını yapmak istiyorsanız, Office 'i en son sürüm güncelleştirmesini almaya zorlayabilirsiniz. Aşağıdaki adımlar yalnızca bir onay olarak yapılmalıdır ya da cihazların en son sürüm güncelleştirmesini bu kanaldan hızlıca alması gerekiyorsa. Aksi takdirde, Office 'in işini yapmasına ve otomatik olarak güncelleştirmesine izin verin.
 
-### <a name="step-1-force-the-office-version-to-update"></a>1\. Adım: Office sürümünü güncelleştirmek için zorlayın
+### <a name="step-1-force-the-office-version-to-update"></a>1. Adım: Office sürümünü güncelleştirmek için zorlayın
 
 1. Office sürümünün tercih ettiğiniz güncelleştirme kanalını desteklediğini onaylayın. [Office 365 ProPlus Için güncelleştirme geçmişi](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date) , farklı güncelleştirme kanallarını destekleyen yapı numaralarını listeler.
 
@@ -150,7 +150,7 @@ Daha fazlasını yapmak istiyorsanız, Office 'i en son sürüm güncelleştirme
 > - Var olan bir ilkeyi değiştirirseniz, değişiklikleriniz tüm atanan kullanıcıları etkiler.
 > - Bu özelliği test ediyorsanız, bir test ilkesi oluşturmanız ve ilkeyi bir Kullanıcı test grubuna atamanız önerilir.
 
-### <a name="step-2-check-the-office-version"></a>2\. Adım: Office sürümünü denetleme
+### <a name="step-2-check-the-office-version"></a>2. Adım: Office sürümünü denetleme
 
 İlkeyi tüm kullanıcılara dağıtmadan önce ilkenizi test etmek için bu adımları kullanmayı göz önünde bulundurun.
 
@@ -173,7 +173,7 @@ Daha fazlasını yapmak istiyorsanız, Office 'i en son sürüm güncelleştirme
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Office 365 istemcileri için kanal değerlerini güncelleştirme](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)
+[Office 365 istemcileri için kanal değerlerini güncelleştirme](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
 
 [Office 365 ProPlus için Office bulut ilkesi hizmetine genel bakış](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service)
 

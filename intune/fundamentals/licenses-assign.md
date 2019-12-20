@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414083"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207374"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Cihazlarını Intune’a kaydedebilmeleri için kullanıcılara lisans atama
 
 El ile kullanıcı eklediğinizde veya şirket içi Active Directory'nizden eşitlediğinizde, kullanıcıların cihazlarını Intune'a kaydedebilmesi için önce her kullanıcıya bir Intune lisansı atamanız gerekir. Lisans listesi için bkz. [Intune barındıran lisanslar](../licenses.md).
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Microsoft 365 Yönetim merkezinde bir Intune lisansı atama
+> [!NOTE]
+> Intune uygulama koruma ilkesini atayan ve cihazlarını Microsoft Intune 'ye kaydetmediğinde kullanıcılara, ilke almak için bir Intune lisansı gerekir. 
 
-Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory Azure AD 'ye eşitlenen hesaplara lisans atamak için [Microsoft 365 Yönetim merkezini](https://go.microsoft.com/fwlink/p/?LinkId=698854) kullanabilirsiniz.
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>Intune lisansı atama Microsoft Endpoint Manager Yönetim Merkezi
 
-1. [Microsoft 365 Yönetim merkezinde](https://go.microsoft.com/fwlink/p/?LinkId=698854) kiracı yöneticisi kimlik bilgilerinizi kullanarak oturum açın ve ardından **Kullanıcılar** > **etkin kullanıcılar**' ı seçin.
+Bulut tabanlı kullanıcıları el ile eklemek ve hem bulut tabanlı kullanıcı hesaplarına hem de şirket içi Active Directory Azure AD 'ye eşitlenen hesaplara lisans atamak için [Microsoft Endpoint Manager yönetim merkezini](https://go.microsoft.com/fwlink/?linkid=2109431) kullanabilirsiniz.
 
-2. Intune kullanıcı lisansı atamak istediğiniz kullanıcı hesabını seçin ve **Ürün lisansları** > **Düzenle**’yi seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **Kullanıcılar** > **tüm kullanıcılar** ' ı seçin > bir Kullanıcı > **lisansı** > **atamaları**seçin.
 
-3. **Intune** veya **Enterprise Mobility + Security**’i **Açık** konuma getirin ve **Kaydet**’i seçin.
+2. **Intune** > **Kaydet**kutusunu seçin.
 
-   ![Microsoft 365 Yönetim Merkezi ürün lisansları bölümünün ekran görüntüsü.](./media/licenses-assign/office-assign-license.png)
+   ![Microsoft 365 Yönetim Merkezi ürün lisansları bölümünün ekran görüntüsü.](./media/licenses-assign/mem-assign-license.png)
 
-4. Kullanıcı hesabı artık hizmeti kullanmak ve yönetime cihaz kaydetmek için gereken izinlere sahiptir.
+3. Kullanıcı hesabı artık hizmeti kullanmak ve yönetime cihaz kaydetmek için gereken izinlere sahiptir.
 
 > [!NOTE]
 > Kullanıcılar, klasik Intune portalında yalnızca Intune bılgısayar istemcisini kullanarak bir cihazı kaydettikten sonra görüntülenir. Ayrıca, seçili tüm kullanıcılar için lisans ekleme veya değiştirmeyi seçerek bir grup kullanıcıyı aynı anda düzenlemek üzere seçebilirsiniz.

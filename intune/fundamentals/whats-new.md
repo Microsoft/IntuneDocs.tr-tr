@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 12/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 45f816a8fb42068398afea912525d9ccb7ec98fe
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000389"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303062"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
-Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildirimler](#notices), [Geçmiş yayınlar](whats-new-archive.md)ve [Intune hizmet güncelleştirmelerinin nasıl yayımlandığına](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)ilişkin bilgileri de bulabilirsiniz.
+Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildirimler](#notices), [Geçmiş yayınlar](whats-new-archive.md)ve [Intune hizmet güncelleştirmelerinin nasıl yayımlandığına](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)ilişkin bilgileri de bulabilirsiniz. 
 
 > [!Note]
 > Her [aylık güncelleştirmenin](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) piyasaya çıkma üç güne kadar sürebilir ve şu sırada olacaktır:
@@ -53,11 +53,14 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 ### Role-based access control
 -->  
 
+
 <!-- ########################## -->
-## <a name="week-of-december-9-2019"></a>9 Aralık 2019 haftası
+## <a name="week-of-december-9-2019-1912-service-release"></a>9 Aralık 2019 (1912 hizmet sürümü) haftası
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Uygulama yönetimi
 
 #### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>Yönetilen gözatma senaryolarında Microsoft Edge 'e geçiş<!-- 5173762 -->
-
 Intune Managed Browser emekliliğe yaklaşarak, kullanıcılarınızı uçtan uca taşımak için gereken adımları basitleştirmek amacıyla uygulama koruma ilkelerinde değişiklikler yaptık. Uygulama koruma ilkesi ayarı, **diğer uygulamalarla Web içeriği aktarımını kısıtla** seçeneklerini, aşağıdakilerden biri olacak şekilde güncelleştirdik:
 
 - Herhangi bir uygulama
@@ -66,6 +69,83 @@ Intune Managed Browser emekliliğe yaklaşarak, kullanıcılarınızı uçtan uc
 - Yönetilmeyen tarayıcı 
 
 **Microsoft Edge**' i seçtiğinizde, son kullanıcılarınız Microsoft Edge 'in yönetilen gözatma senaryolarında gerekli olduğunu bildiren koşullu erişim mesajlaşmasını görür. Henüz yapmadıysanız, bu kullanıcıların AAD hesaplarıyla Microsoft Edge 'i indirmesi ve oturum açması istenir.  Bu, MAM özellikli uygulamalarınızı, uygulama yapılandırma ayarıyla `com.microsoft.intune.useEdge` **true**olarak ayarlanmış şekilde hedefleyen bir değer olacaktır. **İlke ile yönetilen tarayıcılar** ayarının kullanıldığı mevcut uygulama koruma ilkeleri artık **Intune Managed Browser** seçili olacak ve davranışta hiçbir değişiklik görmez. Bu, **useedge** uygulama yapılandırma ayarını **doğru**olarak ayarladıysanız kullanıcılarınızın Microsoft Edge 'i kullanmak için mesajlaşma göreceği anlamına gelir. Yönetilen gözatma senaryolarından yararlanan tüm müşterilerin, Microsoft Edge 'e geçiş yapmak için uygun Kılavuzu görmesini sağlamak üzere, kullanıcıların bağlantıları hangi uygulamadan başlatdıklarından emin olmak için, uygulama koruma ilkelerini **diğer uygulamalarla kısıtla** . 
+
+#### <a name="configure-app-notification-content-for-organization-accounts---2576686----"></a>Kuruluş hesapları için uygulama bildirim içeriğini yapılandırma<!-- 2576686  -->
+Android ve iOS cihazlarında Intune uygulama koruma ilkeleri (uygulama), kuruluş hesapları için uygulama bildirim içeriğini denetlemenize olanak tanır. Seçili uygulama için kuruluş hesaplarına yönelik bildirimlerin nasıl gösterileceğini belirtmek için bir seçenek (Izin ver, kuruluş verilerini engelle veya engellendi) seçeneğini belirleyebilirsiniz. Bu özellik, uygulamalardan destek gerektirir ve UYGULAMANıN etkinleştirildiği tüm uygulamalar için kullanılamayabilir. İOS için Outlook sürüm 4.15.0 (veya üzeri) ve Outlook for Android 4.83.0 (veya üzeri), bu ayarı destekler. Ayar konsolunda mevcuttur, ancak işlevsellik 16 Aralık 2019 ' den sonra devreye girer. UYGULAMA hakkında daha fazla bilgi için bkz. [Uygulama koruma ilkeleri nelerdir?](../apps/app-protection-policy.md).
+
+#### <a name="microsoft-app-icons-update--4677605----"></a>Microsoft uygulama simgeleri güncelleştirmesi<!--4677605  -->
+Uygulama koruma ilkeleri ve uygulama yapılandırma ilkeleri için uygulama hedefleme bölmesinde Microsoft uygulamaları için kullanılan simgeler güncelleştirilmiştir.
+
+#### <a name="require-use-of-approved-keyboards-on-android--4761794----"></a>Android üzerinde onaylanan Klavye kullanımını gerektir<!--4761794  -->
+Uygulama koruma ilkesinin bir parçası olarak, yönetilen Android uygulamalarıyla hangi Android klavyeleri kullanılabileceğini yönetmek için [**onaylanan klavyeler**](../apps/app-protection-policy-settings-android.md#data-protection) ayarını belirtebilirsiniz. Bir Kullanıcı yönetilen uygulamayı açtığında ve bu uygulama için henüz onaylanmış bir klavye kullanmıyorsa, bu kullanıcılara cihazlarında zaten yüklü olan onaylanmış klavyelerin birine geçiş yapması istenir. Gerekirse, bunlar tarafından yüklenip ayarlanabilecek Google Play Store onaylanan bir klavyeyi indirmek için bir bağlantı sunulur. Kullanıcı, yönetilen bir uygulamadaki metin alanlarını, etkin klavyesi onaylanan klavyelerin biri olmadığında düzenleyebilir.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="updated-single-sign-on-experience-for-apps-and-websites-on-your-ios-ipados-and-macos-devices---4999578----"></a>İOS, ıpados ve macOS cihazlarınızdaki uygulamalar ve Web siteleri için çoklu oturum açma deneyimi güncelleştirildi<!-- 4999578  -->
+Intune, iOS, ıpados ve macOS cihazları için daha fazla çoklu oturum açma (SSO) ayarı ekledi. Artık kuruluşunuz tarafından veya kimlik sağlayıcınız tarafından yazılmış yeniden yönlendirme SSO uygulaması uzantılarını yapılandırabilirsiniz. OAuth ve SAML2 gibi modern kimlik doğrulama yöntemlerini kullanan uygulamalar ve Web siteleri için sorunsuz bir çoklu oturum açma deneyimi yapılandırmak üzere bu ayarları kullanın. 
+
+Bu yeni ayarlar, SSO uygulama uzantıları ve Apple 'ın yerleşik Kerberos uzantısı için önceki ayarlarda (**cihazlar** > **cihaz yapılandırma** > **profillerinin** > profil **oluşturma** > **iOS/ıpados** veya **MacOS** ' u, profil türü için > **cihaz özellikleri** ) genişletir. 
+
+Yapılandırabileceğiniz SSO uygulama uzantısı ayarlarının tam aralığını görmek için, [macOS 'Ta](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)IOS ve SSO ['daki SSO](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) ' ya gidin.
+
+Uygulama hedefi:
+- iOS/ıpados
+- Mac OS
+
+#### <a name="weve-updated-two-device-restriction-settings-for-ios-and-ipados-devices-to-correct-their-behavior---5701352-wnready-----"></a>İOS ve ıpados cihazları için iki cihaz kısıtlama ayarı güncelleştirdik ve davranışlarını düzeltir<!-- 5701352 WNReady   -->
+İOS cihazlarında, **Kablosuz PKI güncelleştirmelerine izin** veren cihaz kısıtlama profilleri OLUŞTURABILIR ve **USB kısıtlı modunu** (**cihazlar** > **cihaz yapılandırma** > **profilleri** için > **profil oluşturma** > **iOS/ıpados** ' ı profil türü için iOS > **cihaz kısıtlamalarına** göre engeller). Bu sürümden önce, aşağıdaki ayarlar için Kullanıcı arabirimi ayarları ve açıklamaları hatalıydı ve şimdi düzeltildi. Bu sürümden itibaren, ayarlar davranışı aşağıdaki gibidir:
+
+**Kablosuz PKI güncelleştirmelerini engelle**: **blok** , cihazın bir bilgisayara bağlı olmadığı durumlar dışında yazılım güncelleştirmelerini almasını engeller. **Yapılandırılmadı** (varsayılan): bir cihazın bir bilgisayara bağlı olmadan yazılım güncelleştirmelerini almasına izin verir.
+- Daha önce, bu ayar, kullanıcılarınızın cihazlarını bir bilgisayara bağlamadan yazılım güncelleştirmeleri almasına Izin veren: **Izin ver**olarak yapılandırmanızı sağlar.
+**Cihaz KILITLIYKEN USB donatılara Izin ver**: **ızın ver** , USB aksesuarları 'nin bir saatten daha fazla kilitlenmiş bir cihazla veri alışverişi yapmasına olanak sağlar. **Yapılandırılmamış** (varsayılan), USB kısıtlı modunu cihazda güncelleştirmez ve USB aksesuarları bir saatten daha fazla kilitleniyorsa cihazdan veri aktarımını engellenecektir.
+- Bu ayar daha önce bu ayarı olarak yapılandırmanızı sağlar: denetimli cihazlarda USB kısıtlı modunu devre dışı bırakmayı **engeller** .
+
+Yapılandırabileceğiniz ayar hakkında daha fazla bilgi için bkz. [iOS ve ıpados cihaz ayarları Intune kullanarak özellikleri izin vermek veya kısıtlamak için](../configuration/device-restrictions-ios.md).
+
+Bu özellik şu platformlarda geçerlidir:
+- OS/ıpados
+
+#### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>MacOS cihazları için kablolu ağ cihaz yapılandırma profilleri<!-- 3508686  -->
+   > [!NOTE]
+   > Bu özellik gecikti, ancak yakında yayımlanacak.
+
+#### <a name="block-users-from-configuring-certificate-credentials-in-the-managed-keystore-on-android-enterprise-device-owner-devices---3311998---"></a>Kullanıcıların, Android kurumsal cihaz sahibi cihazlarda yönetilen anahtar deposunda sertifika kimlik bilgilerini yapılandırmalarını engelleyin<!-- 3311998 -->
+Android kurumsal cihaz sahibi cihazlarda, kullanıcıların yönetilen anahtar deposunda (**cihaz yapılandırma** > **profiller** ** > sertifika** kimlik bilgilerini yapılandırmalarını engelleyen yeni bir ayar yapılandırabilirsiniz. > **Android Enterprise** for platform > cihaz sahibi yalnızca profil türü > **Kullanıcılar + hesaplar**) için **cihaz kısıtlamalarını >** .
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="protected-wipe-action-now-available--51150000---"></a>Korumalı silme eylemi şimdi kullanılabilir<!--51150000 -->
+Artık bir cihazın korumalı silme işlemini gerçekleştirmek için cihazı silme eylemini kullanma seçeneğiniz vardır. Korumalı wpes 'ler, standart wpes ile aynıdır, ancak cihaz kapatılanarak bu dosyalar atlatılabilir. Korumalı silme işlemi başarılı olana kadar cihazı sıfırlamaya çalışmaya devam edecektir. Bazı yapılandırmalarda bu eylem cihazın yeniden başlatılamamasından çıkamayabilir. Daha fazla bilgi için bkz. [cihazları devre dışı bırakma veya silme](../remote-actions/devices-wipe.md).
+
+#### <a name="device-ethernet-mac-address-added-to-devices-overview-page--5562275---"></a>Cihazın genel bakış sayfasına eklenen cihaz Ethernet MAC adresi<!--5562275 -->
+Artık cihaz ayrıntıları sayfasında bir cihazın Ethernet MAC adresini görebilirsiniz (**cihazlar > aygıtlar** > bir cihaz seçin **** > **genel bakış**.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>Cihaz güvenliği
+
+#### <a name="improved-experience-on-a-shared-device-when-device-based-conditional-access-policies-are-enabled---1734096----"></a>Cihaz tabanlı koşullu erişim ilkeleri etkinken paylaşılan bir cihazda geliştirilmiş deneyim<!-- 1734096  -->
+İlke zorlarken Kullanıcı için en son uyumluluk değerlendirmesini denetleyerek, cihaz tabanlı koşullu erişim ilkesiyle hedeflenen birden fazla kullanıcıyla paylaşılan bir cihazda deneyim geliştirdik. Daha fazla bilgi için aşağıdaki genel bakış makalelerine bakın:
+- [Koşullu erişim için Azure genel bakış](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Intune cihaz uyumluluğuna genel bakış](../protect/device-compliance-get-started.md)
+
+#### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>Sertifikalar ile cihaz sağlamak için PKCS sertifika profillerini kullanma<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
+Artık, Wi-Fi ve VPN için olanlar gibi profillerle ilişkilendirildiğinde, Android for Work, iOS ve Windows çalıştıran *cihazlara* sertifika vermek için PKCS sertifika profillerini kullanabilirsiniz. Daha önce bu üç platform yalnızca Kullanıcı tabanlı sertifikaları desteklemekte ve cihaz tabanlı destek, macOS ile sınırlandırılmıştır.
+
+Cihaz tabanlı bir sertifika kullanmak için, desteklenen platformlar için [PKCS sertifika profili oluştururken](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile) **Ayarlar**' ı seçin. Artık, cihaz veya Kullanıcı seçeneklerini destekleyen **sertifika türü**ayarını görürsünüz.
+
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
+
+#### <a name="centralized-audit-logs--5603185-5697164---"></a>Merkezi denetim günlükleri<!--5603185, 5697164 -->
+Yeni bir merkezi denetim günlüğü deneyimi artık tüm kategoriler için Denetim günlüklerini tek bir sayfada toplar. Aradığınız verileri almak için günlüklere filtre uygulayabilirsiniz. Denetim günlüklerini görmek için, **kiracı yönetimi** > **Denetim günlükleri**' ne gidin. 
+
+#### <a name="scope-tag-information-included-in-audit-log-activity-details--5763534---"></a>Denetim günlüğü etkinlik ayrıntılarına dahil edilen kapsam etiketi bilgileri<!--5763534 -->
+Denetim günlüğü etkinlik ayrıntıları artık kapsam etiketi bilgilerini içerir (kapsam etiketlerini destekleyen Intune nesneleri için). Denetim günlükleri hakkında daha fazla bilgi için bkz. [olayları izlemek ve izlemek için Denetim günlüklerini kullanma](monitor-audit-logs.md).
+
 
 <!-- ########################## -->
 ## <a name="week-of-december-2-2019"></a>2 Aralık 2019 haftası
@@ -85,12 +165,12 @@ Daha fazla bilgi için bkz. [Lisans koşulları](https://www.microsoft.com/en-us
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Uygulama yönetimi
 
-#### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>İOS için Microsoft Outlook ile S/MIME desteği<!-- 2669398 idready -->
+#### <a name="smime-support-with-microsoft-outlook-for-ios---2669398----"></a>İOS için Microsoft Outlook ile S/MIME desteği<!-- 2669398  -->
 
    > [!NOTE]
    > Bu özellik gecikti, ancak yakında yayımlanacak.
 
-Intune, iOS cihazlarda iOS için Outlook ile kullanılabilen S/MIME imzalama ve şifreleme sertifikalarının teslim edilmesini destekler. Daha fazla bilgi için bkz. [iOS Için Outlook Için S/MIME yapılandırma](~/apps/app-configuration-policies-outlook-smime.md).
+
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>Uygulama verilerini seçmeli olarak silme sırasında kullanıcı arabirimi güncelleştirmesi<!-- 4102028 -->
 Intune 'da uygulama verilerini seçmeli olarak silme Kullanıcı arabirimi güncelleştirilmiştir. UI değişiklikleri şunları içerir:
@@ -120,7 +200,7 @@ Aşağıdakiler dahil olmak üzere kullanılabilir yeni Exchange ActiveSync ayar
 
 Bu ayar hakkında daha fazla bilgi için, [Intune 'Da iOS cihazları Için e-posta profili ayarları](../configuration/email-settings-ios.md)' na gidin. 
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
 
@@ -129,7 +209,7 @@ Android kurumsal tam yönetilen ve adanmış cihazlarda, kullanıcıların kişi
 
 Yapılandırabileceğiniz ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - Android kurumsal tam yönetilen cihazlar
 - Android kurumsal adanmış cihazlar
 
@@ -140,7 +220,7 @@ Bu ayarın cihazlar üzerinde hiçbir etkisi yoktur. Bu ayarı mevcut profillerd
 
 Yapılandırabileceğiniz tüm ayarları görmek için [iOS ve ıpados cihaz ayarları ' na bakın ve Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS/ıpados
 
 #### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 özellik güncelleştirmeleri (Genel Önizleme)<!-- 2384877 -->
@@ -157,7 +237,7 @@ Yalnızca bazı uygulamalar yönetilen tercihleri destekler ve bu uygulamalar t�
 
 Bu özellik hakkında daha fazla bilgi için, bkz. [Microsoft Intune kullanarak macOS cihazlarına özellik listesi dosyası ekleme](../configuration/preference-file-settings-macos.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - 10,7 ve daha yeni çalıştıran macOS cihazları
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -215,7 +295,7 @@ Intune artık, Wi-Fi profillerine sertifika tabanlı erişim için Android kurum
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Uygulama yönetimi  
 
-#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Şirket Portalı 'de geliştirilmiş macOS kayıt deneyimi <!-- 5074349 WNready -->  
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349----"></a>Şirket Portalı 'de geliştirilmiş macOS kayıt deneyimi <!-- 5074349  -->  
 MacOS kayıt deneyiminin Şirket Portalı, iOS kayıt deneyimi için Şirket Portalı daha yakından hizalanan daha basit bir kayıt işlemine sahiptir. Cihaz kullanıcıları şimdi şunları görür:  
 
 * Bir uyleyici Kullanıcı arabirimi.  
@@ -227,7 +307,7 @@ MacOS kayıt deneyiminin Şirket Portalı, iOS kayıt deneyimi için Şirket Por
 Son kullanıcılar artık doğrudan Windows Şirket Portalı uygulamasından Web uygulamaları başlatabilir. Son kullanıcılar Web uygulamasını seçip **tarayıcıda aç**seçeneğini belirleyebilir. Yayınlanan Web URL 'SI doğrudan bir Web tarayıcısında açılır. Bu işlevsellik bir sonraki hafta boyunca alınacaktır. Web Apps hakkında daha fazla bilgi için bkz. [Microsoft Intune Web Apps ekleme](~/apps/web-app.md).  
 
 
-#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Windows 10 için Şirket Portalı yeni atama türü sütunu <!-- 5459950 WNready -->
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950----"></a>Windows 10 için Şirket Portalı yeni atama türü sütunu <!-- 5459950  -->
 Şirket Portalı > **yüklü uygulamalar** > **atama türü** sütunu, **kuruluşunuzun gerektirdiği**şekilde yeniden adlandırıldı.  Bu sütunda, kullanıcılar bir uygulamanın gerekli olduğunu ya da kuruluşlarına göre isteğe bağlı olduğunu göstermek için **Evet** veya **Hayır** değeri görür. Cihaz kullanıcıları kullanılabilir uygulamalar kavramı hakkında karışdığı için bu değişiklikler yapılmıştır. Kullanıcılarınız, [cihazınızdaki uygulamaları yükleme ve paylaşma](/intune-user-help/install-apps-cpapp-windows)konusundaki Şirket portalı uygulamaları yükleme hakkında daha fazla bilgi bulabilir. Kullanıcılarınız için Şirket Portalı uygulamasını yapılandırma hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](~/apps/company-portal-app.md).  
 
 <!-- ########################## -->
@@ -262,7 +342,7 @@ Bir Win32 uygulaması başarıyla yüklendikten sonra cihazın yeniden başlatı
 İOS Şirket Portalı için koyu mod kullanılabilir. Kullanıcılar şirket uygulamalarını indirebilir, cihazlarını yönetebilir ve cihaz ayarlarına bağlı olarak tercih ettikleri renk düzeninde BT desteği alabilir. İOS Şirket Portalı, son kullanıcının cihaz ayarlarını koyu veya hafif modda otomatik olarak eşleştirecektir. Daha fazla bilgi için bkz. [iOS için Microsoft Intune şirket portalı üzerinde koyu moda giriş](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453). İOS Şirket Portalı hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](~/apps/company-portal-app.md).
 
 #### <a name="android-company-portal-enforced-minimum-app-version---2378776---"></a>Android Şirket Portalı En düşük uygulama sürümünü zorunlu<!-- 2378776 -->
-Bir uygulama koruma ilkesinin **Min Şirket portalı sürümü** ayarını kullanarak, bir son kullanıcı cihazında zorlanan Şirket portalı belirli bir en düşük tanımlı sürümü belirtebilirsiniz. Bu koşullu başlatma ayarı, değeri karşılanmazsa **erişimi engellemeyi**, **verileri silmeyi**veya olası eylemler olarak **uyarmasını** sağlar. Bu değer için olası biçimler *[ana] düzenine uyar. [ İkincil]* , *[birincil]. [ İkincil]. [Derleme]* veya *[birincil]. [ İkincil]. [Derleme]. [Düzeltme]* .
+Bir uygulama koruma ilkesinin **Min Şirket portalı sürümü** ayarını kullanarak, bir son kullanıcı cihazında zorlanan Şirket portalı belirli bir en düşük tanımlı sürümü belirtebilirsiniz. Bu koşullu başlatma ayarı, değeri karşılanmazsa **erişimi engellemeyi**, **verileri silmeyi**veya olası eylemler olarak **uyarmasını** sağlar. Bu değer için olası biçimler *[ana] düzenine uyar. [ İkincil]*, *[birincil]. [ İkincil]. [Derleme]* veya *[birincil]. [ İkincil]. [Derleme]. [Düzeltme]*.
 
 Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı sürüm 5.0.4560.0 ve gelecekteki tüm şirket portalı sürümlerini alan son kullanıcıları etkileyecektir. Bu ayarın, bu özelliğin yayımlandığı sürümden daha eski bir Şirket Portalı sürümünü kullanan kullanıcılar üzerinde hiçbir etkisi olmayacaktır. En son Şirket Portalı sürümünde olabilecekleri için, cihazlarından uygulama otomatik güncelleştirmelerini kullanan son kullanıcılar bu özellikten hiçbir iletişim kutusu görmeyecektir. Bu ayar yalnızca kayıtlı ve kayıtlı olmayan cihazlar için uygulama korumasıyla Android 'dir. Daha fazla bilgi için bkz. [Android uygulama koruma ilkesi ayarları-koşullu başlatma](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
@@ -272,7 +352,7 @@ Yapılandırılmışsa **Min Şirket Portalı sürüm** ayarı, Şirket Portalı
 
 #### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management---5630102---"></a>Microsoft 365 cihaz yönetiminde Endpoint Security düğümünü tanıtma<!-- 5630102 -->
 
-**Uç nokta güvenlik** düğümü artık https://devicemanagement.microsoft.com ' de Microsoft 365 cihaz yönetimi uzman çalışma alanında genel olarak kullanıma sunulmuştur, bu, örneğin:
+**Uç nokta güvenlik** düğümü artık https://devicemanagement.microsoft.com' de Microsoft 365 cihaz yönetimi uzman çalışma alanında genel olarak kullanıma sunulmuştur, bu, örneğin:
 
 - Güvenlik temelleri: Microsoft tarafından önerilen bilinen ayar grubunu ve varsayılan değerleri uygulamanıza yardımcı olan önceden yapılandırılmış ayarlar grubu.
 
@@ -328,7 +408,7 @@ Windows 10 ve üzeri sürümlerde, ayarları ve özellikleri denetlemek için bi
 
 Bu özellik hakkında daha fazla bilgi için, bkz. [Microsoft Intune Windows cihazlarda dfcı profillerini kullanma](../configuration/device-firmware-configuration-interface-windows.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - Windows 10 RS5 (1809) ve desteklenen bellenim üzerinde daha yeni
 
 ### <a name="device-enrollment"></a>Cihaz kaydı
@@ -391,7 +471,7 @@ Intune için iOS yazılım güncelleştirme ilkelerini [oluşturma](../protect/s
 - Düzeltilen iş akışı, ilkenin ilk yapılandırmasını tamamlamadan önce atamaları içerir.
 - Yeni bir ilke kaydetmeden ve dağıtımdan önce, yaptığınız tüm konfigürasyonları gözden geçirmek için kullanabileceğiniz bir Özet sayfası. Bir ilke düzenlenirken, Özet yalnızca düzenlediğiniz özelliklerin kategorisi içinde ayarlanan öğelerin listesini gösterir.
 
-#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404---wnready-----"></a>Boşta yeniden başlatma ayarları Windows Update halkalardan kaldırılır<!--  4464404   WNReady   -->
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404--------"></a>Boşta yeniden başlatma ayarları Windows Update halkalardan kaldırılır<!--  4464404      -->
 Daha önce duyurulduğu gibi, Intune 'un Windows 10 güncelleştirme halkaları artık [son tarihleri destekler](../protect/windows-update-settings.md) ve artık *yeniden başlatmayı*desteklemez. Intune 'da güncelleştirme halkalarını yapılandırırken veya yönetirken, ara *yeniden başlatma* ayarları artık kullanılamaz.  
 
 Bu değişiklik, son [Windows hizmet değişiklikleri](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing) ve Windows 10 1903 veya sonraki sürümleri çalıştıran cihazlarda hizalanır, *son tarihler* , ara *yeniden başlatma*yapılandırmalarının yerini alır.
@@ -401,7 +481,7 @@ Android kurumsal iş profili cihazlarında, kullanıcılar hiçbir zaman bilinme
 
 Yapılandırabileceğiniz ayarı görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - Android kurumsal iş profili
 
 #### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices---4816339-----"></a>Android kurumsal cihaz sahibi cihazlarda genel HTTP proxy oluşturma<!-- 4816339   -->
@@ -409,17 +489,17 @@ Android kurumsal cihazlarda, kuruluşunuzun Web tarama standartlarını (**cihaz
 
 Bu özelliği yapılandırmak ve yapılandırdığınız tüm ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - Android kurumsal cihaz sahibi
 
 #### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise---5021055-----"></a>Android Cihaz Yöneticisi ve Android Enterprise 'ta Wi-Fi profillerinde otomatik olarak bağlan ayarı kaldırılır<!-- 5021055   -->
-Android Cihaz Yöneticisi ve Android kurumsal cihazlarda, farklı ayarları yapılandırmak için bir Wi-Fi profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** >  **, platform Için**  > **Android Cihaz Yöneticisi** veya **Android Enterprise** > profil türü için **Wi-Fi** ). Bu güncelleştirmede, [Android tarafından destek olmadığından](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29) **Otomatik bağlan** ayarı kaldırılır. 
+Android Cihaz Yöneticisi ve Android kurumsal cihazlarda, farklı ayarları yapılandırmak için bir Wi-Fi profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > **, platform Için ** > **Android Cihaz Yöneticisi** veya **Android Enterprise** > profil türü için **Wi-Fi** ). Bu güncelleştirmede, [Android tarafından destek olmadığından](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29) **Otomatik bağlan** ayarı kaldırılır. 
 
 Bu ayarı bir Wi-Fi profilinde kullanırsanız, **Connect 'in otomatik olarak** çalışmadığını fark etmiş olabilirsiniz. Herhangi bir işlem yapmanız gerekmez, ancak bu ayarın Intune kullanıcı arabiriminde kaldırıldığını unutmayın.
 
 Geçerli ayarları görmek için [Android Wi-Fi ayarları](../configuration/wi-fi-settings-android.md) veya [Android Enterprise Wi-Fi ayarları](../configuration/wi-fi-settings-android-enterprise.md)' na gidin.
 
-Şunlara uygulanır
+Uygulama hedefi:
 - Android Cihaz Yöneticisi 
 - Android Kurumsal
 
@@ -432,7 +512,7 @@ Geçerli ayarları görmek için [Android Wi-Fi ayarları](../configuration/wi-f
 
 Bu ayarları görmek için [iOS cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
 
@@ -464,9 +544,9 @@ Cihazlara genel bakış sayfasına yeni bir rapor, her bir cihaz yönetimi çöz
 ### <a name="device-security"></a>Cihaz güvenliği
 
 #### <a name="pkcs-certificates-for-macos---1333650---------"></a>MacOS için PKCS sertifikaları<!-- 1333650       -->
-Artık [macOS Ile PKCS sertifikaları kullanabilirsiniz](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). MacOS için bir profil türü olarak PKCS sertifikasını seçebilir ve [özelleştirilmiş konu ve konu alternatif adı alanlarına](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)sahip kullanıcı ve cihaz sertifikalarını dağıtabilirsiniz.  
+Artık [macOS Ile PKCS sertifikaları kullanabilirsiniz](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). MacOS için bir profil türü olarak PKCS sertifikasını seçebilir ve [özelleştirilmiş konu ve konu alternatif adı alanlarına](../protect/certficates-pfx-configure.md#subject-name-format)sahip kullanıcı ve cihaz sertifikalarını dağıtabilirsiniz.  
 
-MacOS için PKCS sertifikası yeni bir ayarı da destekler, _tüm uygulamaların erişimine Izin verir_. Bu ayarla, ilişkili tüm uygulamaların, sertifikanın özel anahtarına erişmesini sağlayabilirsiniz.  Bu ayar hakkında daha fazla bilgi için https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf Apple belgelerine bakın.
+MacOS için PKCS sertifikası yeni bir ayarı da destekler, _tüm uygulamaların erişimine Izin verir_. Bu ayarla, ilişkili tüm uygulamaların, sertifikanın özel anahtarına erişmesini sağlayabilirsiniz.  Bu ayar hakkında daha fazla bilgi için https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdfApple belgelerine bakın.
 
 ####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----1736036-1736037-1772050-2777333-----------"></a>İOS mobil cihazlarını sertifikalarla sağlamak için türetilmiş kimlik bilgileri<!--  1736036, 1736037, 1772050, 2777333         -->  
 Intune, [türetilmiş kimlik bilgilerinin](../protect/derived-credentials.md) bir kimlik doğrulama yöntemi ve iOS cihazları için S/MIME imzalama ve şifreleme için kullanımını destekler. Türetilmiş kimlik bilgileri, cihazlara sertifika dağıtmaya yönelik *ulusal standartlar ve Teknoloji Enstitüsü (NIST) 800-157* standardının bir uygulamasıdır.  
@@ -498,7 +578,7 @@ Apple 'ın iOS 13,1 sürümü, iOS cihazları için basit yönetimin yeni bir bi
 - Son kullanıcılara cihazlarını kaydettiklerinde daha hafif Kullanıcı kaydı veya daha güçlü bir cihaz kaydı arasından seçim yapma olanağı sunun.
 
 9/24/2019 ' den başlayarak, iOS 13,1 ' nin yayımlanmasından itibaren, bu güncelleştirmeleri tüm müşterilere teslim etmek ve önümüzdeki hafta sonuna kadar tamamlanmasını beklemek için çalışıyoruz.
-Şunlara uygulanır
+Uygulama hedefi:
 
 iOS 13,1 ve üzeri
 
@@ -554,7 +634,7 @@ Bu VPN profilleri yerel VPN istemcisini yapılandırır, bu nedenle yönetilen c
 
 Yapılandırabileceğiniz geçerli VPN ayarlarını görmek için [iOS CIHAZLARıNDA VPN ayarlarını yapılandırma](../configuration/vpn-settings-ios.md)bölümüne gidin.
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS
 
 #### <a name="device-features-device-restrictions-and-extension-profiles-for-ios-and-macos-settings-are-shown-by-enrollment-type---4886161-----"></a>İOS ve macOS ayarları için cihaz özellikleri, cihaz kısıtlamaları ve uzantı profilleri kayıt türüne göre gösteriliyor<!-- 4886161   -->
@@ -575,11 +655,11 @@ Bu güncelleştirmede, Intune portalındaki kullanılabilir ayarlar, uygulanan k
   - Otomatik cihaz kaydı
   - Tüm kayıt türleri
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS
 
 #### <a name="new-voice-control-settings-for-supervised-ios-devices-running-in-kiosk-mode---4892835-----"></a>Denetimli iOS cihazları için bilgi noktası modunda çalışan yeni ses denetimi ayarları<!-- 4892835   -->
-Intune 'da, denetimli iOS cihazlarını bir bilgi noktası olarak çalıştırmak için ilkeler oluşturabilir ve platform için IOS > **cihaz** oluşturma > profil türü > **bilgi noktası**) için **iOS** için iOS > **profil oluşturma** ' ya yönelik cihaz**yapılandırma** > .
+Intune 'da, denetimli iOS cihazlarını bir bilgi noktası olarak çalıştırmak için ilkeler oluşturabilir ve platform için IOS > **cihaz** oluşturma > profil türü **** > **bilgi noktası**) için **iOS** için iOS > **profil oluşturma** ' ya yönelik cihaz**yapılandırma** > .
 
 Bu güncelleştirmede, denetleyebilmeniz için yeni ayarlar vardır:
 - **Ses denetimi**: bilgi noktası modundayken cihazda ses denetimini mümkün.
@@ -587,7 +667,7 @@ Bu güncelleştirmede, denetleyebilmeniz için yeni ayarlar vardır:
 
 Geçerli ayarları görmek için [IOS bilgi noktası ayarları](../configuration/device-restrictions-ios.md#kiosk)' na gidin.
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS 13,0 ve üzeri
 
 #### <a name="use-single-sign-on-for-apps-and-websites-on-your-ios-and-macos-devices---4893175-----"></a>İOS ve macOS cihazlarınızdaki uygulamalar ve Web siteleri için çoklu oturum açma kullanın<!-- 4893175   -->
@@ -597,7 +677,7 @@ Bu güncelleştirmede, iOS ve macOS **cihazları için yeni** çoklu oturum açm
 
 Yapılandırabileceğiniz geçerli cihaz özelliklerini görmek için [iOS cihaz özelliklerine](../configuration/ios-device-features-settings.md) ve [MacOS cihaz özelliklerine](../configuration/macos-device-features-settings.md)gidin.
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS 13,0 ve üzeri
 - macOS 10,15 ve üzeri
 
@@ -606,7 +686,7 @@ MacOS cihazlarında, farklı özellikler yapılandırabilir ve bu özellikleri c
 
 Yapılandırabileceğiniz geçerli özellikleri görmek için [Intune 'Da MacOS cihaz özelliği ayarları](../configuration/macos-device-features-settings.md)' na gidin.
 
-Şunlara uygulanır
+Uygulama hedefi:
 - macOS 10,15 ve üzeri
 
 #### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices---4928474-----"></a>İOS denetimli cihazlarda uygulamaları gösterirken veya gizlerken iTunes App Store URL 'sindeki "iTunes" ve "Apps" kullanın<!-- 4928474   --> 
@@ -618,17 +698,17 @@ Intune 'da, denetimli iOS cihazlarınızda uygulamaları göstermek veya gizleme
 
 Bu ayarlar hakkında daha fazla bilgi için bkz. [uygulamaları gösterme veya gizleme](../configuration/device-restrictions-ios.md#show-or-hide-apps).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS
 
 #### <a name="windows-10-compliance-policy-password-type-values-are-clearer-and-match-csp---5138985---"></a>Windows 10 uyumluluk ilkesi parola türü değerleri daha net ve ile eşleşiyor CSP<!-- 5138985 -->
-Windows 10 cihazlarında belirli parola özellikleri gerektiren bir uyumluluk ilkesi oluşturabilirsiniz (**cihaz uyumluluk** > **ilkeleri** > platform > **sistem güvenliği**için **Windows 10 ve üzeri** ) **ilke oluşturma** > . Bu güncellemede:
+Windows 10 cihazlarında belirli parola özellikleri gerektiren bir uyumluluk ilkesi oluşturabilirsiniz (**cihaz uyumluluk** > **ilkeleri** > platform > **sistem güvenliği**için **Windows 10 ve üzeri** ) **ilke oluşturma** > . Bu güncelleştirmede:
 - **Parola türü** değerleri daha net ve [DeviceLock/alfanümerik ıdevicepasswordrequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)ile eşleşecek şekilde güncelleştirilir.
 - **Parola süre sonu (gün)** ayarı 1-730 günden daha fazla değere izin verecek şekilde güncelleştirilir. 
 
 Windows 10 uyumluluk ayarları hakkında daha fazla bilgi için bkz. [Windows 10 ve üzeri ayarları cihazları uyumlu veya uyumsuz olarak işaretleme](../protect/compliance-policy-create-windows.md). 
 
-Şunlara uygulanır
+Uygulama hedefi:
 - Windows 10 ve üzeri
 
  #### <a name="updated-ui-for-configuring-microsoft-exchange-on-premises-access---4092920---"></a>Microsoft Exchange şirket içi erişimini yapılandırmak için güncelleştirilmiş Kullanıcı arabirimi<!-- 4092920 -->  
@@ -639,7 +719,7 @@ Android kurumsal cihazlarda iş profilindeki (**cihaz yapılandırma** > **profi
 
 Yapılandırabileceğiniz ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - Android kurumsal iş profili
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -673,7 +753,7 @@ Android tam olarak yönetilen cihazlar için aşağıdaki desteği ekledik:
 
 Bu güncelleştirmeyle, Android kurumsal tam olarak yönetilen Intune desteğinin artık genel kullanıma sunulduğunu duyurmaktan mutluluk duyuyoruz.
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - Android kurumsal tam yönetilen cihazlar
 
@@ -739,7 +819,7 @@ Windows 10 ve daha yeni cihazlarda, Intune 'da Grup İlkesi ayarlarını yapıla
 
 Yönetim Şablonları hakkında daha fazla bilgi edinmek için bkz. [Intune 'da Grup İlkesi ayarlarını yapılandırmak Için Windows 10 şablonlarını kullanma](../configuration/administrative-templates-windows.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - Windows 10 ve üzeri (Windows RS4 +)
 
@@ -760,7 +840,7 @@ Android için Microsoft Intune uygulaması artık özel anında iletme bildiriml
 
 #### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode---3755304-3041943-3041946-----"></a>Çok uygulama modundaki Android kurumsal adanmış cihazlar için yeni özellikler<!-- 3755304 3041943 3041946   -->
 
-Intune 'da, Android kurumsal adanmış cihazlarınızda (**cihaz yapılandırma** > **profiller** > **bir bilgi noktası stili deneyiminizdeki özellikleri ve ayarları kontrol edebilirsiniz. yalnızca platform > cihaz sahibi** için Intune ** > ** , profil türü için **cihaz kısıtlamaları** ).
+Intune 'da, Android kurumsal adanmış cihazlarınızda (**cihaz yapılandırma** > **profiller** > **bir bilgi noktası stili deneyiminizdeki özellikleri ve ayarları kontrol edebilirsiniz. yalnızca platform > cihaz sahibi **için Intune** > ** , profil türü için **cihaz kısıtlamaları** ).
 
 Bu güncelleştirmede aşağıdaki özellikler ekleniyor:
 
@@ -771,7 +851,7 @@ Bu güncelleştirmede aşağıdaki özellikler ekleniyor:
 
 Geçerli ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).
 
-Şunlara uygulanır
+Uygulama hedefi:
 
 - Android kurumsal adanmış cihazlar
 
@@ -785,17 +865,17 @@ Profilleri kullanarak, Android kurumsal cihaz sahibi (tam olarak yönetilen) cih
 > [!IMPORTANT]
 > Bu özellikle, kullanıcılar VPN, Wi-Fi ve e-posta profilleri için Kullanıcı adı ve parolasıyla kimlik doğrular. Sertifika tabanlı kimlik doğrulaması şu anda kullanılamıyor.
 
-Şunlara uygulanır  
+Uygulama hedefi:  
 - Android kurumsal cihaz sahibi (tam olarak yönetilen)
 
 #### <a name="control-the-apps-files-documents-and-folders-that-open-when-users-sign-in-to-macos-devices--3914202-----"></a>Kullanıcılar macOS cihazlarında oturum açtıklarında açık olan uygulamaları, dosyaları, belgeleri ve klasörleri denetleyin<!--3914202   -->
-MacOS cihazlarında özellikleri etkinleştirebilir ve yapılandırabilirsiniz (**cihaz yapılandırma** > **profilleri** > **profil** > **türü Için platform >** cihaz özellikleri **için** MacOS). 
+MacOS cihazlarında özellikleri etkinleştirebilir ve yapılandırabilirsiniz (**cihaz yapılandırma** > **profilleri** > **profil** > ** türü Için platform > **cihaz özellikleri** için** MacOS). 
 
 Bu güncelleştirmede, Kullanıcı kayıtlı cihazda oturum açtığında hangi uygulamaların, dosyaların, belgelerin ve klasörlerin açık olduğunu denetleyen yeni bir oturum açma öğeleri ayarı vardır. 
 
 Geçerli ayarları görmek için [Intune 'Da MacOS cihaz özelliği ayarları](../configuration/macos-device-features-settings.md)' na gidin.
 
-Şunlara uygulanır  
+Uygulama hedefi:  
 - Mac OS
 
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings---4464404----------"></a>Son tarihler Windows Update halkalar için bağlı yeniden başlatma ayarlarını değiştirir<!-- 4464404        -->
@@ -819,22 +899,22 @@ Birden çok bağlayıcı kullanmak için bağlayıcı yazılımının en son sü
 
 - **İOS** > **cihaz kısıtlamalarında**birkaç değişiklik vardır:
 
-  - **Yerleşik uygulamalar** > **IPhone 'umu bul (yalnızca denetimli)** : uygulamamı bul özelliğinde bu özelliği engelleyen yeni ayar. 
-  - **Yerleşik uygulamalar** > **Arkadaşlarımı bul (yalnızca denetimli)** : uygulamamı bul özelliğinde bu özelliği engelleyen yeni ayar. 
-  - **Wi-fi durumunun kablosuz > değişikliği (yalnızca denetimli)** : kullanıcıların cihazda Wi-Fi ' i açmasını veya kapatmasını engelleyen yeni ayar.
-  - **Klavye ve sözlük** > **hızlı yol (yalnızca denetimli)** : QuickPath özelliğini engelleyen yeni ayar.
+  - **Yerleşik uygulamalar** > **IPhone 'umu bul (yalnızca denetimli)**: uygulamamı bul özelliğinde bu özelliği engelleyen yeni ayar. 
+  - **Yerleşik uygulamalar** > **Arkadaşlarımı bul (yalnızca denetimli)**: uygulamamı bul özelliğinde bu özelliği engelleyen yeni ayar. 
+  - **** **Wi-fi durumunun kablosuz > değişikliği (yalnızca denetimli)**: kullanıcıların cihazda Wi-Fi ' i açmasını veya kapatmasını engelleyen yeni ayar.
+  - **Klavye ve sözlük** > **hızlı yol (yalnızca denetimli)**: QuickPath özelliğini engelleyen yeni ayar.
   - **Bulut ve depolama**: **etkinlik devamlılığı** iletime olarak yeniden **adlandırıldı.**
 
   Geçerli ayarları görmek için [iOS cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Şunlara uygulanır  
+Uygulama hedefi:  
 - macOS 10,15 ve üzeri
 - iOS 13 ve üzeri
 
 #### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release---4867809-----"></a>Denetlenmeyecek bazı iOS cihaz kısıtlamaları yalnızca iOS 13,0 sürümüyle denetimli olacak.<!-- 4867809   -->
 Bu güncelleştirmede, bazı ayarlar iOS 13,0 sürümü ile yalnızca denetimli cihazlar için geçerlidir. Bu ayarlar yapılandırıldıysa ve iOS 13,0 sürümünden önce denetlenmeden önce cihazlara atanırsa, ayarlar hala bu denetlenmeden bu cihazlara uygulanır. Cihazlar iOS 13,0 ' e yükseltildikten sonra da hala geçerlidir. Bu kısıtlamalar, yedeklenen ve geri yüklenen denetimli cihazlarda kaldırılır.
 
-These settings include:
+Bu ayarlar şunlardır:
 
 - Uygulama Mağazası, Belge Görüntüleme, Oyun
   - Uygulama mağazası
@@ -845,7 +925,7 @@ These settings include:
   - Kamera
     - FaceTime
   - Safari
-    - Otomatik doldurma
+    - İse
 - Bulut ve Depolama
   - İCloud 'a yedekleme
   - İCloud Belge eşitlemesini engelle
@@ -853,7 +933,7 @@ These settings include:
 
 Geçerli ayarları görmek için [iOS cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Şunlara uygulanır  
+Uygulama hedefi:  
 - iOS 13,0 ve üzeri
 
 #### <a name="improved-device-status-for-macos-filevault-encryption---4944983-----------"></a>MacOS Filekasası şifrelemesi için iyileştirilmiş cihaz durumu<!-- 4944983         -->
@@ -906,11 +986,11 @@ Her Android cihazının donanım sayfasında yeni bir giriş, cihazın işletim 
 
 ### <a name="zebra-technologies-is-a-supported-oem-for-oemconfig-on-android-enterprise-devices---4843713---"></a>Zeköşeli teknolojiler, Android kurumsal cihazlarda OEMConfig için desteklenen bir OEM 'dir<!-- 4843713 -->
 
-Intune 'da, cihaz yapılandırma profilleri oluşturabilir ve OEMConfig (**cihaz yapılandırma** > **profilleri ' ni kullanarak Android enterprise cihazlarına ayarlar uygulayabilir**  > **profil türü için bkz** > **Android Enterprise** for platform > **oemconfig** ).
+Intune 'da, cihaz yapılandırma profilleri oluşturabilir ve OEMConfig (**cihaz yapılandırma** > **profilleri ' ni kullanarak Android enterprise cihazlarına ayarlar uygulayabilir ** > **profil türü için bkz** > **Android Enterprise** for platform > **oemconfig** ).
 
 Bu güncelleştirmede, Zeköşeli teknolojiler, OEMConfig için desteklenen bir özgün ekipman üreticisi (OEM). OEMConfig hakkında daha fazla bilgi için bkz. [oemconfig Ile Android kurumsal cihazlarını kullanma ve yönetme](../configuration/android-oem-configuration-overview.md).
 
-Şunlara uygulanır  
+Uygulama hedefi:  
 - Android kurumsal
 
 <!-- ########################## -->
@@ -930,7 +1010,7 @@ Artık, cihaz kaydı olmadan basit Intune yönetici denetimlerini kullanarak iOS
 
 ### <a name="device-configuration"></a>Cihaz yapılandırması
 
-#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910-eeready---idstaged---"></a>Windows 10 cihaz yapılandırma profilleri oluştururken "uygulanabilirlik kuralları" nı kullanın <!-- 2549910 eeready   idstaged -->
+#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910-eeready------"></a>Windows 10 cihaz yapılandırma profilleri oluştururken "uygulanabilirlik kuralları" nı kullanın <!-- 2549910 eeready    -->
 
 Windows 10 cihaz yapılandırma profilleri oluşturun (**cihaz yapılandırma** > **profilleri** > platform > **uygulanabilirlik kuralları**için **Windows 10** > **profil oluşturma** ). Bu güncelleştirmede, profil yalnızca belirli bir sürüm veya belirli bir sürüm için geçerli olacak şekilde bir **uygulanabilirlik kuralı** oluşturabilirsiniz. Örneğin, bazı BitLocker ayarlarını sağlayan bir profil oluşturursunuz. Profili ekledikten sonra, profilin yalnızca Windows 10 Enterprise çalıştıran cihazlara uygulanması için bir uygulanabilirlik kuralı kullanın.
 
@@ -939,11 +1019,11 @@ Bir uygulanabilirlik kuralı eklemek için bkz. [uygulanabilirlik kuralları](..
 Şunlar için geçerlidir: Windows 10 ve üzeri
 
 #### <a name="use-tokens-to-add-device-specific-information-in-custom-profiles-for-ios-and-macos-devices---3330008----"></a>İOS ve macOS cihazları için özel profillere cihaza özgü bilgileri eklemek için belirteçleri kullanın<!-- 3330008  -->
-İOS ve macOS cihazlarında özel profilleri, Intune 'da yerleşik olarak bulunmayan ayarları ve özellikleri yapılandırmak için (**cihaz yapılandırma** > **profilleri** > **profil** >  **türü için özel** platform > için **iOS** veya **MacOS** ) kullanabilirsiniz. Bu güncelleştirmede, cihaza özgü bilgileri eklemek için `.mobileconfig` dosyalarınıza belirteç ekleyebilirsiniz. Örneğin, cihazın seri numarasını göstermek için yapılandırma dosyanıza `Serial Number: {{serialnumber}}` ekleyebilirsiniz.
+İOS ve macOS cihazlarında özel profilleri, Intune 'da yerleşik olarak bulunmayan ayarları ve özellikleri yapılandırmak için (**cihaz yapılandırma** > **profilleri** > **profil** > ** türü için özel** platform > için **iOS** veya **MacOS** ) kullanabilirsiniz. Bu güncelleştirmede, cihaza özgü bilgileri eklemek için `.mobileconfig` dosyalarınıza belirteç ekleyebilirsiniz. Örneğin, cihazın seri numarasını göstermek için yapılandırma dosyanıza `Serial Number: {{serialnumber}}` ekleyebilirsiniz.
 
 Özel bir profil oluşturmak için bkz. [iOS özel ayarları](../configuration/custom-settings-ios.md) veya [MacOS özel ayarları](../configuration/custom-settings-macos.md).
 
-Şunlara uygulanır
+Uygulama hedefi:
 - iOS
 - Mac OS
 
@@ -1102,17 +1182,17 @@ Intune 'da yerleşik olmayan Zeköşeli cihazlara yönelik ayarları özelleşti
 Uygulama hedefi: Android
 
 #### <a name="some-kiosk-settings-on-ios-devices-are-set-using-block-replacing-allow---4404075----"></a>İOS cihazlarındaki bazı bilgi noktası ayarları "engelle" kullanılarak ayarlanır ve "Izin ver" olarak değiştiriliyor<!-- 4404075  -->
-İOS cihazlarında bir cihaz kısıtlamaları profili oluşturduğunuzda (**cihaz yapılandırma** > **profiller**  > **profil** >  **türü > bilgi noktası**için **iOS** > **cihaz kısıtlamaları** ), **otomatik kilit**, **zil**düğmesi, **ekran döndürme**, **ekran uyku düğmesi**ve **Ses düğmelerini**ayarlarsınız.
+İOS cihazlarında bir cihaz kısıtlamaları profili oluşturduğunuzda (**cihaz yapılandırma** > **profiller ** > **profil** > ** türü > bilgi noktası**için **iOS** > **cihaz kısıtlamaları** ), **otomatik kilit**, **zil**düğmesi, **ekran döndürme**, **ekran uyku düğmesi**ve **Ses düğmelerini**ayarlarsınız.
 
 Bu güncelleştirmede değerler **blok** (özelliği engeller) ve **Yapılandırılmadı** (özelliğe izin verir). Ayarları görmek için [iOS cihaz ayarları ' na giderek özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md#kiosk).
 
 Şunun için geçerlidir: iOS
 
 #### <a name="use-face-id-for-password-authentication-on-ios-devices---4490704---"></a>İOS cihazlarında parola kimlik doğrulaması için yüz KIMLIĞI kullan<!-- 4490704 -->
-İOS cihazları için bir cihaz kısıtlamaları profili oluşturduğunuzda, bir parola için parmak izi kullanabilirsiniz. Bu güncelleştirmede, parmak izi parola ayarları, yüz tanıma (**cihaz yapılandırma** > **profilleri** > profil **oluşturma** > iOS Için **iOS** > **cihaz kısıtlamaları** > **parola**) için bkz. Sonuç olarak, aşağıdaki ayarlar değiştirilmiştir:
+İOS cihazları için bir cihaz kısıtlamaları profili oluşturduğunuzda, bir parola için parmak izi kullanabilirsiniz. Bu güncelleştirmede, parmak izi parola ayarları, yüz tanıma (**cihaz yapılandırma** > **profilleri** > profil **oluşturma** > iOS Için **iOS** > **cihaz kısıtlamaları** > **parola**) için bkz.. Sonuç olarak, aşağıdaki ayarlar değiştirilmiştir:
 
 - **Parmak iziyle kilit açma** artık **dokunma KIMLIĞI ve yüz kimliği kilidi**.
-- **Parmak izi değişikliği (yalnızca denetimli)** artık **dokunma KIMLIĞI ve yüz kimliği değişikliği (yalnızca denetimli)** .
+- **Parmak izi değişikliği (yalnızca denetimli)** artık **dokunma KIMLIĞI ve yüz kimliği değişikliği (yalnızca denetimli)**.
 
 Yüz KIMLIĞI, iOS 11,0 ve üzeri sürümlerde kullanılabilir. Ayarları görmek için [iOS cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md#password).
 
@@ -1262,7 +1342,7 @@ Mevcut PFX sertifikalarının yeniden işlenmesine devam edildiği bir sorunu gi
 #### <a name="intune-security-tasks-for-defender-atp-in-public-preview---3208597---"></a>Defender ATP için Intune güvenlik görevleri (genel önizlemede)<!-- 3208597 -->
 Genel önizlemede, [Microsoft Defender Gelişmiş tehdit koruması (ATP) için güvenlik görevlerini](../protect/atp-manage-vulnerabilities.md)yönetmek üzere Intune 'u kullanabilirsiniz. Bu ATP ile tümleştirme ve uç nokta güvenlik açıklarını ve yapılandırmalarını düzeltmeye, önceliklendirmeye ve düzeltmeye yönelik risk tabanlı bir yaklaşım ekler ve hafifletme için bulma arasındaki süreyi azaltmaktadır.
 
-#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671---idstaged--"></a>Windows 10 cihaz uyumluluk ilkesinde TPM yonga kümesini denetleme<!-- 3617671   idstaged-->
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671-----"></a>Windows 10 cihaz uyumluluk ilkesinde TPM yonga kümesini denetleme<!-- 3617671   -->
 Birçok Windows 10 ve üzeri cihazda Güvenilir Platform Modülü (TPM) yonga kümeleri vardır. Bu güncelleştirme, cihazdaki TPM yonga sürümünü denetleyen yeni bir uyumluluk ayarı içerir.
 
 [Windows 10 ve üzeri uyumluluk ilkesi ayarları](../protect/compliance-policy-create-windows.md#device-security) bu ayarı açıklar.

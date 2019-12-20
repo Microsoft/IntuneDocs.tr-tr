@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e468042ab81d563c9fa4b272661508a340d61aa9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbe0ca9991f427e11d72d85814bcd2d1b8882494
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506240"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205148"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Şirket kaynaklarınıza iOS cihaz erişimi ayarlayın  
 
@@ -41,6 +41,7 @@ Cihazınızdaki iş veya okul bilgilerine erişimi sürdürmek için cihazınız
 
 > [!NOTE]
 > Mail uygulamasında şirket e-postasına erişmeyi denediğinizde cihazınızı yönettirmeniz istendiyse, doğru yere geldiniz. iOS cihazınızda e-posta ve diğer şirket kaynaklarına erişmek için aşağıdaki yönergeleri izleyin.  
+
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Şirket Portalı uygulamasından bekleyebilecekleriniz  
 
@@ -61,69 +62,121 @@ Kayıt hakkında daha fazla bilgi edinmek için bkz. [Şirket Portalı uygulamas
 
 Kayıt sırasında birkaç dakikadan uzun bir süre durakladığında uygulamanın kurulum 'u kapatması veya sonlandırmasına neden olabilir. Bu durumda Şirket Portalı uygulamasını açın ve yeniden deneyin.  
 
-1. Şirket Portalı açın ve iş veya okul hesabınızla oturum açın. 
+1. Şirket Portalı açın ve iş veya okul hesabınızla oturum açın.  
 
-    ![Şirket Portalı uygulamasının örnek ekran görüntüsü, oturum açın.](./media/ios-01-cp-enroll-1904.PNG)  
+2. Şirket Portalı bildirimleri almanız istendiğinde, **Izin ver** ' e dokunun. Şirket Portalı, örneğin cihaz ayarlarınızın güncellenmesi gerekiyorsa sizi uyarmak için bildirimleri kullanır.  
 
-2. Şirket Portalı bildirimleri almanız istendiğinde, **Izin ver** ' e dokunun. Şirket Portalı, örneğin cihaz ayarlarınızın güncellenmesi gerekiyorsa sizi uyarmak için bildirimleri kullanır. 
+3. **Erişim ayarla** ekranında, Başlat ' ı seçin **.**   
 
-    ![Şirket Portalı giriş sayfasının örnek ekran görüntüsü, "Bildirimler" istemi.](./media/ios-02-cp-enroll-1904.PNG)  
+    ![Şirket Portalı, "erişim ayarlama" ekranının örnek ekran görüntüsü.](./media/ios-enrollment-checklist-1909.PNG)  
 
-3. **Erişim ayarla** ekranında, Başlat ' ı seçin **.**  
+4. **Cihaz ve kayıt türü seçin** ekranı görünür ve cihaz türü için sorar.  
+    * Cihazınızı kuruluşunuzdan aldıysanız, **Bu cihazın sahibi olan (kuruluş)** seçeneğine dokunun. Daha sonra bu makaledeki [cihazın tamamını güvenli hale](###secure-entire-device) getirmek için atla bölümüne atlayın.  
+    * Evden aldığınız kişisel bir cihaz kullanıyorsanız, **Bu cihaza sahip** olana kadar dokunun. Sonra bir sonraki adımla devam edin.  
 
-     ![Şirket Portalı, "erişim ayarlama" ekranının örnek ekran görüntüsü.](./media/ios-03-cp-enroll-1904.PNG)  
+    Bu ekranı görmüyorsanız, kurulumun bitmesini sağlamak için [Tüm cihazın güvenliğini](enroll-your-device-in-intune-ios.md#secure-entire-device) atlayın.  
+    
+    ![Örnek ekran görüntüsü Şirket Portalı, "cihaz ve kayıt türünü seçin" ekranının, cihaz türü seçeneklerinin bir listesi.](./media/ios-device-type-1909.PNG)  
 
-4. Kuruluşunuzun görebileceği cihaz bilgileri listesini okuyun. Sonra **devam**' a dokunun.  
 
-5. **İleri git?** ekranında yönergeleri okuyun. Yönetim profilini indirip yüklemeye hazırsanız **devam**' a dokunun.  
+5. Kaydolduktan sonra cihazınızdaki verilerin nasıl korunacağını seçin.  
+    * Cihazdaki tüm uygulama ve verilerin güvenliğini sağlamak için tüm **cihaz güvenli** ' e dokunun. Ardından, kurulum 'u sona erdirmeyi sağlamak için [Tüm cihazın güvenliğini sağlayın](enroll-your-device-in-intune-ios.md#secure-entire-device) .
+    * Yalnızca iş hesabınızla erişebileceğiniz uygulamaların ve verilerin güvenliğini sağlamak için **iş ile ilgili uygulamaları ve verileri güvenli hale** getirin. Daha sonra [iş ile Ilgili güvenli uygulamalar ve veriler](enroll-your-device-in-intune-ios.md#secure-work-related-apps-and-data)bölümüne gidin.  
+
+    ![Örnek ekran görüntüsü, "cihaz ve kayıt türü seç" ekranının, kayıt türü seçeneklerinin Şirket Portalı.](./media/ios-enrollment-type-1909.PNG)  
+
+
+### <a name="secure-entire-device"></a>Tüm cihazın güvenliğini sağlama  
+
+1. **Cihaz yönetimi ve gizlilik** ekranında, kuruluşunuzun görebileceği cihaz bilgileri listesini okuyun. Sonra **devam**' a dokunun.  
+
 
  > [!IMPORTANT]
 > Bu sonraki adımlar ve ekranlar, iOS sürümünüze bağlı olarak farklılık gösterir. İOS sürümünüz için adımları izleyin. 
 
-6. Safari, cihazınızda Şirket Portalı Web sitesini açar. Yapılandırma profilini indirmeniz istendiğinde, **Izin ver**' e dokunun. Çalıştıran bir cihazımız varsa:  
-    * iOS 12,2 ve üzeri: İndirme tamamlandığında bitti ' ye dokunun **.** Bu makalede 7. adıma geçin.
-    * iOS 12,1 ve öncesi: Ayarlar uygulamasına otomatik olarak yönlendirilirsiniz. Bu makaledeki 8. adıma atlayın.  
+2. Safari, cihazınızda Şirket Portalı Web sitesini açar. Yapılandırma profilini indirmeniz istendiğinde, **Izin ver**' e dokunun. Çalıştıran bir cihazımız varsa:  
+    * iOS 12,2 ve üzeri: İndirme tamamlandığında **Kapat**' a dokunun. Ardından adım 3 ' e geçin.  
+    * iOS 12,1 ve önceki sürümler: İndirme tamamlandığında, otomatik olarak ayarlar uygulamasına yönlendirilirsiniz. 4. adıma atlayın.  
+ 
+    Yanlışlıkla **Yoksay**' a dokunmanız durumunda sayfayı yenileyin. Şirket Portalı uygulamasını açmanız istenir. Buradan sonra **İndir**' e dokunun.
+
+  > [!NOTE]
+  > Yönetim profilini, bir sonraki adımlarda 8 dakika içinde açıklandığı gibi yüklemeniz gerekir. Aksi takdirde, profil kaldırılır ve kayıt işlemini yeniden başlatmanız gerekir.  
+
+3. Şirket Portalı açmanız istendiğinde **Aç**' a dokunun. **Yönetim profilini nasıl yükleyeceğiniz** hakkında bilgi edinmek için bkz..  
+
+4. Ayarlar uygulamasına gidin ve **< kuruluş adı >** veya **profil indirilerek**Kaydet ' e dokunun.  
+
+    ![Ayarlar uygulamasının örnek ekran görüntüsü, kuruluşa kaydolma seçeneği.](./media/enroll-in-organization-ios-1909.PNG)  
+
+   Seçeneklerden hiçbiri görünmezse, **genel** > **profiller & cihaz yönetimi**> **Yönetim profili**' ne gidin. Hala bir yönetim profili görmüyorsanız, yeniden indirmeniz gerekebilir.  
+
+5. **Yükle**’ye dokunun.  
+    
+6. Cihaz parolanızı girin. Ardından **Install**' a dokunun.    
+
+7. Sonraki ekran, cihaz yönetimiyle ilgili standart sistem uyarısına sahiptir. Yüklemeye devam etmek için, **yükleme**' ye dokunun. Uzaktan yönetime güvenmesi istenirse **güven**' e dokunun.  
+
+8. Yükleme tamamlandıktan sonra **bitti**' ye dokunun. Profilin yüklendiğini doğrulamak için, **cihaz yönetimi ayarları & profiller** ' e gidin. **Mobil cihaz yönetimi**altında listelenen profili görmeniz gerekir.   
+
+    ![Ayarlar uygulamasının, yönetim profilini gösteren cihaz yönetimi ayarlarının &, profil ekran görüntüsü örneği.](./media/ios-12-cp-enroll-1904.PNG)  
+
+9. Şirket Portalı uygulamasına geri dönün. Şirket Portalı, cihazınızı eşitlemeye ve ayarlamaya başlayacaktır. Şirket Portalı ek cihaz ayarlarını güncelleştirmenizi isteyebilir. Varsa, **devam**' a dokunun.  
+
+10. Listedeki tüm öğeler yeşil onay işareti gösterdiğinizde kurulumun tamamlandığını bilirsiniz. **Bitti**’ye dokunun.   
+
+> [!Note]
+> Kuruluşunuz ses ve veri sınırlarını izliyor veya size şirkete ait bir cihaz sağlıyorsa, birkaç adım daha doldurmanız gerekebilir. **Datalert** uygulamasını yüklemek isteyip istemediğiniz sorulursa, bkz. [cihazınızı Telekom gider yönetimine kaydetme](enroll-your-device-with-telecom-expense-management-ios.md). Kuruluşunuz Apple Aygıt Kayıt Programı bir parçasıysa [şirkete ait cihazınızı nasıl kaydedebileceğinizi](enroll-your-device-dep-ios.md)öğrenin.  
+
+### <a name="secure-work-related-apps-and-data"></a>İş ile ilgili uygulamaları ve verileri güvenli hale getirme  
+1. **Microsoft Authenticator indir** ekranı görünür (zaten Authenticator varsa, 2. adıma atlayın) bu ekranı görmezsiniz.  
+    1. **App Store 'Dan indir**' e dokunun.
+    2. Uygulama Mağazası açıldığında uygulamayı yükler. 
+    3. Şirket Portalı dönün ve **devam**' a dokunun.    
+    
+   Microsoft Authenticator yükledikten sonra uygulamayla başka bir şey yapmanız gerekmez. Yalnızca cihazınızda mevcut olması gerekir. 
+
+   ![Şirket Portalı, "Microsoft Authenticator Indir" ekranının örnek ekran görüntüsü.](./media/download-ms-authenticator-1909.PNG)  
+
+2. **Cihaz yönetimi ve gizlilik** ekranında, kuruluşunuzun görebileceği cihaz bilgileri listesini okuyun. Sonra **devam**' a dokunun.  
+
+
+ > [!IMPORTANT]
+> Bu sonraki adımlar ve ekranlar, iOS sürümünüze bağlı olarak farklılık gösterir. İOS sürümünüz için adımları izleyin. 
+
+3. Safari, cihazınızda Şirket Portalı Web sitesini açar. Yapılandırma profilini indirmeniz istendiğinde, **Izin ver**' e dokunun. Çalıştıran bir cihazımız varsa:  
+    * iOS 12,2 ve üzeri: İndirme tamamlandığında **Kapat**' a dokunun. Ardından 4. adıma geçin.  
+    * iOS 12,1 ve önceki sürümler: İndirme tamamlandığında, otomatik olarak ayarlar uygulamasına yönlendirilirsiniz. 5. adıma atlayın.  
  
     Yanlışlıkla **Yoksay**' a dokunmanız durumunda sayfayı yenileyin. Şirket Portalı uygulamasını açmanız istenir. Uygulamadan **tekrar indir**' e dokunabilirsiniz.
 
   > [!NOTE]
   > Yönetim profilini, bir sonraki adımlarda 8 dakika içinde açıklandığı gibi yüklemeniz gerekir. Aksi takdirde, profil kaldırılır ve kayıt işlemini yeniden başlatmanız gerekir.  
 
-7. yalnızca iOS 12,2 ve üzeri: Şirket Portalı açmanız istendiğinde **Aç**' a dokunun. **Yönetim profilini yükleme** ekranında, profili yükleme adımları listelenir.
+4. Şirket Portalı açmanız istendiğinde **Aç**' a dokunun. **Yönetim profilini nasıl yükleyeceğiniz** hakkında bilgi edinmek için bkz.. 
 
-    ![Şirket Portalı örnek ekran görüntüsü, yönetim profilini yükleme ekranı yükleniyor.](./media/ios-07-cp-enroll-1904.PNG)  
+5. Ayarlar uygulamasına gidin ve **< kuruluş adı >** veya **profil indirilerek**Kaydet ' e dokunun.  
 
-8. Ayarlar uygulamasına gidin ve **profil indirildi**' a dokunun.  
+    ![Ayarlar uygulamasının örnek ekran görüntüsü, kuruluşa kaydolma seçeneği.](./media/enroll-in-organization-ios-1909.PNG)  
 
-    **Indirilen profil** bir seçenek olarak görünmezse, **genel** > **profiller**' e gidin. Profili hala görmüyorsanız, yeniden indirmeniz gerekebilir.  
-
-    ![Ayarlar uygulaması, profil Indirilen ayarı örnek ekran görüntüsü.](./media/ios-1904-settings-badge.PNG)  
-
-9. **Yükle**’ye dokunun.  
-    
-10. Cihaz parolanızı girin. Ardından **Install**' a dokunun.    
-
-    ![Ayarlar uygulamasının, profil yükleme, * * yükleme * * düğmesi üzerinde bir imleç içeren örnek ekran görüntüsü.](./media/ios-10-cp-enroll-1904.PNG)  
+   Seçeneklerden hiçbiri görünmezse, **genel** > **profiller & cihaz yönetimi**> **Yönetim profili**' ne gidin. Hala bir yönetim profili görmüyorsanız, yeniden indirmeniz gerekebilir.   
 
 
-11. Sonraki ekran, cihaz yönetimi için standart bir sistem uyarısına sahiptir. Yüklemeye devam etmek için, **yükleme**' ye dokunun. Uzaktan yönetime güvenmesi istenirse **güven**' e dokunun.  
+6. **Kullanıcı kaydı** ekranında, **IPhone 'umu kaydet**' e dokunun.  
 
-    ![Ayarlar uygulamasının örnek ekran görüntüsü, kök sertifika ve mobil cihaz yönetimi için standart sistem uyarı ekranı.](./media/ios-11-cp-enroll-1904.PNG)  
+    ![Ayarlar uygulamasının, Kullanıcı kaydı ekranının, Kaydet düğmesini vurgulayan örnek ekran görüntüsü.](./media/user-enrollment-information-1909.PNG)  
 
-12. Yükleme tamamlandıktan sonra **bitti**' ye dokunun. Profilin yüklendiğini doğrulamak için, **cihaz yönetimi ayarları & profiller** ' e gidin. **Mobil cihaz yönetimi**altında listelenen profili görmeniz gerekir.   
+7. Cihaz parolasını girin. Ardından **Install**' a dokunun.  
+
+8. **Oturum açma** ekranında, YÖNETILEN Apple Kimliğiniz için parolayı girin. Çoğu durumda bu kimlik bilgileri, kuruluşunuz sizin için farklı bir kimlik bilgileri kümesi sağladıkça iş veya okul hesabınızda oturum açmak için kullandığınız verilerle aynı olacaktır. 
+9. **Oturum aç**' a dokunun.  
+10. Bir başarı iletisi, profil yüklendikten kısa bir süre sonra ekranda görüntülenir. Profilin yüklendiğini doğrulamak için, profil **& cihaz yönetimi** ayarları ' na gidin.  **Mobil cihaz yönetimi** altında listelenen profili görmeniz gerekir.  
 
     ![Ayarlar uygulamasının, yönetim profilini gösteren cihaz yönetimi ayarlarının &, profil ekran görüntüsü örneği.](./media/ios-12-cp-enroll-1904.PNG)  
 
-13. Şirket Portalı uygulamasına geri dönün. Şirket Portalı, cihazınızı eşitlemeye ve ayarlamaya başlayacaktır. Şirket Portalı ek cihaz ayarlarını güncelleştirmenizi isteyebilir. Varsa, **devam**' a dokunun.  
+11. Şirket Portalı uygulamasına geri dönün. Şirket Portalı, cihazınızı eşitlemeye ve ayarlamaya başlayacaktır. Şirket Portalı ek cihaz ayarlarını güncelleştirmenizi isteyebilir. Varsa, **devam**' a dokunun.    
 
-    ![Şirket Portalı, "erişim ayarlama" ekranının örnek ekran görüntüsü, gereksinim ayarı yanında sarı üçgenle.](./media/ios-13-cp-enroll-1904.PNG)  
-
-14. Listedeki tüm öğeler yeşil bir daire gösterdiğinizde kurulumun tamamlandığını bilirsiniz. **Bitti**’ye dokunun.   
-    
-    ![Örnek ekran görüntüsü Şirket Portalı, "Tamamen hazırsınız!" ekran, tüm yeşil daireleri gösteriliyor.](./media/ios-14-cp-enroll-1904.PNG)  
-
-> [!Note]
-> Kuruluşunuz ses ve veri sınırlarını izliyor veya size şirkete ait bir cihaz sağlıyorsa, birkaç adım daha doldurmanız gerekebilir. **Datalert** uygulamasını yüklemek isteyip istemediğiniz sorulursa, bkz. [cihazınızı Telekom gider yönetimine kaydetme](enroll-your-device-with-telecom-expense-management-ios.md). Kuruluşunuz Apple Aygıt Kayıt Programı bir parçasıysa [şirkete ait cihazınızı nasıl kaydedebileceğinizi](enroll-your-device-dep-ios.md)öğrenin.  
+12. Listedeki tüm öğeler yeşil onay işareti gösterdiğinizde kurulumun tamamlandığını bilirsiniz.  **Bitti**' ye dokunun.  
 
 ## <a name="it-administrator-support"></a>BT yöneticisi desteği  
 BT yöneticisiyseniz ve cihazları kaydederken sorun yaşıyorsanız, bkz. [Microsoft Intune iOS cihaz kaydı sorunlarını giderme](https://support.microsoft.com/en-us/help/4039809). Bu makalede, sık karşılaşılan hatalar, nedenler ve bunları çözmeye yönelik adımlar listelenir.  

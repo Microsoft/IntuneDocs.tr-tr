@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,27 +18,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26972bb034ea4cb65f1bf64c61c20395cf94dc36
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564180"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205267"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Kullanıcılara uyguladığınız mobil uygulama yönetimi (MAM) ilkelerinin uyumluluk durumunu, [Azure Portal](https://portal.azure.com)Intune uygulama koruması bölmesinden izleyebilirsiniz. Ayrıca, MAM ilkelerinden etkilenen kullanıcılar hakkında bilgiler, MAM ilkesi uyumluluk durumu ve kullanıcılarınızın karşılaşmış olabileceği sorunlar hakkında bilgi edinebilirsiniz.
+Kullanıcılara uyguladığınız uygulama koruma ilkelerinin durumunu, [Azure Portal](https://portal.azure.com)Intune uygulama koruması bölmesinden izleyebilirsiniz. Ayrıca, uygulama koruma ilkelerinden etkilenen kullanıcılar hakkında bilgiler, ilke uyumluluk durumu ve kullanıcılarınızın karşılaşmış olabileceği sorunlar hakkında bilgi edinebilirsiniz.
 
 Uygulama koruma ilkelerini izlemek için üç farklı yer vardır:
 - Özet görünümü
 - Ayrıntılı görünüm
 - Raporlama görünümü
 
+Uygulama koruma verileri için bekletme süresi 90 gündür. Son 90 gün içinde Intune hizmetine iade edilmiş tüm uygulama örnekleri, uygulama koruma durumu raporuna dahil edilir. Bir *uygulama örneği* , benzersiz bir Kullanıcı + App + cihazdır. 
+
 > [!NOTE]
 > Daha fazla bilgi için bkz. [Uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md).
-
-Uygulama koruma verileri için bekletme süresi 90 gündür. Son 90 gün içinde MAM hizmetine iade edilmiş tüm uygulama örnekleri, uygulama koruma durumu raporuna dahil edilir. Bir *uygulama örneği* , benzersiz bir Kullanıcı + App + cihazdır. 
 
 ## <a name="summary-view"></a>Özet görünümü
 
@@ -51,18 +51,34 @@ Uygulama koruma verileri için bekletme süresi 90 gündür. Son 90 gün içinde
 - **Bayraklı kullanıcılar**: cihazlarıyla ilgili sorun yaşayan Kullanıcı sayısı. Jailbreak uygulanmış (iOS) ve kökü belirtilmiş (Android) cihazlar **bayraklı kullanıcılar**altında raporlanır. Ayrıca, Google SafetyNet cihaz kanıtlama denetimi (BT Yöneticisi tarafından açıldıysa) tarafından işaretlenen cihazlara sahip kullanıcılar burada raporlanır. 
 - **Zararlı olabilecek uygulamalara sahip kullanıcılar**: Android cihazlarında Google Play koruma tarafından algılanan zararlı bir uygulamaya sahip olabilecek Kullanıcı sayısı. 
 - **İOS Için Kullanıcı** durumu ve **Android için Kullanıcı durumu**: ilgili platform için bir iş bağlamında kendisine atanmış bir ilkeyi olan bir uygulamayı kullanmış olan kullanıcıların sayısı. Bu bilgiler, ilke tarafından yönetilen kullanıcıların sayısını ve bir iş bağlamındaki herhangi bir ilke tarafından hedeflenmediği bir uygulamayı kullanan kullanıcı sayısını gösterir. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
-- **En Iyi korunan IOS uygulamaları**: en sık kullanılan iOS uygulamalarına göre bu bilgiler, korunan ve korumasız iOS uygulamalarının sayısını gösterir.
-- **En Iyi korunan Android Uygulamaları**: en sık kullanılan Android uygulamalarını temel alan bu bilgiler, korunan ve korunmayan Android uygulamalarının sayısını gösterir.
-- **Kayıt olmadan en çok yapılandırılan IOS uygulamaları**: kayıtlı olmayan cihazlar için en sık kullanılan iOS uygulamalarına bağlı olarak, bu bilgiler yapılandırılmış iOS uygulamalarının sayısını gösterir.
-- **Kayıt olmadan en fazla yapılandırılan Android Uygulamaları**: kayıtlı olmayan cihazlar için en sık kullanılan Android uygulamalarını temel alan bu bilgiler, yapılandırılan Android uygulamalarının sayısını gösterir.
+- En çok **korunan IOS uygulamaları** ve en çok kullanılan **Android**uygulamaları: Bu bilgiler, platforma göre korunan ve korunmayan uygulamaların sayısını gösterir.
+- Kayıt olmadan, en çok kullanılan iOS ve **En Iyi yapılandırılmış Android**uygulamaları olmadan, en sık yapılandırılan **iOS uygulamaları** : kayıtlı olmayan cihazlar Için en çok kullanılan iOS ve Android uygulamalarına bağlı olarak, bu bilgiler platforma göre yapılandırılmış uygulama sayısını (içinde, uygulama yapılandırma ilkesi kullanarak) gösterir.
 
     > [!NOTE]
     > Platform başına birden çok ilkeniz varsa bir kullanıcıya atanmış en az bir ilke olduğunda bu kullanıcının ilke ile yönetildiği kabul edilir.
 
 ## <a name="detailed-view"></a>Ayrıntılı görünüm
-**Kullanıcı durumu** kutucuğunu (cihaz işletim sistemi platformuna göre), **zararlı olabilecek uygulamalara sahip olan kullanıcıları** ve **bayraklı kullanıcıları** kutucuğunu seçerek özetin ayrıntılı görünümüne ulaşabilirsiniz.
+**Bayraklı kullanıcılar** kutucuğunu ve **potansiyel olarak zararlı uygulamalar** kutucuğunu seçerek özetin ayrıntılı görünümüne ulaşabilirsiniz.
 
-### <a name="user-status"></a>Kullanıcı durumu
+### <a name="flagged-users"></a>Bayrak eklenen kullanıcılar
+Ayrıntılı görünümde; hata iletisi, hata oluştuğunda erişilmiş olan uygulama, etkilenen cihaz işletim sistemi platformu ve zaman damgası gösterilir. Hata genellikle jailbreak uygulanmış (iOS) veya kökü belirtilen (Android) cihazlar içindir. Ayrıca, ' SafetyNet cihaz kanıtlama ' koşullu başlatma denetimi tarafından işaretlenen cihazlara sahip kullanıcılar, burada Google tarafından raporlanan sebeplerden itibaren raporlanır. Bir kullanıcının rapordan kaldırılması için, bir sonraki kök algılama denetiminden (veya jailbreak Check/Safbrannet Check olduktan sonra) bir pozitif sonuç bildirmeli sonra gerçekleşen cihazın durumunun değişmiş olması gerekir. Cihaz gerçekten düzeltilmişse, bayrak eklenen kullanıcılar raporundaki yenileme, bölmesi yeniden yüklediğinde gerçekleşir.
+
+### <a name="users-with-potentially-harmful-apps"></a>Zararlı olabilecek uygulamalara sahip kullanıcılar
+**Uygulamalarda tehdit taraması iste** koşullu başlatma denetimi tarafından işaretlenen cihazlara sahip kullanıcılar, burada Google tarafından bildirilen tehdit kategorisiyle birlikte raporlanır. Bu raporda Intune aracılığıyla dağıtılan uygulamalar varsa, uygulama için uygulama geliştiricisine başvurun veya uygulamayı Kullanıcılarınıza atamak için kaldırın. Ayrıntılı görünüm şunları gösterir:
+
+- **Kullanıcı**: kullanıcının adı.
+- **Uygulama PAKETI kimliği**: Android işletim sisteminin bir uygulamayı benzersiz olarak belirlediği yoldur.
+- **Uygulama mam etkinse**: uygulamanın Microsoft Intune aracılığıyla dağıtılıp dağıtılmayacağı. 
+- **Tehdit kategorisi**: Bu uygulamanın hangi Google tarafından belirlendiği tehdit kategorisi vardır. 
+- **E-posta**: kullanıcının e-postası.
+- **Cihaz adı**: kullanıcının hesabıyla ilişkili cihazların adları.
+- **Zaman damgası**: Bu, Google tarafından zararlı olabilecek uygulamalarla ilgili Microsoft Intune son eşitlemenin tarihidir.
+
+## <a name="reporting-view"></a>Raporlama görünümü
+
+Aynı raporları **Uygulama koruma durumu** bölmesinin üst kısmında bulabilirsiniz. Bu raporları görüntülemek için **uygulamalar** > **uygulama koruma durumu** > **raporlar**' ı seçin. **Raporlar** bölmesi, aşağıdakiler de dahil olmak üzere Kullanıcı ve uygulamayı temel alan çeşitli raporlar sağlar:
+
+### <a name="user-report"></a>Kullanıcı raporu
 Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetleyebilirsiniz. **Uygulama raporlama** bölmesinde, seçilen kullanıcı için aşağıdaki bilgiler görüntülenir:
 - **Simge**: uygulama durumunun güncel olup olmadığını gösterir.
 - **Uygulama adı**: uygulamanın adı.
@@ -86,7 +102,6 @@ Tek bir kullanıcıyı arayabilir ve o kullanıcının uyumluluk durumunu denetl
 > - Bu, ilk kez oturum açmışsa, bu, kullanıcının daha önce imzalandığı ve Intune ile uygulama örneği kaydı olmadığı anlamına gelir. Kullanıcı oturum açtıktan sonra, Kullanıcı yeni bir uygulama örneği kaydı alır ve hemen iade edilebilir (daha önce gelecekteki iadelerde listelenen aynı zaman gecikmeleriyle birlikte). Bu nedenle, son eşitleme zamanı, Kullanıcı durumu raporunda 12:00 PM ve uygulama koruma Ilkesi raporundaki 12:01 PM (veya en son 12:30). 
 > - Kullanıcı uygulamayı yeni başlatmazysa, bildirilen son eşitleme zamanı, kullanıcının en son ne zaman iade edildiğinde değişir.
 
-
 Kullanıcının raporlamasını görmek için şu adımları izleyin:
 
 1. Bir kullanıcı seçmek için **Kullanıcı durumu** Özet kutucuğunu seçin.
@@ -102,36 +117,8 @@ Kullanıcının raporlamasını görmek için şu adımları izleyin:
 >[!NOTE]
 > Aradığınız kullanıcıya MAM ilkesi dağıtılmamışsa, kullanıcının herhangi bir MAM ilkesi tarafından hedeflenmediğini bildiren bir ileti görürsünüz.
 
-### <a name="flagged-users"></a>Bayrak eklenen kullanıcılar
-Ayrıntılı görünümde; hata iletisi, hata oluştuğunda erişilmiş olan uygulama, etkilenen cihaz işletim sistemi platformu ve zaman damgası gösterilir. Hata genellikle jailbreak uygulanmış (iOS) veya kökü belirtilen (Android) cihazlar içindir. Ayrıca, ' SafetyNet cihaz kanıtlama ' koşullu başlatma denetimi tarafından işaretlenen cihazlara sahip kullanıcılar, burada Google tarafından raporlanan sebeplerden itibaren raporlanır. Bir kullanıcının rapordan kaldırılması için, bir sonraki kök algılama denetiminden (veya jailbreak Check/Safbrannet Check olduktan sonra) bir pozitif sonuç bildirmeli sonra gerçekleşen cihazın durumunun değişmiş olması gerekir. Cihaz gerçekten düzeltilmişse, bayrak eklenen kullanıcılar raporundaki yenileme, bölmesi yeniden yüklediğinde gerçekleşir.
-
-### <a name="users-with-potentially-harmful-apps"></a>Zararlı olabilecek uygulamalara sahip kullanıcılar
-Ayrıntılı görünüm şunları gösterir:
-
-- Kullanıcı.
-- Uygulama paketi KIMLIĞI.
-- Uygulama MAM etkinse.
-- Tehdit kategorisi.
-- E-posta.
-- Cihaz adı.
-- Bir zaman damgası.
-
-**Uygulamalarda tehdit taraması iste** koşullu başlatma denetimi tarafından işaretlenen cihazlara sahip kullanıcılar, burada Google tarafından bildirilen tehdit kategorisiyle birlikte raporlanır. Bu raporda Intune aracılığıyla dağıtılan uygulamalar varsa, uygulama için uygulama geliştiricisine başvurun veya uygulamayı Kullanıcılarınıza atamak için kaldırın. 
-
-## <a name="reporting-view"></a>Raporlama görünümü
-
-Aynı raporları **Uygulama koruma durumu** bölmesinin üst kısmında bulabilirsiniz.
-
-> [!NOTE]
-> Intune, uygulama kayıt KIMLIĞI, Android üreticisi, model ve güvenlik düzeltme eki sürümü ve iOS modelinin yanı sıra ek cihaz raporlama alanları sağlar. Intune 'da, **uygulamalar** > uygulama **koruma durumu** > uygulama koruma **raporu: iOS, Android '** i seçerek bu alanlara erişirsiniz. Ayrıca, bu parametreler cihaz üreticisi için **Izin verilenler** listesini (Android), cihaz modeli Için **izin verilenler** listesini (Android ve iOS) ve en düşük Android güvenlik düzeltme eki sürümü ayarını yapılandırmanıza yardımcı olur. 
-
-Ek raporlar, MAM ilkesi uyumluluk durumu ile ilgili yardım almak için kullanılabilir. Bu raporları görüntülemek için **uygulamalar** > **uygulama koruma durumu** > **raporlar**' ı seçin. 
-
-**Raporlar** bölmesi, aşağıdakiler de dahil olmak üzere Kullanıcı ve uygulamayı temel alan çeşitli raporlar sağlar:
-
-- **Kullanıcı raporu**: Bu rapor, yukarıdaki [ayrıntılı görünüm](app-protection-policies-monitor.md#detailed-view) bölümünde yer aldığı **Kullanıcı durumu** raporunda bulabileceğiniz bilgilerin aynısını özetler.
-
-- **Uygulama raporu**: platformu ve uygulamayı seçmenin yanı sıra, bu rapor, raporu oluşturmadan önce seçebileceğiniz iki farklı uygulama koruma durumu sağlar. Durumlar **korunabilir** veya **korumasız**olabilir.
+### <a name="app-report"></a>Uygulama Raporu
+Platform ve uygulamaya göre arama yapabilirsiniz ve bu rapor, raporu oluşturmadan önce seçebileceğiniz iki farklı uygulama koruma durumu sağlar. Durumlar **korunabilir** veya **korumasız**olabilir.
 
   - Yönetilen MAM etkinliği için Kullanıcı durumu (**korumalı**): Bu rapor, her BIR yönetilen mam uygulamasının etkinliğini, Kullanıcı başına temelinde özetler. Her Kullanıcı için MAM ilkeleri tarafından hedeflenen tüm uygulamaları ve her uygulamanın durumunu MAM ilkeleriyle iade edildi olarak gösterir. Rapor ayrıca, bir MAM ilkesiyle hedeflenen, ancak hiç iade edilmedi olan her uygulamanın durumunu da içerir.
   - Yönetilmeyen MAM etkinliği için Kullanıcı durumu (**korumasız**): Bu rapor, şu anda yönetilmeyen ve Kullanıcı başına TEMELINDE olan mam özellikli uygulamaların etkinliklerini özetler. Bunun nedeni şu olabilir:
@@ -140,23 +127,39 @@ Ek raporlar, MAM ilkesi uyumluluk durumu ile ilgili yardım almak için kullanı
 
     ![Üç uygulama için ayrıntıların bulunduğu bir kullanıcının uygulama raporlama bölmesinin ekran görüntüsü](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
-- **Kullanıcı yapılandırma raporu**: seçili bir kullanıcıya bağlı olarak, bu rapor kullanıcının aldığı uygulama yapılandırmaları hakkında ayrıntılar sağlar.
-- **Uygulama yapılandırma raporu**: seçili platform ve uygulamanın temelini oluşturan bu rapor, hangi kullanıcıların seçili uygulama için yapılandırmaları aldığını gösteren Ayrıntılar sağlar.
-- **Windows Information Protection Için uygulama öğrenme raporu**: Bu rapor, ilke sınırlarının çapraz olarak hangi uygulamaların denenmeye yönelik olduğunu gösterir.
-- **Windows Information Protection Için Web sitesi öğrenimi**: Bu rapor, ilke sınırlarının çapraz bir şekilde hangi web siteleri tarafından denenmeye
+### <a name="user-configuration-report"></a>**Kullanıcı yapılandırma raporu**
+Bu rapor, seçilen bir kullanıcıya bağlı olarak, kullanıcının aldığı uygulama yapılandırmalarının ayrıntılarını sağlar.
 
-## <a name="table-grouping"></a>Tablo gruplandırma
+### <a name="app-configuration-report"></a>**Uygulama yapılandırma raporu**
+Bu rapor, seçilen platforma ve uygulamaya bağlı olarak, hangi kullanıcıların seçili uygulama için yapılandırma aldığını gösteren Ayrıntılar sağlar.
 
-**Uygulama koruma Kullanıcı raporu** verileri gösterildikten sonra, verileri aşağıdaki şekilde toplayabilirsiniz:
+### <a name="app-learning-report-for-windows-information-protection"></a>Windows Information Protection için uygulama öğrenme raporu
+Bu rapor, ilke sınırlarını çapraz olarak hangi uygulamaların denenmeye yönelik olduğunu gösterir.
 
-- **Doğrulama sonucu**: veriler, "hata", "uyarı" veya "başarılı" olabilen uygulama koruma durumuna göre gruplandırılır.
-- **Uygulama adı**: veriler gerçek uygulama adına göre gruplandırılır. Yine, durum "hata", "uyarı" veya "başarılı" olabilir.
+### <a name="website-learning-for-windows-information-protection"></a>Windows Information Protection için Web sitesi öğrenimi
+Bu rapor, hangi web sitelerinin ilke sınırlarını çapraz olarak hangilerinin denenmediğini gösterir.
 
 ## <a name="export-app-protection-activities"></a>Uygulama koruma etkinliklerini dışarı aktarma
+Uygulama koruma ilkesi etkinliklerinizin tümünü tek bir .csv dosyasına dışarı aktarabilirsiniz. Bu işlem, kullanıcılardan raporlanan uygulama koruması durumlarının tümünü çözümlemenize yardımcı olabilir. **App Protection. csv dosyası şunları gösterir**:
+- **Kullanıcı**: kullanıcının adı.
+- **E-posta**: kullanıcının e-postası.
+- **Uygulama**: uygulamanın adı.
+- **Uygulama sürümü**: uygulamanın sürümü.
+- **Cihaz adı**: kullanıcının hesabıyla ilişkili cihazların adları.
+- **Cihaz üreticisi**: Bu, cihazın üreticisini listeler (yalnızca Android). 
+- **Cihaz modeli**: Bu, cihazın üreticisini listeler (yalnızca Android). 
+- **Android düzeltme eki sürümü**: son Android güvenlik düzeltme ekinin tarihi.
+- **AAD CIHAZ kimliği**: cihaz AAD 'ye katılırsa bu sütun doldurulur.
+- **MDM CIHAZ kimliği**: cihaz MDM Microsoft Intune kaydedildiyse bu sütun doldurulur.
+- **Platform**: işletim sistemi.
+- **Platform sürümü**: işletim sistemi sürümü.
+- **Yönetim türü**: cihazdaki Yönetim türü. Örneğin, Android Enterprise, yönetilmeyen veya MDM.  
+- **Uygulama koruma durumu**: korumasız veya korumalı.
+- **İlke**: uygulamayla ilişkili uygulama koruma ilkeleri.
+- **Son eşitleme**: uygulama Microsoft Intune ile son kez eşitlendiğinde. 
+- **Uyumluluk durumu**: Kullanıcının cihazındaki uygulamanın uygulama tabanlı tüm koşullu erişim ilkeleriyle uyumlu olup olmadığı.  
 
-Uygulama koruma ilkesi etkinliklerinizin tümünü tek bir .csv dosyasına dışarı aktarabilirsiniz. Bu işlem, kullanıcılardan raporlanan uygulama koruması durumlarının tümünü çözümlemenize yardımcı olabilir.
-
-Uygulama koruma raporunu oluşturmak için aşağıdaki adımları izleyin:
+App Protection. csv dosyası veya uygulama yapılandırması. csv dosyası oluşturmak için bu adımları izleyin:
 
 1. Intune mobil uygulama yönetimi bölmesinde **Uygulama koruması raporu**’nu seçin.
 
@@ -165,7 +168,10 @@ Uygulama koruma raporunu oluşturmak için aşağıdaki adımları izleyin:
 2. Raporunuzu kaydetmek için **Evet** ' i seçin ve ardından **farklı kaydet**' i seçin. Raporu kaydetmek istediğiniz klasörü seçin.
 
     ![Raporu kaydet onay kutusunun ekran görüntüsü](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
-
+   
+> [!NOTE]
+> Intune, uygulama kayıt KIMLIĞI, Android üreticisi, model ve güvenlik düzeltme eki sürümü ve iOS modelinin yanı sıra ek cihaz raporlama alanları sağlar. Intune 'da, **uygulamalar** > uygulama **koruma durumu** > uygulama koruma **raporu: iOS, Android '** i seçerek bu alanlara erişirsiniz. Ayrıca, bu parametreler cihaz üreticisi için **Izin verilenler** listesini (Android), cihaz modeli Için **izin verilenler** listesini (Android ve iOS) ve **En düşük Android güvenlik düzeltme eki sürümü** ayarını yapılandırmanıza yardımcı olur.   
+ 
 ## <a name="see-also"></a>Ayrıca bkz:
 - [iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md)
 - [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-android.md)

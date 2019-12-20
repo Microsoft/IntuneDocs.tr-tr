@@ -1,12 +1,11 @@
 ---
-title: Windows 8.1 cihazları için Microsoft Intune VPN ayarları
-titleSuffix: ''
-description: Windows 8.1 çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi edinin.
+title: Microsoft Intune-Azure 'da Windows 8.1 cihazlarda VPN ayarlarını yapılandırma | Microsoft Docs
+description: Bağlantı ayrıntıları ve IP veya FQDN adresi dahil edilecek proxy ayarları ve Windows 8.1 çalıştıran cihazlarda Microsoft Intune TCP bağlantı noktası dahil olmak üzere sanal özel ağ (VPN) yapılandırma ayarlarını kullanarak bir VPN yapılandırma profili ekleyin veya oluşturun.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12267ce4e29fe2d53d01aa8115cafbf2196d50ed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9f9a1399d5474d79ac8fd48a8aa3a844f20eb640
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490849"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207052"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Windows 8.1 çalıştıran cihazlar için Microsoft Intune'da VPN ayarlarını yapılandırın
+# <a name="add-vpn-settings-on-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune Windows 8.1 cihazlara VPN ayarları ekleme
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Bu makale, Windows 8.1 çalıştıran cihazlarda VPN bağlantılarını yapılandırmak için kullanabileceğiniz Intune ayarları hakkında bilgi sağlar.
 
@@ -33,66 +32,69 @@ Seçtiğiniz ayarlara bağlı olarak, aşağıdaki listede yer alan değerlerden
 
 ## <a name="base-vpn-settings"></a>Temel VPN ayarları
 
+- **Tüm ayarları yalnızca Windows 8.1 Uygula**: klasik Intune portalında bu ayarı yapılandırın. Microsoft Endpoint Manager Yönetim Merkezi 'nde Bu ayar değiştirilemez. **Yapılandırılmış**olarak ayarlandığında, tüm ayarlar yalnızca Windows 8.1 cihazlara uygulanır. **Yapılandırılmadı**olarak ayarlandığında, bu ayarlar Windows 10 cihazlarına da uygulanır.
+- **Bağlantı adı**: Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan kullanıcılar bu adı görür.
+- **Sunucular**: Cihazların bağlandığı bir veya birden çok VPN sunucusu ekleyin.
+  - **Ekle**: aşağıdaki bilgileri belirtebileceğiniz **satır ekle** sayfasını açar:
+    - **Açıklama**: sunucu IÇIN **contoso VPN sunucusu**gibi açıklayıcı bir ad belirtin.
+    - **IP adresi veya FQDN**: CIHAZLARıN bağlanacağı VPN sunucusunun IP adresini veya tam etki alanı adını belirtin. Örnekler: **192.168.1.1**, **vpn.contoso.com**.
+    - **Varsayılan sunucu**: Bu sunucuyu, cihazların bağlantı oluşturmak için kullandığı varsayılan sunucu olarak etkinleştirir. Varsayılan sunucu olarak tek bir sunucu ayarladığınızdan emin olun.
+  - **Içeri aktar**: tanım, IP adresı veya FQDN, varsayılan sunucu biçiminde sunucu listesini içeren virgülle ayrılmış bir dosyaya gidin. **Tamam**'ı seçerek bu sunucuları **Sunucular** listesine içeri aktarın.
+  - **Dışarı aktar**: sunucu listesini virgülle ayrılmış değerler (CSV) dosyasına aktarır.
 
-- **Tüm ayarları yalnızca Windows 8.1’e uygula** - Bu, klasik Intune portalında yapılandırabileceğiniz bir ayardır. Azure Portal’da bu ayar değiştirilemez. **Yapılandırıldı** olarak ayarlanırsa, tüm ayarlar yalnızca Windows 8.1 cihazlarına uygulanır. **Yapılandırılmadı** olarak ayarlanırsa, bu ayarlar Windows 10 cihazlarına da uygulanır.
-- **Bağlantı adı** - Bu bağlantı için bir ad girin. Cihazlarındaki kullanılabilir VPN bağlantılarına göz atan kullanıcılar bu adı görür.
-- **Sunucular** - Cihazların bağlandığı bir veya birden çok VPN sunucusu ekleyin.
-  - **Ekle** - Aşağıdaki bilgileri belirtebileceğiniz **Satır Ekle** sayfasını açar:
-    - **Açıklama** - Sunucu için **Contoso VPN sunucusu** gibi açıklayıcı bir ad belirtin.
-    - **IP adresi veya FQDN** - Cihazların bağlanacağı VPN sunucusunun IP adresini veya tam etki alanı adını sağlayın. Örnekler: **192.168.1.1**, **vpn.contoso.com**.
-    - **Varsayılan sunucu** - Bu sunucuyu, cihazların bağlantı oluşturmak için kullandığı varsayılan sunucu olarak etkinleştirir. Varsayılan sunucu olarak tek bir sunucu ayarladığınızdan emin olun.
-  - **İçeri aktar** - Açıklama, IP adresi veya FQDN, Varsayılan sunucu biçiminde virgülle ayrılmış bir sunucu listesi içeren bir dosyaya göz atın. Bunları **Sunucular** listesine içeri aktarmak için **Tamam**’ı seçin.
-  - **Dışarı aktar** - Sunucu listesini virgülle ayrılmış değerler (csv) dosyasına aktarır.
+- **Bağlantı türü**: Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
+  - **Check Point Capsule VPN**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
 
-- **Bağlantı türü** - Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
-- **Check Point Capsule VPN**
-- **SonicWall Mobile Connect**
-- **F5 Edge Client**
-- **Pulse Secure**
+<!--- **Fingerprint** (Check Point Capsule VPN only): Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
 
-<!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
+- **Oturum açma grubu veya etki alanı** (yalnızca SonicWALL mobil bağlantı): bağlanmak istediğiniz oturum açma grubu veya etki alanı adını belirtin.
 
-- **Oturum açma grubu veya etki alanı** (yalnızca SonicWall Mobile Connect) - Bağlanmak istediğiniz oturum açma grubu veya etki alanı adını belirtin.
+- **Rol** (yalnızca Pulse Secure): bu bağlantıya erişimi olan kullanıcı rolünün adını belirtin. Bir kullanıcı rolü, kişisel ayarları ve seçenekleri tanımlar, belirli erişim özelliklerini etkinleştirir veya devre dışı bırakır.
 
-- **Rol** (yalnızca Pulse Secure) - Bu bağlantıya erişimi olan kullanıcı rolünün adını belirtin. Bir kullanıcı rolü, kişisel ayarları ve seçenekleri tanımlar, belirli erişim özelliklerini etkinleştirir veya devre dışı bırakır.
+- **Bölge** (yalnızca Pulse Secure): kullanmak istediğiniz kimlik doğrulama bölgesi adını belirtin. Bir kimlik doğrulaması bölgesi, Pulse Secure bağlantı türü tarafından kullanılan kimlik doğrulaması kaynakları gruplandırmasıdır.
 
-- **Bölge** (yalnızca Pulse Secure) - Kullanmak istediğiniz kimlik doğrulaması bölgesinin adını belirtin. Bir kimlik doğrulaması bölgesi, Pulse Secure bağlantı türü tarafından kullanılan kimlik doğrulaması kaynakları gruplandırmasıdır.
+- **Özel XML**: VPN bağlantısını YAPıLANDıRAN özel xml komutlarını belirtin.
 
+  **Pulse Secure örneği**:
 
-- **Özel XML** - VPN bağlantısını yapılandıran özel XML komutlarını belirtin.
+  ```xml
+  <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
+  ```
 
-**Pulse Secure örneği:**
+  **Checkpoint MOBILE VPN örneği**:
 
-```xml
-    <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-```
+  ```xml
+  <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
+  ```
 
-**CheckPoint Mobile VPN örneği:**
+  **SonicWALL Mobile Connect örneği**:
 
-```xml
-    <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-```
+  ```xml
+  <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
+  ```
 
-**SonicWall Mobile Connect örneği:**
+  **F5 Edge Client örnek**:
 
-```xml
-    <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-```
+  ```xml
+  <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
+  ```
 
-**F5 Edge Client örneği:**
-
-```xml
-    <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-```
-
-Daha fazla bilgi için her üreticinin özel XML komutları yazma hakkındaki VPN belgelerine başvurun.
-
+  Özel XML komutları yazma hakkında daha fazla bilgi için üreticinin VPN belgelerine bakın.
 
 ## <a name="proxy-settings"></a>Proxy ayarları
 
-- **Proxy ayarlarını otomatik olarak algıla** - VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, cihazların bağlantı ayarlarını otomatik olarak algılamasını isteyip istemediğinizi belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
-- **Otomatik yapılandırma betiği** - Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL'sini** girin. Örneğin, şunu girin: `http://proxy.contoso.com`.
-- **Proxy sunucusu kullan** - Proxy sunucusu ayarlarını el ile girmek istiyorsanız bu seçeneği etkinleştirin.
-  - **Adres** - Proxy sunucusu adresini (IP adresi olarak) girin.
-  - **Bağlantı noktası numarası** - Proxy sunucusuyla ilişkilendirilmiş bağlantı noktası numarasını girin.
-- **Yerel adresler için proxy atlama** - VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa ve belirttiğiniz yerel adresler için proxy sunucusunu kullanmak istemiyorsanız, bu seçeneği belirtin. Daha fazla bilgi için Windows Server belgelerinize bakın.
+- **Proxy ayarlarını otomatik olarak algıla**: VPN sunucunuz bağlantı için proxy sunucusu gerektiriyorsa, cihazların bağlantı ayarlarını otomatik olarak algılamasını isteyip istemediğinizi belirtin.
+- **Otomatik yapılandırma betiği**: Proxy sunucusunu yapılandırmak için bir dosya kullanın. Yapılandırma dosyasını içeren **Proxy sunucu URL'sini** girin. Örneğin, şunu girin: `http://proxy.contoso.com`.
+- Proxy sunucusu **kullan**: proxy sunucu ayarlarını el ile girmek istiyorsanız bu seçeneği etkinleştirin.
+  - **Adres**: proxy sunucu adresini (bir IP adresi olarak) girin.
+  - **Bağlantı noktası numarası**: Proxy sunucusuyla ilişkilendirilmiş bağlantı noktası numarasını girin.
+- **Yerel adresler için proxy 'Yi atla**: VPN sunucunuz bağlantı için bir ara sunucu gerektiriyorsa ve girdiğiniz yerel adresler için proxy sunucusunu kullanmak istemiyorsanız, bu seçeneği belirleyin.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Ardından [profili atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
+
+[Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [MacOS](vpn-settings-macos.md)ve [Windows 10](vpn-settings-windows-10.md) cihazlarında VPN ayarlarını yapılandırın.

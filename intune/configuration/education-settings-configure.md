@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6cc64c3a65af72fd74bc58ed7c06a214797510
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b3485a87120cbf565a275cefb38cfe3549ee31d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059458"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206457"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune 'da Windows 10 cihazlarda bir test alma uygulaması kullanın
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune 'da eğitim profilleri, öğrenciler için cihazlarda bir test veya sınava yönelik olarak tasarlanmıştır. Bu özellik bir test URL 'SI eklemek için **bir test** uygulaması ve ayarlar alma, son kullanıcıların teste nasıl oturum açmasını ve daha fazlasını içerir. Bu özellik aşağıdaki platformu destekler:
 

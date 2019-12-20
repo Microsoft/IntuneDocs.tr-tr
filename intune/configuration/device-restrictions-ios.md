@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 476817b70f18fdd45a678ef3e12d1d3312c03dd3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992942"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206542"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
@@ -50,7 +50,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
 - **GÜVENILMEYEN TLS sertifikaları**: cihazda güvenilmeyen aktarım katmanı GÜVENLIĞI (TLS) sertifikalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı TLS sertifikalarına izin verir.
-- **Kablosuz PKI güncelleştirmelerini engelle**: **blok** , kullanıcılarınızın cihazlarını bir bilgisayara bağlamadan yazılım güncelleştirmelerini almasını engeller. **Yapılandırılmadı** (varsayılan), cihazda bu ayarı güncelleştirmez.
+- **Kablosuz PKI güncelleştirmelerini engelle**: **blok** , cihazın bir bilgisayara bağlı olmadığı durumlar dışında yazılım güncelleştirmelerini almasını engeller. **Yapılandırılmadı** (varsayılan): bir cihazın bir bilgisayara bağlı olmadan yazılım güncelleştirmelerini almasına izin verir.
 - **Ad Izlemeyi sınırla**: cihaz reklam tanımlayıcısını devre dışı bırakmak için **sınır** ' ı seçin. **Yapılandırılmadı** (varsayılan) bu tanımlayıcının etkin kalmasını sağlar.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
@@ -93,7 +93,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 - **Yapılandırma profili değişiklikleri**: **blok** , cihazdaki yapılandırma profili değişikliklerini engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının yapılandırma profillerini yüklemesine izin verir.
 - **Etkinleştirme Kilidi**: denetimli iOS cihazlarında Etkinleştirme Kilidi etkinleştirmek Için **izin ver** ' i seçin. Etkinleştirme Kilidi, kaybolan veya çalınan bir cihazın yeniden etkinleştirilmesini zorlaştırır.
 - **Uygulama kaldırmayı engelle**: kullanıcıların uygulamaları kaldırmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı kullanıcıların cihazdan uygulama kaldırmasına izin verir.
-- **Cihaz KILITLIYKEN USB donatılara Izin ver**: **ızın ver** , USB aksesuarları 'nin bir saatten daha fazla kilitlenmiş bir cihazla veri alışverişi yapmasına olanak sağlar. **Yapılandırılmamış** (varsayılan) cihazda USB kısıtlı modu güncelleştirmez.
+- **Cihaz KILITLIYKEN USB donatılara Izin ver**: **ızın ver** , USB aksesuarları 'nin bir saatten daha fazla kilitlenmiş bir cihazla veri alışverişi yapmasına olanak sağlar. **Yapılandırılmamış** (varsayılan), USB kısıtlı modunu cihazda güncelleştirmez ve USB aksesuarları bir saatten daha fazla kilitleniyorsa cihazdan veri aktarımını engellenecektir.
 - **Otomatik tarih ve saati zorla**: **gerekli** cihazların otomatik olarak tarih & zamanını ayarlamaya zorlar. Cihazın hücresel bağlantıları olduğunda veya konum hizmetleriyle arasında Wi-Fi etkinleştirildiğinde saat dilimi güncelleştirilir.
 - **Öğrencilerden** **ayrılmaları için** öğrencilerin ders uygulamasını kullanarak yönetilmeyen bir kursa kaydolmaya izin istemesini gerektir: **Yapılandırılmadı** (varsayılan) ayarı öğrencinin izin istemesini zorunlu tutmaz.
 
@@ -189,7 +189,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
   > [!NOTE]
   > Bu ayar için Intune kullanıcı arabirimi iOS ve ıpados tarafından desteklenen değerleri birbirinden ayırır. Kullanıcı arabirimi gelecek bir sürümde güncelleştirilmiş olabilir.
 
-- **Parola kullanım süresi (gün)** : cihaz parolasının değiştirilmesi gereken gün sayısını girin.
+- **Parola kullanım süresi (gün)**: cihaz parolasının değiştirilmesi gereken gün sayısını girin.
 - **Önceki parolaların yeniden kullanılmasını engelle**: eski bir parolanın yeniden kullanılabilmesi için kullanılması gereken yeni parola sayısını girin.
 - **Dokunma kimliği ve yüz kimliği kilit açma**: cihazın kilidini açmak için parmak izini veya yüzü kullanmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının bu yöntemleri kullanarak cihazın kilidini açmasına izin verir.
 
@@ -450,7 +450,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
   > [!IMPORTANT]
   > Bu ayar uzak cihaz eylemi olarak değerlendirilir. Bu nedenle, bu ayar cihazdaki yönetim profilinde gösterilmez. Kişisel etkin nokta durumu cihazda her değiştiğinde **Kişisel etkin nokta** , Intune hizmeti tarafından engellenir. Intune 'da, raporlama durumu bir başarı gösteriyorsa, bu ayar cihazdaki yönetim profilinde gösterilmese de, çalıştığını öğrenin.
 
-- **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)** : yönetilen uygulamaların hücresel ağlarda ne zaman kullanabileceği veri türlerini tanımlayın. Seçenekleriniz şunlardır:
+- **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)**: yönetilen uygulamaların hücresel ağlarda ne zaman kullanabileceği veri türlerini tanımlayın. Seçenekleriniz şunlardır:
   - **Hücresel veri kullanımını engelleyin**: **tüm yönetilen uygulamalar** için hücresel veri kullanmayı engelleyin veya **belirli uygulamaları seçin**.
   - **Dolaşım sırasında hücresel veri kullanımını engelle**: **tüm yönetilen uygulamalar** için Dolaşımda hücresel veri kullanmayı engelleyin veya **belirli uygulamaları seçin**.
 
@@ -529,7 +529,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 - **Şifrelenmiş yedekleme**: **gerekli** olduğundan cihaz yedeklemelerinin şifrelenmesi gerekir.
 - **Yönetilen uygulamalar buluta eşitlenir**: **Yapılandırılmadı** (varsayılan), Intune 'A, uygulamaların kullanıcının iCloud hesabıyla veri eşitlemesine olanak tanır. **Engelle** ayarı iCloud'a bu veri eşitlemesini engeller.
 - **Kurumsal kitap yedeklemesini engelle**: kullanıcıların kurumsal kitaplar yedeklemesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan), kullanıcıların bu kitapları yedeklemesini sağlar.
-- **Kurumsal kitap meta verileri eşitlemesini engelleyin (notlar ve vurgular)** : **blok** , kurumsal kitaplar 'da notların ve vurguların eşitlenmesini önler. **Yapılandırılmadı** (varsayılan) eşitlemeye izin verir.
+- **Kurumsal kitap meta verileri eşitlemesini engelleyin (notlar ve vurgular)**: **blok** , kurumsal kitaplar 'da notların ve vurguların eşitlenmesini önler. **Yapılandırılmadı** (varsayılan) eşitlemeye izin verir.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 

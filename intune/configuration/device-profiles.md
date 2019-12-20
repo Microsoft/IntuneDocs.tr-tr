@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune'daki cihaz özellikleri ve ayarları - Azure | Microsoft Docs
-description: Farklı Microsoft Intune cihaz profillerine genel bakış. Özellikler, kısıtlamalar, e-posta, WiFi, VPN, eğitim, sertifikalar, Windows 10, BitLocker ve Microsoft Defender, Windows Information Protection, Yönetim Şablonları ve Azure portal özel cihaz yapılandırma ayarlarını hakkında bilgi alın. Şirketinizdeki verileri ve cihazları yönetmek ve korumak için bu profilleri kullanın.
+description: Farklı Microsoft Intune cihaz profillerine genel bakış. Microsoft 'taki özellikler, kısıtlamalar, e-posta, WiFi, VPN, eğitim, sertifikalar, yükseltme Windows 10, BitLocker ve Microsoft Defender, Windows Information Protection, Yönetim Şablonları ve özel cihaz yapılandırma ayarlarını hakkında bilgi alın Endpoint Manager Yönetim Merkezi. Şirketinizdeki verileri ve cihazları yönetmek ve korumak için bu profilleri kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74694956"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206627"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune'daki cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve özellikler "yapılandırma profillerine" eklenir. iOS, Android ve Windows dahil olmak üzere farklı cihazlar ve platformlar için profil oluşturabilirsiniz. Ardından Intune'u kullanarak bu profilleri cihazlara "atayabilirsiniz".
 
@@ -115,7 +115,7 @@ Bu özellik şunları destekler:
 - iOS/ıpados
 - Mac OS
 - Windows 10 ve üzeri
-- Windows 10 Team
+- Windows 10 ekibi
 
 ## <a name="edition-upgrade"></a>Sürüm yükseltme
 
@@ -196,7 +196,7 @@ Bu özellik şunları destekler:
 
 - Android Kurumsal (OEMConfig)
 
-## <a name="powershell-scripts"></a>PowerShell komut dosyaları
+## <a name="powershell-scripts"></a>PowerShell betikleri
 
 [Windows 10 cihazlarında PowerShell betikleri](../apps/intune-management-extension.md) , Intune 'da PowerShell betiklerinizi karşıya yüklemek Için Intune yönetim uzantısını kullanır ve ardından bu betikleri cihazlarınızda çalıştırır. Ayrıca, uzantıyı kullanmak için gerekenleri, Intune 'a nasıl ekleneceğini ve diğer önemli bilgileri görün.
 

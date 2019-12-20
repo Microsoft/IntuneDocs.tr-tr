@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83b2ffc7e942492be4560a56af0f3514cb1638a4
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74319850"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206865"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune özel profili kullanarak Android cihazları için uygulama başına VPN profili oluşturma
 
@@ -38,7 +38,7 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 >
 > Bu profil için yalnızca Pulse Secure ve Citrix bağlantı türleri desteklenir.
 
-## <a name="step-1-create-a-vpn-profile"></a>1\. Adım: VPN profili oluşturma
+## <a name="step-1-create-a-vpn-profile"></a>1. Adım: VPN profili oluşturma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
@@ -53,7 +53,7 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 
 VPN profilini oluştururken, belirttiğiniz **Bağlantı Adı** değerini bir yere not edin. Bu ad sonraki adımda gerekli olacaktır. Örneğin, **UygulamaVpnProfilim**.
 
-## <a name="step-2-create-a-custom-configuration-policy"></a>2\. Adım: Özel yapılandırma ilkesi oluşturma
+## <a name="step-2-create-a-custom-configuration-policy"></a>2. Adım: Özel yapılandırma ilkesi oluşturma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
@@ -84,6 +84,6 @@ VPN bağlantısını *kullanamaz* uygulamaların bir listesini girmek için **ka
 4. **Veri türü**' nde **dize**girin.
 5. **Değer** alanına **KARA LİSTE** veya **BEYAZ LİSTE** girin.
 
-## <a name="step-3-assign-both-policies"></a>3\. Adım: Her iki ilkeyi de atama
+## <a name="step-3-assign-both-policies"></a>3. Adım: Her iki ilkeyi de atama
 
 Gerekli kullanıcılara veya cihazlara [her iki cihaz profilini de atayın](device-profile-assign.md) .

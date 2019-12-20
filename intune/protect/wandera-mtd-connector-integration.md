@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f42acb38d84394a6b61fa16072de6320b84a67b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681302"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207477"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Wandera Mobile Threat Protection 'ı Intune ile tümleştirme  
 
@@ -56,29 +56,28 @@ Wandera Mobile Threat Defense uygulaması yetkilendirme işlemi:
 Wandera için *EMM Connect* kurulumu, hem Intune hem de wandera konsollarında tamamladığınız tek seferlik bir yapılandırma işlemi gerektirir. Yapılandırma işlemi yaklaşık 15 dakika sürer. Bu yapılandırmayı, Wandera teknik hesabınızla veya destek temsilcinizle koordine etmeden tamamlayabilirsiniz.  
 
 ### <a name="enable-support-for-wandera-in-intune"></a>Intune 'da Wandera desteğini etkinleştir
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **cihaz uyumluluğu** > **Mobile Threat** Defense > ' a gidin ve **Ekle**' yi seçin.
 
-2. **Bağlayıcı Ekle** sayfasında, açılan menüyü kullanın ve **wandera**' yı seçin. Sonra **Oluştur**' u seçin.  
-
-3. Mobil tehdit savunması bölmesinde bağlayıcı listesinden **Wandera** MTD bağlayıcısını seçerek *bağlayıcı düzenleme* bölmesini açın. [Radar](https://radar.wandera.com/login), wandera Yönetici Konsolu 'nu açmak ve oturum açmak Için **wandera yönetici konsolunu aç** ' ı seçin. 
-
-4. Wandera konsolunda **ayarlar** > **EMM tümleştirmesi**' ne gidin ve **EMM Connect** sekmesini seçin. *EMM satıcı* açılan listesini kullanın ve *Microsoft Intune*' ı seçin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Mobil tehdit savunması** > **Ekle**' > **Kiracı Yönetimi** > **bağlayıcıları ve belirteçleri** seçin.
+3. **Bağlayıcı Ekle** sayfasında, açılan menüyü kullanın ve **wandera**' yı seçin. Sonra **Oluştur**' u seçin.  
+4. Mobil tehdit savunması bölmesinde bağlayıcı listesinden **Wandera** MTD bağlayıcısını seçerek *bağlayıcı düzenleme* bölmesini açın. [Radar](https://radar.wandera.com/login), wandera Yönetici Konsolu 'nu açmak ve oturum açmak Için **wandera yönetici konsolunu aç** ' ı seçin. 
+5. Wandera konsolunda **ayarlar** > **EMM tümleştirmesi**' ne gidin ve **EMM Connect** sekmesini seçin. *EMM satıcı* açılan listesini kullanın ve *Microsoft Intune*' ı seçin.
 
    ![Intune seçin](./media/wandera-mtd-connector-integration/set-up-intune-in-radar.png)
 
-5. Intune portalına bir bağlantı açmak için **Izin ver** ' i seçin. Intune yönetici kimlik bilgilerinizi kullanarak oturum açın, onay kutusunu seçin ve ardından izin isteğini **kabul edin** .  
+6. Intune portalına bir bağlantı açmak için **Izin ver** ' i seçin. Intune yönetici kimlik bilgilerinizi kullanarak oturum açın, onay kutusunu seçin ve ardından izin isteğini **kabul edin** .  
 
    ![İzinleri kabul et](./media/wandera-mtd-connector-integration/permissions.png) 
 
-6. Wandera bağlantıyı tamamlar ve sizi RADAR yönetim konsoluna döndürür. Gerektiğinde ek yapılandırmalara erişim **sağlamak** için işlemi tekrarlayın.  
+7. Wandera bağlantıyı tamamlar ve sizi RADAR yönetim konsoluna döndürür. Gerektiğinde ek yapılandırmalara erişim **sağlamak** için işlemi tekrarlayın.  
 
    ![Tümleştirmeler ve izinler](./media/wandera-mtd-connector-integration/integrations-and-permissions.png) 
 
-7. RADAR konsolundan, **EMM etiketinin**altında görünen **synconly** grubunun adını kopyalayın. Bu adı, bir grubu Wandera ile eşitleme için Intune 'da yapılandırmak üzere kullanacaksınız.
+8. RADAR konsolundan, **EMM etiketinin**altında görünen **synconly** grubunun adını kopyalayın. Bu adı, bir grubu Wandera ile eşitleme için Intune 'da yapılandırmak üzere kullanacaksınız.
 
    ![Eşitleme grubu](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
-8. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) konsoluna dönün ve Wandera MTD bağlayıcısını düzenleyin. Kullanılabilir geçiş düğmelerini **Açık**olarak ayarlayın ve yapılandırmayı **kaydedin** .  
+9. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) konsoluna dönün ve Wandera MTD bağlayıcısını düzenleyin. Kullanılabilir geçiş düğmelerini **Açık**olarak ayarlayın ve yapılandırmayı **kaydedin** .  
 
    ![Wandera 'yi etkinleştir](./media/wandera-mtd-connector-integration/enable-wandera.png) 
 
@@ -94,14 +93,13 @@ Bu işlem hakkında Wandera ile ilgili daha fazla bilgi için, Wandera [radar](h
 ### <a name="add-the-wandera-apps"></a>Wandera uygulamalarını ekleme  
 Android ve iOS cihazlarına Wandera uygulamasını dağıtmak için Intune 'da istemci uygulamaları oluşturun. Yordamlar ve Wandera uygulamalarına özgü özel ayrıntılar için bkz. [MTD uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md) .  
 
-Uygulamaları oluşturduktan sonra eşitleme grubunu oluşturmak ve uygulamaları atamak için buraya dönün.  
-
+Uygulamaları oluşturduktan sonra eşitleme grubunu oluşturmak ve uygulamaları atamak için buraya dönün.
 
 ### <a name="create-the-synchronization-group-and-assign-the-apps"></a>Eşitleme grubunu oluşturma ve uygulamaları atama
 
 1. Wandera RADAR konsolunun içinden **EMM etiketinin** altında görünen **synconly** grubunun adını alın. [Intune 'Da Wandera desteğini etkinleştirirken](#enable-support-for-wandera-in-intune)bu adı 7. adımda kaydetmiş olabilirsiniz. Bu adı, Intune 'da, Wandera eşitlemesi için grubun adı olarak kullanın.  
 
-2. Intune konsolunda, **gruplar** ' a gidin ve **Yeni Grup**' u seçin. Eşitleme grubunu Wandera tarafından kullanılmak üzere yapılandırmak için aşağıdakileri belirtin:
+2. Endpoint Manager Yönetim merkezinde **gruplar** ' a gidin ve **Yeni Grup**' u seçin. Eşitleme grubunu Wandera tarafından kullanılmak üzere yapılandırmak için aşağıdakileri belirtin:
    - **Grup türü**: **güvenlik**
    - **Grup adı**: Wandera radar Yönetici konsolundan aldığınız **synconly** adını belirtin.
 
@@ -116,15 +114,11 @@ Daha fazla bilgi için bkz. [uygulamaları dağıtma](../apps/apps-deploy.md)
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>Wandera uygulamalarını eşitleme grubuna atama  
 İOS ve Android için oluşturduğunuz Wandera uygulaması için aşağıdaki yordamı tekrarlayın.
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 'da oturum açın ve **Istemci uygulamaları** > **uygulamalar** ' a gidin ve wandera uygulamasını seçin.  
-
-2. **Atamalar** ' ı ve sonra **Grup Ekle**' yi seçin.  
-
-3. *Grup Ekle* bölmesinde *atama türü* için **gerekli**' yi seçin.
-
-4. **Dahil edilen gruplar**' ı seçin ve ardından **dahil edilecek grupları seçin**. Wandera eşitlemesi için oluşturduğunuz grubu belirtin ve sonra **tamam** ** >  > ** **Seç** ' e tıklayın. Grup atamasını gerçekleştirmek için **Kaydet** ' i seçin.  
- 
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** > **uygulamalar** ' ı seçin ve wandera uygulamasını seçin.
+3. **Atamalar** ' ı ve sonra **Grup Ekle**' yi seçin.  
+4. *Grup Ekle* bölmesinde *atama türü* için **gerekli**' yi seçin.
+5. **Dahil edilen gruplar**' ı seçin ve ardından **dahil edilecek grupları seçin**. Wandera eşitlemesi için oluşturduğunuz grubu belirtin ve sonra **tamam** ** >  > ** **Seç** ' e tıklayın. Grup atamasını gerçekleştirmek için **Kaydet** ' i seçin. 
 
 ## <a name="next-steps"></a>Sonraki Adımlar  
-Tümleştirmeyi yapılandırdığınıza göre, ilkeleri yapılandırmaya, gelişmiş koşullu erişimi ayarlamaya başlayabilir ve Wandera yönetim konsolunda raporları görüntüleyebilirsiniz. Wandera 'yi yönetme ve yapılandırma hakkında daha fazla bilgi edinmek için, bkz. Wandera belgelerindeki [Destek Merkezi Başlarken Kılavuzu](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) .  
- 
+Tümleştirmeyi yapılandırdığınıza göre, ilkeleri yapılandırmaya, gelişmiş koşullu erişimi ayarlamaya başlayabilir ve Wandera yönetim konsolunda raporları görüntüleyebilirsiniz. Wandera 'yi yönetme ve yapılandırma hakkında daha fazla bilgi edinmek için, bkz. Wandera belgelerindeki [Destek Merkezi Başlarken Kılavuzu](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) . 

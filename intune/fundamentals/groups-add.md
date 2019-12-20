@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74261610"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303068"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Kullanıcıları ve cihazları düzenlemek için grup ekleme
 
@@ -47,7 +47,7 @@ Yeni bir grup oluşturmak için aşağıdaki adımları kullanın.
 
 3. **Grup türü**' nde, aşağıdaki seçeneklerden birini seçin:
 
-    - **Güvenlik**: güvenlik grupları, kaynaklara kimlerin erişebileceğini tanımlar ve Intune 'daki gruplarınız için önerilir. Örneğin, kullanıcılar için **Tüm Charlotte çalışanları** veya **contoso 'daki tüm kadınlar**gibi gruplar oluşturabilirsiniz. Ya da, **tüm iOS cihazları** veya **tüm Windows 10 öğrenci cihazları**gibi cihazlar için gruplar oluşturabilirsiniz.
+    - **Güvenlik**: güvenlik grupları, kaynaklara kimlerin erişebileceğini tanımlar ve Intune 'daki gruplarınız için önerilir. Örneğin, kullanıcılar için **Tüm Charlotte çalışanları** veya **uzak çalışanlar**gibi gruplar oluşturabilirsiniz. Ya da, **tüm iOS cihazları** veya **tüm Windows 10 öğrenci cihazları**gibi cihazlar için gruplar oluşturabilirsiniz.
 
         > [!TIP]
         > Oluşturulan kullanıcılar ve gruplar, [Microsoft 365 Yönetim Merkezi](https://admin.microsoft.com)'nde, Azure Active Directory Yönetim merkezinde ve [Azure Portal Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973)de görülebilir. Kuruluş kiracınızda, tüm bu alanlarda gruplar oluşturabilir ve yönetebilirsiniz.
@@ -85,7 +85,7 @@ Yeni bir grup oluşturmak için aşağıdaki adımları kullanın.
 > - Tüm Android Kurumsal cihazları
 > - Tüm iOS 11 ve eski cihazlar
 > - Pazarlama
-> - İnsan Kaynakları
+> - İnsan kaynakları
 > - Tüm Charlotte çalışanları
 > - Tüm WA çalışanları
 

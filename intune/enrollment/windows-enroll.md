@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000440"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207443"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
@@ -123,11 +123,14 @@ Azure Active Directory iOS, Android ve Windows cihazları için cihaz kaydı iç
 
 | Tür | Konak adı | Şunu gösterir: | TTL |
 | --- | --- | --- | --- |
-| AD | EnterpriseRegistration. company_domain. com | EnterpriseRegistration.windows.net | 1 saat|
+| ADA | EnterpriseRegistration. company_domain. com | EnterpriseRegistration.windows.net | 1 saat|
 
 Cihaz kaydı hakkında daha fazla bilgi için bkz [. Azure Portal kullanarak cihaz kimliklerini yönetme](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="windows-10-auto-enrollment-and-device-registration"></a>Windows 10 otomatik kayıt ve cihaz kaydı
+
+Bu bölüm ABD kamu bulut müşterileri için geçerlidir.
+
 CNAME DNS girişlerini oluşturma isteğe bağlı olmakla birlikte, CNAME kayıtları kullanıcılar için kaydolmayı kolaylaştırır. Kayıt CNAME kaydı bulunamazsa, kullanıcılardan MDM sunucu adını el ile girmesi istenir, enrollment.manage.microsoft.us.
 
 | Tür | Konak adı | Şunu gösterir: | TTL |

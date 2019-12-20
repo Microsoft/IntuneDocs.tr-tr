@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 13fca4de8e36b1bdeb9026985e2eabd21e56e924
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059510"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206950"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Microsoft Intune kullanarak cihazlarda Windows 10 sürümlerini yükseltme veya S modunu değiştirme
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak, Windows 10 cihazlarınızı yükseltmek isteyebilirsiniz. Örneğin, Windows 10 Professional cihazlarınızı Windows 10 Enterprise 'a yükseltmek istiyorsunuz. Ya da cihazın S modundan geçiş istediğini tercih edersiniz.
 
@@ -61,15 +61,15 @@ Aşağıdaki tabloda, Windows 10 sürümü yükseltme profili için desteklenen 
 
 | Kaynak yükseltme sürümü | Hedef yükseltme sürümü |
 |---|---|
-| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
+| Windows 10 Pro | Windows 10 eğitimi <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
 | Windows 10 Pro N sürümü | Windows 10 Education N sürümü <br/>Windows 10 Enterprise N sürümü <br/>Windows 10 Pro Education N sürümü | 
-| Windows 10 Pro Education | Windows 10 Education | 
+| Windows 10 Pro Education | Windows 10 eğitimi | 
 | Windows 10 Pro Education N sürümü | Windows 10 Education N sürümü |
-| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
+| Windows 10 Cloud | Windows 10 eğitimi <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
 | Windows 10 Cloud N sürümü | Windows 10 Education N sürümü <br/>Windows 10 Enterprise N sürümü <br/>Windows 10 Pro N sürümü <br/>Windows 10 Pro Education N sürümü | 
-| Windows 10 Enterprise | Windows 10 Education | 
+| Windows 10 Enterprise | Windows 10 eğitimi | 
 | Windows 10 Enterprise N sürümü | Windows 10 Education N sürümü | 
-| Windows 10 Core | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
+| Windows 10 Core | Windows 10 eğitimi <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
 | Windows 10 Core N sürümü | Windows 10 Education N sürümü <br/>Windows 10 Enterprise N sürümü <br/>Windows 10 Pro Education N sürümü | 
 | Windows 10 Holographic | Windows 10 Holographic for Business |
 | Windows 10 Mobile | Windows 10 Mobile Enterprise |

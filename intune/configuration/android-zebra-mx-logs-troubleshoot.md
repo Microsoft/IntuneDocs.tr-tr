@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2319fb0d1198289398912793e52482bf66d87173
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506996"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206848"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Microsoft Intune Android Zeköşeli cihazlarda sorun giderme ve olası sorunları görme
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune, [Zeköşeli Mobility uzantıları 'nı (MX) kullanarak Android zezemi cihazlarını yönetebilirsiniz](android-zebra-mx-overview.md). Zeköşeli cihazları kullanırken, ayarları yönetmek ve Intune 'a yüklemek için StageNow 'da Profiller oluşturun. Intune, ayarları cihazlara uygulamak için StageNow uygulamasını kullanır. StageNow uygulaması, sorun gidermek için kullanılan cihazda ayrıntılı bir günlük dosyası da oluşturur.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfc791450eec9f17be68228bb291ca89fd7d88ce
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6e7709eac2b360aa09415249c1c3f704b52a492b
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506818"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206593"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Intune 'da Android ve Samsung KNOX Standard cihaz kısıtlama ayarları listeleri
 
@@ -33,17 +33,17 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 ## <a name="general"></a>Genel
 
 - **Kamera**: kameraya erişimi engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** ayarı cihazın kamerasına erişim sağlar.
-- **Kopyala ve Yapıştır (yalnızca Samsung KNOX)** : kopyalamayı ve yapıştırmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazdaki kopyalama ve yapıştırma işlevlerine izin verir.
-- **Uygulamalar arasında Pano paylaşımı (yalnızca Samsung KNOX)** : uygulamalar arasında kopyalama ve yapıştırma için panonun kullanılmasını engellemek üzere **blok** ' ı seçin. **Yapılandırılmamış** uygulamalar arasında kopyalama ve yapıştırma için panonun kullanılmasına izin verir.
-- **Tanılama verileri gönderme (yalnızca Samsung KNOX)** : kullanıcının cihazdan Tanılama verileri göndermesini durdurmak için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının verileri göndermesine izin verir.
-- **Temizleme (yalnızca Samsung KNOX)** : kullanıcının cihazda [silme](../remote-actions/devices-wipe.md) eylemi çalıştırmasına izin verir.
-- **Coğrafi konum (yalnızca Samsung KNOX)** : Cihazın konum bilgilerini kullanmasını devre dışı bırakmak için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazın konum bilgilerini kullanmasına izin verir.
-- **Kapatma (yalnızca Samsung KNOX)** : kullanıcının cihazı kapatmasına engel olmak için **Engelle** ' yi seçin. Bu ayar devre dışı bırakılırsa, **cihaz ayarı silinmeden önce oturum açma hatalarının sayısı** ayarlanamaz ve çalışmaz. **Yapılandırılmadı** , kullanıcının cihazı kapatmasına izin verir.
-- **Ekran yakalama (yalnızca Samsung KNOX)** : ekran görüntülerini engellemek için **Engelle** ' yi seçin. **Yapılandırılmamış** kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
-- **Sesli yardımcı (yalnızca Samsung KNOX)** : S Ses hizmetini devre dışı bırakmak için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda S ses hizmeti ve uygulamasının kullanılmasına izin verir. Bu ayar, Bıxby için veya ekran içeriğini yüksek sesle okuyan erişilebilirlik için ses Yardımcısı 'na uygulanmaz.
-- **YouTube (yalnızca Samsung KNOX)** : kullanıcıların YouTube uygulamasını kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda YouTube uygulamasının kullanılmasına izin verir.
-- **Paylaşılan cihazlar (yalnızca Samsung KNOX)** : yönetilen bir Samsung KNOX Standard cihazını paylaşılan olarak yapılandırın. **Izin ver**olarak ayarlandığında, son kullanıcılar, Azure AD kimlik bilgileriyle cihazda oturum açabilir ve bu cihazları alabilir. Cihaz, kullanımda olup olmadığı için yönetilmeye devam eder.</br>Bir SCEP sertifika profili ile birlikte kullanıldığında, bu özellik son kullanıcıların tüm kullanıcılar için aynı uygulamalarla bir cihaz paylaşmasına izin verir. Ancak, her kullanıcının kendi SCEP Kullanıcı sertifikası vardır. Kullanıcılar oturumu kapattığında tüm veriler silinir. Bu özellik yalnızca LOB uygulamalarıyla sınırlıdır. </br>**Yapılandırılmadı** , birden fazla son kullanıcının Azure AD kimlik bilgilerini kullanarak cihazdaki Şirket portalı uygulamasında oturum açmasını engeller.
-- **Tarih ve saat değişikliklerini engelle (Samsung KNOX)** : kullanıcının cihazdaki tarih ve saat ayarlarını değiştirmesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların tarih ve saat ayarlarını değiştirmesine izin verir.
+- **Kopyala ve Yapıştır (yalnızca Samsung KNOX)**: kopyalamayı ve yapıştırmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazdaki kopyalama ve yapıştırma işlevlerine izin verir.
+- **Uygulamalar arasında Pano paylaşımı (yalnızca Samsung KNOX)**: uygulamalar arasında kopyalama ve yapıştırma için panonun kullanılmasını engellemek üzere **blok** ' ı seçin. **Yapılandırılmamış** uygulamalar arasında kopyalama ve yapıştırma için panonun kullanılmasına izin verir.
+- **Tanılama verileri gönderme (yalnızca Samsung KNOX)**: kullanıcının cihazdan Tanılama verileri göndermesini durdurmak için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının verileri göndermesine izin verir.
+- **Temizleme (yalnızca Samsung KNOX)**: kullanıcının cihazda [silme](../remote-actions/devices-wipe.md) eylemi çalıştırmasına izin verir.
+- **Coğrafi konum (yalnızca Samsung KNOX)**: Cihazın konum bilgilerini kullanmasını devre dışı bırakmak için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazın konum bilgilerini kullanmasına izin verir.
+- **Kapatma (yalnızca Samsung KNOX)**: kullanıcının cihazı kapatmasına engel olmak için **Engelle** ' yi seçin. Bu ayar devre dışı bırakılırsa, **cihaz ayarı silinmeden önce oturum açma hatalarının sayısı** ayarlanamaz ve çalışmaz. **Yapılandırılmadı** , kullanıcının cihazı kapatmasına izin verir.
+- **Ekran yakalama (yalnızca Samsung KNOX)**: ekran görüntülerini engellemek için **Engelle** ' yi seçin. **Yapılandırılmamış** kullanıcının ekran içeriğini resim olarak yakalamasına izin verir.
+- **Sesli yardımcı (yalnızca Samsung KNOX)**: S Ses hizmetini devre dışı bırakmak için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda S ses hizmeti ve uygulamasının kullanılmasına izin verir. Bu ayar, Bıxby için veya ekran içeriğini yüksek sesle okuyan erişilebilirlik için ses Yardımcısı 'na uygulanmaz.
+- **YouTube (yalnızca Samsung KNOX)**: kullanıcıların YouTube uygulamasını kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda YouTube uygulamasının kullanılmasına izin verir.
+- **Paylaşılan cihazlar (yalnızca Samsung KNOX)**: yönetilen bir Samsung KNOX Standard cihazını paylaşılan olarak yapılandırın. **Izin ver**olarak ayarlandığında, son kullanıcılar, Azure AD kimlik bilgileriyle cihazda oturum açabilir ve bu cihazları alabilir. Cihaz, kullanımda olup olmadığı için yönetilmeye devam eder.</br>Bir SCEP sertifika profili ile birlikte kullanıldığında, bu özellik son kullanıcıların tüm kullanıcılar için aynı uygulamalarla bir cihaz paylaşmasına izin verir. Ancak, her kullanıcının kendi SCEP Kullanıcı sertifikası vardır. Kullanıcılar oturumu kapattığında tüm veriler silinir. Bu özellik yalnızca LOB uygulamalarıyla sınırlıdır. </br>**Yapılandırılmadı** , birden fazla son kullanıcının Azure AD kimlik bilgilerini kullanarak cihazdaki Şirket portalı uygulamasında oturum açmasını engeller.
+- **Tarih ve saat değişikliklerini engelle (Samsung KNOX)**: kullanıcının cihazdaki tarih ve saat ayarlarını değiştirmesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcıların tarih ve saat ayarlarını değiştirmesine izin verir.
 
 ## <a name="password"></a>Parola
 
@@ -55,7 +55,7 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 - **Minimum parola uzunluğu**: parola gerekir girin (4 ile 16 karakter arasında) bir kullanıcı alt sınırını girin.
 - **Ekran kilitlenmeden önce geçmesi gereken işlem yapılmayan dakika**sayısı: ekran kilitlenmeden önce cihazda izin verilen en fazla dakika sayısını girin. Bir cihazda, son kullanıcı profilde yapılandırılmış olan süreden daha büyük bir değer ayarlayamaz. Son kullanıcı daha düşük bir süre değeri ayarlayabilir. Örneğin, profilde 15 dakika ayarlandıysa, son kullanıcı değer olarak 5 dakika ayarlayabilir. Son kullanıcı değer olarak 30 dakika ayarlayamaz. 
 - **Cihaz silinmeden önceki oturum açma hatalarının sayısı**: cihaz temizlenmeden önce izin verilecek oturum açma hatalarının sayısını girin.
-- **Parola kullanım süresi (gün)** : cihaz parolasının değiştirilmesi gereken gün sayısını girin.
+- **Parola kullanım süresi (gün)**: cihaz parolasının değiştirilmesi gereken gün sayısını girin.
 - **Gerekli parola türü**: gerekli parola karmaşıklığı düzeyini ve biyometrik cihazların kullanılıp kullanılamayacağını girin. Seçenekleriniz şunlardır:
   - **Cihaz varsayılanı**
   - **Düşük güvenlik biyometriği**
@@ -65,7 +65,7 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
   - **En az alfasayısal**
   - **En az simgeler ile alfasayısal**
 - **Önceki parolaların yeniden kullanılmasını engelle**: son kullanıcının daha önce kullanmış olduğu bir parolayı oluşturmasını engeller.
-- **Parmak iziyle kilit açma (yalnızca Samsung KNOX)** : cihazın kilidini açmak için parmak izi kullanımını engellemek için **bloğu** seçin. **Yapılandırılmadı** ayarı, kullanıcının cihaz kilidini parmak izi kullanarak açmasını sağlar.
+- **Parmak iziyle kilit açma (yalnızca Samsung KNOX)**: cihazın kilidini açmak için parmak izi kullanımını engellemek için **bloğu** seçin. **Yapılandırılmadı** ayarı, kullanıcının cihaz kilidini parmak izi kullanarak açmasını sağlar.
 - **Akıllı kilit ve diğer güven aracıları**: akıllı kilit veya diğer güven aracılarının kilit ekranı ayarlarını (Samsung KNOX Standard 5.0 +) değiştirmesini engellemek için **Engelle** ' yi seçin. Güven aracısı olarak da bilinen bu telefon özelliği, cihaz güvenilir bir konumdayken cihaz kilidi ekran parolasını devre dışı bırakmanıza veya atlamanıza izin verir. Örneğin, bu özellik, cihaz belirli bir Bluetooth cihazına bağlandığında veya bir NFC etiketine yakın olduğunda kullanılabilir. Bu ayarı kullanıcıların Akıllı Kilitleme’yi yapılandırmasını önlemek için kullanabilirsiniz.
 - **Şifreleme**: cihazdaki dosyaların şifrelenmesi için **gerektir** ' i seçin. Tüm cihazlar şifrelemeyi desteklemez. Bu özelliği kullanmak için ayrıca: 
   1. **Parolayı** **gerekli**olarak ayarlayın.
@@ -79,12 +79,12 @@ Bu makalede, Android çalıştıran cihazlar için yapılandırabileceğiniz tü
 
 **Gerekli parola türünü** **sayısal**olarak belirleyip 5,0 'den önceki bir Android sürümünü çalıştıran bir cihaza atarsanız, aşağıdaki davranış geçerlidir:
 
-- Şirket Portalı uygulaması 1704 sürümünden önceki bir sürümü çalıştırıyorsa, cihaza bir PIN ilkesi uygulanmaz ve Azure portal bir hata gösterilir.
-- Şirket Portalı uygulaması 1704 veya üzeri bir sürüm çalıştırıyorsa yalnızca basit bir PIN uygulanabilir. 5,0 'den önceki Android sürümleri bu ayarı desteklemez. Azure portal hiçbir hata gösterilmez.
+- Şirket Portalı uygulaması 1704 sürümünden önceki bir sürümü çalıştırıyorsa, cihaza bir PIN ilkesi uygulanmaz ve Microsoft Endpoint Manager Yönetim merkezinde bir hata gösterilir.
+- Şirket Portalı uygulaması 1704 veya üzeri bir sürüm çalıştırıyorsa yalnızca basit bir PIN uygulanabilir. 5,0 'den önceki Android sürümleri bu ayarı desteklemez. Microsoft Endpoint Manager Yönetim merkezinde herhangi bir hata gösterilmez.
 
 ## <a name="google-play-store"></a>Google Play Store
 
-- **Google Play deposu (yalnızca Samsung KNOX)** : kullanıcıların Google Play deposunu kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının cihazdaki Google Play deposuna erişmesine izin verir.
+- **Google Play deposu (yalnızca Samsung KNOX)**: kullanıcıların Google Play deposunu kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının cihazdaki Google Play deposuna erişmesine izin verir.
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
@@ -103,15 +103,15 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
 
 ## <a name="browser"></a>Tarayıcı
 
-- **Web tarayıcısı (yalnızca Samsung KNOX)** : varsayılan Web tarayıcısının cihazda kullanılmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazın varsayılan Web tarayıcısının kullanılmasına izin verir.
-- **Otomatik doldurma (yalnızca Samsung KNOX)** : tarayıcıdaki metnin otomatik olarak otomatik olarak değiştirilmesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , Web tarayıcısının otomatik doldurma işlevinin kullanılmasına izin verir.
-- **Tanımlama bilgileri (yalnızca Samsung KNOX)** : cihazdaki Web sitelerinden tanımlama bilgilerini nasıl işlemek istediğinizi seçin. Seçenekleriniz şunlardır:
+- **Web tarayıcısı (yalnızca Samsung KNOX)**: varsayılan Web tarayıcısının cihazda kullanılmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazın varsayılan Web tarayıcısının kullanılmasına izin verir.
+- **Otomatik doldurma (yalnızca Samsung KNOX)**: tarayıcıdaki metnin otomatik olarak otomatik olarak değiştirilmesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , Web tarayıcısının otomatik doldurma işlevinin kullanılmasına izin verir.
+- **Tanımlama bilgileri (yalnızca Samsung KNOX)**: cihazdaki Web sitelerinden tanımlama bilgilerini nasıl işlemek istediğinizi seçin. Seçenekleriniz şunlardır:
   - Allow
   - Tüm tanımlama bilgilerini engelle
   - Ziyaret edilen web sitelerinin tanımlama bilgilerine izin ver
   - Geçerli web sitesinin tanımlama bilgilerine izin ver
-- **JavaScript (yalnızca Samsung KNOX)** : Web tarayıcısının Java betikleri çalıştırmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihaz Web tarayıcısının Java betiklerini çalıştırmasına izin verir.
-- **Açılır pencereler (yalnızca Samsung KNOX)** : Web tarayıcısında açılır pencereleri engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , Web tarayıcısında açılır pencerelere izin verir.
+- **JavaScript (yalnızca Samsung KNOX)**: Web tarayıcısının Java betikleri çalıştırmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihaz Web tarayıcısının Java betiklerini çalıştırmasına izin verir.
+- **Açılır pencereler (yalnızca Samsung KNOX)**: Web tarayıcısında açılır pencereleri engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , Web tarayıcısında açılır pencerelere izin verir.
 
 ## <a name="allow-or-block-apps"></a>Uygulamalara izin verme veya uygulamaları engelleme
 
@@ -131,21 +131,21 @@ Her ayar için, uygulamaların bir listesini ekleyin. Seçenekleriniz şunlardı
 
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 
-- **Google yedekleme (yalnızca Samsung KNOX)** : cihazın Google yedekleme 'ye eşitlenmesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , Google yedekleme 'nin kullanılmasına izin verir.
-- **Google hesabı otomatik eşitlemesi (yalnızca Samsung KNOX)** : cihazda Google hesabı otomatik eşitleme özelliğinin oluşmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , Google hesabı ayarlarının otomatik olarak eşitlenmesine izin verir.
-- **Çıkarılabilir depolama birimi (yalnızca Samsung KNOX)** : cihazın çıkarılabilir depolama alanını kullanmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazın SD kart gibi çıkarılabilir depolama birimi kullanmasına izin verir.
-- **Depolama kartlarında şifreleme (yalnızca Samsung KNOX)** : **gerektir** , depolama kartlarının şifrelenmesini zorunlu tutar. **Yapılandırılmadı** , şifrelenmemiş depolama kartlarının kullanılmasına izin verir. Tüm cihazlar depolama kartı şifrelemesini desteklemez. Doğrulamak için cihaz üreticisine danışın.
+- **Google yedekleme (yalnızca Samsung KNOX)**: cihazın Google yedekleme 'ye eşitlenmesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , Google yedekleme 'nin kullanılmasına izin verir.
+- **Google hesabı otomatik eşitlemesi (yalnızca Samsung KNOX)**: cihazda Google hesabı otomatik eşitleme özelliğinin oluşmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , Google hesabı ayarlarının otomatik olarak eşitlenmesine izin verir.
+- **Çıkarılabilir depolama birimi (yalnızca Samsung KNOX)**: cihazın çıkarılabilir depolama alanını kullanmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazın SD kart gibi çıkarılabilir depolama birimi kullanmasına izin verir.
+- **Depolama kartlarında şifreleme (yalnızca Samsung KNOX)**: **gerektir** , depolama kartlarının şifrelenmesini zorunlu tutar. **Yapılandırılmadı** , şifrelenmemiş depolama kartlarının kullanılmasına izin verir. Tüm cihazlar depolama kartı şifrelemesini desteklemez. Doğrulamak için cihaz üreticisine danışın.
 
 ## <a name="cellular-and-connectivity"></a>Hücresel ve Bağlantı
 
-- **Veri dolaşımı (yalnızca Samsung KNOX)** : hücresel ağ üzerinde veri dolaşımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmamış** cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
-- **SMS/MMS Mesajlaşma (yalnızca Samsung KNOX)** : cihazda metin iletilerini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda SMS ve MMS Mesajlaşma kullanımına izin verir.
-- **Sesli arama (yalnızca Samsung KNOX)** : kullanıcıların cihazda sesli arama özelliğini kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda sesli aramaya izin verir.
-- **Ses dolaşımı (yalnızca Samsung KNOX)** : hücresel ağ üzerinde ses dolaşımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihaz hücresel ağ üzerindeyken ses dolaşımına izin verir.
-- **Bluetooth (yalnızca Samsung KNOX)** : cihazda Bluetooth 'un kullanılmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda Bluetooth kullanımına izin verir.
-- **NFC (yalnızca Samsung KNOX)** : yakın alan ILETIŞIMI (NFC) teknolojisini durdurmak için **Engelle** ' yi seçin. **Yapılandırılmadı** , desteklenen cihazlarda yakın alan iletişimi kullanan işlemlere izin verir.
-- **Wi-Fi (yalnızca Samsung KNOX)** : cihazda Wi-Fi kullanımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazın Wi-Fi özelliklerinin kullanılmasına izin verir.
-- **Wi-Fi internet paylaşımı (yalnızca Samsung KNOX)** : cihazda Wi-Fi internet paylaşımını kullanmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda Wi-Fi internet paylaşımı kullanımına izin verir.
+- **Veri dolaşımı (yalnızca Samsung KNOX)**: hücresel ağ üzerinde veri dolaşımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmamış** cihaz hücresel ağ kullanırken veri dolaşımına izin verir.
+- **SMS/MMS Mesajlaşma (yalnızca Samsung KNOX)**: cihazda metin iletilerini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda SMS ve MMS Mesajlaşma kullanımına izin verir.
+- **Sesli arama (yalnızca Samsung KNOX)**: kullanıcıların cihazda sesli arama özelliğini kullanmalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda sesli aramaya izin verir.
+- **Ses dolaşımı (yalnızca Samsung KNOX)**: hücresel ağ üzerinde ses dolaşımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihaz hücresel ağ üzerindeyken ses dolaşımına izin verir.
+- **Bluetooth (yalnızca Samsung KNOX)**: cihazda Bluetooth 'un kullanılmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda Bluetooth kullanımına izin verir.
+- **NFC (yalnızca Samsung KNOX)**: yakın alan ILETIŞIMI (NFC) teknolojisini durdurmak için **Engelle** ' yi seçin. **Yapılandırılmadı** , desteklenen cihazlarda yakın alan iletişimi kullanan işlemlere izin verir.
+- **Wi-Fi (yalnızca Samsung KNOX)**: cihazda Wi-Fi kullanımını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazın Wi-Fi özelliklerinin kullanılmasına izin verir.
+- **Wi-Fi internet paylaşımı (yalnızca Samsung KNOX)**: cihazda Wi-Fi internet paylaşımını kullanmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , cihazda Wi-Fi internet paylaşımı kullanımına izin verir.
 
 ## <a name="kiosk"></a>Bilgi noktası
 

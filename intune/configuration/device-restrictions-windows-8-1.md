@@ -1,12 +1,12 @@
 ---
-title: Windows 8.1 çalıştıran cihazlar için Microsoft Intune cihaz kısıtlama ayarları
+title: Microsoft Intune-Azure 'da cihaz kısıtlama ayarlarını Windows 8.1 | Microsoft Docs
 titleSuffix: ''
 description: Windows 8.1 çalıştıran cihazlarda cihaz ayarlarını ve işlevselliğini denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489838"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302974"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 ve üzeri cihaz kısıtlama ayarları
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Microsoft Intune Windows 8.1 cihaz kısıtlama ayarları
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-Bu makalede, Windows 8.1 ve üstünü çalıştıran cihazlar için yapılandırabileceğiniz Microsoft Intune cihaz kısıtlama ayarları gösterilir.
-
+Bu makalede, Windows 8.1 çalıştıran cihazlar için yapılandırabileceğiniz cihaz kısıtlama ayarları Microsoft Intune gösterilmektedir.
 
 ## <a name="general"></a>Genel
 
@@ -48,8 +45,6 @@ Bu makalede, Windows 8.1 ve üstünü çalıştıran cihazlar için yapılandır
 Windows 8.1 cihazları için bu ayarı etkinleştirirseniz, cihazın tüm kullanıcılarının bir Microsoft hesabı olmalıdır.
 Şifrelemenin çalışması için, cihazın Microsoft [InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) donanım sertifika gereksinimlerini karşılaması gerekir.
 Cihazda şifrelemeyi zorunlu tuttuğunuzda kurtarma anahtarına yalnızca kullanıcıların OneDrive hesabından eriştikleri Microsoft hesabından erişilebilir. Bu anahtarı bir kullanıcı adına kurtaramazsınız. 
-
-
 
 ## <a name="browser"></a>Tarayıcı
 - **Otomatik Doldurma** - Kullanıcıların tarayıcıdaki otomatik tamamlama ayarlarını değiştirmesine olanak tanır.
@@ -75,3 +70,7 @@ Bu ayarı seçerseniz, kullanıcıların Kuruluş Modu erişimine açtıkları w
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 - **Çalışma klasörleri URL'si** - Belgelerin cihazlar arasında eşitlenmesine izin vermek için iş klasörünün URL’sini ayarlar.
 - **Microsoft hesabı olmayan Windows Posta uygulamasına erişim** - Microsoft hesabı olmadan Windows Posta uygulamasına erişimi etkinleştirir.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+[Windows 10 ve daha yeni](device-restrictions-windows-10.md)bir cihaz kısıtlamaları profili oluşturun.

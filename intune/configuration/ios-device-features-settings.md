@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 85fc8bf002a4d5d00d2163c0b75c49d11dcd9b61
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992947"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206372"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune 'da ortak iOS özelliklerini kullanmak için iOS ve ıpados cihaz ayarları
 
@@ -87,9 +87,9 @@ Cihaz yuvası için en fazla **altı** öğe (birleştirilmiş uygulamalar ve kl
 - **Ekle**: cihazdaki yuvaya uygulama veya klasör ekler.
 - **Tür**: bir **uygulama** veya **klasör**ekleyin:
 
-  - **Uygulama**: ekrandaki yerleştirmeyi uygulama eklemek için bu seçeneği belirleyin. Girin:
+  - **Uygulama**: ekrandaki yerleştirmeyi uygulama eklemek için bu seçeneği belirleyin. Girmesini
 
-    - **Uygulama adı**: uygulama için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
+    - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
     - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
   - **Klasör**: ekrandaki yerleştirmeyi bir klasör eklemek için bu seçeneği belirleyin.
@@ -99,8 +99,8 @@ Cihaz yuvası için en fazla **altı** öğe (birleştirilmiş uygulamalar ve kl
     - **Klasör adı**: klasörün adını girin. Bu ad, cihazlarındaki kullanıcılara gösterilir.
     - **Sayfaların listesi**: sayfa **ekleyin** ve aşağıdaki özellikleri girin:
 
-      - **Sayfa adı**: sayfa için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
-      - **Uygulama adı**: uygulama için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
+      - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
+      - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
       - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
       Cihaz yuvası için en fazla **20** sayfa ekleyebilirsiniz.
@@ -129,7 +129,7 @@ Bir cihaza en fazla **40** sayfa ekleyebilirsiniz.
 
 - **Sayfaların listesi**: sayfa **ekleyin** ve aşağıdaki özellikleri girin:
 
-  - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Azure portal başvurunuz için kullanılır ve iOS *cihazında gösterilmez.*
+  - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim merkezinde başvurağınız için *kullanılır ve iOS* cihazında gösterilmez.
 
   Bir cihaza en fazla **60** öğe (birleştirilmiş uygulamalar ve klasör) ekleyebilirsiniz.
 
@@ -139,7 +139,7 @@ Bir cihaza en fazla **40** sayfa ekleyebilirsiniz.
 
       - **Uygulama**: ekrandaki bir sayfaya uygulama eklemek için bu seçeneği belirleyin. Şunları da girin:
 
-        - **Uygulama adı**: uygulama için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
+        - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
         - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
       - **Klasör**: ekrandaki yerleştirmeyi bir klasör eklemek için bu seçeneği belirleyin.
@@ -149,8 +149,8 @@ Bir cihaza en fazla **40** sayfa ekleyebilirsiniz.
         - **Klasör adı**: klasör için bir ad girin. Bu ad, cihazdaki kullanıcılara gösterilir.
         - **Ekle**: klasöre sayfa ekler. Aşağıdaki özellikleri de girin:
 
-          - **Sayfa adı**: sayfa için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
-          - **Uygulama adı**: uygulama için bir ad girin. Bu ad Azure portal başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
+          - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
+          - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
           - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
 #### <a name="example"></a>Örnek
@@ -172,8 +172,8 @@ Aşağıdaki örnekte, **contoso** adlı yeni bir sayfa eklenmiştir. Sayfa, ark
     ![Intune 'da iOS profiline uygulama bildirimi ekleme](./media/ios-device-features-settings/ios-macos-app-notifications.png)
 
   - **Uygulama PAKETI kimliği**: eklemek Istediğiniz uygulamanın **uygulama paket kimliğini** girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
-  - **Uygulama adı**: eklemek istediğiniz uygulamanın adını girin. Bu ad Azure portal başvurunuz için kullanılır. Cihazda *gösterilmez.*
-  - **Yayımcı**: eklemekte olduğunuz uygulamanın yayımcısını girin. Bu ad Azure portal başvurunuz için kullanılır. Cihazda *gösterilmez.*
+  - **Uygulama adı**: eklemek istediğiniz uygulamanın adını girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. Cihazda *gösterilmez.*
+  - **Yayımcı**: eklemekte olduğunuz uygulamanın yayımcısını girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. Cihazda *gösterilmez.*
   - **Bildirimler**: uygulamanın cihaza bildirim göndermesini **etkinleştirin** veya **devre dışı bırakın** .
     - **Bildirim merkezinde göster**: **Etkinleştir** , uygulamanın cihaz bildirim merkezinde bildirimleri göstermesini sağlar. **Devre dışı bırak ayarı** , uygulamanın bildirim merkezinde bildirimleri göstermesini önler.
     - **Kilit ekranında göster**: cihaz kilidi ekranında uygulamadan bildirimleri görmek için **Etkinleştir** ' i seçin. **Devre dışı bırak ayarı** , uygulamanın kilit ekranında bildirimleri göstermesini önler.
@@ -339,7 +339,7 @@ Bu özellik şu platformlarda geçerlidir:
 - **Etki alanı bölge eşlemesi** (yalnızca Kerberos): bölge ile eşleşmesi gereken etkı alanı DNS soneklerini **ekleyin** . Ana bilgisayarların DNS adları bölge adıyla eşleşmezse bu ayarı kullanın. Büyük olasılıkla bu özel etki alanı/bölge eşlemesini oluşturmanız gerekmez.
 - **PKINIT sertifikası** (yalnızca Kerberos): Kerberos kimlik doğrulaması Için kullanılabilecek Ilk kimlik doğrulaması (PKI) sertifikası Için ortak anahtar şifrelemesini **seçin** . Intune 'A eklediğiniz [PKCS](../protect/certficates-pfx-configure.md) veya [SCEP](../protect/certificates-scep-configure.md) sertifikaları arasından seçim yapabilirsiniz. Sertifikalar hakkında daha fazla bilgi için bkz. [Microsoft Intune kimlik doğrulaması için sertifikaları kullanma](../protect/certificates-configure.md).
 
-## <a name="wallpaper"></a>Duvar Kağıdı
+## <a name="wallpaper"></a>Duvar
 
 Var olan bir görüntüye sahip cihazlara sahip olmayan bir profil atandığında beklenmeyen davranışlarla karşılaşabilirsiniz. Örneğin, görüntü olmadan bir profil oluşturursunuz. Bu profil, zaten bir görüntüsü olan cihazlara atanır. Bu senaryoda, görüntü cihaz varsayılana değişebilir veya orijinal görüntü cihazda kalabilir. Bu davranış, Apple 'ın MDM platformu tarafından denetlenir ve sınırlandırılmıştır.
 

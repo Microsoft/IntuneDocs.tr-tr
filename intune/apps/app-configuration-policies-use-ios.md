@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 905a37f182e326c756e3e4fb365e64bab562542c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564157"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204995"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -50,41 +50,41 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-3. **Ekle** > **uygulama yapılandırma ilkeleri** > **uygulamalar** ' ı seçin.
-5. Aşağıdaki bilgileri ayarlayın:
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Uygulamalar** > **uygulama yapılandırma Ilkeleri** >  > **yönetilen cihaz** **Ekle** ' yi seçin.
+3. Aşağıdaki bilgileri ayarlayın:
     - **Ad** - Azure portalında görünen profil adı.
     - **Açıklama** - Azure portalında görünen profil açıklaması.
-    - **Cihaz kayıt türü** -Intune 'a kaydedilmiş cihazlar için **yönetilen cihazlar** ' ı seçin.
-6. **Platform** için **iOS**’u seçin.
-7. **İlişkili uygulama**’yı seçin. Daha sonra **İlişkili uygulama** bölmesinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı ve ardından **Tamam**’ı seçin.
-8. **Yapılandırma ilkesi ekle** bölmesinde **Yapılandırma ayarları**’nı seçin.
-9. **Yapılandırma ayarları biçimi**’ni seçin. Yapılandırma bilgilerini eklemek için aşağıdaki yöntemlerden birini seçin:
+    - **Cihaz kayıt türü** -Bu ayar, **yönetilen cihazlar**olarak ayarlanır.
+4. **Platform** için **iOS**’u seçin.
+5. **İlişkili uygulama**’yı seçin. Daha sonra **İlişkili uygulama** bölmesinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı ve ardından **Tamam**’ı seçin.
+6. Yapılandırma **ayarlarını seçerek** **yapılandırma** ayarları bölmesini görüntüleyin.
+7. **Yapılandırma ayarları biçimi**’ni seçin. Yapılandırma bilgilerini eklemek için aşağıdaki yöntemlerden birini seçin:
     - **Yapılandırma tasarımcısını kullanma**
     - **XML verileri girme**<br><br>
     Yapılandırma tasarımcısını kullanma hakkında ayrıntılar için bkz. [Yapılandırma tasarımcısını kullanma](#use-configuration-designer). XML verileri girme hakkında ayrıntılar için bkz. [XML verileri girme](#enter-xml-data). 
-10. Yapılandırma bilgilerinizi ekledikten sonra **Tamam**' ı seçin ve ardından yapılandırma ilkesini eklemek için **Ekle** ' yi seçin. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
-11. **Atamalar**’ı seçerek dahil etme ve dışlama seçeneklerini görüntüleyin. 
+8. Yapılandırma bilgilerinizi ekledikten sonra **Tamam**' ı seçin ve ardından yapılandırma ilkesini eklemek için **Ekle** ' yi seçin. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
+9. **Atamalar**’ı seçerek dahil etme ve dışlama seçeneklerini görüntüleyin. 
 
     ![İlke atamaları Ekle sekmesinin ekran görüntüsü](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. **Dahil Et** sekmesinde **Tüm Kullanıcılar**’ı seçin.
+10. **Dahil Et** sekmesinde **Tüm Kullanıcılar**’ı seçin.
 
     ![İlke atamaları - Tüm Kullanıcılar açılan seçeneğinin ekran görüntüsü](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. **Dışla** sekmesini seçin. 
-14. İlgili bölmeyi görüntülemek için **Dışlanacak grupları seçin**’e tıklayın.
+11. **Dışla** sekmesini seçin. 
+12. İlgili bölmeyi görüntülemek için **Dışlanacak grupları seçin**’e tıklayın.
 
     ![Ilke atamalarının ekran görüntüsü-dışlanacak grupları seçin bölmesi](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. Dışlamak istediğiniz grupları seçin ve **Seç**’e tıklayın.
+13. Dışlamak istediğiniz grupları seçin ve **Seç**’e tıklayın.
 
     >[!NOTE]
     >Bir grup eklerken, herhangi bir atama türü için başka bir grup önceden dahil edilmişse bu grup, diğer dahil etme atama türleri için önceden seçili ve değiştirilemez bir biçimde görüntülenir. Dolayısıyla bu grup zaten kullanılmıştır ve dışlanmış bir grup olarak kullanılamaz.
-16. **Kaydet**'e tıklayın.
+14. **Kaydet**'e tıklayın.
 
 ## <a name="use-configuration-designer"></a>Yapılandırma tasarımcısı kullanma
 
 Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Microsoft Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, temel alınan XML dilini oluşturmanıza yardımcı olan belirli yapılandırma anahtarları ve değerlerini yapılandırmanıza imkan tanır. Ayrıca her bir değer için veri türünü belirtmeniz gerekir. Uygulamalar yüklendiğinde bu ayarlar uygulamalara otomatik olarak sağlanır.
 
-### <a name="add-a-setting"></a>Ayar ekle
+### <a name="add-a-setting"></a>Ayar ekleme
 
 1. Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
    - **Yapılandırma anahtarı** - Belirli ayar yapılandırmalarını benzersiz olarak tanımlayan anahtar.
@@ -94,7 +94,7 @@ Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Micros
 
 ### <a name="delete-a-setting"></a>Bir ayarı silme
 
-1. Ayarların yanındaki üç nokta simgesini ( **...** ) seçin.
+1. Ayarların yanındaki üç nokta simgesini (**...**) seçin.
 2. **Sil**’i seçin.
 
 \{\{ ve \}\} karakterleri yalnızca belirteç türleri tarafından kullanılır ve başka bir amaçla kullanılmamalıdır.
