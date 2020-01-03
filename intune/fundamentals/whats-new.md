@@ -111,7 +111,7 @@ Bu özellik şu platformlarda geçerlidir:
    > Bu özellik gecikti, ancak yakında yayımlanacak.
 
 #### <a name="block-users-from-configuring-certificate-credentials-in-the-managed-keystore-on-android-enterprise-device-owner-devices---3311998---"></a>Kullanıcıların, Android kurumsal cihaz sahibi cihazlarda yönetilen anahtar deposunda sertifika kimlik bilgilerini yapılandırmalarını engelleyin<!-- 3311998 -->
-Android kurumsal cihaz sahibi cihazlarda, kullanıcıların yönetilen anahtar deposunda (**cihaz yapılandırma** > **profiller** ** > sertifika kimlik bilgilerini yapılandırmalarını engelleyen yeni bir ayar yapılandırabilirsiniz** > **Android Enterprise** for platform > cihaz sahibi yalnızca profil türü > **Kullanıcılar + hesaplar**) için **cihaz kısıtlamalarını >** .
+Android kurumsal cihaz sahibi cihazlarda, kullanıcıların yönetilen anahtar deposunda (**cihaz yapılandırma** > **profiller** > **sertifika kimlik bilgilerini yapılandırmalarını engelleyen yeni bir ayar yapılandırabilirsiniz** > **Android Enterprise** for platform > cihaz sahibi yalnızca profil türü > **Kullanıcılar + hesaplar**) için **cihaz kısıtlamalarını >** .
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>Cihaz yönetimi
@@ -659,7 +659,7 @@ Uygulama hedefi:
 - iOS
 
 #### <a name="new-voice-control-settings-for-supervised-ios-devices-running-in-kiosk-mode---4892835-----"></a>Denetimli iOS cihazları için bilgi noktası modunda çalışan yeni ses denetimi ayarları<!-- 4892835   -->
-Intune 'da, denetimli iOS cihazlarını bir bilgi noktası olarak çalıştırmak için ilkeler oluşturabilir ve platform için IOS > **cihaz oluşturma** > **profil türü** > **bilgi noktası > ** **) için iOS** için iOS **profil oluşturma** ' ya yönelik cihaz**yapılandırma**.
+Intune 'da, denetimli iOS cihazlarını bir bilgi noktası olarak çalıştırmak için ilkeler oluşturabilir ve platform için IOS > **cihaz oluşturma** > **profil türü** > **bilgi noktası** >  **) için iOS** için iOS **profil oluşturma** ' ya yönelik cihaz**yapılandırma**.
 
 Bu güncelleştirmede, denetleyebilmeniz için yeni ayarlar vardır:
 - **Ses denetimi**: bilgi noktası modundayken cihazda ses denetimini mümkün.
@@ -840,7 +840,7 @@ Android için Microsoft Intune uygulaması artık özel anında iletme bildiriml
 
 #### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode---3755304-3041943-3041946-----"></a>Çok uygulama modundaki Android kurumsal adanmış cihazlar için yeni özellikler<!-- 3755304 3041943 3041946   -->
 
-Intune 'da, Android kurumsal adanmış cihazlarınızda (**cihaz yapılandırma** > **profiller** > **bir bilgi noktası stili deneyiminizdeki özellikleri ve ayarları kontrol edebilirsiniz. yalnızca platform > cihaz sahibi için Intune ** > ** profil** türü için **cihaz kısıtlamaları** ).
+Intune 'da, Android kurumsal adanmış cihazlarınızda (**cihaz yapılandırma** > **profiller** > **bir bilgi noktası stili deneyiminizdeki özellikleri ve ayarları kontrol edebilirsiniz. yalnızca platform > cihaz sahibi için Intune** > **profil** türü için **cihaz kısıtlamaları** ).
 
 Bu güncelleştirmede aşağıdaki özellikler ekleniyor:
 
