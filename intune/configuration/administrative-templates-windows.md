@@ -18,7 +18,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9b848bc3cd6461b5c31e940ffbe330bc60374795
 ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 12/19/2019
 ms.locfileid: "75206899"
@@ -59,7 +59,7 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
     > [!TIP]
     > Intune 'daki Windows ayarları Yerel Grup İlkesi Düzenleyicisi (`gpedit`) ' de gördüğünüz şirket içi Grup İlkesi yoluyla ilişkilendirilebilir.
 
-5. Açılan listede, **Tüm ürünler**' i seçin. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
+5. Açılan listede, **Tüm ürünler**' i seçin. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Microsoft Edge sürüm 77 veya üzeri** ayarlarını göstermek için filtreleyebilirsiniz:
 
     ![Intune 'da yönetim şablonlarındaki tüm pencereleri veya tüm Office ayarlarını göstermek için listeyi filtreleyin](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

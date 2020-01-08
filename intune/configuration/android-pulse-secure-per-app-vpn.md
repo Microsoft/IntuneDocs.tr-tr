@@ -38,7 +38,7 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 >
 > Bu profil için yalnızca Pulse Secure ve Citrix bağlantı türleri desteklenir.
 
-## <a name="step-1-create-a-vpn-profile"></a>1. Adım: VPN profili oluşturma
+## <a name="step-1-create-a-vpn-profile"></a>1\. Adım: VPN profili oluşturma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
@@ -53,7 +53,7 @@ Intune tarafından yönetilen Android 5.0 ve üzeri cihazlar için uygulama baş
 
 VPN profilini oluştururken, belirttiğiniz **Bağlantı Adı** değerini bir yere not edin. Bu ad sonraki adımda gerekli olacaktır. Örneğin, **UygulamaVpnProfilim**.
 
-## <a name="step-2-create-a-custom-configuration-policy"></a>2. Adım: Özel yapılandırma ilkesi oluşturma
+## <a name="step-2-create-a-custom-configuration-policy"></a>2\. Adım: Özel yapılandırma ilkesi oluşturma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
@@ -74,9 +74,9 @@ VPN profilini oluştururken, belirttiğiniz **Bağlantı Adı** değerini bir ye
 
 ![Örnek Android uygulama başına VPN özel ilkesi](./media/android-pulse-secure-per-app-vpn/android_per_app_vpn_oma_uri.png)
 
-### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Uygulama listenizi kara liste veya beyaz liste olarak ayarlama (isteğe bağlı)
+### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Uygulama listenizi kara liste veya izin verilenler listesi olarak ayarlama (isteğe bağlı)
 
-VPN bağlantısını *kullanamaz* uygulamaların bir listesini girmek için **kara** liste değerini kullanın. Diğer tüm uygulamalar VPN üzerinden bağlanır. Ya da, VPN bağlantısını kullanan uygulamaların bir listesini girmek için **beyaz liste** değerini *kullanın.* Listede olmayan uygulamalar VPN üzerinden bağlanmazlar.
+VPN bağlantısını *kullanamaz* uygulamaların bir listesini girmek için **kara** liste değerini kullanın. Diğer tüm uygulamalar VPN üzerinden bağlanır. Ya da, VPN bağlantısını kullanan uygulamaların bir listesini girmek için **izin verilenler listesi** değerini *kullanın.* Listede olmayan uygulamalar VPN üzerinden bağlanmazlar.
 
 1. **Özel OMA-URI Ayarları** bölmesinde **Ekle**’yi seçin.
 2. Bir ayar adı girin.
@@ -84,6 +84,6 @@ VPN bağlantısını *kullanamaz* uygulamaların bir listesini girmek için **ka
 4. **Veri türü**' nde **dize**girin.
 5. **Değer** alanına **KARA LİSTE** veya **BEYAZ LİSTE** girin.
 
-## <a name="step-3-assign-both-policies"></a>3. Adım: Her iki ilkeyi de atama
+## <a name="step-3-assign-both-policies"></a>3\. Adım: Her iki ilkeyi de atama
 
 Gerekli kullanıcılara veya cihazlara [her iki cihaz profilini de atayın](device-profile-assign.md) .
