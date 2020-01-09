@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 060c3c00a228794d3f237a6362b048bf23e1a933
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819721"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547714"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows cihazları için Intune kayıt yöntemleri
 
@@ -49,7 +49,7 @@ Bir yönetici otomatik kaydı yapılandırmışsa (Azure AD Premium abonelikleri
 Yöneticiler, Kullanıcı etkileşimi gerektirmeyen kayıt için aşağıdaki yöntemleri ayarlayabilir:
 
 - [Karma Azure AD katılım](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) , yöneticilerin karma Azure AD 'ye katılmış cihazları otomatik olarak kaydetmesi için Active Directory Grup İlkesi 'ni yapılandırmalarına olanak tanır. 
-- [Configuration Manager ortak yönetimi](https://docs.microsoft.com/sccm/comanage/overview) , yöneticilerin, ıntune ve Configuration Manager 'nin iki avantajına sahip olan mevcut Configuration Manager yönetilen cihazlarını Intune 'a kaydetmelerini sağlar. 
+- [Configuration Manager ortak yönetimi](https://docs.microsoft.com/configmgr/comanage/overview) , yöneticilerin, ıntune ve Configuration Manager 'nin iki avantajına sahip olan mevcut Configuration Manager yönetilen cihazlarını Intune 'a kaydetmelerini sağlar. 
 - [Cihaz Kayıt Yöneticisi](device-enrollment-manager-enroll.md) (DEM) özel bir hizmet hesabıdır. DEM hesaplarının, yetkili kullanıcıların birden çok şirkete ait cihazı kaydetmesine ve yönetmesine izin veren izinleri vardır. Bu tür cihazlar örneğin satış noktası veya yardımcı uygulamalara uygundur ancak e-postaya veya şirket kaynaklarına erişmesi gereken kullanıcılar için uygun değildir. Bu yöntem, koşullu erişim gibi özelliklerin kullanılmasına izin vermez. 
 - [Toplu kayıt](../windows-bulk-enroll.md) , yetkili bir kullanıcının çok sayıda yeni şirkete ait cihazı Azure Active Directory ve Intune 'a katılılabilmesi için izin verir. Windows yapılandırma Tasarımcısı (WCD) uygulamasıyla bir sağlama paketi oluşturun. Daha sonra, ilk Windows OOBE deneyimi sırasında veya mevcut Windows PC 'den USB medyası kullanarak cihazları Intune 'a otomatik olarak kaydetmek için sağlama paketini yüklersiniz. Bu yöntem Koşullu erişimin kullanılmasına izin vermez. 
 - Windows [IoT çekirdek cihazlarını](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment) kaydetmek, Windows IoT çekirdek Panosu kullanılarak, cihazı hazırlamak için ve ardından Windows yapılandırma Tasarımcısı kullanılarak bir sağlama paketi oluşturmak için gerçekleştirilir. Ardından, ilk önyükleme sırasında SD kart medyasını kullanarak cihazları Intune 'a otomatik olarak kaydetmek için sağlama paketini yükler.

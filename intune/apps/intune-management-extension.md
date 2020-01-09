@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563471"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548017"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarında PowerShell betikleri kullanma
 
@@ -40,7 +40,7 @@ Microsoft Intune gibi MDM Hizmetleri, Windows 10 çalıştıran mobil ve masaüs
 
 Intune yönetim uzantısı, yerleşik Windows 10 MDM özelliklerini tamamlar. Windows 10 cihazlarında çalıştırmak için PowerShell betikleri oluşturabilirsiniz. Örneğin, gelişmiş cihaz yapılandırması yapan bir PowerShell betiği oluşturun. Ardından, betiği Intune 'a yükleyin, betiği bir Azure Active Directory (AD) grubuna atayın ve betiği çalıştırın. Sonra, başlangıçtan sona kadar betiğin çalışma durumunu izleyebilirsiniz.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 Intune yönetim uzantısında aşağıdaki Önkoşullar bulunur. Önkoşullar karşılandıktan sonra, Kullanıcı veya cihaza bir PowerShell betiği veya Win32 uygulaması atandığında Intune yönetim uzantısı otomatik olarak yüklenir.
 
@@ -64,9 +64,9 @@ Intune yönetim uzantısında aşağıdaki Önkoşullar bulunur. Önkoşullar ka
 
   - Configuration Manager ve Intune kullanan ortak yönetilen cihazlar. **Uygulamalar** Iş yükünün **pilot Intune** veya **Intune**olarak ayarlandığından emin olun. Rehberlik için aşağıdaki makalelere bakın: 
   
-    - [Ortak yönetim nedir?](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [İstemci uygulamaları iş yükü](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Configuration Manager iş yüklerinin Intune'a geçişi](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [Ortak yönetim nedir?](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [İstemci uygulamaları iş yükü](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [Configuration Manager iş yüklerini Intune 'a değiştirme](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > Cihazların Azure AD 'ye [katılmış](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) olduğundan emin olun. Yalnızca Azure AD 'de [kayıtlı](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) olan cihazlar betiklerinizi almaz.
@@ -134,7 +134,7 @@ Azure portalda kullanıcılar ve cihazlar için PowerShell betiklerinin çalış
 
 ## <a name="intune-management-extension-logs"></a>Intune yönetim uzantısı günlükleri
 
-İstemci makinesindeki Aracı günlükleri genellikle `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Bu günlük dosyalarını görüntülemek için [CMTrace. exe](https://docs.microsoft.com/sccm/core/support/tools) ' yi kullanabilirsiniz. 
+İstemci makinesindeki Aracı günlükleri genellikle `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Bu günlük dosyalarını görüntülemek için [CMTrace. exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) ' yi kullanabilirsiniz.
 
 ![Microsoft Intune ekran görüntüsü veya örnek CMTrace Aracısı günlükleri](./media/apps-win32-app-management/apps-win32-app-10.png)  
 
@@ -142,7 +142,7 @@ Azure portalda kullanıcılar ve cihazlar için PowerShell betiklerinin çalış
 
 **PowerShell betikleri**'nde, betiği sağ tıklayın ve **Sil**'i seçin.
 
-## <a name="common-issues-and-resolutions"></a>Sık karşılaşılan sorunlar ve çözümleri
+## <a name="common-issues-and-resolutions"></a>Genel sorunlar ve çözümleri
 
 ### <a name="issue-intune-management-extension-doesnt-download"></a>Sorun: Intune yönetim uzantısı indirmiyor
 

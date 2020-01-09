@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832734"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547808"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydı sorunlarını giderme
 
@@ -113,7 +113,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 
     4. DirSync’i yeniden açın ve şimdi kullanıcının doğru eşitlenip eşitlenmediğini denetleyin.
 
-3. Intune ile System Center Configuration Manager'ı kullandığınız senaryolarda kullanıcının geçerli bir Bulut Kullanıcı Kimliği olduğunu doğrulayın:
+3. Intune ile Configuration Manager kullandığınız bir senaryoda, kullanıcının geçerli bir bulut Kullanıcı KIMLIĞI olduğunu doğrulayın:
 
     1. SQL Management Studio'yu açın.
 
@@ -144,7 +144,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 - kuruluşlarında kullanıcı UPN sonekleri için birden çok en üst düzey etki alanına sahip olma (örneğin @contoso.com veya @fabrikam.com).
 
 
-AD FS sunucusunun bu senaryoyu ek AD FS 2.0 sunucularına gerek kalmadan destekleyebilmesi için, bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496) <strong>SupportMultipleDomain</strong> anahtarıyla birlikte çalışır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
+AD FS sunucusunun bu senaryoyu ek AD FS 2.0 sunucularına gerek kalmadan destekleyebilmesi için, bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496)<strong>SupportMultipleDomain</strong> anahtarıyla birlikte çalışır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
 
 
 ## <a name="android-issues"></a>Android sorunları
@@ -332,7 +332,7 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 
 5. iOS için Safari’nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune’la birlikte System Center Configuration Manager kullanıldığında kayıtlı iOS cihazı konsolda gösterilmiyor
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Intune ile Configuration Manager kullanılırken kayıtlı iOS cihazı konsolda görünmüyor
 **Sorun:** Kullanıcı iOS cihazını kaydediyor ancak cihaz Configuration Manager yönetici konsolunda görünmüyor. Cihaz kayıtlı olduğunu göstermiyor. Olası nedenler:
 
 - Configuration Manager sitenizde Microsoft Intune Bağlayıcısı Intune hizmetiyle iletişim kurmuyor.
@@ -419,7 +419,7 @@ Engellenen cihazları sildikten sonra kullanıcılara kayıt işlemini yeniden b
     3. Kayıt sorunu yaşayan cihazı bulun. Sonuçları daraltmak için cihaz adına veya MAC/Donanım Adresine göre arayın.
     4. Cihazı seçin > **Sil**’e tıklayın. Cihazla ilişkili diğer tüm girişleri silin.  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager’ı Intune kullanırken oluşan sorunlar
+## <a name="issues-when-using-configuration-manager-with-intune"></a>Intune ile Configuration Manager kullanırken oluşan sorunlar
 
 ### <a name="mobile-devices-disappear"></a>Mobil cihazlar kayboluyor
 
@@ -478,7 +478,7 @@ Bu hata bilgisayarda şu koşullarda oluşabilir:
 1. Yeniden kaydetmeyi deneyin.
 
     > [!IMPORTANT]
-    > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Bununla birlikte, kayıt defterinde yanlış değişiklikler yaparsanız ciddi sorunlar çıkabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek bir koruma için, değişiklikleri yapmadan önce kayıt defterini yedekleyin. Böylece bir sorun ortaya çıktığında kayıt defterini geri yükleyebilirsiniz.
+    > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Ancak, kayıt defterinde yanlış değişiklik yaparsanız önemli sorunlar oluşabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek koruma için değiştirmeden önce kayıt defterini yedekleyin. Ardından, bir sorun olduğunda kayıt defterini geri yükleyebilirsiniz.
     > Kayıt defterini yedekleme ve geri yükleme hakkında daha fazla bilgi için, [Windows’da kayıt defterini yedekleme ve geri yükleme](https://support.microsoft.com/kb/322756) konusunu okuyun.
 
 ## <a name="general-enrollment-error-codes"></a>Genel kayıt hata kodları

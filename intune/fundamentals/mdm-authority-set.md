@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9735beff8aeebce84150c6cc8cb6df0082bd045d
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: a01b6643de2dd75c41aec0806b97df6154d99a7a
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207154"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547761"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
@@ -34,7 +34,7 @@ Olası yapılandırmalar şunlardır:
 
 - **Intune Tek Başına** - Azure Portal’ı kullanarak yapılandırdığınız yalnızca bulut yönetimi. Intune’un sunduğu özelliklerin tamamını içerir. [MDM yetkilisini Intune konsolundan ayarlama](#set-mdm-authority-to-intune).
 
-- **Intune ortak yönetimi** - Windows 10 cihazlar için Intune bulut çözümünün System Center Configuration Manager ile tümleştirmesi. Configuration Manager konsolunu kullanarak Intune’u siz yapılandırırsınız. [Intune'da otomatik cihaz kaydını yapılandırın](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
+- **Intune ortak yönetim** -Intune bulut çözümünün Windows 10 cihazları için Configuration Manager ile tümleştirilmesi. Configuration Manager konsolunu kullanarak Intune’u siz yapılandırırsınız. [Cihazların otomatik kaydını Intune 'A yapılandırın](https://docs.microsoft.com/configmgr/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
     >Yeni karma MDM müşterisi ekleme seçeneği kullanım dışı bırakılmıştır. Daha fazla bilgi için [Karma Mobil Cihaz Yönetiminden Azure’da Intune’a geçme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) başlıklı blog gönderisine bakın.
@@ -45,7 +45,7 @@ Olası yapılandırmalar şunlardır:
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM yetkilisini Intune olarak ayarlama
 
-MDM yetkilisini henüz ayarlamadıysanız, aşağıdaki adımları izleyin. SCCM 'den geçiş yapmak için bkz. [karma MDM kullanıcıları ve cihazlarını tek başına Intune 'A geçirme](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
+MDM yetkilisini henüz ayarlamadıysanız, aşağıdaki adımları izleyin. SCCM 'den geçiş yapmak için bkz. [karma MDM kullanıcıları ve cihazlarını tek başına Intune 'A geçirme](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **mobil cihaz yönetim yetkilisi** ayarını açmak için turuncu başlık ' ı seçin. Turuncu başlık, ancak henüz MDM yetkilisini ayarlamadıysanız görüntülenir.
 2. **Mobil Cihaz Yönetimi Yetkilisi** altında, aşağıdakilerden birini MDM yetkiliniz olarak belirtin:

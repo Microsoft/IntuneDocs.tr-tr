@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb9aa6349a88f226c063703d6cb035b3c89636fd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503242"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547839"
 ---
 # <a name="what-is-device-enrollment"></a>Cihaz kaydı nedir?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -60,7 +60,7 @@ Varsayılan olarak tüm platform cihazları Intune'a kaydedilebilir. Ancak [ciha
 |**Otomatik kayıt** | Hayır |Evet |Hayır | [Daha fazla bilgi](windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Autopilot** |Evet |Evet |Hayır | [Daha fazla bilgi](enrollment-autopilot.md)
 |**Toplu kayıt** |Hayır |Hayır |Hayır | [Daha fazla bilgi](windows-bulk-enroll.md) |
-|**Ortak yönetim** |Hayır |Evet |Hayır | [Daha fazla bilgi](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**Ortak yönetim** |Hayır |Evet |Hayır | [Daha fazla bilgi](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
 |**GPO** |Hayır |Evet |Hayır | [Daha fazla bilgi](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 ## <a name="android-enrollment-methods"></a>Android kayıt yöntemleri

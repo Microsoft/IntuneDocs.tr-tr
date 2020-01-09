@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74562419"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324874"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple Kullanıcı kaydıyla desteklenen Intune eylemleri ve seçenekleri
 
@@ -38,12 +38,12 @@ Kullanıcı kayıt cihazlarında, herhangi bir parola ayarını yapılandırırs
 
 Örneğin, **parola süre sonu** ayarını yapılandırır ve bu ilkeyi Kullanıcı tarafından kaydedilen cihazlara gönderirsiniz. Cihazlarda aşağıdakiler olur:
 - **Parola süre sonu** ayarı yok sayılır.
-- `1111` veya `1234`gibi basit parolalara izin verilmez.
+- `111111` veya `123456`gibi basit parolalara izin verilmez.
 - 6 basamaklı bir PIN zorlanır.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Yönetici uzak cihaz eylemleri ve seçenekleri
 Yöneticiler, Kullanıcı kayıt cihazlarında aşağıdaki eylemleri ve seçenekleri gerçekleştirebilir:
-- Devre dışı bırakma
+- Devre Dışı Bırakma
 - Sil
 - Uzaktan Kilitleme
 - Eşitle

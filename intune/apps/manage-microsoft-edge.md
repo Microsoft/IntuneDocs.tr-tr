@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563892"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548004"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -36,7 +36,7 @@ Intune uygulama koruma ilkelerinin Microsoft Edge ile kullanılması, kurumsal w
 
 Microsoft Edge için Microsoft Intune koruma ilkeleri, kuruluşunuzun verilerini ve kaynaklarını korumanıza yardımcı olur. Bu ilkelerin Microsoft Edge ile kullanılması, şirketinizin kaynaklarının yalnızca yerel olarak yüklü uygulamalar içinde değil, ayrıca Web tarayıcısından erişilen şekilde korunmasını sağlar.
 
-## <a name="getting-started"></a>Başlarken
+## <a name="getting-started"></a>Kullanmaya başlama
 
 Siz ve son kullanıcılarınız, kuruluşunuzda kullanılmak üzere genel uygulama mağazalarından Microsoft Edge 'i indirebilir. Tarayıcı ilkeleri için işletim sistemi gereksinimleri aşağıdakilerden biri olabilir:
 - Android 4 ve üzeri
@@ -196,8 +196,16 @@ Daha sonra, kuruluşların markasını Microsoft Edge 'e çekmek için aşağıd
 
 |    Anahtar    |    Değer    |
 |--------------------------------------------------------------------|------------|
-|    com. Microsoft. Intune. mam. managedbrowser. NewTabPage. BrandLogo    |    True    |
-|    com. Microsoft. Intune. mam. managedbrowser. NewTabPage. BrandColor    |    True    |
+|    com. Microsoft. Intune. mam. managedbrowser. NewTabPage. BrandLogo    |    Doğru    |
+|    com. Microsoft. Intune. mam. managedbrowser. NewTabPage. BrandColor    |    Doğru    |
+
+## <a name="display-relevant-industry-news-on-new-tab-pages"></a>Yeni sekme sayfalarında ilgili sektör haberlerini görüntüleme
+
+Microsoft Edge Mobile içindeki yeni sekme sayfası deneyimini, kuruluşunuzla ilgili sektör haberlerini görüntüleyecek şekilde yapılandırabilirsiniz. Bu özelliği etkinleştirdiğinizde, mikro Osft Edge Mobile kuruluşunuzun etki alanı adını kuruluşunuz, kuruluşunuzun sektör ve comeptitors hakkındaki haberleri toplamak için kullanır. böylece kullanıcılarınız, ilgili harici haberleri her yeni merkezden bulabilir. Microsoft Edge içindeki sekme sayfaları. Sektör Haberleri varsayılan olarak kapalıdır ve kuruluşunuz için bu uygulamayı kabul etmek için kullanabilirsiniz. 
+
+|    Anahtar    |    Değer    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    ' com. Microsoft. Intune. Sohwınte Ustrynews '    |    **Doğru** , Microsoft Edge mobil yeni sekme sayfasında sektör haberlerini gösterir.<p>**False** (varsayılan), sektör haberlerini yeni sekme sayfasından gizler.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Microsoft Edge için yönetilen yer imlerini yapılandırma
 
@@ -268,7 +276,7 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>Kullanıcılar engellenen bir siteye erişmeye çalıştığında davranış tanımlama
+## <a name="transition-users-to-their-personal-context-when-trying-to-access-a-blocked-site"></a>Engellenen bir siteye erişmeye çalışırken kullanıcıları Kişisel bağlamlarına geçirme
 
 Microsoft Edge 'de yerleşik olarak bulunan çift kimlik modeliyle, son kullanıcılarınız için Intune Managed Browser mümkün olandan daha esnek bir deneyim sağlayabilirsiniz. Kullanıcılar Microsoft Edge 'de engellenen bir siteye geldiğinde, bu kullanıcıdan, iş bağlamı yerine kendi kişisel bağlamlarından bağlantısını açmasını isteyebilirsiniz. Bu, kurumsal kaynakları güvenli tutarken korunmalarını sağlar. Örneğin, bir Kullanıcı Outlook aracılığıyla bir haber makalesine bağlantı gönderdiyse, bağlantıyı kişisel bağlamlarına veya bir InPrivate sekmesine açabilirler. İş bağlamları haber web sitelerine izin vermez. Varsayılan olarak, bu geçişlere izin verilir.
 
@@ -276,7 +284,16 @@ Bu yazılım geçişlerine izin verilip verilmeyeceğini yapılandırmak için a
 
 |    Anahtar    |    Değer    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    ' com. Microsoft. Intune. mam. managedbrowser. Openınprivateifblock '    |    **Doğru** , kısıtlanmış bağlantıların doğrudan InPrivate göz atmaya açık olmasına neden olur.<p>**False** (varsayılan), kullanıcılara InPrivate Gözatma veya kIşIsel (MSA) hesabıyla kısıtlı bağlantıyı açmaya yönelik bir seçenek sunar.    |
+
+## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Kısıtlanmış bağlantıları doğrudan InPrivate sekme sayfalarında aç
+
+Sınırlı bağlantıların, kullanıcılara daha sorunsuz bir gözatma deneyimi sağlayan, InPrivate göz atmaya doğrudan açılması gerektiğini yapılandırabilirsiniz. Bu, kullanıcılara bir siteyi görüntülemek için kişisel bağlamlarına geçiş yapmak zorunda olma adımını kaydeder. InPrivate Gözatma yönetilmeyen olarak kabul edilir. bu nedenle, kullanıcılar InPrivate gözatma modunu kullanırken erişemez. 
+
+|    Anahtar    |    Değer    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **Doğru** , Microsoft Edge 'in engellenen siteleri açmak için kullanıcıları Kişisel bağlamlarına geçişine olanak sağlar.<p>**Blok** , Microsoft Edge 'in kullanıcıları geçişini engeller. Kullanıcılara erişmeye çalıştıkları sitenin engellendiğini bildiren bir ileti gösterilir.    |
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>İOS üzerinde Microsoft Edge kullanarak yönetilen uygulama günlüklerine erişin 
 

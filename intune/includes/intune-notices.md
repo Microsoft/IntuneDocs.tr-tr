@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: a6ac1a5435104c1eeae203621179e62aa2b17568
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207306"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323084"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
 
@@ -43,7 +43,7 @@ Bu iletiyi, raporumuz kuruluşunuzdaki bir veya daha fazla ilkeyi Intune için A
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Son kullanıcılarınıza ve yardım masasına bu değişikliğin haberdar olmasına izin verin. Intune ile ilgili sorulara yönelik bir kanal oluşturmak için [Şirket portalı destek bilgileri işlevselliğini](../apps/company-portal-app.md#support-information) kullanabilirsiniz.
 
-#### <a name="additional-information"></a>Ek bilgi
+#### <a name="additional-information"></a>Ek Bilgiler
 https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 
 
@@ -55,25 +55,6 @@ Windows Phone 8,1 için Microsoft temel desteği 2017 Temmuz 'da sona erdi ve ge
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune raporlamayı kontrol edebilirsiniz. Cihazlar > Tüm cihazlar'a gidin ve işletim sistemine göre filtre uygulayın. Kuruluşunuzda Windows Phone 8,1 çalıştıran cihazların kim olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmesini isteyin.
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Intune Outlook uygulama koruma ilkelerinizi güncelleştirme (uygulama)<!--2576686-->
-Ileti merkezinizde MC195618 aldıysanız işlem yapmanız gerekebilir. Microsoft 365 yol haritası Özellik kimlikleri: 56325 ve 56326 ' de paylaşıldığında, iOS ve Android için Intune ve Outlook, e-posta bildirimlerinde ve takvim anımsatıcılarındaki hassas verileri sınırlamak için destek alıyor. Bu geliştirmelerin bir sonucu olarak, iOS ve Android için Outlook, şu anda bildirimleri yönetmek için kullandığınız çeşitli veri koruma uygulaması yapılandırma anahtarlarına yönelik desteği kaldıracaktır.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Yeni özellikler sunulmadığından, ne zaman, aşağıdaki uygulama yapılandırma anahtarları artık iOS ve Android için Outlook 'ta çalışmaz:
-- com. Microsoft. Outlook. mail. NotificationsEnabled
-- com. Microsoft. Outlook. mail. NotificationsEnabled. UserChangeAllowed
-- com. Microsoft. Outlook. Calendar. NotificationsEnabled
-- com. Microsoft. Outlook. Calendar. NotificationsEnabled. UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Bu yeni özellik için hazırlık bölümünde "org Data Notifications" adlı Intune Uygulama Koruması Ilkesi veri koruma ayarını "org Data Notifications" değeriyle yapılandırmanızı öneririz. 16 Aralık 2019 ' den başlayarak iOS ve Android için Outlook, "kuruluş verileri bildirimleri" veri koruma ayarını kabul eder ve bundan böyle belirtilen anahtarları desteklememektedir. Bu yeni ayarı yapılandırmak, yukarıdaki yapılandırma anahtarları artık desteklenmediğinde hassas verilerin sızmasını sağlayacaktır. Ayrıca, "kuruluş verileri bildirimleri" adlı veri koruma ayarı "Kuruluş verilerini engelle" olarak ayarlandığında, "takvim bildirimleri" adlı ek bir uygulama yapılandırma ayarıyla Outlook ek ayrıntı düzeyi sağlıyor. Uygulama koruma Ilkesi ayarı ve bu uygulama yapılandırma ayarı, e-posta bildirimlerinde hassas bilgileri, kullanıcıların glancing göre toplantılarına erişebilmesi için Takvim bildirimlerinde hassas bilgileri ortaya çıkaran şekilde sınırlar. anında veya bildirim merkezinde hızlı bir şekilde.
-
-#### <a name="additional-information"></a>Ek bilgiler
-Uygulama ayarları ve Outlook ayarları hakkında daha fazla bilgi için bkz.:
-- [Uygulama koruma ilkesi ayarları, Android](../apps/app-protection-policy-settings-android.md)
-- [Uygulama koruma ilkesi ayarları, iOS](../apps/app-protection-policy-settings-ios.md)
-- [İOS ve Android uygulama yapılandırma ayarları için Outlook dağıtımı](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune değişiklik planı: Windows 10, sürüm 1703 Şirket Portalı Destek dışı<!--5026679-->

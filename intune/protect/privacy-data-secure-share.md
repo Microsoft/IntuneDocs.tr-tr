@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17b87462b2c73e265f062c33a06a810e7c58bf8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cfa2c5366d1b38cf819cfc68840a29fad9002979
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504336"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548106"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune’da veri güvenliği ve paylaşımı
 
@@ -68,11 +68,11 @@ Belirli üçüncü taraflarla paylaşılan veriler hakkında daha fazla bilgi i�
 - [Google’ın Intune’a gönderdiği veriler](data-google-sends-to-intune.md)
 - [Veri JAMF Pro, Intune 'a gönderir](data-jamf-sends-to-intune.md)
 
-### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager veri paylaşımı
+### <a name="microsoft-endpoint-configuration-manager-data-sharing"></a>Microsoft uç noktası Configuration Manager veri paylaşımı
 
-Microsoft Intune, System Center Configuration Manager ile herhangi bir veri paylaşmaz. System Center Configuration Manager, doğrudan müşteri tarafından dağıtılan, yönetilen ve işletilen bir şirket içi ürünüdür. Configuration Manager tarafından toplanan tanılama ve kullanım verileri yalnızca gelecek sürümlerin yükleme deneyimini, kalitesini ve güvenliğini geliştirmek için kullanılır.
+Microsoft Intune Configuration Manager hiçbir veri paylaşmaz. Configuration Manager, doğrudan müşteri tarafından dağıtılan, yönetilen ve çalıştırılan şirket içi bir üründür. Configuration Manager tarafından toplanan tanılama ve kullanım verileri yalnızca gelecek sürümlerin yükleme deneyimini, kalitesini ve güvenliğini geliştirmek için kullanılır.
 
-Daha fazla bilgi edinmek için bkz. [SCCM için tanılama ve kullanım verileri](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data). 
+Daha fazla bilgi için bkz. [Configuration Manager Için tanılama ve kullanım verileri](https://docs.microsoft.com/configmgr/core/plan-design/diagnostics/diagnostics-and-usage-data). 
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

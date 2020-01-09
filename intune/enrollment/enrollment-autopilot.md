@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f15ddae79cdfec5635afff08abaee181e0517cc8
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207239"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324891"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -34,7 +34,7 @@ Dört tür Autopilot dağıtımı vardır:
 - Geleneksel kullanıcılar için [Kullanıcı odaklı mod](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) . 
 
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 - [Intune aboneliği](../fundamentals/licenses.md)
 - [Windows otomatik kayıt etkin olmalıdır](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium aboneliği](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
@@ -53,7 +53,7 @@ Bilgilerini içeren CSV dosyasını içeri aktararak Windows Autopilot cihazlar�
 
     ![Windows Autopilot cihazlarının ekran görüntüsü](./media/enrollment-autopilot/autopilot-import-device.png)
 
-2. **Windows Autopilot cihazları ekle** altında, eklemek istediğiniz cihazları listeleyen bir CSV dosyasına gözatın. CSV dosyası seri numaralarını, Windows ürün kimliklerini, donanım karmalarını, isteğe bağlı Grup etiketlerini ve isteğe bağlı olarak atanmış kullanıcıyı listelemelidir. Listede en fazla 500 satır olabilir. Aşağıda gösterilen üst bilgi ve satır biçimini kullanın:
+2. **Windows Autopilot cihazları ekle** altında, eklemek istediğiniz cihazları listeleyen bir CSV dosyasına gözatın. CSV dosyası seri numaralarını, Windows ürün kimliklerini, donanım karmalarını, isteğe bağlı Grup etiketlerini ve isteğe bağlı olarak atanmış kullanıcıyı listelemelidir. Listede en fazla 500 satır olabilir. Cihaz bilgilerini alma hakkında daha fazla bilgi için bkz. [Windows Autopilot 'a cihaz ekleme](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#device-identification). Aşağıda gösterilen üst bilgi ve satır biçimini kullanın:
 
     `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
@@ -97,22 +97,22 @@ Autopilot dağıtım profilleri, Autopilot cihazlarını yapılandırmak için k
 4. **İleri**'yi seçin.
 5. **Kullanıma hazır deneyim (OOBE)** sayfasında, **dağıtım modu**için şu iki seçenekten birini seçin:
     - **Kullanıcı temelli**: Bu profile sahip cihazlar, cihazı kaydeden kullanıcı ile ilişkilidir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekir.
-    - **Kendi kendine dağıtım (Önizleme)**: (Windows 10, sürüm 1809 veya üzeri gerektirir) bu profile sahip cihazlar, cihazı kaydeden Kullanıcı ile ilişkili değildir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekmez. Bir cihaza ilişkili kullanıcı olmadığında, Kullanıcı tabanlı uyumluluk ilkeleri buna uygulanmaz. Kendi kendine Dağıtım modunu kullanırken, yalnızca cihazı hedefleyen uyumluluk ilkeleri uygulanır.
+    - **Kendi kendine dağıtım (Önizleme)** : (Windows 10, sürüm 1809 veya üzeri gerektirir) bu profile sahip cihazlar, cihazı kaydeden Kullanıcı ile ilişkili değildir. Cihazı kaydetmek için kullanıcı kimlik bilgileri gerekmez. Bir cihaza ilişkili kullanıcı olmadığında, Kullanıcı tabanlı uyumluluk ilkeleri buna uygulanmaz. Kendi kendine Dağıtım modunu kullanırken, yalnızca cihazı hedefleyen uyumluluk ilkeleri uygulanır.
 
     ![OOBE sayfasının ekran görüntüsü](./media/enrollment-autopilot/create-profile-outofbox.png)
 
 6. **Azure AD’ye farklı katıl** kutusunda **Azure AD katılımlı**’yı seçin.
 7. Aşağıdaki seçenekleri yapılandırın:
-    - **Son kullanıcı lisans sözleşmesi (EULA)**: (Windows 10, sürüm 1709 veya sonrası) EULA'yı kullanıcılara göstermek istiyorsanız seçin.
+    - **Son kullanıcı lisans sözleşmesi (EULA)** : (Windows 10, sürüm 1709 veya sonrası) EULA'yı kullanıcılara göstermek istiyorsanız seçin.
     - **Gizlilik ayarları**: Gizlilik ayarlarını kullanıcılara göstermek istiyorsanız seçin.
     >[!IMPORTANT]
     >Tanılama verileri ayarının varsayılan değeri Windows sürümleri arasında farklılık gösterir. Windows 10, sürüm 1903 çalıştıran cihazlarda, hazır olmayan deneyim sırasında varsayılan değer Full olarak ayarlanır. Daha fazla bilgi için bkz. [Windows Tanılama verileri](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
-    - **Hesap değiştirme seçeneklerini gizle (Windows 10, sürüm 1809 veya üzeri gerektirir)**: hesabı Değiştir seçeneklerinin şirket oturum açma ve etki alanı hata sayfalarında görüntülenmesini engellemek için **Gizle** ' yi seçin. Bu seçenek, [Azure Active Directory’de şirket markasının yapılandırılmasını](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) gerektirir.
+    - **Hesap değiştirme seçeneklerini gizle (Windows 10, sürüm 1809 veya üzeri gerektirir)** : hesabı Değiştir seçeneklerinin şirket oturum açma ve etki alanı hata sayfalarında görüntülenmesini engellemek için **Gizle** ' yi seçin. Bu seçenek, [Azure Active Directory’de şirket markasının yapılandırılmasını](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) gerektirir.
     - **Kullanıcı hesap türü**: Kullanıcı hesap türü **Yönetici** ya da **Standart** olarak seçin. Yerel yönetici grubuna ekleyerek cihazın yerel yönetici olmasını sağlayan kullanıcıya izin veririz. Kullanıcının cihazda varsayılan yönetici olarak etkinleştirilmedik.
     - **Beyaz Glove OOBE 'ye Izin ver** (Windows 10, sürüm 1903 veya üstünü gerektirir; [ek fiziksel gereksinimler](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): beyaz eldiven desteğe izin vermek için **Evet** ' i seçin.
     - **Cihaz adı şablonu uygulama** (Windows 10, sürüm 1809 veya üzeri ve Azure AD JOIN türü gerektirir): kayıt sırasında bir cihaz adlandırırken kullanılacak bir şablon oluşturmak için **Evet** ' i seçin. Adlar en çok 15 karakter olmalıdır; harf, rakam ve tire içerebilir. Ancak tamamen sayıdan oluşamaz. Donanıma özgü seri numarası eklemek için [%SERIAL% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanın. Veya x değerinin eklenecek basamak sayısına karşılık geldiği [%RAND:x% makrosunu](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) kullanarak rastgele bir sayı dizesi ekleyin. Bir [etki alanı ekleme profilinde](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile)karma cihazlara yönelik bir ön çözüm sağlayabilirsiniz. 
-    - **Dil (Bölge)**\*: Cihazda kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
+    - **Dil (Bölge)** \*: Cihazda kullanılacak dili seçin. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
     - **Klavyeyi otomatik olarak yapılandırma**\*: varsa bir **dil (bölge)** olan seçili seçin **Evet** için klavye seçimi sayfasını atlayın. Bu seçenek, yalnızca **Dağıtım modu** olarak **Kendi kendine dağıtım** seçtiyseniz kullanılabilir.
 8. **İleri**'yi seçin.
 9. **Kapsam etiketleri** sayfasında isteğe bağlı olarak, bu profile uygulamak istediğiniz kapsam etiketlerini ekleyin. Kapsam etiketleri hakkında daha fazla bilgi için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi ve kapsam etiketleri kullanma](../fundamentals/scope-tags.md).

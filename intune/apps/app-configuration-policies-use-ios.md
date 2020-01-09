@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 905a37f182e326c756e3e4fb365e64bab562542c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204995"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547995"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -84,7 +84,7 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 
 Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Microsoft Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, temel alınan XML dilini oluşturmanıza yardımcı olan belirli yapılandırma anahtarları ve değerlerini yapılandırmanıza imkan tanır. Ayrıca her bir değer için veri türünü belirtmeniz gerekir. Uygulamalar yüklendiğinde bu ayarlar uygulamalara otomatik olarak sağlanır.
 
-### <a name="add-a-setting"></a>Ayar ekleme
+### <a name="add-a-setting"></a>Ayar ekle
 
 1. Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
    - **Yapılandırma anahtarı** - Belirli ayar yapılandırmalarını benzersiz olarak tanımlayan anahtar.
@@ -94,7 +94,7 @@ Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Micros
 
 ### <a name="delete-a-setting"></a>Bir ayarı silme
 
-1. Ayarların yanındaki üç nokta simgesini (**...**) seçin.
+1. Ayarların yanındaki üç nokta simgesini ( **...** ) seçin.
 2. **Sil**’i seçin.
 
 \{\{ ve \}\} karakterleri yalnızca belirteç türleri tarafından kullanılır ve başka bir amaçla kullanılmamalıdır.
@@ -105,7 +105,7 @@ Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Micros
 
 | **Anahtar** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Değerler** | <ul><li>**Enabled**: İzin verilen tek hesap, [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarıyla tanımlanan yönetilen kullanıcı hesabıdır.</li><li>**Disabled** (veya **Enabled** ile eşleşmeyen bir değer): Tüm hesaplara izin verilir.</li></ul> |.
+| **Değerler** | <ul><li>**Enabled**: İzin verilen tek hesap, [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarıyla tanımlanan yönetilen kullanıcı hesabıdır.</li><li>**Disabled** (veya **Enabled** ile eşleşmeyen bir değer): Tüm hesaplara izin verilir.</li></ul> |biçimindeki telefon numarasıdır.
 
    > [!NOTE]
    > İOS için OneDrive 10,34 veya üzeri, iOS 2.99.0 veya sonraki bir sürümü veya iOS 44.8.7 veya üzeri için Outlook 'U ya da yalnızca çok kimlikli kuruluş hesaplarına izin verirken uygulamanın [Intune uygulama koruma ilkelerini](app-protection-policy.md) hedeflemeli olması gerekir.
@@ -182,7 +182,7 @@ DEP (Apple Aygıt Kayıt Programı) kayıtları, Şirket Portalı uygulamasını
 
 1. Intune 'da, gerekirse Intune Şirket Portalı uygulamasını **ıntune** > **uygulamalar** > **tüm uygulamalar** > **Ekle**' ye giderek ekleyin.
 2. Şirket Portalı uygulamasına yönelik bir uygulama yapılandırma ilkesi oluşturmak için **uygulamalar** > **uygulama yapılandırma ilkeleri**' ne gidin.
-3. Aşağıda XML ile bir uygulama yapılandırma ilkesi oluşturun. Uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi ve XML verilerinin girilmesi, [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md) veya HIBRIT MDM için, [System Center Configuration Manager 'de uygulama yapılandırma ilkeleriyle ayarları iOS uygulamalarına](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)uygulama hakkında daha fazla bilgi bulabilirsiniz.
+3. Aşağıda XML ile bir uygulama yapılandırma ilkesi oluşturun. Uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi ve XML verilerinin girilmesi, [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md) veya HIBRIT MDM için, [Configuration Manager 'de uygulama yapılandırma ilkeleriyle ayarları iOS uygulamalarına](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)uygulama hakkında daha fazla bilgi bulabilirsiniz.
 
     ``` xml
     <dict>

@@ -17,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 622c09d03507a3a47433eab5b21702a656f8bffb
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991809"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547518"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
 Bu makale, Intune yöneticilerinin Windows cihazlarını Intune 'A kaydetme sırasında sorunları anlamalarına ve sorunlarını gidermenize yardımcı olur.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 Sorun gidermeye başlamadan önce bazı temel bilgilerin toplanması önemlidir. Bu bilgiler sorunu daha iyi anlamanıza ve çözüm bulma süresini azaltmanıza yardımcı olabilir.
 
 Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
@@ -40,7 +40,7 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 - Hangi platform (Android, iOS, Windows) soruna sahip?
 - Kaç Kullanıcı etkilendi? Tüm kullanıcılar mı etkilendi?
 - Kaç cihaz etkilendi? Tüm cihazlar etkileniyor mu ya da yalnızca bir şey var mı?
-- MDM yetkilisi nedir? System Center Configuration Manager, Configuration Manager hangi sürümü kullanıyorsunuz?
+- MDM yetkilisi nedir? Microsoft uç noktası Configuration Manager, hangi Configuration Manager sürümü kullanıyorsunuz?
 - Kayıt nasıl gerçekleştirilir? Kayıt profilleriyle "kendi cihazını getir" (BYOD) veya Apple Aygıt Kayıt Programı (DEP) mi?
 
 ## <a name="error-messages"></a>Hata iletileri
@@ -389,4 +389,4 @@ Bu sorun genellikle Windows Autopilot cihazlarının oluşturulduğu kuruluş bi
 - [Microsoft Intune destek ekibi blogunu denetleyin](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Microsoft Enterprise Mobility ve Security blogunu denetleyin](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Microsoft Intune için destek alın](../fundamentals/get-support.md)
-- [Ortak yönetim kayıt hatalarını bulma](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [Ortak yönetim kayıt hatalarını bulma](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)

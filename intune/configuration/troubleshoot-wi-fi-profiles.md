@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c33ab3c72d6e76b44fec85ce40dc2d6510a294bc
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207137"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547964"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune 'de Wi-Fi cihaz yapılandırma profillerinin sorunlarını giderme
 
@@ -236,7 +236,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   - Tüm sertifika zincirindeki tüm gerekli sertifikaların Android cihazında olduğunu onaylayın. Aksi halde, Wi-Fi profili cihaza yüklenemez. Daha fazla bilgi için bkz. [ara sertifika yetkilisi eksik](https://developer.android.com/training/articles/security-ssl#MissingCa) (Android 'in Web sitesini açar).
   - Wi-Fi profilinde kullanılan sertifika ve profil başarıyla uygulanmışsa gibi bilgileri aramak için Omadmlog anahtar sözcükleriyle filtreleyin.
 
-    Örneğin, günlükleri okumak için [CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace) ' i kullanın. "Wifimgr" filtrelemek için arama dizesini kullanın:
+    Örneğin, günlükleri okumak için [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) ' i kullanın. "Wifimgr" filtrelemek için arama dizesini kullanın:
 
     > [!div class="mx-imgBorder"]
     > Android cihazlarda WiFiMgr yapılandırma profillerini aramak için CMTrace 'e filtre ![](./media/troubleshoot-wi-fi-profiles/cmtrace-filter-wifimgr.png)

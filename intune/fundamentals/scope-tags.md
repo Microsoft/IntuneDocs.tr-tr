@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c2ec3ab62c6effd80d6a02d6ae9052b41fed23c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207340"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548132"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış BT için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanma
 
@@ -39,11 +39,11 @@ Doğru yöneticilerin doğru Intune nesnelerine doğru erişime ve görünürlü
 ## <a name="default-scope-tag"></a>Varsayılan kapsam etiketi
 Varsayılan kapsam etiketi, kapsam etiketlerini destekleyen tüm etiketlenmemiş nesnelere otomatik olarak eklenir.
 
-Varsayılan kapsam etiketi özelliği, System Center Configuration Manager güvenlik kapsamları özelliğine benzer. 
+Varsayılan kapsam etiketi özelliği, Microsoft uç noktası Configuration Manager güvenlik kapsamları özelliğine benzer. 
 
 ## <a name="to-create-a-scope-tag"></a>Kapsam etiketi oluşturmak için
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **kiracı yönetimi** > **Roller** > **kapsam (Etiketler)** > **Oluştur**' u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **kiracı yönetimi** > **Roller** > **kapsam (Etiketler)**  > **Oluştur**' u seçin.
 
     ![Kapsam etiketi oluşturma ekranının ekran görüntüsü.](./media/scope-tags/create-scope-tag.png)
 
@@ -61,7 +61,7 @@ Varsayılan kapsam etiketi özelliği, System Center Configuration Manager güve
 
     ![Üye gruplarının Seç ekran görüntüsü.](./media/scope-tags/select-member-groups.png)
 
-4. Belirli bir grup kümesindeki kullanıcıları/cihazları yönetmek istiyorsanız **kapsam (gruplar)** > **Seçili gruplar** > ' ı seçin.**dahil edilecek grupları seçin** > grupları seçin  >  **Tamam ' ı** **seçin**. Bu gruptaki tüm kullanıcılar/cihazlar, Üyeler (Grup) içindeki Yöneticiler tarafından yönetilecektir.
+4. Belirli bir grup kümesindeki kullanıcıları/cihazları yönetmek istiyorsanız **kapsam (gruplar)**  > **Seçili gruplar** > ' ı seçin.**dahil edilecek grupları seçin** > grupları seçin  >  **Tamam ' ı** **seçin**. Bu gruptaki tüm kullanıcılar/cihazlar, Üyeler (Grup) içindeki Yöneticiler tarafından yönetilecektir.
 
     ![Kapsam gruplarının Seç ekran görüntüsü.](./media/scope-tags/select-scope-groups.png)
 
@@ -81,7 +81,7 @@ Kapsam etiketlerini destekleyen nesneler için, kapsam etiketleri genellikle **�
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **yapılandırma profilleri** ' ni seçin > bir profil seçin.
 
-2. **Ekle** > **kapsam (Etiketler)** > **Özellikler** ' i seçin.
+2. **Ekle** > **kapsam (Etiketler)**  > **Özellikler** ' i seçin.
 
     ![Kapsam etiketleri Ekle ekran görüntüsü.](./media/scope-tags/add-scope-tags.png)
 

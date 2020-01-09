@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955516"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547819"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -144,7 +144,7 @@ Windows şirket kaydı olarak yetkilendirme için aşağıdaki yöntemler uygund
 - Cihaz Windows Autopilot ile kaydediliyor ancak Windows Ayarları'ndan bir yalnızca MDM kaydı seçeneği değil.
 - Cihazın IMEI numarası **Cihaz kaydı** >  **[Şirket cihaz tanımlayıcıları](corporate-identifiers-add.md)** ’nda listelenmiş. (Windows Phone 8.1 için desteklenmez.)
 - Cihaz bir [toplu sağlama paketi](windows-bulk-enroll.md) ile kaydediliyor.
-- Cihaz GPO veya [ortak yönetim için SCCM’den otomatik kayıt](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1) yoluyla kaydediliyor.
+- Cihaz, GPO 'dan kaydolur veya [ortak yönetim için Configuration Manager otomatik kayıt](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1)yapar.
  
 Aşağıdaki kayıtlar Intune tarafından kurumsal olarak işaretlenir. Ancak Intune yöneticisi cihaz başına denetim sağlamadığı için engellenir:
 - [Windows kurulumu sırasında Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).

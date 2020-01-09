@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f382ce35d1d13a59f1aa5ca6a904c0c9babff8c1
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 58c4db1f4c778050bc91bde79494742e018f5329
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899349"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547898"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune Veri Ambarını kullanma
 
@@ -43,11 +43,11 @@ Veri Ambarı, mobil ortamınız hakkında Azure portalına kıyasla daha fazla b
 - OData standardı kullanan bir veri modeli
 
 > [!Note]
-> System Center Configuration Manager ve Microsoft Intune ile bir ortak yönetilen mobil cihaz yönetimi (MDM) kullanıyorsanız, verilerinizi Configuration Manager'dan almak istersiniz. Intune Veri Ambarı yalnızca Intune verilerini içerir. Özel raporlarınız için bir Configuration Manager Power BI panosu kullanabilirsiniz. Daha fazla bilgi için bkz. “[System Center Configuration Manager için Power BI çözüm şablonu duyurusu]( https://powerbi.microsoft.com/blog/sccm-solution-template)” ve “[Dynamics 365 için Power BI içeriği](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)”.
+> Microsoft uç noktası Configuration Manager ve Microsoft Intune birlikte ortak yönetilen mobil cihaz yönetimi (MDM) kullanıyorsanız, Configuration Manager verilerinizi almanız gerekir. Intune Veri Ambarı yalnızca Intune verilerini içerir. Özel raporlarınız için bir Configuration Manager Power BI panosu kullanabilirsiniz. Daha fazla bilgi için, "[Configuration Manager için Power BI çözüm şablonu duyurusu](https://powerbi.microsoft.com/blog/sccm-solution-template)" ve "[Dynamics 365 için Power BI içeriği](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)" başlığına bakın.
 
 > [!Important]  
 > Artık sorgu parametresini ayarlayarak Intune Veri Ambarı’nın v1.0 sürümünü kullanabilirsiniz `api-version=v1.0`. Veri Ambarı’ndaki koleksiyonlara yapılan güncelleştirmeler ek olarak yapılır, yani mevcut senaryoları bozmaz.<br><br>
-> Beta sürümünü kullanarak Veri Ambarı’nın en yeni işlevlerini deneyebilirsiniz. Beta sürümünü kullanabilmeniz için URL’nizin sorgu parametresini içermesi gerekir `api-version=beta`. Özellikler, desteklenen bir hizmet olarak herkesin kullanımına açılmadan önce beta sürümünde sunulur. Intune yeni özellikler ekledikçe beta sürümünün davranışında ve veri anlaşmalarında değişiklikler olabilir. Beta sürümüne bağımlı olan özel kodlar veya raporlama araçları, devam eden güncelleştirmelerle birlikte kesilebilir.
+> Beta sürümünü kullanarak Veri Ambarı’nın en yeni işlevlerini deneyebilirsiniz. Beta sürümünü kullanabilmeniz için URL’nizin sorgu parametresini içermesi gerekir `api-version=beta`. Özellikler, desteklenen bir hizmet olarak herkesin kullanımına açılmadan önce beta sürümünde sunulur. Intune yeni özellikler ekledikçe beta sürümünün davranışında ve veri anlaşmalarında değişiklikler olabilir. Beta sürümüne bağımlı herhangi bir özel kod veya raporlama araçları, devam eden güncelleştirmelerle birlikte kesilebilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

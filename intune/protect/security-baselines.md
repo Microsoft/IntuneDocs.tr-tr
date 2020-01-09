@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74409983"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548136"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
 
@@ -95,7 +95,7 @@ Güvenlik temellerinde çalışırken ortak görevler şunları içerir:
 - [Taban çizgisi atamasını kaldırma](#remove-a-security-baseline-assignment) -ayarları güvenlik temeliyle yönetmeyi durdurduğunuzda ne olacağını öğrenin.
 
 
-### <a name="prerequisites"></a>Önkoşullar
+### <a name="prerequisites"></a>Prerequisites
 
 - Intune 'da temelleri yönetmek için hesabınızın [ilke ve Profil Yöneticisi](../fundamentals/role-based-access-control.md#built-in-roles) yerleşik rolüne sahip olması gerekir.
 
@@ -192,9 +192,9 @@ Daha sonra cihazdaki ayarları değiştirebilecek diğer işlemlere, farklı vey
 
 ## <a name="co-managed-devices"></a>Ortak yönetilen cihazlar
 
-Intune tarafından yönetilen cihazlarda güvenlik temelleri, Configuration Manager ile birlikte yönetilen cihazlara benzerdir. Ortak yönetilen cihazlar Windows 10 cihazlarını eşzamanlı olarak yönetmek için System Center Configuration Manager ve Microsoft Intune kullanır. Mevcut Configuration Manager yatırımınızın Intune avantajlarından faydalanmasına olanak tanır. [Ortak yönetime genel bakış](https://docs.microsoft.com/sccm/comanage/overview) , Configuration Manager kullanırsanız ve ayrıca bulutun avantajlarından yararlanmak istiyorsanız harika bir kaynaktır.
+Intune tarafından yönetilen cihazlarda güvenlik temelleri, Configuration Manager ile birlikte yönetilen cihazlara benzerdir. Ortak yönetilen cihazlar Windows 10 cihazlarını eşzamanlı olarak yönetmek için Configuration Manager ve Microsoft Intune kullanır. Mevcut Configuration Manager yatırımınızın Intune avantajlarından faydalanmasına olanak tanır. [Ortak yönetime genel bakış](https://docs.microsoft.com/configmgr/comanage/overview) , Configuration Manager kullanırsanız ve ayrıca bulutun avantajlarından yararlanmak istiyorsanız harika bir kaynaktır.
 
-Ortak yönetilen cihazlar kullanılırken **cihaz yapılandırma** iş yükünü (ayarlarını) Intune 'a geçmeniz gerekir. [Cihaz yapılandırma iş yükleri](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) daha fazla bilgi sağlar.
+Ortak yönetilen cihazlar kullanılırken **cihaz yapılandırma** iş yükünü (ayarlarını) Intune 'a geçmeniz gerekir. [Cihaz yapılandırma iş yükleri](https://docs.microsoft.com/configmgr/comanage/workloads#device-configuration) daha fazla bilgi sağlar.
 
 ## <a name="q--a"></a>Soru ve Cevap
 
