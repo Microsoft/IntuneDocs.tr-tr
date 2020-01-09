@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8dd7127594a0e23c85b9f8141ce6d398d9a447a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1cf0a3d8b30955be8413b376acd223a924be843
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72795324"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545947"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>Kayıtlı olmayan cihazlara mobil tehdit savunma uygulamaları ekleme
 
@@ -34,7 +34,7 @@ Son kullanıcılar, mobil cihazlarında bir tehdit tanımlandığında ve tehdit
 İsteğe bağlı olarak, Microsoft Authenticator ve Mobile Threat Defense (MTD) uygulamalarını da eklemek ve dağıtmak için Intune 'U kullanabilirsiniz.
 
 > [!NOTE] 
-> Bu makale, uygulama koruma ilkelerini destekleyen tüm Mobile Threat Defense iş ortakları için geçerlidir: daha Iyi mobil (Android), Zkusuren IUM (iOS), Lookout for Work (Android/iOS).
+> Bu makale, uygulama koruma ilkelerini destekleyen tüm Mobile Threat Defense iş ortakları için geçerlidir: daha Iyi mobil (Android), Zkusuren IUM (Android, iOS), Lookout for Work (Android/iOS).
 > 
 > Kayıtlı olmayan cihazlar için, Intune ile kullandığınız iOS uygulaması için mobil tehdit savunması 'nı ayarlayan **bir iOS uygulama yapılandırma ilkesine ihtiyacınız yoktur** . Bu, Intune 'a kayıtlı cihazlara kıyasla önemli bir farktır. 
 
@@ -76,8 +76,8 @@ Ancak, uygulamayı Intune Şirket Portalı aracılığıyla son kullanıcılar i
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Check Point SandBlast Mobile - App Store URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) when completing the **Configure app information** section. -->
 
 ### <a name="making-zimperium-available-to-end-users"></a>Son kullanıcılar için Zkusuri kullanılabilir hale getirme
-<!-- - **Android**
-  - See the instructions for [adding Android store apps to Microsoft Intune](../apps/store-apps-android.md). Use this [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) when completing the **Configure app information** section. -->
+- **Outlook Web Access (OWA)**
+  - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **Uygulama bilgilerini Yapılandır** bölümünü tamamlarken bu [zlaium-Play Store URL 'sini](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) kullanın.
 - **Android**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **Uygulama bilgilerini Yapılandır** bölümünü tamamlarken bu [zlaium-App Store URL 'sini](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) kullanın.
  

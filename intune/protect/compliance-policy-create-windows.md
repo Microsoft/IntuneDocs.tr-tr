@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946674"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547036"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Cihazları Intune ile uyumlu veya uyumsuz olarak işaretlemek için Windows 10 ve üzeri ayarları
 
@@ -102,15 +102,15 @@ Daha fazla kaynak:
 
 Yalnızca Windows 10 ve üzeri çalıştıran ortak yönetilen cihazlar için geçerlidir. Yalnızca Intune cihazları kullanılabilir olmayan bir durum döndürüyor.
 
-- **System Center Configuration Manager cihaz uyumluluğunu gerektir**:  
+- **Configuration Manager cihaz uyumluluğunu gerektir**:  
   - **Yapılandırılmadı** (*varsayılan*)-ıntune, uyumluluk için Configuration Manager ayarlarından herhangi birini denetlemez.
-  - **Gerektir** -System Center Configuration Manager için tüm ayarların (yapılandırma öğeleri) uyumlu olmasını gerektir.  
+  - **Gerektir** -Configuration Manager için tüm ayarların (yapılandırma öğeleri) uyumlu olmasını gerektir.  
 
     Örneğin, tüm yazılım güncelleştirmelerinin cihazlarda yüklü olmasını gerektirirsiniz. Configuration Manager’da bu gereksinim, “Yüklü” durumundadır. Cihazdaki herhangi bir program bilinmeyen bir durumdaysa, cihaz Intune 'da uyumlu değildir.
 
 ## <a name="system-security"></a>Sistem Güvenliği
 
-### <a name="password"></a>Parola
+### <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
 - **Mobil cihazların kilidini açmak için bir parola iste**:  
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.

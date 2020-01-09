@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390297"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547065"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
@@ -275,7 +275,7 @@ SCEP sertifika profillerini, diğer amaçlar için [Cihaz profillerini dağıtt�
 
 - Cihaz kaydolduktan sonra cihaza hızlıca bir sertifika yayımlamak için sertifika profilini bir cihaz grubu yerine bir kullanıcı grubuna atayın. Bir cihaz grubuna atarsanız, ilkeleri almadan önce cihazın tam olarak kaydedilmesi gerekir.
 
-- Intune ve Configuration Manager için ortak yönetim kullanıyorsanız, Configuration Manager ' de kaynak erişim Ilkesi için [iş yükü kaydırıcısını](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) **Intune** veya **pilot Intune**'a ayarlayın. Bu ayar, Windows 10 istemcilerinin sertifika isteme işlemini başlatmasını sağlar.
+- Intune ve Configuration Manager için ortak yönetim kullanıyorsanız, Configuration Manager ' de kaynak erişim Ilkeleri için [iş yükü kaydırıcısını](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads) **Intune** veya **pilot Intune**'a ayarlayın. Bu ayar, Windows 10 istemcilerinin sertifika isteme işlemini başlatmasını sağlar.
 
 - Güvenilen sertifika profilini ve SCEP sertifika profilini ayrı ayrı oluşturup atarsanız, her ikisi de atanmalıdır. Bir cihaza her ikisi de yüklü olmadan, SCEP sertifika ilkesi başarısız olur. Tüm güvenilen kök sertifika profillerinin Ayrıca SCEP profiliyle aynı gruplara dağıtıldığından emin olun.
 

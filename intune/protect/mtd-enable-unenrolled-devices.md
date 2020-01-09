@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74478933"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545948"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Kayıtlı olmayan cihazlar için Intune 'da Mobile Threat Defense bağlayıcısını etkinleştirme
 
 Mobile Threat Defense (MTD) kurulumu sırasında, Mobile Threat Defense iş ortağı konsolinizdeki tehditleri sınıflandırmak için bir ilke yapılandırdınız ve Intune 'da uygulama koruma ilkesi oluşturdunuz. Intune bağlayıcısını MTD iş ortağı konsolunda zaten yapılandırdıysanız MTD iş ortağı uygulamaları için MTD bağlantısını etkinleştirebilirsiniz.
 
 > [!NOTE]
-> Bu makale, uygulama koruma ilkelerini destekleyen tüm Mobile Threat Defense iş ortakları için geçerlidir: daha Iyi mobil (Android), Zkusuren IUM (iOS), Lookout for Work (Android/iOS).
+> Bu makale, uygulama koruma ilkelerini destekleyen tüm Mobile Threat Defense iş ortakları için geçerlidir: daha Iyi mobil (Android), Zkusuren IUM (Android/iOS), Lookout for Work (Android/iOS).
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>MTD uygulamaları için klasik koşullu erişim ilkeleri
 
