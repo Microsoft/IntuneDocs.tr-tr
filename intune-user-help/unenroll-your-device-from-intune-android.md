@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb1538d484590a19eb7525a1451b5082ebab245d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: be980a8cd2eb7f0cbe40002f73f9bc36a36d1193
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506038"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859075"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Android cihazınızın yönetim kaydını silme  
 
@@ -74,7 +74,7 @@ Son çare olarak, uygulamayı cihazınızdan bir cihaz yöneticisi olarak kaldı
 1. **Ayarlar** > **güvenlik** > **cihaz yöneticileri** > **ek güvenlik ayarları** ' nı seçin.  
 2. **Şirket portalı** seçimini temizleyin.  
 
-**Seçenek 2**:
+**2. Seçenek**:
 
 1. **Ayarlar** > **kilit ekranı ve güvenlik** > **Cihaz Yöneticisi uygulamaları** > **diğer güvenlik ayarları** ' nı seçin.
 2. **Şirket portalı** seçimini temizleyin.

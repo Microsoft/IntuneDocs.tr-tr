@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 20228277e496ca6f594859d40836e50609d05a8a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506158"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855450"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Windows Phone 8.1 cihazınızı Intune'a kaydetme  
 
@@ -35,7 +35,7 @@ Cihazınızı Intune 'a kaydetmek için izinleriniz veya geçerli hesap durumlar
 ## <a name="enroll-through-company-portal"></a>Şirket Portalı kaydetme  
 Microsoft Store Şirket Portalı uygulamayı yükleyebiliyorsanız bu adımları izleyin. 
 
-1.  > **Store** **Başlat** ' a dokunun.  
+1. **Başlat** > **Mağaza**’ya dokunun.  
 
 2. **Ara**’ya dokunun, sonra **şirket portalı** yazın.  
 
@@ -44,7 +44,7 @@ Microsoft Store Şirket Portalı uygulamayı yükleyebiliyorsanız bu adımları
 
     ![Şirket portalı arama sonuçları](./media/WP81-1-CP-search-store-v2.png)  
 
-4. **Şirket Portalı**  &gt; **Yükle**’ye dokunun.  
+4. **Şirket Portalı** **&gt; '** e dokunun.  
 
 
     ![Şirket portalını yükleyin](./media/WP81-2-CP-install-v2.png)  
@@ -73,7 +73,7 @@ Cihazınızı kaydedin:
 
     ![Çalışma alanı ayarları ekranı](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7. İstenen ek bilgileri girin ve ardından kaydı tamamlamak için **oturum aç**’a dokunun. Şimdi **Ayarlar** &gt; **İş Yeri** sayfasında iş yeri hesabınızı görmeniz gerekir.  
+7. İstenen ek bilgileri girin ve ardından kaydı tamamlamak için **oturum aç**’a dokunun. Artık çalışma alanı hesabınızı **ayarlar** &gt; **çalışma alanı** sayfasında görmeniz gerekir.  
 
 
     ![Hesap eklendi ekranı](./media/WP81-enroll-4-account-added.png)  
@@ -81,7 +81,7 @@ Cihazınızı kaydedin:
 ## <a name="enroll-through-settings-app"></a>Ayarlar uygulaması aracılığıyla kaydolma  
 Windows Phone cihazınızdan Microsoft Store erişemezseniz veya bir Microsoft hesabınız yoksa, bu adımları izleyin.
 
-1. **Ayarlar** &gt; **iş yeri**’ne dokunun.  
+1. **Çalışma alanına**&gt; **Ayarlar** ' a dokunun.  
 
 2. **hesap ekle**’ye dokunun ve iş hesabınızı kullanarak oturum açın.  
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc15f6880abca53ed2110daf6169cddb48464c2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 040ab4cecb07e471a9143278c6d87e8fe9a4964b
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508468"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858389"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Cihazınızı Şirket Portalı’ndan kaldırma
 
@@ -32,7 +32,7 @@ Cihazınızın artık şirketiniz veya kuruluşunuz tarafından yönetilmesini i
 
 Cihazınızı kaldırmak için:
 
-1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) __Menü__ düğmesi > __Cihazlar__’ı seçin.  
+1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com)__Menü__ düğmesi > __Cihazlar__’ı seçin.  
 
 2. Kaldırmak istediğiniz cihazı seçin.  
 

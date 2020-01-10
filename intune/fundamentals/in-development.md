@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35e4612c9aa482204ea61c46c5cc56051874e6de
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 01ea2f75d166e5cc6aef4b890dba5722a74c1f61
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207409"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827828"
 ---
-# <a name="in-development-for-microsoft-intune---december-2019"></a>Microsoft Intune için geliştirme sırasında-Aralık 2019
+# <a name="in-development-for-microsoft-intune---january-2020"></a>Microsoft Intune için geliştirme aşamasında-Ocak 2020
 
-Hazırlık ve planlamada yardımcı olması için bu sayfada Intune Kullanıcı Arabirimi güncelleştirmeleri ve geliştirme aşamasında olan ancak henüz yayınlanmayan özellikler listelenir. Bu sayfadaki bilgilere ek olarak:
+Hazırlık ve planlamada yardımcı olması için bu sayfada Intune Kullanıcı Arabirimi güncelleştirmeleri ve geliştirme aşamasında olan ancak henüz yayınlanmayan özellikler listelenir. Bu sayfadaki bilgilere ek olarak: 
 
 - Bir değişiklikten önce işlem yapmanız gerektiğini düşünüyorsanız, Office ileti merkezi 'nde tamamlayıcı bir gönderi yayımlayacağız.
 - Bir özellik üretim girdiğinde, bir önizleme veya genel kullanıma sunulduktan sonra özellik açıklaması bu [sayfadan yenilikler 'e taşınır.](whats-new.md)
@@ -58,18 +58,21 @@ Hazırlık ve planlamada yardımcı olması için bu sayfada Intune Kullanıcı 
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Uygulama yönetimi
 
-### <a name="user-licensed-vpp-apps-for-user-enrollment-ios-devices---5619268---"></a>Kullanıcı kaydı iOS cihazları için Kullanıcı lisanslı VPP uygulamaları<!-- 5619268 -->
-Kullanıcı kaydı iOS cihazlarında, son kullanıcılar artık kullanılabilir olarak dağıtılan cihaz lisanslı VPP uygulamalarıyla birlikte sunulmayacaktır. Ancak, son kullanıcılar Şirket Portalı içindeki Kullanıcı lisanslı tüm VPP uygulamalarını görmeye devam eder. VPP uygulamaları hakkında daha fazla bilgi için bkz. [Microsoft Intune ile Apple Volume Purchase program aracılığıyla satın alınan iOS ve macOS uygulamalarını yönetme](~/apps/vpp-apps-ios.md).
-
-### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>MEM şifreli macOS cihazlarından kişisel kurtarma anahtarını alma<!-- 4851745 -->
-Son kullanıcılar, iOS Şirket Portalı uygulamasını kullanarak kişisel kurtarma anahtarını (Filekasası anahtarı) alabilecektir. Kişisel kurtarma anahtarına sahip olan cihaz Intune 'a kaydolmalıdır ve Intune aracılığıyla Filekasasıyla şifrelenir. Son Kullanıcı iOS Şirket Portalı uygulamasını kullanarak Safari web görünümünü açabilir ve kişisel kurtarma anahtarlarını alabilir. Intune 'da, *şifreli ve kayıtlı macOS cihazı* > **kurtarma anahtarı al** > **cihazları** ' nı seçin. Filekasası hakkında daha fazla bilgi için bkz. [macOS Için dosya Kasası şifrelemesi](~/protect/encrypt-devices.md#filevault-encryption-for-macos).
-
 ### <a name="display-notifications-for-the-company-portal-app-on-windows---1808082----"></a>Windows 'da Şirket Portalı uygulama için bildirimleri görüntüle<!-- 1808082  -->
-Windows cihazlarındaki Şirket Portalı uygulamasını, uygulama kapatıldığında bile kullanıcılara bildirimler görüntüleyecek şekilde güncelleştireceğiz. Güncelleştirme, kullanılabilir uygulamalara ilişkin bildirimleri yalnızca yükleme durumu tamamlandığında veya başarısız olduğunda gösterir. Şirket Portalı uygulama gerekli uygulamalar için bildirimleri göstermez.
+Windows cihazlarındaki Şirket Portalı uygulamasını, uygulama kapatıldığında bile kullanıcılara bildirimler görüntüleyecek şekilde güncelleştireceğiz. Güncelleştirme, kullanılabilir uygulamalara ilişkin bildirimleri yalnızca yükleme durumu tamamlandığında veya başarısız olduğunda gösterir. Şirket Portalı uygulama gerekli uygulamalar için bildirimleri göstermez. 
 
 ### <a name="display-installation-status-messages-for-the-company-portal-app---2514416----"></a>Şirket Portalı uygulaması için yükleme durum iletilerini görüntüle<!-- 2514416  -->
 Şirket Portalı uygulama son kullanıcılara ek uygulama yükleme durumu iletileri gösterecektir. Yeni Win32 bağımlılık özellikleri için aşağıdaki koşullar geçerli olacaktır:
 - Uygulama yüklenemedi. Yönetici tarafından tanımlanan bağımlılıklar karşılanmadı.
+
+### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276-idready---"></a>Web kliplerini iOS cihazlarında Microsoft Edge 'e yeniden hedefle<!-- 5455276 idready -->
+İOS cihazlarında sabitlenmiş Web uygulamaları olarak davranan web klipleri güncelleştirilmeleri gerekecektir. Yeni dağıtılan web klipleri, korumalı bir tarayıcıda açmak gerekirse Intune Managed Browser yerine Microsoft Edge 'de açılır. Managed Browser yerine Microsoft Edge 'de açıldıklarından emin olmak için önceden mevcut web kliplerini yeniden hedeflemeniz gerekir. 
+
+### <a name="user-experience-change-when-adding-apps-to-intune---4705829-idready---"></a>Intune 'a uygulama eklenirken Kullanıcı deneyimi değişikliği<!-- 4705829 idready -->
+Intune aracılığıyla uygulama eklerken yeni bir kullanıcı deneyimi görürsünüz. Bu deneyim, daha önce kullandığınız ayarların ve ayrıntıların aynısını sağlar ancak yeni deneyim, bir uygulamayı Intune 'a eklemeden önce sihirbaza benzer bir işlem izler. Bu yeni deneyim, uygulamayı eklemeden önce bir gözden geçirme sayfası da sağlar. [Microsoft Uç Nokta Yöneticisi Yönetim merkezinden](https://go.microsoft.com/fwlink/?linkid=2109431), **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin. Daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](~/apps/apps-add.md).
+
+#### <a name="require-win32-apps-to-restart----3136567--"></a>Win32 uygulamalarının yeniden başlatılmasını gerektir <!-- 3136567-->
+Başarılı bir yüklemeden sonra bir Win32 uygulamasının yeniden başlatılmasını zorunlu kılabilirsiniz. Ayrıca, yeniden başlatmanın gerçekleşmesi için gereken süreyi (yetkisiz kullanım süresi) seçebilirsiniz.
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Cihaz yapılandırması
@@ -90,13 +93,50 @@ Kablolu ağları yapılandıran yeni bir macOS cihaz yapılandırma profili kull
 Uygulama hedefi:
 - Mac OS
 
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>IKEv2 VPN bağlantılarına sahip VPN profilleri, her zaman iOS cihazlarıyla birlikte kullanılabilir <!-- 1947932 idready -->
+İOS cihazlarında, bir Ikev2 bağlantısı kullanan bir VPN profili oluşturabilirsiniz (**cihaz yapılandırma** > **profilleri** > profil **oluşturmak** için **iOS/ıpados** > , profil türü için iOS > **VPN** ). Gelecekteki bir güncelleştirmede, her zaman Ikev2 ile yapılandırabilirsiniz. Yapılandırıldığında, IKEv2 VPN profilleri otomatik olarak bağlanır ve VPN 'ye bağlı (veya hızlı bir şekilde yeniden bağlantı) kalır. Ağlar arasında hareket etmekle veya cihazları yeniden başlatırken bile bağlı kalır.
+
+İOS 'ta, her zaman VPN, Ikev2 profilleriyle sınırlıdır.
+
+Yapılandırabileceğiniz geçerli Ikev2 ayarlarını görmek için [Microsoft Intune iOS CIHAZLARıNDA VPN ayarları ekle](../configuration/vpn-settings-ios.md#ikev2-settings)' ye gidin.
+
+Uygulama hedefi:
+- iOS
+
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>İOS ve macOS cihazlarında yapılandırma profilleri oluştururken Geliştirilmiş kullanıcı arabirimi deneyimi<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+İOS veya macOS cihazları için bir profil oluşturduğunuzda, uç nokta yönetimi Yönetim Merkezi 'ndeki deneyim güncelleştirilir. Bu değişiklik, aşağıdaki cihaz yapılandırma profillerini**etkiler (cihaz** > **yapılandırma profilleri** > platform Için **iOS** veya **MacOS** > **profili oluşturma** ):
+
+- Özel: iOS, macOS
+- Cihaz özellikleri: iOS, macOS
+- Cihaz kısıtlamaları: iOS, macOS
+- Endpoint Protection: macOS
+- Uzantılar: macOS
+- Tercih dosyası: macOS
+
+### <a name="improved-user-interface-experience-when-creating-oemconfig-configuration-profiles-on-android-enterprise-devices---5568645-idready----"></a>Android kurumsal cihazlarda OEMConfig yapılandırma profilleri oluştururken Geliştirilmiş kullanıcı arabirimi deneyimi<!-- 5568645 idready  -->
+Android Kurumsal cihazları için bir OEMConfig profili oluştururken veya düzenlerken, Endpoint Management Yönetim Merkezi 'ndeki deneyim güncellenir. Güncelleştirilmiş deneyim, bir bakışta yapılandırdığınız ayarların özetini sağlayacaktır. Bu değişiklik, OEMConfig cihaz yapılandırma profilini (**cihazlar** > **yapılandırma profillerini** etkiler > platform için **Android Enterprise** >, profil türü için **oemconfig** ) > **oluşturur** .
+
+Bu özellik şu platformlarda geçerlidir:
+- Android Kurumsal 
 
 <!-- ***********************************************-->
-<!--## Device enrollment-->
+## <a name="device-enrollment"></a>Cihaz kaydı
+
+### <a name="block-android-enrollments-by-device-manufacturer--5197392-idready--"></a>Android kayıtlarını cihaz üreticisine göre engelle<!--5197392 idready-->
+Cihazın üreticisine bağlı olarak cihazların kaydedilmesini engelleyebilirsiniz. Bu, Android Cihaz Yöneticisi ve Android kurumsal iş profili cihazları için geçerlidir. Kayıt kısıtlamalarını görmek için [Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)> **cihazlar** > **Kayıt kısıtlamaları**' na gidin.
+
+
 
 <!-- ***********************************************-->
-<!--## Device management-->
+## <a name="device-management"></a>Cihaz yönetimi
 
+
+### <a name="new-information-in-device-details---4471759-5604099----"></a>Cihaz ayrıntılarında yeni bilgiler<!-- 4471759 5604099  -->
+Cihazlar için **genel bakış** sayfasına aşağıdaki bilgiler eklenecektir:
+- Bellek kapasitesi (cihazdaki fiziksel bellek miktarı)
+- Depolama kapasitesi (cihazdaki fiziksel depolama miktarı) 
+- CPU Işlemci türü ve hızı
+- RAM ve işlemci verileri
 
 <!-- ***********************************************-->
 <!--## Intune apps-->
@@ -110,14 +150,20 @@ Uygulama hedefi:
 
 
 <!-- ***********************************************-->
-<!--## Role-based access control-->
+## <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
+
+### <a name="new-intune-built-in-role-endpoint-security-manager--4253397-idready--"></a>Yeni Intune yerleşik rol uç noktası Güvenlik Yöneticisi<!--4253397 idready-->
+Yeni bir Intune yerleşik rolü mevcut olacaktır: Endpoint Security Manager. Bu yeni rol, yöneticilere Intune 'daki Endpoint Manager düğümüne tam erişim ve diğer alanlara yalnızca erişim izni verir. Rol, Azure AD 'den "Güvenlik Yöneticisi" rolünün bir genişletmesinden oluşur. Şu anda yalnızca rol olarak genel yöneticileriniz varsa, hiçbir değişiklik yapmanız gerekmez. Rolleri kullanıyorsanız ve Endpoint Security Manager 'ın sağladığı ayrıntı düzeyini beğenmezseniz, bu rolü kullanılabilir olduğunda atayın. Yerleşik roller hakkında daha fazla bilgi için bkz. [rol tabanlı erişim denetimi](role-based-access-control.md).
+
+### <a name="intune-roles-user-interface-changes-coming--5801612-idready--"></a>Intune rolleri Kullanıcı arabirimi değişiklikleri geliyor<!--5801612 idready-->
+[Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) > **Kiracı Yönetimi** > **rolleri** için Kullanıcı arabirimi, daha kolay ve sezgisel bir tasarıma göre değişecek. Bu deneyim, şimdi kullandığınız ayarların ve ayrıntıların aynısını sağlar, ancak yeni deneyim sihirbaz benzeri bir işlem kullanır.
 
 
 <!-- ***********************************************-->
+## <a name="security"></a>Güvenlik
 
-<!--
-## Security
--->
+### <a name="derived-credentials-support-on-android-cobo-devices--4839592--"></a>Android COBO cihazlarında türetilmiş kimlik bilgileri desteği<!--4839592-->
+Android kurumsal tam olarak yönetilen cihazlarda türetilmiş kimlik bilgilerini kullanabilirsiniz. Entrust Datacard, ıntercede ve DıŞA purebred için türetilmiş bir kimlik bilgisi almak üzere destek eklenecektir. Uygulama kimlik doğrulaması, Wi-Fi, VPN veya S/MIME imzalama ve/veya şifrelemeyi destekleyen uygulamalarla şifreleme için türetilmiş bir kimlik bilgisi kullanabileceksiniz. 
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>Bildirimler

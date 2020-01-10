@@ -18,19 +18,19 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb1a5e56a0c328a1338498bd0606bb33f06486fa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b5ef58f4528a0e1133ca38f50d118e3216fe085d
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505980"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857597"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Şirket Portalı’nı kullanarak Windows cihazınızı sıfırlarsanız ne olur?
 
 Şirket Portalı uygulamasını veya [Şirket Portalı web sitesini](reset-erase-your-device-cpwebsite.md) kullanarak Windows cihazınızı sıfırladığınızda, cihazınız fabrika ayarlarına sıfırlanır ve tüm uygulamalar, ayarlar ve kişisel verileriniz de dahil olmak üzere tüm veriler silinir. Her cihazda ne olacağı (aşağıdaki tabloda açıklandığı gibi) sahip olduğunuz cihaz türüne ve cihazı nasıl kullandığınıza bağlıdır. Kaybolan ya da çalınan cihazınızı sıfırlamaya ilişkin yönergeler için bkz. [Kaybolan veya çalışan cihazınızı sıfırlama (silme)](reset-erase-your-device-cpwebsite.md).
 
-|Cihaz yapılandırması ve yönetimi|Cihaz türü|
+|Cihaz yapılandırması ve yönetimi|Cihaz Türü|
 |---------------------------------------|---------------|
 |Şirketinizin destek birimi, mobil cihazınızı yönetiyor|**Windows 10 ve Windows Phone 8.1**</br>Cihazınız artık şirket portalında görünmez ve şirket portalı, cihazı üreticinin varsayılan ayarlarına geri döndürmeyi dener. Kişisel verileriniz, uygulamalarınız ve ayarlarınız kaldırılır. <br /><br />**Windows 10 Mobile**</br>Cihazınızın kaydını silmenin tek yolu cihazı sıfırlamaktır.|
 |Cihazınız yalnızca şirket e-postalarına erişebilir|**Windows Phone 8.1**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız ve kaydedilmemiş e-postalarınız silinir.<br /><br />**Windows 7 veya Windows Vista**<br />Windows 7 veya daha önceki bir sürümünü çalıştıran ve yalnızca e-postalar için kullanılan bir bilgisayarı sıfırlayamazsınız.<br /><br />**Windows 8.1 ve Windows 8**<br />Cihazınız artık şirket portalında görünmez, şirket e-posta hesabınız ve kaydedilmemiş e-postalarınız silinir.|

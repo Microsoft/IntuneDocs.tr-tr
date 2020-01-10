@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205539"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857052"
 ---
 # <a name="intune-discovered-apps"></a>Intune bulunan uygulamalar
 
@@ -67,6 +67,7 @@ Aşağıdaki liste, uygulama platformu türünü, kişisel cihazlar için izlene
 > [!NOTE]
 > - Windows 10 karma Azure AD 'ye katılmış cihazlar Configuration Manager içindeki uygulama yönetimi iş yükünde gösterildiği gibi, şu anda uygulama envanterini yukarıdaki zamanlamaya göre Intune yönetim uzantısı (IME) aracılığıyla toplamamaktadır. Bu sorunu azaltmak için, IME 'nin cihaza yüklenebilmesi için Configuration Manager içindeki uygulama yönetimi iş yükünün Intune 'a geçiş yapması gerekir (Win32 envanter ve PowerShell dağıtımı için IME gereklidir). Bu davranıştaki tüm değişikliklerin veya güncelleştirmelerin [geliştirme](../fundamentals/in-development.md) ve [/veya yenilikler](../fundamentals/whats-new.md)' de duyurulduğunu unutmayın.
 > - , Kasım 2019 ' den önce kaydedilen kişiye ait macOS cihazları, cihazlar yeniden kaydedilinceye kadar cihazda yüklü olan tüm uygulamaları göstermeye devam edebilir.
+> - Android kurumsal tam olarak yönetilen ve adanmış, bulunan uygulamaları görüntülemez.
 
 Bulunan uygulamaların sayısı uygulama yükleme durumu sayısıyla eşleşmeyebilir. Tutarsızlıkların olası nedenleri:
 

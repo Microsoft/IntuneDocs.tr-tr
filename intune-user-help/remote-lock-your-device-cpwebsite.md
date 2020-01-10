@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c81c13d5da8eac1616ab7274b484befaa5685511
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dae2f1733fe98729384c44cb19d28651a75d0862
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502166"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858353"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Şirket Portalı web sitesinden cihazınızı uzaktan kilitleme
 
@@ -39,7 +39,7 @@ Uzaktan kilitleme ayarı şu platformlarda çalışır:
 * Windows 10 Mobile (cihazın zaten bir geçiş kodu kümesi varsa)
 * Windows Phone 8.1 (cihazın zaten bir geçiş kodu kümesi varsa)  
 
-1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com) __Menü__ düğmesi > __Cihazlar__’ı seçin.  
+1. [Şirket Portalı web sitesinde](https://portal.manage.microsoft.com)__Menü__ düğmesi > __Cihazlar__’ı seçin.  
 
 2. Kilitlemek istediğiniz cihazı seçin.  
 

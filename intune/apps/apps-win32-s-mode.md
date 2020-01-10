@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: a3074b30921a4daba7469e670a17ad29ee1edc00
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204910"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827811"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>S modundaki cihazlarda Win32 uygulamalarını etkinleştirme
 
@@ -45,7 +45,7 @@ Win32 uygulamalarının bir Windows 10 cihazında S modunda çalışmasına izin
    - İmzalanmış ek ilkesini, Windows 10 S modu ek ilkesi oluşturarak Intune 'a yüklersiniz (aşağıya bakın).
 3. Intune aracılığıyla Win32 uygulama kataloglarına izin verin:
    - Katalog dosyaları (her uygulama için 1) oluşturur ve bunları DGSS veya diğer sertifika altyapısını kullanarak imzalar.
-   - İmzalı kataloğu, [Microsoft Win32 Içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730)kullanarak *. ıntunewin* dosyasına paketedersiniz. Daha fazla bilgi için bkz. [Win32 uygulama yönetimi-Win32 uygulama içeriğini karşıya yükleme Için hazırlama](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload).
+   - İmzalı kataloğu, [Microsoft Win32 Içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730)kullanarak *. ıntunewin* dosyasına paketedersiniz. [Microsoft Win32 Içerik hazırlığı aracını](https://go.microsoft.com/fwlink/?linkid=2065730)kullanarak bir katalog dosyası oluştururken adlandırma kısıtlaması yok. Belirtilen kaynak klasörden ve Kurulum dosyasından *. ıntunewin* dosyasını oluştururken-a komut satırı seçeneğini kullanarak yalnızca katalog dosyalarını içeren ayrı bir klasör sağlayabilirsiniz. Daha fazla bilgi için bkz. [Win32 uygulama yönetimi-Win32 uygulama içeriğini karşıya yükleme Için hazırlama](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload).
    - Intune, [Intune yönetim uzantısını](~/apps/intune-management-extension.md)kullanarak S modu cihazında Win32 uygulamasını yüklemek için imzalı uygulama kataloğunu uygular.
 
 > [!NOTE]
@@ -68,7 +68,7 @@ Bir Windows 10 S modu ek ilkesi oluşturmak için aşağıdaki adımları kullan
     | Değer | Description |
     |--------------|------------------------------------------------|
     | İlke dosyası | WDAC ilkesini içeren dosya. |
-    | Ad | Bu ilkenin adı. |
+    | Name | Bu ilkenin adı. |
     | Description | Seçim Bu ilkenin açıklaması. |
 
 5. Ileri ' ye tıklayın **: kapsam etiketleri**.<br>

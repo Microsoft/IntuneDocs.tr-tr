@@ -19,20 +19,20 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c3e4ecccef1ef094000136e49effac138bdfe88
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 9d44895f5a10eecac82e9984767c820bd2ad457e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501911"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857665"
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>Outlook uygulamasını yüklemek için Android cihazınızı güncelleştirmeniz gerekiyor
 
 Outlook uygulaması, milyonlarca kullanıcının [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) cihazlarda tüm e-posta hesaplarına, takvimlerine ve dosyalarına tek bir yerden kolayca bağlanmasına yardımcı olur.
 
 >[!NOTE]
-> iOS cihazlar için yönergeler mi arıyorsunuz? [Daha fazla bilgi edinin](update-device-outlook-ios.md).
+> iOS cihazlar için yönergeler mi arıyorsunuz? [Daha fazlasını bilgi edinin](update-device-outlook-ios.md).
 
 Bazen, özellikle cihazınız güncel değilse, bir uygulamayı yükleme işlemi başarısız olabilir. Bunun gibi bir ileti görürseniz, yeniden denemeden önce Android cihazınızı güncelleştirmeniz gerekir.
 

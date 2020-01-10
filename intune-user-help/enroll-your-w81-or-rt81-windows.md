@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 085ec1f329eb9b423797a110ada53eb7693edf6f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6fb6c1295947b9f51ef861b1fcc6582c6690137f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506146"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855433"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Windows 8.1 veya Windows RT 8.1 cihazınızı Intune’a kaydetme  
 
@@ -33,7 +33,7 @@ ms.locfileid: "72506146"
 
 Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetmek için:  
 
-1. Cihazda **Ayarlar** &gt; **Bilgisayar Ayarları** &gt; **Ağ** &gt; **İş yeri**’ne dokunun.  
+1. Cihazda, **ayarlar** &gt; **bilgisayar ayarları** &gt; **ağ** &gt; **iş yeri**' ne dokunun.  
 
     ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
@@ -61,7 +61,7 @@ Windows 8.1 veya Windows RT 8.1 cihazınızı kaydetmek için:
 
 Ayrıca sizinle ve rolünüzle ilgili olan şirket uygulamalarını kolayca belirleyip edinmenizi sağlayan Şirket Portalı uygulamasını yüklemenizi öneririz. Şirketinizin Intune’u nasıl ayarladığına bağlı olarak, Şirket Portalı uygulaması kayıt sürecinizin parçası olarak yüklenmiş olabilir. Uygulamaya sahip olup olmadığınızı denetlemek için uygulama listenizde **Şirket Portalı**’nı arayın. Uygulama listenizde Şirket Portalı’nı görmüyorsanız, yüklemek için aşağıdaki adımları izleyin.
 
-1. **Başlat** &gt; **Mağaza**’ya dokunun.  
+1. &gt; **Store** **Başlat** ' a dokunun.  
 
 2. **Ara**’ya dokunun, sonra **şirket portalı** yazın.  
 
