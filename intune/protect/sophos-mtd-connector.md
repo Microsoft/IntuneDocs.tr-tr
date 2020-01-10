@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8823aa8467ef380223a486874c68d52926db733
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503750"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564926"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Intune ile Sophos Mobile Threat Defense Bağlayıcısı
 Microsoft Intune ile tümleştirilen bir Mobile Threat Defense (MTD) çözümü olan Sophos Mobile tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Sophos mobil uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
@@ -67,12 +67,12 @@ Ağınız için, ortadaki adam saldırıları gibi tehditleri algılayın ve cih
 - Android 5,0 ve üzeri
 - iOS 11.0 ve üzeri
 
-## <a name="prerequisites"></a>Önkoşullar  
+## <a name="prerequisites"></a>Prerequisites  
 - Azure Active Directory Premium
 - Microsoft Intune aboneliği 
 - Sophos Mobile Threat Defense aboneliği
 
-Daha fazla bilgi için bkz. [Sophos Web sitesi](https://www.sophos.com/products/mobile-control).  
+Daha fazla bilgi için bkz. [Sophos Web sitesi](https://www.sophos.com/en-us/products/mobile-control.aspx).
 
 ## <a name="next-steps"></a>Sonraki adımlar  
 - [Sophos ile Intune 'U tümleştirme](sophos-mtd-connector-integration.md)

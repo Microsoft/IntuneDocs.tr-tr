@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
+ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74410094"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556411"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'de güvenlik taban çizgisini ve profillerini izleme
 
@@ -42,11 +42,15 @@ Taban çizgisi ve cihazlara ilişkin izleme verilerini görüntülemek için [Mi
 - **Cihaz görünümü** : taban çizgisinin her bir durum kategorisinde kaç cihaz olduğunu gösteren bir Özet.
 - **Kategori başına** -her bir kategoriyi taban çizgisinde görüntüleyen ve her bir temel kategori için her bir durum grubu için cihazların yüzdesini içeren bir görünüm.
 
-Her cihaz, hem *cihaz* görünümünde hem de *Kategori başına* görünümlerde kullanılan aşağıdaki durumlardan biriyle temsil edilir:
+Her cihaz aşağıdaki durumlardan biri ile temsil edilir ( *cihaz* görünümünde ve ayrıca *Kategori başına* görünümlerde kullanılır):
 
 - **Taban çizgisi Ile eşleşir** -taban çizgisinin tüm ayarları önerilen ayarlarla eşleşir.
-- **Taban çizgisine uymuyor** -temeldeki en az bir ayar önerilen ayarlarla eşleşmiyor.
-- **Yanlış yapılandırılmış** -en az bir ayar düzgün yapılandırılmamış. Bu durum, ayarın çakışma, hata veya bekleme durumunda olduğu anlamına gelir.
+- **Taban çizgisine uymuyor** -temeldeki en az bir ayar önerilen ayarla eşleşmiyor.
+
+  > [!NOTE]
+  > Bir temel profil oluşturduğunuzda veya düzenlediğinizde, varsayılan bir değer veya yapılandırma ayarında yapılan herhangi bir değişiklik, "taban çizgisine uymuyor" durumunun oluşmasına neden olur. Değiştirilen ayarları belirleme yardımı için Microsoft Desteği başvurun. 
+
+- **Yanlış yapılandırılmış** -en az bir ayar doğru yapılandırılmamış. Bu durum, ayarın çakışma, hata veya bekleme durumunda olduğu anlamına gelir.
 - **Uygulanamaz** -en az bir ayar uygulanabilir değildir ve uygulanmaz.
 
 ### <a name="device-view"></a>Cihaz görünümü

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
+ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414572"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "75606630"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler
 
- Bu konuda, uygulama koruma ilkeleri uygulanmış uygulamalar kullanılırken Kullanıcı deneyimi açıklanmaktadır. Uygulama koruma ilkeleri yalnızca uygulamalar iş bağlamında kullanıldığında uygulanır: Örneğin, kullanıcı iş hesabı kullanarak uygulamalara veya şirketinizin OneDrive iş konumunda depolanan dosyalara eriştiğinde.
+Intune uygulama koruma ilkeleri, iş veya okul için kullanılan uygulamalar için geçerlidir. Diğer bir deyişle, çalışanlarınız ve öğrencileriniz uygulamalarını kişisel bir bağlamda kullanırken, deneyimlerinde fark olmadığını fark edebilirler. Bununla birlikte iş veya okul bağlamında, hesap kararları almak, ayarlarını güncelleştirmek veya yardım için sizinle iletişim kurmak için istemler alabilir. Kullanıcılarınızın Intune ile korunan uygulamalara erişmeye ve bu uygulamaları kullanmaya çalıştıklarında nasıl deneyim sağladığını öğrenmek için bu makaleyi kullanın.  
 
 ## <a name="access-apps"></a>Erişim uygulamaları
 
-Cihaz **Intune'a kayıtlı değilse**, kullanıcı uygulamayı ilk kez kullandığında uygulamayı yeniden başlatması istenir. Uygulamaya uygulama koruma ilkelerinin uygulanabilmesi için yeniden başlatma gereklidir.
+Cihaz **Intune'a kayıtlı değilse**, kullanıcı uygulamayı ilk kez kullandığında uygulamayı yeniden başlatması istenir. Uygulama koruma ilkelerinin uygulamaya uygulanabilmesi için yeniden başlatma gereklidir.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
@@ -40,30 +40,29 @@ Cihaz **Intune'a kayıtlı değilse**, kullanıcı uygulamayı ilk kez kullandı
 
 ## <a name="use-apps-with-multi-identity-support"></a>Çoklu kimlik desteği olan uygulamaları kullanma
 
-Uygulama koruma ilkeleri uygulamalar yalnızca iş bağlamında kullanılırken uygulanırken, birden çok kimliği destekleyen uygulamalar aynı uygulamalara erişmek için farklı hesaplar (iş ve kişisel) kullanmanıza izin verir.  
+Çoklu kimliği destekleyen uygulamalar aynı uygulamalara erişmek için farklı iş ve kişisel hesaplar kullanmanıza olanak sağlar. Bir cihaz PIN 'i gibi uygulama koruma ilkeleri, kullanıcılar bu uygulamalara iş veya okul bağlamında erişirken etkinleştirilir.   
 
-Örneğin, kullanıcı iş verilerine erişirken kendisinden bir PIN istenir. **Outlook uygulamasında**, kullanıcı uygulamayı açarken bir PIN istenir. **OneDrive uygulamasında**, kullanıcı iş hesabında yazdığında bir PIN istenir.  Microsoft **Word**, **PowerPoint** ve **Excel** için, kullanıcı şirketin OneDrive İş konumunda depolanan belgelere eriştiğinde PIN istenir.
+Kullanıcılar, ilkeleri nasıl yapılandırdığınıza bağlı olarak, tüm uygulamaları genelinde PIN istemiyle farklı şekilde karşılaşabilir.  Örneğin, ilkelerinizi şu şekilde yapılandırabilirsiniz:       
+* Microsoft Outlook, uygulamayı başlatırken kullanıcıdan bir PIN 'ı ister. 
+* OneDrive, iş hesabında oturum açtıklarında kullanıcıdan PIN 'i ister.  
+* Microsoft Word, PowerPoint ve Excel, şirket OneDrive Iş konumunda depolanan belgelere erişirken kullanıcıdan PIN kodu ister.  
 
-- Intune ile [uygulama koruması ve çoklu kimlik](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) destekleyen uygulamalar hakkında daha fazla bilgi edinin.
+- Intune ile [uygulama koruması ve çoklu kimlik](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) destekleyen uygulamalar hakkında daha fazla bilgi edinin.  
 
-Uygulama koruma ilkeleri yalnızca iş bağlamında uygulanır. Bu nedenle uygulama, bağlamın iş veya kişisel olmasına göre farklı davranış gösterebilir.
+## <a name="manage-user-accounts-on-the-device"></a>Cihazda kullanıcı hesaplarını yönetme  
 
-## <a name="manage-user-accounts-on-the-device"></a>Cihazda kullanıcı hesaplarını yönetme
+Intune uygulama koruma ilkeleri, kullanıcıları her uygulama için bir yönetilen iş veya okul hesabıyla sınırlandırır. Uygulama koruma ilkeleri, bir kullanıcının ekleyebilecek yönetilmeyen hesap sayısını sınırlamaz.   
 
-Çoklu kimlik uygulamaları, kullanıcıların birden fazla hesap eklemelerine olanak tanır.  Intune uygulaması yalnızca bir yönetilen hesap destekler.  Intune uygulaması yönetilmeyen hesapların sayısını sınırlamaz.
+- Kullanıcı ikinci bir yönetilen hesap eklemeye çalışırsa kendisinden hangi yönetilen hesabın kullanılacağını seçmesi istenir. Kullanıcı ikinci hesabı eklerse, ilk hesap kaldırılır.
+- Kullanıcı hesaplarından başka birine koruma ilkeleri eklerseniz, kullanıcıdan hangi yönetilen hesabın kullanılacağını seçmesi istenir. Diğer hesap kaldırılır. 
 
-Uygulamada bir yönetilen hesap olduğunda:
+Bazı kullanıcılar yönetilen hesapları değiştirme veya seçme seçeneğini almaz. Seçeneği şu şekilde olan cihazlarda kullanılamaz:
+* Intune tarafından yönetiliyor  
+* Üçüncü taraf Kurumsal Mobilite yönetim çözümleri tarafından yönetilir ve ıntunemamupn ayarıyla yapılandırılır 
 
-- Kullanıcı ikinci bir yönetilen hesap eklemeye çalışırsa kendisinden hangi yönetilen hesabın kullanılacağını seçmesi istenir.  Diğer hesap kaldırılır.
-- BT yöneticisi ikinci bir mevcut hesaba ilke eklerse kullanıcıdan hangi yönetilen hesabın kullanılacağını seçmesi istenir.  Diğer hesap kaldırılır.
+Aşağıdaki örnek senaryo, birden çok kullanıcı hesabının nasıl ele alınacağını açıklar:  
 
-Birden çok kullanıcı hesabının nasıl ele alındığını daha iyi anlamak için aşağıdaki örnek senaryoyu okuyun.
-
-Kullanıcı A,**Şirket X** ve **Şirket Y**olmak üzere iki şirket için geçerlidir. Kullanıcı A 'nın her şirket için bir iş hesabı vardır ve her ikisi de uygulama koruma ilkelerini dağıtmak için Intune 'u kullanır. **Şirket X** , **Şirket Y** **'den önce** uygulama koruma ilkeleri dağıtır. **Şirket X** ile ilişkili hesap, önce uygulama koruma ilkesini alır. Şirket Y ile ilişkili kullanıcı hesabının uygulama koruma ilkeleri tarafından yönetilmesini istiyorsanız, Şirket X ile ilişkili kullanıcı hesabını kaldırmanız ve Şirket Y ile ilişkili kullanıcı hesabını eklemeniz gerekir.
-
-### <a name="add-a-second-account"></a>İkinci hesap ekleme
-
-iOS cihazı kullanıyorsanız, bu cihaza ikinci bir iş hesabı eklemeye çalıştığınızda bir engelleme iletisi görebilirsiniz. Hesaplar görüntülenir ve kaldırmak istediğiniz hesabı seçebilirsiniz.
+Kullanıcı A,**Şirket X** ve **Şirket Y**olmak üzere iki şirket için geçerlidir. Kullanıcı A 'nın her şirket için bir iş hesabı vardır ve her ikisi de uygulama koruma ilkelerini dağıtmak için Intune 'u kullanır. **Şirket X** , **Şirket Y** **'den önce** uygulama koruma ilkeleri dağıtır. **Şirket X** ile ilişkili hesap, önce uygulama koruma ilkesini alır. Şirket Y ile ilişkili kullanıcı hesabının uygulama koruma ilkeleri tarafından yönetilmesini istiyorsanız, Şirket X ile ilişkili kullanıcı hesabını kaldırmanız ve Şirket Y ile ilişkili kullanıcı hesabını eklemeniz gerekir.  
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

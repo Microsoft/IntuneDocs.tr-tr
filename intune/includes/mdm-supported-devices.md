@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4669d02f149e7f815ff94b4daa85c4c539c26c96
+ms.sourcegitcommit: 90369aef160945171435b03d82bae395609c7a62
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74284170"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75500154"
 ---
 
 
@@ -34,7 +34,7 @@ ms.locfileid: "74284170"
 - Windows 10 ekipleri (Surface Hub)
 
    Windows 10 ekipleri çalıştıran cihazları yönetme hakkında daha fazla bilgi için bkz. [MDM ile Surface Hub yönetme](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)
-- Windows Phone 8.1, Windows 8.1 RT, Windows 8.1 (Sürdürme modu) çalıştıran bilgisayarlar
+- Windows 10 1709 (RS3) ve üzeri, Windows Phone 8,1, Windows 8.1 RT, Windows 8.1 çalıştıran bilgisayarlar (Sustaoluşturma modu)
 
 > [!NOTE]
 > Tüm Windows sürümleri, MDM aracılığıyla yapılandırılmakta olan tüm kullanılabilir işletim sistemi özelliklerini desteklemez. Bkz. [Windows yapılandırma hizmeti sağlayıcısı başvuru belgeleri](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Her CSP, hangi Windows sürümlerinin desteklendiğini vurgular.
