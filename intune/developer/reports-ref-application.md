@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c87d9b423eeb96acbc984040ef49e44c1853a18
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74290957"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654252"
 ---
 # <a name="reference-for-application-entities"></a>Uygulama varlıkları için başvuru
 
@@ -46,7 +46,7 @@ ms.locfileid: "74290957"
 | revision |İkili karşıya yüklenirken yönetici tarafından bahsedilen sürüm. |2 |
 | title |Uygulama başlığı. |Excel |
 | publisher |Uygulama yayımcısı. |Microsoft |
-| uploadState |Uygulamanın karşıya yüklenme durumu. |1 |
+| uploadState |Uygulamanın karşıya yüklenme durumu. |1\. |
 | appTypeKey |Aşağıdaki bölümde açıklanan AppType özelliğine başvuru. | |
 | vppProgramTypeKey |Aşağıda açıklanan VppProgramType özelliğine başvuru. | |
 | creationTime |Düzeltmenin oluşturulduğu zaman. |23.11.2016 12:00:00 |
@@ -69,10 +69,10 @@ ms.locfileid: "74290957"
 
 ### <a name="example"></a>Örnek
 
-| AppTypeID  | Ad | Description |
+| AppTypeID  | Name | Description |
 |---------|------------|--------|
 | 0 |Android mağazası uygulaması | Bir Android mağazası uygulaması. |
-| 1 |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
+| 1\. |Android LOB uygulaması | Bir Android iş kolu uygulaması. |
 | 2 |Yönetilen Android mağazası uygulaması (MAM) | Yönetimi etkin bir Android mağazası uygulaması. |
 | 3 |iOS mağazası uygulaması | Bir iOS mağazası uygulaması. |
 | 4 |iOS LOB uygulaması | Bir iOS iş kolu uygulaması. |
@@ -98,7 +98,7 @@ ms.locfileid: "74290957"
 
 ### <a name="example"></a>Örnek
 
-| VppProgramID  | Ad | Description |
+| VppProgramID  | Name | Description |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft’un VPP programı. |
 | 00000000-0000-0000-0000-000000000000 | Henüz kullanılamıyor | Varsayılan değer, No VPP. |

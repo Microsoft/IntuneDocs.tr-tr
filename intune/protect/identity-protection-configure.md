@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4f5d3a232cab25c60189132732a0ea3f347c74a
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188243"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683808"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune ile Windows 10 cihazlarda Iş için Windows Hello 'Yu kullanma
 
@@ -65,12 +65,15 @@ Bu makalede bir cihaz yapılandırma profili oluşturma konusu gösterilmektedir
 
    - **Oturum açma için güvenlik anahtarlarını kullan**: Windows Hello güvenlik anahtarını Kiracıdaki tüm bilgisayarlar için oturum açma kimlik bilgileri olarak etkinleştirin.
 
-     - **Enable**
+     - **Etkinleştir**
      - **Yapılandırılmadı** (varsayılan)
 
 5. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
 
 Profil oluşturulur ve profiller listesinde görüntülenir. Daha sonra, gereksinimlerinizi karşılamak için bu profili Kullanıcı ve cihaz gruplarına [atayın](../configuration/device-profile-assign.md) .
+
+> [!IMPORTANT]
+> Bir cihaza birden çok kullanıcının sağlanmasını sağlamak için, Iş için Windows Hello ilkesinin cihazlara uygulanacağını belirtin. İlke yalnızca kullanıcılara uygulanmışsa, bir cihaza yalnızca bir Kullanıcı sağlanabilir.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae99e747f9c0540418c15f24fbe0c27c585f869c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b2efddc75c5819a25d9ba097cb24726e80df14f2
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490311"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654201"
 ---
 # <a name="reference-for-intune-management-extensions"></a>Intune yönetim uzantılarına yönelik başvuru
 
@@ -38,7 +38,7 @@ ms.locfileid: "72490311"
 
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
-| extensionVersionKey |Intunemanagemenmalesions sürümünün benzersiz tanıtıcısı. | 1 |
+| extensionVersionKey |Intunemanagemenmalesions sürümünün benzersiz tanıtıcısı. | 1\. |
 | extensionVersion |4 basamaklı sürüm numarası. |1.0.2.0 |
 
 ## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
@@ -48,7 +48,7 @@ ms.locfileid: "72490311"
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | extensionStateKey |Sistem durumunun benzersiz tanımlayıcısı. | 2 |
-| extensionState |IntuneManagementExtension sistem durumu. | Sorunsuz |
+| extensionState |IntuneManagementExtension sistem durumu. | Sağlam |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 
@@ -61,6 +61,6 @@ Son 60 günün verileri alınır.
 |       dateKey       |               Tarihin benzersiz tanımlayıcısı.                |   123   |
 |      tenantKey      |              Kiracının benzersiz tanımlayıcısı.               |   456   |
 |      deviceKey      |              Cihazın benzersiz tanımlayıcısı.               |   789   |
-| extensionVersionKey | Intunemanagementextension sürümünün benzersiz tanıtıcısı. |    1    |
+| extensionVersionKey | Intunemanagementextension sürümünün benzersiz tanıtıcısı. |    1\.    |
 |  extensionStateKey  |             Sistem durumunun benzersiz tanımlayıcısı.              |    2    |
 

@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503426"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654082"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
 **Cihazlar** kategorisi, mobil cihazlar için şu gibi bilgileri izleyen varlıklar içerir:
 
-- Cihaz türü
+- Cihaz Türü
 - Cihaz kaydı ve kayıt durumu
 - Cihaz sahipliği
 - Cihaz yönetim durumu
@@ -46,14 +46,14 @@ ms.locfileid: "72503426"
 |---------|------------|
 | deviceTypeID |Cihaz türünün benzersiz tanımlayıcısı |
 | deviceTypeKey |Veri ambarındaki cihaz türünün benzersiz tanımlayıcısı - vekil anahtar |
-| deviceTypeName |Cihaz türü |
+| deviceTypeName |Cihaz Türü |
 
 ### <a name="example"></a>Örnek
 
-| deviceTypeID  | Ad | Description |
+| deviceTypeID  | Name | Description |
 |---------|------------|--------|
 | 0 |Masaüstü |Windows Masaüstü cihaz |
-| 1 |WindowsRT |WindowsRT cihaz |
+| 1\. |WindowsRT |WindowsRT cihaz |
 | 2 |WinMO6 |Windows Mobile 6.0 cihaz |
 | 3 |Nokia |Nokia cihaz |
 | 4 |WindowsPhone |Windows Phone cihaz |
@@ -184,10 +184,10 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 
 ### <a name="example"></a>Örnek
 
-| managementStateID  | Ad | Description |
+| managementStateID  | Name | Description |
 |---------|------------|--------|
 | 0 |Yönetilen | Hiçbir bekleyen uzak eylem olmadan yönetilir. |
-| 1 |RetirePending | Cihaz için bekleyen bir devre dışı bırakma komutu vardır. |
+| 1\. |RetirePending | Cihaz için bekleyen bir devre dışı bırakma komutu vardır. |
 | 2 |RetireFailed | Devre dışı bırakma komutu cihazda başarısız oldu. |
 | 3 |WipePending | Cihaz için bekleyen bir silme komutu vardır. |
 | 4 |WipeFailed | Silme komutu cihazda başarısız oldu. |
@@ -211,14 +211,14 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 
 ### <a name="example"></a>Örnek
 
-| ManagementAgentTypeID  | Ad | Description |
+| ManagementAgentTypeID  | Name | Description |
 |---------|------------|--------|
-| 1 |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
+| 1\. |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
 | 2 |MDM | Cihaz bir MDM aracısı kullanılarak yönetiliyor |
 | 3 |EasMdm | Cihaz, Exchange Active Sync ve bir MDM aracısıyla yönetiliyor |
 | 4 |IntuneClient | Cihaz, Intune bilgisayar aracısı tarafından yönetilir |
 | 5 |EasIntuneClient | Cihaz, Exchange Active Sync ve Intune bilgisayar aracısıyla yönetiliyor |
-| 8 |ConfigManagerClient | Cihaz, System Center Configuration Manager aracısıyla yönetiliyor |
+| 8 |ConfigManagerClient | Cihaz, Configuration Manager Aracısı tarafından yönetiliyor |
 | 16 |Bilinmiyor | Bilinmeyen yönetim aracısı türü |
 
 ## <a name="devices"></a>devices

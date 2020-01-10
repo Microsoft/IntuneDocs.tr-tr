@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64fc1bab596715be80fd3a91c003cac1176fe787
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1fe4fabc86e7be647fa161d68fe8a4fe35e9eb6b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490263"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654133"
 ---
 # <a name="reference-for-policy-entities"></a>İlke varlıkları için başvuru
 
@@ -55,7 +55,7 @@ ms.locfileid: "72490263"
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | Policytypeıd |İlkenin kaynak sistemindeki benzersiz tanımlayıcısı. |123 |
-| policyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1 |
+| policyTypeKey |İlkenin veri ambarındaki benzersiz tanımlayıcısı. |1\. |
 | policyTypeName |İlke türünün adı. |Windows 10 Uyumluluk ilkesi. |
 
 ## <a name="device-configuration"></a>Cihaz Yapılandırması
@@ -65,20 +65,20 @@ ms.locfileid: "72490263"
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | dateKey |Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |20160703 |
-| beklemede |Bekleme durumundaki benzersiz cihazların sayısı. |123 |
+| bekleniyor |Bekleme durumundaki benzersiz cihazların sayısı. |123 |
 | başarılı |Başarı durumundaki benzersiz cihazların sayısı. |12 |
 | hata |Hata durumundaki benzersiz cihazların sayısı. |10 |
-| başarısız oldu |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
+| başarısız |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
 
 **Deviceconfigurationprofileuseractivity** varlığı, başarılı, beklemede, başarısız veya hata durumundaki **kullanıcıların** günlük sayısını listeler. Bu sayı, varlığa atanmış Cihaz Yapılandırma Profillerini gösterir. Örneğin, bir **Kullanıcı** atanmış tüm ilkeleri için başarılı durumdaysa, başarılı olan sayacı o gün için bir tane yukarı gider. Bir kullanıcıya biri başarılı diğeri hata durumunda olmak üzere iki profil atanmışsa, kullanıcı hata durumunda olarak değerlendirilir.  **Deviceconfigurationprofileuseractivity** varlığı, son 30 gün içindeki belirli bir gün için kaç kullanıcının hangi durumda olduğunu listeler.
 
 | Özellik  | Description | Örnek |
 |---------|------------|--------|
 | dateKey |Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |20160703 |
-| beklemede |Bekleme durumundaki benzersiz kullanıcıların sayısı. |123 |
+| bekleniyor |Bekleme durumundaki benzersiz kullanıcıların sayısı. |123 |
 | başarılı |Başarı durumundaki benzersiz kullanıcıların sayısı. |12 |
 | hata |Hata durumundaki benzersiz kullanıcıların sayısı. |10 |
-| başarısız oldu |Başarısız durumundaki benzersiz kullanıcıların sayısı. |2 |
+| başarısız |Başarısız durumundaki benzersiz kullanıcıların sayısı. |2 |
 
 ## <a name="policytypeactivities"></a>policyTypeActivities
 
@@ -89,10 +89,10 @@ ms.locfileid: "72490263"
 | dateKey |Tarih anahtarı, cihaz yapılandırma profili iade etme işlemi veri ambarına kaydedildiğinde. |20160703 |
 | policyKey |policyKey, policyName 'i almak için ilkeyle eklenebilir. |Windows 10 temel |
 | policyTypeKey |İlke Anahtarı türü, İlke Türü ile birleştirilerek ilke türü adı elde edilebilir. |Windows 10 Uyumluluk İlkesi |
-| beklemede |Bekleme durumundaki benzersiz cihazların sayısı. |123 |
+| bekleniyor |Bekleme durumundaki benzersiz cihazların sayısı. |123 |
 | başarılı |Başarı durumundaki benzersiz cihazların sayısı. |12 |
 | hata |Hata durumundaki benzersiz cihazların sayısı. |10 |
-| başarısız oldu |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
+| başarısız |Başarısız durumundaki benzersiz cihazların sayısı. |2 |
 
 ## <a name="compliance-policy"></a>Uyumluluk İlkesi
 
@@ -139,7 +139,7 @@ Aşağıdaki tablo, tüm atanmış ilkelerin platform türlerini içerir. Hiçbi
 |Özellik  |Description  |Örnek  |
 |---------|---------|---------|
 |policyPlatformTypeKey      |İlke platform türü için benzersiz anahtar. |20170519 |
-|Policyplatformtypeıd      |İlke platform türü için benzersiz tanımlayıcı.|1|
+|Policyplatformtypeıd      |İlke platform türü için benzersiz tanımlayıcı.|1\.|
 |policyPlatformTypeName      |İlke platform türünün adı.|AndroidForWork |
 
 ### <a name="policydeviceactivities"></a>policyDeviceActivities
@@ -149,11 +149,11 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki c
 |Özellik  |Description  |Örnek  |
 |---------|---------|---------|
 |dateKey|Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı.|20160703|
-|beklemede|Bekleme durumundaki benzersiz cihazların sayısı.|123|
+|bekleniyor|Bekleme durumundaki benzersiz cihazların sayısı.|123|
 |Başarılı|Başarı durumundaki benzersiz cihazların sayısı.|12|
 |policyKey|policyKey, policyName 'i almak için ilkeyle eklenebilir.|Windows 10 temel|
 |hata|Hata durumundaki benzersiz cihazların sayısı.|10|
-|başarısız oldu|Başarısız durumundaki benzersiz cihazların sayısı.|2|
+|başarısız|Başarısız durumundaki benzersiz cihazların sayısı.|2|
 
 ### <a name="policyuseractivities"></a>policyUserActivities
 
@@ -163,7 +163,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 | Özellik  |                                         Description                                         |       Örnek       |
 |-----------|---------------------------------------------------------------------------------------------|---------------------|
 |  dateKey  | Cihaz Yapılandırma Profilinin iade işleminin, veri ambarına kaydedildiği zamanı belirten Tarih Anahtarı. |      20160703       |
-|  beklemede  |                         Bekleme durumundaki benzersiz cihazların sayısı.                          |         123         |
+|  bekleniyor  |                         Bekleme durumundaki benzersiz cihazların sayısı.                          |         123         |
 | başarılı |                         Başarı durumundaki benzersiz cihazların sayısı.                          |         12          |
 | policyKey |                 policyKey, policyName 'i almak için ilkeyle eklenebilir.                 | Windows 10 temel |
 |   hata   |                          Hata durumundaki benzersiz cihazların sayısı.                           |         10          |

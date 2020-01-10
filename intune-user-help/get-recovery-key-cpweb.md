@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,18 +19,20 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 822d995443ca23eac7f96f8314f9926804e0be24
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 44026c379a763db2cc43912e4ef09ae542fbe7db
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508527"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654013"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>MacOS cihazı için kurtarma anahtarı al
 
 Şirket Portalı Web sitesini kullanarak kilitli macOS cihazınız için bir kurtarma anahtarı alın. Cihazınızın parolasını unutursanız, anahtarınızı almak için başka bir cihazdan Şirket Portalı oturum açabilirsiniz.  
 
-Bu seçenek yalnızca, dosya Kasası kullanılarak kuruluşunuz tarafından şifrelenen cihazlar için kullanılabilir. Kişisel olarak şifrelediğiniz cihazlar için kullanılamaz.
+## <a name="get-recovery-key-from-company-portal-website"></a>Şirket Portalı Web sitesinden kurtarma anahtarı al
+
+Bu seçenek, kuruluşunuz tarafından Filekasası kullanılarak şifrelenmiş cihazlar için kullanılabilir. Kişisel olarak şifrelediğiniz cihazlar için kullanılamaz.
 
 1. Herhangi bir cihazda [Şirket portalı Web sitesinde](https://portal.manage.microsoft.com) oturum açın ve **menü** düğmesini > **cihazlar**' ı seçin.  
 2. Şifrelenen macOS cihazını seçin.  
@@ -45,6 +47,19 @@ Bu seçenek yalnızca, dosya Kasası kullanılarak kuruluşunuz tarafından şif
     Güvenlik nedenleriyle, bu anahtar beş dakika sonra kaybolacaktır. Anahtarı tekrar görmek için **Kurtarma anahtarını al**' ı seçin.
 
 Bir anahtar bulunamazsa ancak cihazınız düzgün şekilde şifrelendiyse, kuruluşunuzun destek ekibine başvurun. Kişi bilgileri için [Şirket Portalı Web sitesine](https://go.microsoft.com/fwlink/?linkid=2010980) bakın.  
+
+## <a name="get-recovery-key-from-company-portal-app-for-ios"></a>İOS için Şirket Portalı uygulamasından kurtarma anahtarı al
+
+İOS için Şirket Portalı uygulamasını kullanarak kişisel kurtarma anahtarınızı (Filekasası anahtarı) alabilirsiniz. Kişisel kurtarma anahtarına sahip cihazınız Intune 'a kaydolmuş ve Intune aracılığıyla Filekasasıyla şifrelenmelidir. Kişisel olarak şifrelediğiniz cihazlarda bu seçenek kullanılamaz. 
+
+Şirket Portalı uygulamasını kullanarak Safari web görünümünü açabilir ve kişisel kurtarma anahtarınızı alabilirsiniz. 
+
+1. Şirket Portalı açın.
+2. **Kurtarma anahtarını al**' a tıklayın.
+
+    ![İOS için Şirket Portalı uygulamasının, kurtarma anahtarını gösteren ekran görüntüsü](./media/get-recovery-key-cpweb-02.png)  
+
+Şirket Portalı Web sitesi Safari Web görünümünde açılır ve anahtarı görüntüler. 
 
 ## <a name="it-pro-support"></a>BT uzmanı desteği
 

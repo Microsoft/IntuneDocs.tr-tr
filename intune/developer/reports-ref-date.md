@@ -6,7 +6,7 @@ keywords: Intune Veri Ambarı
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8fbae6cec25480244ede165ed7b22715d9a602a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b1f5354cecb271e6e3b141c5af12a9309d210d0b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490364"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654184"
 ---
 # <a name="reference-for-dates-entity"></a>Tarih varlığı başvurusu
 
@@ -38,7 +38,7 @@ Tarih **kategorisi,** veri modelindeki Tarih başvurularını tanımlamak için 
 |-----------------|--------------------------------------------------------|----------------------|
 |     dateKey     | Veri ambarında bu tarihin benzersiz tanımlayıcısı. |       20160703       |
 |    fullDate     |    Bu tarihin tam Tarih/Saat biçiminde temsili.     | 3\.7.2016 12:00:00 |
-|    dayOfWeek    |                      Haftanın kaçıncı günü olduğu                       |          1           |
+|    dayOfWeek    |                      Haftanın kaçıncı günü olduğu                       |          1\.           |
 |   dayOfMonth    |                      Ayın kaçıncı günü olduğu                      |          3           |
 |    dayOfYear    |                      Yılın kaçıncı günü olduğu                       |         185          |
 |   weekOfYear    |                      Yılın kaçıncı haftası olduğu                      |          28          |
@@ -47,7 +47,7 @@ Tarih **kategorisi,** veri modelindeki Tarih başvurularını tanımlamak için 
 |  Takvim yılı   |                     Takvim yılı                      |         2016         |
 |     dateKey     | Veri ambarında bu tarihin benzersiz tanımlayıcısı. |       20160703       |
 |    fullDate     |    Bu tarihin tam Tarih/Saat biçiminde temsili.     | 3\.7.2016 12:00:00 |
-|    dayOfWeek    |                      Haftanın kaçıncı günü olduğu                       |          1           |
+|    dayOfWeek    |                      Haftanın kaçıncı günü olduğu                       |          1\.           |
 |   dayOfMonth    |                      Ayın kaçıncı günü olduğu                      |          3           |
 |    dayOfYear    |                      Yılın kaçıncı günü olduğu                       |         185          |
 |   weekOfYear    |                      Yılın kaçıncı haftası olduğu                      |          28          |

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585894"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691815"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Kılavuzlu senaryo-güvenli Microsoft Office mobil uygulamalar 
 
@@ -46,7 +46,7 @@ Office Mobile Apps 'in yanı sıra mobil için Microsoft Edge, ikili kimlik dest
 [Intune uygulama koruma ilkeleri](~/apps/app-protection-policy.md) , Intune 'a kayıtlı cihazlarda iş dosyalarınızın korunmasına yardımcı olur. Uygulama koruma ilkelerini, yönetilmek üzere Intune’da kaydedilmemiş çalışan cihazları üzerinde de uygulayabilirsiniz. Bu durumda, şirketiniz cihazı yönetmese de, iş dosyalarının ve kaynakların korunduğundan emin olmanız gerekir.
 
 Kullanıcıların korumasız konumlarda iş dosyalarını kaydetmesini engellemek için uygulama koruma ilkelerini kullanabilirsiniz. Ayrıca Uygulama koruma ilkesi kapsamında olmayan diğer uygulamalara veri taşımayı da kısıtlayabilirsiniz. Uygulama koruma ilkesi ayarları aşağıdakileri içerir:
-- Farklı Kaydet 'i engelle, kesme, kopyalama ve yapıştırmayı kısıtla gibi veri konumu değiştirme ilkeleri.
+- **Kuruluş verilerinin kopyalarını kaydetme**ve **kesme, kopyalama ve yapıştırmayı kısıtlama**gibi veri konumu değiştirme ilkeleri.
 - Erişim için basit PIN gerektirmek ve yönetilen uygulamaların jailbreak uygulanmış veya kök erişim izni verilmiş cihazlarda çalışmasını engellemek için ilke ayarlarına erişin.
 
 Uygulama tabanlı koşullu erişim ve istemci uygulama yönetimi Exchange online ve diğer Office 365 hizmetlerine yalnızca Intune uygulama koruma ilkelerini destekleyen istemci uygulamaların erişmesine izin vererek bir güvenlik katmanı ekler.
@@ -57,7 +57,7 @@ Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamı�
 
 ![Outlook uygulaması koşullu erişim işlem akışı](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 Intune yönetici izinlerini takip etmeniz gerekir:
 
@@ -112,7 +112,7 @@ Bu adımda, bu uygulamalardaki kurumsal dosyalara ve e-postalara erişmek ve bun
 | Daha sonra erişim gereksinimlerini yeniden denetle (dakika dışı) | İlke ile yönetilen uygulama, belirtilen işlem yapılmayan dakika sayısından daha uzun bir süre boyunca etkin değilse, uygulama erişim gereksinimlerini ister (ör. Uygulama başlatıldıktan sonra yeniden denetlenecek PIN, koşullu başlatma ayarları). | 30 |
 | Kuruluş verilerini yazdırma | Engellenirse, uygulama korumalı verileri yazdıramaz. | Engelle |
 | Yönetilmeyen tarayıcılarda ilkeyle yönetilen uygulama bağlantılarını açın | Engellenirse, ilkeyle yönetilen uygulama bağlantıları yönetilen bir tarayıcı açılmalıdır. | Engelle |
-| Yönetilmeyen uygulamalara veri kopyalama | Engellenirse, yönetilen veriler yönetilen uygulamalarda kalır. | Allow |
+| Yönetilmeyen uygulamalara veri kopyalama | Engellenirse, yönetilen veriler yönetilen uygulamalarda kalır. | İzin ver |
 
 ## <a name="step-5---assignments"></a>5\. adım-atamalar
 

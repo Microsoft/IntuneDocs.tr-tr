@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 3529a21483d0207dbfe55af914badf3ed895af1a
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899394"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691864"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -60,7 +60,7 @@ Size ulaşmak ve kayıt işlemine devam etmek için anket yanıtlarınızda list
 
 4. Son olarak, uygulamanızın ayrıntılı bağlantısı bir sonraki aylık Intune Hizmeti güncelleştirmesine eklenir. Örneğin kayıt bilgileri Temmuz'da tamamlanmışsa ayrıntılı bağlantı Ağustos ayının ortalarında desteklenecektir.
 
-Uygulamanızın ayrıntılı bağlantısı gelecekte değişirse, uygulamanızı yeniden kaydetmeniz gerekir.
+Derin bağlantı, uygulamanızın genel uygulama mağazasındaki listesinin bağlantıdır. Uygulamanızın ayrıntılı bağlantısı gelecekte değişirse, uygulamanızı yeniden kaydetmeniz gerekir.
 
 > [!NOTE]
 > Uygulamanızı Intune uygulama SDK 'sının yeni bir sürümüyle güncelleştirirseniz bize bildirmeniz gerekir.
@@ -183,7 +183,7 @@ Uygulamanızı bir Azure kiracısında kaydettikten ve **tüm uygulamalar**altı
 7. **Izin Ekle**' ye tıklayın.
 
 > [!NOTE]
-> Uygulamanız bu kaynağa erişirken bir hata nedeniyle oturum açmanızı kısıtlıyor: https://intunemam.microsoftonline.com, uygulamanızın Istemci KIMLIĞI ile msintuneappsdk@microsoft.com için bir notun gönderilmesi gerekir. Bu, bugün el ile yapılan bir onay işlemidir.
+> Uygulamanız bu kaynağa erişirken bir hata nedeniyle oturum açmanızı kısıtlıyor: https\://intunemam.microsoftonline.com, uygulamanızın Istemci KIMLIĞI ile msintuneappsdk@microsoft.com için bir notun gönderilmesi gerekir. Bu, bugün el ile yapılan bir onay işlemidir.
 
 ### <a name="badge-your-app-optional"></a>Uygulamanıza rozet ekleyin (isteğe bağlı)
 
