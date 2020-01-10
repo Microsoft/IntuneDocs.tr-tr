@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819784"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756024"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -59,7 +59,7 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 
 |Ayrıntı|Description|Platfveyam| 
 |--------------|----------------------|----|  
-|Ad|Cihazın adı.|Windows, iOS|
+|Name|Cihazın adı.|Windows, iOS|
 |Yönetim adı|Yalnızca konsolda kullanılan cihaz adı. Bu adın değiştirilmesi, cihazdaki adı değiştirmez.|Windows, iOS|
 |UDID|Cihazın Benzersiz Cihaz tanımlayıcısı.|Windows, iOS|
 |Intune Cihaz Kimliği|Cihazı benzersiz şekilde tanımlayan GUID.|Windows, iOS|
@@ -94,6 +94,9 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 |Şifreli|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
 
 Android 'de, tam olarak yönetilen ve adanmış cihazlar gibi Google Policy Manager ile kullanılamaz \*
+
+> [!Note]  
+> Telefon numarası, Android kurumsal adanmış veya tam olarak yönetilen cihazlarda envantere kaydedilmiş değildir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Intune ile [cihazlarınızı yönetmek](device-management.md) için başka neler yapabileceğinizi görün.

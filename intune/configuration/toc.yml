@@ -5,10 +5,14 @@
   items:
     - name: Cihaz yapılandırmasına genel bakış
       href: device-profiles.md
-- name: Hızlı girişler
+- name: Hızlı başlangıçlar
   items:
     - name: E-posta cihaz profili oluşturma
       href: quickstart-email-profile.md
+- name: Öğreticiler
+  items:
+    - name: Yönetimsel şablon oluşturma
+      href: tutorial-walkthrough-administrative-templates.md
 - name: Nasıl yapılır kılavuzları
   items:
     - name: Profil oluşturma
@@ -72,7 +76,7 @@
       href: device-profile-assign.md
     - name: Profil izleme
       href: device-profile-monitor.md
-    - name: Sorunları Gider
+    - name: Sorun giderme
       items:
         - name: İlke ve profillerle ilgili sorunları giderme
           href: troubleshoot-policies-in-microsoft-intune.md
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: Kablolu ağ
-              href: wired-network-settings-macos.md
             - name: Özel
               href: custom-settings-macos.md
         - name: Windows 10 ve üzeri

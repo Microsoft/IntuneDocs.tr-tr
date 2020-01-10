@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
-ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
-ms.translationtype: HT
+ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
+ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75323084"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760984"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
 
@@ -55,19 +55,6 @@ Windows Phone 8,1 için Microsoft temel desteği 2017 Temmuz 'da sona erdi ve ge
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune raporlamayı kontrol edebilirsiniz. Cihazlar > Tüm cihazlar'a gidin ve işletim sistemine göre filtre uygulayın. Kuruluşunuzda Windows Phone 8,1 çalıştıran cihazların kim olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmesini isteyin.
-
-
-### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune değişiklik planı: Windows 10, sürüm 1703 Şirket Portalı Destek dışı<!--5026679-->
-Windows 10, sürüm 1703 (Windows 10, RS2 olarak da bilinir), kurumsal ve EDU sürümleri için 8 Ekim 2019 tarihinde hizmet dışına geçmiştir. Intune, RS2/RS1 için karşılık gelen Şirket Portalı uygulamasına yönelik destek, 26 Aralık 2019 ' den itibaren sona acaktır.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Bundan sonra, Şirket Portalı uygulamasının belirli bir sürümünde yeni özellikler görmezsiniz, ancak bu Şirket Portalı uygulamasının bu sürümünü Şirket Portalı Aralık 2019 ' e kadar bir şekilde desteklemeye devam edeceğiz, ancak şu şekilde uygulamasına güvenlik güncelleştirmeleri sağlar duyulduğunda. Ancak, Windows 10, sürüm 1703, bakım bittikten sonra herhangi bir güvenlik güncelleştirmesi almaması için, Windows cihazlarınızı daha yeni bir Windows sürümüne güncelleştirmenizi ve en son Şirket Portalı uygulamada olduğunuzdan emin olmanız önerilir. yeni özellikler ve ek işlevler.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Gerçekleştirebileceğiniz adımlar ortamınızın nasıl yapılandırıldığına bağlıdır. Genel olarak, işletim sisteminin eski sürümüne ve/veya Şirket Portalı cihazlarındaki cihazları ve güncelleştirmeleri belirlemeniz gerekir. Windows 10 güncelleştirme Halkalarınızı ayarlamak için Intune-> yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları ' na oturum açın. Şirket Portalı en son sürümü 10.3.5601.0 sürümüdür. Lütfen kullanıcılarınızın gelecek sürümlerde güncel kalmasını sağlamak için bunu Microsoft Store almak üzere doğrudan yönlendirin. Intune 'u, [iş için Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business)aracılığıyla en son Windows cihazlarınıza yüklemek için de kullanabilirsiniz.
-
-#### <a name="additional-information"></a>Ek bilgiler
-[Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme](https://docs.microsoft.com/intune/store-apps-company-portal-app)
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Işlem yapın: korumalı Intune tarayıcı deneyiminiz için Microsoft Edge kullanın<!--5728447-->
