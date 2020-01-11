@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510022"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885849"
 ---
 # <a name="basic-setup"></a>Temel kurulum
 
@@ -74,9 +74,9 @@ Intune'a geçebilmek için Intune aboneliği gerekir.
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>3\. Görev: MDM yetkilinizi Intune olarak ayarlayın
 
-Intune, Azure portalından veya Configuration Manager Güncel Dal konsolundan yönetilebilir. Intune’u Configuration Manager Güncel Dal dağıtımı ile tümleştirmeniz gerekmedikçe, Intune'u [Azure portalından](https://portal.azure.com) yönetmenizi öneririz.
+Intune 'U [Microsoft Endpoint Manager yönetim merkezini](https://go.microsoft.com/fwlink/?linkid=2109431)kullanarak yönetmenizi öneririz.
 
-MDM yetkilinizi **Intune** olarak ayarlayarak Intune Azure portalını etkinleştirin. Farklı bir MDM yetkilisi kullanmak, Intune’un MDM yönetimini diğer Microsoft yönetim konsollarına aktarmasını sağlar. Bu durum nadiren oluşur.
+MDM yetkilinizi **Intune**olarak ayarlayın. Farklı bir MDM yetkilisi kullanmak, Intune’un MDM yönetimini diğer Microsoft yönetim konsollarına aktarmasını sağlar. Bu durum nadiren oluşur.
 
 > [!IMPORTANT]
 > Mobil cihaz yönetiminizi ilk defa Intune'a aktarıyorsanız MDM yetkilinizi Intune olarak ayarlamanız gerekir.

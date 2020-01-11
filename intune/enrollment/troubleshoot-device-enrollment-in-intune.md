@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547808"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885957"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydı sorunlarını giderme
 
@@ -56,7 +56,7 @@ Yönetilen cihaz kullanıcılarınız, gözden geçirmeniz için kayıt ve tanı
 Bu sorunlar, tüm cihaz platformlarında oluşabilir.
 
 ### <a name="device-cap-reached"></a>Cihaz sınırına ulaşıldı
-**Sorun:** Bir kullanıcı kayıt sırasında (**Şirket Portalı Geçici Olarak Devre Dışı** gibi) bir hata alıyor ve Configuration Manager'daki DMPdownloader.log dosyası **DeviceCapReached** hatasını içeriyor.
+**Sorun:** Kullanıcı kayıt sırasında bir hata alıyor ( **Şirket portalı geçici olarak kullanılamıyor**).
 
 **Çözüm:**
 
@@ -113,23 +113,6 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 
     4. DirSync’i yeniden açın ve şimdi kullanıcının doğru eşitlenip eşitlenmediğini denetleyin.
 
-3. Intune ile Configuration Manager kullandığınız bir senaryoda, kullanıcının geçerli bir bulut Kullanıcı KIMLIĞI olduğunu doğrulayın:
-
-    1. SQL Management Studio'yu açın.
-
-    2. Uygun veritabanına bağlanın.
-
-    3. Veritabanları klasörünü açın ve **CM_DBName** klasörünü bulup açın; burada DBName, müşteri veritabanının adıdır.
-
-    4. En üstte **Yeni Sorgu**’yu seçin ve aşağıdaki sorguları yürütün:
-
-        - Tüm kullanıcıları görmek için: `select * from [CM_ DBName].[dbo].[User_DISC]`
-
-        - Belirli kullanıcıları görmek için aşağıdaki sorguyu kullanın; burada% TestUser1%, aramak istediğiniz kullanıcı için bir username@domain.com yer tutucudur: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
-
-        Sorguyu yazdıktan sonra **!Execute** komutunu seçin.
-        Sonuçlar döndürüldüğünde, bulut kullanıcı kimliğine bakın.  Hiç kimlik bulunmazsa, kullanıcının Intune’u kullanma lisansı yok demektir.
-
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Şirket adı özel karakterler içeriyorsa ilke oluşturulamaz veya cihazlar kaydedilemez
 **Sorun:** İlke oluşturamıyor veya cihazları kaydedemiyorsunuz.
 
@@ -144,7 +127,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 - kuruluşlarında kullanıcı UPN sonekleri için birden çok en üst düzey etki alanına sahip olma (örneğin @contoso.com veya @fabrikam.com).
 
 
-AD FS sunucusunun bu senaryoyu ek AD FS 2.0 sunucularına gerek kalmadan destekleyebilmesi için, bir [AD FS 2.0 dağıtımı](http://support.microsoft.com/kb/2607496)<strong>SupportMultipleDomain</strong> anahtarıyla birlikte çalışır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
+AD FS sunucusunun bu senaryoyu ek AD FS 2.0 sunucularına gerek kalmadan destekleyebilmesi için, bir [AD FS 2.0 dağıtımı](https://support.microsoft.com/kb/2607496)<strong>SupportMultipleDomain</strong> anahtarıyla birlikte çalışır. Daha fazla bilgi için [bu bloga](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) bakın.
 
 
 ## <a name="android-issues"></a>Android sorunları
@@ -332,23 +315,6 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 
 5. iOS için Safari’nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Intune ile Configuration Manager kullanılırken kayıtlı iOS cihazı konsolda görünmüyor
-**Sorun:** Kullanıcı iOS cihazını kaydediyor ancak cihaz Configuration Manager yönetici konsolunda görünmüyor. Cihaz kayıtlı olduğunu göstermiyor. Olası nedenler:
-
-- Configuration Manager sitenizde Microsoft Intune Bağlayıcısı Intune hizmetiyle iletişim kurmuyor.
-- Data Discovery Manager (ddm) bileşeni veya State Manager (statmgr) bileşeni Intune hizmetinden gelen iletileri işlemiyor.
-- MDM sertifikasını bir hesaptan indirip başka bir hesapla kullanmış olabilirsiniz.
-
-
-**Çözüm:** Olası hatalar için aşağıdaki günlük dosyalarını gözden geçirin:
-
-- dmpdownloader.log
-- ddm.log
-- statmgr.log
-
-Bu günlük dosyalarında nelerin aranması gerektiğine ilişkin örnekler yakında eklenecektir.
-
-
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Kullanıcının iOS cihazı bir kayıt ekranında 10 dakikadan uzun bir süredir takılı
 
 **Sorun**: Kaydolmakta olan bir cihaz iki ekrandan birinde takılabilir:
@@ -419,36 +385,6 @@ Engellenen cihazları sildikten sonra kullanıcılara kayıt işlemini yeniden b
     3. Kayıt sorunu yaşayan cihazı bulun. Sonuçları daraltmak için cihaz adına veya MAC/Donanım Adresine göre arayın.
     4. Cihazı seçin > **Sil**’e tıklayın. Cihazla ilişkili diğer tüm girişleri silin.  
 
-## <a name="issues-when-using-configuration-manager-with-intune"></a>Intune ile Configuration Manager kullanırken oluşan sorunlar
-
-### <a name="mobile-devices-disappear"></a>Mobil cihazlar kayboluyor
-
-**Sorun:** Mobil bir cihaz, Configuration Manager'a başarıyla kaydedildikten sonra mobil cihaz koleksiyonundan kayboluyor. Ancak cihazın hala Yönetim Profili var ve cihaz CSS Ağ Geçidi'nde listeleniyor.
-
-**Çözüm:** Bu sorun aşağıdaki nedenlerle oluşabilir:
-
-- Etki alanına katılmamış cihazları kaldıran özel bir işleminiz var veya
-- kullanıcı cihaz abonelikten çıkarmış.
-Configuration Manager konsolunda cihazı hangi işlemin veya kullanıcı hesabının kaldırdığını denetlemek ve doğrulamak için, aşağıdaki adımları izleyin.
-
-#### <a name="check-how-device-was-removed"></a>Cihazın nasıl kaldırıldığını denetleme
-
-1. Configuration Manager yönetim konsolunda **İzleme** &gt; **Sistem Durumu** &gt; **Durum İletisi Sorguları**’nı seçin.
-
-2. **Elle Silinen Koleksiyon Üye Kaynakları**’na sağ tıklayın ve **İletileri Göster**’i seçin.
-
-3. Uygun bir saat/tarih seçin veya son 12 saati seçin.
-
-4. Söz konusu cihazı bulun ve cihazın nasıl kaldırıldığını gözden geçirin. Aşağıdaki örnekte, cihazın Bilinmeyen Uygulama yoluyla SCCMInstall hesabı tarafından silindiği gösterilir.
-
-    ![Cihaz silme tanılamasının ekran görüntüsü](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
-
-5. Configuration Manager'da etki alanı dışındaki, mobil veya ilgili cihazları otomatik olarak temizleyebilecek, zamanlanmış bir görev, komut dosyası veya başka bir işlemin bulunup bulunmadığını denetleyin.
-
-### <a name="other-ios-enrollment-errors"></a>Diğer iOS kayıt hataları
-
-iOS kayıt hatalarının listesi, [Microsoft Intune’da iOS cihaz kayıt sorunlarını giderme](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) belgelerinde sağlanmıştır.
-
 ## <a name="pc-issues"></a>Bilgisayar Sorunları
 
 |Hata iletisi|Sorun|Çözüm|
@@ -499,7 +435,7 @@ Bu hata bilgisayarda şu koşullarda oluşabilir:
 |0x80043008, 0x80CF3008|Microsoft Online Management Güncelleştirmeleri hizmeti başlatılamadı.|[Microsoft Intune için destek alma](../fundamentals/get-support.md) konusunda açıklandığı gibi Microsoft Desteği ile iletişim kurun.|
 |0x80043009, 0x80CF3009|İstemci bilgisayar hizmete zaten kayıtlı.|İstemci bilgisayarı bu hizmete yeniden kaydetmek için önce devre dışı bırakmanız gerekir.|
 |0x8004300B, 0x80CF300B|İstemci üzerinde çalışan Windows sürümü desteklenmediğinden, istemci yazılımı yükleme paketi çalıştırılamıyor.|Intune istemci bilgisayarda çalışan Windows sürümünü desteklemiyor.|
-|0xAB2|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, [Microsoft Desteği KB198038: Paket ve Dağıtım Sorunlarında Yararlı Araçlar](https://support.microsoft.com/kb/198038) makalesinde açıklanan araçları kullanmanız gerekebilir.|
+|0xAB2|Windows Installer özel bir işlem için VBScript çalışma zamanına erişemedi.|Bu hata Dinamik Bağlantı Kitaplıkları'nı (DLLs) temel alan özel bir işlemden kaynaklanır. DLL sorunlarını giderirken, [Microsoft Desteği KB198038: Paket ve dağıtım Sorunlarında Yararlı Araçlar](https://support.microsoft.com/kb/198038)makalesinde açıklanan araçları kullanmanız gerekebilir.|
 |0x80cf0440|Hizmet uç noktası bağlantısı sonlandırıldı.|Deneme hesabı veya ücretli hesap askıya alındı. Yeni bir deneme hesabı veya ücretli hesap oluşturun ve yeniden kaydolun.|
 
 ## <a name="next-steps"></a>Sonraki adımlar

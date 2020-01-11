@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547995"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885764"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -182,7 +182,7 @@ DEP (Apple Aygıt Kayıt Programı) kayıtları, Şirket Portalı uygulamasını
 
 1. Intune 'da, gerekirse Intune Şirket Portalı uygulamasını **ıntune** > **uygulamalar** > **tüm uygulamalar** > **Ekle**' ye giderek ekleyin.
 2. Şirket Portalı uygulamasına yönelik bir uygulama yapılandırma ilkesi oluşturmak için **uygulamalar** > **uygulama yapılandırma ilkeleri**' ne gidin.
-3. Aşağıda XML ile bir uygulama yapılandırma ilkesi oluşturun. Uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi ve XML verilerinin girilmesi, [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md) veya HIBRIT MDM için, [Configuration Manager 'de uygulama yapılandırma ilkeleriyle ayarları iOS uygulamalarına](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)uygulama hakkında daha fazla bilgi bulabilirsiniz.
+3. Aşağıda XML ile bir uygulama yapılandırma ilkesi oluşturun. Uygulama yapılandırma ilkesi oluşturma hakkında daha fazla bilgi ve XML verilerinin girilmesi, [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md)konusunda daha fazla bilgi bulunabilir.
 
     ``` xml
     <dict>

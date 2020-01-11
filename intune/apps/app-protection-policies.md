@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563716"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885754"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -51,7 +51,7 @@ Kuruluşunuzun iş kolu (LOB) uygulamalarını uygulama koruma ilkelerine hazır
 
     | Değer | Description |
     |--------------|------------------------------------------------|
-    | Ad | Bu uygulama koruma ilkesinin adı. |
+    | Name | Bu uygulama koruma ilkesinin adı. |
     | Description | Seçim Bu uygulama koruma ilkesinin açıklaması. |
 
 
@@ -93,9 +93,6 @@ Kuruluşunuzun iş kolu (LOB) uygulamalarını uygulama koruma ilkelerine hazır
 
 9. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.<br>
    **Atamalar** sayfası, uygulama koruma ilkesini Kullanıcı gruplarına atamanıza olanak tanır.
-   
-    >[!IMPORTANT]
-    > Cihazlarınızı yönetmek için Configuration Manager ile Intune kullanıyorsanız ilke yalnızca doğrudan seçtiğiniz grupta bulunan kullanıcılara uygulanır. Seçtiğiniz grubun içindeki alt grupların üyeleri etkilenmez.
 
 10. **İleri** ' ye tıklayın ve bu uygulama koruma ilkesi için girdiğiniz değerleri ve ayarları gözden geçirin.
 

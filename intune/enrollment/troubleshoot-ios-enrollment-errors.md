@@ -17,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832569"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885929"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme
 
 Bu makale, Intune yöneticilerinin iOS cihazlarını Intune 'A kaydetme sırasında sorunları anlamalarına ve sorunlarını gidermenize yardımcı olur.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 Sorun gidermeye başlamadan önce bazı temel bilgilerin toplanması önemlidir. Bu bilgiler sorunu daha iyi anlamanıza ve çözüm bulma süresini azaltmanıza yardımcı olabilir.
 
@@ -40,7 +40,7 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 - Hangi platform (Android, iOS, Windows) soruna sahip?
 - Kaç Kullanıcı etkilendi? Tüm kullanıcılar mı etkilendi?
 - Kaç cihaz etkilendi? Tüm cihazlar etkileniyor mu ya da yalnızca bir şey var mı?
-- MDM yetkilisi nedir? System Center Configuration Manager, Configuration Manager hangi sürümü kullanıyorsunuz?
+- MDM yetkilisi nedir?
 - Kayıt nasıl gerçekleştirilir? Kayıt profilleriyle "kendi cihazını getir" (BYOD) veya Apple Aygıt Kayıt Programı (DEP) mi?
 
 ## <a name="error-messages"></a>Hata iletileri
@@ -186,7 +186,7 @@ Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kayd
 **Neden:** Apple Anında İletilen Bildirim Servisi (APNs) sertifikası eksik, geçersiz veya zaman aşımına uğradı.
 
 #### <a name="resolution"></a>Çözüm
-Intune 'a geçerli bir APNs sertifikası eklendiğini doğrulayın. Daha fazla bilgi için bkz. [iOS ve Mac cihaz yönetimini ayarlama](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
+Intune 'a geçerli bir APNs sertifikası eklendiğini doğrulayın. Daha fazla bilgi için bkz. [iOS kaydını ayarlama](ios-enroll.md).
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ APNs sertifikasını yenileyin ve sonra cihazı yeniden kaydedin.
 > APNs sertifikasını yenilediğinizden emin olun. APNs sertifikasını değiştirme. Sertifikayı değiştirirseniz, tüm iOS cihazlarını Intune 'a yeniden kaydetmeniz gerekir. 
 
 - Tek başına Intune 'da APNs sertifikasını yenilemek için bkz. [Apple MDM anında iletme sertifikasını yenileme](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
-- Intune hibrit Configuration Manager ile APNs sertifikasını yenilemek için, bkz. [System Center Configuration Manager ve Microsoft Intune Ile iOS hibrit cihaz yönetimini ayarlama](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Office 365 ' de APNs sertifikasını yenilemek için bkz. [iOS cihazları Için APNs sertifikası oluşturma](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR bağlantı geçersiz

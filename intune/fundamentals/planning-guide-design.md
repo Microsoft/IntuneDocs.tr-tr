@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547539"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885791"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -101,19 +101,11 @@ Geçerli MDM ortamını kaydederken ortamınızı etkileyebilecek tüm projeleri
 | **SharePoint** | Şirket İçi SharePoint | SharePoint Online sürümüne geçirme planı yok |  
 | **Geçerli MDM** | Exchange ActiveSync |  |
 | **Sertifika çözümü** | Microsoft Server 2012 R2, AD Sertifika Hizmetleri | Web Sitesi Sunucuları için yalnızca PKI kullanın |
-| **Sistem Yönetimi** | Configuration Manager CB 1606 | Intune karma çözümün araştırılması isteniyor |
+| **Sistem Yönetimi** | Geçerli dalı Configuration Manager | Ortak yönetim çözümünü araştırmak ister misiniz? |
 | **VPN çözümü** | Cisco AnyConnect |  |
 
 
 Intune tasarım planınızı geliştirmek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
-
-## <a name="choose-an-intune-deployment-option"></a>Bir Intune dağıtım seçeneği belirleyin
-
-Intune iki dağıtım seçeneği sunar: Tek başına ve karma. Tek başına, bulutta çalışan Intune hizmetini ifade eder; karma, Configuration Manager ile Intune tümleştirmesini ifade eder. Bu kılavuz öncelikle tek başına seçeneğinin kullanılmasına yönelik tasarlanmıştır. [İş gereksinimlerinize hangi seçeneğin uyduğuna karar verin](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
-
-> [!Important]
->Yeni karma MDM müşterisi ekleme seçeneği kullanım dışı bırakılmıştır. Daha fazla bilgi için [Karma Mobil Cihaz Yönetiminden Azure’da Intune’a geçme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) başlıklı blog gönderisine bakın.
-
 
 ## <a name="intune-tenant-location"></a>Intune kiracı konumu
 
@@ -353,7 +345,7 @@ Kullanıcılara veya cihazlara uygulamaları çeşitli yollarla sunmak için Int
 
 - [iOS İş için Toplu Satın Alma Programı (VPP)](../apps/vpp-apps-ios.md)
 
-- [İş uygulamaları için Microsoft Mağazası](../apps/windows-store-for-business.md)
+- [İş İçin Microsoft Mağazası uygulamaları](../apps/windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Uygulama türü gereksinimleri
 

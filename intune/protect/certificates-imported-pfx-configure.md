@@ -2,27 +2,27 @@
 title: Microsoft Intune-Azure 'da içeri aktarılan PFX sertifikalarını kullanma | Microsoft Docs
 description: Sertifikaları içeri aktarma, sertifika şablonunu yapılandırma, Intune Içeri aktarılan PFX Sertifika bağlayıcısının yüklenmesi ve Içeri aktarılan bir PKCS oluşturma dahil olmak üzere Microsoft Intune ile içeri aktarılan ortak anahtar şifreleme standartları (PKCS) sertifikalarını kullanın Sertifika profili.
 keywords: ''
-author: ralms
+author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: lacranda
+ms.reviewer: lacranda; rimarram
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d54c58523fdb44080b6c4210d639f9ad0ce476e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801535"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886028"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune ile içeri aktarılan PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -46,14 +46,17 @@ Intune ile S/MIME kullanma hakkında daha fazla bilgi için, [e-postayı şifrel
 
   Bağlayıcının eriştiği tüm ağ uç noktaları hakkında daha fazla bilgi için bkz. [Intune ağ yapılandırma gereksinimleri ve bant genişliği](../fundamentals/network-bandwidth-use.md).
 
-- **Windows Server**:  
+- **Windows Server**:
+
   Microsoft Intune için PFX Sertifika bağlayıcısını barındırmak üzere bir Windows Server kullanın.  Bağlayıcı, Intune 'a içeri aktarılan sertifikalara yönelik istekleri işlemek için kullanılır.
 
   Intune, *Microsoft Intune Için PFX Sertifika Bağlayıcısı*ile aynı sunucuya *Microsoft Intune sertifika Bağlayıcısı* yüklenmesini destekler.
 
   Bağlayıcıyı desteklemek için, sunucunun .NET 4,6 Framework veya üstünü çalıştırması gerekir. Bağlayıcıyı yüklemeye başladığınızda .NET 4,6 çerçevesi yüklenmemişse, bağlayıcı yüklemesi otomatik olarak yüklenir.
 
-- **Visual studio 2015 veya üzeri** (isteğe bağlı): PFX sertifikalarını Microsoft Intune içeri aktarmaya yönelik cmdlet 'lerle birlikte yardımcı PowerShell modülünü oluşturmak Için Visual Studio 'yu kullanırsınız. Yardımcı PowerShell cmdlet 'lerini almak için bkz. [GitHub 'Da Pfxımport PowerShell projesi](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
+- **Visual Studio 2015 veya üzeri** (isteğe bağlı):
+
+  Microsoft Intune için PFX sertifikalarını içeri aktarmaya yönelik cmdlet 'lerle birlikte yardımcı PowerShell modülünü oluşturmak için Visual Studio 'Yu kullanabilirsiniz. Yardımcı PowerShell cmdlet 'lerini almak için bkz. [GitHub 'Da Pfxımport PowerShell projesi](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
 ## <a name="how-it-works"></a>Nasıl çalışır?
 
@@ -143,15 +146,14 @@ Ortak/özel anahtar çiftini oluşturmak ve depolamak için bir donanım güvenl
 
 Aşağıdaki işlem, PFX sertifikalarının nasıl içeri aktarılacağını gösteren bir örnek olarak PowerShell cmdlet 'lerini kullanır. Gereksinimlerinize bağlı olarak farklı seçenekler seçebilirsiniz.
 
-Şu seçenekler mevcuttur:  
-- Amaçlanan amaç (bir etiketi temel alarak sertifikaları gruplandırır):  
+Şu seçenekler mevcuttur:
+
+- Amaçlanan amaç (bir etiketi temel alarak sertifikaları gruplandırır):
   - atanmamış
   - SMIME şifreleme
   - SMIME imzalama
 
-- Doldurma şeması:  
-  - pkcs1
-  - oaepSha1
+- Doldurma şeması:
   - oaepSha256
   - oaepSha384
   - oaepSha512

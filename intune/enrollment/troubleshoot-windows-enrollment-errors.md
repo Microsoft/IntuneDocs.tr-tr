@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 622c09d03507a3a47433eab5b21702a656f8bffb
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547518"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885884"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -40,7 +40,7 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 - Hangi platform (Android, iOS, Windows) soruna sahip?
 - Kaç Kullanıcı etkilendi? Tüm kullanıcılar mı etkilendi?
 - Kaç cihaz etkilendi? Tüm cihazlar etkileniyor mu ya da yalnızca bir şey var mı?
-- MDM yetkilisi nedir? Microsoft uç noktası Configuration Manager, hangi Configuration Manager sürümü kullanıyorsunuz?
+- MDM yetkilisi nedir?
 - Kayıt nasıl gerçekleştirilir? Kayıt profilleriyle "kendi cihazını getir" (BYOD) veya Apple Aygıt Kayıt Programı (DEP) mi?
 
 ## <a name="error-messages"></a>Hata iletileri
@@ -107,7 +107,6 @@ Hata 8018000a: "bir sorun oluştu. Cihaz zaten kayıtlı.  Sistem yöneticinize 
 
 **Neden:** Aşağıdaki koşullardan biri doğru:
 - Farklı bir Kullanıcı cihazı Intune 'a zaten kaydettiniz veya cihazı Azure AD 'ye katıldı. Durumun bu olup olmadığını anlamak için, **ayarlar** > **hesaplar** > **iş erişimi**' ne gidin. Aşağıdakine benzer bir ileti arayın: "sistemdeki başka bir kullanıcı zaten bir iş veya okula bağlı. Lütfen bu iş veya okul bağlantısını kaldırın ve yeniden deneyin. "    
-- Configuration Manager istemci Aracısı bilgisayara yüklenir.    
 
 #### <a name="resolution"></a>Çözüm
 
@@ -118,9 +117,6 @@ Bu sorunu çözmek için aşağıdaki yöntemlerden birini kullanın:
 2. **Ayarlar** > **hesaplar** > **iş erişimi**' ne gidin, sonra iş veya okul hesabını kaldırın.
 3. Windows oturumunu kapatın ve hesabınızı kullanarak oturum açın.    
 4. Cihazı Intune 'a kaydedin veya cihazı Azure AD 'ye katın. 
-
-##### <a name="remove-the-configuration-manager-client"></a>Configuration Manager istemcisini kaldır
-Configuration Manager istemcisini kaldırın ve ardından cihazı yeniden kaydedin.
 
 
 
@@ -160,7 +156,7 @@ Hata 80180026: "bir sorun oluştu. Doğru oturum açma bilgilerini kullandığı
 
 **Neden:** Bu hata, bir Windows 10 bilgisayarını Azure AD 'ye katılmayı denediğinizde ve aşağıdaki koşulların her ikisi de doğru olduğunda oluşabilir: 
 - MDM otomatik kaydı, Azure 'da etkindir.    
-- Intune bilgisayar istemcisi (Intune bılgısayar Aracısı) veya Configuration Manager istemci Aracısı Windows 10 bilgisayarına yüklendi.
+- Intune bılgısayar istemcisi (Intune bılgısayar Aracısı) Windows 10 bilgisayarına yüklenir.
 
 #### <a name="resolution"></a>Çözüm
 Bu sorunu gidermek için aşağıdaki yöntemlerden birini kullanın:
@@ -171,7 +167,7 @@ Bu sorunu gidermek için aşağıdaki yöntemlerden birini kullanın:
 3. **MDM Kullanıcı kapsamını** **none**olarak ayarlayın ve ardından **Kaydet**' e tıklayın.    
      
 ##### <a name="uninstall"></a>Kaldır
-Intune bılgısayar istemcisini veya Configuration Manager istemci aracısını bilgisayardan kaldırın.    
+Intune bilgisayar istemci aracısını bilgisayardan kaldırın.    
 
 ### <a name="the-software-cannot-be-installed"></a>Yazılım yüklenemiyor.
 
@@ -208,13 +204,6 @@ Tek başına bir Intune ortamında bu sorunu onarmak için aşağıdaki adımlar
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **kayıt kısıtlamaları** ' nı seçer > bir cihaz türü kısıtlaması seçin.    
 2.  > **Özellikler** ( **Platform ayarları**' nın yanında) **Windows (MDM)** > **izin ver** ' i seçin.    
 3. **Gözden geçir + kaydet**' e tıklayın.    
- 
-Bu sorunu Intune ve Configuration Manager ile karma MDM 'de onarmak için aşağıdaki adımları izleyin: 
-1. Configuration Manager konsolunu açın.    
-2. **Yönetim**' i ve ardından **Cloud Services**' yi seçin.    
-3. **Microsoft Intune aboneliği**' ne sağ tıklayın ve ardından **Windows > platformları Yapılandır**' ı seçin.    
-4. **Windows kaydını** > Etkinleştir > ' in Tamam '**ı**işaretleyin.  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Toplu kayıt sırasında bir kurulum hatası oluştu.
 

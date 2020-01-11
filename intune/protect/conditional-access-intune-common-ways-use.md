@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547062"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885991"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişim kullanmanın yaygın yolları nelerdir?
 
@@ -86,14 +86,6 @@ Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetene
 - **Şirket ıçı ad etki alanına katılmış:** Bu seçenek genellikle bilgisayarlarını zaten AD Grup ilkeleri veya Configuration Manager ile yönetme konusunda makul ölçüde rahat olan kuruluşlar tarafından kullanılır.
 
 - **Azure AD etki alanına katılmış ve Intune yönetimi:** Bu senaryo, bulutu ilk kez yapmak isteyen kuruluşlar içindir (yani, birincil olarak bulut hizmetleri 'ni kullanarak, şirket içi bir altyapının kullanımını azaltmaya yönelik bir hedefle birlikte) veya salt bulut (Şirket içi altyapı olmadan). Azure AD JOIN, karma bir ortamda çalışarak hem buluta hem de şirket içi uygulamalara ve kaynaklara erişimi etkinleştirir. Cihaz Azure AD 'ye katılır ve şirket kaynaklarına erişirken koşullu erişim ölçütü olarak kullanılabilecek Intune 'a kaydedilir.
-
-- **Ad etki alanına katılmış ve Configuration Manager:** Güncel daldan itibaren, Configuration Manager, etki alanına katılmış bir BILGISAYAR olmanın yanı sıra belirli uyumluluk ölçütlerini değerlendirebilecek koşullu erişim özellikleri sağlar:
-
-  - Bilgisayar şifrelenmiş mi?
-
-  - Kötü amaçlı yazılımdan koruma yüklendi mi? Güncel mi?
-
-  - Cihazın yazılım kilidi kırılmış mı veya kök dizinine erişilmiş mi?
 
 #### <a name="bring-your-own-device-byod"></a>Kendi Cihazını Getir (KCG)
 

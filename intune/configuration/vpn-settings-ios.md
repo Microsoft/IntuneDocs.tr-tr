@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9eb7ee99d69fd56707bd9dfe5453ffe0bb107bad
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74781150"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885643"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihazlarına VPN ayarları ekleme
 
@@ -138,6 +138,10 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
 
 - **TLS sürüm aralığı en az**: kullanılacak en düşük TLS sürümünü girin. `1.0`, `1.1`veya `1.2`girin. Boş bırakılırsa, `1.0` varsayılan değeri kullanılır.
 - **En yüksek TLS sürüm aralığı**: kullanılacak en fazla TLS sürümünü girin. `1.0`, `1.1`veya `1.2`girin. Boş bırakılırsa, `1.2` varsayılan değeri kullanılır.
+
+> [!NOTE]
+> Kullanıcı kimlik doğrulaması ve sertifikaları kullanılırken en düşük ve en yüksek TLS sürüm aralığı ayarlanmalıdır.
+
 - **Kusursuz iletme gizliliği**: kusursuz iletme gizliliği 'NI (PFS) açmak için **Etkinleştir** ' i seçin. PFS, bir oturum anahtarının güvenliğinin tehlikeye girdiği etkiyi azaltan bir IP güvenlik özelliğidir. **Devre dışı bırak** (varsayılan) PFS kullanmaz.
 - **Sertifika iptal denetimi**: VPN bağlantısının başarılı olmasına izin vermeden önce sertifikaların iptal edilmediğinden emin olmak için **Etkinleştir** ' i seçin. Bu denetim en iyi çabadır. Sertifikanın iptal edilip edilmediğini belirlemekten önce VPN sunucusu zaman aşımına uğrarsa, erişim izni verilir. **Devre dışı bırak** (varsayılan) iptal edilen sertifikaları denetlemez.
 
@@ -190,7 +194,7 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
   - **URL dizesi araştırması**: İsteğe bağlıdır. Kuralın test olarak kullanacağı bir URL girin. Cihaz bu URL 'ye yeniden yönlendirmesiz erişirse VPN bağlantısı başlatılır. Cihaz hedef URL’ye bağlanır. Kullanıcı, URL dize araştırma sitesini görmez.
 
     Örneğin, URL dize araştırması, VPN 'i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusu URL 'sidir. Ya da URL, VPN aracılığıyla cihazı hedef URL 'ye bağlamadan önce VPN 'in bir siteye bağlanma yeteneğini sınar.
-.
+biçimindeki telefon numarasıdır.
   - **Etki alanı eylemi**: Aşağıdaki öğelerden birini seçin:
     - Gerekirse bağlan
     - Hiçbir zaman bağlanma

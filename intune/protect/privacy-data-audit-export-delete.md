@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cfb0f69d74cc6146b2497cd53be3e123f79cc70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdcf88449a4f6ec0b3b352afb87ebcb5bd0b8389
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504348"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885741"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune’da kişisel verileri denetleme, dışarı aktarma veya silme
 
@@ -68,22 +68,12 @@ Fabrika ayarlarına sıfırlama, tüm şirkete ait ve kişisel veri ve ayarlar y
 ### <a name="user-self-removal-from-intune-management"></a>Kullanıcının kendisini Intune yönetiminden kaldırması
 Kullanıcılar, yönetici yardımı olmadan kendi [Android, Apple veya Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android) cihazlarını Intune’dan kaldırabilir.   
 
-### <a name="retire"></a>Devre dışı bırakma
+### <a name="retire"></a>Devre Dışı Bırakma
 **Kullanımdan kaldırma** eylemi; şirket uygulamaları, Intune'un yönettiği uygulamalara ilişkin veriler, ilke ayarları ve Intune yoluyla sağlanan e-posta profilleri gibi Intune tarafından sağlanan verileri kaldırır. Bu eylem, kullanıcının kişisel verilerini cihazda bırakır.
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Microsoft Intune’dan kiracı silme
 
 Bir Intune kiracısı Intune hesabını iptal ederse, Intune hesabının kapatılmasını izleyen 180 gün içerisinde tüm kiracı verileri silinir. AAD kiracısı diğer Microsoft kuruluş abonelikleri (Azure, Office 365) ile ilişkiliyse yalnızca Intune Müşteri Verileri silinir. AAD kiracı kaynağı, diğer abonelikler tarafından kullanılmak üzere saklanır. AAD kiracısıyla ilişkili tek abonelik Intune hesabıysa Intune Müşteri Verilerinin yanında kiracı ve tüm kaynaklar da silinir.
-
-### <a name="delete-a-user-in-a-hybrid-mobile-device-management-mdm-environment"></a>Karma bir Mobil Cihaz Yönetimi (MDM) ortamında kullanıcı silme
-Karma bir MDM ortamınız (Configuration Manager ile tümleştirilmiş Intune) varsa bir kullanıcıyı tamamen silmek ve yerel Active Directory’nizden, Configuration Manager’dan ve Intune’dan tamamen kaldırmak için aşağıdaki eylemleri gerçekleştirmeniz gerekir.
-
-1. Kullanıcıyı yerel Active Directory’nizden (AD) silin. Böylece kullanıcı Azure AD ile eşitlenme durdurulur ve Configuration Manager bulma tarafından bulunur. 
-2. Kullanıcıyı ve ilişkili verileri Configuration Manager’dan kaldırmak için kullanıcıyı Configuration Manager’dan silin. Konsolda **Varlık ve Uyumluluk** > **Kullanıcılar**’a gidin, silinecek kullanıcıya sağ tıklayın ve **Sil**’e tıklayın.
-3. [Kullanıcıyı AAD’den silin](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user), böylece kullanıcı ve ilişkili veriler Azure Active Directory ve Intune’dan aynı anda silinir. Kullanıcı AAD’den silindiğinde (kalıcı olarak silindiğinde) Intune, AAD’den silme sinyalini alır ve kullanıcının kişisel verilerinin tamamını otomatik olarak Intune hizmetinden temizlemeye başlar. Kaldırma eylemini takip eden 30 gün içerisinde kullanıcı bilgileri Intune hizmetinden silinir.
-
-> [!Important]
->Yeni karma MDM müşterisi ekleme seçeneği kullanım dışı bırakılmıştır. Daha fazla bilgi için [Karma Mobil Cihaz Yönetiminden Azure’da Intune’a geçme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) başlıklı blog gönderisine bakın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

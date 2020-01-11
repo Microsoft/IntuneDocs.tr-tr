@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692182"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885803"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
@@ -93,7 +93,7 @@ Aşağıdaki üç yöntemi kullanarak uygulama yapılandırma ilkesini doğrulay
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>yönetilmeyen cihazlarda iOS yapılandırması
 
-Yönetilen uygulama yapılandırması için, yönetilmeyen cihazlarda **Intune tanılama günlüğü** ile iOS yapılandırmasını doğrulayabilirsiniz.
+Yönetilen uygulama yapılandırması için, yönetilmeyen cihazlarda **Intune tanılama günlüğü** ile iOS yapılandırmasını doğrulayabilirsiniz. Aşağıdaki adımlara ek olarak, Microsoft Edge kullanarak yönetilen uygulama günlüklerine erişebilirsiniz. Daha fazla bilgi için bkz. [yönetilen uygulama günlüklerine erişmek Için iOS üzerinde Microsoft Edge kullanma](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
 1. Cihazda zaten yüklü değilse, **Intune Managed Browser** App Store 'dan indirin ve yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
 2. **Intune Managed Browser** başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
@@ -162,7 +162,7 @@ Android cihazından günlükleri toplamak için, siz veya son kullanıcının, b
     
 ## <a name="graph-api-support-for-app-configuration"></a>Uygulama yapılandırması için Graph API desteği
 
-Graph API, uygulama yapılandırma görevlerini gerçekleştirmek için kullanabilirsiniz. Ayrıntılar için bkz. [Graph API’si Başvurusu MAM Hedefli Yapılandırma](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
+Graph API, uygulama yapılandırma görevlerini gerçekleştirmek için kullanabilirsiniz. Ayrıntılar için bkz. [Graph API Reference mam hedeflenen yapılandırma](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta). Intune ve Graph hakkında daha fazla bilgi için bkz. [Microsoft Graph Intune Ile çalışma](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
 
 ## <a name="troubleshooting"></a>Sorun giderme
 

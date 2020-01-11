@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74562374"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885933"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Android kurumsal tam olarak yönetilen cihazların Intune kaydını ayarlama 
 
@@ -36,7 +36,7 @@ Intune, Android kurumsal tam olarak yönetilen cihazlar dahil olmak üzere Andro
 
 ## <a name="technical-requirements"></a>Teknik gereksinimler
 
-Android kurumsal tam olarak yönetilen cihazları yönetmek için tek başına Intune kiracısına sahip olmanız gerekir. Tam olarak yönetilen cihaz yönetimi, karma (Configuration Manager bağlı) modunda veya eski Silverlight Yönetim konsolunda kullanılamaz.
+Android kurumsal tam olarak yönetilen cihazları yönetmek için tek başına Intune kiracısına sahip olmanız gerekir. Tam olarak yönetilen cihaz yönetimi eski Silverlight Yönetim konsolunda kullanılamıyor.
 
 Cihazların, Android kurumsal tam olarak yönetilen bir cihaz olarak yönetilmesi için bu gereksinimleri karşılaması gerekir:
 

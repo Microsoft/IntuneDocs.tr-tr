@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bc9dd73a9d710b529f757ab336a2ab79e3f6888
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 4a9454d11fd1209e715cbcb1e9d2ce7aae4a003c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547697"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886065"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune’daki yenilikler - önceki aylar
 
@@ -975,7 +975,7 @@ Bu ayarın bir iOS VPN profilindeki kullanımı hakkında bilgi için bkz. [Micr
 Önceden, cihazda sadece bir e-posta profilinin *olması* durumunda bu e-posta profilini cihazdan kaldırmak mümkün değildi. Bu güncelleştirme ile bu davranış değişiyor. Artık cihazdaki tek e-posta profilini bile kaldırabilirsiniz. Ayrıntılar için bkz. [Intune kullanarak cihazlara e-posta ayarları ekleme](../configuration/email-settings-configure.md).
 
 #### <a name="powershell-scripts-and-aad---2309469---"></a>PowerShell betikleri ve AAD<!-- 2309469 -->
-Intune’da PowerShell betikleri AAD cihaz güvenlik grupları tarafından hedeflenebilir.
+Intune’da PowerShell betikleri AAD cihaz güvenlik gruplarına hedeflenebilir.
 
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Android, Android Enterprise için yeni "gerekli parola türü" varsayılan ayarı<!-- 2649963 -->
 Yeni bir uyumluluk ilkesi oluşturduğunuzda (**Intune** > **Cihaz uyumluluğu** > **İlkeler** > **İlke oluştur** > **Android** veya Platform > Sistem Güvenliği için **Android kurumsal**), **Gerekli parola türü** varsayılan değeri değişir:
@@ -2334,8 +2334,6 @@ Kullanıcıları ve onların cihazlarını karma MDM’den Azure Portal’daki I
 - Kullanıcıların bir alt kümesini Azure Portal'da Intune'a taşırken kalanlarını karma MDM'de bırakma
 - Cihazları yeniden kaydetmeye gerek kalmadan Azure Portal'daki Intune'a geçirme
 
-Ayrıntılar için bkz. [Karma MDM kullanıcıları ve cihazlarını tek başına Intune'a geçirme](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
-
 ### <a name="on-premises-exchange-connector-high-availability-support----676614---"></a>Şirket içi Exchange bağlayıcısı yüksek kullanılabilirlik desteği <!-- 676614 -->
 Exchange Connector, belirtilen Istemci erişim sunucusu (CAS) kullanarak Exchange 'e bir bağlantı oluşturduktan sonra, bağlayıcının artık diğer CASs 'leri bulma özelliği vardır. Birincil CAS kullanılamaz duruma gelirse, birincil CAS kullanılabilir duruma gelene kadar varsa bağlayıcı başka bir CAS’ye yük devreder. Ayrıntılar için bkz. [Yüksek kullanılabilirlik desteği ile şirket içi Exchange bağlayıcısı](../protect/exchange-connector-install.md#on-premises-intune-exchange-connector-high-availability-support).
 
@@ -3003,7 +3001,7 @@ iOS cihazı kullanıcıları diğer Microsoft uygulamalarında oturum açmak iç
 ## <a name="may-2017"></a>Mayıs 2017
 
 ### <a name="change-your-mdm-authority-without-unenrolling-managed-devices--1103950--"></a>Yönetilen cihazların kaydını kaldırmadan MDM yetkilinizi değiştirme<!--1103950-->
-Artık Microsoft Desteği’ne başvurmak ve mevcut yönetilen cihazlarınızın kaydını kaldırıp yeniden kaydetmek zorunda kalmadan MDM yetkilinizi değiştirebilirsiniz. Configuration Manager konsolunda, [MDM yetkilinizi değiştirerek](/sccm/mdm/deploy-use/change-mdm-authority) Configuration Manager’a Ayarla (karma) ile Microsoft Intune (tek başına) seçenekleri arasında geçiş yapabilirsiniz.
+Artık Microsoft Desteği’ne başvurmak ve mevcut yönetilen cihazlarınızın kaydını kaldırıp yeniden kaydetmek zorunda kalmadan MDM yetkilinizi değiştirebilirsiniz. Configuration Manager konsolunda, MDM yetkiliniz için Configuration Manager’a Ayarla (karma) ile Microsoft Intune (tek başına) seçenekleri arasında geçiş yapabilirsiniz.
 
 
 ### <a name="improved-notification-for-samsung-knox-startup-pins--1087143--"></a>Samsung Knox başlangıç PIN’leri için geliştirilmiş bildirim<!--1087143-->

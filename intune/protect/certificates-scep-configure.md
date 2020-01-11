@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801567"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886006"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Altyapıyı Intune ile SCEP destekleyecek şekilde yapılandırma
 
@@ -373,8 +373,7 @@ Microsoft Intune Sertifika Bağlayıcısı NDES hizmetinizi çalıştıran sunuc
 
    2. Yükleyiciyi çalıştırın (**NDESConnectorSetup.exe**). Yükleyici ayrıca NDES için ilke modülünü ve IIS sertifika kayıt noktası (CRP) Web hizmetini de yüklüyor. Web ağ hizmeti olan, *Certificateregistrationsvc*, IIS 'de bir uygulama olarak çalışır.
 
-      - Tek başına Intune için NDES yüklediğinizde, CRP hizmeti Sertifika Bağlayıcısı ile otomatik olarak yüklenir.
-      - Intune 'u Configuration Manager kullandığınızda, sertifika kayıt noktasını Configuration Manager bir site sistemi rolü olarak yüklersiniz.
+      Tek başına Intune için NDES yüklediğinizde, CRP hizmeti Sertifika Bağlayıcısı ile otomatik olarak yüklenir.
 
 5. Sertifika Bağlayıcısı için istemci sertifikası istendiğinde, **Seç**' i seçin ve bu makalenin önceki kısımlarında yer alan [NDES 'yi barındıran sunucuda sertifika yükleme ve bağlama](#install-and-bind-certificates-on-the-server-that-hosts-ndes) yordamının adım #3 adım sırasında NDES sunucunuza yüklediğiniz **istemci kimlik doğrulaması** sertifikasını seçin.
 

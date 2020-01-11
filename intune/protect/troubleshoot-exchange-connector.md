@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d50db72a66ee98b773973e96e03b7786c3c2d298
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d3d9473b68f0420670130203409abf477355d93f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547933"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885528"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Intune Exchange Connector sorunlarını giderme
 
@@ -40,7 +40,7 @@ Intune 'da bir Exchange Connector sorununu gidermeye başlamadan önce, bir Soli
   - Bağlayıcıyı ilk kez ayarlıyor musunuz? 
   - Bağlayıcı doğru şekilde çalışıyor ve başarısız oldu mu?
   - Çalışıyorsa, Intune ortamında, Exchange ortamında veya bağlayıcı yazılımını çalıştıran bilgisayarda hangi değişiklikler meydana geldi?
-- MDM yetkilisi nedir? Microsoft uç noktası Configuration Manager, hangi Configuration Manager sürümü kullanıyorsunuz?
+- MDM yetkilisi nedir?
 - Hangi Exchange sürümünü kullanıyorsunuz?
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Exchange Connector sorunları hakkında daha fazla veri almak için PowerShell 'i kullanma

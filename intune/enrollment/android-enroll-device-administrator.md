@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 309860fb5ddf6fa9488ecaf395534bf869234176
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ebeb5830136ad6dae19babbc8ecf45c1d6e5c36c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547847"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885968"
 ---
 # <a name="android-device-administrator-enrollment"></a>Android cihaz yöneticisi kaydı
 
@@ -36,10 +36,6 @@ Aynı nedenlerden dolayı, cihazların Android 10 ' a güncelleyecekse Cihaz Yö
 Android cihaz yöneticisi desteği için Intune desteği hakkında daha fazla bilgi için [Bildirimler bölümüne](../fundamentals/whats-new.md#decreasing-support-for-android-device-administrator)bakın.
 
 Kullanıcıların, Android cihazlarını Cihaz Yöneticisi yönetimine kaydetmesine hala karar verirseniz, sonraki bölüme geçin.  
-
-
-> [!Note]  
-> Android 10 ve üzeri, karma mobil cihaz yönetiminde (Hibrit MDM;) desteklenmez. Karma MDM, 1 Eylül 2019 ' de hizmet dışına alındığından, Configuration Manager konsolu ile yönetilen Intune). Karma MDM kullanmaya devam ediyorsanız, mümkün olan en kısa sürede Intune 'a geçiş yapmanız gerekir. Geçiş için yardıma ihtiyacınız varsa destek ekibiyle iletişime geçin. Daha fazla bilgi için bkz. [Karma Mobil Cihaz Yönetiminden Azure’da Intune’a geçme](https://aka.ms/hybrid_notification).
 
 Google 'ın Android kurumsal özellikleri hakkında daha fazla bilgi için şu makalelere bakın:
 - [Google 'ın cihaz yöneticisinden Android kuruluşa geçiş kılavuzu](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
