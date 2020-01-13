@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42127964f72177bda1808bf4b9285af52cf32b80
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
+ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303031"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75722615"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz Android Kurumsal ayarları
 
@@ -54,15 +54,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
   - **Yüksek** -Bu seçenek, tüm tehdit düzeylerine izin verdiği için en az güvenli seçenektir. Bu çözüm, yalnızca raporlama amacıyla kullanıyorsanız kullanışlı olabilir.
   
 > [!NOTE] 
-> Aşağıdaki Mobile Threat Defence (MTD) sağlayıcıları, uygulama yapılandırması kullanılarak Android kurumsal cihaz sahibi dağıtımlarını destekler:
-> - Daha iyi mobil 
-> - Check Point SandBlast Mobile
-> - Lookout for Work
-> - Pradeo
-> - Sophos Mobile
-> - Zimperium 
->  
->  Intune 'da Android kurumsal cihaz sahibi platformlarını desteklemek için gereken tam yapılandırma için MTD sağlayıcınızla görüşün. Bu liste, Android kurumsal cihaz sahibi senaryolarını destekleyen MTD 'ler olarak güncelleştirilir. 
+> Tüm Mobile Threat Defense (MTD) sağlayıcıları, uygulama yapılandırması kullanılarak Android kurumsal cihaz sahibi dağıtımlarında desteklenir. Intune 'da Android kurumsal cihaz sahibi platformlarını desteklemek için gereken tam yapılandırma için MTD sağlayıcınızla görüşün.
 
 #### <a name="google-play-protect"></a>Google Play Koruması
 
