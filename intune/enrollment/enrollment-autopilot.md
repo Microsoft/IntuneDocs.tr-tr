@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 4e5a16a8be6fcce8c6c34d3ddf8979b17eccddd1
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324891"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920132"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -178,11 +178,6 @@ Belirli bir Autopilot cihazına kullanıcı atayabilirsiniz. Bu atama, Windows k
     ![Kolay ad ekran görüntüsü](./media/enrollment-autopilot/friendly-name.png)
 
 4. **Tamam**’ı seçin.
-
-## <a name="autopilot-deployments-report"></a>Autopilot dağıtımları raporu
-Windows Autopilot aracılığıyla dağıtılan her bir cihazda ayrıntıları görebilirsiniz.
-Raporu görmek için [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' ne gidin, **cihazlar** > **Monitor** > **Autopilot dağıtımları**' nı seçin.
-Veriler dağıtımdan sonra 30 gün boyunca kullanılabilir.
 
 
 ## <a name="delete-autopilot-devices"></a>Autopilot cihazlarını silme

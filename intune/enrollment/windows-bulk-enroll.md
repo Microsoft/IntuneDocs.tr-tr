@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cbdd99dfb7b42677048b4f214e7de537db0edda
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585287"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925818"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows cihazlar için toplu kayıt
 
@@ -65,7 +65,7 @@ Azure AD kullanıcıları, bu cihazlarda standart kullanıcılardır ve atanan I
 
 9. İsteğe bağlı olarak, **Uygulama ekleyebilir** ve **Sertifika ekleyebilirsiniz**. Bu uygulamalar ve sertifikalar cihazda sağlanır.
 
-10. İsteğe bağlı olarak, sağlama paketinizi parola ile koruyabilirsiniz.  **Oluştur**'a tıklayın.
+10. İsteğe bağlı olarak, sağlama paketinizi parola ile koruyabilirsiniz.  **Oluştur**'u tıklatın.
     ![Windows Yapılandırma Tasarımcısı uygulamasında paket koruması ekran görüntüsü](./media/windows-bulk-enroll/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Cihaz sağlama
@@ -95,7 +95,7 @@ Olay Görüntüleyicisi içindeki **sağlama-tanılama-sağlayıcı** Yönetim g
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi ile toplu kayıt 
 
-Toplu kayıtlı cihazlar, kullanıcı hedefli sertifikaları ve Wi-Fi dağıtımını kullanamaz. Bu bağlantıları yönetmek için [cihaz düzeyinde sertifikalara](../protect/certificates-configure.md) ihtiyacınız vardır. 
+Açık bir ağ kullanmadığınız durumlarda, bağlantıları başlatmak için [cihaz düzeyinde sertifikalar](../protect/certificates-configure.md) kullanmanız gerekir. Toplu kayıtlı cihazlar, ağ erişimi için kullanıcı hedefli sertifikalara kullanamaz. 
 
 ### <a name="conditional-access"></a>Conditional Access
 Toplu kayıt kullanılarak kaydedilen Windows cihazları için koşullu erişim kullanılamaz.
