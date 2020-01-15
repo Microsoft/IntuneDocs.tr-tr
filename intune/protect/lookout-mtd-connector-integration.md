@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 331d4d312541f587077c70e19634e331f9ddc21e
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810230"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956344"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Intune ile mobil uç nokta güvenliği tümleştirmesini ayarlama
 [Önkoşulları](lookout-mobile-threat-defense-connector.md#prerequisites)karşılayan bir ortam sayesinde, mobil uç nokta güvenliğini Intune ile tümleştirebilirsiniz. Bu makaledeki bilgiler, Intune ile kullanım için, tümleştirme ayarlama ve önemli ayarları yapılandırma konusunda size kılavuzluk eder.  
@@ -113,7 +113,7 @@ Aşağıdaki yordamda, daha önce Azure AD 'de Gevyorma dağıtımınızı test 
 6. Bağlayıcının yapılandırmasını tamamladıktan sonra **bağlayıcı oluştur** ' u seçin. Daha sonra, sonuçlarınızdan memnun kaldığınızda, kaydı ek kullanıcı gruplarına genişletebilirsiniz.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Intune 'U bir mobil tehdit savunma sağlayıcısı olarak GEVME kullanacak şekilde yapılandırma
-GEVMES yapılandırıldıktan sonra [Intune 'Da GEVME](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable)bağlantısı ayarlamanız gerekir.  
+GEVMES yapılandırıldıktan sonra [Intune 'Da GEVME](~/protect/mtd-connector-enable.md)bağlantısı ayarlamanız gerekir.  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Gevmes uçlarınızdaki ek ayarlar
 Aşağıda, GEVME MES konsolunda yapılandırabileceğiniz ek ayarlar verilmiştir.  

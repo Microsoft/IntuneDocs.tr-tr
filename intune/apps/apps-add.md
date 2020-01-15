@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f336bdb9eca9900cc0250bb174c04d368da9eb9
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885576"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956196"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme 
 
@@ -189,7 +189,7 @@ Intune bu işlemi şu koşullara dayalı olarak gerçekleştirir:
 
 ## <a name="app-installation-errors"></a>Uygulama yükleme hataları
 
-Intune uygulama yükleme hatalarının ayrıntıları için bkz. [Uygulama yükleme hataları](troubleshoot-app-install.md#app-installation-errors).
+Intune uygulama yükleme hatalarının ayrıntıları için bkz. [Uygulama yükleme hataları](troubleshoot-app-install.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

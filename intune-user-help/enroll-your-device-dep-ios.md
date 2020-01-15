@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855519"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951467"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Kuruluş tarafından sağlanan iOS cihazınızı yönetime kaydedin
 
@@ -44,11 +44,7 @@ Kuruluş tarafından sağlanan bir cihaz yerine kendi iOS cihazınızı kullanı
 
 1. iOS cihazınızı başlatın.
 2. **Dil** ayarınızı yaptıktan sonra cihazınızı Wi-Fi’a bağlayın.
-3. **iOS cihaz ayarlama** ekranında şunlardan birini seçin:
-   - **Yeni cihaz olarak ayarla**
-   - **iCloud yedeğinden geri yükle**
-   - **iTunes yedeğinden geri yükle**
-
+3. **İOS cihazını ayarla** ekranında **yeni cihaz olarak ayarla**' yı seçin.  
 4. Wi-Fi’a bağlandıktan sonra **Yapılandırma** ekranı görünür. Bu ekranda **[Şirketiniz], cihazınızı otomatik olarak yapılandıracaktır** ifadesi yer alır.
 
    **Yapılandırma [şirketiniz] uygulamasının bu cihazı hava üzerinden yönetmesine olanak tanır. Yönetici, e-posta ve ağ hesapları ayarlamanıza, uygulama yükleyip yapılandırmanıza ve ayarları uzaktan yönetmenize yardımcı olabilir. Bir yönetici özellikleri devre dışı bırakabilir, uygulama yükleyip kaldırabilir, Internet trafiğinizi izleyip kısıtlayabilir ve bu cihazı uzaktan silebilir.**

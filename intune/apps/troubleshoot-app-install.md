@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/14/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0786174ebb90352fa1a41923f9cfce305aece49f
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563479"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956309"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Uygulama yükleme sorunlarını giderme
 
@@ -47,7 +47,7 @@ Intune, belirli bir kullanıcının cihazında yüklü uygulamalar temelinde sor
     > Aynı uygulama, birden çok gruba atanabilir ancak uygulama için amaçlanan farklı eylemleri (amaçları) olmalıdır. Örneğin uygulama ataması sırasında bir kullanıcı için uygulama dışlandıysa uygulama için çözümlenen amaç **dışlandı** olarak görüntülenecektir. Daha fazla bilgi için bkz. [Uygulama amaçları arasındaki çakışmalar nasıl çözümlenir](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Gerekli bir uygulama için yükleme hatası oluşursa siz veya yardım masanız tarafından cihaz eşitlenebilir ve uygulama yüklemesi yeniden denenebilir.
 
-Uygulama yükleme hatası ayrıntıları, sorunu gösterecektir. Sorunu çözmek için yapılacak en iyi eylemi belirlemek üzere bu ayrıntıları kullanabilirsiniz. Uygulama yükleme sorunlarını giderme hakkında daha fazla bilgi için bkz. [uygulama yükleme hataları](troubleshoot-app-install.md#app-installation-errors).
+Uygulama yükleme hatası ayrıntıları, sorunu gösterecektir. Sorunu çözmek için yapılacak en iyi eylemi belirlemek üzere bu ayrıntıları kullanabilirsiniz. Uygulama yükleme sorunlarını giderme hakkında daha fazla bilgi için bkz. [Android uygulama yükleme hataları](troubleshoot-app-install.md#android-app-installation-errors) ve [iOS uygulama yükleme hataları](troubleshoot-app-install.md#ios-app-installation-errors).
 
 > [!Note]  
 > **Sorun giderme** bölmesine tarayıcınızı [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) adresine yönlendirerek de erişebilirsiniz.
@@ -105,11 +105,7 @@ Günlük dosyalarını toplamak için izlenmesi gereken belirli gereksinimler va
 - Saklanan Günlükler, günlüklerde yer alan kişisel bilgileri korumak için şifrelenir.
 - Win32 uygulama hataları için destek biletlerini açarken, yukarıda belirtilen adımları kullanarak ilgili hata günlüklerini iliştirin.
 
-## <a name="app-installation-errors"></a>Uygulama yükleme hataları
-
-Aşağıdaki hata iletileri ve açıklamaları, Android ve iOS yükleme hataları hakkında ayrıntılar sağlar. 
-
-### <a name="android-errors"></a>Android hataları
+## <a name="android-app-installation-errors"></a>Android uygulama yükleme hataları
 
 Bu bölüm hem Cihaz Yöneticisi (DA) hem de Samsung KNOX kaydı ile bahsetmektedir. Daha fazla bilgi için bkz. [Android Cihaz Yöneticisi kaydı](../enrollment/android-enroll-device-administrator.md) ve [Samsung 's Knox mobil kayıt kullanarak Android cihazları otomatik olarak kaydetme](../enrollment/android-samsung-knox-mobile-enroll.md). 
 
@@ -130,7 +126,9 @@ Bu bölüm hem Cihaz Yöneticisi (DA) hem de Samsung KNOX kaydı ile bahsetmekte
 | İşlem yükleme sırasında yeniden başlatıldığından uygulama kaldırma işlemi iptal edildi. (0xc7d14fbc) | Uygulama yüklemesi işlemi işletim sistemi tarafından sonlandırıldı veya cihaz yeniden başlatıldı. Bu hata tekrar oluşursa, yüklemeyi ve toplamayı Şirket Portalı günlüklerini yeniden deneyin. |
 | Uygulama yüklemesi APK dosyası, imzalanmadığı için yüklenemiyor. (0xc7d14fb6) | Android işletim sistemi, varsayılan olarak uygulamaların imzalanmasını gerektirir. Uygulamanın dağıtımdan önce imzalandığından emin olun. |
 
-### <a name="ios-errors"></a>iOS hataları
+## <a name="ios-app-installation-errors"></a>iOS uygulama yükleme hataları
+
+Aşağıdaki hata iletileri ve açıklamaları, iOS yükleme hatalarıyla ilgili ayrıntıları sağlar. 
 
 | Hata iletisi/kodu | Açıklama/sorun giderme ipuçları |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -164,7 +162,7 @@ Bu bölüm hem Cihaz Yöneticisi (DA) hem de Samsung KNOX kaydı ile bahsetmekte
 | Uygulamanın en son sürümü önceki bir sürümden güncelleştirilemedi. (0x87D13B9D) | Bu hata iletisi, uygulama yüklenip yönetiliyorsa, ancak cihazda yanlış sürüm ile birlikte görüntülenir. Bu durum, bir cihazın uygulamayı güncelleştirmek için bir komut aldığında, ancak yeni sürümün henüz yüklenmemiş ve geri raporlanmadığında oluşur. Bu hata, yükseltme dağıtıldıktan sonra bir cihazın ilk iadede raporlanır ve cihaz yeni sürümün yüklü olduğunu bildirene veya farklı bir hata nedeniyle başarısız olana kadar gerçekleşmeyecektir.  |
 
 
-### <a name="other-installation-errors"></a>Diğer yükleme hataları
+## <a name="other-installation-errors"></a>Diğer yükleme hataları
 
 |  Hata iletisi/kodu  |  Description  |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

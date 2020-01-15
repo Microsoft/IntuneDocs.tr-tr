@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692118"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956330"
 ---
 # <a name="app-protection-policies-overview"></a>Uygulama koruma ilkelerine genel bakış
 
@@ -133,11 +133,11 @@ Bununla birlikte, dikkat edilecek bazı sınırlamalar vardır, örneğin:
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Uygulama koruma ilkeleri ile yönetebileceğiniz uygulamalar
 
-[Intune App SDK’sı](../developer/app-sdk.md) ile tümleştirilmiş veya [Intune Uygulaması Sarmalama Aracı](../developer/apps-prepare-mobile-application-management.md) tarafından sarmalanmış herhangi bir uygulama, Intune uygulama koruma ilkeleri kullanılarak yönetilebilir. Bu araçlar kullanılarak oluşturulan ve genel kullanıma açık olan [Microsoft Intune korunan uygulamaların](apps-supported-intune-apps.md) resmi listesine bakın.
+Intune [SDK](../developer/app-sdk.md) ile tümleştirilmiş veya [Intune uygulama sarmalama aracı](../developer/apps-prepare-mobile-application-management.md) tarafından Sarmalanan tüm uygulamalar, Intune uygulama koruma ilkeleri kullanılarak yönetilebilir. Bu araçlar kullanılarak oluşturulan ve genel kullanıma açık olan [Microsoft Intune korunan uygulamaların](apps-supported-intune-apps.md) resmi listesine bakın.
 
 Intune SDK geliştirme ekibi etkin bir şekilde sınar ve yerel Android, iOS (obj-C, Swift), Xamarin, Xamarin. Forms ve Cordova platformlarıyla oluşturulmuş uygulamalar için destek sağlar. Bazı müşteriler, bir Kullanıcı ve NativeScript gibi diğer platformlarla Intune SDK tümleştirmesi ile başarılı olmuş olsa da, desteklenen platformlarımızdan başka herhangi bir şeyi kullanarak uygulama geliştiricileri için açık rehberlik veya eklentiler sağlamayız.
 
-[Intune uygulama SDK](../developer/app-sdk.md) 'sı, hem 1. taraf hem de SDK 'nın 3. taraf sürümleri Için[Azure Active Directory kimlik doğrulama kitaplıklarından](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) gelişmiş modern kimlik doğrulama özellikleri kullanır. Bu nedenle, [Microsoft kimlik doğrulama kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (msal), Intune uygulama koruması hizmetinde kimlik doğrulaması ve koşullu başlatma gibi temel senaryolarımızda iyi çalışmaz. Microsoft 'un kimlik ekibinin tüm Microsoft Office uygulamalar için MSAL 'e geçmesi, [Intune uygulama SDK 'sının](../developer/app-sdk.md) bu uygulamayı desteklemesi gerekir, ancak bugün bir plan yoktur.
+[INTUNE SDK](../developer/app-sdk.md) 'sı, hem 1. taraf hem de SDK 'nın 3. taraf sürümleri Için[Azure Active Directory kimlik doğrulama kitaplıklarından](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) gelişmiş modern kimlik doğrulama özellikleri kullanır. Bu nedenle, [Microsoft kimlik doğrulama kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (msal), Intune uygulama koruması hizmetinde kimlik doğrulaması ve koşullu başlatma gibi temel senaryolarımızda iyi çalışmaz. Microsoft 'un kimlik ekibinin tüm Microsoft Office uygulamalar için MSAL 'e geçiş yapması, [Intune SDK 'sının](../developer/app-sdk.md) bu uygulamayı desteklemesi gerekir, ancak bugün bir plan yoktur.
 
 ## <a name="end-user-requirements-to-use-app-protection-policies"></a>Uygulama koruma ilkelerini kullanmak için son kullanıcı gereksinimleri
 
@@ -198,7 +198,7 @@ Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Ancak
 
 ### <a name="multi-identity"></a>Çoklu kimlik
 
-Çoklu kimlik desteği, bir uygulamanın birden çok kitci desteklemesini sağlar. Bu izleyiciler "Şirket" kullanıcıları ve "kişisel" kullanıcılardır. İş ve okul hesapları "Kurumsal" izleyiciler tarafından kullanılır, ancak kişisel hesaplar, Microsoft Office kullanıcılar gibi tüketici kitleleri için kullanılır. Çoklu kimliği destekleyen bir uygulama, uygulama koruma ilkelerinin yalnızca uygulama iş ve okul ("Kurumsal") bağlamında kullanıldığı zaman uygulandığı herkese açık bir şekilde dağıtılabilir. Çoklu kimlik desteği, [Intune uygulama SDK 'sını](../developer/app-sdk.md) yalnızca uygulamada oturum açan iş veya okul hesabına uygulama koruma ilkeleri uygulamak için kullanır. Kişisel bir hesap uygulamada oturum açarsa, verilere koruma uygulanmaz.
+Çoklu kimlik desteği, bir uygulamanın birden çok kitci desteklemesini sağlar. Bu izleyiciler "Şirket" kullanıcıları ve "kişisel" kullanıcılardır. İş ve okul hesapları "Kurumsal" izleyiciler tarafından kullanılır, ancak kişisel hesaplar, Microsoft Office kullanıcılar gibi tüketici kitleleri için kullanılır. Çoklu kimliği destekleyen bir uygulama, uygulama koruma ilkelerinin yalnızca uygulama iş ve okul ("Kurumsal") bağlamında kullanıldığı zaman uygulandığı herkese açık bir şekilde dağıtılabilir. Çoklu kimlik desteği, [Intune SDK 'sını](../developer/app-sdk.md) yalnızca uygulamada oturum açan iş veya okul hesabına uygulama koruma ilkeleri uygulamak için kullanır. Kişisel bir hesap uygulamada oturum açarsa, verilere koruma uygulanmaz.
 
 "Kişisel" bağlam örneği için, Word 'de yeni bir belge Başlatan bir kullanıcıyı göz önünde bulundurun. Intune Uygulama Koruması İlkeleri uygulanmadığından bu, kişisel bağlam olarak kabul edilir. Belge "Şirket" OneDrive hesabına kaydedildikten sonra, "Kurumsal" içerik olarak kabul edilir ve Intune Uygulama Koruması ilkeleri uygulanır.
 
@@ -213,7 +213,7 @@ Intune 'da çoklu kimlik hakkında daha fazla bilgi için bkz. [mam and Multi-Id
 Kişisel Kimlik Numarası (PIN), bir uygulamadaki kuruluş verilerine doğru kullanıcının eriştiğini doğrulamak için kullanılan bir paroladır.
 
 **PIN istemi**<br>
-Intune, kullanıcının uygulama PIN’ini yalnızca kullanıcı “kurumsal” verilere erişmek üzereyken ister. Word, Excel veya PowerPoint gibi çoklu kimlik uygulamalarında, "Kurumsal" bir belgeyi veya dosyayı açmaya çalıştıklarında kullanıcıdan PIN kodu istenir. [Intune uygulama sarmalama aracı](../developer/apps-prepare-mobile-application-management.md)kullanılarak yönetilen iş kolu uygulamaları gibi tek kimlikli uygulamalarda, [Intune uygulama SDK 'sı](../developer/app-sdk.md) kullanıcının uygulamadaki deneyiminin her zaman "Kurumsal" olduğunu bildiğinden PIN başlatıldığında PIN istenir.
+Intune, kullanıcının uygulama PIN’ini yalnızca kullanıcı “kurumsal” verilere erişmek üzereyken ister. Word, Excel veya PowerPoint gibi çoklu kimlik uygulamalarında, "Kurumsal" bir belgeyi veya dosyayı açmaya çalıştıklarında kullanıcıdan PIN kodu istenir. [Intune uygulaması sarmalama aracı](../developer/apps-prepare-mobile-application-management.md)kullanılarak yönetilen iş kolu uygulamaları gibi tek kimlikli uygulamalarda, [Intune SDK 'sı](../developer/app-sdk.md) kullanıcının uygulamadaki deneyiminin her zaman "Kurumsal" olduğunu bildiğinden PIN başlatıldığında PIN istenir.
 
 **PIN istemi veya Şirket kimlik bilgileri istemi, sıklık**<br>
 BT Yöneticisi, Intune yönetici konsolunda **(dakika) sonra erişim gereksinimlerini yeniden denetle** Intune uygulama koruma ilkesi ayarını tanımlayabilir. Bu ayar, erişim gereksinimlerinin cihazda denetlenme süresini ve uygulama PIN ekranı veya Şirket kimlik bilgileri istemi 'nin yeniden gösterildiğini belirtir. Ancak kullanıcıdan PIN istenme sıklığını etkileyen önemli PIN ayrıntıları şöyledir:
@@ -231,13 +231,22 @@ iOS cihazlarda PIN, farklı yayımcılardan gelen uygulamalar arasında paylaş�
 Intune PIN 'i, etkin olmama tabanlı bir zamanlayıcıya ( **dakika sonra erişim gereksinimlerini yeniden denetle**değeri) göre çalışmaktadır. Bu sebeple Intune PIN istemleri, genelde varsayılan olarak uygulama başlatmasına bağlı olan Outlook ve OneDrive için yerleşik uygulama PIN’lerinden bağımsız olarak çalışır. Kullanıcı iki PIN istemini de aynı anda alırsa, beklenen davranış Intune PIN’inin öncelik kazanmasıdır.
 
 **Intune PIN güvenliği**<br>
-PIN, uygulamadaki kuruluş verilerine yalnızca doğru kullanıcının erişmesine izin verir. Bu nedenle son kullanıcıların, Intune uygulama PIN’lerini ayarlamak veya sıfırlamak için iş veya okul hesaplarında oturum açmaları gerekir. Bu kimlik doğrulaması, güvenli belirteç değişimi aracılığıyla Azure Active Directory tarafından işlenir ve [Intune uygulama SDK 'sı](../developer/app-sdk.md)tarafından saydam değildir. Güvenlik açısından, iş veya okul verilerini korumanın en iyi yolu verileri şifrelemektir. Şifreleme, uygulama PIN'i ile ilişkili değildir; ayrı bir uygulama koruma ilkesidir.
+PIN, uygulamadaki kuruluş verilerine yalnızca doğru kullanıcının erişmesine izin verir. Bu nedenle son kullanıcıların, Intune uygulama PIN’lerini ayarlamak veya sıfırlamak için iş veya okul hesaplarında oturum açmaları gerekir. Bu kimlik doğrulaması, güvenli belirteç değişimi aracılığıyla Azure Active Directory tarafından işlenir ve [Intune SDK 'sı](../developer/app-sdk.md)tarafından saydam değildir. Güvenlik açısından, iş veya okul verilerini korumanın en iyi yolu verileri şifrelemektir. Şifreleme, uygulama PIN'i ile ilişkili değildir; ayrı bir uygulama koruma ilkesidir.
 
-**Intune PIN-deneme yanılma saldırılarına karşı koruma**<br>
-Uygulama PIN’i ilkesinin parçası olarak BT yöneticisi, bir kullanıcının uygulama kilitlenmeden önce PIN’ini doğrulamayı en fazla kaç kez deneyebileceğini belirleyebilir. Deneme sayısı karşılandıktan sonra, [Intune uygulama SDK 'sı](../developer/app-sdk.md) uygulamadaki "Kurumsal" verileri silebilir.
-  
+**Deneme yanılma saldırılarına karşı koruma ve Intune PIN 'ı**<br>
+Uygulama PIN’i ilkesinin parçası olarak BT yöneticisi, bir kullanıcının uygulama kilitlenmeden önce PIN’ini doğrulamayı en fazla kaç kez deneyebileceğini belirleyebilir. Deneme sayısı karşılandıktan sonra, [ıNTUNE SDK](../developer/app-sdk.md) uygulamadaki "Kurumsal" verileri silebilir.
+
+**Intune PIN ve seçmeli silme**<br>
+İOS 'ta uygulama düzeyi PIN bilgileri, tüm birinci taraf Microsoft uygulamaları gibi aynı yayımcıya sahip uygulamalar arasında paylaşılan anahtarlıkta saklanır. Bu PIN bilgileri ayrıca bir son kullanıcı hesabına bağlıdır. Bir uygulamanın seçmeli Temizleme işlemi, farklı bir uygulamayı etkilememelidir. 
+
+Örneğin, oturum açmış kullanıcı için Outlook için bir PIN kümesi, paylaşılan bir anahtarlıkta saklanır. Kullanıcı OneDrive 'da oturum açtığında (Microsoft tarafından yayımlandığında), aynı paylaşılan anahtarlığı kullandığından bu PIN Outlook ile aynı PIN 'i görür. Outlook oturumunu kapatma veya Outlook 'taki Kullanıcı verilerini silme işlemi yaparken, OneDrive bu PIN 'ı hala kullanıyor olabileceğinden Intune SDK 'Sı bu anahtarlığı temizlemez. Bu nedenle, seçmeli wpes, PIN 'ı de içeren paylaşılan anahtarlığı temizlemez. Bu davranış, cihazda yalnızca bir yayımcı tarafından tek bir uygulama mevcut olsa bile aynı kalır. 
+
+PIN, aynı yayımcıya sahip uygulamalar arasında paylaşıldığından, silme işlemi tek bir uygulamaya geçtiğinde, cihazda aynı yayımcıya sahip başka bir uygulama olup olmadığını, Intune SDK 'Sı bilmez. Bu nedenle, Intune SDK diğer uygulamalar için hala kullanılabilir olduğundan PIN 'ı temizlemez. Bunun beklentisi, bu yayımcının son uygulaması, bazı işletim sistemi temizlemesinin bir parçası olarak kaldırılacak şekilde uygulama PIN 'inin silinmesine neden olur.
+ 
+PIN 'in bazı cihazlarda temizlenmiş olduğunu gözlemlerseniz, şunlar olasıdır: PIN bir kimliğe bağlı olduğundan, Kullanıcı silme işleminden sonra farklı bir hesapla oturum açmışsa, yeni bir PIN girmesi istenir. Ancak, önceden var olan bir hesapla oturum açtıklarında, anahtarlıkta depolanan bir PIN, oturum açmak için zaten kullanılabilir.
+
 **Aynı yayımcıdaki uygulamalarda iki kez bir PIN mi ayarlanıyor?**<br>
-MAM (iOS üzerinde) Şu anda, [iOS Için ıNTUNE uygulama SDK 'sını](../developer/app-sdk-ios.md)bütünleştirmek için uygulamaların (örneğin WXP, Outlook, Managed Browser, Yammer) katılımını gerektiren alfasayısal ve özel karakterler (' geçiş kodu ' adı verilir) ile uygulama düzeyinde PIN 'e izin verir. Bu olmadan geçiş kodu ayarları, hedeflenmiş uygulamalar için doğru şekilde zorlanır. Bu, iOS için Intune SDK'sı 7.1.12 sürümünde kullanıma sunulmuş olan bir özellikti.
+MAM (iOS üzerinde) Şu anda, [iOS Için Intune SDK 'sını](../developer/app-sdk-ios.md)bütünleştirmek için uygulamaların (örneğin WXP, Outlook, Managed Browser, Yammer) katılımını gerektiren alfasayısal ve özel karakterler (' geçiş kodu ' olarak adlandırılır) ile uygulama düzeyinde PIN 'e izin verir. Bu olmadan geçiş kodu ayarları, hedeflenmiş uygulamalar için doğru şekilde zorlanır. Bu, iOS için Intune SDK'sı 7.1.12 sürümünde kullanıma sunulmuş olan bir özellikti.
 
 Bu özelliği desteklemek ve iOS için Intune SDK'sının önceki sürümleriyle geriye dönük uyumluluğu güvence altına almak için, 7.1.12+ sürümlerinde tüm PIN'ler (sayısal veya geçiş kodu) SDK'nın önceki sürümlerindeki sayısal PIN'den ayrı işlenir. Bu nedenle, cihazda aynı yayımcının iOS için Intune SDK'sının 7.1.12 öncesi VE 7.1.12 sonrası sürümlerini içeren uygulamalar varsa, iki PIN ayarlamaları gerekir. İki PIN (her uygulama için) herhangi bir şekilde ilişkili değildir (yani, uygulamaya uygulanan uygulama koruma ilkesine uyması gerekir). Bu nedenle, *yalnızca* A ve B uygulamaları aynı ilkelerin uygulanmış olması durumunda (PIN 'e göre), Kullanıcı aynı PIN 'i iki kez ayarlayabilir. 
 
@@ -261,6 +270,8 @@ BT yöneticisinin uygulama koruma ilkesine uygun şekilde, yalnızca “kurumsal
 
 [Intune uygulaması sarmalama aracı](../developer/apps-prepare-mobile-application-management.md)tarafından yönetilen iş kolu uygulamaları için tüm uygulama verileri "Kurumsal" olarak kabul edilir.
 
+### <a name="selective-wipe"></a>Seçmeli temizleme
+
 **Verileri uzaktan silme**<br>
 Intune, uygulama verilerini üç farklı yolla temizleyebilir: 
 - Tam cihaz Temizleme
@@ -269,10 +280,10 @@ Intune, uygulama verilerini üç farklı yolla temizleyebilir:
 
 MDM için uzaktan silme hakkında daha fazla bilgi için bkz. [Silme veya kullanımdan kaldırma işlemlerini kullanarak cihaz kaldırma](../remote-actions/devices-wipe.md). MAM kullanarak seçmeli silme hakkında daha fazla bilgi için bkz. [Kullanımdan kaldırma eylemi](../remote-actions/devices-wipe.md#retire) ve [Uygulamalardan yalnızca şirket verilerini silme](apps-selective-wipe.md).
 
-[Silme](../remote-actions/devices-wipe.md), cihazı varsayılan fabrika ayarlarına döndürerek tüm kullanıcı verilerini ve ayarlarını **cihazdan** kaldırır. Cihaz Intune’dan kaldırılır.
+[Tam cihaz temizleme](../remote-actions/devices-wipe.md) , cihazı fabrika varsayılan ayarlarına geri yükleyerek **cihazdaki** tüm Kullanıcı verilerini ve ayarlarını kaldırır. Cihaz Intune’dan kaldırılır.
 
   >[!NOTE]
-  > Silme yalnızca Intune mobil cihaz yönetimine (MDM) kayıtlı cihazlarda gerçekleştirilebilir.
+  > Tam cihaz temizleme ve MDM için seçmeli Temizleme yalnızca Intune mobil cihaz yönetimi (MDM) ile kaydedilen cihazlarda sağlanabilir.
 
 **MDM için seçmeli Temizleme**<br>
 Şirket verilerini kaldırma hakkında bilgi edinmek için [Cihaz kaldırma - kullanımdan kaldırma](../remote-actions/devices-wipe.md#retire) bölümüne bakın.
@@ -280,24 +291,20 @@ MDM için uzaktan silme hakkında daha fazla bilgi için bkz. [Silme veya kullan
 **MAM için seçmeli Temizleme**<br>
 MAM için seçmeli temizleme, şirket uygulama verilerini uygulamadan kaldırır. Intune Azure portalı kullanarak istek başlatılır. Bir silme isteği başlatma hakkında bilgi edinmek için bkz. [Uygulamalardan yalnızca şirket verilerini temizleme](apps-selective-wipe.md).
 
-Seçmeli Temizleme başlatıldığında Kullanıcı uygulamayı kullanıyorsa, [Intune uygulama SDK 'sı](../developer/app-sdk.md) , Intune MAM hizmetinden seçmeli silme isteği için her 30 dakikada bir denetler. Ayrıca kullanıcı uygulamayı ilk kez başlattığında ve iş veya okul hesabı ile oturum açtığında da seçmeli temizleme isteği olup olmadığı denetlenir.
+Seçmeli Temizleme başlatıldığında Kullanıcı uygulamayı kullanıyorsa, [Intune SDK 'sı](../developer/app-sdk.md) , Intune MAM hizmetinden seçmeli silme isteği için her 30 dakikada bir denetler. Ayrıca kullanıcı uygulamayı ilk kez başlattığında ve iş veya okul hesabı ile oturum açtığında da seçmeli temizleme isteği olup olmadığı denetlenir.
 
 **Şirket Içi hizmetler (Şirket Içi) Hizmetleri Intune korumalı uygulamalarla çalışmazsa**<br>
-Intune uygulama koruması, uygulama ve [Intune uygulama SDK 'sı](../developer/app-sdk.md)arasında tutarlı olması için kullanıcının kimliğine bağlıdır. Bunu garanti etmenin tek yolu modern kimlik doğrulaması yapmaktır. Uygulamaların bir şirket içi yapılandırma ile çalışabileceği senaryolar vardır, ancak bunlar tutarlı değildir ve garanti edilmez.
+Intune uygulama koruması, uygulama ve [ıNTUNE SDK](../developer/app-sdk.md)arasında tutarlı olması için kullanıcının kimliğine bağlıdır. Bunu garanti etmenin tek yolu modern kimlik doğrulaması yapmaktır. Uygulamaların bir şirket içi yapılandırma ile çalışabileceği senaryolar vardır, ancak bunlar tutarlı değildir ve garanti edilmez.
 
 **Yönetilen uygulamalardan Web bağlantıları açmak için güvenli yol**<br>
 BT yöneticisi, Microsoft Intune tarafından geliştirilen ve Intune ile kolayca yönetilebilen bir web tarayıcısı olan [Intune Managed Browser uygulamasını](app-configuration-managed-browser.md) dağıtabilir ve bunun için uygulama koruma ilkesi ayarlayabilir. BT yöneticisi, Intune ile yönetilen tüm uygulamalardaki web bağlantılarının Managed Browser uygulaması kullanılarak açılmasını gerekli kılabilir.
-
-## <a name="examples-of-app-protection-policies"></a>Uygulama koruma ilkeleri örnekleri
-
-Uygulama koruma ilkeleri örnekleri hakkında daha fazla bilgi edinmek ve her bir uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi görüntülemek için, [Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) ve [iOS uygulama koruma ilkesi ayarlarına](app-protection-policy-settings-ios.md)bakın.
 
 ## <a name="app-protection-experience-for-ios-devices"></a>İOS cihazları için uygulama koruma deneyimi
 
 ### <a name="device-fingerprint-or-face-ids"></a>Cihaz parmak izi veya yüz kimlikleri 
 Intune uygulama koruma ilkeleri, yalnızca Intune lisanslı kullanıcılara uygulama erişimi denetimi verir. Uygulamaya erişimi denetleme yollarından biri, desteklenen cihazlarda Apple’ın Touch ID veya Face ID özelliğini gerekli kılmaktır. Intune, cihazın biyometrik veritabanında bir değişiklik olduğunda ve etkin olmama zaman aşımı değeri karşılandığında kullanıcıdan PIN isteyen bir davranış uygular. Biyometrik verilerdeki değişikliklere parmak izi veya yüz kimliği eklenmesi veya kaldırılması dahildir. Intune kullanıcısı bir PIN ayarlamamışsa, Intune PIN’i ayarlamak üzere yönlendirilir.
  
-Bu işlemin amacı, kuruluşunuzun uygulama içindeki verilerinin güvenli ve uygulama düzeyinde korunmasını sürdürmeye devam etmek için kullanılır. Bu özellik yalnızca iOS için kullanılabilir ve iOS için Intune APP SDK’sı sürüm 9.0.1 veya üzeri sürümleri tümleştiren uygulamaların katılımını gerektirir. Hedeflenen uygulamalarda davranışın zorlanabilmesi için SDK tümleştirmesi gereklidir. Bu tümleştirme, sıralı bir şekilde gerçekleşir ve belirli uygulama ekiplerine bağımlıdır. Katılan uygulamalardan bazıları WXP, Outlook, Managed Browser ve Yammer’dır.
+Bu işlemin amacı, kuruluşunuzun uygulama içindeki verilerinin güvenli ve uygulama düzeyinde korunmasını sürdürmeye devam etmek için kullanılır. Bu özellik yalnızca iOS için kullanılabilir ve iOS, sürüm 9.0.1 veya üzeri için Intune SDK 'sını tümleştiren uygulamaların katılımını gerektirir. Hedeflenen uygulamalarda davranışın zorlanabilmesi için SDK tümleştirmesi gereklidir. Bu tümleştirme, sıralı bir şekilde gerçekleşir ve belirli uygulama ekiplerine bağımlıdır. Katılan uygulamalardan bazıları WXP, Outlook, Managed Browser ve Yammer’dır.
   
 ### <a name="ios-share-extension"></a>iOS Share uzantısı
 Veri Aktarım İlkesi **yalnızca yönetilen uygulamalar** veya **uygulama olmadan**ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS Share uzantısını kullanabilirsiniz. Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_ . Yönetilen uygulama dışında bir "Kurumsal" dosya açmaya çalışırken bu şifreleme davranışını doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
@@ -305,7 +312,7 @@ Veri Aktarım İlkesi **yalnızca yönetilen uygulamalar** veya **uygulama olmad
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>Aynı uygulama ve kullanıcı kümesi için birden çok Intune uygulama koruma erişimi ayarı
 Erişim için Intune uygulama koruma ilkeleri, hedeflenen bir uygulamaya kurumsal hesabından erişmeyi denediğinde Son Kullanıcı cihazlarında belirli bir sırada uygulanır. Genel olarak öncelik temizlemededir; ardından engelleme, sonra da kapatılabilen uyarı gelir. Örneğin, belirli bir kullanıcı/uygulama için uygunsa, kullanıcıyı iOS sürümünü güncelleştirmesi için uyaran en düşük iOS işletim sistemi ayarı, kullanıcının erişimini engelleyen en düşük iOS işletim sistemi ayarından sonra uygulanacaktır. Dolayısıyla, BT yöneticisinin en düşük iOS işletim sistemi olarak 11.0.0.0 ve en düşük iOS işletim sistemi (yalnızca Uyarı) olarak 11.1.0.0'ı ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın işletim sistemi iOS 10 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük iOS işletim sistemi sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir.
 
-Farklı ayar türleriyle ilgilenirken, Intune Uygulama SDK'sı sürümü gereksinimi önceliklidir ve bunu uygulama sürümü gereksinimi ile iOS işletim sistemi sürümü gereksinimi izler. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir. Intune Uygulama SDK'sı sürümü gereksiniminin, yalnızca temel engelleme senaryoları için Intune ürün ekibinin yönlendirmesiyle yapılandırılmasını öneririz.
+Farklı ayar türleriyle ilgilenirken, bir Intune SDK sürümü gereksinimi öncelikli olarak bir uygulama sürümü gereksinimini ve ardından iOS işletim sistemi sürümü gereksinimini alır. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir. Intune SDK sürümü gereksiniminin, yalnızca Intune ürün ekibinden önemli engelleme senaryoları için rehberlik sağlandığında yapılandırılmasını öneririz.
 
 ## <a name="app-protection-experience-for-android-devices"></a>Android cihazlar için uygulama koruma deneyimi
 
@@ -344,6 +351,10 @@ Google Play koruma API 'Lerinden yararlanan uygulama koruma ilkesi ayarları Goo
 ## <a name="next-steps"></a>Sonraki adımlar
 
 [Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma](app-protection-policies.md)
+
+[Microsoft Intune ile kullanılabilir Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md)
+
+[Microsoft Intune ile kullanılabilir iOS uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md)
 
 ## <a name="see-also"></a>Ayrıca bkz:
 Salesforce mobil uygulaması gibi üçüncü taraf uygulamalar, Intune ile özel şekillerde çalışarak şirket verilerini korur. Doğrudan Salesforce uygulamasının Intune ile nasıl çalıştığını (MDM uygulama yapılandırma ayarları dahil) öğrenmek için bkz. [Salesforce Uygulaması ve Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).
