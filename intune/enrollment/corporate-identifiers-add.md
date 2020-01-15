@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955482"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956290"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -120,7 +120,7 @@ Uluslararası Mobil Donanım Kimlikleri (IMEI) hakkındaki ayrıntılı belirtim
 
 ## <a name="change-device-ownership"></a>Cihaz sahipliğini değiştirme
 
-Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** görüntülenir. Yönetici olarak, cihazları **Kişisel** veya **Şirkete ait** olarak belirtebilirsiniz. Bir cihazın sahiplik türü kişisel iken şirkete değiştirildiğinde, Intune, daha önce bu cihazdan toplanan tüm uygulama bilgilerini 7 gün içinde siler. Uygulanabiliyorsa, Intune kayıttaki telefon numarasını da siler. 
+Intune’daki tüm cihaz kayıtlarının cihaz özelliklerinde **Sahiplik** görüntülenir. Yönetici olarak, cihazları **Kişisel** veya **Şirkete ait** olarak belirtebilirsiniz. Bir cihazın sahiplik türü Şirket içinden kişisel 'e değiştirildiğinde, Intune bu cihazdan daha önce toplanan tüm uygulama bilgilerini 7 gün içinde siler. Uygulanabiliyorsa, Intune kayıttaki telefon numarasını da siler. 
 
 **Cihaz sahipliğini değiştirmek için:**
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, **cihazlar** > **tüm cihazlar** ' ı seçin > cihazı seçin.
