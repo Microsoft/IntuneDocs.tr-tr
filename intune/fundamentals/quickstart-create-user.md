@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdd97e69c97df5a266e147381d94b3d4419bab34
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509885"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036574"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Hızlı başlangıç: Intune 'da Kullanıcı oluşturma ve onlara lisans atama
 
@@ -50,11 +50,11 @@ Kullanıcıların Intune cihaz yönetimine kaydolmak için bir kullanıcı hesab
 
 ## <a name="assign-a-license-to-the-user"></a>Kullanıcıya lisans atama
 
-Bir kullanıcı oluşturduktan sonra, bu kullanıcılara bir Intune lisansı atamak için [Microsoft 365 Yönetim merkezini](http://go.microsoft.com/fwlink/p/?LinkId=698854) kullanmanız gerekir. Kullanıcıya bir lisans atamadıysanız, cihazlarını Intune 'a kaydedemeyecek. 
+Bir kullanıcı oluşturduktan sonra, bu kullanıcılara bir Intune lisansı atamak için [Microsoft 365 Yönetim merkezini](https://go.microsoft.com/fwlink/p/?LinkId=698854) kullanmanız gerekir. Kullanıcıya bir lisans atamadıysanız, cihazlarını Intune 'a kaydedemeyecek. 
 
 Bir kullanıcıya bir Intune lisansı atamak için:
 
-1. [Microsoft 365 Yönetim merkezinde](http://go.microsoft.com/fwlink/p/?LinkId=698854) Intune 'da oturum açmak için kullandığınız kimlik bilgileriyle oturum açın.
+1. [Microsoft 365 Yönetim merkezinde](https://go.microsoft.com/fwlink/p/?LinkId=698854) Intune 'da oturum açmak için kullandığınız kimlik bilgileriyle oturum açın.
 2. **Kullanıcıları** > **etkin kullanıcılar** > seçin ve yeni oluşturduğunuz kullanıcıyı seçin.
 3. **Ürün lisansları**’nın yanında bulunan **Düzenle**’yi seçin.
 4. **Konum** altında kullanıcı için bir konum seçin.
@@ -68,7 +68,7 @@ Yeni etkin Intune kullanıcısı artık bir **Intune** lisansı kullandığını
 
 ## <a name="clean-up-resources"></a>Kaynakları temizleme
 
-Bu kullanıcıya artık ihtiyacınız yoksa, [Microsoft 365 yönetim merkezine](http://go.microsoft.com/fwlink/p/?LinkId=698854) giderek **kullanıcıları** silebilir ve Kullanıcı > **etkin kullanıcılar** ' ı *seçerek > Kullanıcı* **Sil** >  > Kullanıcı Sil ** > ** **Değişiklikleri onaylayın** ve **Kapat**' a tıklayın.
+Bu kullanıcıya artık ihtiyacınız yoksa, [Microsoft 365 yönetim merkezine](https://go.microsoft.com/fwlink/p/?LinkId=698854) giderek **kullanıcıları** silebilir ve Kullanıcı > **etkin kullanıcılar** ' ı *seçerek > Kullanıcı* **Sil** >  > Kullanıcı Sil ** > ** **Değişiklikleri onaylayın** ve **Kapat**' a tıklayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

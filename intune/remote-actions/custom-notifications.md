@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 01/15/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907296"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036603"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
 
@@ -89,13 +89,13 @@ Intune, göndereceğiniz özel bildirimleri izlemez ve cihazlar, bilgileri cihaz
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Tek bir cihaza özel bildirim gönder  
 
-1. Bildirim oluşturma ve gönderme izinlerine sahip bir hesapla [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın ve ardından **cihazlar** > **tüm cihazlar**' a gidin.  
+1. Bildirim oluşturma ve gönderme izinlerine sahip bir hesapla [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın ve ardından **cihazlar** > **tüm cihazlar**' a gidin.
 
-2. Bildirim göndermek istediğiniz cihazı seçin.  
+2. Bildirim göndermek istediğiniz yönetilen cihazın adına çift tıklayın, bu cihazlara *genel bakış* sayfasını açın.
 
-3. Cihazlara **genel bakış** sayfasında, sayfanın sağ üst tarafındaki **.** .. (üç nokta) seçeneğini belirleyin.  
+3. Cihazlara **genel bakış** sayfasında özel bildirim cihazı **Gönder** eylemini açmak için *özel bildirim gönder* bölmesini açın. Bu seçenek kullanılamıyorsa, sayfanın sağ üst tarafındaki **...** (üç nokta) seçeneğini belirleyin ve ardından **özel bildirim gönder**' i seçin.
 
-4. Aşağıdaki ileti ayrıntılarını belirten *özel bildirim gönder* bölmesini açmak Için **özel bildirim cihazı gönder** eylemini seçin:  
+4. **Özel bildirim gönder** bölmesinde aşağıdaki ileti ayrıntılarını belirtin:  
 
    - **Title** : Bu bildirim için bir başlık belirtin. Başlıklar 50 karakterle sınırlıdır.  
    - **Gövde** – iletiyi belirtin. İletiler 500 karakterle sınırlıdır.  

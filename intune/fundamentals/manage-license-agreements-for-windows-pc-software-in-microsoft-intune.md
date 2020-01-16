@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 831a22dfb6eebfe74b9886a1c83560f68a11c04e
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502662"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036597"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune’da Windows bilgisayarı yazılımları için lisans sözleşmelerini yönetme
 
@@ -51,9 +51,9 @@ Buna ek olarak, yazılım başlıkları için yükleme ve lisans sayılarını g
 > **Lisanslar** çalışma alanının yönetici konsolunda gösterilmesi için, Intune Windows bilgisayar istemcisiyle en az bir Windows bilgisayarını yönetmeniz gerekir.
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Microsoft Toplu Lisanslama sözleşmelerini ekleme
-Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri ile satın alınan yazılımlar için lisans bilgileri sağlar. Eşleşen anlaşma numarası çiftleri sağlayarak Intune’a Microsoft Toplu Lisanslama anlaşmaları ekleyebilirsiniz. Sözleşme veya yetkilendirme sayıları, doğru lisans ya da kayıt sayılarıyla eşleşmelidir. [Toplu Lisanslama Hizmet Merkezi (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)içinden lisans sözleşmelerini satın aldığınızda anlaşma numarası çiftleri elde edilir.
+Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri ile satın alınan yazılımlar için lisans bilgileri sağlar. Eşleşen anlaşma numarası çiftleri sağlayarak Intune’a Microsoft Toplu Lisanslama anlaşmaları ekleyebilirsiniz. Sözleşme veya yetkilendirme sayıları, doğru lisans ya da kayıt sayılarıyla eşleşmelidir. [Toplu Lisanslama Hizmet Merkezi (VLSC)](https://go.microsoft.com/fwlink/?LinkID=223842)içinden lisans sözleşmelerini satın aldığınızda anlaşma numarası çiftleri elde edilir.
 
-1. [Microsoft Intune yönetici konsolunda](https://admin.manage.microsoft.com/) **Lisanslar**’ı seçin.
+1. [Microsoft Intune yönetici konsolunda](https://admin.manage.microsoft.com/)**Lisanslar**’ı seçin.
 
 2. **Anlaşma Ekle** sayfasındaki **Anlaşma Türünü Seç**’in altında **Toplu Lisanslama anlaşması**’nı seçin.
 
@@ -67,7 +67,7 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
         - Yalnızca ASCII karakterleri desteklenir.
 
-        - Sözleşme adında şu karakterler kullanılamaz: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Adda boşluklara izin verilir.
+        - Sözleşme adında Şu karakterlere izin verilmez: **~! @ # $ ^ &#42; &amp; () = + [] {} \ |;: ' "&lt; &gt; /** . Adda boşluklara izin verilir.
 
         - Dosya adı 128 karakterden uzun olmamalıdır.
 
@@ -77,11 +77,11 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
         VLSC’ye kaydettiğiniz kuruluş türüne bağlı olarak aşağıdaki biçimlerden birinde bir düz metin belgesine anlaşma çiftlerinizi ekleyerek bu dosyayı oluşturabilirsiniz. Her satırda tek bir anlaşma numarası çifti belirtin.
 
-        - **Open Value müşterileri:** *Anlaşma numarası*, *tekrar anlaşma numarası*, *anlaşma adı*
+        - **Açık değer müşterileri:** *anlaşma numarası*, *tekrar anlaşma numarası*, *anlaşma adı*
 
-        - **Open müşterileri:** *Yetkilendirme numarası*, *ilgili lisans numarası*, *anlaşma adı*
+        - **Açık müşteriler:** *Yetkilendirme numarası*, *ilgili lisans numarası*, *anlaşma adı*
 
-        - **Select ve Enterprise müşterileri:** *Anlaşma numarası*, *ilgili kayıt numarası*, *anlaşma adı*
+        - **Select ve Enterprise müşterileri:** *anlaşma numarası*, *ilgili kayıt numarası*, *anlaşma adı*
 
         **Anlaşma Ekle** formunda, yeni bir anlaşma eklediğinizde bu dosyaya göz atmanız istenir.
 
@@ -93,7 +93,7 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
         - **Anlaşma adı** - Anlaşma için benzersiz bir ad belirtin.
 
-            Sözleşme adı en fazla 256 karakterden oluşabilir ve şu karakterleri içeremez: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Adda boşluklara izin verilir.
+            Anlaşma adı en fazla 256 karakter uzunluğunda olabilir ve şu karakterleri içeremez: **~! @ # $ ^ &#42; &amp; () = + [] {} \ |;: ' "&lt; &gt; /** . Adda boşluklara izin verilir.
 
         - **Yetkilendirme/Anlaşma numarası** - Lisans çiftinin yetkilendirme/anlaşma numarasını girin.
 
@@ -116,7 +116,7 @@ Intune Toplu Lisans sözleşmeleri, Microsoft Toplu Lisanslama sözleşmeleri il
 
 **Tüm Anlaşmalar** görünümü gösterilir ve Intune, sağladığınız anlaşma numarası çiftlerini doğrulamak için Microsoft VLSC’ye bağlanır.
 
-Intune’da lisans sözleşmelerini ekledikten sonra toplu lisans bilgilerini güncelleştirmek için **Lisanslara Genel Bakış** sayfasında **Şimdi Yenile**‘yi seçin. Bu eylem, [Microsoft Toplu Lisanslama Hizmet Merkezi (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)içinden geçerli lisans bilgilerini alır.
+Intune’da lisans sözleşmelerini ekledikten sonra toplu lisans bilgilerini güncelleştirmek için **Lisanslara Genel Bakış** sayfasında **Şimdi Yenile**‘yi seçin. Bu eylem, [Microsoft Toplu Lisanslama Hizmet Merkezi (VLSC)](https://go.microsoft.com/fwlink/?LinkId=223842)içinden geçerli lisans bilgilerini alır.
 
 > [!IMPORTANT]
 > Toplu lisanslama bilgilerini yenileyinceye kadar, **Anlaşmalara Genel Bakış** sayfasında yetkilendirme bilgilerini ve anlaşma listesinde farklı bilgiler görebilirsiniz.
@@ -138,7 +138,7 @@ Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka tü
 
 ### <a name="to-add-other-software-agreements"></a>Diğer yazılım anlaşmalarını eklemek için
 
-1. [Microsoft Intune yönetici konsolunda](https://admin.manage.microsoft.com/) **Lisanslar**’ı seçin.
+1. [Microsoft Intune yönetici konsolunda](https://admin.manage.microsoft.com/)**Lisanslar**’ı seçin.
 
 2. **Diğer Yazılım Lisanslama Anlaşmaları** bölümünde **Anlaşma Ekle**‘yi seçin.
 
@@ -146,16 +146,16 @@ Intune’a, Microsoft Toplu Lisanslama sözleşmelerinin yanı sıra, başka tü
 
 4. **Anlaşma Ayrıntıları Ekle** alanında şunları belirtin:
 
-    - **Anlaşma adı** (gerekli). Sözleşme adı en fazla 256 karakterden oluşabilir ve şu karakterleri içeremez: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Adda boşluklara izin verilir.
+    - **Anlaşma adı** (gerekli). Anlaşma adı en fazla 256 karakter uzunluğunda olabilir ve şu karakterleri içeremez: **~! @ # $ ^ &#42; &amp; () = + [] {} \ |;: ' "&lt; &gt; /** . Adda boşluklara izin verilir.
 
-    - **Yayımcı** (gerekli). Bir yayımcı adı yazmaya başladığınızda hizmet yazdığınız harfleri içeren tüm yayımcı adlarını getirir. Örneğin, "soft" yazarsanız hizmet, adında “soft” geçen tüm yayımcı adlarını getirir; örneğin, “Microsoft" ve "Microsoft Research". Yayımcı adları, Yazılım Varlığı Kataloğundan alınır. Ürün başlığını girebilmeniz için önce yayımcıyı seçmeniz gerekir.
+    - **Yayımcı** (zorunlu). Bir yayımcı adı yazmaya başladığınızda hizmet yazdığınız harfleri içeren tüm yayımcı adlarını getirir. Örneğin, "soft" yazarsanız hizmet, adında “soft” geçen tüm yayımcı adlarını getirir; örneğin, “Microsoft" ve "Microsoft Research". Yayımcı adları, Yazılım Varlığı Kataloğundan alınır. Ürün başlığını girebilmeniz için önce yayımcıyı seçmeniz gerekir.
 
         > [!IMPORTANT]
         > Eklemek istediğiniz şirket bu listede gösterilmiyor olabilir. Yalnızca yazılım varlık kataloğunda zaten var olan şirketler için yazılım anlaşmaları ekleyebilirsiniz. Bununla birlikte, Microsoft en popüler yazılım başlıklarını eklemek için sürekli çalışmaktadır. Bir şirketin bu listeye eklenmesine yönelik bir istek göndermek isterseniz, [Intune Uservoice sitesinde](https://microsoftintune.uservoice.com/) bunu yapabilirsiniz.
 
-    - **Ürün başlığı** (gerekli). Bir ürün başlığı yazmaya başladığınızda hizmet yazdığınız harfleri içeren tüm ürün başlıklarını getirir. Bir **Ürün başlığı** belirtebilmeniz için önce bir **Yayımcı**belirtmeniz gerekir.
+    - **Ürün başlığı** (zorunlu). Bir ürün başlığı yazmaya başladığınızda hizmet yazdığınız harfleri içeren tüm ürün başlıklarını getirir. Bir **Ürün başlığı** belirtebilmeniz için önce bir **Yayımcı**belirtmeniz gerekir.
 
-    - **Lisans sayısı** (gerekli). Satın alınan lisans sayısını girin.
+    - **Lisans sayısı** (zorunlu). Satın alınan lisans sayısını girin.
 
     - **Lisans başlangıç tarihi**. Lisans kapsamı başlangıç tarihini girin.
 
