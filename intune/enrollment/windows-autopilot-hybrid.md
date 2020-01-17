@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74558178"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125319"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune ve Windows Autopilot kullanarak karma Azure AD 'ye katılmış cihazları dağıtma
 Karma Azure Active Directory (Azure AD) ile birleştirilmiş cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için bu makaledeki adımları izleyin.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 [Hibrit Azure AD 'ye katılmış cihazlarınız](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)başarıyla yapılandırılır. Get-MsolDevice cmdlet 'ini kullanarak [cihaz kaydınızı doğruladığınızdan](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) emin olun.
 
@@ -209,17 +209,30 @@ Cihaz profili durumunun *atama* ve, son olarak *atanan* *olarak değiştirilmesi
 ## <a name="create-and-assign-a-domain-join-profile"></a>Etki Alanına Katılım profili oluşturma ve atama
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **cihaz** > **yapılandırma profilleri** > **Profil oluştur**' u seçin.
-1. Aşağıdaki özellikleri girin:
+2. Aşağıdaki özellikleri girin:
    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
    - **Açıklama**: Profil için bir açıklama girin.
    - **Platform**: **Windows 10 ve üstünü**seçin.
    - **Profil türü**: **etki alanına katılmayı (Önizleme)** seçin.
-1. **Ayarlar**' ı seçin ve ardından [DN biçiminde](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)bir **bilgisayar adı öneki**, **etki alanı adı**ve (isteğe bağlı) **kuruluş birimi** sağlayın. 
+3. **Ayarlar**' ı seçin ve ardından bir **bilgisayar adı ön eki**, **etki alanı adı**sağlayın.
+4. Seçim [DN biçiminde](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)bir **kuruluş birimi** (OU) sağlayın. Seçenekleriniz şunlardır:
+   - Intune bağlayıcısını çalıştıran Windows 2016 cihazınıza denetim temsilcisi seçtiğiniz bir OU sağlayın.
+   - Şirket içi Active Directory kök bilgisayarlara denetim için temsilci seçtiğiniz bir OU sağlayın.
+   - Bu alanı boş bırakırsanız, bilgisayar nesnesi Active Directory varsayılan kapsayıcısında (CN = bilgisayarlar hiçbir [şekilde değiştirilemezse](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom)) oluşturulur.
+   
+   Aşağıda bazı geçerli örnekler verilmiştir:
+   - OU = düzey 1, OU = Level2, DC = contoso, DC = com
+   - OU = Mine, DC = contoso, DC = com
+   
+   Geçerli olmayan bazı örnekler şunlardır:
+   - CN = Computers, DC = contoso, DC = com (bir kapsayıcı belirtemezsiniz, bunun yerine, etki alanı için varsayılan değerini kullanmak için değeri boş bırakın)
+   - OU = Mine (etki alanını DC = öznitelikler aracılığıyla belirtmeniz gerekir)
+     
    > [!NOTE]
    > **Kuruluş birimindeki**değerin etrafında tırnak işareti kullanmayın.
-1. **Oluştur** > **Tamam ' ı** seçin.  
+5. **Oluştur** > **Tamam ' ı** seçin.  
     Profil oluşturulur ve listede görüntülenir.
-1. Profili atamak için, [bir cihaz profili atama](../configuration/device-profile-assign.md#assign-a-device-profile) ve profili bu adımda kullanılan gruba atama altındaki adımları izleyerek [bir cihaz grubu oluşturun](windows-autopilot-hybrid.md#create-a-device-group)
+6. Profili atamak için, [bir cihaz profili atama](../configuration/device-profile-assign.md#assign-a-device-profile) ve profili bu adımda kullanılan gruba atama altındaki adımları izleyerek [bir cihaz grubu oluşturun](windows-autopilot-hybrid.md#create-a-device-group)
    - Birden çok etki alanına ekleme profili dağıtma
    
      a. Belirli bir Autopilot dağıtım profiline sahip tüm Autopilot cihazlarınızı içeren bir dinamik grup oluşturun, (Device. KayıtAdı-EQ "Autopilot profil adı") girin. 

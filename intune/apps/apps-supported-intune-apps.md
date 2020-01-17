@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67ff4f0cbe11c24c03b504968735e0a68d54f12d
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692171"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125353"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune korumalı uygulamalar  
 
@@ -45,6 +45,7 @@ Aşağıdaki tablolar, Microsoft Intune ile yaygın olarak kullanılan desteklen
 
 | Uygulama başlığı | Uygulama açıklaması ve bilgileri | Desteklenen platform (ler) için uygulama mağazası bağlantıları |
 |-------------------------------------------------|-------------------------|---------------------------------------------|
+| **Alan hizmeti mobil**<p><img alt="Microsoft app - Field Service Mobile icon" src="./media/apps-supported-intune-apps/icon-m-field-service-mobile.png" width="100"> | Alan hizmeti için Dynamics 365, alan hizmeti çalışanının gereksinimlerine özel olarak hazırlanmış platformlar arası, çok cihazlı alan hizmeti mobil uygulaması sağlar. Sağlam çevrimdışı yetenekler alan hizmeti çalışanlarının, internet bağlantısı olmadan uzak hedefleri ziyaret ederken ihtiyaç duydukları verilere erişme ve bunlarla etkileşime devam etmesine olanak tanır. Alan hizmeti çalışanları, doğru eylemlerin uygun şekilde alınması veya başlatılması için verileri düzenli aralıklarla sunucuya eşitleyerek, bu alanda gerçekleştirilen iş için sürekli olarak bilgi sahibi olabilir. Mobil uygulama tamamen özelleştirilebilir ve genişletilebilir, böylece herhangi bir kuruluşun uygulamayı kendi kendine markalarına, ne tür veri alanı hizmet çalışanlarının erişebileceğini tanımlayabilir ve çok daha fazlasını yapabilirsiniz. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.d365.fs.mobile), [Uygulama Mağazası bağlantısı (iOS)](https://apps.apple.com/us/app/field-service-mobile/id1414669075) |
 | **Microsoft Azure Information Protection Görüntüleyici**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | AIP Görüntüleyicisi Uygulamasını kullanarak başkalarıyla güvenli biçimde işbirliği yapın. Bir başkasının sizinle paylaştığı güvenli dosyaları (hakları güvenlik altına alınmış e-posta iletileri, PDF dosyaları, resimler, metin dosyaları) görüntüleyin. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer), [Uygulama Mağazası bağlantısı (iOS)](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) |
 | **Microsoft kayıtları**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings, rezervasyonlarınız, çalışanlarınızı ve müşterilerinizi izlemenize yardımcı olan bir randevu planlama uygulamasıdır. Artık hiçbir randevuyu kaçırmayacak ve rezervasyonlarınızı daha fazla kullanacaksınız.<p>Bookings uygulamasıyla şunları yapabilirsiniz:<br><ul><li>Takviminizi görüntüleme ve yönetme</li><li>Rezervasyonlar oluşturma veya hareket halindeyken mevcut rezervasyonlarda değişiklikler yapma</li><li>Personelinizin uygunluk durumunu gerçek zamanlı olarak görme</li><li>Müşterilerine hızlı ve kolay bir şekilde yanıt verme</li><li>Bir sonraki rezervasyonunuz için hızlı bir şekilde yol tarifleri alma</li><li>Müşteri listenizi yönetme</li></ul> | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings),<br>[Uygulama Mağazası bağlantısı (iOS)](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | Kişisel yardımcınızla Cortana 'yı kullanarak iş & yaşamını hızlı, kolay ve eğlenceli hale getirir. Cihazlarınızda yaptığınız her yerde önemli olan işleri izlemenize yardımcı olması için akıllı dijital yardımcınızı telefonunuza taşıyın. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.cortana),<br>[Uygulama Mağazası bağlantısı (iOS)](https://apps.apple.com/us/app/cortana/id1054501703)

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/16/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1075054f3812e8c40f38e705a440c46ba09fdd0e
+ms.sourcegitcommit: 11cbd2a9d90dea20f6dc1f54f0a6acbeec3a71d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059367"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76146778"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Intune 'A macOS çekirdek uzantıları ekleme
 
@@ -55,7 +55,7 @@ Bu makalede, Intune 'da çekirdek uzantıları kullanılarak bir cihaz yapıland
 ## <a name="what-you-need-to-know"></a>Bilmeniz gerekenler
 
 - İmzasız eski çekirdek uzantıları eklenebilir.
-- Çekirdek uzantısının doğru takım tanımlayıcısını ve paket KIMLIĞINI girdiğinizden emin olun. Intune girdiğiniz değerleri doğrulamaz. Yanlış bilgi girerseniz, uzantı cihazda çalışmaz.
+- Çekirdek uzantısının doğru takım tanımlayıcısını ve paket KIMLIĞINI girdiğinizden emin olun. Intune girdiğiniz değerleri doğrulamaz. Yanlış bilgi girerseniz, uzantı cihazda çalışmaz. Bir takım tanımlayıcısı, tam olarak 10 alfasayısal karakter uzunluğundadır. 
 
 > [!NOTE]
 > Apple tüm yazılımlar için imzalama ve imza hakkında bilgi yayımladı. MacOS 10.14.5 ve daha yeni sürümlerde, Intune aracılığıyla dağıtılan çekirdek uzantıları Apple 'ın önemli ilkesini karşılamak zorunda kalmaz.

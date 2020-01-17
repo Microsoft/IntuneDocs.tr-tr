@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f9c9721942b4c9754d4e99e4e91d751ceedcf3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: f6edf3fd8d6c6aeefeb1e34c5b390360e7215f21
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653793"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125302"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -465,13 +465,14 @@ IntuneMAMPolicy.h | IntuneMAMPolicy sınıfı uygulamaya uygulanan bazı MAM ilk
 IntuneMAMFileProtectionManager.h | IntuneMAMFileProtectionManager sınıfı, uygulamanın sağlanan kimlik temelinde açıkça dosyaların ve dizinlerin güvenliğini sağlamak için kullanabileceği API'leri gösterir. Kimlik Inture tarafından yönetilebilir veya yönetilmeyen bir kimlik olabilir ve SDK uygun MAM ilkesini uygular. Bu sınıfın kullanımı isteğe bağlıdır. |
 IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager sınıfı, uygulamanın sağlanan kimlik temelinde veri arabelleklerinin güvenliğini sağlamak için kullanabileceği API'leri gösterir. Kimlik Inture tarafından yönetilebilir veya yönetilmeyen bir kimlik olabilir ve SDK uygun şifrelemeyi uygular. |
 
-## <a name="implement-save-as-controls"></a>Farklı kaydet denetimlerini uygulama
+## <a name="implement-save-as-and-open-from-controls"></a>Farklı Kaydet ve açılan denetimleri uygulama
 
-Intune, BT yöneticilerinin yönetilen bir uygulamanın verilerini hangi depolama konumlarına kaydedebileceğini seçmesine olanak tanır. Uygulamalar izin verilen depolama konumları için `IntuneMAMPolicy.h` içinde tanımlanan `isSaveToAllowedForLocation` API’sini kullanarak Intune Uygulama SDK'sını sorgulayabilir.
+Intune, BT yöneticilerinin yönetilen bir uygulamanın verileri hangi depolama konumlarına kaydedebileceği veya buradan veri açmasını sağlar. Uygulamalar, `IntuneMAMPolicy.h`tanımlanan `isSaveToAllowedForLocation` API 'sini kullanarak izin verilen kayıt depolama konumları için Intune MAM SDK 'sını sorgulayabilir. Uygulamalar, `IntuneMAMPolicy.h`tanımlanan `isOpenFromAllowedForLocation` API 'sini kullanarak izin verilen açık depolama konumları için Intune MAM SDK 'sını de sorgulayabilir.
 
 Yönetilen verileri bulut depolama alanına veya yerel konumlara kaydetmeden önce, BT yöneticisinin o konuma veri kaydedilmesine izin verip vermediğini öğrenmek için uygulamaların `isSaveToAllowedForLocation` API’sini denetlemesi gerekir.
+Bulut depolama alanından veya yerel bir konumdan bir uygulamaya veri açmadan önce, BT yöneticisinin verilerin buradan açılıp açılmadığını bilmesi için uygulamanın `isOpenFromAllowedForLocation` API 'sini denetlemesi gerekir.
 
-Uygulamalar `isSaveToAllowedForLocation` API'sini kullanırken, depolama konumu için kullanılan UPN’den (varsa) geçmeleri gerekir.
+Uygulamalar `isSaveToAllowedForLocation` veya `isOpenFromAllowedForLocation` API 'Lerini kullanırken, varsa depolama konumunun UPN 'sine geçmesi gerekir.
 
 ### <a name="supported-save-locations"></a>Desteklenen kaydetme konumları
 
@@ -481,12 +482,46 @@ Uygulamalar `isSaveToAllowedForLocation` API'sini kullanırken, depolama konumu 
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
 * IntuneMAMSaveLocationLocalDrive
+* Intunemamsavelocationaccountdocument
 
 Uygulamalar, OneDrive İş gibi “yönetilen” veya “kişisel” olarak kabul edilen konumlara veri kaydedilip kaydedilemeyeceğini denetlemek için `isSaveToAllowedForLocation` içindeki sabitleri kullanmalıdır. Ayrıca uygulama bir konumun “yönetilen” veya “kişisel” olup olmadığını denetleyemiyorsa API kullanılmalıdır.
 
-"Kişisel" olarak bilinen konumları, `IntuneMAMSaveLocationOther` sabiti temsil eder.
-
 Uygulama yerel cihazdaki herhangi bir konuma veri kaydediyorsa `IntuneMAMSaveLocationLocalDrive` sabiti kullanılmalıdır.
+
+Hedef konumun hesabı bilinmiyorsa `nil` geçirilmelidir. `IntuneMAMSaveLocationLocalDrive` konum her zaman bir `nil` hesabıyla eşleştirilmelidir.
+
+### <a name="supported-open-locations"></a>Desteklenen açık konumlar
+
+`isOpenFromAllowedForLocation` API 'SI, BT yöneticisinin `IntuneMAMPolicy.h`tanımlanan aşağıdaki konumlardan açılmasına izin verip vermediğini denetlemek için sabitler sağlar.
+
+* Intunemamopenlocationother
+* Intunemamopenlocationonedriveforbusiness
+* Intunemamopenlocationsharepoint
+* Intunemamopenlocationcamera
+* Intunemamopenlocationlocalstorage
+* Intunemamopenlocationaccountdocument
+
+Uygulamalar, OneDrive Iş veya "kişisel" gibi "yönetilen" olarak kabul edilen konumlardan verilerin açılıp açılmadığını denetlemek için `isOpenFromAllowedForLocation` sabitleri kullanmalıdır. Ayrıca, uygulama bir konumun "yönetilen" veya "kişisel" olup olmadığını denetleyemiyorum, API kullanılmalıdır.
+
+Uygulama kamera veya fotoğraf albümünden veri açarken `IntuneMAMOpenLocationCamera` sabiti kullanılmalıdır.
+
+Uygulama yerel cihazdaki herhangi bir konumdan veri açarken `IntuneMAMOpenLocationLocalStorage` sabiti kullanılmalıdır.
+
+Uygulama, yönetilen hesap kimliği olan bir belgeyi açarken `IntuneMAMOpenLocationAccountDocument` sabiti kullanılmalıdır (aşağıdaki "paylaşılan veriler" bölümüne bakın)
+
+Kaynak konumun hesabı bilinmiyorsa `nil` geçirilmelidir. `IntuneMAMOpenLocationLocalStorage` ve `IntuneMAMOpenLocationCamera` konumlar her zaman bir `nil` hesabıyla eşleştirilmelidir.
+
+### <a name="unknown-or-unlisted-locations"></a>Bilinmeyen veya listelenmemiş konumlar
+
+İstenen konum `IntuneMAMSaveLocation` listelenmiyorsa veya numaralandırmalar `IntuneMAMOpenLocation` veya bilinmiyorsa, iki konumdan birinin kullanılması gerekir.
+* Bir yönetilen hesapla kaydetme konumuna erişiliyorsa `IntuneMAMSaveLocationAccountDocument` konumu kullanılmalıdır (`IntuneMAMOpenLocationAccountDocument` açık için).
+* Aksi takdirde, `IntuneMAMSaveLocationOther` konumu kullanın (`IntuneMAMOpenLocationOther` açık için).
+
+Yönetilen hesap ile yönetilen hesabın UPN 'sini paylaşan bir hesap arasında ayrım yapmak önemlidir. Örneğin, "user@contoso.com" UPN 'sine sahip yönetilen bir hesap, Dropbox 'ta imzalanmış "user@contoso.com" UPN 'sine sahip bir hesapla aynı değildir. Yönetilen hesapta oturum açarak bilinmeyen veya listelenmemiş bir hizmete erişiliyorsa (örneğin, OneDrive 'da "user@contoso.com"), `AccountDocument` konumuyla temsil edilmelidir. Bilinmeyen veya listelenmemiş hizmet başka bir hesapta oturum açarsa (örneğin, Dropbox 'ta oturum açmış "user@contoso.com"), yönetilen bir hesapla konuma erişmez ve `Other` konumuyla temsil edilmelidir.
+
+### <a name="sharing-blocked-alert"></a>Paylaşım engellendi uyarısı
+
+Kullanıcı arabirimi Yardımcısı işlevi, `isSaveToAllowedForLocation` veya `isOpenFromAllowedForLocation` API 'SI çağrıldığında ve Kaydet/Aç eylemini engelleyecek şekilde bulunursa kullanılabilir. Uygulama, kullanıcıya eylemin engellendiğini bildirmek isterse, genel bir iletiyle bir uyarı görünümü sunmak için `IntuneMAMUIHelper.h` tanımlı `showSharingBlockedMessage` API 'sini çağırabilir.
 
 ## <a name="share-data-via-uiactivityviewcontroller"></a>UIActivityViewController yoluyla Veri Paylaşımı
 
