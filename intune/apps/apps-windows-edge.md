@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/17/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c58b0b02a6e4bc82295ef959c144918e82c30b6
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563574"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258453"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune Windows 10 için Microsoft Edge ekleyin
 
@@ -36,9 +36,9 @@ Uygulamaları dağıtmadan, yapılandırmadan, izleyebilmeniz veya koruyabilmeni
 > 
 > Çalışma alanına katılma bilgisayarları için Microsoft Edge 'in yerleşik uygulama dağıtımını kullanamazsınız. Yerleşik uygulama dağıtımı, yalnızca AAD 'ye katılmış cihazlar için mevcut olan Intune yönetim uzantısını gerektirir. Microsoft Edge *sürüm 77 ve üstünü* **uygulamalara**yüklenmiş bir *. msi* kullanarak dağıtmaya devam edebilirsiniz. [Microsoft Intune için Windows iş kolu uygulaması ekleme](~/apps/lob-apps-windows.md)bölümüne bakın.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 - Windows 10 RS2 ve üzeri gereklidir.
-- Kullanıcı bağlamında **Geliştirici** ve **Beta** kanalları için Microsoft Edge *Sürüm 77 ve üzeri* sürümlerinin önceden yüklenmiş sürümlerinin, sistem bağlamında yüklü olan bir kenar üzerine yazılır.
+- Kullanıcı bağlamlarındaki tüm kanallar için Microsoft Edge *sürüm 77 ve üzeri* sürümlerin önceden yüklenmiş sürümlerinin, sistem bağlamında yüklü olan bir kenara üzerine yazılır.
 
 ## <a name="configure-the-app-in-intune"></a>Uygulamayı Intune 'da yapılandırma
 Aşağıdaki adımları kullanarak Intune 'a bir Microsoft Edge sürüm 77 ve üzeri ekleyebilirsiniz:
@@ -68,9 +68,10 @@ Bu adımda, bu uygulama dağıtımı hakkında bilgi sağlarsınız. Bu bilgiler
 Bu adımda, uygulama için yükleme seçeneklerini yapılandırın.
 
 1. **Uygulama Ekle** bölmesinde **uygulama ayarları**' nı seçin.
-2. Uygulama **ayarları** bölmesinde, uygulamayı hangi Edge kanalını dağıtacağınızı belirlemek için **Kanal** listesinden **Beta** veya **dev** ' ı seçin.
-    - **Beta** Kanal en kararlı Microsoft Edge önizleme deneyimidir ve kuruluşunuzdaki tam bir pilot için en iyi seçenektir. Her sürüm altı haftada bir olan önemli güncelleştirmelerle, geliştirme kanalından dersleri ve geliştirmeleri içerir.
-    - **Geliştirme** Kanal, Windows, Windows Server ve macOS 'ta kurumsal geri bildirimde bulunmak için hazırlayın. Her hafta güncelleştirilir ve en son geliştirmeleri ve düzeltmeleri içerir.
+2. Uygulama **ayarları** bölmesinde, uygulamayı hangi Edge kanalını dağıtacağınızı belirlemek için **Kanal** listesinden **Stable**, **Beta** veya **dev** ' ı seçin.
+    - **Kararlı** kanal, kurumsal ortamlarda büyük ölçüde dağıtım için önerilen kanaldır. Her altı haftada bir güncelleştirilir, her sürüm beta kanalından geliştirmeler içerir.
+    - **Beta** kanalı, en kararlı Microsoft Edge önizleme deneyimidir ve kuruluşunuzdaki tam bir pilot için en iyi seçenektir. Her sürüm altı haftada bir olan önemli güncelleştirmelerle, geliştirme kanalından dersleri ve geliştirmeleri içerir.
+    - **Geliştirme** kanalı Windows, Windows Server ve MacOS 'ta kurumsal geri bildirimde bulunmak için hazırlayın. Her hafta güncelleştirilir ve en son geliştirmeleri ve düzeltmeleri içerir.
 
     > [!NOTE]
     > Microsoft Edge tarayıcı logosu, kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenir.
