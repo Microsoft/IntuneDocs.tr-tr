@@ -30,7 +30,7 @@ Bu [Kılavuzlu senaryoyu](~/fundamentals/guided-scenarios-overview.md)izleyerek,
 Microsoft Edge, kullanıcıların, iş içeriğini birleştirmelerine, düzenlemenize ve yönetmesine yardımcı olan yerleşik özelliklerle Web 'in dağınıklığını kesmesine olanak sağlar. Microsoft Edge uygulamasındaki kurumsal Azure AD hesaplarıyla oturum açan iOS ve Android cihazlarının kullanıcıları, çalışma alanı **sık kullanılanları** ve tanımladığınız Web sitesi filtreleriyle önceden yüklenmiş olan tarayıcılarıdır.
 
 > [!NOTE]
-> Kullanıcıların iOS veya Android cihazlarını kaydetmelerine izin verirseniz, bu senaryo kaydı etkinleştirmez ve kullanıcıların kendi başına Edge yüklemesi gerekir.
+> Kullanıcıların iOS veya Android cihazlarını kaydetmelerine izin verirseniz, bu senaryo kaydı etkinleştirmez ve kullanıcıların kendi başına Microsoft Edge yüklemesi gerekir.
 Intune ilkeleri tarafından etkinleştirilen aşağıdaki Microsoft Edge kurumsal özellikleri şunları içerir: 
 
 - **Çift kimlik**: Kullanıcılar hem iş hesabı hem de kişisel hesap ekleyerek göz atabilir. Office 365 ve Outlook mimarilerinde ve deneyimlerinde olduğu gibi iki kimlik arasında belirgin bir ayrım vardır. Intune yöneticileri, iş hesabını kullanarak korumalı bir göz atma deneyimi sağlamak üzere istenen ilkeleri belirleyebilir. 

@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c58b0b02a6e4bc82295ef959c144918e82c30b6
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
+ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258453"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "76294804"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune Windows 10 için Microsoft Edge ekleyin
 
 Uygulamaları dağıtmadan, yapılandırmadan, izleyebilmeniz veya koruyabilmeniz için önce bunları Intune 'a eklemeniz gerekir. Kullanılabilir [uygulama türlerinden](~/apps/apps-add.md#app-types-in-microsoft-intune) biri Microsoft Edge *Sürüm 77 ve üzeri*. Intune 'da bu uygulama türünü seçerek, Microsoft Edge *sürüm 77 ve üstünü* Windows 10 çalıştıran yönettiğiniz cihazlara atayabilir ve yükleyebilirsiniz.
 
 > [!IMPORTANT]
-> Bu uygulama türü **genel önizlemeye** sunuldu ve Windows 10 için geliştirici ve Beta kanalları sunmaktadır. Dağıtım yalnızca Ingilizce (EN) ' dir, ancak son kullanıcılar tarayıcıdaki görüntüleme dilini **ayarlar** > **dilleri**altında değiştirebilir. Microsoft Edge, sistem bağlamında ve benzer mimarilere (x86 IŞLETIM sisteminde x86 uygulaması ve x64 IŞLETIM sisteminde x64 uygulaması) yüklenen bir Win32 uygulamasıdır. Intune, önceden varolan Microsoft Edge yüklemelerini algılar. Kullanıcı bağlamında yüklüyse, bir sistem yüklemesi bu dosyanın üzerine yazar. Sistem bağlamına yüklenirse, ınstallıon başarısı raporlanır. Ayrıca, Microsoft Edge 'in otomatik güncelleştirmeleri varsayılan olarak **Açık** ve Microsoft Edge kaldırılamaz.
+> Bu uygulama türü **genel önizlemede** bulunur ve Windows 10 için kararlı, Beta ve geliştirme kanalları sunmaktadır. Dağıtım yalnızca Ingilizce (EN) ' dir, ancak son kullanıcılar tarayıcıdaki görüntüleme dilini **ayarlar** > **dilleri**altında değiştirebilir. Microsoft Edge, sistem bağlamında ve benzer mimarilere (x86 IŞLETIM sisteminde x86 uygulaması ve x64 IŞLETIM sisteminde x64 uygulaması) yüklenen bir Win32 uygulamasıdır. Intune, önceden varolan Microsoft Edge yüklemelerini algılar. Kullanıcı bağlamında yüklüyse, bir sistem yüklemesi bu dosyanın üzerine yazar. Sistem bağlamına yüklenirse, ınstallıon başarısı raporlanır. Ayrıca, Microsoft Edge 'in otomatik güncelleştirmeleri varsayılan olarak **Açık** ve Microsoft Edge kaldırılamaz.
 
 > [!NOTE]
 > Microsoft Edge *sürüm 77 ve üzeri* , MacOS için de kullanılabilir.
