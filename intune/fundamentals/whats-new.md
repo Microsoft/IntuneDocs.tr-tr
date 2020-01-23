@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 311941c3981e5883d392359dc0919bb85156c4be
-ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
+ms.openlocfilehash: a150c7fd79235a5c76a1f460021464807fe66275
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75920085"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517584"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -212,7 +212,7 @@ Denetim günlüğü etkinlik ayrıntıları artık kapsam etiketi bilgilerini i�
 ## <a name="week-of-december-2-2019"></a>2 Aralık 2019 haftası
 
 #### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>Yeni Microsoft uç noktası Configuration Manager ortak yönetim lisansı<!--5027281-->
-Yazılım Güvencesi kapsamındaki müşterilerin, ortak yönetim için ek bir Intune lisansı satın almak zorunda kalmadan Windows 10 bilgisayarları için Intune ortak yönetimine sahip Configuration Manager olanak sağlayan yeni bir lisans kullanıma sunulmuştur. Müşteriler, Windows 10 ' un ortak yönetimi için son kullanıcılarına ayrı Intune/EMS lisansları atamaya gerek kalmaz.
+Yazılım Güvencesi kapsamındaki Configuration Manager müşteriler, ortak yönetim için ek bir Intune lisansı satın almak zorunda kalmadan Windows 10 bilgisayarları için Intune ortak yönetimini alabilir. Müşteriler, Windows 10 ' un ortak yönetimi için son kullanıcılarına ayrı Intune/EMS lisansları atamaya gerek kalmaz.
 - Configuration Manager tarafından yönetilen ve ortak yönetime kaydedilen cihazlar, Intune tek başına MDM ile yönetilen bilgisayarlar ile neredeyse aynı haklara sahiptir. Ancak, sıfırlandıktan sonra Autopilot kullanılarak yeniden sağlanamazlar.
 - Diğer yollarla Intune 'a kayıtlı Windows 10 cihazları tam Intune lisansları gerektirir.
 - Diğer platformlardaki cihazlarda hala tam Intune lisansları gerekir.

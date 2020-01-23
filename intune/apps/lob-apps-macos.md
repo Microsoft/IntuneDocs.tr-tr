@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a084528fdc500bf9b6de0ca5fa847c2e0b3797
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6b691e628b5b1b2ea2826e57fa9c4e1f2eaf7ae7
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563917"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540903"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>macOS iş kolu (LOB) uygulamalarını Microsoft Intune’a ekleme
 
@@ -59,7 +59,9 @@ Bu makaledeki bilgiler macOS iş kolu uygulamalarını Microsoft Intune’a ekle
 3. Bir *.intunemac* dosyasından *.pkg* LOB uygulama dosyasını sarmalamak için, **Mac için Intune Uygulama Sarmalama Aracı**'nın içinde `IntuneAppUtil` komutunu kullanın.<br>
 
     macOS için Microsoft Intune Uygulama Sarmalama Aracı'na yönelik kullanılabilecek örnek komutlar:
-    
+    > [!IMPORTANT]
+    > `<source_file>` bağımsız değişkeninin `IntuneAppUtil` komutlarını çalıştırmadan önce boşluk içermediğinden emin olun.
+
     - `IntuneAppUtil -h`<br>
     Bu komut aracın kullanım bilgilerini gösterir.
     

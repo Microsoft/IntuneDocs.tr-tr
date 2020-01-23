@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 3ee253b50ea525f7d156c77a83f486cf990da030
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036629"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517465"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Intune ile wandera Mobile Threat Defense Bağlayıcısı  
 
@@ -48,7 +48,7 @@ Aşağıdaki platformlar, Intune 'A kaydolduktan sonra Wandera için desteklenir
 - Android 5,0 ve üzeri  
 - iOS 10,2 ve üzeri  
 
-Platform ve cihaz hakkında daha fazla bilgi için bkz. [Wandera Web sitesi](https://www.wandera.com/classic-help-center/).
+Platform ve cihaz hakkında daha fazla bilgi için bkz. [Wandera Web sitesi](https://www.wandera.com/mobile-threat-defense/).
 
 ## <a name="prerequisites"></a>Prerequisites  
 

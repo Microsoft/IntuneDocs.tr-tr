@@ -8,19 +8,19 @@ ms.service: microsoft-intune
 ms.subservice: enrollment
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 03/26/2019
+ms.date: 01/17/2020
 ms.author: erikje
 ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e5cc7cf3661caa2b2640d9370d26402b7702d36b
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74562307"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76541092"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Hızlı Başlangıç: Windows 10 cihazları için otomatik kayıt ayarlama
 
@@ -28,12 +28,12 @@ Bu hızlı başlangıçta Microsoft Intune'u, belirli kullanıcılar Windows 10 
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../fundamentals/free-trial-sign-up.md).
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 - Microsoft Intune aboneliği - [ücretsiz deneme hesabına kaydolun](../fundamentals/free-trial-sign-up.md).
 - Bu hızlı başlangıcı tamamlamak için önce [bir kullanıcı oluşturun](../fundamentals/quickstart-create-user.md) ve [bir grup oluşturun](../fundamentals/quickstart-create-group.md).
 
-## <a name="sign-in-to-intune"></a>Intune'da oturum açma
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Microsoft uç nokta yöneticisinde Intune 'da oturum açma
 
 [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) genel yönetici veya Intune Hizmet Yöneticisi olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
@@ -41,16 +41,20 @@ Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../
 
 Bu örnekte kurumsal ve kendi cihazını getir türü cihazların otomatik kaydolabilmesi için MDM kaydını kullanacaksınız. Ücretsiz bir Azure Active Directory Premium aboneliğine kaydolacaksınız.
 
-1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **Mobility (MDM ve MAM)** seçeneğini belirleyin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **tüm hizmetler** > **M365 Azure Active Directory** > **Azure Active Directory** > **Mobility (MDM ve MAM)** seçeneğini belirleyin.
 2. **Bu özelliği kullanmak için ücretsiz bir Premium deneme sürümü edinin**’i seçin. Bu seçeneğin belirlenmesi, Azure Active Directory ücretsiz Premium deneme sürümü kullanılarak otomatik kayıt yapılmasına imkan verir. 
 
     ![Azure Active Directory ücretsiz Premium deneme sürümünü seçin](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    **Enterprise Mobility + Security E5** ücretsiz deneme seçeneğine tıklayın. Buna ek olarak ücretsiz denemeyi **Etkinleştir** seçeneğini belirlemeniz gerekir.
+3. **Enterprise Mobility + Security E5** ücretsiz deneme seçeneğine tıklayın. 
+4. Ücretsiz **denemeyi etkinleştirmek > ücretsiz** deneme sürümünü **etkinleştirin** .
 
     ![Enterprise Mobility + Security E5 ücretsiz deneme sürümünü seçin](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
-3. **Microsoft Intune**'u seçin. 
+    > [!NOTE]
+    > Etkinleştirilmesi bir dakika sürebilir. 
+
+3. Intune 'U yapılandırmak için **Microsoft Intune** ' ı seçin. 
 
     ![Listeden Microsoft Intune’u seçin](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
 
@@ -58,11 +62,14 @@ Bu örnekte kurumsal ve kendi cihazını getir türü cihazların otomatik kaydo
 
     ![Yapılandırma listesinden “Bazıları”nı seçin](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. Atanmış grup olarak Contoso Sınama Aracı’nı belirlemek için **Grup seçin** > **Contoso Sınama Aracı** > **Seçin**’e tıklayın.
+5.  > grup **Seç** **contoso Sınayıcılar** ' ne tıklayın > atanmış grup olarak **seçin** .
 
     ![Kaydedilecek grubu seçin](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
 6. İş gücünüzün cihazlarında verileri yönetmek için **MAM Kullanıcıları kapsamı**’nı **Bazıları** olarak belirleyin.
+
+    ![Kaydedilecek grubu seçin](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-06.png)
+
 7. Atanmış grup olarak Contoso Sınama Aracı’nı belirlemek için **Grup seçin** > **Contoso Sınama Aracı** > **Seçin**’e tıklayın. 
 8. Geri kalan yapılandırma değerleri için varsayılan değerleri kullanabilirsiniz.
 9. **Kaydet**’i seçin.

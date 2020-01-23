@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036603"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517530"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
 
 Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler göndermek için Microsoft Intune kullanın. Bu iletiler, Şirket Portalı uygulamadan ve bir kullanıcının aygıtındaki Microsoft Intune uygulamadan standart anında iletme bildirimleri olarak görünür, böylece cihazdaki diğer uygulamalardan gelen bildirimler görüntülenir. Intune özel bildirimleri macOS ve Windows cihazları tarafından desteklenmez.   
 
 Özel bildirim iletileri, kısa bir başlık ve 500 karakter veya daha kısa bir ileti gövdesi içerir. Bu iletiler, herhangi bir genel iletişim amacı için özelleştirilebilir.
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>Bildirim bir iOS cihazında nasıl görünür?
+
+İOS cihazında Şirket Portalı uygulaması açıksa, bildirim aşağıdaki ekran görüntüsüne benzer:
+
+> [!div class="mx-imgBorder"]
+> ![Şirket Portalı iOS test bildirimi](./media/custom-notifications/105046-1.png)
+
+Cihaz kilitliyse, bildirim aşağıdaki ekran görüntüsüne benzer:
+
+> [!div class="mx-imgBorder"]
+> ![kilitli cihaz iOS test bildirimi](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>Bir Android cihazında bildirim nasıl görünür?
+
+Android cihazda Şirket Portalı uygulaması açıksa, bildirim aşağıdaki ekran görüntüsüne benzer:
+
+> [!div class="mx-imgBorder"]
+> ![Android test bildirimi](./media/custom-notifications/105046-3.png)
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Özel bildirimler göndermek için yaygın senaryolar  
 

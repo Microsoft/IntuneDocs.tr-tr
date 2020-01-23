@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 0bbcad362ef2b2dcfdd170cd2e902d55cee00310
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756024"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517601"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -92,8 +92,6 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 |EAS etkinleştirme kimliği|Cihazın Exchange ActiveSync tanımlayıcısı.|Windows, iOS, Android|
 |Denetimli|**Evet** ise yöneticiler cihaz üzerinde gelişmiş denetime sahiptir.|Windows, iOS, Android|
 |Şifreli|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
-
-Android 'de, tam olarak yönetilen ve adanmış cihazlar gibi Google Policy Manager ile kullanılamaz \*
 
 > [!Note]  
 > Telefon numarası, Android kurumsal adanmış veya tam olarak yönetilen cihazlarda envantere kaydedilmiş değildir.
