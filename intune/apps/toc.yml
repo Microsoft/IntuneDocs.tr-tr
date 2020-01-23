@@ -5,7 +5,7 @@
   items:
     - name: Uygulama yönetimine genel bakış
       href: app-management.md
-- name: Hızlı girişler
+- name: Hızlı başlangıçlar
   items:
     - name: Uygulama ekleme ve atama
       href: quickstart-add-assign-app.md
@@ -45,7 +45,7 @@
               href: store-apps-windows-phone-8-1.md
             - name: Windows uygulamaları
               href: store-apps-windows.md
-            - name: İş uygulamaları için Microsoft Mağazası
+            - name: İş İçin Microsoft Mağazası uygulamaları
               href: windows-store-for-business.md
             - name: Yönetilen Google Play uygulamaları
               href: apps-add-android-for-work.md
@@ -133,8 +133,6 @@
               href: manage-microsoft-edge.md
             - name: Outlook’u yapılandırma
               href: app-configuration-policies-outlook.md
-            - name: Outlook için S/MIME’yi yapılandırma
-              href: app-configuration-policies-outlook-smime.md
             - name: Android için Google Chrome’u yapılandırma
               href: apps-configure-chrome-android.md
         - name: Toplu satın alınan uygulamalar ve kitaplar
@@ -184,12 +182,14 @@
               href: windows-information-protection-policy-create.md
             - name: iOS uygulamaları arasında veri aktarımını yönetme
               href: data-transfer-between-apps-manage-ios.md
-    - name: Sorunları Gider
+    - name: Sorun giderme
       items:
         - name: Kullanıcıların sorunları gidermesine yardımcı olma
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: Sorun giderme uygulaması kurulum sorunları
           href: troubleshoot-app-install.md
+        - name: Uygulama yükleme hatası başvurusu
+          href: app-install-error-codes.md
         - name: Mobil uygulama yönetimi sorunlarını giderme
           href: troubleshoot-mam.md
         - name: Uygulama koruma günlüklerini gözden geçirme
