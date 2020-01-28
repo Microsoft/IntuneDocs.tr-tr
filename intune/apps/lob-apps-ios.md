@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e1d3c6a427dcbd4a7946c5f3e180de56e8cb955
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563516"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755196"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir iOS iş kolu uygulaması ekleme
 
@@ -36,41 +36,56 @@ Bir iOS iş kolu uygulamasını Microsoft Intune’a eklemek için bu makaledeki
 >
 >iOS LOB uygulamaları, uygulama başına 4 GB üst sınıra sahiptir.
 
-## <a name="step-1-specify-the-software-setup-file"></a>1\. Adım: Yazılım kurulum dosyasını belirtme
+## <a name="select-the-app-type"></a>Uygulama türünü seçin
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
-3. **Uygulama Ekle** bölmesinde, **uygulama türü**olarak **iş kolu uygulaması** ' nı seçin.
+3. **Uygulama türünü seçin** bölmesinde, **diğer** uygulama türleri altında **iş kolu uygulaması**' nı seçin.
+4. **Seçin**’e tıklayın. **Uygulama ekleme** adımları görüntülenir.
 
-## <a name="step-2-configure-the-app-package-file"></a>2\. Adım: Uygulama paketi dosyasını yapılandırma
+## <a name="step-1---app-information"></a>1\. adım-uygulama bilgileri
 
-1. **Uygulama ekle** bölmesinde **Uygulama paketi**’ni seçin.
-2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra **.ipa** uzantısına sahip bir iOS yükleme dosyası seçin.
-3. İşiniz bittiğinde **Tamam**’a tıklayın.
+### <a name="select-the-app-package-file"></a>Uygulama paketi dosyasını seçin
 
+1. **Uygulama Ekle** bölmesinde **uygulama paketi dosyası seç**' e tıklayın. 
+2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Sonra, **. ipa**uzantısına sahip bir iOS yükleme dosyası seçin.
+   Uygulama ayrıntıları görüntülenir.
+3. İşiniz bittiğinde uygulamayı eklemek için **uygulama paketi dosyası** bölmesinde **Tamam** ' ı seçin.
 
-## <a name="step-3-configure-app-information"></a>3\. Adım: Uygulama bilgilerini yapılandırma
+### <a name="set-app-information"></a>Uygulama bilgilerini ayarla
 
-1. **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
-2. **Uygulama bilgileri** bölmesinde uygulamanızın ayrıntılarını ekleyin. Seçtiğiniz uygulamaya bağlı olarak bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
+1. **Uygulama bilgileri** sayfasında uygulamanızın ayrıntılarını ekleyin. Seçtiğiniz uygulamaya bağlı olarak bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
     - **Ad**: Uygulamanın Şirket Portalı’nda görünen adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri Şirket Portalı’nda kullanıcılara görüntülenir.
-    - **Açıklama**: Uygulama için bir açıklama girin. Açıklama Şirket Portalı’nda görünür.
+    - **Açıklama**: Uygulama açıklamasını girin. Açıklama, Şirket Portalı’nda görünür.
     - **Yayımcı**: Uygulama yayımcısının adını girin.
     - **En Düşük İşletim Sistemi**: Listeden uygulamanın yüklenebileceği en düşük işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
     - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
+    - **Bunu şirket portalı öne çıkan uygulama olarak göster**: kullanıcılar uygulamalara gözatarken, uygulamayı şirket portalının ana sayfasında göze çarpacak şekilde görüntüleyin.
     - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL Şirket Portalı’nda görünür.
     - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL Şirket Portalı’nda görünür.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
     - **Sahip**: İsteğe bağlı olarak uygulama sahibinin adını girin. Örneğin **İK departmanı**.
     - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na göz atarken uygulamayla birlikte görüntülenir.
-3. İşiniz bittiğinde **Tamam**’a tıklayın.
+2. **İleri** ' ye tıklayarak **kapsam etiketleri** sayfasını görüntüleyin.
 
-## <a name="step-4-finish-up"></a>4\. Adım: Bitirme
+## <a name="step-2---select-scope-tags-optional"></a>2\. adım-kapsam etiketlerini seçin (isteğe bağlı)
+Intune 'da istemci uygulama bilgilerini kimlerin görebileceğini anlamak için kapsam etiketlerini kullanabilirsiniz. Kapsam etiketleri hakkında tam Ayrıntılar için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi ve kapsam etiketleri kullanma](../fundamentals/scope-tags.md).
 
-1. **Uygulama ekle** bölmesinde uygulama ayrıntılarınızı doğrulayın.
-2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
+1. İsteğe bağlı olarak uygulamanın kapsam etiketlerini eklemek için **kapsam etiketlerini Seç** ' e tıklayın. 
+2. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.
+
+## <a name="step-3---assignments"></a>3\. adım-atamalar
+
+1. **Gerekli**, **Kayıtlı cihazlar için kullanılabilir**veya uygulama için Grup atamalarını **Kaldır** ' ı seçin. Daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](~/fundamentals/groups-add.md) ve [Microsoft Intune olan gruplara uygulama atama](apps-deploy.md).
+2. **İleri** ' ye tıklayarak **gözden geçir + oluştur** sayfasını görüntüleyin. 
+
+## <a name="step-4---review--create"></a>4\. adım-Inceleme ve oluşturma
+
+1. Uygulama için girdiğiniz değerleri ve ayarları gözden geçirin.
+2. İşiniz bittiğinde, uygulamayı Intune 'a eklemek için **Oluştur** ' a tıklayın.
+
+    İş kolu uygulaması için **genel bakış** dikey penceresi görüntülenir.
 
 Oluşturduğunuz uygulama artık uygulamalar listesinde görünür. Bu listede, seçtiğiniz gruplara uygulamaları atayabilirsiniz. Yardım için bkz. [Uygulamaları gruplara atama](apps-deploy.md).
 

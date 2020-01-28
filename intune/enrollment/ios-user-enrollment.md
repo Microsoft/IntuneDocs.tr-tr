@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691741"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754651"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>İOS ve ıpados Kullanıcı kaydını ayarlama (Önizleme)
 
@@ -34,7 +34,7 @@ Kullanıcı kaydında kullanılabilen seçenekler hakkında daha fazla bilgi iç
 > [!NOTE]
 > Apple 'ın Intune 'da Kullanıcı kaydı desteği şu anda önizlemededir.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 - [Mobil Cihaz Yönetimi (MDM) Yetkilisi](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Anında İletme sertifikası](apple-mdm-push-certificate-get.md)
 - [Yönetilen Apple kimlikleri](https://support.apple.com/guide/apple-business-manager/mdm1c9622977/web).
@@ -54,23 +54,14 @@ Kayıt profili, kayıt sırasında bir cihaz grubuna uygulanan ayarları tanıml
 
 3. **İleri**'yi seçin.
 
-4. **Ayarlar** sayfasında, kullanıcılara hangi kayıt türünün kullanılacağını tercih edebilirsiniz. Alternatif olarak, varsayılan ayar yapabilirsiniz.
+4. **Ayarlar** sayfasında, **kayıt türü**için aşağıdaki seçeneklerden birini belirleyin:
 
     ![Ayarlar sayfası](./media/ios-user-enrollment/settings-page.png)
 
-    - Bu profildeki tüm kullanıcıların kullanıcı kaydını kullanmasını istiyorsanız aşağıdaki adımları izleyin:
-        1. **Kullanıcının cihaz türünü seçmesini iste**için, **Yapılandırılmadı**' yı seçin.
-        2. **Varsayılan kayıt türü**Için **Kullanıcı kaydı**' nı seçin.
-    - Bu profildeki tüm kullanıcıların cihaz kaydını kullanmasını istiyorsanız aşağıdaki adımları izleyin:
-        1. **Kullanıcının cihaz türünü seçmesini iste**için, **Yapılandırılmadı**' yı seçin.
-        2. **Varsayılan kayıt türü**Için **cihaz kaydı**' nı seçin.
-    - Bu gruptaki tüm kullanıcılara hangi kayıt türünün kullanılacağını tercih etmek istiyorsanız, **kullanıcının cihaz türünü seçmesini iste**için **gerekli** ' yi seçin. Kullanıcılar cihazlarını kaydettiğinde, bu cihaz ve **(Şirket) bu cihazın sahibi** **olduğumu** arasında seçim yapmak için bu seçenek sunulur. Bunlar, eski ' yi seçtiyse, cihaz Kullanıcı kaydı kullanılarak kaydedilir. İkincisini seçtiyse cihaz, cihaz kaydı kullanılarak kaydedilir. Kullanıcı **Bu cihaza sahip olduğumu**seçerse, tüm cihazı güvenli hale getirmek veya yalnızca iş ile ilgili uygulamaları ve verileri güvenli hale getirmek için başka bir seçenek alırlar. Son kullanıcının cihazın sahip olup olmadığı seçimi yalnızca cihazlarına hangi kayıt türünün uygulandığını belirler. Bu Kullanıcı seçeneği, Intune 'daki cihaz sahipliği özniteliğinde yansıtılmaz. Kullanıcı deneyimi hakkında daha fazla bilgi edinmek için bkz. [Şirket KAYNAKLARıNıZA IOS cihaz erişimini ayarlama](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
+    - **Cihaz kaydı**: Bu profildeki tüm kullanıcılar cihaz kaydını kullanacaktır.
+    - **Kullanıcı kaydı**: Bu profildeki tüm kullanıcılar Kullanıcı kaydını kullanacaktır.
+    - **Kullanıcı seçimine göre belirlenir**: Bu gruptaki tüm kullanıcılara hangi kayıt türünün kullanılacağı tercih edilir. Kullanıcılar cihazlarını kaydettiğinde, bu cihazdan ve **(Şirket) bu cihazın sahibi** **olduğumu** arasında seçim yapmak için bir seçenek görür. İkincisini seçtiyse cihaz, cihaz kaydı kullanılarak kaydedilir. Kullanıcı **Bu cihaza sahip olduğumu**seçerse, tüm cihazı güvenli hale getirmek veya yalnızca iş ile ilgili uygulamaları ve verileri güvenli hale getirmek için başka bir seçenek alırlar. Son kullanıcının, cihazında hangi kayıt türünün uygulandığını belirler. Bu Kullanıcı seçeneği, Intune 'daki cihaz sahipliği özniteliğinde de yansıtılır. Kullanıcı deneyimi hakkında daha fazla bilgi edinmek için bkz. [Şirket KAYNAKLARıNıZA IOS cihaz erişimini ayarlama](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
     
-    > [!NOTE]
-    > Aşağıdaki bildirim yanlış ve kullanıcı arabiriminden kaldırılacak.
-    > "Kullanıcı kaydıyla hedeflenen cihazlarda çalışmaya yönelik koşullu erişim için, çoklu oturum açma ve Workplace Join etkinleştirmek üzere Azure Authenticator uygulamasını bu kullanıcı grubu için gerekli bir uygulama olarak göndermeniz gerekir."
-    > Yönetici olarak, kimlik doğrulayıcı uygulamasını kullanıcılarınıza göndermek için herhangi bir işlem yapmanız gerekmez. Kullanıcılarınıza, bu senaryoların düzgün çalışmasını sağlamak üzere Kullanıcı kayıt işlemini gerçekleştirmek üzere kimlik doğrulayıcı uygulamasını yüklemek için Şirket Portalı içinde talimat alınacaktır.
-
 5. **İleri**'yi seçin.
 
 6. **Atamalar** sayfasında, bu profilin atanmasını istediğiniz kullanıcıları içeren Kullanıcı gruplarını seçin. Profili tüm kullanıcılara veya belirli gruplara atamayı seçebilirsiniz. Seçili gruplardaki tüm kullanıcılar, yukarıda seçilen kayıt türünü kullanır. Özellik, cihazlar yerine Kullanıcı kimliklerini temel aldığı için, Kullanıcı kayıt senaryolarında cihaz grupları desteklenmez. Profili tüm kullanıcılara veya belirli gruplara atamayı seçebilirsiniz.

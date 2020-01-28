@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564285"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755570"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme
 
@@ -33,16 +33,29 @@ Intune App SDK’sını destekleyen yönetilen uygulamalarla uygulama yapıland�
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2.  > **yönetilen uygulamalar** **eklemek** > **uygulama yapılandırma ilkeleri** > **uygulamalar** ' ı seçin.
-3. Aşağıdaki bilgileri ayarlayın:
-    - **Ad**  
-      Azure portalında görünecek profil adı.
-    - **Açıklama**  
-      Azure portalında görünecek profil açıklaması.
+3. **Temel bilgiler** sayfasında, aşağıdaki ayrıntıları ayarlayın:
+    - **Ad**: Azure Portal görünecek profilin adı.
+    - **Açıklama**: Azure Portal görüntülenecek profil açıklaması.
+    - **Cihaz kayıt türü**: yönetilen uygulamalar seçilidir.
 4. Yapılandırmak istediğiniz uygulamayı seçmek için **ortak uygulamaları seçin** ya da **özel uygulamalar** ' ı seçin. Onayladığınız ve Intune ile eşitlenmiş uygulamalar listesinden uygulamayı seçin.
-5. Uygulamanın desteklediği her yapılandırma ayarı için, **adı** ve **değeri**yazın.  
+5. **İleri** ' ye tıklayarak **Ayarlar** sayfasını görüntüleyin.
+6. Uygulamanın desteklediği her yapılandırma ayarı için, **adı** ve **değeri**yazın. 
+
+   Intune Uygulama SDK’sı özellikli uygulamalar, anahtar/değer çiftlerinde yapılandırmaları destekler. Hangi anahtar-değer yapılandırmalarının desteklendiğini öğrenmek için uygulamaların kendi belgelerine bakın. Uygulama tarafından oluşturulan verilerle dinamik olarak doldurulacak belirteçler kullanabileceğinizi unutmayın. Daha fazla bilgi için bkz. [belirteçleri kullanmak Için yapılandırma değerleri](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens). iOS için Outlook uygulama yapılandırma ilke ayarları hakkında daha fazla bilgi için bkz. [Microsoft Intune ile iOS için Outlook uygulama yapılandırması](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+
     Bir yapılandırmayı silmek için üç nokta simgesini ( **…** ) seçip **Sil**’e tıklayın.  
-    
-Intune Uygulama SDK’sı özellikli uygulamalar, anahtar/değer çiftlerinde yapılandırmaları destekler. Hangi anahtar-değer yapılandırmalarının desteklendiğini öğrenmek için uygulamaların kendi belgelerine bakın. Uygulama tarafından oluşturulan verilerle dinamik olarak doldurulacak belirteçler kullanabileceğinizi unutmayın. iOS için Outlook uygulama yapılandırma ilke ayarları hakkında daha fazla bilgi için bkz. [Microsoft Intune ile iOS için Outlook uygulama yapılandırması](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+
+7. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.
+8. **Dahil edilecek grupları seç ' e**tıklayın.
+9. **Dahil edilecek grupları seçin** bölmesinde bir grup seçin ve **Seç**' e tıklayın.
+10. İlgili bölmeyi görüntülemek için **Dışlanacak grupları seçin**’e tıklayın.
+11. Dışlamak istediğiniz grupları seçin ve **Seç**’e tıklayın.
+
+    >[!NOTE]
+    >Bir grup eklerken, herhangi bir atama türü için başka bir grup önceden dahil edilmişse bu grup, diğer dahil etme atama türleri için önceden seçili ve değiştirilemez bir biçimde görüntülenir. Dolayısıyla bu grup zaten kullanılmıştır ve dışlanmış bir grup olarak kullanılamaz.
+
+12. **İleri** ' ye tıklayarak **gözden geçir + oluştur** sayfasını görüntüleyin.
+13. Uygulama yapılandırma ilkesini Intune 'a eklemek için **Oluştur** ' a tıklayın.
 
 ## <a name="configuration-values-for-using-tokens"></a>Belirteç kullanmak için yapılandırma değerleri
 
@@ -57,7 +70,6 @@ Intune, yapılandırma ayarlarında aşağıdaki belirteç türlerini destekler.
 - \{\{userid\}\}: örneğin 3ec2c00f-b125-4519-acf0-302ac3761822
 - \{\{username\}\}: örneğin John Doe
 - \{\{PrimarySMTPAddress\}\}: örneğin testuser@ad.domain.com
-
 
 > [!Note]  
 > \{\{ ve \}\} karakterleri yalnızca belirteç türleri tarafından kullanılır ve başka bir amaçla kullanılmamalıdır.

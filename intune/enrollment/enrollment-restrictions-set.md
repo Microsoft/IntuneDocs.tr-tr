@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 699065a19087ec3cdf3d8fcbee765f968a1cbaee
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547819"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754719"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -82,12 +82,13 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
    > Windows 10 kayıt sırasında Rev numarası sağlamaz, örneğin, 10.0.17134.100 içine girdiğinizde ve cihaz 10.0.17134.174 ise kayıt sırasında engellenir.
 
 6. **Kişisel**olarak sahip olunan cihazlara izin vermek istediğiniz platformlar Için **izin ver** ' i seçin.
-7. **Atamalar** sayfasına gitmek için **İleri ' yi** seçin.
-8. **Dahil edilecek grupları seç** ' i seçin ve ardından bu kısıtlamaya dahil etmek istediğiniz grupları bulmak için arama kutusunu kullanın. Kısıtlama yalnızca atandığı gruplara uygulanır. Kısıtlamayı en az bir gruba atamazsanız, hiçbir etkisi olmaz. Daha sonra **Seç**’e tıklayın. 
+7. **Cihaz üreticisi**altında, engellemek istediğiniz üreticilerin virgülle ayrılmış bir listesini girin.
+8. **Atamalar** sayfasına gitmek için **İleri ' yi** seçin.
+9. **Dahil edilecek grupları seç** ' i seçin ve ardından bu kısıtlamaya dahil etmek istediğiniz grupları bulmak için arama kutusunu kullanın. Kısıtlama yalnızca atandığı gruplara uygulanır. Kısıtlamayı en az bir gruba atamazsanız, hiçbir etkisi olmaz. Daha sonra **Seç**’e tıklayın. 
     Platform ayarlarını seçmek için ![ekran ucu](./media/enrollment-restrictions-set/select-groups.png)
-9. **İleri ' yi** seçerek **gözden geçir + oluştur** sayfasına gidin.
-10. Kısıtlamayı oluşturmak için **Oluştur** ' u seçin.
-11. Yeni kısıtlama, varsayılan öncelik düzeyinin hemen üstündeki öncelik düzeyiyle oluşturulur. [Önceliği değiştirebilirsiniz](#change-enrollment-restriction-priority).
+10. **İleri ' yi** seçerek **gözden geçir + oluştur** sayfasına gidin.
+11. Kısıtlamayı oluşturmak için **Oluştur** ' u seçin.
+12. Yeni kısıtlama, varsayılan öncelik düzeyinin hemen üstündeki öncelik düzeyiyle oluşturulur. [Önceliği değiştirebilirsiniz](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Cihaz sınırı kısıtlaması oluşturma

@@ -33,13 +33,13 @@
           href: device-supervised-mode.md
         - name: macOS cihazını silme
           href: device-erase.md
-        - name: Etkinleştirme kilidini atlama
-          href: device-activation-lock-bypass.md
+        - name: Etkinleştirme Kilidini Devre Dışı Bırakma
+          href: device-activation-lock-disable.md
     - name: Kullanıcı eylemleri
       items:
         - name: Geçerli kullanıcının oturumunu kapatma
           href: device-logout-user.md
-        - name: Kullanıcıyı kaldır
+        - name: Kullanıcı kaldırma
           href: device-remove-user.md
         - name: Birincil kullanıcı bulma
           href: find-primary-user.md

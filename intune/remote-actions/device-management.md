@@ -16,13 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-redirect_url: https://docs.microsoft.com/intune
-ms.openlocfilehash: ff82b1ed70d3021c33a166c694e3efe5d10905e0
-ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
+ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75731373"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754261"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
@@ -62,7 +61,7 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
   - [Silme](devices-wipe.md#wipe)
   - [Uzaktan kilitleme](device-remote-lock.md)
   - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
-  - [Etkinleştirme Kilidini Atlama](device-activation-lock-bypass.md) (yalnızca iOS)
+  - [Etkinleştirme Kilidi devre dışı bırak](device-activation-lock-bypass.md) (yalnızca iOS)
   - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
   - [Kayıp modu](device-lost-mode.md) (yalnızca iOS)
   - [Cihaz bulma](device-locate.md) (yalnızca iOS)

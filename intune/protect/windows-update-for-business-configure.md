@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: beafee4eb22d641748ca41f8f4c01c48ead87741
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956280"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754346"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune 'da Windows 10 yazılım güncelleştirmelerini yönetme
 
@@ -71,7 +71,7 @@ Intune 'da Windows 10 cihazları için Windows güncelleştirmelerini kullanmak 
 
 ## <a name="windows-10-update-rings"></a>Windows 10 güncelleştirme halkaları
 
-Windows 10 cihazlarınızı özellik ve kalite güncelleştirmeleriyle nasıl ve ne zaman güncelleştirmelerini belirten güncelleştirme halkaları oluşturun. Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. En son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın güncel olduğundan emin olabilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
+Windows 10 cihazlarınızı özellik ve kalite güncelleştirmeleriyle nasıl ve ne zaman güncelleştirmelerini belirten güncelleştirme halkaları oluşturun. Windows 10 ile yeni Özellik Güncelleştirmeleri ve Kalite Güncelleştirmeleri, önceki güncelleştirmelerin hepsinde yer alan içerikleri kapsar. En son güncelleştirmeyi yüklediğiniz sürece Windows 10 cihazlarınızın güncel olduğunu bilirsiniz. Önceki Windows sürümlerinin aksine, artık güncelleştirmelerin tamamını yüklemeniz gerekir. Güncelleştirmenin yalnızca bir parçası yüklenemez.
 
 Windows 10 güncelleştirme halkaları [kapsam etiketlerini](../fundamentals/scope-tags.md)destekler. Kullandığınız yapılandırmaların kümelerini filtrelemenize ve yönetmenize yardımcı olması için kapsam etiketlerini güncelleştirme halkalarıyla birlikte kullanabilirsiniz.
 
@@ -90,7 +90,7 @@ Windows 10 güncelleştirme halkaları [kapsam etiketlerini](../fundamentals/sco
 
    Hazırlandığınızda, *atamalara*devam etmek için **İleri** ' yi seçin.
 
-6. **Atamalar**' ın altında **+ dahil edilecek grupları seçin** ve ardından güncelleştirme halkasını bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için **+ Select grupları** kullanın. Devam etmek için **İleri** seçeneğini belirleyin.
+6. **Atamalar**' ın altında **+ dahil edilecek grupları seçin** ve ardından güncelleştirme halkasını bir veya daha fazla gruba atayın. Atamanın ince ayar yapmak için **+ Select grupları** kullanın. Devam etmek için **İleri ' yi** seçin.
 
 7. **Gözden geçir + oluştur**bölümünde ayarları gözden geçirin ve ardından Windows 10 güncelleştirme halkasını kaydetmeye hazırsanız **Oluştur** ' u seçin. Yeni güncelleştirme halkalarınız, güncelleştirme halkaları listesinde görüntülenir.
 
@@ -102,7 +102,7 @@ Bu sayfadan, halkalar atama durumunu görüntüleyebilir ve güncelleştirme hal
 
 - [Sil](#delete)
 - [Tamazsınız](#pause)
-- [Resume](#resume)
+- [Bilmeniz](#resume)
 - [Genişletmeyi](#extend)
 - [Kaldırma](#uninstall)
 
@@ -205,20 +205,22 @@ Bir cihaz Windows 10 özellik güncelleştirmeleri ilkesi aldığında:
 
 - 35 gün sonra süresi dolan bir güncelleştirme halkasını *Duraklat* kullanmaktan farklı olarak, Windows 10 özellik güncelleştirmeleri ilkesi etkin kalır. Windows 10 özellik güncelleştirmeleri ilkesini değiştirip kaldırana kadar cihazlar yeni bir Windows sürümü yüklemez. İlkeyi daha yeni bir sürümü belirtmek üzere düzenlerseniz, cihazlar daha sonra bu Windows sürümünden özellikleri yükleyebilir.
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Windows 10 özellik güncelleştirmeleri için Önkoşullar
+
+Intune 'da Windows 10 özellik güncelleştirmelerini kullanmak için aşağıdaki önkoşulların karşılanması gerekir.
+
+- Cihazların Intune MDM 'ye kayıtlı olması ve Azure AD 'ye katılmış olması veya Azure AD 'ye kayıtlı olması gerekir.
+- Özellik güncelleştirmeleri ilkesini Intune ile birlikte kullanmak için, cihazların en düşük bir ayarla [*temel*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)alarak telemetri açık olmalıdır. Telemetri, *Raporlama ve telemetri* altında [cihaz kısıtlama ilkesinin](../configuration/device-restrictions-configure.md)bir parçası olarak yapılandırılır.
+  
+  Özellik güncelleştirme ilkesi alan ve telemetri ayarlanmış *bir şekilde ayarlanmış olan cihazlar, devre*dışı olduğundan, özellik güncelleştirme ilkesinde tanımlananla Windows 'un daha yeni bir sürümünü yükleyebilirler. Telemetri gerektirmek için önkoşul, bu özellik genel kullanıma yönelik olarak taşındıkça gözden geçirme aşamasındadır.
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Windows 10 özellik güncelleştirmeleri için sınırlamalar
 
 - Bir Windows 10 *özellik güncelleştirme* Ilkesini bir *Windows 10 güncelleştirme halkası* ilkesi de alan bir cihaza dağıttığınızda, aşağıdaki yapılandırmalarda güncelleştirme halkasını gözden geçirin:
   - **Özellik Güncelleştirmesi erteleme süresi (gün)** **0**olarak ayarlanmalıdır.
   - Güncelleştirme halkası için özellik güncelleştirmeleri *çalışıyor*olmalıdır. Bunların duraklamaları gerekir.
 
-- Windows 10 özellik güncelleştirme ilkeleri, ilk çalıştırma deneyimi (OOBE) sırasında uygulanamıyor ve yalnızca bir cihazın sağlama işlemini tamamladıktan (genellikle bir gün) sonra ilk Windows Update taramaya uygulanır. Ayrıca, AutoPilot ile sağlanan cihazlar ilkeyi almaz.
-
-  Gelecekte desteklenip desteklenmediğini öğrenmek için bu sınırlama incelenmekte.
-
-> [!IMPORTANT]
-> Özellik güncelleştirmeleri ilkesini Intune ile birlikte kullanmak için, cihazların en düşük bir ayarla [*temel*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)alarak telemetri açık olmalıdır. Telemetri, *Raporlama ve telemetri* altında [cihaz kısıtlama ilkesinin](../configuration/device-restrictions-configure.md)bir parçası olarak yapılandırılır.
->
-> Özellik güncelleştirme ilkesi alan ve telemetri ayarlanmış *bir şekilde ayarlanmış olan cihazlar, devre*dışı olduğundan, özellik güncelleştirme ilkesinde tanımlananla Windows 'un daha yeni bir sürümünü yükleyebilirler. Telemetri gerektirmek için önkoşul, bu özellik genel kullanıma yönelik olarak taşındıkça gözden geçirme aşamasındadır.
+- Windows 10 özellik güncelleştirme ilkeleri, Autopilot Out deneyimi (OOBE) sırasında uygulanamıyor ve yalnızca bir cihazın sağlama işlemini tamamladıktan (genellikle bir gün) sonra ilk Windows Update taramaya uygulanır.
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Windows 10 özellik güncelleştirmelerini oluşturma ve atama
 
@@ -228,7 +230,7 @@ Bir cihaz Windows 10 özellik güncelleştirmeleri ilkesi aldığında:
 
 3. **Temel bilgiler**altında bir ad, açıklama (isteğe bağlı) belirtin ve **dağıtılacak Özellik Güncelleştirmesi**için, istediğiniz özellik kümesiyle Windows sürümünü seçin ve ardından **İleri**' yi seçin.
 
-4. **Atamalar**altında **+ dahil edilecek grupları seç** ' i seçin ve ardından özellik güncelleştirme dağıtımını bir veya daha fazla gruba atayın. Devam etmek için **İleri** seçeneğini belirleyin.
+4. **Atamalar**altında **+ dahil edilecek grupları seç** ' i seçin ve ardından özellik güncelleştirme dağıtımını bir veya daha fazla gruba atayın. Devam etmek için **İleri ' yi** seçin.
 
 5. **Gözden geçir + oluştur**altında, ayarları gözden geçirin ve Windows 10 özellik güncelleştirmeleri ilkesini kaydetmeye hazırsanız **Oluştur** ' u seçin.  
 

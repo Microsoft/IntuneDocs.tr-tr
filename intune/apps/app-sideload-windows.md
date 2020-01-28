@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691837"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755417"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune ile Windows cihazlarına dağıtmak için iş kolu uygulamalarını imzalayın
 
-Bir Intune Yöneticisi olarak, Şirket Portalı uygulaması da dahil olmak üzere masaüstü veya Windows 10 Masaüstü & Mobil cihazlara Windows 8.1 iş kolu (LOB) Universal uygulamaları dağıtabilirsiniz. Windows 8.1. appx uygulamalarını masaüstü veya Windows 10 Masaüstü & Mobil cihazlara dağıtmak için, Windows cihazlarınız tarafından zaten güvenilen bir genel sertifika yetkilisinden kod imzalama sertifikası kullanabilir veya kendi sertifika yetkilinizi kullanabilirsiniz.
+Bir Intune Yöneticisi olarak, Şirket Portalı uygulaması da dahil olmak üzere masaüstü veya Windows 10 Masaüstü & Mobil cihazlara Windows 8.1 iş kolu (LOB) Universal uygulamaları dağıtabilirsiniz. Windows 8.1 *. appx* uygulamalarını masaüstü veya Windows 10 Masaüstü & Mobil cihazlara dağıtmak Için, Windows cihazlarınız tarafından zaten güvenilen bir genel sertifika yetkilisinden kod imzalama sertifikası kullanabilir veya kendi sertifika yetkilinizi kullanabilirsiniz.
 
  > [!NOTE]
  > Windows 8.1 Masaüstü, dışarıdan yüklemeyi etkinleştirmek için bir kuruluş ilkesi veya dışarıdan Yükleme anahtarlarının (etki alanına katılmış cihazlar için otomatik olarak etkinleştirilir) kullanılmasını gerektirir. Daha fazla bilgi için bkz. [Windows 8 dışarıdan yükleme](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
@@ -52,10 +52,11 @@ Uygulamayı kullanıcılara veya cihazlara gereken şekilde dağıtırsanız, ı
 
 Windows 10 cihazınız sertifika yetkilisine zaten güvenmezse, appx paketinizi imzaladıktan ve Intune hizmetine yükledikten sonra, kod imzalama sertifikasını Intune portalına yüklemeniz gerekir:
 
-1. Istemci uygulamaları ' na tıklayın
-2. Windows Kurumsal sertifikaları ' na tıklayın
-3. Kod imzalama sertifikası altında ' Dosya Seç ' seçeneğini belirleyin
-4. . Cer dosyanızı seçip karşıya yükle ' ye tıklayın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Windows Enterprise sertifikası** > **bağlayıcılar ve belirteçler** > **Kiracı Yönetimi** ' ne tıklayın.
+3. **Kod imzalama sertifika dosyası**altında bir dosya seçin.
+4. *. Cer* dosyanızı seçin ve **Aç**' a tıklayın.
+5. Sertifika dosyanızı Intune 'a eklemek için **karşıya yükle** ' ye tıklayın.
 
 Artık, Intune hizmeti tarafından bir appx dağıtımı olan Windows 10 Masaüstü & mobil cihaz, ilgili kurumsal sertifikayı otomatik olarak indirir ve uygulamanın yüklemeden sonra çalışmasına izin verilir.
 
@@ -94,7 +95,7 @@ Microsoft Store erişim sağlamak istemiyorsanız, Intune 'u Iş Microsoft Store
       ![APPXBUN dosyasıyla kaydedilen Dependencies klasörünün görüntüsü](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. Dokuz bağımlılık paketini Dependencies klasörüne yerleştirin.  
       Bağımlılıklar, bu biçimde yerleştirilmezse Intune tarafından tanınamazlar ve paketin karşıya yüklenmesi sırasında karşıya yüklenemezler. Bu durumda, karşıya yükleme aşağıdaki hatayı vererek başarısız olur.  
-      ![Hata iletisi-Windows uygulaması bağımlılığı sağlanmalıdır.](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. Intune'a dönün ve Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulamayı, istenen hedef kullanıcı kümesine gerekli bir uygulama olarak dağıtın.  
 
 Intune’un Evrensel uygulamaların bağımlılıklarını nasıl işlediği hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune MDM aracılığıyla bağımlılıkları olan bir appxbundle dağıtma](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39978043428f6ad912832007f60628815d6549a6
-ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
+ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75920069"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754584"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
@@ -223,7 +223,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11,0 ve üzeri
   
-<sup>1</sup>**Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı** ve **Ekran kilitlendikten sonra parola istenene kadar geçmesi gereken, işlem yapılmayan dakika sayısı**, ayarlarını yapılandırdığınızda, bunlar sırayla uygulanır. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran beş dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için beş dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki beş dakikanın sonunda cihaz kilitlenir.
+<sup>1</sup> **parola istenmeden önce ekran kilitlenmesinden sonra ekran kilitlenmeden ve en fazla dakika geçtikten sonra** **işlem yapılmadan maksimum dakika** sayısını yapılandırdığınızda, bunlar sırayla uygulanır. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran beş dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için beş dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki beş dakikanın sonunda cihaz kilitlenir.
 
 ## <a name="locked-screen-experience"></a>Kilit Ekranı Deneyimi
 
@@ -636,7 +636,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 
 - Uygulama Kilidi (Tek Uygulama Modu) 
 - Genel HTTP Proxy’si 
-- Etkinleştirme Kilidini Atlama 
+- Etkinleştirme Kilidi devre dışı bırak 
 - Otonom Tek Uygulama Modu 
 - Web İçeriği Filtresi 
 - Arka plan ve kilit ekranı ayarlama 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bbcad362ef2b2dcfdd170cd2e902d55cee00310
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517601"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754210"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -67,7 +67,7 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 |Paylaşılan cihaz|**Evet** ise cihaz birden fazla kullanıcı tarafından paylaşılır.|Windows, iOS|
 |Kullanıcı onaylı kayıt|Yanıt **Evet**ise, cihazın cihazdaki belirli güvenlik ayarlarını yönetmesine olanak tanıyan Kullanıcı onaylı kaydı vardır.|Windows, iOS|
 |İşletim sistemi|Cihazda kullanılan işletim sistemi.|Windows, iOS|
-|İşletim sistemi sürümü|Cihazdaki işletim sistemi sürümü.|Windows, iOS|
+|İşletim sistemi sürümü|Cihazdaki işletim sisteminin sürümü.|Windows, iOS|
 |İşletim sistemi dili|Cihazdaki işletim sisteminin dil kümesi.|Windows, iOS|
 |Yapı numarası|İşletim sisteminin yapı numarası.|Android|
 |Güvenlik Düzeltme eki düzeyi|Cihaz için güvenlik düzeltme eki düzeyi.|Android|
@@ -84,14 +84,14 @@ Cihazlar tarafından kullanılan taşıyıcıya bağlı olarak, tüm ayrıntıla
 |ICCID|Entegre Devre Kart Tanımlayıcısı, yani bir SIM kartın benzersiz kimlik numarası.|Windows, iOS, Android|
 |Kaydolma tarihi|Cihazın Intune’a kaydedildiği tarih ve saat.|Windows, iOS, Android|
 |Son iletişim|Cihazın Intune’a son bağlandığı tarih ve saat.|Windows, iOS, Android|
-|Etkinleştirme kilidi atlama kodu|Etkinleştirme kilidini atlamak için kullanılabilecek kod.|iOS|
+|Etkinleştirme kilidi atlama kodu|Etkinleştirme kilidini devre dışı bırakmak için kullanılan kod.|iOS|
 |Azure AD kayıtlı|**Evet** ise cihaz Azure Directory’ye kayıtlıdır.|Windows, iOS, Android|
 |Intune kayıtlı|Yanıt **Evet**ise, cihaz Intune 'a kaydedilir|Windows, iOS, Android|
 |Uyumluluk|Cihazın uyumluluk durumu.|Windows, iOS, Android|
 |EAS etkin|**Evet** ise cihaz Exchange posta kutusu ile eşitlenir.|Windows, iOS, Android|
 |EAS etkinleştirme kimliği|Cihazın Exchange ActiveSync tanımlayıcısı.|Windows, iOS, Android|
 |Denetimli|**Evet** ise yöneticiler cihaz üzerinde gelişmiş denetime sahiptir.|Windows, iOS, Android|
-|Şifreli|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
+|Memiştir|**Evet** ise cihazda depolanan veriler şifrelenir.|Windows, iOS, Android|
 
 > [!Note]  
 > Telefon numarası, Android kurumsal adanmış veya tam olarak yönetilen cihazlarda envantere kaydedilmiş değildir.

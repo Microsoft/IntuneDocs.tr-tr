@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564146"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755400"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune ile Yönetilen Google Play uygulamalarını Android Kurumsal cihazlarına ekleme
 
@@ -59,19 +59,41 @@ Intune ile yönetilen Google Play Mağazası uygulamalarını taramak ve onaylam
 1. Doğrudan Intune konsolunda-Intune 'da barındırılan bir görünümde mağaza uygulamalarına gözatıp onaylayın. Bu, doğrudan Intune konsolunda açılır ve farklı bir hesapla yeniden kimlik doğrulaması yapmanız gerekmez.
 1. Yönetilen Google Play konsolu 'nda, isteğe bağlı olarak, yönetilen Google Play konsolunu doğrudan açabilir ve uygulamayı burada onaylayabilirsiniz. Daha fazla bilgi için bkz. [Intune Ile yönetilen Google Play uygulamasını eşitleme](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune) .  Bu, Intune kiracınızı yönetilen Google Play bağlamak için kullandığınız hesabı kullanarak ayrı bir oturum açma gerektirir.
 
-
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>Doğrudan Intune konsoluna yönetilen bir Google Play Mağazası uygulaması ekleme
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
-3. **Uygulama türü** açılan kutusunda **Yönetilen Google Play**'i seçin.
-4. Yönetilen Google Play kataloğunu açmak için **yönetilen Google Play-aç** ' ı seçin.
-5. Google Play kataloğunda **arama Play Store** seçin.
-6. Yönetmek istediğiniz uygulamaları aramak için arama kutusunu kullanın.
-7. Yönetilen Google Play'de uygulamayı onaylamak için **Onayla**'ya tıklayın ve ardından uygulama izinlerini kabul etmek için **Onayla**'ya tıklayın.
-8. Onay Ayarları penceresinde **Uygulama yeni izinler istediğinde onaylı durumda tut** öğesini seçin ve **Kaydet**'e tıklayın. Bu seçeneği kullanmazsanız, uygulama geliştirici güncelleştirme yayımladığında tüm yeni izinleri el ile onaylamanız gerekecektir. Bu durum izinler onaylanana kadar uygulama yüklemelerinin ve güncelleştirmelerinin durdurulmasına neden olur. Dolayısıyla yeni izinlerin otomatik olarak onaylanması için bu seçeneğin kullanılması önerilir. 
-9. Onayladığınız uygulamaların eklenmesi için **Tamam**'a tıklayın.
-10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın.
+3. **Uygulama türünü seçin** bölmesinde, kullanılabilir **Mağaza uygulama** türleri altında, **yönetilen Google Play uygulaması**' nı seçin.
+4. **Seçin**’e tıklayın. **Yönetilen Google Play** App Store görüntülenir.
+
+    > [!NOTE]
+    > Yönetilen Google Play Mağazası uygulamalarına gözatagöstermek için Intune kiracı hesabınızın Android Kurumsal hesabınıza bağlı olması gerekir. Daha fazla bilgi için bkz. [Intune hesabınızı yönetilen Google Play hesabınıza bağlama](../enrollment/connect-intune-android-enterprise.md).
+
+5. Uygulama ayrıntılarını görüntülemek için bir uygulama seçin.
+6. Uygulamayı görüntüleyen sayfada **Onayla**' ya tıklayın. Uygulamada bir pencere açılır ve çeşitli işlemler gerçekleştirmek için izin vermenizi ister.
+7. Uygulama izinlerini kabul edip devam etmek için **Onayla**’yı seçin.
+8. Uygulama **onay ayarları** sekmesinde **Yeni Izinler istediğinde onaylandı kalsın** ' ı seçin ve ardından **bitti**' ye tıklayın. 
+
+    > [!IMPORTANT]
+    > Bu seçeneği kullanmazsanız, uygulama geliştirici güncelleştirme yayımladığında tüm yeni izinleri el ile onaylamanız gerekecektir. Bu durum izinler onaylanana kadar uygulama yüklemelerinin ve güncelleştirmelerinin durdurulmasına neden olur. Dolayısıyla yeni izinlerin otomatik olarak onaylanması için bu seçeneğin kullanılması önerilir. 
+
+9. Uygulamayı seçmek için **Seç** ' e tıklayın.
+10. Uygulamayı yönetilen Google Play hizmetiyle eşitlemek için dikey pencerenin en üstündeki **Eşitle** ' ye tıklayın.
+11. Uygulama listesini güncelleştirmek ve yeni eklenen uygulamayı göstermek için **Yenile** ' ye tıklayın.
+
+### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>Yönetilen bir Google Play Mağazası uygulamasına ek uygulama ayarları ekleme
+1. Ek uygulama ayrıntıları eklemeniz gerekiyorsa uygulama listesinden uygulamayı seçin.
+2. **Özellikler** ' e tıklayın > **uygulama bilgileri**' nin yanında **düzenleyin** . **Uygulama bilgileri** sayfası görüntülenir.
+3. **Uygulama bilgileri** sayfasında, uygulama ayrıntılarını ekleyin:
+    - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Böylelikle, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
+    - **Bunu şirket portalı öne çıkan uygulama olarak göster**: kullanıcılar uygulamalara gözatarken, uygulama paketini Şirket portalının ana sayfasında göze çarpacak şekilde görüntülemek için bu seçeneği belirleyin.
+    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
+    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
+    - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin, örneğin *İK departmanı*.
+    - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+4. Gözden **geçir + Kaydet ' e** tıklayarak **İnceleme + kaydet** sayfasını görüntüleyin. 
+5. İşiniz bittiğinde, uygulamayı Intune 'da güncelleştirmek için **Kaydet** ' e tıklayın.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Yönetilen Google Play konsoluna yönetilen bir Google Play Mağazası uygulaması ekleme (alternatif)
 Yönetilen Google Play uygulamasını doğrudan Intune kullanarak eklemek yerine Intune'la eşitlemeyi tercih ediyorsanız aşağıdaki adımları kullanın.
@@ -81,7 +103,7 @@ Yönetilen Google Play uygulamasını doğrudan Intune kullanarak eklemek yerine
 
 1. [Yönetilen Google Play mağazası](https://play.google.com/work)’na gidin. Intune ve Android Kurumsal arasındaki bağlantıyı yapılandırmak için kullandığınız hesapla oturum açın.
 2. Intune kullanarak atamak istediğiniz uygulamayı mağazada arayın ve seçin.
-3. Uygulamanın görüntülendiği sayfada **Onayla**’yı seçin.  
+3. Uygulamayı görüntüleyen sayfada **Onayla**' ya tıklayın.  
     Aşağıdaki örneklerde Microsoft Excel uygulaması seçilmiştir.
 
     ![Yönetilen Google Play mağazasında Onayla düğmesi](./media/apps-add-android-for-work/approve.png)
@@ -109,20 +131,22 @@ Yönetilen Google Play LOB uygulamaları eklemenin iki yolu vardır:
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
-3. **Uygulama türü** açılan kutusunda **Yönetilen Google Play**'i seçin.
-4. Yönetilen Google Play kataloğunu açmak için **yönetilen Google Play-aç** ' ı seçin.
-5. Google Play kataloğunda **özel uygulamalar** ' ı seçin.
-6. Yeni bir uygulama eklemek için **"+"** düğmesine tıklayın
-7. Uygulama için bir uygulama başlığı ve APK paketi gönder
-8. **Oluştur**'a tıklayın.
-9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın
-10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. Özel uygulamaların eşitleme için kullanılabilir hale gelmesi birkaç dakika sürebileceğini unutmayın. İlk kez eşitleme yaptığınızda görünmezse, birkaç dakika bekleyip yeni bir eşitleme başlatın.
+3. **Uygulama türünü seçin** bölmesinde, kullanılabilir **Mağaza uygulama** türleri altında, **yönetilen Google Play uygulaması**' nı seçin.
+4. **Seçin**’e tıklayın. **Yönetilen Google Play** App Store, Intune içinde görüntülenir.
+5. Google Play penceresinde **özel uygulamalar** ( *kilit* simgesinin yanında) seçeneğini belirleyin. 
+6. Yeni bir uygulama eklemek için sağ alt köşedeki **"+"** düğmesine tıklayın.
+7. Bir uygulama **başlığı** ekleyin ve APK uygulama paketini Ekle **' ye tıklayın** .
+8. **Oluştur**'u tıklatın.
+9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın.
+10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. 
+
+    > [!NOTE]
+    > Özel uygulamaların, eşitleme için kullanılabilir olması birkaç dakika sürebilir. Uygulama ilk kez eşitleme gerçekleştirirken görünmüyorsa, birkaç dakika bekleyip yeni bir eşitleme başlatın.
 
 SSS dahil olmak üzere yönetilen Google Play özel uygulamalar hakkında daha fazla bilgi için bkz. Google 'ın Destek makalesi: https://support.google.com/googleplay/work/answer/9146439
 
->[!NOTE]
+>[!IMPORTANT]
 >Bu yöntem kullanılarak eklenen özel uygulamalar hiçbir şekilde herkese açık hale getirilmez. Bu yayımlama seçeneğini yalnızca, bu uygulamanın kuruluşunuza her zaman özel olduğundan eminseniz kullanın.
-  
 
 ### <a name="managed-google-play-private-lob-app-publishing-using-the-google-developer-console"></a>Google Geliştirici Konsolu kullanılarak yönetilen Google Play özel (LOB) uygulama yayımlama
 
@@ -151,13 +175,17 @@ Web bağlantıları, Microsoft Edge veya dağıtmayı seçtiğiniz başka bir ta
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
-3. **Uygulama türü** açılan kutusunda **Yönetilen Google Play**'i seçin.
-4. Yönetilen Google Play kataloğunu açmak için **yönetilen Google Play-aç** ' ı seçin.
-5. Google Play kataloğunda **Web uygulamaları** ' nı seçin.
-6. Yeni bir uygulama eklemek için **"+"** düğmesine tıklayın
-7. Gerekli bilgileri girin ve ardından **Oluştur** ' a tıklayın.
-8. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın
-9. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. Özel uygulamaların eşitleme için kullanılabilir hale gelmesi birkaç dakika sürebileceğini unutmayın. İlk kez eşitleme yaptığınızda görünmezse, birkaç dakika bekleyip yeni bir eşitleme başlatın.
+3. **Uygulama türünü seçin** bölmesinde, kullanılabilir **Mağaza uygulama** türleri altında, **yönetilen Google Play uygulaması**' nı seçin.
+4. **Seçin**’e tıklayın. **Yönetilen Google Play** App Store, Intune içinde görüntülenir.
+5. Google Play penceresinde **Web Apps** ( *Dünya* simgesinin yanında) seçeneğini belirleyin.
+6. Yeni bir uygulama eklemek için sağ alt köşedeki **"+"** düğmesine tıklayın.
+7. Uygulama **başlığı**, Web uygulaması **URL 'si**ekleyin, uygulamanın nasıl görüntüleneceğini seçin ve bir uygulama simgesi seçin.
+8. **Oluştur**'u tıklatın.
+9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın.
+10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. 
+
+    > [!NOTE]
+    > Web uygulamalarının eşitleme için kullanılabilir olması birkaç dakika sürebilir. Uygulama ilk kez eşitleme gerçekleştirirken görünmüyorsa, birkaç dakika bekleyip yeni bir eşitleme başlatın.
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Yönetilen Google Play uygulamalarını Intune ile eşitleme
 

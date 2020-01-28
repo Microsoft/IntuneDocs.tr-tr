@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 239dd8630eb361da8609e3a34eb2c9346a64dab0
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907194"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755604"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Intune 'da cihaz eylemlerinin sorunlarını giderme
 
 Microsoft Intune, cihazlarınıza yardımcı olacak çok sayıda eyleme sahiptir. Bu makalede, cihaz eylemleriyle ilgili sorunları gidermenize yardımcı olabilecek bazı yaygın soruların yanıtları sağlanmaktadır.
 
-## <a name="bypass-activation-lock-action"></a>Etkinleştirme Kilidi eylemini atla
+## <a name="disable-activation-lock-action"></a>Etkinleştirme Kilidi eylemini devre dışı bırak
 
-### <a name="i-clicked-the-bypass-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Portalda "Etkinleştirme Kilidi atla" eylemine tıkladım, ancak cihazda hiçbir şey yapılmadı.
-Bu beklenmektedir. Etkinleştirme Kilidi atlama eylemini başlattıktan sonra, Intune Apple 'dan güncelleştirilmiş bir kod istedi. Cihazınız Etkinleştirme Kilidi ekranında olduktan sonra kodu geçiş kodu alanına el ile girersiniz. Bu kod yalnızca 15 gün için geçerlidir. bu nedenle, silme işlemini gerçekleştirmeden önce eyleme tıkladıktan sonra kodu kopyalamanız gerekir.
+### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Portalda "Etkinleştirme Kilidi devre dışı bırak" eylemine tıkladım, ancak cihazda hiçbir şey yapılmadı.
+Bu beklenen bir değer. Devre dışı bırakma Etkinleştirme Kilidi eylemini başlattıktan sonra, Intune Apple 'dan güncelleştirilmiş bir kod istedi. Cihazınız Etkinleştirme Kilidi ekranında olduktan sonra kodu geçiş kodu alanına el ile girersiniz. Bu kod yalnızca 15 gün için geçerlidir. bu nedenle, silme işlemini gerçekleştirmeden önce eyleme tıkladıktan sonra kodu kopyalamanız gerekir.
 
-### <a name="why-dont-i-see-the-bypass-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>İOS cihazımın donanımla genel bakış dikey penceresinde atlama Etkinleştirme Kilidi kodunu neden görmüyorum?
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>İOS cihazımın donanımla genel bakış dikey penceresinde devre dışı bırak Etkinleştirme Kilidi kodunu neden görmüyorum?
 En olası nedenler şunlardır:
 - Kodun süresi doldu ve hizmetten temizlendi.
 - Cihaz, Etkinleştirme Kilidi izin vermek için cihaz kısıtlama Ilkesiyle denetlenmiyor.
@@ -43,12 +43,12 @@ Aşağıdaki sorguyla Graph Explorer 'da kodu kontrol edebilirsiniz:
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-bypass-activation-lock-action-greyed-out-for-my-ios-device"></a>Kapatma Etkinleştirme Kilidi eylemi, iOS cihazımın neden gri renkte?
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>Etkinleştirme Kilidi devre dışı bırakma eylemi, iOS cihazım için neden gri renkte?
 En olası nedenler şunlardır: 
 - Kodun süresi doldu ve hizmetten temizlendi.
 - Cihaz, Etkinleştirme Kilidi izin vermek için cihaz kısıtlama Ilkesiyle denetlenmiyor.
 
-### <a name="is-the-bypass-activation-lock-code-case-sensitive"></a>Atlama Etkinleştirme Kilidi kodu büyük/küçük harfe duyarlıdır mi?
+### <a name="is-the-disable-activation-lock-code-case-sensitive"></a>Devre dışı bırakma Etkinleştirme Kilidi kod büyük/küçük harf duyarlı mi?
 Hayır. Ve kısa çizgileri girmeniz gerekmez.
 
 ## <a name="remove-devices-action"></a>Cihazları kaldır eylemi

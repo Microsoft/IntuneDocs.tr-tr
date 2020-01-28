@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac63ef1f35e7b4730e275c6c9e566c53463c72ce
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490513"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754805"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Microsoft Graph’ta Intune API’lerine erişmek için Azure AD kullanma
 
@@ -68,7 +68,7 @@ Uygulamaları Microsoft Graph API kullanmak üzere kaydetmek için:
     - Kiracı yönetici hesabı.
     - **Kullanıcılar uygulamaları kaydedebilir** ayarı etkin şekilde bir kiracı kullanıcı hesabı.
 
-2. Menüden **Azure Active Directory** &gt; **Uygulama Kayıtları**’nı seçin.
+2. Menüden **Azure Active Directory** &gt; **uygulama kayıtları**' nı seçin.
 
     <img src="../media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
@@ -80,7 +80,7 @@ Uygulamaları Microsoft Graph API kullanmak üzere kaydetmek için:
 
     2. **Uygulama türü** ve **Yeniden yönlendirme URI'si** değerleri.
 
-        Bunlar, gereksinimlerinize göre farklılık gösterir. Örneğin, Azure AD [Kimlik Doğrulama Kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) kullanıyorsanız **Uygulama Türü**’nü `Native` ve **Yeniden Yönlendirme URI'sini** `urn:ietf:wg:oauth:2.0:oob` olarak ayarlayın.
+        Bunlar, gereksinimlerinize göre farklılık gösterir. Örneğin, Azure AD [Kimlik Doğrulama Kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) kullanıyorsanız **Uygulama Türü**’nü `Native` ve **Yeniden Yönlendirme URI'sini**`urn:ietf:wg:oauth:2.0:oob` olarak ayarlayın.
 
         <img src="../media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
@@ -90,15 +90,15 @@ Uygulamaları Microsoft Graph API kullanmak üzere kaydetmek için:
 
     1. **Uygulama Kimliği** değerini not edin.
 
-    2. **Ayarlar** &gt; **API erişimi** &gt; **Gerekli izinler**’i seçin.
+    2. Ayarlar &gt; **API erişimi** **gerekli izinler**&gt; **ayarları** ' nı seçin.
 
     <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6. **Gerekli İzinler** dikey penceresinden, **Ekle** &gt; **API erişimi ekle** &gt; **Bir API seçin**’i belirleyin.
+6. **Gerekli izinler** dikey penceresinde **Ekle** &gt; **API erişimi ekle** ' yi seçin &gt; **bir API seçin**.
 
     <img src="../media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7. **Bir API seçin** dikey penceresinden, **Microsoft Graph** &gt; **Seçin** öğelerini belirleyin.  **Erişimi etkinleştir** dikey penceresi açılır ve uygulamanızda kullanılabilen izin kapsamları listelenir.
+7. **BIR API seçin** dikey penceresinde **Microsoft Graph** &gt; **Seç**' i seçin.  **Erişimi etkinleştir** dikey penceresi açılır ve uygulamanızda kullanılabilen izin kapsamları listelenir.
 
     <img src="../media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -208,7 +208,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 - **Erişimi Etkinleştir** ayarı: __Microsoft Intune cihazlarda kullanıcıları etkileyen uzak eylemler gerçekleştirme__
 
 - Aşağıdaki uzak eylemlere yönetilen bir cihazda izin verir:
-  - Devre dışı bırakma
+  - Devre Dışı Bırakma
   - Silme
   - Geçiş Kodu Sıfırlama/Kurtarma
   - Uzaktan Kilitleme
@@ -240,7 +240,7 @@ Tablo, ayarları Azure portalında göründükleri sırayla listeler. Aşağıda
 
 - Aşağıdaki uzak eylemlere de izin verilir:
   - Cihaz bulma
-  - Etkinleştirme kilidini atlama
+  - Etkinleştirme Kilidi devre dışı bırak
   - Uzaktan yardım isteme
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
@@ -344,7 +344,7 @@ Bu örnek, Intune hesabınızla ilişkili cihazların bir listesini almak için 
 3. Microsoft ADAL NuGet paketini projeye eklemek için Çözüm Gezgini’ni kullanın.
 
     1. Çözüm Gezgini’ne sağ tıklayın.
-    2. **NuGet Paketlerini Yönet...** ’i seçin &gt; **Gözat**.
+    2. **NuGet Paketlerini Yönet...** ’i seçin &gt; **inceleyin**.
     3. `Microsoft.IdentityModel.Clients.ActiveDirectory` seçeneğini belirleyin ve **Yükle**’yi seçin.
 
     <img src="../media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />

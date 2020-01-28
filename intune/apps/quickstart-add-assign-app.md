@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563422"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755077"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Hızlı Başlangıç: İstemci uygulaması ekleme ve atama
 
@@ -31,7 +31,7 @@ Bu hızlı başlangıçta şirketinizin iş gücüne bir istemci uygulaması ekl
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../fundamentals/free-trial-sign-up.md).
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 - Bu hızlı başlangıcı tamamlamak için [bir kullanıcı oluşturmanız](../fundamentals/quickstart-create-user.md), [bir grup oluşturmanız](../fundamentals/quickstart-create-group.md) ve [bir cihaz kaydetmeniz](../quickstart-setup-auto-enrollment.md) gerekir.
 
@@ -45,20 +45,18 @@ Intune’un uygulama görünüşünü yönetebilmesi amacıyla herhangi bir uygu
 
 Intune’a bir uygulama eklemek için aşağıdaki adımları kullanın:
 1. [Intune](https://aka.ms/intuneportal)'Da, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin. 
-2. Açılan **Uygulama türü** kutusundaki **Office 365 Paketi** bölümünde **Windows 10**’u seçin.
-3. Office uygulamalarının Intune kullanıcısına atanması için **Uygulama Paketini yapılandır**’ı seçin.
-4. Varsayılan olarak seçili uygulamaları kabul etmek için **Tamam**’a tıklayın.
-5. **Uygulama Paketi bilgileri**’ni seçin.
-6. **Paket Adı** olarak **Microsoft Office 365 uygulama paketi** yazın.
-7. **Microsoft Office 365 uygulama paketini** **paket açıklaması**olarak girin.
-8. **Şirket Portalı’nda bu uygulamayı öne çıkan uygulama olarak görüntüle** ayarını **Evet** olarak belirleyin.
-9. **Tamam**'ı tıklatın.
-
-    ![Uygulama bilgileri ekleme ekran görüntüsü](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. **Uygulama Paketi Ayarları**’nı seçin.
-11. Açılan **Güncelleştirme Kanalı** kutusunda **Aylık** seçeneğini belirleyin.
-12. **Tamam** > **Ekle**’ye tıklayın.
+2. **Uygulama türü seç** bölmesinin **Office 365 Suite** bölümünde **Windows 10** ' u seçin.
+3. **Seçin**’e tıklayın. **Uygulama ekleme** adımları görüntülenir.
+4. **Uygulama paketi bilgileri** sayfasında varsayılan ayrıntıları onaylayın.
+5. **İleri** ' ye tıklayarak **uygulama paketini Yapılandır** sayfasını görüntüleyin.
+6. **Güncelleştirme kanalı** ' nın yanındaki açılan kutudan **aylık** ' i seçin.
+7. ***Uygulama paketi yapılandırma** sayfasında kalan varsayılan ayrıntıları onaylayın.
+8. **İleri** ' ye tıklayarak **kapsam etiketleri** sayfasını görüntüleyin.
+9. İsteğe bağlı olarak uygulamanın kapsam etiketlerini eklemek için **kapsam etiketlerini Seç** ' e tıklayın. Daha fazla bilgi için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanma](~/fundamentals/scope-tags.md).
+10. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.
+11. Uygulama için Grup atamalarını seçin. Daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](~/fundamentals/groups-add.md). 
+12. **İleri** ' ye tıklayarak **gözden geçir + oluştur** sayfasını görüntüleyin. Uygulama için girdiğiniz değerleri ve ayarları gözden geçirin.
+13. İşiniz bittiğinde, uygulamayı Intune 'a eklemek için **Oluştur** ' a tıklayın.
 
 ## <a name="assign-the-app-to-a-group"></a>Uygulamayı bir gruba atama
 

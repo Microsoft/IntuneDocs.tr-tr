@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188461"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755702"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online ayrılmış için koşullu erişim ilkesi oluşturma
 
@@ -37,7 +37,7 @@ Koşullu erişimi yapılandırmadan önce, aşağıdaki yapılandırmaların mev
 
 - Exchange sürümünüz **exchange 2010 SP1 veya sonraki**bir sürümü. Exchange Server İstemci Erişimi Sunucusu (CAS) dizisi desteklenir.
 
-- Intune 'u şirket içi Exchange 'e bağlayan [Şirket Içi Exchange bağlayıcısını Exchange Active Sync](exchange-connector-install.md)yüklediniz ve kullanıyorsunuz.
+- Intune 'u şirket içi Exchange 'e bağlayan [Exchange ActiveSync şirket Içi Exchange bağlayıcısını](exchange-connector-install.md)yüklediniz ve kullanıyorsunuz.
 
     >[!IMPORTANT]  
     >Intune abonelik başına birden çok şirket içi Exchange bağlayıcısını destekler.  Ancak, her bir şirket içi Exchange Bağlayıcısı tek bir Intune kiracısına özeldir ve başka hiçbir kiracıyla kullanılamaz.  Birden çok şirket içi Exchange kuruluşunuz varsa, her Exchange kuruluşu için ayrı bağlayıcılar ayarlayabilirsiniz.
@@ -84,40 +84,57 @@ Windows 8.1 ve sonraki sürümlerde yerel **posta** uygulaması (ıNTUNE ile MDM
 
 3. Şirket içi **Exchange erişimi** bölmesinde, Şirket *içi Exchange erişim denetimini etkinleştirmek*için **Evet** ' i seçin.
 
+   > [!div class="mx-imgBorder"]
+   > Şirket içi Exchange erişimi ekranının örnek ekran görüntüsünü ![](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. **Atama**altında, **dahil edilecek grupları seç**' i seçin ve ardından erişimi yapılandırmak için bir veya daha fazla grup seçin.
 
    Seçtiğiniz grupların üyelerine, şirket içi Exchange erişimi için koşullu erişim ilkesi uygulanır. Bu ilkeyi alan kullanıcıların şirket içi Exchange 'e erişebilmesi için cihazlarını Intune 'A kaydetmesi ve uyumluluk profilleriyle uyumlu olmaları gerekir.
 
-5. Grupları dışlamak için, **hariç tutulacak grupları seç**' i seçin ve ardından cihazları kaydetmek ve şirket içi Exchange 'e erişmeden önce uyumluluk profilleriyle uyumlu olmak için gereksinimlerden muaf tutulan bir veya daha fazla grup seçin. 
+   > [!div class="mx-imgBorder"]
+   > ![eklenecek grupları seçin](./media/conditional-access-exchange-create/select-groups.png)
 
-6. Ardından, Intune şirket içi Exchange Connector ayarlarını yapılandırın.  Şirket *Içi Exchange erişimi* penceresinde **Kurulum** altında **Exchange ActiveSync şirket içi Bağlayıcısı** ' nı seçin ve ardından yapılandırmak istediğiniz Exchange kuruluşunun bağlayıcısını seçin.
+5. Grupları dışlamak için, **hariç tutulacak grupları seç**' i seçin ve ardından cihazları kaydetmek ve şirket içi Exchange 'e erişmeden önce uyumluluk profilleriyle uyumlu olmak için gereksinimlerden muaf tutulan bir veya daha fazla grup seçin.
 
-7. **Ayarlar**altında **Kullanıcı bildirimleri** ' ni seçerek, cihazları uyumlu olmayan ve şirket içi Exchange 'e erişmek istedikleri kullanıcılara gönderilen varsayılan e-posta iletisini değiştirin. İleti şablonunda Biçimlendirme dili kullanılır.  Ayrıca yazarken iletinin nasıl görüneceğini gösteren bir önizleme de görebilirsiniz.
+   Yapılandırmanızı kaydetmek için **Kaydet** ' i seçin ve **Exchange erişimi** bölmesine dönün.
+
+6. Ardından, Intune şirket içi Exchange Connector ayarlarını yapılandırın. Konsolunda, **kiracı yönetimi** > exchange **Access**> **Exchange ActiveSync şirket içi Bağlayıcısı** ' nı seçin ve ardından yapılandırmak istediğiniz Exchange kuruluşunun bağlayıcısını seçin.
+
+7. **Kullanıcı bildirimleri**Için, *Kullanıcı bildirim* iletisini değiştirebileceğiniz kuruluş iş akışını **Düzenle** ' yi açmak için **Düzenle** ' yi seçin.
+
+   > [!div class="mx-imgBorder"]
+   > bildirim için kuruluş iş akışını Düzenle](./media/conditional-access-exchange-create/edit-organization-user-notification.png) örnek ekran görüntüsünü ![
+
+   Cihazları uyumlu olmayan ve şirket içi Exchange 'e erişmek istedikleri durumlarda kullanıcılara gönderilen varsayılan e-posta iletisini değiştirin. İleti şablonunda Biçimlendirme dili kullanılır. Ayrıca, iletinin yazarken nasıl görüneceğine ilişkin önizlemeyi görebilirsiniz
+
+   **Gözden geçir + kaydet**' i seçin **ve ardından değişikliklerinizi kaydederek Exchange** şirket içi erişimi yapılandırmasını tamamladıktan sonra değişikliklerinizi kaydedin.
+
    > [!TIP]
    > Biçimlendirme dili hakkında daha fazla bilgi edinmek için bu Wikipedia [makalesine](https://en.wikipedia.org/wiki/Markup_language) bakın.
- 
-   Exchange şirket içi erişimi yapılandırmasını tamamladıktan sonra düzenlemelerinizi kaydetmek için **Tamam ' ı** seçin.
 
-8. Ardından, **gelişmiş Exchange Active Sync erişim ayarları** ' nı seçerek cihaz erişim kurallarını yapılandırdığınız *Gelişmiş Exchange ActiveSync erişim ayarları* bölmesini açın:  
+8. Ardından, **Gelişmiş Exchange ActiveSync erişim ayarları** ' nı seçerek cihaz erişim kurallarını yapılandırdığınız *Gelişmiş Exchange ActiveSync erişim ayarları* iş akışını açın.
+
+   > [!div class="mx-imgBorder"]
+   > Gelişmiş ayarlar için kuruluş iş akışını Düzenle ' nin örnek ekran görüntüsünü ![](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - **Yönetilmeyen cihaz erişimi**Için, koşullu erişim veya diğer kurallardan etkilenmeyen cihazlardan erişim için genel varsayılan kuralı ayarlayın:
 
      - **Erişime Izin ver** -tüm cihazlar şirket içi Exchange 'e hemen erişebilir. Önceki yordamda dahil olarak yapılandırdığınız gruplardaki kullanıcılara ait olan cihazlar, daha sonra uyumlu ilkelerle uyumlu değil veya Intune 'A kayıtlı değil olarak değerlendiriliyorsa engellenir.
 
-     - **Erişimi engelle** ve **karantinaya al** – tüm cihazların başlangıçta şirket içi Exchange 'e erişimi hemen engellenir. Önceki yordamda dahil olarak yapılandırdığınız gruplardaki kullanıcılara ait cihazlar, cihazın Intune 'A kaydolur ve uyumlu olarak değerlendirilmesinden sonra erişim sağlar. 
+     - **Erişimi engelle** ve **karantinaya al** – tüm cihazların başlangıçta şirket içi Exchange 'e erişimi hemen engellenir. Önceki yordamda dahil olarak yapılandırdığınız gruplardaki kullanıcılara ait cihazlar, cihazın Intune 'A kaydolur ve uyumlu olarak değerlendirilmesinden sonra erişim sağlar.
 
        Samsung KNOX Standard *çalıştırmayan Android* cihazlar bu ayarı desteklemez ve her zaman engellenir.
 
-   -  **Cihaz platformu özel durumları**Için, **Ekle**' yi seçin ve ardından ortamınız için gereken platform ayrıntılarını belirtin. 
-   
+   - **Cihaz platformu özel durumları**Için, **Ekle**' yi seçin ve ardından ortamınız için gereken ayrıntıları belirtin.
+
       **Yönetilmeyen cihaz erişimi** ayarı **engellendi**olarak ayarlandıysa, bunları engellemek için bir platform özel durumu olsa bile, kayıtlı ve uyumlu cihazlara izin verilir.  
-   
-   Düzenlemelerinizi kaydetmek için **Tamam ' ı** seçin.
 
-9. Exchange koşullu erişim ilkesini kaydetmek için **Kaydet** ' i seçin.
+9. Düzenlemelerinizi kaydetmek için **Tamam ' ı** seçin.
 
-Ardından, bir uyumluluk ilkesi oluşturun ve Intune 'un mobil cihazlarını değerlendirmesi için kullanıcılara atayın, bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
+10. **Gözden geçir + kaydet**' i seçin ve ardından **Kaydet** ' i seçerek Exchange koşullu erişim ilkesini kaydedin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
+Ardından, bir uyumluluk ilkesi oluşturun ve Intune 'un mobil cihazlarını değerlendirmesi için kullanıcılara atayın, bkz. [Cihaz uyumluluğunu kullanmaya başlama](device-compliance-get-started.md).
 
 [Microsoft Intune 'de Intune şirket içi Exchange Connector sorunlarını giderme](https://support.microsoft.com/help/4471887)

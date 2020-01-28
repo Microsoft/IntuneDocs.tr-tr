@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 471eb35cb7b96166aaacfbe1ce0ee36cfa06e9c0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502360"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755587"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Cihazları Microsoft Intune ile koruma
 
@@ -59,8 +59,8 @@ Intune, uygulamaları ve bunların verilerini korumanıza yardımcı olmak için
 ## <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Windows cihazlarda İş İçin Windows Hello ayarlarını denetleme
 Intune, Windows 10 için alternatif bir oturum açma yöntemi olan [İş İçin Windows Hello](windows-hello.md)’yu tümleştirmenizi sağlar ve daha sonra bu, bir parola, akıllı kart veya sanal akıllı kartı değiştirmek için Active Directory veya Azure Active Directory hesabı kullanır.
 
-## <a name="bypass-activation-lock-on-ios-devices"></a>iOS’de Etkinleştirme Kilidini Atlama
-Etkinleştirme Kilidi kullanıcıların cihazlarını korumaya yardımcı olan bir özelliktir. Bu özellik, herhangi birinin cihazı silmesi veya yeniden etkinleştirmesi için kullanıcıların Apple kimliğini veya parolasını girmesini ister. Ancak bu özellik, örneğin kullanıcının kilidi kaldırmadan şirketten ayrılması durumunda sorunlara yol açabilir. [iOS Etkinleştirme Kilidi atlama](../remote-actions/device-activation-lock-bypass.md), denetimli iOS cihazlarından kilidi kaldırarak bu cihazları yeniden kullanıma almanıza veya silmenize yardımcı olabilir.
+## <a name="disable-activation-lock-on-ios-devices"></a>İOS cihazlarında Etkinleştirme Kilidi devre dışı bırak
+Etkinleştirme Kilidi kullanıcıların cihazlarını korumaya yardımcı olan bir özelliktir. Bu özellik, herhangi birinin cihazı silmesi veya yeniden etkinleştirmesi için kullanıcıların Apple kimliğini veya parolasını girmesini ister. Ancak bu özellik, örneğin kullanıcının kilidi kaldırmadan şirketten ayrılması durumunda sorunlara yol açabilir. [İos etkinleştirme kilidi devre dışı bırakma](../remote-actions/device-activation-lock-disable.md) , denetimli iOS cihazlarından kilit kaldırarak bunları yeniden ayırmanız veya silmeniz için yardımcı olabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

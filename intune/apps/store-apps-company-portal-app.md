@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93570bc9dab20801ea6681f6a142de62990a1c57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712959"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755043"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme
 
@@ -56,7 +56,7 @@ Kullanıcılarınız, cihaz yönetmek ve uygulama yüklemek için Intune Şirket
     Bu eylemin x86, x64 ve ARM mimarileri için tamamlanması gerekir:<br> 
     *En düşük işletim sistemi sürümü olarak 1507 ' i seçerken, 1511 ' i seçerken 12 paket ve 1607 seçilirken 15 paket olan 9 gerekli çerçeve paketi vardır.*
 
-8. Azure portalında Microsoft Intune’da Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulama **Ekle** bölmesinde Uygulama **türü** olarak iş kolu uygulaması ' nı seçerek uygulamayı eklersiniz. Ardından uygulama paketi dosyasını (uzantısı) seçersiniz. Appxdemeti).
+8. Azure portalında Microsoft Intune’da Şirket Portalı uygulamasını yeni bir uygulama olarak karşıya yükleyin. Uygulamayı, uygulama **türü seç** bölmesinde **uygulama türü** olarak iş kolu uygulaması ' nı seçerek eklersiniz. Ardından uygulama paketi dosyasını (uzantısı) seçersiniz. Appxdemeti).
 
 9. **Bağımlılık uygulama dosyalarını Seç** ' in altında, adım 7 ' de indirdiğiniz tüm bağımlılıkları Shift tuşuna basarak seçin ve **eklenen** sütunun, ihtiyacınız olan mimarilere göre **Evet** görüntülendiğini doğrulayın.
 

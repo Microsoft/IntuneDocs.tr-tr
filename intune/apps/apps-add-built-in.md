@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563595"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755383"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune’a yerleşik uygulama ekleme
 
@@ -39,32 +39,43 @@ Intune konsolunun önceki sürümlerinde Intune, Outlook ve OneDrive gibi varsay
 Microsoft Intune’da mümkün olan uygulamalara yerleşik uygulama eklemek için şunları yapın:
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
-3. Uygulama **Ekle** bölmesindeki **Uygulama türü** listesinde **Yerleşik uygulama**’yı seçin.
-4. **Uygulama seç**’e tıklayın.
-5. **Yerleşik uygulama** bölmesinde dahil etmek istediğiniz uygulamaları seçin.
-6. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.
+3. **Uygulama türünü seçin** bölmesinde, kullanılabilir **Mağaza uygulama** türleri altında **yerleşik uygulama**' yı seçin.
+4. **Seçin**’e tıklayın. **Uygulama ekleme** adımları görüntülenir.
+5. **Yerleşik uygulamaları seçin** sayfasında, dahil etmek istediğiniz uygulamaları seçmek Için **Uygulama Seç** ' e tıklayın.
+6. Dahil etmek istediğiniz yerleşik uygulamaları seçin. 
+7. Uygulamaları seçtikten sonra, **yerleşik uygulamalar** ' ı seçin bölmesinde **Seç** ' e tıklayın.
+8. **İleri** ' ye tıklayarak **kapsam etiketleri** sayfasını görüntüleyin.
+9. İsteğe bağlı olarak uygulamanın kapsam etiketlerini eklemek için **kapsam etiketlerini Seç** ' e tıklayın. Daha fazla bilgi için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanma](~/fundamentals/scope-tags.md).
+10. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.
+11. Uygulama için Grup atamalarını seçin. Daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](~/fundamentals/groups-add.md). 
+12. **İleri** ' ye tıklayarak **gözden geçir + oluştur** sayfasını görüntüleyin. Uygulama için girdiğiniz değerleri ve ayarları gözden geçirin.
+13. İşiniz bittiğinde, uygulamayı Intune 'a eklemek için **Oluştur** ' a tıklayın.
 
+    Oluşturduğunuz uygulamanın **genel bakış** dikey penceresi görüntülenir.
 
 ## <a name="configure-app-information"></a>Uygulama bilgilerini yapılandırma
 
 Yerleşik uygulama hakkındaki bilgileri değiştirebilirsiniz. Bu bilgiler, uygulamayı Intune’da bulmanıza yardımcı olur ve kullanıcıların uygulamayı Şirket Portalı’nda bulması kolaylaşır.
 1. **Tüm uygulamalar** > **uygulamalar** ' ı seçin ve değiştirmek istediğiniz yerleşik uygulamayı seçin.  
    Yerleşik uygulamaya ait bir bölme görüntülenecektir.
-2. **Yapılandır** > **Özellikler** ' i seçin.
+2. **Özellikler**' i seçin.
+3. **Uygulama bilgileri**' nin yanındaki **Düzenle** ' yi seçin.
 4. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri değiştirebilirsiniz:
     - **Ad**: Yerleşik uygulamanın Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm adların benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
     - **Açıklama**: Uygulama için bir açıklama girin. 
     - **Yayımcı**: Uygulama yayımcısının adını girin.
     - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden birini seçin. Bu seçeneği ayarladığınızda, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
+    - **Bunu şirket portalı 'nda öne çıkan bir uygulama olarak göster**: kullanıcılar uygulamalara gözatarken, uygulamayı şirket portalının ana sayfasında göze çarpacak şekilde görüntüleyin.
     - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
     - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin (örneğin *İK departmanı*).
     - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Simge Yükle**: Kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenecek bir simge yükleyin.
-4. **Tamam**’ı seçin.
-5. **Özellikler** bölmesinde **Kaydet**’i seçin.
+5. Gözden geçir + **Kaydet** ' e tıklayarak **İnceleme + oluştur** sayfasını görüntüleyin. Uygulama için girdiğiniz değerleri ve ayarları gözden geçirin.
+13. İşiniz bittiğinde, uygulamayı Intune 'da güncelleştirmek için **Kaydet** ' e tıklayın.
+
+    Oluşturduğunuz uygulamanın **genel bakış** dikey penceresi görüntülenir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

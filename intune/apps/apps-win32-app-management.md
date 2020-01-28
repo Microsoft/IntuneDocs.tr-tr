@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2020
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
-ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
+ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622531"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755298"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Tek başına Intune-Win32 uygulama yönetimi
 
@@ -57,7 +57,7 @@ GitHub 'dan [Microsoft Win32 Içerik hazırlığı aracını](https://go.microso
 
 ### <a name="process-flow-to-create-intunewin-file"></a>. Intunewin dosyası oluşturmak için işlem akışı
 
-   ![. Intunewin dosyası oluşturmak için işlem akışı](./media/apps-win32-app-management/prepare-win32-app.svg)
+   <img alt="Process flow to create a .intunewin file" src="./media/apps-win32-app-management/prepare-win32-app.svg" width="700">
 
 ### <a name="run-the-microsoft-win32-content-prep-tool"></a>Microsoft Win32 Içerik hazırlığı aracını çalıştırma
 
@@ -99,110 +99,116 @@ Komut penceresinden parametre olmadan `IntuneWinAppUtil.exe` çalıştırırsan�
 
 Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olacak yönergeler sağlar.
 
-### <a name="step-1-specify-the-software-setup-file"></a>1\. Adım: Yazılım kurulum dosyasını belirtme
-
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-3. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
-4. Uygulama **Ekle** bölmesinde, belirtilen açılan listeden **Windows uygulaması (Win32)** öğesini seçin.
-
-    ![Uygulama Ekle bölmesindeki ekran görüntüsü-tür Ekle açılan kutusu](./media/apps-win32-app-management/apps-win32-app-01.png)
-
-### <a name="step-2-upload-the-app-package-file"></a>2\. Adım: Uygulama paketi dosyasını karşıya yükleme
-
-1. **Uygulama ekle** bölmesinde dosya seçmek için **Uygulama paketi dosyası**’nı seçin. Uygulama paketi dosyası bölmesi görüntülenir.
-
-    ![Uygulama paketi dosya bölmesinin ekran görüntüsü](./media/apps-win32-app-management/apps-win32-app-02.png)
-
-2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra *.intunewin* uzantılı bir Windows yükleme dosyası seçin.
+2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
+3. **Uygulama türünü seçin** bölmesinde, **diğer** uygulama türleri altında **Windows uygulaması (Win32)** öğesini seçin.
 
     > [!IMPORTANT]
     > Microsoft Win32 Içerik hazırlığı aracının en son sürümünü kullandığınızdan emin olun. En son sürümü kullanmıyorsanız, uygulamanın Microsoft Win32 Içerik hazırlığı aracının daha eski bir sürümü kullanılarak paketlenmediğini belirten bir uyarı görürsünüz. 
 
-3. İşiniz bittiğinde **Tamam**’a tıklayın.
+4. **Seçin**’e tıklayın. **Uygulama ekleme** adımları görüntülenir.
 
-### <a name="step-3-configure-app-information"></a>3\. Adım: Uygulama bilgilerini yapılandırma
+## <a name="step-1---app-information"></a>1\. adım-uygulama bilgileri
 
-1. Uygulamayı yapılandırmak için **Uygulama ekle** bölmesinde **Uygulama bilgileri**’ni seçin.
-2. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
-    - **Ad**: Uygulamanın Şirket Portalı’nda görünen adını girin. Aynı uygulama adı iki kez kullanılmışsa, iki uygulama da Şirket Portalı’nda görüntülenir.
-    - **Açıklama**: Uygulama için bir açıklama girin. Açıklama, Şirket Portalı’nda görünür.
+### <a name="select-the-app-package-file"></a>Uygulama paketi dosyasını seçin
+
+1. **Uygulama Ekle** bölmesinde **uygulama paketi dosyası seç**' e tıklayın. 
+2. **Uygulama paket dosyası** bölmesinde gözat düğmesini seçin. Daha sonra *.intunewin* uzantılı bir Windows yükleme dosyası seçin.
+   Uygulama ayrıntıları görüntülenir.
+3. İşiniz bittiğinde, **uygulama paketi dosyası** bölmesinde **Tamam** ' ı seçin.
+
+### <a name="set-app-information"></a>Uygulama bilgilerini ayarla
+
+1. **Uygulama bilgileri** sayfasında uygulamanızın ayrıntılarını ekleyin. Seçtiğiniz uygulamaya bağlı olarak bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
+    - **Ad**: Uygulamanın Şirket Portalı’nda görünen adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri Şirket Portalı’nda kullanıcılara görüntülenir.
+    - **Açıklama**: Uygulama açıklamasını girin. Açıklama, Şirket Portalı’nda görünür.
     - **Yayımcı**: Uygulama yayımcısının adını girin.
-    - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Kullanıcılar uygulamalara göz atarken bu uygulamayı Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüleyin.
+    - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
+    - **Bunu şirket portalı öne çıkan uygulama olarak göster**: kullanıcılar uygulamalara gözatarken, uygulamayı şirket portalının ana sayfasında göze çarpacak şekilde görüntüleyin.
     - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL Şirket Portalı’nda görünür.
     - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL Şirket Portalı’nda görünür.
     - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
     - **Sahip**: İsteğe bağlı olarak uygulama sahibinin adını girin. Örneğin **İK departmanı**.
     - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
-    - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na gözatarken uygulamayla birlikte görüntülenir.
-3. İşiniz bittiğinde **Tamam**’a tıklayın.
+    - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na göz atarken uygulamayla birlikte görüntülenir.
+2. **İleri** ' ye tıklayarak **Program** sayfasını görüntüleyin.
 
-### <a name="step-4-configure-app-installation-details"></a>4\. Adım: Uygulama yükleme ayrıntılarını yapılandırma
-1. **Uygulama ekle** bölmesinde, uygulamanın yükleme ve kaldırma komutlarını yapılandırmak için **Program**'ı seçin.
-2. **Install komutunu**yapılandırmak için, uygulamayı yüklemek üzere yükleme komut satırını tamamen ekleyin. 
+## <a name="step-2-program"></a>2\. Adım: program
 
-    Örneğin, uygulamanızın dosya adı **MyApp123**ise aşağıdakini ekleyin:<br>
-    `msiexec /p “MyApp123.msp”`<p>
-    Uygulama `ApplicationName.exe`ise, komut uygulamanın adı ve paket tarafından desteklenen komut bağımsız değişkenleri (anahtarlar) gelir. <br>Örneğin:<br>
-    `ApplicationName.exe /quiet`<br>
-    Yukarıdaki komutta, `ApplicationName.exe` paketi `/quiet` komut bağımsız değişkenini destekler.<p> 
-    Uygulama paketi tarafından desteklenen belirli bağımsız değişkenler için uygulama satıcınıza başvurun.
+1. **Program** sayfasında, uygulama için uygulama yükleme ve kaldırma komutlarını yapılandırın:
+    - **Yükleme komutu**: uygulamayı yüklemek için yükleme komut satırını tamamen ekleyin. 
 
-3. **Kaldırma komutunu**yapılandırmak için uygulamayı uygulamanın GUID 'ine göre kaldırmak üzere kaldırma komut satırını tamamen ekleyin. 
+        Örneğin, uygulamanızın dosya adı **MyApp123**ise aşağıdakini ekleyin:<br>
+        `msiexec /p “MyApp123.msp”`<p>
+        Uygulama `ApplicationName.exe`ise, komut uygulamanın adı ve paket tarafından desteklenen komut bağımsız değişkenleri (anahtarlar) gelir. <br>Örneğin:<br>
+        `ApplicationName.exe /quiet`<br>
+        Yukarıdaki komutta, `ApplicationName.exe` paketi `/quiet` komut bağımsız değişkenini destekler.<p> 
+        Uygulama paketi tarafından desteklenen belirli bağımsız değişkenler için uygulama satıcınıza başvurun.
 
-    Örneğin: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    - **Kaldır komutu**: uygulamayı uygulamanın GUID 'ine göre kaldırmak için kaldırma komut satırını tamamen ekleyin. 
 
-4. **Install davranışını** **sistem** veya **Kullanıcı**olarak ayarlayın.
+        Örneğin: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
-    > [!NOTE]
-    > Bir Win32 uygulamasını **Kullanıcı** veya **Sistem** bağlamında yüklenecek şekilde yapılandırabilirsiniz. **Kullanıcı** bağlamı yalnızca belirli bir kullanıcıyı ifade eder. **Sistem** bağlamı bir Windows 10 cihazın tüm kullanıcılarını ifade eder.
-    >
-    > Son kullanıcıların Win32 uygulamalarını yüklemek için cihazda oturum açmış olmaları gerekmez.
-    > 
-    > Win32 uygulaması yükleme ve kaldırma, uygulama kullanıcı bağlamında yüklenmek üzere ayarlandığında ve cihazdaki son kullanıcının yönetici ayrıcalıklarına sahip olması durumunda yönetici ayrıcalıkları altında (varsayılan olarak) yürütülür.
+    - **Davranışı yükler**: Install davranışını **sistem** veya **Kullanıcı**olarak ayarlayın.
 
-5. **Cihaz yeniden başlatma davranışını**yapılandırmak için aşağıdaki seçeneklerden birini seçin:
-    - **Dönüş kodlarına dayalı davranışı belirle**: [geri dönüş kodları](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes) yapılandırma ayarlarına bağlı olarak cihazı yeniden başlatmak için bu seçeneği belirleyin.
-    - **Belirli bir eylem yok**: MSI tabanlı uygulamaların uygulama yüklemesi sırasında cihaz yeniden başlatmalarının görüntülenmesini sağlamak için bu seçeneği belirleyin.
-    - **Uygulama yükleme bir cihazın yeniden başlatılmasını zorlayabilir**: uygulama yüklemesinin yeniden başlatmalar olmadan tamamlanmasına izin vermek için bu seçeneği belirleyin.
-    - **Intune zorunlu bir cihaz yeniden başlatmaya zorlayacaktır**: başarılı bir uygulama yüklemesinden sonra cihazı her zaman yeniden başlatmak için bu seçeneği belirleyin.
+        > [!NOTE]
+        > Bir Win32 uygulamasını **Kullanıcı** veya **Sistem** bağlamında yüklenecek şekilde yapılandırabilirsiniz. **Kullanıcı** bağlamı yalnızca belirli bir kullanıcıyı ifade eder. **Sistem** bağlamı bir Windows 10 cihazın tüm kullanıcılarını ifade eder.
+        >
+        > Son kullanıcıların Win32 uygulamalarını yüklemek için cihazda oturum açmış olmaları gerekmez.
+        > 
+        > Win32 uygulaması yükleme ve kaldırma, uygulama kullanıcı bağlamında yüklenmek üzere ayarlandığında ve cihazdaki son kullanıcının yönetici ayrıcalıklarına sahip olması durumunda yönetici ayrıcalıkları altında (varsayılan olarak) yürütülür.
+    
+    - **Cihaz yeniden başlatma davranışı**: aşağıdaki seçeneklerden birini belirleyin:
+        - **Dönüş kodlarına dayalı davranışı belirleme**: cihazı dönüş kodlarına göre yeniden başlatmak için bu seçeneği belirleyin.
+        - **Belirli bir eylem yok**: MSI tabanlı uygulamaların uygulama yüklemesi sırasında cihaz yeniden başlatmalarının görüntülenmesini sağlamak için bu seçeneği belirleyin.
+        - **Uygulama yükleme bir cihazın yeniden başlatılmasını zorlayabilir**: uygulama yüklemesinin yeniden başlatmalar olmadan tamamlanmasına izin vermek için bu seçeneği belirleyin.
+        - **Intune zorunlu bir cihaz yeniden başlatmaya zorlayacaktır**: başarılı bir uygulama yüklemesinden sonra cihazı her zaman yeniden başlatmak için bu seçeneği belirleyin.
 
-6. İşiniz bittiğinde **Tamam**’a tıklayın.
+    - **Yükleme sonrası davranışı belirtmek için dönüş kodlarını belirtin**: uygulama yükleme yeniden deneme davranışını veya yükleme sonrası davranışını belirtmek için kullanılan dönüş kodlarını ekleyin. Dönüş kodu girdileri varsayılan olarak uygulama oluşturma işlemi sırasında eklenir. Bununla birlikte, başka dönüş kodları ekleyebilir veya mevcut dönüş kodlarını değiştirebilirsiniz.
+        1. **Kod türü** sütununda, **kod türünü** aşağıdakilerden birine ayarlayın:
+            - **Failed** : bir uygulama yükleme hatasını gösteren dönüş değeri.
+            - **Donanımdan önyükleme** – Donanımdan önyükleme dönüş kodu, istemcide önyükleme yapılmadan sonraki Win32 uygulamalarının yüklenmesine izin vermez. 
+            - **Yazılımdan önyükleme** – Yazılımdan önyükleme dönüş kodu, istemci önyüklemesine gerek kalmadan sonraki Win32 uygulamasının yüklenmesine izin verir. Geçerli uygulamanın yüklemesini tamamlamak için önyükleme gereklidir.
+            - **Yeniden deneme** – Yeniden deneme dönüş koduyla aracı uygulamayı yüklemeyi üç kez dener. Her denemeden sonra 5 dakika bekler. 
+            - **Başarılı** – Uygulamanın başarıyla yüklendiğini belirten dönüş kodu.
+        2. Gerekirse, ek dönüş kodları eklemek için **Ekle** ' ye tıklayın veya varolan dönüş kodlarını değiştirin.
+2. **İleri** ' ye tıklayarak **gereksinimler** sayfasını görüntüleyin.        
 
-### <a name="step-5-configure-app-requirements"></a>5\. Adım: Uygulama gereksinimlerini yapılandırma
+## <a name="step-3-requirements"></a>3\. Adım: gereksinimler
 
-1. **Uygulama ekle** bölmesinde, uygulamayı yüklemeden önce cihazların karşılaması gereken gereksinimleri yapılandırmak için **Gereksinimler**'i seçin.
-2. **Gereksinim kuralı ekle** bölmesinde aşağıdaki bilgileri yapılandırın. Bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
+1. **Gereksinimler** sayfasında, uygulama yüklenmeden önce cihazların karşılaması gereken gereksinimleri belirtin:
     - **İşletim sistemi mimarisi**: Uygulamayı yüklemek için gereken mimarileri seçin.
     - **Minimum işletim sistemi**: Uygulamayı yüklemek için gereken minimum işletim sistemini seçin.
     - **Gerekli disk alanı (MB)** : İsteğe bağlı olarak, uygulamayı yüklemek için sistem sürücüsünde gereken boş disk alanını ekleyin.
     - **Gerekli fiziksel bellek (MB)** : İsteğe bağlı olarak, uygulamayı yüklemek için gereken fiziksel belleği (RAM) ekleyin.
     - **Gereken en düşük mantıksal işlemci sayısı**: İsteğe bağlı olarak, uygulamayı yüklemek için gereken en düşük mantıksal işlemci sayısını ekleyin.
     - **Gereken en düşük CPU hızı (MHz)** : İsteğe bağlı olarak, uygulamayı yüklemek için gereken en düşük CPU hızını ekleyin.
+    - **Ek gereksinim kurallarını yapılandırın**: 
+        1. **Gereksinim kuralı ekle** bölmesini göstermek ve ek gereksinim kurallarını yapılandırmak için **Ekle** ' ye tıklayın. Gereksinimin nasıl doğrulanacağını belirlemek için kullanacağınız kural türünü seçmek için **gereksinim türünü** seçin. Gereksinim kuralları dosya sistemi bilgilerini, kayıt defteri değerlerini veya PowerShell komut dosyalarını temel alabilir. 
+            - **Dosya**: **Gereksinim türü**olarak **Dosya** ' yı seçtiğinizde, gereksinim kuralı bir dosya veya klasör, tarih, sürüm veya boyut algılamamalıdır. 
+                - **Yol** – Algılanacak dosya veya klasörün bulunduğu klasörün tam yolu.
+                - **Dosya veya klasör** - Algılanacak dosya veya klasör.
+                - **Özellik** : uygulamanın varlığını doğrulamak için kullanılan kural türünü seçin.
+                - **64 bit istemciler üzerinde bir 32 bit uygulamayla ilişkilendirildi** - Tüm yol ortam değişkenlerini 64 bit istemciler üzerinde 32 bit bağlamında genişletmek için **Evet**'i seçin. Tüm yol değişkenlerini 64 bit istemciler üzerinde 64 bit bağlamında genişletmek için **Hayır**'ı (varsayılan) seçin. 32 bit istemciler her zaman 32 bit bağlamını kullanır.
+            - **Kayıt defteri**: **Gereksinim türü**olarak **kayıt defteri** ' ni seçtiğinizde, gereksinim kuralı değer, dize, tamsayı veya sürüme göre bir kayıt defteri ayarı tespit etmelidir.
+                - **Anahtar yolu** – Algılanacak değerin bulunduğu kayıt defteri girdisinin tam yolu.
+                - **Değer adı** - Algılanacak kayıt defteri değerinin adı. Bu değer boşsa algılama anahtarda gerçekleştirilir. Algılama yöntemi dosya veya klasör varlığından farklı bir yöntemse, algılama değeri olarak anahtarın (varsayılan) değeri kullanılır.
+                - **Kayıt defteri anahtarı gereksinimi** – gereksinim kuralının nasıl doğrulanacağını belirlemek için kullanılan kayıt defteri anahtarı karşılaştırma türünü seçin.
+                - **64 bit istemciler üzerinde bir 32 bit uygulamayla ilişkilendirildi** - 64 bit istemcilerde 32 bit kayıt defterinde arama yapmak için **Evet**'i seçin. 64 bit istemcilerde 64 bit kayıt defterinde arama yapmak için **Hayır**'ı (varsayılan) seçin. 32 bit istemcilerde her zaman 32 bit kayıt defterinde arama yapılır.
+            - **Komut dosyası**: Intune konsolunda kullanabileceğiniz dosya, kayıt defteri veya başka bir yöntemi temel alan bir gereksinim kuralı oluştur, **Gereksinim türü**olarak **komut dosyasını** seçin.
+                - **Betik dosyası** – PowerShell betiği tabanlı gereksinim kuralı için, var olan kod 0 Ise, stdout 'ı daha ayrıntılı olarak algılayacağız. Örneğin, STDOUT değerini 1 değeri olan bir tamsayı olarak tespit edebilirsiniz.
+                - **Komut dosyasını 64 bit istemcilerde 32 bitlik işlem olarak çalıştır** -betiği, 64 bit istemcilerde bir 32 bit işlemde çalıştırmak için **Evet** ' i seçin. Komut dosyasını 64 bit istemcilerde 64 bitlik bir işlemde çalıştırmak için **Hayır** (varsayılan) seçeneğini belirleyin. 32 bitlik istemciler betiği 32 bit bir işlemde çalıştırır.
+                - **Bu betiği oturum açmış oturum açma kimlik bilgilerini kullanarak Çalıştır**: komut dosyasını oturum açan cihaz kimlik bilgilerini * * kullanarak çalıştırmak için **Evet** ' i seçin.
+                - **Betik imzası denetimini zorla** - Betiğin güvenilen bir yayımcı tarafından imzalandığını doğrulamak için **Evet**'i seçin. Bu doğrulama betiğin hiçbir uyarı veya istem gösterilmeden çalıştırılmasına olanak tanır. Betik engellenmeden çalıştırılır. Betiği imza doğrulaması yapılmadan son kullanıcının onayıyla çalıştırmak için **Hayır**'ı (varsayılan) seçin.
+                - **Çıkış verisi türünü seçin**: bir gereksinim kuralı eşleşmesi belirlenirken kullanılan veri türünü seçin.
+        2. Gereksinim kurallarını ayarlamayı tamamladığınızda **Tamam**' ı seçin.
+2. **İleri** ' ye tıklayarak **algılama kuralları** sayfasını görüntüleyin.   
 
-3. **Gereksinim kuralı ekle** bölmesini göstermek ve ek gereksinim kurallarını yapılandırmak için **Ekle** ' ye tıklayın. Gereksinimin nasıl doğrulanacağını belirlemek için kullanacağınız kural türünü seçmek için **gereksinim türünü** seçin. Gereksinim kuralları dosya sistemi bilgilerini, kayıt defteri değerlerini veya PowerShell komut dosyalarını temel alabilir. 
-    - **Dosya**: **Gereksinim türü**olarak **Dosya** ' yı seçtiğinizde, gereksinim kuralı bir dosya veya klasör, tarih, sürüm veya boyut algılamamalıdır. 
-        - **Yol** – Algılanacak dosya veya klasörün bulunduğu klasörün tam yolu.
-        - **Dosya veya klasör** - Algılanacak dosya veya klasör.
-        - **Özellik** : uygulamanın varlığını doğrulamak için kullanılan kural türünü seçin.
-        - **64 bit istemciler üzerinde bir 32 bit uygulamayla ilişkilendirildi** - Tüm yol ortam değişkenlerini 64 bit istemciler üzerinde 32 bit bağlamında genişletmek için **Evet**'i seçin. Tüm yol değişkenlerini 64 bit istemciler üzerinde 64 bit bağlamında genişletmek için **Hayır**'ı (varsayılan) seçin. 32 bit istemciler her zaman 32 bit bağlamını kullanır.
-    - **Kayıt defteri**: **Gereksinim türü**olarak **kayıt defteri** ' ni seçtiğinizde, gereksinim kuralı değer, dize, tamsayı veya sürüme göre bir kayıt defteri ayarı tespit etmelidir.
-        - **Anahtar yolu** – Algılanacak değerin bulunduğu kayıt defteri girdisinin tam yolu.
-        - **Değer adı** - Algılanacak kayıt defteri değerinin adı. Bu değer boşsa algılama anahtarda gerçekleştirilir. Algılama yöntemi dosya veya klasör varlığından farklı bir yöntemse, algılama değeri olarak anahtarın (varsayılan) değeri kullanılır.
-        - **Kayıt defteri anahtarı gereksinimi** – gereksinim kuralının nasıl doğrulanacağını belirlemek için kullanılan kayıt defteri anahtarı karşılaştırma türünü seçin.
-        - **64 bit istemciler üzerinde bir 32 bit uygulamayla ilişkilendirildi** - 64 bit istemcilerde 32 bit kayıt defterinde arama yapmak için **Evet**'i seçin. 64 bit istemcilerde 64 bit kayıt defterinde arama yapmak için **Hayır**'ı (varsayılan) seçin. 32 bit istemcilerde her zaman 32 bit kayıt defterinde arama yapılır.
-    - **Komut dosyası**: Intune konsolunda kullanabileceğiniz dosya, kayıt defteri veya başka bir yöntemi temel alan bir gereksinim kuralı oluştur, **Gereksinim türü**olarak **komut dosyasını** seçin.
-        - **Betik dosyası** – PowerShell betiği tabanlı gereksinim kuralı için, var olan kod 0 Ise, stdout 'ı daha ayrıntılı olarak algılayacağız. Örneğin, STDOUT değerini 1 değeri olan bir tamsayı olarak tespit edebilirsiniz.
-        - **Komut dosyasını 64 bit istemcilerde 32 bitlik işlem olarak çalıştır** -betiği, 64 bit istemcilerde bir 32 bit işlemde çalıştırmak için **Evet** ' i seçin. Komut dosyasını 64 bit istemcilerde 64 bitlik bir işlemde çalıştırmak için **Hayır** (varsayılan) seçeneğini belirleyin. 32 bitlik istemciler betiği 32 bit bir işlemde çalıştırır.
-        - **Bu betiği oturum açmış oturum açma kimlik bilgilerini kullanarak Çalıştır**: komut dosyasını oturum açan cihaz kimlik bilgilerini * * kullanarak çalıştırmak için **Evet** ' i seçin.
-        - **Betik imzası denetimini zorla** - Betiğin güvenilen bir yayımcı tarafından imzalandığını doğrulamak için **Evet**'i seçin. Bu doğrulama betiğin hiçbir uyarı veya istem gösterilmeden çalıştırılmasına olanak tanır. Betik engellenmeden çalıştırılır. Betiği imza doğrulaması yapılmadan son kullanıcının onayıyla çalıştırmak için **Hayır**'ı (varsayılan) seçin.
-        - **Çıkış verisi türünü seçin**: bir gereksinim kuralı eşleşmesi belirlenirken kullanılan veri türünü seçin.
-4. İşiniz bittiğinde **Tamam**’a tıklayın.
+### <a name="step-4-detection-rules"></a>4\. Adım: algılama kuralları
 
-### <a name="step-6-configure-app-detection-rules"></a>6\. Adım: Uygulama algılama kurallarını yapılandırma
-
-1. **Uygulama ekle** bölmesinde, uygulamanın varlığını algılamaya yönelik kuralları yapılandırmak için **Algılama kuralları**'nı seçin.
-2. **Kuralların biçimi** alanında uygulamanın varlığının nasıl algılanacağını seçin. Algılama kurallarını el ile yapılandırmayı seçebileceğiniz gibi uygulamanın varlığını algılamak için özel bir betik de kullanabilirsiniz. En az bir algılama kuralı seçmelisiniz. 
+1. **Algılama kuralları** sayfasında, uygulamanın varlığını algılamak için kuralları yapılandırın:
+    
+    **Kurallar biçimi**: uygulama varlığının nasıl algılanacağını seçin. Algılama kurallarını el ile yapılandırmayı seçebileceğiniz gibi uygulamanın varlığını algılamak için özel bir betik de kullanabilirsiniz. En az bir algılama kuralı seçmelisiniz. 
 
     > [!NOTE]
     > **Algılama kuralları** bölmesinde birden fazla kural eklemeyi seçebilirsiniz. Uygulamanı algılanması için **tüm** kuralların koşullarına uyulmalıdır.
@@ -249,53 +255,20 @@ Aşağıdaki adımlar Windows uygulamasını Intune'a eklemenize yardımcı olac
      
     - **Özel algılama betiği kullan** – Bu uygulamayı algılamak için kullanılacak PowerShell betiğini belirtin. 
     
-        1. **Betik dosyası** – İstemcide uygulamanın varlığını algılayacak PowerShell betiğini seçin. Betik hem 0 değerinde çıkış kodu döndürdüğünde hem de STDOUT'a bir dize değeri yazdığında uygulama algılanır.
+       1. **Betik dosyası** – İstemcide uygulamanın varlığını algılayacak PowerShell betiğini seçin. Betik hem 0 değerinde çıkış kodu döndürdüğünde hem de STDOUT'a bir dize değeri yazdığında uygulama algılanır.
 
-        2. **Komut dosyasını 64 bit istemcilerde 32 bitlik işlem olarak çalıştır** -betiği, 64 bit istemcilerde bir 32 bit işlemde çalıştırmak için **Evet** ' i seçin. Komut dosyasını 64 bit istemcilerde 64 bitlik bir işlemde çalıştırmak için **Hayır** (varsayılan) seçeneğini belirleyin. 32 bitlik istemciler betiği 32 bit bir işlemde çalıştırır.
+       2. **Komut dosyasını 64 bit istemcilerde 32 bitlik işlem olarak çalıştır** -betiği, 64 bit istemcilerde bir 32 bit işlemde çalıştırmak için **Evet** ' i seçin. Komut dosyasını 64 bit istemcilerde 64 bitlik bir işlemde çalıştırmak için **Hayır** (varsayılan) seçeneğini belirleyin. 32 bitlik istemciler betiği 32 bit bir işlemde çalıştırır.
 
-        3. **Betik imzası denetimini zorla** - Betiğin güvenilen bir yayımcı tarafından imzalandığını doğrulamak için **Evet**'i seçin. Bu doğrulama betiğin hiçbir uyarı veya istem gösterilmeden çalıştırılmasına olanak tanır. Betik engellenmeden çalıştırılır. Betiği imza doğrulaması yapılmadan son kullanıcının onayıyla çalıştırmak için **Hayır**'ı (varsayılan) seçin.
+       3. **Betik imzası denetimini zorla** - Betiğin güvenilen bir yayımcı tarafından imzalandığını doğrulamak için **Evet**'i seçin. Bu doğrulama betiğin hiçbir uyarı veya istem gösterilmeden çalıştırılmasına olanak tanır. Betik engellenmeden çalıştırılır. Betiği imza doğrulaması yapılmadan son kullanıcının onayıyla çalıştırmak için **Hayır**'ı (varsayılan) seçin.
     
             Intune Aracısı, komut dosyasının sonuçlarını denetler. Betik tarafından standart çıkış (STDOUT) akışına, standart hata (STDERR) akışına ve çıkış koduna yazılan değerleri okur. Betikten sıfırdan farklı bir değerle çıkılırsa, betik başarısız olur ve uygulama algılama durumu Yüklü Değil olur. Çıkış kodu sıfırsa ve STDOUT veri içeriyorsa, uygulama algılama durumu Yüklü'dür. 
 
             > [!NOTE]
             > Microsoft, betiğinizi UTF-8 olarak kodlamayı önerir. Betikten 0 değeriyle çıkılırsa, betiğin yürütülmesi başarılı olmuştur. İkinci çıkış kanalı uygulamanın algılandığını gösterir - STDOUT verileri uygulamanın istemcide bulunduğunu gösterir. STDOUT akışından belirli bir dize beklemeyiz.
 
-        4. Kurallarınızı ekledikten sonra **Ekle** > **Tamam**'ı seçin.
+2. Kurallarınızı ekledikten sonra, **Bağımlılıklar** sayfasını göstermek için **İleri** ' yi seçin.
 
-### <a name="step-7-configure-app-return-codes"></a>7\. Adım: Uygulama dönüş kodlarını yapılandırma
-
-1. **Uygulama ekle** bölmesinde **Dönüş kodları**'nı seçerek, uygulama yüklemesi yeniden deneme davranışını veya yükleme sonrası davranışını belirtmek için kullanılan dönüş kodlarını ekleyin. Dönüş kodu girdileri varsayılan olarak uygulama oluşturma işlemi sırasında eklenir. Bununla birlikte, başka dönüş kodları ekleyebilir veya mevcut dönüş kodlarını değiştirebilirsiniz. 
-2. **Dönüş kodları** bölmesinde, başka dönüş kodları ekleyin veya mevcut dönüş kodlarında değişiklik yapın.
-    - **Failed** : bir uygulama yükleme hatasını gösteren dönüş değeri.
-    - **Donanımdan önyükleme** – Donanımdan önyükleme dönüş kodu, istemcide önyükleme yapılmadan sonraki Win32 uygulamalarının yüklenmesine izin vermez. 
-    - **Yazılımdan önyükleme** – Yazılımdan önyükleme dönüş kodu, istemci önyüklemesine gerek kalmadan sonraki Win32 uygulamasının yüklenmesine izin verir. Geçerli uygulamanın yüklemesini tamamlamak için önyükleme gereklidir.
-    - **Yeniden deneme** – Yeniden deneme dönüş koduyla aracı uygulamayı yüklemeyi üç kez dener. Her denemeden sonra 5 dakika bekler. 
-    - **Başarılı** – Uygulamanın başarıyla yüklendiğini belirten dönüş kodu.
-3. Dönüş kodları listenizdeki eklemeleri veya değişiklikleri yaptıktan sonra **Tamam**'ı seçin.
-
-### <a name="step-8-add-the-app"></a>8\. Adım: Uygulamayı ekleme
-
-1. **Uygulama ekle** bölmesinde, uygulama bilgilerini doğru yapılandırdığınızı onaylayın.
-2. Uygulamayı Intune'a yüklemek için **Ekle**’yi seçin.
-
-### <a name="step-9-assign-the-app"></a>9\. Adım: Uygulamayı atama
-
-1. Uygulama bölmesinde **Atamalar**’ı seçin.
-2. Uygulamayla ilgili **Grup ekle** bölmesini açmak için **Grup Ekle**'yi seçin.
-3. Belirli bir uygulama için **atama türü** seçin:
-    - **Kayıtlı cihazlar için bulunur**: Kullanıcılar, Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden uygulamayı yükler.
-    - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir.
-    - **Kaldırma**: Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
-4. **Eklenen Gruplar**'ı seçin ve bu uygulamayı kullanacak grupları atayın.
-5. **Ata** bölmesinde, kullanıcılara veya cihazlara göre ata ' yı seçin. Atamalarınızı seçtiğinizde, **Son Kullanıcı deneyimini**de seçebilirsiniz. **Son Kullanıcı deneyimi** , **Son Kullanıcı bildirimlerini**, **yeniden başlatma süresini**, **kullanılabilirliği**ve **yükleme son tarihini**ayarlamanıza olanak sağlar. Daha fazla bilgi için bkz. **Win32 uygulama kullanılabilirliğini ve bildirimlerini ayarlama**.
-6. dahil edilen gruplar seçimini gerçekleştirmek için **Tamam ' ı** seçin.
-7. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız, **Grupları Dışla**'yı seçin.
-8. **Grup ekle** bölmesinde **Tamam**’ı seçin.
-9. Uygulamanın **Atamalar** bölmesinde **Kaydet**'i seçin.
-
-Bu noktada, Intune 'a bir Win32 uygulaması ekleme adımlarını tamamladınız. Uygulama atama ve izleme hakkında bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md) ve [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md).
-
-## <a name="app-dependencies"></a>Uygulama bağımlılıkları
+### <a name="step-5-dependencies"></a>5\. Adım: bağımlılıklar
 
 Uygulama bağımlılıkları, Win32 uygulamanızın yüklenebilmesi için yüklenmesi gereken uygulamalardır. Diğer uygulamaların bağımlılık olarak yüklenmesini zorunlu kılabilirsiniz. Özellikle, cihazın Win32 uygulamasını yüklemeden önce bağımlı uygulamaları yüklemesi gerekir. Dahil edilen bağımlılıkların bağımlılıklarını ve uygulamanın kendisini içeren en fazla 100 bağımlılığı vardır. Win32 uygulaması bağımlılıklarını yalnızca Win32 uygulamanız eklendikten ve Intune 'a yüklendikten sonra ekleyebilirsiniz. Win32 uygulamanız eklendikten sonra, Win32 uygulamanızın bölmesinde **Bağımlılıklar** seçeneğini görürsünüz. 
 
@@ -305,15 +278,15 @@ Uygulama bağımlılığı eklerken, uygulama adı ve yayımcı temelinde arama 
 
 Her bağımlı uygulamanın otomatik olarak yüklenip yüklenmeyeceğini seçebilirsiniz. Varsayılan olarak, **otomatik olarak install** seçeneği her bağımlılık için **Evet** olarak ayarlanır. Bağımlı uygulama kullanıcı veya cihaza hedeflenmese bile, bağımlı uygulamayı otomatik olarak yükleyerek Intune, Win32 uygulamanızı yüklemeden önce bağımlılığı karşılamak üzere uygulamayı cihaza yükler. Bir bağımlılık özyinelemeli alt bağımlılıklara sahip olabileceğini ve ana bağımlılığı yüklemeden önce her bir alt bağımlılığın yükleneceğini unutmayın. Ayrıca, bağımlılıkların yüklenmesi belirli bir bağımlılık düzeyinde bir yükleme sırasına uymuyor.
 
-Win32 uygulamanıza bir uygulama bağımlılığı eklemek için aşağıdaki adımları kullanın:
+### <a name="select-the-dependencies"></a>Bağımlılıkları seçin
 
-1. Intune 'da, eklenen istemci uygulamaları listenizi görüntülemek için **tüm uygulamalar** > **uygulamalar** ' ı seçin. 
-2. Eklenen bir **Windows uygulaması (Win32)** uygulaması seçin. 
-3. Win32 uygulaması yüklenmeden önce yüklenmesi gereken bağımlı uygulamaları eklemek için **Bağımlılıklar** ' ı seçin. 
-4. Uygulama bağımlılığı eklemek için **Ekle** ' ye tıklayın.
-5. Bağımlı uygulamaları ekledikten sonra **Seç**' e tıklayın.
-6. **Otomatik olarak yüklemek**için **Evet** veya **Hayır** ' ı seçerek bağımlı uygulamanın otomatik olarak yüklenip yüklenmeyeceğini seçin.
-7. **Kaydet**'e tıklayın.
+**Bağımlılıklar** sayfasında, Win32 uygulamanızın yüklenebilmesi için yüklenmesi gereken uygulamaları seçin:
+1. **Bağımlılık Ekle** bölmesini göstermek için **Ekle** ' ye tıklayın.
+3. Bağımlı uygulamaları ekledikten sonra **Seç**' e tıklayın.
+4. **Otomatik olarak install** sütununun altında **Evet** veya **Hayır** ' ı seçerek bağımlı uygulamanın otomatik olarak yüklenip yüklenmeyeceğini seçin.
+5. **İleri** ' ye tıklayarak **kapsam etiketleri** sayfasını görüntüleyin.
+
+### <a name="understand-additional-dependency-details"></a>Ek bağımlılık ayrıntılarını anlayın
 
 Son Kullanıcı, bağımlı uygulamaların Win32 uygulama yükleme işleminin bir parçası olarak indirilmekte olduğunu ve yüklendiğini belirten Windows bildirim bildirimleri ' ni görür. Ayrıca, bağımlı bir uygulama yüklü olmadığında, son kullanıcı genellikle aşağıdaki bildirimlerden birini görür:
 - 1 veya daha fazla bağımlı uygulama yüklenemedi
@@ -324,7 +297,36 @@ Son Kullanıcı, bağımlı uygulamaların Win32 uygulama yükleme işleminin bi
 
 Her bağımlılık, Intune Win32 uygulaması yeniden deneme mantığına uyar (5 dakika bekledikten sonra 3 kez yüklemeyi deneyin) ve küresel yeniden değerlendirme zamanlaması. Ayrıca, bağımlılıklar yalnızca cihaza Win32 uygulamasını yükleme sırasında uygulanabilir. Bağımlılıklar bir Win32 uygulamasını kaldırmak için geçerli değildir. Bir bağımlılığı silmek için, bağımlılık listesi satırının sonunda bulunan bağımlı uygulamanın solundaki üç noktaya (üç nokta) tıklamalısınız. 
 
-## <a name="delivery-optimization"></a>Teslim İyileştirme
+## <a name="step-6---select-scope-tags-optional"></a>6\. adım-kapsam etiketlerini seçin (isteğe bağlı)
+Intune 'da istemci uygulama bilgilerini kimlerin görebileceğini anlamak için kapsam etiketlerini kullanabilirsiniz. Kapsam etiketleri hakkında tam Ayrıntılar için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi ve kapsam etiketleri kullanma](../fundamentals/scope-tags.md).
+
+1. İsteğe bağlı olarak uygulamanın kapsam etiketlerini eklemek için **kapsam etiketlerini Seç** ' e tıklayın. 
+2. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.
+
+## <a name="step-7---assignments"></a>7\. adım-atamalar
+
+**Kayıtlı cihazlar Için** **gerekli**olan, kullanılabilir olan cihazları seçebilir veya uygulama için Grup atamalarını **kaldırabilirsiniz** . Daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](~/fundamentals/groups-add.md) ve [Microsoft Intune olan gruplara uygulama atama](apps-deploy.md).
+
+1. Belirli bir uygulama için bir atama türü seçin:
+    - **Gerekli**: Uygulama, seçili gruplardaki cihazlara yüklenir.
+    - **Kayıtlı cihazlar için bulunur**: Kullanıcılar, Şirket Portalı uygulamasından veya Şirket Portalı web sitesinden uygulamayı yükler.
+    - **Kaldırma**: Uygulama, seçilen gruplardaki cihazlardan kaldırılır.
+2. **Grup Ekle** ' ye tıklayın ve bu uygulamayı kullanacak grupları atayın.
+3. **Grupları seçin** bölmesinde, kullanıcılara veya cihazlara göre ata ' yı seçin. 
+4. Gruplarınızı seçtikten sonra, **Son Kullanıcı bildirimleri**, **kullanılabilirliği**ve **yükleme son tarihini**de ayarlayabilirsiniz. Daha fazla bilgi için bkz. [Win32 uygulama kullanılabilirliğini ve bildirimlerini ayarlama](~/apps/apps-win32-app-management.md#set-win32-app-availability-and-notifications).
+5. Herhangi bir kullanıcı grubunu bu uygulama atamasından etkilenmeden dışlamak istiyorsanız, **mod** sütununun altına **dahil** ' ı seçin. **Atama düzenleme** bölmesi görüntülenir. **Modunun** **dışlandığından** **dahil** edilmesini sağlayabilirsiniz. **Atama düzenleme** bölmesini kapatmak için **Tamam** ' ı tıklatın.
+6. Uygulamalar için atamaları ayarlamayı tamamladıktan sonra, **gözden geçir + oluştur** sayfasını göstermek için **İleri** ' ye tıklayın.
+
+## <a name="step-8---review--create"></a>8\. adım-Inceleme + oluştur
+
+1. Uygulama için girdiğiniz değerleri ve ayarları gözden geçirin. Uygulama bilgilerini doğru yapılandırdığınızdan emin olun.
+2. İşiniz bittiğinde, uygulamayı Intune 'a eklemek için **Oluştur** ' a tıklayın.
+
+    İş kolu uygulaması için **genel bakış** dikey penceresi görüntülenir.
+
+Bu noktada, Intune 'a bir Win32 uygulaması ekleme adımlarını tamamladınız. Uygulama atama ve izleme hakkında bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md) ve [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md).
+
+## <a name="delivery-optimization"></a>Teslim Iyileştirme
 
 Windows 10 1709 ve üzeri istemciler, Windows 10 istemcisindeki bir teslim iyileştirme bileşeni kullanarak Intune Win32 uygulama içeriğini indirecek. Teslim iyileştirme, varsayılan olarak açık olan eşler arası işlevsellik sağlar. Teslim iyileştirme, Grup İlkesi ve Intune cihaz yapılandırması aracılığıyla yapılandırılabilir. Daha fazla bilgi için bkz. [Windows 10 Için teslim iyileştirmesi](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
@@ -349,10 +351,9 @@ Aşağıdaki adımları kullanarak, gerekli bir uygulama için bir tarih ve saat
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** > **uygulamalar** ' ı seçin.
 3. Listeden var olan bir **Windows uygulaması (Win32)** seçin. 
-4. Uygulama bölmesinde, **Grup ekle** > **atamalar** ' ı seçin. 
-5. **Atama türü** olarak **Gerekli** ayarlayın. Uygulama kullanılabilirliği atama türüne göre ayarlanılabileceğini unutmayın. **Atama türü** **gerekli**, **Kayıtlı cihazlar için kullanılabilir**veya **kaldırma**olabilir.
-6. Hangi kullanıcı grubuna uygulama atandığını belirlemek için **dahil edilen gruplar** ' ı seçin. **Ata** bölmesi görüntülenir.
-7. **Bu uygulamayı tüm kullanıcılar için gerekli yap** ayarını **Evet**olarak belirleyin.
+4. Uygulama bölmesinden **Özellikler** ' i seçin > **atamalar** bölümünün yanındaki **Düzenle** ' yi seçin > **gerekli** atama türünün altına **Grup ekleyin** . 
+   Uygulama kullanılabilirliği atama türüne göre ayarlanılabileceğini unutmayın. **Atama türü** **gerekli**, **Kayıtlı cihazlar için kullanılabilir**veya **kaldırma**olabilir.
+5. Uygulamaya atanacak kullanıcı grubunu belirtmek için **Grup Seç** bölmesinde bir grup seçin. 
 
     > [!NOTE]
     > **Atama türü** seçenekleri şunları içerir:<br>
@@ -360,16 +361,18 @@ Aşağıdaki adımları kullanarak, gerekli bir uygulama için bir tarih ve saat
     > - **Kayıtlı cihazlar Için kullanılabilir**: **Bu uygulamayı kayıtlı cihazları olan tüm kullanıcılar için kullanılabilir**hale getirme seçeneğini belirleyebilirsiniz.<br>
     > - **Kaldır**: ***Bu uygulamayı tüm kullanıcılar için Kaldır** ve/veya **Bu uygulamayı tüm cihazlar için Kaldır**seçeneğini belirleyebilirsiniz.
 
-8. **Son Kullanıcı deneyimi** seçeneklerini değiştirmek için **Düzenle**' yi seçin.
-9. **Atama düzenleme** bölmesinde, bu **Kullanıcı bildirimlerini** **tüm bildirim bildirimlerini gösterecek**şekilde ayarlayın. **Son Kullanıcı bildirimlerini** **tüm bildirim bildirimlerini göstermek**, **bilgisayar yeniden başlatmaları için bildirimleri göstermek**veya **Tüm bildirimleri gizlemek**için ayarlayabileceğinizi unutmayın.
-10. **uygulama kullanılabilirliğini** **belirli bir tarih ve saate** ayarlayın ve Tarih ve saati seçin. Bu tarih ve saat, uygulamanın son kullanıcılar cihazına ne zaman indirildiğini belirtir. 
-11. **Uygulama yükleme son tarihini** **belirli bir tarih ve saate** ayarlayın ve Tarih ve saati seçin. Bu tarih ve saat, uygulamanın son kullanıcılar cihazında yüklü olduğunu belirtir. Aynı kullanıcı veya cihaz için birden çok atama yapıldığında, uygulama yüklemesinin son tarihi, mümkün olan en erken zamana göre çekilir.
-12. **Yeniden başlatma yetkisiz kullanım süresinin**yanında **etkin** ' e tıklayın. Yeniden başlatma yetkisiz kullanım süresi, cihazda uygulama yüklemesi tamamlandıktan hemen sonra başlar. Devre dışı bırakıldığında, cihaz uyarı vermeden yeniden başlatılabilir. <br>Aşağıdaki seçenekleri özelleştirebilirsiniz:
+6. **Son Kullanıcı bildirim** seçeneklerini değiştirmek için **tüm bildirim bildirimlerini göster**' i seçin.
+7. **Atama düzenleme** bölmesinde, bu **Kullanıcı bildirimlerini** **tüm bildirim bildirimlerini gösterecek**şekilde ayarlayın. **Son Kullanıcı bildirimlerini** **tüm bildirim bildirimlerini göstermek**, **bilgisayar yeniden başlatmaları için bildirimleri göstermek**veya **Tüm bildirimleri gizlemek**için ayarlayabileceğinizi unutmayın.
+8. **Uygulama kullanılabilirliğini** **belirli bir tarih ve saate** ayarlayın ve Tarih ve saati seçin. Bu tarih ve saat, uygulamanın son kullanıcılar cihazına ne zaman indirildiğini belirtir. 
+9. **Uygulama yükleme son tarihini** **belirli bir tarih ve saate** ayarlayın ve Tarih ve saati seçin. Bu tarih ve saat, uygulamanın son kullanıcılar cihazında yüklü olduğunu belirtir. Aynı kullanıcı veya cihaz için birden çok atama yapıldığında, uygulama yüklemesinin son tarihi, mümkün olan en erken zamana göre çekilir.
+
+10. **Yeniden başlatma yetkisiz kullanım süresinin**yanında **etkin** ' e tıklayın. Yeniden başlatma yetkisiz kullanım süresi, cihazda uygulama yüklemesi tamamlandıktan hemen sonra başlar. Devre dışı bırakıldığında, cihaz uyarı vermeden yeniden başlatılabilir. <br>Aşağıdaki seçenekleri özelleştirebilirsiniz:
     - **Cihaz yeniden başlatma yetkisiz kullanım süresi (dakika)** : varsayılan değer 1440 dakikadır (24 saat). Bu değer en fazla 2 hafta olabilir.
     - **Yeniden başlatma işleminin (dakika) ardından yeniden başlatma geri sayımı iletişim kutusunun ne zaman gösterileceğini seçin (dakika)** : varsayılan değer 15 dakikadır.
     - **Kullanıcının yeniden başlatma bildirimini yeniden görüntülemesine Izin ver**: **Evet** veya **Hayır**seçeneğini belirleyebilirsiniz.
         - **Erteleme süresini (dakika) seçin**: varsayılan değer 240 dakikadır (4 saat). Erteleme değeri, yeniden başlatma yetkisiz kullanım süresinden daha fazla olamaz.
-13.  > Tamam ' a tıklayarak atamayı eklemek **için > ** ** > Tamam '** a tıklayın.
+
+11. **Gözden geçir + kaydet**' e tıklayın.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Win32 uygulamaları için bildirim bildirimleri 
 Gerekirse, uygulama ataması başına Son Kullanıcı bildirim bildirimlerinin gösterilmesini gizleyebilirsiniz. Intune 'da, **uygulamalar** > **tüm uygulamalar** ' ı seçin > **grupları Ekle** > > **atamaları** seçin. 

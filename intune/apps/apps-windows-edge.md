@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2020
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
-ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
+ms.openlocfilehash: f648be9588ec9b220a9dab29db1f5bd935b455f4
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "76294804"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755230"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Microsoft Intune Windows 10 için Microsoft Edge ekleyin
 
 Uygulamaları dağıtmadan, yapılandırmadan, izleyebilmeniz veya koruyabilmeniz için önce bunları Intune 'a eklemeniz gerekir. Kullanılabilir [uygulama türlerinden](~/apps/apps-add.md#app-types-in-microsoft-intune) biri Microsoft Edge *Sürüm 77 ve üzeri*. Intune 'da bu uygulama türünü seçerek, Microsoft Edge *sürüm 77 ve üstünü* Windows 10 çalıştıran yönettiğiniz cihazlara atayabilir ve yükleyebilirsiniz.
 
 > [!IMPORTANT]
-> Bu uygulama türü **genel önizlemede** bulunur ve Windows 10 için kararlı, Beta ve geliştirme kanalları sunmaktadır. Dağıtım yalnızca Ingilizce (EN) ' dir, ancak son kullanıcılar tarayıcıdaki görüntüleme dilini **ayarlar** > **dilleri**altında değiştirebilir. Microsoft Edge, sistem bağlamında ve benzer mimarilere (x86 IŞLETIM sisteminde x86 uygulaması ve x64 IŞLETIM sisteminde x64 uygulaması) yüklenen bir Win32 uygulamasıdır. Intune, önceden varolan Microsoft Edge yüklemelerini algılar. Kullanıcı bağlamında yüklüyse, bir sistem yüklemesi bu dosyanın üzerine yazar. Sistem bağlamına yüklenirse, ınstallıon başarısı raporlanır. Ayrıca, Microsoft Edge 'in otomatik güncelleştirmeleri varsayılan olarak **Açık** ve Microsoft Edge kaldırılamaz.
+> Bu uygulama türü **genel önizlemede** bulunur ve Windows 10 için kararlı, Beta ve geliştirme kanalları sunmaktadır. Dağıtım yalnızca Ingilizce (EN) ' dir, ancak son kullanıcılar tarayıcıdaki görüntüleme dilini **ayarlar** > **dilleri**altında değiştirebilir. Microsoft Edge, sistem bağlamında ve benzer mimarilere (x86 IŞLETIM sisteminde x86 uygulaması ve x64 IŞLETIM sisteminde x64 uygulaması) yüklenen bir Win32 uygulamasıdır. Intune, önceden varolan Microsoft Edge yüklemelerini algılar. Kullanıcı bağlamında yüklüyse, bir sistem yüklemesi bu dosyanın üzerine yazar. Sistem bağlamına yüklenirse, ınstallıon başarısı raporlanır. Ayrıca, Microsoft Edge 'in otomatik güncelleştirmeleri varsayılan olarak **Açık** .
 
 > [!NOTE]
 > Microsoft Edge *sürüm 77 ve üzeri* , MacOS için de kullanılabilir.
@@ -92,6 +92,29 @@ Oluşturduğunuz uygulama, uygulamalar listesinde görüntülenir ve burada uygu
 
 > [!NOTE]
 > Şu anda, Microsoft Edge dağıtımı atamasını kaldırırsanız cihazda kalır.
+
+## <a name="uninstall-the-app"></a>Uygulamayı kaldırma
+
+Kullanıcının cihazlarından Microsoft Edge 'i kaldırmanız gerektiğinde aşağıdaki adımları kullanın.
+
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tüm uygulamalar** ** >  > ** *Microsoft Edge* uygulaması > **atamaları** **Grup Ekle** > ' yi seçin.
+3. **Grup Ekle** bölmesinde **Kaldır**' ı seçin.
+
+    > [!NOTE]
+    > Intune, uygulamayı **Kayıtlı cihazlar Için kullanılabilir** veya aynı dağıtımı kullanarak **gerekli** atama yoluyla cihaza daha önce yükletiyse, seçilen gruplardaki cihazlardan kaldırılır.
+
+4. Bu uygulama atamasından etkilenen Kullanıcı gruplarını seçmek için **dahil edilen gruplar** ' ı seçin.
+5. Kaldırma atamasını uygulamak istediğiniz grupları seçin.
+6. **Grupları seçin** bölmesinde **Seç** ' e tıklayın.
+7. Atamayı ayarlamak için **ata** bölmesinde **Tamam** ' a tıklayın.
+8. Herhangi bir kullanıcı grubunun bu uygulama atamasından etkilenmesini istemiyorsanız, **Grupları Dışla**'yı seçin.
+9. Herhangi bir grubu dışlamayı seçtiyseniz, **Grupları seçin** alanında **Seç** düğmesini seçin.
+10. **Grup Ekle** bölmesinde **Tamam ' ı** seçin.
+11. Uygulama **atamaları** bölmesinde **Kaydet** ' i seçin.
+
+> [!IMPORTANT]
+> Uygulamayı başarılı bir şekilde kaldırmak için, bunları kaldırılmak üzere atamadan önce yükleme için üye veya grup atamasını kaldırdığınızdan emin olun. Bir gruba bir uygulama yüklemek ve uygulamayı kaldırmak için bir grup atanmışsa, uygulama kalır ve kaldırılmaz.
 
 ## <a name="troubleshooting"></a>Sorun giderme
 **Windows 10 için Microsoft Edge sürüm 77 ve üzeri:**<br>

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885764"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755774"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -51,40 +51,45 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 ## <a name="create-an-app-configuration-policy"></a>Uygulama yapılandırma ilkesi oluşturma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-2. **Uygulamalar** > **uygulama yapılandırma Ilkeleri** >  > **yönetilen cihaz** **Ekle** ' yi seçin.
-3. Aşağıdaki bilgileri ayarlayın:
+2. **Uygulamalar** > **uygulama yapılandırma Ilkeleri** >  > **yönetilen cihaz** **Ekle** ' yi seçin. **Yönetilen cihazlar** ve **yönetilen uygulamalar**arasından seçim yapabileceğiniz unutulmamalıdır. Daha fazla bilgi için bkz. [uygulama yapılandırmasını destekleyen uygulamalar](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
+3. **Temel bilgiler** sayfasında, aşağıdaki ayrıntıları ayarlayın:
     - **Ad** - Azure portalında görünen profil adı.
     - **Açıklama** - Azure portalında görünen profil açıklaması.
     - **Cihaz kayıt türü** -Bu ayar, **yönetilen cihazlar**olarak ayarlanır.
-4. **Platform** için **iOS**’u seçin.
-5. **İlişkili uygulama**’yı seçin. Daha sonra **İlişkili uygulama** bölmesinde yapılandırmayı uygulamak istediğiniz yönetilen uygulamayı ve ardından **Tamam**’ı seçin.
-6. Yapılandırma **ayarlarını seçerek** **yapılandırma** ayarları bölmesini görüntüleyin.
-7. **Yapılandırma ayarları biçimi**’ni seçin. Yapılandırma bilgilerini eklemek için aşağıdaki yöntemlerden birini seçin:
+4. **Platform**olarak **IOS/ıpados** ' ı seçin.
+5. **Hedeflenen uygulamanın**yanındaki **Uygulama Seç** ' e tıklayın. **İlişkili uygulama** bölmesi görüntülenir. 
+6. **Hedeflenen uygulama** bölmesinde, yapılandırma ilkesiyle ilişkilendirilecek yönetilen uygulamayı seçin ve **Tamam**' a tıklayın.
+7. **İleri** ' ye tıklayarak **Ayarlar** sayfasını görüntüleyin.
+8. Açılan kutuda **yapılandırma ayarları biçimini**seçin. Yapılandırma bilgilerini eklemek için aşağıdaki yöntemlerden birini seçin:
     - **Yapılandırma tasarımcısını kullanma**
     - **XML verileri girme**<br><br>
     Yapılandırma tasarımcısını kullanma hakkında ayrıntılar için bkz. [Yapılandırma tasarımcısını kullanma](#use-configuration-designer). XML verileri girme hakkında ayrıntılar için bkz. [XML verileri girme](#enter-xml-data). 
-8. Yapılandırma bilgilerinizi ekledikten sonra **Tamam**' ı seçin ve ardından yapılandırma ilkesini eklemek için **Ekle** ' yi seçin. Yapılandırma ilkesi için genel bakış bölmesi görüntülenir.
-9. **Atamalar**’ı seçerek dahil etme ve dışlama seçeneklerini görüntüleyin. 
+9. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.
+10. **Ata**seçeneğinin yanındaki açılan kutuda, uygulama yapılandırma ilkesini atamak için **Seçili gruplar**, **tüm kullanıcılar**, **tüm cihazlar**veya **tüm kullanıcılar ve tüm sapları** seçin.
 
     ![İlke atamaları Ekle sekmesinin ekran görüntüsü](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-10. **Dahil Et** sekmesinde **Tüm Kullanıcılar**’ı seçin.
+
+11. Açılan kutudaki **tüm kullanıcılar** ' ı seçin.
 
     ![İlke atamaları - Tüm Kullanıcılar açılan seçeneğinin ekran görüntüsü](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-11. **Dışla** sekmesini seçin. 
+
 12. İlgili bölmeyi görüntülemek için **Dışlanacak grupları seçin**’e tıklayın.
 
     ![Ilke atamalarının ekran görüntüsü-dışlanacak grupları seçin bölmesi](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
 13. Dışlamak istediğiniz grupları seçin ve **Seç**’e tıklayın.
 
     >[!NOTE]
     >Bir grup eklerken, herhangi bir atama türü için başka bir grup önceden dahil edilmişse bu grup, diğer dahil etme atama türleri için önceden seçili ve değiştirilemez bir biçimde görüntülenir. Dolayısıyla bu grup zaten kullanılmıştır ve dışlanmış bir grup olarak kullanılamaz.
-14. **Kaydet**'e tıklayın.
+
+14. **İleri** ' ye tıklayarak **gözden geçir + oluştur** sayfasını görüntüleyin.
+15. Uygulama yapılandırma ilkesini Intune 'a eklemek için **Oluştur** ' a tıklayın.
 
 ## <a name="use-configuration-designer"></a>Yapılandırma tasarımcısı kullanma
 
 Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Microsoft Intune’a kaydedilen veya kaydedilmeyen cihazlardaki uygulamalar için yapılandırma tasarımcısını kullanabilirsiniz. Tasarımcı, temel alınan XML dilini oluşturmanıza yardımcı olan belirli yapılandırma anahtarları ve değerlerini yapılandırmanıza imkan tanır. Ayrıca her bir değer için veri türünü belirtmeniz gerekir. Uygulamalar yüklendiğinde bu ayarlar uygulamalara otomatik olarak sağlanır.
 
-### <a name="add-a-setting"></a>Ayar ekle
+### <a name="add-a-setting"></a>Ayar ekleme
 
 1. Yapılandırmadaki her bir anahtar ve değer için şunları ayarlayın:
    - **Yapılandırma anahtarı** - Belirli ayar yapılandırmalarını benzersiz olarak tanımlayan anahtar.

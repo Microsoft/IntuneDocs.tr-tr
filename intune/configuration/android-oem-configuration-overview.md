@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/16/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e514c10ea61bb12ef3c4626b077aa105b66866f1
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 0b5a0b152b6090da1831ac6d7b707c10ec466ce7
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206882"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754601"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune 'de OEMConfig ile Android kurumsal cihazlarını kullanma ve yönetme
-
-
 
 Microsoft Intune 'de, Android Kurumsal cihazları için OEM 'e özgü ayarları eklemek, oluşturmak ve özelleştirmek üzere OEMConfig ' i kullanabilirsiniz. OEMConfig, genellikle Intune 'da yerleşik olmayan ayarları yapılandırmak için kullanılır. Farklı orijinal ekipman üreticileri (OEM) farklı ayarlar içerir. Kullanılabilir ayarlar, OEM 'lerin OEMConfig uygulamasında neleri içerdiğine bağlıdır.
 
@@ -38,13 +36,13 @@ Bu makalede, OEMConfig açıklanmakta, önkoşulları listelemektedir, bir yapı
 
 ## <a name="overview"></a>İlke
 
-OEMConfig ilkeleri, [uygulama yapılandırma ilkesine](../apps/app-configuration-policies-overview.md)benzer şekilde özel bir cihaz yapılandırma ilkesi türüdür. OEMConfig, Android tarafından, OEM 'Ler tarafından yazılan uygulamalara cihaz ayarları göndermek için Android 'de uygulama yapılandırmasından yararlanan bir standart standarttır (özgün ekipman üreticileri). Bu standart, OEM 'Lerin ve EMMs 'nin (Enterprise Mobility Management), OEM 'e özgü özellikleri standartlaştırılmış bir şekilde oluşturmasına ve desteklemeye izin verir. [OEMConfig hakkında daha fazla bilgi edinin](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
+OEMConfig ilkeleri, [uygulama yapılandırma ilkesine](../apps/app-configuration-policies-overview.md)benzer şekilde özel bir cihaz yapılandırma ilkesi türüdür. OEMConfig, Android tarafından, OEM 'Ler tarafından yazılan uygulamalara cihaz ayarları göndermek için Android 'de uygulama yapılandırması kullanan bir standart standarttır (özgün ekipman üreticileri). Bu standart, OEM 'Lerin ve EMMs 'nin (Enterprise Mobility Management), OEM 'e özgü özellikleri standartlaştırılmış bir şekilde oluşturmasına ve desteklemeye izin verir. [OEMConfig hakkında daha fazla bilgi edinin](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
 
 Geçmişte, Intune gibi, OEM tarafından sunulduktan sonra OEM 'e özgü özellikler için el ile destek desteği. Bu yaklaşım, yinelenen çabalara ve yavaş benimsemeye yol açar.
 
 OEMConfig ile OEM, OEM 'e özgü yönetim özelliklerini tanımlayan bir şema oluşturur. OEM, şemayı bir uygulamaya katıştırır ve sonra bu uygulamayı Google Play koyar. EMM uygulamadan şemayı okur ve bu şemayı EMM yönetici konsolunda kullanıma sunar. Konsol, Intune yöneticilerinin şemadaki ayarları yapılandırmasına izin verir.
 
-OEMConfig uygulaması bir cihaza yüklediğinde, cihazı yönetmek için EMM Yönetici Konsolu 'nda yapılandırılan ayarları kullanır. Cihazdaki ayarlar, EMM tarafından oluşturulan bir MDM Aracısı yerine OEMConfig uygulaması tarafından yürütülür.
+OEMConfig uygulaması bir cihaza yüklediğinde, cihazı yönetmek için EMM Yöneticisi 'nde yapılandırılan ayarları kullanır. Cihaz ayarları, EMM tarafından oluşturulan bir MDM Aracısı yerine OEMConfig uygulaması tarafından yürütülür.
 
 OEM, yönetim özelliklerini ekler ve iyileştirir. Ayrıca, OEM Google Play de uygulamayı güncelleştirir. Yönetici olarak, bu yeni özellikleri ve güncelleştirmeleri (düzeltmeler dahil), EMMs 'lerin bu güncelleştirmeleri içermesini beklemeden alırsınız.
 
@@ -56,11 +54,11 @@ OEM, yönetim özelliklerini ekler ve iyileştirir. Ayrıca, OEM Google Play de 
 OEMConfig kullanırken aşağıdaki bilgileri unutmayın:
 
 - Intune, OEMConfig uygulamasının şemasını, yapılandırmak için kullanıma sunar. Intune, uygulama tarafından belirtilen şemayı doğrulamaz veya değiştirmez. Bu nedenle, şema yanlışsa veya hatalı veriler içeriyorsa, bu veriler cihazlara gönderilir. Şemada kaynaklanan bir sorun bulursanız, kılavuza yönelik OEM ile görüşün.
-- Intune, uygulama şemasının içeriğini etkilemez veya denetlemez. Örneğin, Intune dizeler, dil, izin verilen eylemler ve benzeri bir denetim yoktur. OEMConfig ile cihazlarını yönetmeye yönelik ayrıntılar ve en iyi uygulamalar için OEM 'ye başvurmanızı öneririz.
+- Intune, uygulama şemasının içeriğini etkilemez veya denetlemez. Örneğin, Intune dizeler, dil, izin verilen eylemler ve benzeri bir denetim yoktur. OEMConfig ile cihazlarını yönetme hakkında daha fazla bilgi için OEM 'ye başvurmanızı öneririz.
 - Herhangi bir zamanda, OEM 'Ler desteklenen özellikleri ve şemaları güncelleştirebilir ve yeni bir uygulamayı Google Play karşıya yükleyebilir. Intune, Google Play 'ten her zaman OEMConfig uygulamasının en son sürümünü eşitler. Intune, şemanın veya uygulamanın eski sürümlerini korumaz. Sürüm çakışmaları ' nı çalıştırırsanız daha fazla bilgi için OEM 'ye başvurmanızı öneririz.
 - Bir cihaza bir OEMConfig profili atayın. Aynı cihaza birden çok profil atanmışsa, tutarsız bir davranış görebilirsiniz. OEMConfig modeli cihaz başına yalnızca tek bir ilkeyi destekler.
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 Cihazlarınızda OEMConfig kullanmak için aşağıdaki gereksinimlere sahip olduğunuzdan emin olun:
 
@@ -84,19 +82,25 @@ Cihazın OEMConfig 'i desteklediğinden emin olun, Intune 'a doğru OEMConfig uy
 2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki özellikleri girin:
 
-    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
-    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
     - **Platform**: **Android kurumsal**' i seçin.
     - **Profil türü**: **oemconfig**' i seçin.
 
-4. **İlişkili uygulama**' yı seçin, daha önce eklediğiniz mevcut bir oemconfig uygulamasını seçin > **Tamam**' ı seçin. İlkeyi atadığınız cihazlar için doğru OEMConfig uygulamasını seçtiğinizden emin olun.
+4. **Oluştur**’u seçin.
+5. **Temel bilgiler**bölümünde aşağıdaki özellikleri girin:
+
+    - **Ad**: Yeni profil için açıklayıcı bir ad girin.
+    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
+    - **Oemconfig uygulaması**: **bir oemconfig uygulaması seçin**öğesini seçin.
+
+6. **İlişkili uygulamada**, daha önce eklemiş olduğunuz mevcut bir oemconfig uygulamasını seçin > **seçin**. İlkeyi atadığınız cihazlar için doğru OEMConfig uygulamasını seçtiğinizden emin olun.
 
     Listelenen herhangi bir uygulamayı görmüyorsanız, yönetilen Google Play ayarlayın ve yönetilen Google Play deposundan uygulamalar alın. [Android kurumsal cihazlara yönetilen Google Play uygulamaları ekleme](../apps/apps-add-android-for-work.md) adımları listeler.
 
     > [!IMPORTANT]
     > Bir OEMConfig uygulaması eklediyseniz ve onu Google Play olarak eşitledi ancak **ilişkili bir uygulama**olarak listelenmediyse, uygulamayı eklemek için Intune ile iletişim kurmanız gerekebilir. Bkz. [Yeni uygulama ekleme](#supported-oemconfig-apps) (Bu makalede).
 
-5. **Ayarları Ile yapılandırma**bölümünde, **yapılandırma tasarımcısını** veya **JSON düzenleyicisini**kullanmayı seçin:
+7. **İleri**'yi seçin.
+8. **Ayarları Yapılandır**bölümünde **yapılandırma tasarımcısını** veya **JSON düzenleyicisini**seçin:
 
     > [!TIP]
     > Özellikleri doğru şekilde yapılandırdığınızdan emin olmak için OEM belgelerini okuyun. Bu uygulama özellikleri, Intune 'A değil, OEM tarafından dahildir. Intune, özelliklerin en düşük doğrulamasını veya girdiğiniz şeyleri yapar. Örneğin, bir bağlantı noktası numarası için `abcd` girerseniz, profil olarak kaydedilir ve yapılandırdığınız değerlerle cihazlarınıza dağıtılır. Doğru bilgileri girdiğinizden emin olun.
@@ -121,12 +125,18 @@ Cihazın OEMConfig 'i desteklediğinden emin olun, Intune 'a doğru OEMConfig uy
 
     Yapılandırma tasarımcısında yapılan tüm değişiklikler JSON düzenleyicisinde de otomatik olarak yapılır. Benzer şekilde, JSON düzenleyicisinde yapılan tüm değişiklikler otomatik olarak yapılandırma tasarımcısında yapılır. Giriş bilgileriniz geçersiz değerler içeriyorsa, sorunları düzelene kadar yapılandırma Tasarımcısı ile JSON Düzenleyicisi arasında geçiş yapamazsınız.
 
-6. Değişikliklerinizi kaydetmek için **tamam** > **Ekle** ' yi seçin. İlke oluşturulur ve listede gösterilir.
+9. **İleri**'yi seçin.
+10. **Kapsam etiketleri** ' nde (isteğe bağlı), profili `US-NC IT Team` veya `JohnGlenn_ITDepartment`gıbı belirli BT gruplarına filtrelemek için bir etiket atayın. Kapsam etiketleri hakkında daha fazla bilgi için bkz. [Dağıtılmış BT IÇIN RBAC ve kapsam etiketlerini kullanma](../fundamentals/scope-tags.md).
 
-[Profili atayıp](device-profile-assign.md) [durumunu izlemeyi](device-profile-monitor.md)unutmayın.
+    **İleri**'yi seçin.
 
- > [!NOTE]
- > Her cihaza bir profil atayın. OEMConfig modeli cihaz başına yalnızca bir ilkeyi destekler.
+11. **Atamalar**' da, profilinizi alacak kullanıcıları veya grupları seçin. Her cihaza bir profil atayın. OEMConfig modeli cihaz başına yalnızca bir ilkeyi destekler.
+
+    Profil atama hakkında daha fazla bilgi için bkz. [Kullanıcı ve cihaz profilleri atama](device-profile-assign.md).
+
+    **İleri**'yi seçin.
+
+12. **Gözden geçir + oluştur**bölümünde ayarlarınızı gözden geçirin. **Oluştur**' u seçtiğinizde değişiklikleriniz kaydedilir ve profil atanır. İlke ayrıca profiller listesinde gösterilir.
 
 Cihaz yapılandırma güncelleştirmelerini bir daha denetlediğinde, yapılandırdığınız OEM 'e özgü ayarlar OEMConfig uygulamasına uygulanır.
 
@@ -154,11 +164,11 @@ OEMConfig Apps, standart uygulamalarla karşılaştırıldığında, Google tara
 
 -----------------
 
-Cihazınız için bir OEMConfig uygulaması varsa, ancak bu tablo yukarıdaki tabloda değilse veya Intune konsolunda görüntülenmiyorsa, lütfen e-posta `IntuneOEMConfig@microsoft.com`.
+Cihazınız için bir OEMConfig uygulaması varsa, ancak yukarıdaki tabloda yer alıyorsa veya Intune konsolunda görüntülenmiyorsa, e-posta `IntuneOEMConfig@microsoft.com`.
 
 > [!NOTE]
 > Oemconfig Apps, OEMConfig profilleriyle yapılandırılanmadan önce Intune tarafından eklenmediyse olmalıdır. Bir uygulama desteklendikten sonra kiracınızda ayarlama hakkında Microsoft 'a başvurmanız gerekmez. Bu sayfadaki yönergeleri izlemeniz yeterlidir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
+[Profil durumunu izleyin](device-profile-monitor.md).

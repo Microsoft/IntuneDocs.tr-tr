@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956196"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755281"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme 
 
@@ -74,10 +74,10 @@ Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygu
 
 <sup>1</sup> Android Kurumsal ve Android iş profilleri hakkında daha fazla bilgi için aşağıdaki [Lisanslı uygulamaları anlama](apps-add.md#understanding-licensed-apps) bölümüne bakın.
 
-Microsoft Intune, **tüm uygulamalar** >  > **Ekle**' ye tıklayarak **bir uygulama ekleyebilirsiniz** . **Uygulama ekle** bölmesi görüntülenir ve **Uygulama türü**’nü seçmenize olanak tanır. 
+Microsoft Intune, **tüm uygulamalar** >  > **Ekle**' ye tıklayarak **bir uygulama ekleyebilirsiniz** . **Uygulama türünü seç** bölmesi görüntülenir ve **uygulama türünü**seçmenizi sağlar. 
 
 >[!TIP]
-> LOB uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Örneğin bir iOS LOB uygulaması yüklemek için **Uygulama ekle** bölmesinde **Uygulama türü** olarak **İş kolu uygulaması**’nı seçersiniz. Ardından uygulama paket dosyası uzantısını (.ipa) seçersiniz. Bu tür uygulamalar genellikle şirket içinde yazılanlardır.
+> LOB uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Örneğin, bir iOS LOB uygulaması yüklemek için uygulama **türü seç** bölmesinde Uygulama **türü** olarak **iş kolu uygulaması** ' nı seçerek uygulamayı eklersiniz. Ardından uygulama paket dosyası uzantısını (.ipa) seçersiniz. Bu tür uygulamalar genellikle şirket içinde yazılanlardır.
 
 ## <a name="assess-app-requirements"></a>Uygulama gereksinimlerini değerlendirme
 BT yöneticisi olarak yalnızca grubunuzun hangi uygulamaları kullanacağına karar vermeniz değil, her bir grup ve alt grup için gereken yetenekleri de belirlemeniz gerekir. Her bir uygulama için gereken platformları, uygulamaya ihtiyacı olan kullanıcı gruplarını, bu gruplara uygulanacak yapılandırma ilkelerini ve koruma ilkelerini belirlersiniz.  

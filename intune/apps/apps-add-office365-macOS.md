@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3cf4c2abb5506f297af8a4e77145abea5360381b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564071"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755366"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune ile macOS cihazlara Office 365 atama
 
@@ -38,47 +38,52 @@ macOS cihazlarına Office 365’i eklemeye başlamadan önce aşağıdaki ayrın
 - Intune yalnızca Office Mac 2016 paketindeki Office uygulamalarının eklenmesini destekler.
 - Intune uygulama paketini yüklerken herhangi bir Office uygulaması açıksa kaydedilmeyen dosyalardaki veriler kaybedilebilir.
 
-## <a name="create-and-configure-the-app-suite"></a>Uygulama paketini oluşturma ve yapılandırma
+## <a name="select-the-office-365-suite-app-type"></a>Office 365 Suite uygulama türünü seçin
 
-**Uygulamalar** bölmesinden Office 365 uygulamaları ekleyin.
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
-3. **Uygulama türü** listesinde, **Office 365 Paketi** grubundan **macOS** öğesini seçin.
-4. Uygulama paketi hakkında bilgi almak için **Uygulama Paketi Bilgileri**’ni seçin.  
-    Bu bilgiler, Intune’da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı’nda paketi bulması kolaylaşır.
-5. Aşağıdaki bilgileri girin:
+3. **Uygulama türü seç** bölmesinin **Office 365 Suite** bölümünde **MacOS** ' u seçin.
+4. **Seçin**’e tıklayın. **Add Office 365 Suite** adımları görüntülenir.
+
+## <a name="step-1---app-suite-information"></a>1\. adım-uygulama paketi bilgileri
+
+Bu adımda, uygulama paketi hakkında bilgi sağlarsınız. Bu bilgiler, Intune'da uygulama paketini bulmanıza yardımcı olur ve kullanıcıların Şirket Portalı'nda paketi bulması kolaylaşır.
+
+1. **Uygulama paketi bilgileri** sayfasında, varsayılan değerleri onaylama veya değiştirme yapabilirsiniz:
     - **Paket Adı**: Uygulama paketinin Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm paket adlarının benzersiz olduğundan emin olun. Aynı uygulama paketi adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
-    - **Paket Açıklaması**: Uygulama paketi için bir açıklama girin.
+    - **Paket Açıklaması**: Uygulama paketi için bir açıklama girin. Örneğin dahil etmek üzere seçtiğiniz uygulamaları listeleyebilirsiniz.
     - **Yayımcı**: Yayımcı olarak Microsoft gösterilir.
-    - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Bu ayar, kullanıcıların şirket portalına göz atarken uygulama paketlerini daha kolay bulabilmesini sağlar.
-    - **Bunu Şirket Portalı’nda öne çıkan uygulama olarak görüntüle**: Bu seçenek uygulama paketini, kullanıcılar uygulamalara göz atarken Şirket Portalı’nın ana sayfasında göze çarpacak şekilde görüntüler.
+    - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Bu ayar, kullanıcıların şirket portalına göz atarken uygulama paketlerini daha kolay bulabilmesini sağlar.
+    - **Bunu şirket portalı öne çıkan uygulama olarak göster**: kullanıcılar uygulamalara gözatarken, uygulama paketini Şirket portalının ana sayfasında göze çarpacak şekilde görüntülemek için bu seçeneği belirleyin.
     - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Geliştirici**: Geliştirici olarak Microsoft gösterilir.
     - **Sahip**: Sahip olarak Microsoft gösterilir.
-    - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
+    - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: Kullanıcılar şirket portalına göz attığında uygulamayla birlikte Office 365 logosu görüntülenir.
-6. **Tamam**’ı seçin.
-7. **Uygulama ekle** bölmesinde **Ekle**’yi seçin.  
-    Paket, uygulama listesinde tek bir girdi olarak gösterilir.
+2. **İleri** ' ye tıklayarak **kapsam etiketleri** sayfasını görüntüleyin.
 
-## <a name="configure-app-assignments"></a>Uygulama atamalarını yapılandırma
+## <a name="step-2---select-scope-tags-optional"></a>2\. adım-kapsam etiketlerini seçin (isteğe bağlı)
+Intune 'da istemci uygulama bilgilerini kimlerin görebileceğini anlamak için kapsam etiketlerini kullanabilirsiniz. Kapsam etiketleri hakkında tam Ayrıntılar için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi ve kapsam etiketleri kullanma](../fundamentals/scope-tags.md).
 
-Bu adımda, uygulama paketi için atamaları yapılandırın. 
+1. **Kapsam etiketlerini Seç** ' e tıklayarak uygulama paketi için isteğe bağlı olarak kapsam etiketleri ekleyin. 
+2. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.
 
-1. Uygulama listesinde **Office 365** uygulama paketini seçerek **Office 365** genel bakış bölmesini görüntüleyin.
-2. **Office 365** bölmesinde **Atamalar**’ı seçin.
-3. Uygulama paketini kullanacak bir grup eklemek için **Grup ekle**’yi seçin.  
-    **Grup ekle** bölmesi görüntülenir.
-4. **Atama türü**’nü **Gerekli** veya **Kullanılabilir** olarak ayarlayın.
-5. Paketi seçtiğiniz gruplara atayın. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulamaları gruplara atama](apps-deploy.md).
+## <a name="step-3---assignments"></a>3\. adım-atamalar
+
+1. Uygulama paketi için, **Kayıtlı cihazlar** grubu atamalarını **gerekli** veya kullanılabilir olarak seçin. Daha fazla bilgi için bkz. [kullanıcıları ve cihazları düzenlemek için grup ekleme](~/fundamentals/groups-add.md) ve [Microsoft Intune olan gruplara uygulama atama](apps-deploy.md).
 
     >[!Note]
-    > Office 365 uygulama paketini Intune’da kaldıramazsınız.
+    > MacOS uygulama paketi için Office 365 ' i Intune aracılığıyla kaldıramazsınız.
 
-5. **Ata** bölmesinde **Tamam**’ı seçin.
-6. **Grup ekle** bölmesinde **Tamam**’ı seçin.
-7. Atamalarınızı işlemek için **Kaydet**’i seçin.
+2. **İleri** ' ye tıklayarak **gözden geçir + oluştur** sayfasını görüntüleyin. 
+
+## <a name="step-4---review--create"></a>4\. adım-Inceleme ve oluşturma
+
+1. Uygulama paketi için girdiğiniz değerleri ve ayarları gözden geçirin.
+2. İşiniz bittiğinde, uygulamayı Intune 'a eklemek için **Oluştur** ' a tıklayın.
+
+    Oluşturduğunuz Office 365 Windows 10 uygulama paketinin **genel bakış** dikey penceresi görüntülenir. Paket, uygulama listesinde tek bir girdi olarak gösterilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

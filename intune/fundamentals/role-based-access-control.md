@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509815"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754312"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)
 
@@ -52,6 +52,7 @@ Daha fazla yapılandırma olmadan, gruplara yerleşik roller atayabilirsiniz. Ye
 - **Uygulama Yöneticisi**: Mobil uygulamalar ve yönetilen uygulamaları yönetir, cihaz bilgilerini okuyabilir ve cihaz yapılandırma profillerini görüntüleyebilir.
 - **Intune rol yöneticisi**: özel Intune rollerini yönetir ve yerleşik Intune rolleri için Atamalar ekler. Bu, yöneticilere izin atayabilecek tek Intune rolüdür.
 - **Okul yöneticisi**: [eğitim için Intune](../introduction-intune-education.md)Windows 10 cihazlarını yönetir.
+- **Endpoint Security Manager**: güvenlik temelleri, cihaz uyumluluğu, koşullu erişim ve MICROSOFT Defender ATP gibi güvenlik ve uyumluluk özelliklerini yönetir.
 
 ### <a name="custom-roles"></a>Özel roller
 Özel izinlerle kendi rollerinizi oluşturabilirsiniz. Özel roller hakkında daha fazla bilgi için bkz. [özel rol oluşturma](create-custom-role.md).
@@ -62,12 +63,12 @@ Daha fazla yapılandırma olmadan, gruplara yerleşik roller atayabilirsiniz. Ye
 | Genel Yönetici | Okuma/yazma | Okuma/yazma |
 | Intune Hizmet Yöneticisi | Okuma/yazma | Okuma/yazma |
 | Koşullu Erişim Yöneticisi | Yok. | Yok. |
-| Güvenlik Yöneticisi | Salt okunur | Salt okunur |
-| Güvenlik operatörü | Salt okunur | Salt okunur |
-| Güvenlik Okuyucusu | Salt okunur | Salt okunur |
-| Uyumluluk Yöneticisi | Yok. | Salt okunur |
-| Uyumluluk verileri Yöneticisi | Yok. | Salt okunur |
-| Genel okuyucu | Salt Okunur | Salt Okunur |
+| Güvenlik Yöneticisi | Salt okuma (uç nokta güvenlik düğümü için tam yönetim izinleri) | Salt okunurdur |
+| Güvenlik operatörü | Salt okunurdur | Salt okunurdur |
+| Güvenlik okuyucusu | Salt okunurdur | Salt okunurdur |
+| Uyumluluk Yöneticisi | Yok. | Salt okunurdur |
+| Uyumluluk verileri Yöneticisi | Yok. | Salt okunurdur |
+| Genel okuyucu | Salt okunurdur | Salt okunurdur |
 
 > [!TIP]
 > Intune, Azure AD RBAC ile denetlenen üç Azure AD uzantısını da gösterir: **Kullanıcılar**, **gruplar**ve **koşullu erişim**. Bunlara ek olarak, **Kullanıcı Hesabı Yöneticisi** yalnızca AAD kullanıcısı/grubu etkinliklerini gerçekleştirir ve Intune'daki tüm etkinlikleri gerçekleştirme izinlerinin tümüne sahip değildir. Daha fazla bilgi için bkz. [Azure AD Ile RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

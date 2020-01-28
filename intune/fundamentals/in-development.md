@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01ea2f75d166e5cc6aef4b890dba5722a74c1f61
-ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
+ms.openlocfilehash: 78022dc4bdfa108bcd04e180ab413cbf04d2c728
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75827828"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755621"
 ---
 # <a name="in-development-for-microsoft-intune---january-2020"></a>Microsoft Intune için geliştirme aşamasında-Ocak 2020
 
@@ -65,27 +65,12 @@ Windows cihazlarındaki Şirket Portalı uygulamasını, uygulama kapatıldığ�
 Şirket Portalı uygulama son kullanıcılara ek uygulama yükleme durumu iletileri gösterecektir. Yeni Win32 bağımlılık özellikleri için aşağıdaki koşullar geçerli olacaktır:
 - Uygulama yüklenemedi. Yönetici tarafından tanımlanan bağımlılıklar karşılanmadı.
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276-idready---"></a>Web kliplerini iOS cihazlarında Microsoft Edge 'e yeniden hedefle<!-- 5455276 idready -->
+### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Web kliplerini iOS cihazlarında Microsoft Edge 'e yeniden hedefle<!-- 5455276 -->
 İOS cihazlarında sabitlenmiş Web uygulamaları olarak davranan web klipleri güncelleştirilmeleri gerekecektir. Yeni dağıtılan web klipleri, korumalı bir tarayıcıda açmak gerekirse Intune Managed Browser yerine Microsoft Edge 'de açılır. Managed Browser yerine Microsoft Edge 'de açıldıklarından emin olmak için önceden mevcut web kliplerini yeniden hedeflemeniz gerekir. 
 
-### <a name="user-experience-change-when-adding-apps-to-intune---4705829-idready---"></a>Intune 'a uygulama eklenirken Kullanıcı deneyimi değişikliği<!-- 4705829 idready -->
-Intune aracılığıyla uygulama eklerken yeni bir kullanıcı deneyimi görürsünüz. Bu deneyim, daha önce kullandığınız ayarların ve ayrıntıların aynısını sağlar ancak yeni deneyim, bir uygulamayı Intune 'a eklemeden önce sihirbaza benzer bir işlem izler. Bu yeni deneyim, uygulamayı eklemeden önce bir gözden geçirme sayfası da sağlar. [Microsoft Uç Nokta Yöneticisi Yönetim merkezinden](https://go.microsoft.com/fwlink/?linkid=2109431), **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin. Daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](~/apps/apps-add.md).
-
-#### <a name="require-win32-apps-to-restart----3136567--"></a>Win32 uygulamalarının yeniden başlatılmasını gerektir <!-- 3136567-->
-Başarılı bir yüklemeden sonra bir Win32 uygulamasının yeniden başlatılmasını zorunlu kılabilirsiniz. Ayrıca, yeniden başlatmanın gerçekleşmesi için gereken süreyi (yetkisiz kullanım süresi) seçebilirsiniz.
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Cihaz yapılandırması
-
-### <a name="add-automatic-proxy-settings-to-wi-fi-profiles-for-android-enterprise-work-profiles---4490822-idready---"></a>Android kurumsal iş profillerine yönelik Wi-Fi profillerine otomatik ara sunucu ayarları ekleme<!-- 4490822 idready -->
-Android kurumsal Iş profili cihazlarında Wi-Fi profilleri oluşturabilirsiniz. Wi-Fi kurumsal türünü seçtiğinizde, Wi-Fi ağınızda kullanılan Genişletilebilir Kimlik Doğrulama Protokolü (EAP) türünü de girebilirsiniz.
-
-Gelecekteki bir güncelleştirmede kurumsal tür ' i seçtiğinizde, `proxy.contoso.com`gibi bir proxy sunucu URL 'SI de dahil olmak üzere otomatik proxy ayarlarını girebilirsiniz.
-
-Yapılandırabileceğiniz geçerli Wi-Fi ayarlarını görmek için [Microsoft Intune ' de Android Enterprise ve Android bilgi noktası çalıştıran cihazlar Için Wi-Fi ayarları ekle](../configuration/wi-fi-settings-android-enterprise.md)' ye gidin.
-
-Uygulama hedefi:
-- Android kurumsal iş profili
 
 ### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>MacOS cihazları için kablolu ağ cihaz yapılandırma profilleri<!-- 3508686  -->
 Kablolu ağları yapılandıran yeni bir macOS cihaz yapılandırma profili kullanılabilir (**cihaz yapılandırma** > **profilleri** ** > ,** > Platform için **MacOS** > profil türü için **kablolu ağ** ). Kablolu ağları yönetmek için 802.1 x profilleri oluşturmak ve bu kablolu ağları macOS cihazlarınıza dağıtmak için bu özelliği kullanın.
@@ -120,10 +105,7 @@ Bu özellik şu platformlarda geçerlidir:
 - Android Kurumsal 
 
 <!-- ***********************************************-->
-## <a name="device-enrollment"></a>Cihaz kaydı
-
-### <a name="block-android-enrollments-by-device-manufacturer--5197392-idready--"></a>Android kayıtlarını cihaz üreticisine göre engelle<!--5197392 idready-->
-Cihazın üreticisine bağlı olarak cihazların kaydedilmesini engelleyebilirsiniz. Bu, Android Cihaz Yöneticisi ve Android kurumsal iş profili cihazları için geçerlidir. Kayıt kısıtlamalarını görmek için [Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)> **cihazlar** > **Kayıt kısıtlamaları**' na gidin.
+<!--## Device enrollment-->
 
 
 
@@ -151,9 +133,6 @@ Cihazlar için **genel bakış** sayfasına aşağıdaki bilgiler eklenecektir:
 
 <!-- ***********************************************-->
 ## <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
-
-### <a name="new-intune-built-in-role-endpoint-security-manager--4253397-idready--"></a>Yeni Intune yerleşik rol uç noktası Güvenlik Yöneticisi<!--4253397 idready-->
-Yeni bir Intune yerleşik rolü mevcut olacaktır: Endpoint Security Manager. Bu yeni rol, yöneticilere Intune 'daki Endpoint Manager düğümüne tam erişim ve diğer alanlara yalnızca erişim izni verir. Rol, Azure AD 'den "Güvenlik Yöneticisi" rolünün bir genişletmesinden oluşur. Şu anda yalnızca rol olarak genel yöneticileriniz varsa, hiçbir değişiklik yapmanız gerekmez. Rolleri kullanıyorsanız ve Endpoint Security Manager 'ın sağladığı ayrıntı düzeyini beğenmezseniz, bu rolü kullanılabilir olduğunda atayın. Yerleşik roller hakkında daha fazla bilgi için bkz. [rol tabanlı erişim denetimi](role-based-access-control.md).
 
 ### <a name="intune-roles-user-interface-changes-coming--5801612-idready--"></a>Intune rolleri Kullanıcı arabirimi değişiklikleri geliyor<!--5801612 idready-->
 [Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) > **Kiracı Yönetimi** > **rolleri** için Kullanıcı arabirimi, daha kolay ve sezgisel bir tasarıma göre değişecek. Bu deneyim, şimdi kullandığınız ayarların ve ayrıntıların aynısını sağlar, ancak yeni deneyim sihirbaz benzeri bir işlem kullanır.

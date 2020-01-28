@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 58f6c4e2c99c7e2c169014a71bb1cfd2bc85219b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563939"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755247"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulama dağıtımı 
 
@@ -39,6 +39,26 @@ Windows 10 cihazlarında desteklenen uygulama türleri İş kolu (LOB) uygulamal
 > Yalnızca Windows 10 1803 ve üzeri, ilişkili birincil kullanıcı olmadığında uygulamaları yüklemeyi destekler.
 >
 > Windows 10 Home Edition çalıştıran cihazlarda LOB uygulama dağıtımı desteklenmez.
+
+## <a name="supported-windows-10-app-types"></a>Desteklenen Windows 10 uygulama türleri
+
+Belirli uygulama türleri, kullanıcılarınızın çalıştırdığı Windows 10 sürümüne göre desteklenir. Aşağıdaki tabloda, uygulama türü ve Windows 10 Supportability sağlanmaktadır.
+
+| Uygulama türü | Ana Sayfası | Pro | Business | Enterprise | Eğitim | S modu | Holomers | SurfaceHub | WCOS | Cep Telefonu |
+|----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
+|  . DEFTERI | Hayır | Evet | Evet | Evet | Evet | Hayır | Hayır | Hayır | Hayır | Hayır |
+| . Intunewin | Hayır | Evet | Evet | Evet | Evet | 19H2 + | Hayır | Hayır | Hayır | Hayır |
+| Office C2R 'NDA | Hayır | Evet | Evet | Evet | Evet | Hayır | Hayır | Hayır | Hayır | Hayır |
+| LOB: APPX/MALTı | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet |
+| MSFB çevrimdışı | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet |
+| MSFB çevrimiçi | Evet | Evet | Evet | Evet | Evet | Evet | RS4 + | Evet | Evet | Evet |
+| Web Uygulamaları | Evet | Evet | Evet | Evet | Evet | Evet | Evet<sup>1 | Evet<sup>1 | Evet | Evet |
+| Mağaza bağlantısı | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet |
+
+yalnızca şirket portalından <sup>1</sup> başlatma.
+
+> [!NOTE]
+> Tüm Windows uygulama türleri kayıt gerektirir.
 
 ## <a name="windows-10-lob-apps"></a>Windows 10 LOB uygulamaları
 
