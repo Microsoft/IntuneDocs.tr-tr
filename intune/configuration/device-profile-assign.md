@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206712"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812380"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
 
@@ -31,7 +31,11 @@ Bir profil oluşturursunuz ve girdiğiniz tüm ayarlar burada saklanır. Bir son
 Bu makalede profil atama yöntemlerinin yanı sıra profillerinizde kapsam etiketlerini kullanma adımları hakkında bilgilere yer verilmiştir.
 
 > [!NOTE]  
-> Bir profil kaldırıldığında veya bir cihaza artık atanmadıysa, ayar varolan değeri tutabilir. Ayar varsayılan değere dönmez. Ayarı farklı bir değere değiştirmek için yeni bir profil oluşturun ve atayın.
+> Bir profil kaldırıldığında veya bir cihaza artık atanmadıysa, profildeki ayarlara bağlı olarak farklı şeyler meydana gelebilir. Ayarlar CSP 'lere dayalıdır ve her CSP profil kaldırmayı farklı şekilde işleyebilir. Örneğin, bir ayar varolan değeri tutabilir ve varsayılan değere geri dönmeyebilir. Davranış, işletim sistemindeki her CSP tarafından denetlenir. Windows CSP 'lerin listesi için bkz. [yapılandırma hizmeti sağlayıcısı (CSP) başvurusu](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+>
+> Bir ayarı farklı bir değere değiştirmek için yeni bir profil oluşturun, ayarı **Yapılandırılmadı**olarak yapılandırın ve profili atayın. Cihaza uygulandıktan sonra, kullanıcıların ayarı tercih ettikleri değer olarak değiştirmesi gerekir.
+>
+> Bu ayarları yapılandırırken, bir pilot grubuna dağıtım yapmanız önerilir. Daha fazla Intune dağıtım önerisi için bkz. [dağıtım planı oluşturma](../fundamentals/planning-guide-rollout-plan.md).
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -69,7 +73,7 @@ Windows 10 cihazlarında, profil yalnızca belirli bir işletim sistemi sürüm�
 
 Birçok kullanıcı, Kullanıcı gruplarını ne zaman kullanacağınızı ve cihaz gruplarının ne zaman kullanılacağını sorar. Yanıt, amacınız için farklılık gösterir. İşte başlamanıza yardımcı olacak bazı rehberlik.
 
-### <a name="device-groups"></a>Cihaz grupları
+### <a name="device-groups"></a>Device groups
 
 Bir cihaza, kim oturum açmış olduğunuza bakılmaksızın ayarları uygulamak istiyorsanız, profillerinizi bir cihaz grubuna atayın. Cihaz gruplarına uygulanan ayarlar, Kullanıcı değil, her zaman cihaza gider.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/27/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ade7676cb8f6265dd63eb1ba7847c50f526a9a
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
+ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76549340"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812436"
 ---
 # <a name="intune-app-installation-error-reference"></a>Intune uygulama yükleme hatası başvurusu
 
@@ -90,9 +90,7 @@ Aşağıdaki hata iletileri ve açıklamaları, iOS yükleme hatalarıyla ilgili
 | 0x87D13B72 | -2016330894 | Internet bağlantınızı kaybettiniz.  | Ağ bağlantısı nedeniyle uygulama bildirimi doğrulama hatası (bağlantı kaybedildi) |
 | 0x87D13B73 | -2016330893 | Internet bağlantınızı kaybettiniz.  | Ağ bağlantısı nedeniyle uygulama bildirimi doğrulama hatası (internet 'e bağlı değil) |
 | 0x87D13B77 | -2016330889 | Güvenli bağlantı başarısız oldu.  | Ağ bağlantısı nedeniyle uygulama bildirimi doğrulama hatası (güvenli bağlantı başarısız oldu) |
-| 0x87D13B6F | -2016330897 |  |   |
 | 0x87D13B80 | -2016330880 | CannotConnectToITunesStoreError | ITunes Store 'A Bağlanamamaya yönelik bir hata nedeniyle uygulama yüklemesi başarısız oldu |
-| 0x87D13B6E | -2016330898 |   | Ağ bağlantısı (bilinmiyor) nedeniyle uygulama bildirimi doğrulama hatası |
 | 0x87D13B9F  | -2016330849 | VPP uygulamasında bir güncelleştirme var | Bu kod, bir VPP uygulaması yüklendiğinde döndürülür, ancak daha yeni bir sürüm kullanılabilir. |
 
 ## <a name="other-installation-errors"></a>Diğer yükleme hataları
@@ -101,8 +99,8 @@ Aşağıdaki hata iletileri ve açıklamaları, iOS yükleme hatalarıyla ilgili
 |--------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x80073CFF | -2147009281 | (istemci hatası) | Bu uygulamayı yüklemek için dışarıdan yükleme özellikli bir sisteme sahip olmanız gerekir. Uygulama paketinin güvenilir bir imza ile imzalandığından ve AllowAllTrustedApps ilkesinin etkinleştirildiği bir etki alanına katılmış cihaza veya AllowAllTrustedApps ilkesi etkinleştirilmiş bir Windows dışarıdan yükleme lisansına sahip bir cihaza yüklenmiş olduğundan emin olun. Daha fazla bilgi için bkz. Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme. |
 | 0x80CF201C  | -2133909476 | (istemci hatası) | Bu uygulamayı yüklemek için dışarıdan yükleme özellikli bir sisteme sahip olmanız gerekir. Uygulama paketinin güvenilir bir imza ile imzalandığından ve AllowAllTrustedApps ilkesinin etkinleştirildiği bir etki alanına katılmış cihaza veya AllowAllTrustedApps ilkesi etkinleştirilmiş bir Windows dışarıdan yükleme lisansına sahip bir cihaza yüklenmiş olduğundan emin olun. Daha fazla bilgi için bkz. Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme. |
-| 0x80073CF0 | -2147009296 | Paket imzasız.     Yayımcı adı, imzalama sertifikası konusuyla eşleşmiyor.     Bilgi için AppxPackagingOM olay günlüğünü denetleyin. Daha fazla bilgi için bkz. Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme. | Paket açılamadı. Olası nedenler: |
-| 0x80073CF3 | -2147009296 | Gelen paket yüklü bir paketle çakışıyor.     Belirtilen paket bağımlılığı bulunamadı.     Paket doğru işlemci mimarisini desteklemiyor.     Bilgi için AppXDeployment-Server olay günlüğünü denetleyin. Daha fazla bilgi için bkz. Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme. | Paket güncelleştirme, bağımlılık veya çakışma doğrulaması başarısız oldu. Olası nedenler: |
+| 0x80073CF0 | -2147009296 | Paket imzasız.     Yayımcı adı imza sertifikası konusuyla eşleşmiyor.     Bilgi için AppxPackagingOM olay günlüğünü denetleyin. Daha fazla bilgi için bkz. Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme. | Paket açılamadı. Olası nedenler: |
+| 0x80073CF3 | -2147009296 | Gelen paket yüklü bir paketle çakışıyor.     Belirtilen bir paket bağımlılığı bulunamadı.     Paket doğru işlemci mimarisini desteklemiyor.     Bilgi için AppXDeployment-Server olay günlüğünü denetleyin. Daha fazla bilgi için bkz. Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme. | Paket güncelleştirme, bağımlılık veya çakışma doğrulaması başarısız oldu. Olası nedenler: |
 | 0x80073CFB | -2147009285 | Uygulamanın sürüm numarasını artırın, ardından paketi yeniden oluşturup yeniden imzalayın.     Yeni paketi yüklemeden önce sistem üzerindeki her kullanıcı için eski paketi kaldırın.     Daha fazla bilgi için bkz. Windows Mağazası uygulamalarının paketlenmesi, dağıtılması ve sorgu sorunlarını giderme.      | Belirtilen paket zaten yüklü ve paketin yeniden yüklenmesi engellendi. Zaten yüklü olan paketle aynı olmayan bir paket yüklüyorsanız bu hatayı alabilirsiniz. Dijital imzanın Ayrıca paketin bir parçası olduğunu doğrulayın. Bir paket yeniden oluşturulduğunda veya yeniden imzalandığında, bu paket artık daha önce yüklü olan paketle aynı bit düzeyinde değildir. Bu hatayı düzeltmek için kullanılabilecek iki seçenek aşağıda belirtilmiştir: |
 | 0x87D1041C | -2016345060 | Son Kullanıcı uygulamayı kaldırdı.     Paketteki kimlik bilgileri, bozuk uygulamalar için hangi cihaz raporlarının raporlamalarına uymuyor.     Kendi kendine güncelleştirilmesi için, ürün sürümü, Intune dışında güncelleştirildikten sonra uygulamanın bilgileriyle eşleşmez.     Kullanıcıya uygulamayı şirket portalından yeniden yüklemesini söyleyin. Cihaz bir sonraki iade edildiğinde gerekli uygulamaların otomatik olarak yeniden yüklenmesini unutmayın. | Uygulama yüklemesi başarılı oldu, ancak uygulama algılanmadı. Uygulama Intune tarafından başarıyla dağıtıldı ve sonra kaldırıldı. Kaldırılmakta olan uygulamanın nedenleri şunlardır: |
 | 0x8000FFFF | -2147418113 |   | Yükleme sırasında beklenmeyen bir hata oluştu. Ek bilgi için yükleme günlüklerine bakın. |

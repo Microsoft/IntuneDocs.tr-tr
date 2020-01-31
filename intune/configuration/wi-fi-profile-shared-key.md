@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: c9b56ba1515608afb6c2a0d151f5412711d49e57
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206236"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886707"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune 'da önceden paylaşılan anahtarla bir WiFi profili oluşturmak için özel cihaz profili kullanma
 
@@ -32,7 +32,7 @@ ms.locfileid: "75206236"
 
 Bu özellik şunları destekler:
 
-- Android
+- Android Cihaz Yöneticisi
 - Windows
 - EAP tabanlı Wi-Fi
 
@@ -229,8 +229,8 @@ Ayrıca, var olan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilir
 
 1. C:\WiFi. gibi, dışarıya aktarılmış W-Fi profilleri için yerel bir klasör oluşturun
 2. Yönetici olarak bir komut istemi açın ( **yönetici olarak çalıştır** > `cmd`sağ tıklayın).
-3. `netsh wlan show profiles` öğesini çalıştırın. Tüm profillerin adları listelenir.
-4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi` öğesini çalıştırın. Bu komut, c:\Wifi. içinde `Wi-Fi-YourProfileName.xml` adlı bir dosya oluşturur
+3. `netsh wlan show profiles`'i çalıştırın. Tüm profillerin adları listelenir.
+4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`'i çalıştırın. Bu komut, c:\Wifi. içinde `Wi-Fi-YourProfileName.xml` adlı bir dosya oluşturur
 
     - Önceden paylaşılan anahtar içeren bir Wi-Fi profilini dışarı aktarıyorsanız komuta `key=clear` ekleyin:
   
@@ -243,7 +243,7 @@ XML dosyasına sahip olduktan sonra, XML sözdizimini kopyalayıp OMA-URI ayarla
 > [!TIP]
 > `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` tüm profilleri XML biçiminde de içerir.
 
-## <a name="best-practices"></a>En iyi uygulamalar
+## <a name="best-practices"></a>Önerilen uygulamalar
 
 - PSK ile bir Wi-Fi profili dağıtmadan önce cihazın uç noktaya doğrudan bağlanabildiğini doğrulayın.
 

@@ -5,7 +5,7 @@ description: Intune ilkesi kullanılarak bir cihazda BitLocker şifrelemesini et
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/29/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 744277b0e49a4e3ca8b0fa3bac43c666110bb8a3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74410362"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886790"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Microsoft Intune 'de BitLocker ilkeleri sorunlarını giderme
 
@@ -183,7 +183,7 @@ Intune ilkeniz herhangi bir kapasitede mevcut olmadığında **, ilke cihaza ula
 
 - BitLocker TPM 'yi kullandığından, Intune veya ilkeyle ilgili bir sorun nedeniyle BitLocker 'ın başarısız olmaması, ancak cihazın bir TPM yongasına sahip olmaması veya BIOS 'ta TPM 'nin devre dışı bırakılması olabilir.
 
-  Ek bir ipucu olarak Windows > **BITLOCKER apı** > **uygulamalar ve hizmetler günlüğü** **altında Windows Olay Görüntüleyicisi** aynı olduğunu doğrulayabilirsiniz. **BITLOCKER API** olay günlüğünde TPM 'nin kullanılamadığı anlamına gelen BIR olay kimliği 853 bulacaksınız:
+  Ek bir ipucu olarak, **Microsoft** > **WINDOWS** > **BitLocker API** > **uygulamalar ve hizmetler günlüğü** altında Windows Olay Görüntüleyicisi 'de aynısını doğrulayabilirsiniz. **BITLOCKER API** olay günlüğünde TPM 'nin kullanılamadığı anlamına gelen BIR olay kimliği 853 bulacaksınız:
 
   ![Olay KIMLIĞI 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 

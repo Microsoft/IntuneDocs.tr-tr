@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885803"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812470"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
@@ -89,15 +89,15 @@ Aşağıdaki üç yöntemi kullanarak uygulama yapılandırma ilkesini doğrulay
 
       ![Uygulama yapılandırması ekran görüntüsü](./media/app-configuration-policies-overview/app-configuration.png)
 
-## <a name="diagnostic-logs"></a>Tanılama Günlükleri
+## <a name="diagnostic-logs"></a>Tanılama günlükleri
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>yönetilmeyen cihazlarda iOS yapılandırması
 
 Yönetilen uygulama yapılandırması için, yönetilmeyen cihazlarda **Intune tanılama günlüğü** ile iOS yapılandırmasını doğrulayabilirsiniz. Aşağıdaki adımlara ek olarak, Microsoft Edge kullanarak yönetilen uygulama günlüklerine erişebilirsiniz. Daha fazla bilgi için bkz. [yönetilen uygulama günlüklerine erişmek Için iOS üzerinde Microsoft Edge kullanma](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
-1. Cihazda zaten yüklü değilse, **Intune Managed Browser** App Store 'dan indirin ve yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
-2. **Intune Managed Browser** başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
-3. **Get Started** düğmesine tıklayın.
+1. Cihazda zaten yüklü değilse, **Microsoft Edge** 'ı App Store 'dan indirip yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
+2. **Microsoft Edge** 'i başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
+3. **Başlarken**' e tıklayın.
 4. **Günlükleri paylaşma**' ya tıklayın.
 5. Bilgisayarınızda görüntülenebilmeleri için günlüğü kendinize göndermek üzere seçtiğiniz posta uygulamasını kullanın. 
 6. Metin dosyası görüntüleyicinizdeki **ıntunemamdiagnostics. txt dosyasını** gözden geçirin.
@@ -139,9 +139,9 @@ Uygulama yapılandırma ayrıntılarınız, kiracınız için yapılandırılmı
 
 Yönetilen uygulama yapılandırması için, yönetilen cihazlarda **Intune tanılama günlüğü** ile iOS yapılandırmasını doğrulayabilirsiniz.
 
-1. Cihazda zaten yüklü değilse, **Intune Managed Browser** App Store 'dan indirin ve yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
-2. **Intune Managed Browser** başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
-3. **Get Started** düğmesine tıklayın.
+1. Cihazda zaten yüklü değilse, **Microsoft Edge** 'ı App Store 'dan indirip yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
+2. **Microsoft Edge** 'i başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
+3. **Başlarken**' e tıklayın.
 4. **Günlükleri paylaşma**' ya tıklayın.
 5. Bilgisayarınızda görüntülenebilmeleri için günlüğü kendinize göndermek üzere seçtiğiniz posta uygulamasını kullanın. 
 6. Metin dosyası görüntüleyicinizdeki **ıntunemamdiagnostics. txt dosyasını** gözden geçirin.

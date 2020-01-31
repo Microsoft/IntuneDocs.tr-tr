@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860304"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812164"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune'u kullanarak kuruluşunuzdaki kaynaklara erişim izni verme amacıyla cihazlarda kural oluşturun
 
@@ -91,7 +91,11 @@ Intune ayrıca bir dizi yerleşik uyumluluk ilkesi ayarına da sahiptir. Aşağ�
   - **Uyumlu** (*varsayılan*): güvenlik özelliği kapalı
   - **Uyumlu değil**: güvenlik özelliği açık
 
-  Bir cihaza bir uyumluluk ilkesi atanmamışsa, bu cihaz varsayılan olarak uyumlu olarak değerlendirilir. Uyumluluk ilkeleriyle koşullu erişim kullanıyorsanız, varsayılan ayarı **uyumlu değil**olarak değiştirmeniz önerilir. Bir ilke atanmadığı için son kullanıcı uyumsuzsa, [Şirket Portalı](../apps/company-portal-app.md) `No compliance policies have been assigned` ifadesine yer verir.
+  Bir cihaza bir uyumluluk ilkesi atanmamışsa, bu cihaz varsayılan olarak uyumlu olarak değerlendirilir. Uyumluluk ilkeleriyle koşullu erişim kullanıyorsanız, varsayılan ayarı **uyumlu değil**olarak değiştirmeniz önerilir. Bir ilke atanmadığı için son kullanıcı uyumsuzsa, [Şirket Portalı](../apps/company-portal-app.md)`No compliance policies have been assigned` ifadesine yer verir.
+
+
+> [!NOTE]
+> İOS cihazları için gelişmiş jailbreak algılama, Intune 'da geçici olarak devre dışı bırakılmıştır.
 
 - **Gelişmiş jailbreak algılama**: etkinleştirildiğinde, bu ayar IOS cihazlarının Intune 'a daha sık iade edilmesine neden olur. Bu özellik etkinleştirildiğinde cihazın konum hizmetleri kullanılır ve pil kullanımı bundan etkilenir. Kullanıcı konum verileri, Intune tarafından depolanmaz.
 

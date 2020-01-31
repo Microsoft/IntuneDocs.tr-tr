@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b5a0b152b6090da1831ac6d7b707c10ec466ce7
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9cc568cbadb683f632ffd2365ab7023cd796f231
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754601"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886701"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune 'de OEMConfig ile Android kurumsal cihazlarını kullanma ve yönetme
 
@@ -161,6 +161,7 @@ OEMConfig Apps, standart uygulamalarla karşılaştırıldığında, Google tara
 | Spectralink-cihaz | com. Spectralink. slnkdevicesettings  |  |
 | Spectralink-günlüğe kaydetme | com. Spectralink. slnklogger |  |
 | Spectralink-VQO | com. Spectralink. slnkvqo |  |
+| HMD küresel | com. hmdglobal. app. oemconfig. ironman |  |
 
 -----------------
 

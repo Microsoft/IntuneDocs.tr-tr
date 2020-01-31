@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885791"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886733"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -308,7 +308,10 @@ Wi-Fi profilleri, bir mobil cihazı otomatik olarak kablosuz ağa bağlamak içi
 
 Bir Wi-Fi profili için bir tasarım örneği aşağıda verilmiştir:
 
-| **türü** | **profil adı** | **Cihaz platformu** | **kullanım örnekleri** | | Wi-Fi | Asya Wi-Fi profili | Android | Şirket, KCG Asya bölgesi | | Wi-Fi | Kuzey Amerika Wi-Fi profili | Android, iOS, Windows 10 Mobile | Şirket, BYOD Kuzey Amerika Bölgesi |
+| **Tür** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |
+|:---:|:---:|:---:|:---:|
+| Wi-Fi | Asya Wi-Fi profili | Android | Kurumsal, KCG Asya bölgesi|
+| Wi-Fi | Kuzey Amerika Wi-Fi profili | Android, iOS, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika bölgesi |
 
 Wi-Fi profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
@@ -345,7 +348,7 @@ Kullanıcılara veya cihazlara uygulamaları çeşitli yollarla sunmak için Int
 
 - [iOS İş için Toplu Satın Alma Programı (VPP)](../apps/vpp-apps-ios.md)
 
-- [İş İçin Microsoft Mağazası uygulamaları](../apps/windows-store-for-business.md)
+- [İş uygulamaları için Microsoft Mağazası](../apps/windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Uygulama türü gereksinimleri
 

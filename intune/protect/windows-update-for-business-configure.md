@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: beafee4eb22d641748ca41f8f4c01c48ead87741
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754346"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886806"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune 'da Windows 10 yazılım güncelleştirmelerini yönetme
 
@@ -244,10 +244,12 @@ Bu bölmeden şunları yapabilirsiniz:
 - Dağıtımı değiştirmek için **Özellikler** ' i seçin.  *Özellikler* bölmesinde, dağıtım *ayarları veya atamalar*' ı açmak için **Düzenle** ' yi seçin, burada dağıtımı değiştirebilirsiniz.
 - İlke hakkındaki bilgileri görüntülemek için **Son Kullanıcı güncelleştirme durumu** ' nu seçin.
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Windows 10 güncelleştirmeleri için doğrulama ve raporlama
+
+Hem Windows 10 güncelleştirme halkaları hem de Windows 10 özellik güncelleştirmeleri için cihazların güncelleştirme durumunu izlemek üzere [güncelleştirmeler Için Intune uyumluluk raporları](../windows-update-compliance-reports.md) ' nı kullanın. Bu çözüm, Azure aboneliğinizle birlikte [güncelleştirme uyumluluğu](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) kullanır.
+
 ## <a name="next-steps"></a>Sonraki adımlar
 
 [Intune tarafından desteklenen Windows Update ayarları](../windows-update-settings.md)
-
-[Güncelleştirmeler için Intune uyumluluk raporları](../windows-update-compliance-reports.md)
 
 [Windows 10 güncelleştirme halkaları sorunlarını giderme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)

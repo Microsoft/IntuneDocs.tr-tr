@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517567"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812323"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için Windows 10 (ve üzeri) cihaz ayarları
 
@@ -39,8 +39,11 @@ Bu ayarlar, Intune 'da bir cihaz yapılandırma profiline eklenir ve ardından W
 
 Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [ApplicationManagement ILKESI CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement)'sini kullanır.
 
-- **App Store** (yalnızca mobil): **Yapılandırılmadı** (varsayılan), son kullanıcıların mobil cihazlarda App Store 'a erişmesine izin verir. **Blok** , uygulama mağazasının kullanımını engeller.
-- **Mağazadan uygulamaları otomatik güncelleştir**: **Yapılandırılmadı** (varsayılan) Microsoft Store yüklenen uygulamaların otomatik olarak güncelleştirilmesini sağlar. **Blok** , güncelleştirmelerin otomatik olarak yüklenmesini engeller.
+- **App Store** (yalnızca mobil): **Block** , son kullanıcıların mobil cihazlarda uygulama deposuna erişmesini önler. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak, işletim sistemi son kullanıcıların App Store 'a erişmesine izin verebilir.
+- **Store 'dan uygulamaları otomatik güncelleştir**: **blok** , güncelleştirmelerin Microsoft Store otomatik olarak yüklenmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak, işletim sistemi Microsoft Store yüklenen uygulamaların otomatik olarak güncelleştirilmesini sağlayabilir.
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **Güvenilen uygulama yüklemesi**: Microsoft Store olmayan uygulamalar yüklenebiliyorsa, dışarıdan yükleme olarak da bilinen ' yi seçin. Dışarıdan yükleme, Microsoft Store tarafından sertifikasız bir uygulamayı yüklüyor ve çalıştırmıyor. Örneğin, yalnızca şirket içi bir uygulama. Seçenekleriniz şunlardır:
   - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez.
   - **Engelle**: dışarıdan yüklemeyi engeller. Microsoft Store olmayan uygulamalar yüklenemez.
@@ -51,16 +54,36 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [ApplicationManageme
   - **Izin ver**: geliştirici modu ve dışarıdan yükleme uygulamalarına izin verir.
 
   [Cihazınızı geliştirme Için etkinleştirme](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) bu özellik hakkında daha fazla bilgi içerir.
+  
+  [ApplicationManagement/AllowAllTrustedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **Paylaşılan kullanıcı uygulaması verileri**: aynı cihazdaki farklı kullanıcılar arasında ve bu uygulamanın diğer örnekleriyle uygulama verilerini paylaşmaya **izin ver** ' i seçin. **Yapılandırılmadı** (varsayılan), diğer kullanıcılar ve aynı uygulamanın diğer örnekleri ile veri paylaşmayı engeller.
-- **Yalnızca özel mağazayı kullan**: **izin ver** , bir perakende kataloğu dahil olmak üzere yalnızca uygulamaların özel bir mağazadan indirilmesine ve ortak depodan İndirilme yapmasına izin verir. **Yapılandırılmadı** (varsayılan), uygulamaların özel bir mağazadan ve ortak bir mağazadan indirilmesini sağlar.
-- **Mağaza kaynaklı uygulama başlatma**: **blok** cihazda önceden yüklenmiş olan veya Microsoft Store indirilen tüm uygulamaları devre dışı bırakır. **Yapılandırılmadı** (varsayılan), bu uygulamaların açılmasını sağlar.
-- **Uygulama verilerini sistem birimine yükler**: **blok** , uygulamaların cihaz sistem biriminde veri depolamasını engeller. **Yapılandırılmadı** (varsayılan), uygulamaların sistem diski biriminde veri depolamasına izin verir.
-- **Uygulamaları sistem sürücüsüne yükleme**: **blok** , uygulamaların cihazdaki sistem sürücüsüne yüklenmesini engeller. **Yapılandırılmadı** (varsayılan), uygulamaların sistem sürücüsüne yüklenmesine izin verir.
-- **Game DVR** (yalnızca masaüstü): **blok** , Windows oyun kaydı ve yayını devre dışı bırakır. **Yapılandırılmadı** (varsayılan) oyunları kaydetmeye ve yayınlamasını sağlar.
+- **Paylaşılan kullanıcı uygulaması verileri**: aynı cihazdaki farklı kullanıcılar arasında ve bu uygulamanın diğer örnekleriyle uygulama verilerini paylaşmaya **izin ver** ' i seçin. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak işletim sistemi, diğer kullanıcılar ve aynı uygulamanın diğer örnekleri ile veri paylaşmayı önleyebilir.
+
+  [ApplicationManagement/AllowSharedUserAppData CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **Yalnızca özel mağazayı kullan**: **izin ver** , bir perakende kataloğu dahil olmak üzere yalnızca uygulamaların özel bir mağazadan indirilmesine ve ortak depodan İndirilme yapmasına izin verir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak işletim sistemi, uygulamaların özel bir mağazadan ve ortak bir mağazadan indirilebilmelerine izin verebilir.
+
+  [ApplicationManagement/RequirePrivateStoreOnly CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **Mağaza kaynaklı uygulama başlatma**: **blok** cihazda önceden yüklenmiş olan veya Microsoft Store indirilen tüm uygulamaları devre dışı bırakır. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak, işletim sistemi bu uygulamaların açmasına izin verebilir.
+
+  [ApplicationManagement/DisableStoreOriginatedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **Uygulama verilerini sistem birimine yükler**: **blok** , uygulamaların cihaz sistem biriminde veri depolamasını engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak, IŞLETIM sistemi uygulamaların sistem diski biriminde veri depolamasına izin verebilir.
+
+  [ApplicationManagement/Kısıttappdatatosystemvolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **Uygulamaları sistem sürücüsüne yükleme**: **blok** , uygulamaların cihazdaki sistem sürücüsüne yüklenmesini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak, IŞLETIM sistemi uygulamaların sistem sürücüsüne yüklenmesine izin verebilir.
+
+  [ApplicationManagement/Kısıttapptosystemvolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **Game DVR** (yalnızca masaüstü): **blok** , Windows oyun kaydı ve yayını devre dışı bırakır. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak, işletim sistemi oyunları kaydetmeye ve yayınlamasını sağlayabilir.
+
+  [ApplicationManagement/AllowGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **Yalnızca mağazadan uygulamalar**: Bu ayar, kullanıcılar Microsoft Store dışındaki yerlerden uygulama yüklerken Kullanıcı deneyimini belirler. Seçenekleriniz şunlardır:
 
-  - **Yapılandırılmadı** (varsayılan): son kullanıcıların, diğer ilke ayarlarında tanımlı uygulamalar dahil olmak üzere Microsoft Store dışındaki yerlerden uygulama yüklemesine izin verir.  
+  - **Yapılandırılmadı** (varsayılan): Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak, işletim sistemi son kullanıcıların diğer ilke ayarlarında tanımlı uygulamalar dahil olmak üzere Microsoft Store dışındaki yerlerden uygulama yüklemelerine izin verebilir.  
   - **Her yerde**: uygulama önerilerini devre dışı bırakır ve kullanıcıların herhangi bir konumdan uygulama yüklemesine izin verir.  
   - **Yalnızca depola**: son kullanıcıları yalnızca Microsoft Store uygulama yüklemeye zorlar.
   - **Öneriler**: Microsoft Store bulunan Web 'den bir uygulama yüklerken, kullanıcılar onu mağazadan indirdikleri öneren bir ileti görür.  
@@ -68,11 +91,11 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [ApplicationManageme
 
   [SmartScreen/Enableappınstallcontrol CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Yüklemeler üzerinde Kullanıcı denetimi**: **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, kullanıcıların, dosyaları yüklemek için Dizin girme gibi sistem yöneticileri için genellikle ayrılmış yükleme seçeneklerini değiştirmelerini engelleyin Windows Installer. **Engelle** , kullanıcıların bu yükleme seçeneklerini değiştirmesine izin verir ve Windows Installer güvenlik özelliklerinden bazıları atlanır.
+- **Yüklemeler üzerinde Kullanıcı denetimi**: **blok** kullanıcıların, dosyaları yüklemek için Dizin girme gibi sistem yöneticileri için genellikle ayrılmış yükleme seçeneklerini değiştirmelerini engeller. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Windows Installer, varsayılan olarak kullanıcıların bu yükleme seçeneklerini değiştirmelerini engelleyebilir ve Windows Installer güvenlik özelliklerinden bazıları atlanır.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **Yükseltilmiş ayrıcalıklara sahip uygulamaları yükleme**: **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, sistem yöneticisinin dağıtmadığından veya sunamayacağı programları yüklediğinde, sistem geçerli kullanıcının izinlerini uygular. **Blok** Windows Installer, sisteme herhangi bir program yüklerken yükseltilmiş izinleri kullanmak için yönlendirir. Bu ayrıcalıklar tüm programlara genişletilir.
+- **Yükseltilmiş ayrıcalıklarla uygulamalar yükleme**: **blok** , sistem üzerinde herhangi bir program yüklerken yükseltilmiş izinleri kullanmak Windows Installer. Bu ayrıcalıklar tüm programlara genişletilir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, Intune bu ayarı değiştirmez veya güncelleştirmez. Varsayılan olarak, sistem, bir sistem yöneticisinin dağıtamayacağı veya sunamayacağı programları yüklediğinde geçerli kullanıcının izinlerini uygulayabilir. 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ Bu ayarlar, [deneyim ILKESI CSP](https://docs.microsoft.com/windows/client-manag
 
 - **Kilitli ekran resmi URL 'si (yalnızca masaüstü)** : Windows kilit ekranı duvar kağıdı olarak kullanılan jpg, JPEG veya PNG biçiminde bir resmin URL 'sini girin. Örneğin, şunu girin: `https://contoso.com/image.png`. Bu ayar görüntüyü kilitler ve daha sonra değiştirilemez.
 
-  [Kişiselleştirme/Lockscreenımageurl CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [Kişiselleştirme/Lockscreenımageurl CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **Kullanıcı tarafından yapılandırılabilir ekran zaman aşımı (yalnızca mobil)** : **izin ver** kullanıcıların ekran zaman aşımını yapılandırmasına izin verir. **Yapılandırılmadı** (varsayılan), kullanıcılara bu seçeneği vermez.
 
@@ -334,13 +357,13 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
   - **Tüm sayfalarda**: tüm sayfalarda Sık Kullanılanlar çubuğunu gösterir. Son kullanıcılar bu ayarı değiştiremezler.
   - **Gizli**: tüm sayfalarda Sık Kullanılanlar çubuğunu gizler. Son kullanıcılar bu ayarı değiştiremezler.
 - **Sık kullanılanlara değişikliklere Izin ver**: **Evet** (varsayılan), kullanıcıların listeyi değiştirmesine izin veren işletim sistemi varsayılanını kullanır. **Hayır** , son kullanıcıların sık kullanılanlar listesini eklemesini, içeri aktarmayı, sıralamasını veya düzenlemesini engeller.
-  - **Sık Kullanılanlar listesi**: Sık Kullanılanlar dosyasına URL 'lerin bir listesini ekleyin. Örneğin, `http://contoso.com/favorites.html` ekleyin.
+  - **Sık Kullanılanlar listesi**: Sık Kullanılanlar dosyasına URL 'lerin bir listesini ekleyin. Örneğin, `http://contoso.com/favorites.html`ekleyin.
 - **Microsoft tarayıcıları arasında sık kullanılanları Eşitle** (yalnızca masaüstü): **Evet** , Windows 'un Internet Explorer ve Microsoft Edge arasında sık kullanılanları eşitlemesine zorlar. Sık Kullanılanlar için eklemeler, silmeler, değişiklikler ve düzen değişiklikleri, tarayıcılar arasında paylaşılır.  **Hayır** (varsayılan) işletim sistemi varsayılanını kullanır, bu da kullanıcılara tarayıcılar arasında sık kullanılanları eşitleme seçeneği verebilir.
 - **Varsayılan arama motoru**: cihazda varsayılan arama altyapısını seçin. Son kullanıcılar bu değeri istediği zaman değiştirebilir. Seçenekleriniz şunlardır:
   - İstemci Microsoft Edge ayarları 'nda arama altyapısı
-  - Bing
+  - Cıları
   - Google
-  - Yahoo
+  - Yahoo!
   - Özel değer: **OpenSearch XML URL 'Si**içinde, kısa adı ve arama altyapısının URL 'sini IÇEREN BIR https URL 'sini en düşük düzeyde girin. Örneğin, şunu girin: `https://www.contoso.com/opensearch.xml`.
 - **Arama önerilerini göster**: **Evet** (varsayılan) arama motorunuzun, adres çubuğuna arama ifadeleri yazarken site önermesine izin verir. **Hayır** bu özelliği engeller.
 - **Arama altyapısında değişikliklere Izin ver**: **Evet** (varsayılan), kullanıcıların yeni arama motorları eklemesine veya Microsoft Edge 'de varsayılan arama altyapısını değiştirmesine izin verir. Kullanıcıların arama altyapısını özelleştirmesini engellemek için **Hayır** ' ı seçin.
@@ -370,7 +393,7 @@ Bu cihaz kısıtlamaları profili, [Windows bilgi noktası ayarları](kiosk-sett
 - **Canlı kutucuk veri toplamaya Izin ver**: **Evet** (varsayılan), Microsoft Edge 'In Başlat menüsüne sabitlenmiş canlı kutucuktan bilgi toplamasına izin verir. **Hayır** , kullanıcılara sınırlı bir deneyim sağlayabilen bu bilgilerin toplanmasını engeller.
 - **Kullanıcı sertifika hatalarını geçersiz kılabilir**: **Evet** (varsayılan), kullanıcıların Güvenli Yuva Katmanı/Aktarım katmanı GÜVENLIĞI (SSL/TLS) hataları olan Web sitelerine erişmesine izin verir. **Hayır** (Artırılmış güvenlik için önerilir), kullanıcıların Web sitelerine SSL veya TLS hatalarıyla erişmesini önler.
 
-### <a name="additional"></a>Ek
+### <a name="additional"></a>Fazladan
 
 - **Microsoft Edge tarayıcısına Izin ver** (yalnızca mobil): **Evet** (varsayılan) mobil cihazda Microsoft Edge Web tarayıcısının kullanılmasına izin verir. **Hayır** , cihazda Microsoft Edge kullanımını engeller. **Hayır**' ı seçerseniz, diğer tek ayarlar yalnızca masaüstü için geçerlidir.
 - **Adres çubuğu açılır listesine Izin ver**: **Evet** (varsayılan), Microsoft Edge 'in adres çubuğu açılır listesini öneriler listesiyle göstermesini sağlar. **Hayır** , Microsoft Edge 'in, yazarken açılan listede öneriler listesi göstermesini engeller. **Hayır**olarak ayarlandığında, şunları yapabilirsiniz:
@@ -481,7 +504,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Kişiselleştirme I
 
 - **Masaüstü arka plan resmi URL 'si (yalnızca masaüstü)** : Windows masaüstü duvar kağıdı olarak kullanmak istediğiniz. jpg,. jpeg veya. png biçimindeki bir resmin URL 'sini girin. Kullanıcılar bu resmi değiştiremez. Örneğin, şunu girin: `https://contoso.com/logo.png`.
 
-## <a name="printer"></a>Yazıcı
+## <a name="printer"></a>Yazıcıda
 
 - **Yazıcılar**: eklenen yerel yazıcıların listesi.
 - **Varsayılan yazıcı**: varsayılan yazıcıyı ayarlayın.
@@ -880,7 +903,7 @@ Bu ayarlar, desteklenen Windows sürümlerini de listeleyen [Defender Ilke CSP](
 
 ## <a name="power-settings"></a>Güç ayarları
 
-### <a name="battery"></a>Pil
+### <a name="battery"></a>Ak
 
 - **Enerji tasarrufunu açmak Için pil düzeyi**: cihaz pil gücünü kullanırken, 0-100 adresinden enerji tasarrufu 'nı açmak için pil ücreti düzeyini girin. Pil ücreti düzeyini gösteren bir yüzde değeri girin. Varsayılan değer %70 ' dir. %70 olarak ayarlandığında enerji tasarrufu, pilin %70 ' i veya daha az kullanılabilir olduğunu açık hale getirir.
 

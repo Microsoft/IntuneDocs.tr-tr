@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991769"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812451"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -76,7 +76,7 @@ Silme, cihazı yeni bir kullanıcıya vermeden önce veya cihaz kaybolduğunda/�
 
 Cihaz açık ve bağlı olduğu sürece, **Silme** eylemi 15 dakikadan kısa süre içinde tüm cihaz türlerine yayılır.
 
-## <a name="retire"></a>Devre dışı bırakma
+## <a name="retire"></a>Devre Dışı Bırakma
 
 **Kullanımdan kaldırma** eylemi; yönetilen uygulama verilerini (varsa), ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Cihaz Intune yönetiminden kaldırılır. Bu durum cihaz iade etme işlemi gerçekleştirdiğinde ve **Kullanımdan kaldırma** uzak eylemini aldığında ortaya çıkar. Cihaz, cihaz iade edilene kadar Intune 'da görünmeye devam eder. Eski cihazları hemen kaldırmak istiyorsanız, bunun yerine [silme eylemini](devices-wipe.md#delete-devices-from-the-intune-portal) kullanın.
 
@@ -88,7 +88,7 @@ Aşağıdaki tablolarda, hangi verilerin kaldırıldığı ve şirket verileri k
 
 |Veri türü|iOS|
 |-------------|-------|
-|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket Portalı kullanılarak yüklenen uygulamalar:** Yönetim profiline sabitlenmiş uygulamalar için tüm uygulama verileri ve uygulamalar kaldırılır. Buna önceden App Store'dan yüklenmiş ve daha sonra şirket uygulaması olarak yönetilen uygulamalar dahildir. <br /><br /> **Mobil uygulama yönetimini kullanan ve App Store 'dan yüklenen Microsoft uygulamaları:** Şirket Portalı tarafından yönetilmeyen uygulamalarda, uygulama yerel depolama alanındaki mobil uygulama yönetimi (MAM) şifrelemesi tarafından korunan şirket uygulama verileri kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz. Kişisel uygulamalar ve bunların verileri kaldırılmaz.|
+|Intune tarafından yüklenen şirket uygulamaları ve ilişkili veriler|**Şirket Portalı kullanılarak yüklenen uygulamalar:** Yönetim profiline sabitlenmiş uygulamalar için tüm uygulama verileri ve uygulamalar kaldırılır. Bu uygulamalar, başlangıçta App Store 'dan yüklenen ve daha sonra şirket uygulamaları olarak yönetilen uygulamaların yanı sıra uygulama cihaz kaldırma işleminden kaldırılmadığı sürece bu uygulamalara dahildir. <br /><br /> **Mobil uygulama yönetimini kullanan ve App Store 'dan yüklenen Microsoft uygulamaları:** Şirket Portalı tarafından yönetilmeyen uygulamalarda, uygulama yerel depolama alanındaki mobil uygulama yönetimi (MAM) şifrelemesi tarafından korunan şirket uygulama verileri kaldırılır. Uygulama dışında MAM şifrelemesi ile korunan veriler şifrelenmiş ve kullanılamaz durumda kalır ama kaldırılmaz. Kişisel uygulamalar ve bunların verileri kaldırılmaz.|
 |Ayarlar|Intune ilkesi tarafından ayarlanan yapılandırmalar artık zorunlu tutulmaz. Kullanıcılar ayarları değiştirebilir.|
 |Wi-Fi ve VPN profili ayarları|Kaldırıldı.|
 |Sertifika profili ayarları|Sertifikalar kaldırılır ve iptal edilir.|
@@ -146,7 +146,7 @@ Yalnızca bilgi noktası cihazlarını silebilirsiniz. Android bilgi noktası ci
 > [!NOTE]
 > İlk kurulum (OOBE) sırasında Azure AD 'ye eklenen Windows 10 cihazlarında, devre dışı bırakma komutu cihazdan tüm Azure AD hesaplarını kaldırır. Yerel yönetici olarak oturum açmak ve kullanıcının yerel verilerine yeniden erişim kazanmak için [Bilgisayarınızı güvenli modda başlatma bölümündeki](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) adımları izleyin. 
 
-### <a name="retire"></a>Devre dışı bırakma
+### <a name="retire"></a>Devre Dışı Bırakma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.
