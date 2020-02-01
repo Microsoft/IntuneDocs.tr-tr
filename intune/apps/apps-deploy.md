@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563988"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912667"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -132,7 +132,7 @@ Yönetilmeyen cihazlara Yönetilen Google Play uygulaması atama adımları:
 Intune konsolundan uygulamaya özgü bir silme işlemi başlatıldığında iş hesabı Play Store uygulamasından otomatik olarak kaldırılır ve bu işlemden sonra son kullanıcı Play Store uygulama kataloğunda iş uygulamalarını göremez. İş hesabı bir cihazdan kaldırıldığında Play Store'dan yüklenen uygulamalar cihazda yüklü şekilde kalır ve kaldırılmaz. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>İOS ile yönetilen uygulamalar için uygulama kaldırma ayarı
-İOS cihazlarında, cihazın Intune kaydını silmek veya **cihaz kaldırma ayarında Kaldır '** ı kullanarak yönetim profilini kaldırmak için, yönetilen uygulamalara ne olacağını seçebilirsiniz. Bu ayar yalnızca cihaz kaydedildikten ve uygulamalar yönetilen olarak yüklendikten sonra uygulamalar için geçerlidir. Ayar Web uygulamaları veya Web bağlantıları için yapılandırılamaz. 
+İOS cihazlarında, cihazın Intune kaydını silmek veya **cihaz kaldırma ayarında Kaldır '** ı kullanarak yönetim profilini kaldırmak için, yönetilen uygulamalara ne olacağını seçebilirsiniz. Bu ayar yalnızca cihaz kaydedildikten ve uygulamalar yönetilen olarak yüklendikten sonra uygulamalar için geçerlidir. Ayar Web uygulamaları veya Web bağlantıları için yapılandırılamaz. Uygulama seçmeli silme işlemi tarafından kullanımdan kaldırıldıktan sonra yalnızca mobil uygulama yönetimi (MAM) tarafından korunan veriler kaldırılır.
 
 Ayar için varsayılan değerler, yeni atamalar için aşağıdaki gibi önceden doldurulur:
 

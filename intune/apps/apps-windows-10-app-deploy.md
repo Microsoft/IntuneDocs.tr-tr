@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58f6c4e2c99c7e2c169014a71bb1cfd2bc85219b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755247"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912577"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulama dağıtımı 
 
@@ -80,22 +80,28 @@ Iş uygulamalarına yönelik Microsoft Store kategorilere ayırmak için:
 Uygulama türüne bağlı olarak, uygulamayı iki şekilde bir Windows 10 cihazına yükleyebilirsiniz:
 
 - **Kullanıcı bağlamı**: bir uygulama kullanıcı bağlamında dağıtıldığında, Kullanıcı cihazda oturum açtığında, yönetilen uygulama cihazdaki bu kullanıcı için yüklenir. Kullanıcı cihazda oturum açana kadar uygulama yüklemesinin başarılı olamayacağını unutmayın. 
-  - Modern iş kolu uygulamaları ve Iş uygulamaları için Microsoft Store (hem çevrimiçi hem de çevrimdışı), kullanıcı bağlamında dağıtılabilir. Uygulamalar hem gerekli hem de kullanılabilir amaçları destekler.
+  - Modern LOB uygulamaları ve Iş uygulamaları için Microsoft Store (hem çevrimiçi hem de çevrimdışı), kullanıcı bağlamında dağıtılabilir. Uygulamalar hem gerekli hem de kullanılabilir amaçları destekler.
   - Kullanıcı modu veya Ikili mod olarak oluşturulan Win32 uygulamaları, kullanıcı bağlamında dağıtılabilir ve hem gerekli hem de kullanılabilir amaçları destekler. 
 - **Cihaz bağlamı**: bir uygulama cihaz bağlamında dağıtıldığında, yönetilen uygulama doğrudan cihaza Intune tarafından yüklenir.
-  - Cihaz bağlamında yalnızca modern iş kolu uygulamaları ve çevrimdışı lisanslı Microsoft Store Iş uygulamaları dağıtılabilir. Bu uygulamalar yalnızca gerekli amacı destekler.
+  - Cihaz bağlamında yalnızca modern LOB uygulamaları ve çevrimdışı lisanslı Microsoft Store Kurumsal uygulamalar dağıtılabilir. Bu uygulamalar yalnızca gerekli amacı destekler.
   - Makine modu veya Ikili mod olarak oluşturulan Win32 uygulamaları cihaz bağlamında dağıtılabilir ve yalnızca gerekli amacı destekleyebilir.
 
 > [!NOTE]
 > Çift modlu uygulamalar olarak oluşturulan Win32 uygulamaları için, uygulamanın bu örnekle ilişkili tüm atamalar için Kullanıcı modu veya makine modu uygulaması olarak işlev görür olması gerekir. Dağıtım bağlamı atama başına değiştirilemez.  
 
-Bir uygulama cihaz bağlamına dağıtıldığında, yükleme yalnızca cihaz bağlamını destekleyen bir cihaza hedeflendiğinde başarılı olur. Buna ek olarak, cihaz bağlamında dağıtım aşağıdaki koşulları destekler:
-- Bir uygulama cihaz bağlamında dağıtılırsa ve bir kullanıcıya hedeflenirse, yükleme başarısız olur. Yönetim konsolunda aşağıdaki durum ve hata görüntülenir:
+Uygulamalar yalnızca cihaz ve Intune uygulama türü tarafından desteklenerek cihaz bağlamına yüklenebilir. Aşağıdaki uygulama türlerini cihaz bağlamına yükleyebilir ve bu uygulamaları bir cihaz grubuna atayabilirsiniz:
+
+- Win32 uygulamaları
+- Iş uygulamaları için çevrimdışı lisanslı Microsoft Store
+- LOB uygulamaları (MSI, APPX ve MALTı)
+- Office 365 ProPlus
+
+Cihaz bağlamına yüklemeyi seçtiğiniz Windows LOB uygulamaları (özellikle APPX ve MSIX) ve Microsoft Store Iş uygulamalarının (çevrimdışı uygulamalar) bir cihaz grubuna atanması gerekir. Bu uygulamalardan biri kullanıcı bağlamında dağıtıldığında yükleme başarısız olur. Yönetim konsolunda aşağıdaki durum ve hata görüntülenir:
   - Durum: Başarısız.
   - Hata: bir Kullanıcı, cihaz bağlamı yüklemesi ile hedeflenmiyor.
-- Bir uygulama cihaz bağlamına dağıtılmışsa, ancak cihaz bağlamını desteklemeyen bir cihaza hedeflenirse, yükleme başarısız olur. Yönetim konsolunda aşağıdaki durum ve hata görüntülenir:
-  - Durum: Başarısız.
-  - Hata: Bu platform cihaz bağlamı yüklemelerini desteklemiyor. 
+
+> [!IMPORTANT]
+> Bir Autopilot White with sağlama senaryosu ile birlikte kullanıldığında, bir cihaz grubunu hedeflemek üzere cihaz bağlamında dağıtılan Iş uygulamalarına yönelik LOB uygulamaları ve Microsoft Store için gereksinim yoktur. Daha fazla bilgi için bkz. [Windows Autopilot White and Deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove).
 
 > [!Note]
 > Belirli bir dağıtıma sahip bir uygulama atamasını kaydettikten sonra, modern uygulamalar haricinde, bu atamanın bağlamını değiştiremezsiniz. Modern uygulamalar için, bağlamı Kullanıcı bağlamından cihaz bağlamına dönüştürebilirsiniz. 

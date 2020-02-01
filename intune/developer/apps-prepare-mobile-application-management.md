@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653946"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912684"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>İş kolu uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -41,7 +41,6 @@ Intune’a kayıtlı olmayan cihazlarda uygulama koruma ilkeleri uygulamak için
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Uygulama Sarmalama Aracı kullanma nedenleri
 
 * Uygulamanız yerleşik veri koruma özelliklerine sahip değil
-* Uygulamanız basit
 * Uygulamanız dahili olarak dağıtılmış
 * Uygulamanın kaynak koduna erişiminiz yok
 * Uygulamayı siz geliştirmediniz
@@ -63,7 +62,6 @@ SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](app-sdk.md). S
 ### <a name="reasons-to-use-the-sdk"></a>SDK kullanma nedenleri
 
 * Uygulamanız yerleşik veri koruma özelliklerine sahip değil
-* Uygulamanız karmaşık ve birçok deneyim içeriyor
 * Uygulamanız Google Play veya Apple App Store gibi genel bir uygulama mağazasında dağıtılmış
 * Bir uygulama geliştiricisisiniz ve SDK kullanabilecek teknik bilgiye sahipsiniz
 * Uygulamanız diğer SDK tümleştirmelerine sahip
@@ -76,13 +74,13 @@ SDK hakkında daha fazla bilgi edinmek için bkz. [Genel bakış](app-sdk.md). S
 |**Android**|Evet – [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
 |**Outlook Web Access (OWA)**| Evet - [Intune Uygulaması SDK Xamarin Bağlamalarını](app-sdk-xamarin.md) kullan.|Hayır|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Yukarıda listelenen bir uygulama geliştirme platformu kullanmıyor musunuz?
+## <a name="not-using-an-app-development-platform-listed-above"></a>Yukarıda listelenen bir uygulama geliştirme platformu kullanmıyor musunuz?
 
 Intune SDK geliştirme ekibi etkin bir şekilde sınar ve yerel Android, iOS (obj-C, Swift), Xamarin, Xamarin. Forms ve Cordova platformlarıyla oluşturulmuş uygulamalar için destek sağlar. Bazı müşteriler, bir Kullanıcı ve NativeScript gibi diğer platformlarla Intune SDK tümleştirmesi ile başarılı olmuş olsa da, desteklenen platformlarımızdan başka herhangi bir şeyi kullanarak uygulama geliştiricileri için açık rehberlik veya eklentiler sağlamayız. 
 
 ## <a name="feature-comparison"></a>Özellik karşılaştırması
 
-Bu tabloda Uygulama SDK'si ve Uygulama Kaydırma Aracı için kullanabileceğiniz ayarlar listelenmektedir.
+Bu tablo, uygulama SDK 'sını veya uygulama sarmalama aracını kullanıyorsa etkinleştirilen ayarları listeler. Bazı özellikler, uygulama geliştiricilerinin Intune SDK 'Sı ile temel tümleştirme dışında bazı Logic uygulamalarını ve bu nedenle uygulama sarmalama aracı 'nı kullanıyorsa etkin olmadığını gerektirir. 
 
 |Özellik|Uygulama SDK'sı|Uygulama Sarmalama Aracı|
 |-----------|---------------------|-----------|
@@ -107,7 +105,7 @@ Bu tabloda Uygulama SDK'si ve Uygulama Kaydırma Aracı için kullanabileceğini
 |Uygulama verilerini tam Temizleme|X|X|
 |Çoklu kimlik senaryolarında iş ve okul verilerinin seçmeli silme <br><br>**Not:** iOS için yönetim profili kaldırıldığında uygulama da kaldırılır.|X||
 |“Farklı Kaydet”i önleme|X||
-|Hedeflenen uygulama yapılandırması (veya "MAM Channel" aracılığıyla uygulama yapılandırması)|X||
+|Hedeflenen uygulama yapılandırması (veya "MAM Channel" aracılığıyla uygulama yapılandırması)|X|X|
 |Çoklu Kimlik Desteği|X||
 |Özelleştirilebilir Stil |X|||
 |Citrix mVPN ile isteğe bağlı uygulama VPN bağlantıları|X|X| 
@@ -119,6 +117,11 @@ Bu tabloda Uygulama SDK'si ve Uygulama Kaydırma Aracı için kullanabileceğini
 |iOS için en düşük Intune SDK’sını zorunlu tut (yalnızca iOS)|X|X|
 |SafetyNet cihaz kanıtlama (yalnızca Android)|X|X|
 |Uygulamalarda tehdit taraması (yalnızca Android)|X|X|
+|Maxmen en önemli mobil tehdit savunma satıcısı cihaz risk düzeyini gerektir|X||
+|Kuruluş hesapları için uygulama bildirim içeriğini yapılandırma|X|X|
+|Onaylanan Klavye kullanımını gerektir (yalnızca Android)|X|X|
+|Uygulama koruma ilkesi gerektir (koşullu erişim)|X||
+|Onaylanan istemci uygulaması gerektir (koşullu erişim)|X||
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

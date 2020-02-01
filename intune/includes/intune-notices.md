@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760984"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912650"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
 
@@ -21,8 +21,8 @@ Intune hizmet güncelleştirmesinde, Intune 'da yeni bir güvenlik rolü bırakm
  
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
 Bugün, Azure AD 'de güvenlik uzmanlarınız için kullanabileceğiniz üç rol vardır:
-- Azure AD 'de, Intune 'a salt okuma erişimi veren güvenlik okuyucusu rolü.
-- Azure AD 'de, Intune 'a salt okuma erişimi veren güvenlik Işletmeni rolü.
+- Azure AD 'de, Intune 'a salt okuma erişimi sağlayan güvenlik okuyucusu rolü.
+- Azure AD 'de, Intune 'a salt okuma erişimi sağlayan güvenlik operatörü rolü.
 - Azure AD 'de Güvenlik Yöneticisi. Intune Ocak güncelleştirmesini, Intune 'a yönelik salt okuma izinleriyle birlikte sevk edildiğinde, uç nokta güvenlik yöneticisi rolü tarafından verilen yeni izinler aşağıdaki gibidir:
     - Cihaz uyumluluk Ilkelerini okuyun, oluşturun, güncelleştirin, silin ve atayın
     - Yönetilen cihazları okuma, silme ve güncelleştirme
@@ -51,7 +51,7 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 Windows Phone 8,1 için Microsoft temel desteği 2017 Temmuz 'da sona erdi ve genişletilmiş destek Haziran 2019 ' de sona erdi. Windows Phone 8,1 için Şirket Portalı uygulaması, 2017 ' den bu yana bir moda sahip. Microsoft Intune, Windows Phone 8,1 için 20 Şubat 2020 ' de desteği sona erdirmek için.
 
 #### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-20 Şubat 2020 ' den sonra bu cihazlar herhangi bir güvenlik güncelleştirmesi almaz ve yeni cihazları kaydedemeyeceksiniz. Mevcut Windows Phone 8,1 cihazları kayıtlı kalır (ilke, uygulamalar, raporlama), ancak üçüncü taraf sertifikalar gibi birçok bileşen bu tarihten sonra, bu tarihten sonra var olan bir kaydın tüm sorunlarını gidermeye devam edin. platformunun. Intune, Intune ile uyumluluk sınamasını durdurur ve 8,1 Windows Phone.
+20 Şubat 2020 ' den sonra bu cihazlar herhangi bir güvenlik güncelleştirmesi almaz ve yeni cihazları kaydedemeyeceksiniz. Mevcut Windows Phone 8,1 cihazları kayıtlı kalır (ilke, uygulamalar, raporlama), ancak üçüncü taraf sertifikalar gibi birçok bileşen bu tarihten sonra bu tarihten sonra mevcut bir kayıt ile ilgili sorun gidermeyi desteklemez platformunun. Intune, Intune ile uyumluluk sınamasını durdurur ve 8,1 Windows Phone.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune raporlamayı kontrol edebilirsiniz. Cihazlar > Tüm cihazlar'a gidin ve işletim sistemine göre filtre uygulayın. Kuruluşunuzda Windows Phone 8,1 çalıştıran cihazların kim olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmesini isteyin.
@@ -75,22 +75,8 @@ Intune Managed Browser Microsoft Edge 'e kesintisiz geçiş sağlamak için aşa
 İOS ve Android 'de web klipleri için destek geliyor. Bu destek yayınlandığında, Managed Browser yerine Microsoft Edge 'de açıldıklarından emin olmak için önceden mevcut web kliplerini yeniden hedeflemeniz gerekir. 
 
 #### <a name="additional-information"></a>Ek bilgiler
-Daha fazla bilgi için lütfen [Microsoft Edge 'i uygulama koruma ilkeleriyle birlikte kullanarak](../apps/manage-microsoft-edge.md) belgelerimizi ziyaret edin veya [destek blog gönderimizi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)görüntüleyin.
+Daha fazla bilgi için [Microsoft Edge 'i uygulama koruma ilkeleriyle birlikte kullanarak](../apps/manage-microsoft-edge.md) belgelerimizi ziyaret edin veya [destek blog gönderimizi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)görüntüleyin.
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Değişiklik planı: Intune 'da Android kurumsal adanmış cihazlarını kaydetme deneyimi güncelleştirildi<!--5198878-->
-Intune 'a Kasım veya 1911 sürümü ile, Wi-Fi profillerine sertifika tabanlı erişim sağlamak için Android kurumsal adanmış cihazlara SCEP cihaz sertifikası dağıtımı desteği ekledik. Bu değişiklik Ayrıca Android kurumsal adanmış cihazları kaydedilirken akış küçük değişiklikler içerir.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Ortamınızdaki Android kurumsal adanmış cihazları yönetiyorsanız, Kasım ayında bazı değişiklikleri kullanıma sunarak çalışmaya başlayabilirsiniz.
-
-- Yeni Android kurumsal adanmış cihaz kayıtları için: son kullanıcılar, kayıt sırasında cihazlarda farklı bir adım kümesi görür. Kayıt, bugün (QR, NFC, sıfır-Touch veya cihaz tanımlayıcısı ile) çalışmaya devam eder, ancak Kasım hizmeti sürümünden sonra zorunlu bir uygulama yüklemesi adımı olacaktır.
-- Adanmış cihazlar olarak kaydedilen mevcut Android cihazları için: Intune, ilk Kasım 'Dan başlayarak cihazlara Microsoft Intune uygulamasını otomatik olarak yüklemeye başlar. Herhangi bir işlem yapmanız gerekmez. Uygulama, cihazlara otomatik olarak indirilir ve yüklenir. 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
-Son Kullanıcı kılavuzunuzu güncelleştirmeyi planlamalısınız ve yardım masanızla bu değişikliği bilmesini sağlayabilirsiniz. Daha fazla ayrıntı ve ekran görüntüsü için ek bilgiler ' e tıklayın. Bu değişiklik kullanıma sunulmaya başladığında yenilikler sayfamızı güncelleştireceğiz.
-
-#### <a name="additional-information"></a>Ek bilgiler
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Eski PC yönetimi için destek sonu
 
@@ -156,8 +142,8 @@ Kuruluşunuzun bu eylem planını anında kabul etmeyi öneririz:
 - 14 Ocak 2020 tarihinden önce Windows 7 ' yi planlayın ve Windows 10 ' a yükseltin.
 - Mevcut Windows 7 PC 'nizi Windows 10 ' a yükseltme hakkında daha fazla bilgi edinmek için [Windows 10 dağıtım desteği](https://docs.microsoft.com/windows/deployment/) ' ni araştırın.
 - Microsoft uygulama uyumluluğu taahhüdüne yardımcı olacak, FastTrack aracılığıyla sunulan [Masaüstü uygulamasını](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) gözden geçirin.
-- MDM yönetimini kullanarak Windows 10 yönetmek için, mevcut eski Intune yazılım istemcisi tarafından yönetilen cihazları Microsoft tarafından önerilen çözüme geçirin. Tüm yeni Windows 10 bilgisayarlarını Azure portal Intune için MDM yönetimini kullanarak kaydedin.
+- MDM yönetimini kullanarak Windows 10 yönetmek için, mevcut eski Intune yazılım istemcisi tarafından yönetilen ve Microsoft tarafından önerilen çözüme geçiş yapın. Tüm yeni Windows 10 bilgisayarlarını Azure portal Intune için MDM yönetimini kullanarak kaydedin.
 
-Daha fazla bilgi için [buraya blog gönderisine](https://aka.ms/Windows7_Intune) bakın.
+Daha fazla bilgi için [buraya blog gönderisine](https://aka.ms/Windows7_Intune)bakın.
 
 

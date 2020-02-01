@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78022dc4bdfa108bcd04e180ab413cbf04d2c728
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d71ae3c15dddedd5d9ebfaf06fcae25af89f6b82
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755621"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912649"
 ---
 # <a name="in-development-for-microsoft-intune---january-2020"></a>Microsoft Intune için geliştirme aşamasında-Ocak 2020
 
@@ -110,15 +110,9 @@ Bu özellik şu platformlarda geçerlidir:
 
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>Cihaz yönetimi
+<!--## Device management-->
 
 
-### <a name="new-information-in-device-details---4471759-5604099----"></a>Cihaz ayrıntılarında yeni bilgiler<!-- 4471759 5604099  -->
-Cihazlar için **genel bakış** sayfasına aşağıdaki bilgiler eklenecektir:
-- Bellek kapasitesi (cihazdaki fiziksel bellek miktarı)
-- Depolama kapasitesi (cihazdaki fiziksel depolama miktarı) 
-- CPU Işlemci türü ve hızı
-- RAM ve işlemci verileri
 
 <!-- ***********************************************-->
 <!--## Intune apps-->
