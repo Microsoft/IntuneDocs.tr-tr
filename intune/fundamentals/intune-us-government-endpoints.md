@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207392"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966292"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune için ABD devlet uç noktaları
 
@@ -61,11 +61,11 @@ Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hiz
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
 
 ## <a name="windows-push-notification-services"></a>Windows anında Iletme Bildirim Hizmetleri
-Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune tarafından yönetilen cihazlarda, cihaz eylemleri ve diğer anında etkinlikler için Windows PUsh Bildirim Hizmetleri (WNS) gereklidir. Daha fazla bilgi için bkz. [WNS trafiğini desteklemek Için kurumsal güvenlik duvarı ve proxy yapılandırması](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune tarafından yönetilen cihazlarda, cihaz eylemleri ve diğer anında etkinlikler için Windows Push Bildirim Hizmetleri (WNS) gereklidir. Daha fazla bilgi için bkz. [WNS trafiğini desteklemek Için kurumsal güvenlik duvarı ve proxy yapılandırması](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 
 ## <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
 
-|**İçin kullanılan**|**Ana bilgisayar adı (IP adresi/alt ağ)**|**Protokolü**|**Bağ**|
+|**İçin kullanılan**|**Ana bilgisayar adı (IP adresi/alt ağ)**|**Protokol**|**Bağ**|
 |------------|-----------|------------|-----------|
 |Apple sunucularından içerik alma ve görüntüleme|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|istemcileri iki protokolü de kullandığından, proxy sunucusu hem|80|
 |APNS sunucularıyla iletişim|#-courier.push.apple.com<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|TCP|5223 ve 443|

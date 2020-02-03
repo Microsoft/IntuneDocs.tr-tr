@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886006"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966394"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Altyapıyı Intune ile SCEP destekleyecek şekilde yapılandırma
 
@@ -253,7 +253,7 @@ Aşağıdaki yordamlar, Intune ile kullanmak üzere ağ cihazı kayıt hizmeti '
 
       - **Web Sunucusu** > **Uygulama Geliştirme** > **ASP.NET 4.5**
 
-        ASP.NET 4.5 yüklendiğinde .NET Framework 4.5 de yüklenir. .NET Framework 4.5’i yüklerken çekirdek **.NET Framework 4.5** özelliğini, **ASP.NET 4.5**’i ve **WCF Hizmetleri** > **HTTP Etkinleştirmesi** özelliğini yükleyin.
+        ASP.NET 4.5 yüklendiğinde .NET Framework 4.5 de yüklenir. .NET Framework 4.5'i yüklerken, çekirdek **.NET Framework 4.5** özelliğini, **ASP.NET 4.5**'i ve **WCF Hizmetleri** > **HTTP Etkinleştirmesi** özelliğini yükleyin.
 
       - **Yönetim Araçları** > **IIS 6 Yönetim Uyumluluğu** > **IIS 6 Metatabanı Uyumluluğu**
       - **Yönetim Araçları** > **IIS 6 Yönetim Uyumluluğu** > **IIS 6 WMI Uyumluluğu**
@@ -378,6 +378,32 @@ Microsoft Intune Sertifika Bağlayıcısı NDES hizmetinizi çalıştıran sunuc
 5. Sertifika Bağlayıcısı için istemci sertifikası istendiğinde, **Seç**' i seçin ve bu makalenin önceki kısımlarında yer alan [NDES 'yi barındıran sunucuda sertifika yükleme ve bağlama](#install-and-bind-certificates-on-the-server-that-hosts-ndes) yordamının adım #3 adım sırasında NDES sunucunuza yüklediğiniz **istemci kimlik doğrulaması** sertifikasını seçin.
 
    İstemci kimlik doğrulama sertifikasını seçtikten sonra, **Microsoft Intune sertifika Bağlayıcısı yüzeyi Için Istemci sertifikasına** geri dönersiniz. Seçtiğiniz sertifika gösterilmese de bu sertifikanın özelliklerini görüntülemek için **İleri** ' yi seçin. **İleri**’yi ve ardından **Yükle**’yi seçin.
+
+> [!NOTE]
+> Intune sertifika bağlayıcısını başlatmadan önce, GCC High kiracılarının aşağıdaki değişiklikleri yapılmalıdır.
+> 
+> Aşağıda listelenen iki yapılandırma dosyasında düzenleme yapın ve bu, GCC High ortamının hizmet uç noktalarını güncelleştirecektir. Bu güncelleştirmelerin Uri 'Leri **. com** ' dan **. us** soneklerine değiştirdiğine dikkat edin. Toplam üç URI güncelleştirme, Ndesconnectoruı. exe. config yapılandırma dosyası içinde iki güncelleştirme ve NDESConnector. exe. config dosyasında bir güncelleştirme vardır.
+> 
+> - Dosya adı: < install_Path > \Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config
+> 
+>   Örnek: (%programfiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config)
+>   ```
+>    <appSettings>
+>        <add key="SignInURL" value="https://portal.manage.microsoft.us/Home/ClientLogon"/>
+>        <add key="LocationServiceEndpoint" value="RestUserAuthLocationService/RestUserAuthLocationService/ServiceAddresses"/>
+>        <add key="AccountPortalURL" value="https://manage.microsoft.us"/>
+>    </appSettings>
+>   ```
+> 
+> - Dosya adı: < install_Path > \Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config
+>
+>   Örnek: (%programfiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config)
+>    ```
+>    <appSettings>
+>        <add key="BaseServiceAddress" value="https://manage.microsoft.us/" />
+>    ```
+>
+> Bu düzenlemeler tamamlanmazsa, GCC High kiracılar şu hatayı alır: "erişim engellendi" "Bu sayfayı görüntüleme yetkiniz yok"
 
 6. Sihirbaz tamamlandıktan sonra, sihirbazı kapatmadan **Sertifika Bağlayıcısı Kullanıcı Arabirimini Başlat**’a tıklayın.
 

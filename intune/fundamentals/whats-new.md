@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59f1aee9d00e185cbe5852725a1e7e3c4d7233ea
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 1e0fab1eebfaf780cabca45d3a31e1994c2a2355
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912891"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966377"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -60,6 +60,24 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="new-setting-to-remove-specific-windows-built-in-apps---6184390---"></a>Belirli Windows yerleşik uygulamalarını kaldırmaya yönelik yeni ayar<!-- 6184390 -->
+Yeni bir Windows 10 cihaz yapılandırma ilkesi ayarı kullanarak, aşağıdaki Windows yerleşik uygulamalarını kaldırabilirsiniz:
+
+- Karma Gerçeklik Görüntüleyicisi
+- MSN Hava durumu
+- Uygulama yükleyicisi
+- Microsoft Ipuçları
+- My Office
+- Microsoft Solitaire koleksiyonu 
+- Mobil planlar
+- Geribildirim Merkezi 
+- Xbox 
+- Groove Music
+- Mail
+- Takvim
+
+Microsoft Endpoint Manager Yönetim Merkezi 'nde, **cihaz** > **yapılandırma profilleri** > **Profil oluştur**' u seçin. Ardından, **Platform**olarak **Windows 10 ve üzeri** ' i seçin. **Profil türü**olarak **cihaz kısıtlamalarını** seçin. **Cihaz kısıtlamaları** bölmesinde **Uygulama Mağazası** ' nı seçin. **Yerleşik uygulamaları kaldır**' ın yanındaki bölmenin alt kısmında **Kaldır**' ı seçin. Yerleşik uygulamalar hakkında daha fazla bilgi için bkz. [Microsoft Intune için yerleşik uygulamalar ekleme](~/apps/apps-add-built-in.md).
 
 #### <a name="intune-support-for-additional-microsoft-edge-version-77-deployment-channel-for-macos---5983950----"></a>MacOS için ek Microsoft Edge sürüm 77 dağıtım kanalı için Intune desteği<!-- 5983950  -->
 Microsoft Intune artık macOS için Microsoft Edge uygulaması için ek **kararlı** dağıtım kanalını desteklemektedir. **Kararlı** kanal, kurumsal ortamlarda Microsoft Edge 'i büyük ölçüde dağıtmak için önerilen kanaldır. Her altı haftada bir güncelleştirilir, her sürüm **Beta** kanalından geliştirmeler içerir. Intune, **kararlı** ve **Beta** kanallara ek olarak bir **geliştirme** kanalını da destekler. Genel Önizleme, macOS için Microsoft Edge sürüm 77 ve üzeri için kararlı ve geliştirme kanalları sunar. Tarayıcının otomatik güncelleştirmeleri varsayılan olarak açık olur. Daha fazla bilgi için bkz. [Microsoft Intune kullanarak macOS cihazları Için Microsoft Edge ekleme](~/apps/apps-edge-macos.md).

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547065"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966309"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
@@ -223,7 +223,7 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
 
      SCEP aracılığıyla sertifika veren NDES sunucuları için bir veya daha fazla URL girin. Örneğin, *https://ndes.contoso.com/certsrv/mscep/mscep.dll* gibi bir ad girin. URL 'Ler, profille cihaza rastgele gönderildiğinden, yük dengeleme için gereken ek SCEP URL 'Leri ekleyebilirsiniz. SCEP sunucularından biri kullanılamıyorsa, SCEP isteği başarısız olur ve daha sonraki cihaz iadelerinde, sertifika isteği aşağı doğru aynı sunucuya göre yapılabilir.
 
-8. **Tamam**’ı ve ardından **Oluştur**’u seçin. Profil oluşturulur ve *cihaz yapılandırması-profiller* listesinde görüntülenir.
+8. **Tamam**' ı ve ardından **Oluştur**' u seçin. Profil oluşturulur ve *cihaz yapılandırması-profiller* listesinde görüntülenir.
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Kaçışlı özel karakterlerle sertifika imzalama isteklerinden kaçının
 
@@ -285,3 +285,5 @@ SCEP sertifika profillerini, diğer amaçlar için [Cihaz profillerini dağıtt�
 ## <a name="next-steps"></a>Sonraki adımlar
 
 [Profiller atama](../configuration/device-profile-assign.md)
+
+[SCEP Sertifika profillerinin dağıtımı sorunlarını giderme](../protect/troubleshoot-scep-certificate-profiles.md)
