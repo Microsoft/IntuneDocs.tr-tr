@@ -6,9 +6,9 @@
     - name: Cihaz korumaya genel bakış
       href: device-protect.md
       displayName: compliant; noncompliant; mfa
-- name: Hızlı girişler
+- name: Hızlı başlangıçlar
   items:
-    - name: Cihaz uyumluluğu ilkesi oluşturma
+    - name: Cihaz uyumluluk ilkesi oluşturma
       href: quickstart-set-password-length-android.md
     - name: Bildirimleri uyumsuz cihazlara gönderme
       href: quickstart-send-notification.md
@@ -56,7 +56,7 @@
           href: create-compliance-policy.md
         - name: Konum tabanlı uyumluluk
           href: use-network-locations.md
-        - name: Uyumsuzluğa yönelik eylemler
+        - name: Uyumsuzluk eylemleri
           href: actions-for-noncompliance.md
         - name: Cihaz uyumluluğunu izleme
           href: compliance-policy-monitor.md
@@ -217,7 +217,7 @@
               href: windows-update-compliance-reports.md
         - name: iOS güncelleştirme ilkeleri
           href: software-updates-ios.md
-    - name: Sorunları Gider
+    - name: Sorun giderme
       items:
         - name: İlke ve profillerle ilgili sorunları giderme
           href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?toc=/intune/protect/toc.json&bc=/protect/breadcrumb/toc.json
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: Sorun giderme sertifika bağlayıcısı
           href: troubleshoot-certificate-connector-events.md
+        - name: SCEP sertifika profillerinde sorun giderme
+          items:
+            - name: SCEP sertifika profillerinde sorun giderme
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: Cihazlara profil dağıtımı
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: Cihaz ve NDES arası iletişim
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: NDES işlemleri
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: Cihazlara sertifika teslimi
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: Sertifikası dağıtımına ilişkin raporlama
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Exchange bağlayıcısı sorunlarını giderme
           items:
             - name: Exchange bağlayıcısı sorunlarını giderme

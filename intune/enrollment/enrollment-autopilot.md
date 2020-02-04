@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4ece1fd1d47213ff9da8b8fcc2e53155ad76628
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754550"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977810"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot'ı kullanarak Windows cihazları ıntune'a kaydetme  
 Windows Autopilot cihazlarını Intune'a kaydolan basitleştirir. Özelleştirilmiş işletim sistemi görüntülerinin derlenmesi ve bakımı çok zaman alan bir işlemdir. Ayrıca bu özel işletim sistemi görüntülerini, yeni cihazları son kullanıcılarınıza vermeden önce kullanıma hazırlamak amacıyla cihazlara uygulamak için de zaman harcayabilirsiniz. Microsoft Intune ve Autopilot ile cihazlarda özel işletim sistemi görüntüleri oluşturmanıza, bu görüntüleri cihazlara uygulamanıza ve bunların bakımını yapmanıza gerek kalmadan son kullanıcılarınıza yeni cihazlar verebilirsiniz. Autopilot cihazlarını yönetmek için Intune kullandığınızda, kaydolduktan sonra ilkeleri, profilleri, uygulamaları ve diğer nesneleri yönetebilirsiniz. Faydalara, senaryolara ve önkoşullara genel bir bakış için bkz. [Windows Autopilot’a genel bakış](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -163,6 +163,8 @@ Atanmamış cihazlara yönelik uyarıları görmek için [Microsoft Uç Nokta Y�
 Windows Autopilot aracılığıyla dağıtılan her bir cihazda ayrıntıları görebilirsiniz.
 Raporu görmek için [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' ne gidin, **cihazlar** > **Monitor** > **Autopilot dağıtımları**' nı seçin.
 Veriler dağıtımdan sonra 30 gün boyunca kullanılabilir.
+
+Bu rapor önizlemededir. Cihaz dağıtımı kayıtları şu anda yalnızca yeni Intune kayıt olayları tarafından tetiklenir. Bu, yeni bir Intune kaydını tetiklemeyen herhangi bir dağıtımın Bu rapor tarafından çekilmeyeceği anlamına gelir. Bu, kayıt ve Autopilot White 'ın Kullanıcı bölümünün kaydını tutan her türlü sıfırlamayı içerir.
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Belirli bir Autopilot cihazına kullanıcı atama
 

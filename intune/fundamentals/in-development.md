@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/07/2020
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,14 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d71ae3c15dddedd5d9ebfaf06fcae25af89f6b82
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912649"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977759"
 ---
-# <a name="in-development-for-microsoft-intune---january-2020"></a>Microsoft Intune için geliştirme aşamasında-Ocak 2020
+# <a name="in-development-for-microsoft-intune---february-2020"></a>Microsoft Intune için geliştirme sırasında-Şubat 2020
 
 Hazırlık ve planlamada yardımcı olması için bu sayfada Intune Kullanıcı Arabirimi güncelleştirmeleri ve geliştirme aşamasında olan ancak henüz yayınlanmayan özellikler listelenir. Bu sayfadaki bilgilere ek olarak: 
 
@@ -66,8 +66,22 @@ Windows cihazlarındaki Şirket Portalı uygulamasını, uygulama kapatıldığ�
 - Uygulama yüklenemedi. Yönetici tarafından tanımlanan bağımlılıklar karşılanmadı.
 
 ### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Web kliplerini iOS cihazlarında Microsoft Edge 'e yeniden hedefle<!-- 5455276 -->
-İOS cihazlarında sabitlenmiş Web uygulamaları olarak davranan web klipleri güncelleştirilmeleri gerekecektir. Yeni dağıtılan web klipleri, korumalı bir tarayıcıda açmak gerekirse Intune Managed Browser yerine Microsoft Edge 'de açılır. Managed Browser yerine Microsoft Edge 'de açıldıklarından emin olmak için önceden mevcut web kliplerini yeniden hedeflemeniz gerekir. 
+İOS cihazlarında sabitlenmiş Web uygulamaları olarak davranan web klipleri güncelleştirilmeleri gerekecektir. Yeni dağıtılan web klipleri, korumalı bir tarayıcıda açmak gerekirse Intune Managed Browser yerine Microsoft Edge 'de açılır. Managed Browser yerine Microsoft Edge 'de açıldıklarından emin olmak için önceden mevcut web kliplerini yeniden hedeflemeniz gerekir.
 
+### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>macOS Şirket Portalı Kullanıcı deneyimi geliştirmeleri<!-- 5568987 -->
+MacOS cihaz kayıt deneyimlerine ve Mac için Şirket Portalı uygulamasına yönelik geliştirmeler yapıyoruz. Şunları belirtebilirsiniz:
+- Kayıt sırasında, kullanıcılarınızın Şirket Portalı en son sürümüne sahip olmasını sağlayacak daha iyi bir Microsoft **Otomatik güncelleştirme** deneyimi.
+- Kayıt sırasında gelişmiş bir uyumluluk denetimi adımı.
+- Kopyalanmış olay kimlikleri için destek, kullanıcılarınız cihazlarından Şirket destek ekibine daha hızlı bir şekilde hata gönderebilir.
+
+Mac için kayıt ve Şirket Portalı uygulaması hakkında daha fazla bilgi için bkz. Şirket Portalı uygulamasını kullanarak macOS cihazınızı kaydetme (https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp). 
+
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Şirket Portalı, Android iş profili kaydından kaldırılan ekran<!--6103987 -->
+**Sıradaki nedir?** ekranı, Kullanıcı deneyimini kolaylaştırmak Için Şirket portalı Android iş profili kayıt akışından kaldırılacak. Geçerli Android iş profili kayıt akışını görmek için [Android iş profiline kaydol]( https://docs.microsoft.com/intune-user-help/enroll-device-android-work-profile) ' a gidin.
+
+### <a name="microsoft-defender-advanced-threat-protection-atp-app-for-macos---5424518-idready---"></a>MacOS için Microsoft Defender Gelişmiş tehdit koruması (ATP) uygulaması<!-- 5424518 idready -->
+Intune, macOS için Microsoft Defender Gelişmiş tehdit koruması (ATP) uygulamasını yönetilen Mac cihazlarına dağıtmanın kolay bir yolunu sağlar. Daha fazla bilgi için bkz. [Mac Için Microsoft Defender Gelişmiş tehdit koruması](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac). 
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Cihaz yapılandırması
@@ -104,14 +118,32 @@ Android Kurumsal cihazları için bir OEMConfig profili oluştururken veya düze
 Bu özellik şu platformlarda geçerlidir:
 - Android Kurumsal 
 
+
 <!-- ***********************************************-->
 <!--## Device enrollment-->
 
 
-
 <!-- ***********************************************-->
-<!--## Device management-->
+## <a name="device-management"></a>Cihaz yönetimi
 
+### <a name="change-primary-user-for-windows-devices----3794742---"></a>Windows cihazları için birincil kullanıcıyı değiştirme <!-- 3794742 -->
+Windows karma ve Azure AD 'ye katılmış cihazlar için birincil kullanıcıyı değiştirebileceksiniz. Bunu yapmak için **ıntune** > **cihazlar** > **tüm cihazlar** ' a gidin > bir cihaz > **özellikleri** > **birincil Kullanıcı**seçin. 
+
+### <a name="serial-number-on-the-apple-mdm-push-certificate-page--5947765---"></a>Apple MDM anında Iletme sertifikası sayfasındaki seri numarası<!--5947765 -->
+Apple MDM anında Iletme sertifikası sayfasında seri numarası görüntülenir. Sertifikayı oluşturan Apple KIMLIĞINE erişim kaybolursa, Apple MDM anında Iletme sertifikasına erişimi yeniden kazanmak için seri numarası gereklidir. Seri numarasını görmek için **cihazlar** > **iOS** > **IOS kaydı** > **Apple MDM anında iletme sertifikası**' na gidin.
+
+### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689---"></a>Kayıtlı cihazlara hangi iOS/ıpados güncelleştirmelerinin göndermek istediğinizi seçin<!--5879689 -->
+Apple Business Manager veya Apple Okul Yöneticisi kullanılarak kaydedilmiş cihazlara gönderim yapmak için belirli bir iOS/ıpados güncelleştirmesi seçebileceksiniz. Bu tür cihazlarda, yazılım güncelleştirme görünürlüğünü birkaç gün boyunca geciktirmek için bir cihaz yapılandırma ilkesi ayarlanmış olmalıdır. Bu özelliği görmek **için > iOS** **/ıpados** > **Profil oluştur** > **iOS** > güncelleştirme ilkeleri ' ne gidin.
+
+### <a name="new-update-schedule-options-for-pushing-os-updates-to-enrolled-iosipados-devices--5879689--"></a>Kayıtlı iOS/ıpados cihazlarına işletim sistemi güncelleştirmelerini göndermek için yeni güncelleştirme zamanlaması seçenekleri<!--5879689-->
+İOS/ıpados cihazları için işletim sistemi güncelleştirmelerini zamanlarken aşağıdaki seçeneklerden kullanabileceksiniz. Bu, Apple Business Manager veya Apple Okul Yöneticisi kayıt türlerini kullanan cihazlar için geçerlidir.
+- Sonraki iadede Güncelleştir
+- Zamanlanan süre içinde güncelleştirme
+- Zamanlanan sürenin dışında güncelleştirme
+
+İkinci iki seçenek için birden çok zaman penceresi oluşturabilirsiniz.
+
+Yeni seçenekleri görmek **için > iOS** **/ıpados** > **Profil oluştur** > **iOS** > güncelleştirme ilkeleri ' ne gidin.
 
 
 <!-- ***********************************************-->
@@ -119,10 +151,19 @@ Bu özellik şu platformlarda geçerlidir:
  
 
 <!-- ***********************************************-->
+## <a name="monitoring-and-troubleshooting"></a>İzleme ve sorun giderme
 
-<!--
-## Monitoring and troubleshooting
--->
+### <a name="improved-intune-reporting-experience---3791418-idready---"></a>İyileştirilmiş Intune raporlama deneyimi<!-- 3791418 idready -->
+Intune artık yeni rapor türleri, daha iyi rapor organizasyonu, daha odaklanmış görünümler, geliştirilmiş rapor işlevselliği ve daha tutarlı ve zamanında veriler de dahil olmak üzere gelişmiş bir raporlama deneyimi sunmaktadır. Raporlama deneyimi, genel önizlemeden GA 'ye (genel kullanılabilirlik) geçmeyecektir. Ayrıca, GA sürümü, [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'ndeki kutucuklar üzerinde yerelleştirme desteği, hata düzeltmeleri, tasarım iyileştirmeleri ve cihaz uyumluluk verileri toplama sağlar.
+
+Yeni rapor türleri aşağıdakilere odaklanılmıştır:
+- **İşletimsel** -negatif bir sistem durumu odaklı yeni kayıtlar sağlar. 
+- **Kuruluş** -genel durumun daha geniş bir özetini sağlar.
+- **Geçmiş** -bir süre boyunca desenler ve eğilimler sağlar.
+- **Uzman** -kendi özel raporlarınızı oluşturmak için ham verileri kullanmanıza olanak sağlar.
+
+Yeni raporların ilk kümesi cihaz uyumluluğuna odaklanır. Daha fazla bilgi için bkz. [blog-Microsoft Intune raporlama çerçevesi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) ve [Intune raporları](~/fundamentals/reports.md).
+
 
 
 <!-- ***********************************************-->
@@ -136,7 +177,13 @@ Bu özellik şu platformlarda geçerlidir:
 ## <a name="security"></a>Güvenlik
 
 ### <a name="derived-credentials-support-on-android-cobo-devices--4839592--"></a>Android COBO cihazlarında türetilmiş kimlik bilgileri desteği<!--4839592-->
-Android kurumsal tam olarak yönetilen cihazlarda türetilmiş kimlik bilgilerini kullanabilirsiniz. Entrust Datacard, ıntercede ve DıŞA purebred için türetilmiş bir kimlik bilgisi almak üzere destek eklenecektir. Uygulama kimlik doğrulaması, Wi-Fi, VPN veya S/MIME imzalama ve/veya şifrelemeyi destekleyen uygulamalarla şifreleme için türetilmiş bir kimlik bilgisi kullanabileceksiniz. 
+Android kurumsal tam olarak yönetilen cihazlarda türetilmiş kimlik bilgilerini kullanabilirsiniz. Entrust Datacard, ıntercede ve DıŞA purebred için türetilmiş bir kimlik bilgisi almak üzere destek eklenecektir. Uygulama kimlik doğrulaması, Wi-Fi, VPN veya S/MIME imzalama ve/veya şifrelemeyi destekleyen uygulamalarla şifreleme için türetilmiş bir kimlik bilgisi kullanabileceksiniz.
+
+### <a name="use-antivirus-policy-to-manage-settings-for-microsoft-defender-antivirus-and-the-windows-security-experience--6131401---"></a>Microsoft Defender virüsten koruma ve Windows Güvenlik deneyimiyle ilgili ayarları yönetmek için virüsten koruma ilkesini kullanın<!--6131401 -->
+*Uç nokta güvenlik* düğümünden **Virüsten koruma**ayarlarını yapılandırabileceksiniz. İlkeyi virüsten koruma için yapılandırdığınızda, Windows 10 cihazlarınızın ayarlarını iki profil türü aracılığıyla tanımlayacaksınız:
+
+- Microsoft Defender virüsten koruma: bulut koruması, virüsten koruma dışlamaları, düzeltme, tarama seçenekleri ve daha fazlası için ayarları yönetin.
+- Windows Güvenlik deneyimi: kullanıcıların cihazlarında Windows güvenlik ayarlarını nasıl deneymelerini yönetin. Microsoft Defender Güvenlik Merkezi 'nde ve aldıkları bildirimlerde son kullanıcıların neleri görüntüleyebileceklerini yapılandırabileceksiniz. 
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>Bildirimler

@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74558161"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971775"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Öğretici: Intune 'A iOS cihazlarını kaydetmek için Apple Business Manager 'daki (ABG) Apple 'ın kurumsal cihaz kayıt özelliklerini kullanma
 Apple Business Manager 'daki cihaz kayıt özellikleri cihazların kaydedilmesini basitleştirir. Intune, Apple 'ın eski Aygıt Kayıt Programı (DEP) portalını da destekler, ancak Apple Business Manager ile yeni bir başlangıç yapmanız önerilir. Microsoft Intune ve Apple Kurumsal cihaz kaydı ile, Kullanıcı cihazı ilk kez açtığında cihazlar otomatik olarak güvenli bir şekilde kaydedilir. Bu nedenle, her bir cihazı ayrı ayrı ayarlamanıza gerek kalmadan cihazları birçok kullanıcıya gönderebilirsiniz. 
@@ -34,7 +34,7 @@ Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../fundamentals/free-trial-sign-up.md).
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 - [Apple Business Manager](https://business.apple.com) veya [Apple 'ın aygıt kayıt programı](http://deploy.apple.com) satın alınan cihazlar
 - [Mobil cihaz yönetimi yetkilisini](../fundamentals/mdm-authority-set.md) ayarlama
 - [Apple MDM anında iletme sertifikası](apple-mdm-push-certificate-get.md) alın
@@ -62,7 +62,7 @@ Bir cihaz kayıt belirteci oluşturmak için Abe veya DEP portalını kullanın.
 
 6. **Ekle &lt;ServerName&gt;** iletişim kutusu açılır ve **Ortak Anahtarınızı Yükleyin** ifadesi yazar. **Dosya Seç…** öğesini seçin. .pem dosyasını karşıya yükleyin ve ardından **İleri**'yi seçin.
 
-6.  > **cihazları yönetmek** **Aygıt Kayıt Programı** **dağıtım programları** > gidin.
+6. **Dağıtım Programları** > **Cihaz Kayıt Programı** > **Cihazları Yönet**'e gidin.
 7. **Cihazları seçin**' ın altında **seri numarası**' nı seçin. <!--ask Tiffany about this-->
 
 8. **Eylem Seç** işlemi için **Sunucuya Ata**’yı ve Microsoft Intune için belirtilen &lt;ServerName&gt; öğesini belirleyip **Tamam**'ı seçin. Apple portalı, belirtilen cihazları Intune sunucusunda yönetilmek üzere bu sunucuya atar ve **Atama Tamamlandı** ifadesini görüntüler.
@@ -90,7 +90,7 @@ Belirtecinizi yüklemişseniz, şirkete ait iOS cihazları için bir kayıt prof
 
 5. Cihazlarınızın **Kullanıcı benzeşimi**ile veya bu olmadan kaydolmasını istediğinizi belirleme. Kullanıcı benzeşimi, belirli kullanıcılar tarafından kullanılacak cihazlar için tasarlanmıştır. Kullanıcılarınız uygulama yükleme gibi hizmetler için Şirket Portalı kullanmak istiyorsanız, **Kullanıcı benzeşimi Ile kaydet**' i seçin. Kullanıcılarınız Şirket Portalı gerekmiyorsa veya cihazı birçok kullanıcı için sağlamak istiyorsanız, **Kullanıcı benzeşimi olmadan kaydet**' i seçin.
 
-6. Kullanıcı benzeşimi ile kaydetmeyi seçerseniz Şirket Portalı veya Apple Kurulum Yardımcısı ile kimlik doğrulaması yapmak istediğinizi saptayın. Multi-Factor Authentication kullanmak isterseniz, kullanıcıların ilk oturum açtığında parolaları değiştirmesine izin verin veya kayıt sırasında kullanıcıların süre dolma parolalarını sıfırlamalarını iste, **Apple Kurulum Yardımcısı yerine Şirket portalı kimlik doğrulaması**altında **Evet** ' i seçin. Apple Kurulum Yardımcısı aracılığıyla Apple 'ın sunduğu temel HTTP kimlik doğrulamasını rahat bir şekilde kullanıyorsanız **Hayır**' ı seçin. **Evet** ' i seçerseniz ve şirket portalı uygulamasının son kullanıcıların cihazlarında otomatik olarak güncelleştirilmesini isterseniz, ayrı Apple 'ın toplu satın alma programı (VPP) aracılığıyla bu kullanıcılara gerekli bir uygulama olarak şirket portalı dağıtın.
+6. Kullanıcı benzeşimi ile kaydetmeyi seçerseniz Şirket Portalı veya Apple Kurulum Yardımcısı ile kimlik doğrulaması yapmak istediğinizi saptayın. Multi-Factor Authentication kullanmak isterseniz, kullanıcıların ilk oturum açtığında parolaları değiştirmesine izin verin veya kayıt sırasında kullanıcıların süre dolma parolalarını sıfırlamalarını iste, **Apple Kurulum Yardımcısı yerine Şirket portalı kimlik doğrulaması**altında **Evet** ' i seçin. Apple Kurulum Yardımcısı aracılığıyla Apple 'ın sunduğu temel HTTP kimlik doğrulamasını rahat bir şekilde kullanıyorsanız **Hayır**' ı seçin. **Evet** ' i seçerseniz ve şirket portalı uygulamasının son kullanıcıların cihazlarında otomatik olarak güncelleştirilmesini isterseniz, Şirket portalı Apple 'ın toplu satın alma programı (VPP) aracılığıyla bu kullanıcılara gerekli bir uygulama olarak ayrı olarak dağıtın.
 
 7. Kullanıcı benzeşimi ile kaydolmasını ve Şirket Portalı kimlik doğrulaması yapmayı seçerseniz, Apple 'ın toplu satın alma programı (VPP) ile Şirket Portalı yüklemek istediğinizi saptayın. Şirket Portalı bir VPP belirteci ile yüklerseniz, kullanıcının kayıt sırasında uygulama mağazasından Şirket Portalı indirmek için bir Apple KIMLIĞI ve parola girmesi gerekmez. Kullanılabilir Şirket Portalı ücretsiz lisanslarına sahip bir VPP belirteci seçmek için **belirteci kullan:** **vpp ile Install Şirket portalı** ' ı seçin. Şirket Portalı dağıtmak için VPP 'yi kullanmak istemiyorsanız, VPP **ile şirket portalı Install**altında **VPP kullanma** ' yı seçin. 
 

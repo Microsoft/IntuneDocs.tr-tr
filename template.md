@@ -14,12 +14,12 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ed2d00541c2d89efd0f8cd6aa60f29c527656fc0
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68354397"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971814"
 ---
 # <a name="metadata-and-markdown-template"></a>Meta Veriler ve Markdown Şablonu
 
@@ -28,7 +28,7 @@ Bu docs.ms şablonu, markdown söz dizimi örneklerinin yanı sıra meta veriler
 Markdown dosyası oluştururken şablonu yeni bir dosyaya kopyalamanız, meta verileri aşağıda belirtilen şekilde doldurmanız, H1 başlığını üst kısımda makalenin başlığı olarak ayarlamanız ve içeriği silmeniz gerekir. 
 
 
-## <a name="metadata"></a>Meta veriler 
+## <a name="metadata"></a>Meta veri 
 
 Tüm meta veriler bloğu, gerekli ve isteğe bağlı alanlara bölünmüş halde üst kısımdadır. Daha fazla bilgi edinmek için bkz. [İşlem meta verileri hızlı başvuru sayfası](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data). Bazı önemli notlar:
 
@@ -100,7 +100,7 @@ Markdown dosyasında bir URL görünürse, bu URL tıklanabilir bir bağlantıya
 1. Bir
 1. Adet
 1. Sıralı
-1. Liste  
+1. List  
 
 
 #### <a name="ordered-list-with-an-embedded-list"></a>İçinde katıştırılmış bir liste bulunan sıralı liste
@@ -120,14 +120,14 @@ Markdown dosyasında bir URL görünürse, bu URL tıklanabilir bir bağlantıya
 - Bu
 - bir
 - madde
-- madde işaretli
+- işaretli
 - liste
 
 
 #### <a name="unordered-list-with-an-embedded-lists"></a>İçinde katıştırılmış bir liste bulunan sırasız liste
 
 - Bu 
-- madde işaretli 
+- işaretli 
 - liste
   - Emel Mert
   - Murat Arslan
@@ -216,7 +216,7 @@ Bu bir `in-line code` örneğidir.
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R6_eWWfNB54" frameborder="0" allowfullscreen></iframe>
 
-## <a name="docsms-extentions"></a>docs.ms uzantıları
+## <a name="docsms-extensions"></a>docs.ms uzantıları
 
 ### <a name="button"></a>Düğme
 
