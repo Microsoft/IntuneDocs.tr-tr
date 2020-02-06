@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae7ffe5a8c20aa7edd67853ff86ef9e28cf2d175
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
+ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913182"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034252"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Microsoft Intune ile SCEP sertifika profillerinde sorun gidermeye genel bakış
 
@@ -67,7 +67,7 @@ Aşağıdaki grafikte, Intune 'daki SCEP iletişim işlemine temel bir genel bak
 Cihaz günlükleri cihaz platformuna bağlıdır:  
 
 - [iOS ve ıpados](#logs-for-ios-and-ipados-devices)
-- [Outlook Web Access (OWA)](#logs-for-android-devices)
+- [Android](#logs-for-android-devices)
 - [Windows](#logs-for-windows-devices)
 
 ### <a name="logs-for-on-premises-infrastructure"></a>Şirket içi altyapı günlükleri
@@ -115,11 +115,11 @@ Aşağıdaki listede, sonraki SCEP sorun giderme makalelerinde başvurulan Günl
 
 ### <a name="logs-for-android-devices"></a>Android cihazları için Günlükler
 
-Android çalıştıran cihazlar için **android Şirket portalı** app günlük dosyası **OMADM. log**dosyasını kullanın. Günlükleri toplamadan ve gözden geçirebilmeniz için, [ayrıntılı günlük kaydının](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) etkinleştirildiğinden emin olun ve ardından sorunu yeniden oluşturun.
+Android çalıştıran cihazlar için **android Şirket portalı** app günlük dosyası **OMADM. log**dosyasını kullanın. Günlükleri toplamadan ve gözden geçirebilmeniz için, [ayrıntılı günlük kaydının](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) etkinleştirildiğinden emin olun ve ardından sorunu yeniden oluşturun.
 
-Bir cihazdan OMADM. logs toplamak için bkz. [USB kablosu kullanarak karşıya yükleme ve e-posta günlükleri](/intune-user-help/send-logs-to-your-it-admin-using-cable-android.md).
+Bir cihazdan OMADM. logs toplamak için bkz. [USB kablosu kullanarak karşıya yükleme ve e-posta günlükleri](/intune-user-help/send-logs-to-your-it-admin-using-cable-android).
 
-Ayrıca, destek için [e-posta günlükleri de yükleyebilir](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md#upload-and-email-logs-from-microsoft-intune-app) .
+Ayrıca, destek için [e-posta günlükleri de yükleyebilir](/intune-user-help/send-logs-to-your-it-admin-by-email-android#upload-and-email-logs-from-microsoft-intune-app) .
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>İOS ve ıpados cihazları için Günlükler
 
