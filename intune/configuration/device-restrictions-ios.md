@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754584"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051618"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
-Bu makalede iOS ve ıpados cihazlarında denetleyebileceğinizi belirten farklı ayarlar listelenir. Mobil cihaz yönetimi (MDM) çözümünüz kapsamında bu ayarları kullanabilir ve bu sayede özellikleri etkinleştirip devre dışı bırakabilir, parola kuralları uygulayabilir, belirli uygulamalara izin verebilir veya bunları kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
+Bu makalede iOS ve ıpados cihazlarında denetleyebileceğinizi belirten farklı ayarlar listelenir. Mobil cihaz yönetimi (MDM) yönteminizin bir parçası olarak bu ayarları kullanabilir ve bu sayede özellikleri etkinleştirip devre dışı bırakabilir, parola kuralları uygulayabilir, belirli uygulamalara izin verebilir veya bunları kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
 
 Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra iOS cihazlarınıza atanır veya dağıtılır.
 
@@ -45,7 +45,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 - **Kullanım verilerini paylaşma**: cihazın Apple 'a tanılama ve kullanım verileri göndermesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı bu verilerin gönderilmesine izin verir.
 
-- **Ekran Yakalama**: seçin **blok** cihazın ekran veya ekran görüntüleri önlemek için. İOS 9,0 ve üzeri sürümlerde ekran kayıtlarını da engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının ekran içeriğini bir resim veya video olarak yakalamasına olanak tanır.
+- **Ekran yakalama**: cihazda ekran görüntülerini veya ekran yakalamalarını engellemek için **Engelle** ' yi seçin. İOS 9,0 ve üzeri sürümlerde ekran kayıtlarını da engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının ekran içeriğini bir resim veya video olarak yakalamasına olanak tanır.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
@@ -127,7 +127,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
     Bu ayarın geçerli olduğu sürümler:  
     - iOS 11,3 ve üzeri
 
-## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
+## <a name="password"></a>Parola
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri
 
@@ -323,7 +323,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
-- **Kamera**: seçin **blok** için cihaz kameranızı erişimi engellemek için. **Yapılandırılmadı** (varsayılan) ayarı, cihazın kamerasına erişim sağlar.
+- **Kamera**: cihazdaki kameraya erişimi engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, cihazın kamerasına erişim sağlar.
 
   İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
 
@@ -420,8 +420,6 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
   Uygulamanın URL'sini bulmak için, iTunes App Store'u açın ve uygulamayı arayın. Örneğin `Microsoft Remote Desktop` veya `Microsoft Word` için arama yapın. Uygulamayı seçin ve URL'sini kopyalayın.
 
   iTunes kullanarak da uygulamayı bulabilir ve ardından **Bağlantıyı Kopyala** görevini kullanıp uygulama URL’sini alabilirsiniz.
-  
-  Paket KIMLIĞINI bulma hakkında daha fazla bilgi için bkz. [iOS uygulaması için paket kimliğini bulma](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).
 
 - **Uygulama PAKETI kimliği**: istediğiniz uygulamanın uygulama [paket kimliğini](bundle-ids-built-in-ios-apps.md) girin. Yerleşik uygulamaları ve iş kolu uygulamalarını gösterebilir veya gizleyebilirsiniz. Apple 'ın Web sitesinde [yerleşik bir Apple Apps](https://support.apple.com/HT208094)listesi bulunur.
 - **Uygulama adı**: istediğiniz uygulamanın uygulama adını girin. Yerleşik uygulamaları ve iş kolu uygulamalarını gösterebilir veya gizleyebilirsiniz. Apple 'ın Web sitesinde [yerleşik bir Apple Apps](https://support.apple.com/HT208094)listesi bulunur.
@@ -494,7 +492,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
-- **AirDrop**: **Block** cihazda AirDrop kullanımını engelliyor. **Yapılandırılmadı** (varsayılan) ayarı, yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verir.
+- **AirDrop**: **Block** cihazda AirDrop kullanımını engelliyor. **Yapılandırılmadı** (varsayılan) ayarı yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verir.
 - **Apple Watch eşleştirme**: **blok** bir Apple Watch eşlemeyi engeller. **Yapılandırılmadı** (varsayılan) ayarı cihazın Apple Watch ile eşleştirilmesine izin verir.
 - **Bluetooth değişikliği**: **blok** son kullanıcının cihazdaki Bluetooth ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının bu ayarları değiştirmesine izin verir.
 - **İOS cihazının eşleştirilebileceği cihazları denetlemek Için konak eşleştirme**: **Yapılandırılmadı** (varsayılan), yöneticinin bir iOS cihazının hangi cihazlara eşlenebileceğini denetlemesine izin vermek için konak eşleştirmesine izin verir. **Engelle** ayarı konak eşleştirmeyi önler.
@@ -559,7 +557,9 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 
 ## <a name="autonomous-single-app-mode"></a>Otonom tek uygulama modu
 
-Bu ayarları kullanarak iOS cihazlarını, belirli uygulamaları otonom tek uygulama modunda çalışacak şekilde yapılandırabilirsiniz. Bu mod yapılandırılıp uygulama çalıştırıldığında cihaz kilitlenir. Yalnızca söz konusu uygulamayı çalıştırabilir. Örneğin, kullanıcıların cihazda bir test yapmasına olanak tanıyan bir uygulama ekleyin. Uygulama eylemleri tamamlandığında veya bu ilkeyi kaldırdığınızda cihaz normal durumuna döner.
+İOS/ıpados cihazlarını, belirli uygulamaları otonom tek uygulama modunda çalıştıracak şekilde yapılandırmak için bu ayarları kullanın. Bu mod yapılandırıldığında ve Kullanıcı yapılandırılmış uygulamalardan birini başlattığında, cihaz bu uygulamaya kilitlenir. Uygulama/görev değiştirme, Kullanıcı izin verilen uygulamadan çıkana kadar devre dışı bırakıldı.
+
+Örneğin, okul veya üniversite ortamında, kullanıcıların cihazda bir test geçirmesine imkan tanıyan bir uygulama ekleyin. Veya, son kullanıcı kimlik doğrulaması yapana kadar cihazı Şirket Portalı uygulamasına kilitleyin. Uygulama eylemleri Kullanıcı tarafından tamamlandığında veya bu ilkeyi kaldırdığınızda cihaz normal durumuna geri döner.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
@@ -569,7 +569,7 @@ Bu ayarları kullanarak iOS cihazlarını, belirli uygulamaları otonom tek uygu
 
 Ayrıca, uygulama adlarının ve paket kimliklerinin listesini içeren bir CSV dosyasını **Içeri aktarabilirsiniz** . Alternatif olarak uygulamaları içeren mevcut listeyi **dışarı aktarabilirsiniz**.
 
-## <a name="kiosk"></a>Bilgi noktası
+## <a name="kiosk"></a>Bilgi Noktası
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
@@ -615,7 +615,7 @@ Ayrıca, uygulama adlarının ve paket kimliklerinin listesini içeren bir CSV d
 > Bir iOS cihazını bilgi noktası modunda yapılandırabilmek için, önce Apple Configurator aracını veya Apple Cihaz Kayıt Programı’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracını kullanma konusunda Apple'ın kılavuzuna bakın.
 > Girdiğiniz iOS uygulaması siz profil atadıktan sonra yüklendiyse, cihaz yeniden başlatılana kadar bilgi noktası moduna girmez.
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>Etki alanları
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
@@ -636,7 +636,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 
 - Uygulama Kilidi (Tek Uygulama Modu) 
 - Genel HTTP Proxy’si 
-- Etkinleştirme Kilidi devre dışı bırak 
+- Etkinleştirme Kilidini Devre Dışı Bırakma 
 - Otonom Tek Uygulama Modu 
 - Web İçeriği Filtresi 
 - Arka plan ve kilit ekranı ayarlama 
@@ -676,7 +676,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 > - Müstehcen içerik
 > - iCloud belgeleri ve verileri
 > - Çok oyunculu oyun
-> - Oyun Merkezi arkadaşları ekleme
+> - Oyun Merkezi Arkadaşları Ekleyin
 > - Siri
 
 ## <a name="next-steps"></a>Sonraki adımlar

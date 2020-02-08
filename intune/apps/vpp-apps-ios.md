@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bc511669ec8a88523581b3afbcca161d5208934
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956221"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051635"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile Apple Volume Purchase Program aracılığıyla satın alınan iOS ve macOS uygulamalarını yönetme
 
@@ -46,13 +46,13 @@ Konum belirteçleri, toplu satın alma programı (VPP) belirteçleri olarak da b
 ## <a name="how-are-purchased-apps-licensed"></a>Satın alınan uygulamalar nasıl lisanslanır?
 Satın alınan uygulamalar, Apple 'ın iOS ve macOS cihazları için sunduğu iki lisans türü kullanılarak gruplara atanabilir.
 
-|   | Cihaz lisanslama | Kullanıcı Lisanslama |
+|   | Cihaz lisanslama | Kullanıcı lisanslama |
 |-----|------------------|----------------|
 | **Uygulama Mağazası oturum açma** | Gerekli değildir. | Her son kullanıcının, App Store 'da oturum açmanız istendiğinde benzersiz bir Apple KIMLIĞI kullanması gerekir. |
 | **Cihaz yapılandırması uygulama deposuna erişimi engelliyor** | Uygulamalar, Şirket Portalı kullanılarak yüklenip güncelleştirilemeyebilir. | Apple VPP 'ye katılma daveti App Store 'a erişim gerektirir. App Store 'u devre dışı bırakmak için bir ilke ayarladıysanız, VPP uygulamaları için Kullanıcı lisanslama çalışmaz. |
 | **Otomatik uygulama güncelleştirmesi** | Apple VPP belirteci ayarlarında, uygulamanın **atama türünün** **gerekli**olduğu şekilde Intune Yöneticisi tarafından yapılandırıldığı gibi. <br> <br> **Atama türü** **Kayıtlı cihazlar için kullanılabiliyorsa**, kullanılabilir uygulama güncelleştirmeleri şirket portalı yüklenebilir. | Kişisel uygulama mağazası ayarları 'nda Son Kullanıcı tarafından yapılandırılır. Bu, Intune Yöneticisi tarafından yönetilemez. |
-| **Kullanıcı kaydı** | Not supported. | Yönetilen Apple kimlikleri kullanılarak desteklenir. |
-| **Kitap** | Not supported. | Desteklenen. |
+| **Kullanıcı kaydı** | Desteklenmez. | Yönetilen Apple kimlikleri kullanılarak desteklenir. |
+| **Kitap** | Desteklenmez. | Desteklenen. |
 | **Kullanılan lisanslar** | cihaz başına 1 lisans. Lisans cihazla ilişkilendirilir. | aynı kişisel Apple KIMLIĞINI kullanarak en fazla 5 cihaz için 1 lisans. Lisans kullanıcıyla ilişkilendirilir. <br> <br> Intune 'da kişisel bir Apple KIMLIĞIYLE ve yönetilen bir Apple KIMLIĞIYLE ilişkili bir Son Kullanıcı 2 uygulama lisansı kullanır.|
 | **Lisans geçişi** | Uygulamalar, kullanıcıdan cihaz lisanslarına sessizce geçiş yapabilir. | Uygulamalar cihazdan Kullanıcı lisanslarına geçirilemez. |
 
@@ -64,7 +64,7 @@ Apple Business Manager kullanarak ortak ve özel uygulamalar satın alabilir ve 
 - **Mağaza uygulamaları:** Apple Business Manager 'ı kullanarak, Içerik yöneticileri App Store 'da bulunan ücretsiz ve ücretli uygulamaları satın alabilir.
 - **Özel uygulamalar:** Apple Business Manager 'ı kullanarak, Içerik yöneticileri kuruluşunuza özel olarak sunulan özel uygulamalar da satın alabilir. Bu uygulamalar, doğrudan çalıştığınız geliştiriciler tarafından kuruluşunuzun özel ihtiyaçlarına göre tasarlanmıştır. [Özel uygulamaları dağıtma](https://developer.apple.com/business/custom-apps/)hakkında daha fazla bilgi edinin.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 - Kuruluşunuz için bir [Apple Business Manager](https://business.apple.com/) veya [Apple Okul Yöneticisi](https://school.apple.com/) hesabı. 
 - Bir veya daha fazla konum belirtece atanan uygulama lisansları satın alındı. 
 - Konum belirteçleri indirildi. 
@@ -125,11 +125,16 @@ Seçilen bir belirteç için **Eşitle** ' yi seçerek, Intune 'da satın alına
 5. Seçtiğiniz her grup için aşağıdaki ayarları yapılandırın:
     - **Tür** - Uygulamanın **Kullanılabilir** mi (son kullanıcılar uygulamayı Şirket Portalı’ndan indirebilir) yoksa **Gerekli** mi (son kullanıcıların cihazlarında uygulama otomatik olarak yüklenir) olacağını seçin.
     - **Lisans türü** - **Kullanıcı lisanslama** veya **Cihaz lisanslama**’yı seçin.
-6. İşiniz bittikten sonra **Kaydet**’i seçin.
+6. İşiniz bittiğinde **Kaydet**’i seçin.
 
 
 >[!NOTE]
 >Kullanılabilir dağıtım amacı yalnızca kullanıcı grupları için desteklenir, cihaz grupları için desteklenmez. Görüntülenen uygulama listesi, bir belirteçle ilişkilendirilir. Birden çok VPP belirteci ile ilişkilendirilmiş bir uygulamanız varsa aynı uygulamanın her bir belirteç için bir kez olmak üzere birden çok kez görüntülendiğini görürsünüz.
+
+> [!NOTE]  
+> Intune (veya bu konuyla ilgili diğer MDM), VPP uygulamalarını gerçekten yüklemez. Bunun yerine, Intune, VPP hesabınıza bağlanır ve Apple 'ın hangi cihaza atanacağını belirtir. Buradan, tüm gerçek yükleme Apple ile cihaz arasında işlenir.
+> 
+> [Apple MDM protokol başvurusu, sayfa 135](https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf)
 
 ## <a name="end-user-prompts-for-vpp"></a>VPP için Son Kullanıcı İstemleri
 
@@ -137,11 +142,11 @@ Son kullanıcı, birkaç senaryoda VPP uygulama yüklemesi için istem alır. A�
 
 | # | Senaryo                                | Bir Apple VPP programına davet                              | Uygulama yükleme istemi | Apple kimliği istemi |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1\. | KCG – kullanıcı lisanslı (Kullanıcı kayıt cihazı değil)                             | Y                                                                                               | Y                                           | Y                                 |
-| 2 | Şirket – kullanıcı lisanslı (denetimsiz cihaz)     | Y                                                                                               | Y                                           | Y                                 |
-| 3 | Şirket – kullanıcı lisanslı (denetimli cihaz)         | Y                                                                                               | N                                           | Y                                 |
-| 4 | KCG – cihaz lisanslı                           | N                                                                                               | Y                                           | N                                 |
-| 5 | ŞİRKET – cihaz lisanslı (denetimsiz cihaz)                           | N                                                                                               | Y                                           | N                                 |
+| 1 | KCG – kullanıcı lisanslı (Kullanıcı kayıt cihazı değil)                             | E                                                                                               | E                                           | E                                 |
+| 2 | Şirket – kullanıcı lisanslı (denetimsiz cihaz)     | E                                                                                               | E                                           | E                                 |
+| 3 | Şirket – kullanıcı lisanslı (denetimli cihaz)         | E                                                                                               | N                                           | E                                 |
+| 4 | KCG – cihaz lisanslı                           | N                                                                                               | E                                           | N                                 |
+| 5 | ŞİRKET – cihaz lisanslı (denetimsiz cihaz)                           | N                                                                                               | E                                           | N                                 |
 | 6 | ŞİRKET – cihaz lisanslı (denetimli cihaz)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Bilgi noktası modu (denetimli cihaz) – cihaz lisanslı | N                                                                                               | N                                           | N                                 |
 | 8 | Bilgi noktası modu (denetimli cihaz) – kullanıcı lisanslı   | --- | ---                                          | ---                                |
