@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545965"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075714"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Intune ile Mobile Threat Defense uygulama koruma ilkesi oluşturma
 
@@ -49,7 +49,7 @@ MTD ile uygulama koruma ilkesi önkoşulları:
 
 [İOS/ıpados veya Android için bir uygulama koruma ilkesi oluşturmak](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)üzere yordamını kullanın ve *uygulamalar*, *koşullu başlatma*ve *atamalar* sayfalarında aşağıdaki bilgileri kullanın:
 
-- **Uygulamalar**: kullandığınız Mobile Threat Defense iş ortağı için uygulamayı seçin.
+- **Uygulamalar**: uygulama koruma ilkeleri tarafından hedefleneceğini istediğiniz uygulamaları seçin. Bu özellik kümesi için bu uygulamalar engellenir veya seçtiğiniz mobil tehdit savunma satıcınızdan cihaz risk değerlendirmesi temel alınarak seçmeli olarak temizlenir. 
 - **Koşullu başlatma**: *cihaz koşullarının*altında, **izin verilen en fazla cihaz tehdit düzeyini**seçmek için açılan kutuyu kullanın.
 
   Tehdit düzeyi **değeri**için seçenekler:
@@ -61,7 +61,7 @@ MTD ile uygulama koruma ilkesi önkoşulları:
 
   **Eylem**seçenekleri:
 
-  - **Erişimi engelle**
+  - **Hizmete erişimi**
   - **Verileri silme**
 
 - **Atamalar**: ilkeyi Kullanıcı gruplarına atayın.  Grubun üyeleri tarafından kullanılan cihazlar, Intune uygulama koruması aracılığıyla hedeflenen uygulamalardaki şirket verilerine erişim için değerlendirilir.

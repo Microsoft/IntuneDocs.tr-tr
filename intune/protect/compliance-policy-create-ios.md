@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b83b764af415349b287df2a09f9b4c355734c28
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810243"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074640"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz iOS ayarları
 
@@ -69,10 +69,10 @@ E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Intune ile e-posta p
 
 ### <a name="operating-system-version"></a>İşletim Sistemi Sürümü  
 
-- **Gerekli en düşük işletim sistemi** *(iOS 8,0 ve üzeri)* :  
+- **En düşük işletim sistemi sürümü** *(iOS 8,0 ve üzeri)* :  
   Bir cihaz en düşük işletim sistemi sürümü gereksinimini karşılamadığında uyumsuz olarak bildirilir. Yükseltme hakkında bilgi içeren bir bağlantı gösterilir. Son kullanıcı cihazını yükseltmeyi seçebilir. Bundan sonra, kuruluş kaynaklarına erişebilir.
 
-- **İzin verilen en yüksek işletim sistemi sürümü** *(iOS 8,0 ve üzeri)* :  
+- **En yüksek işletim sistemi sürümü** *(iOS 8,0 ve üzeri)* :  
   Cihaz kuralda belirtilenden sonraki bir işletim sistemi sürümünü kullandığında, kuruluş kaynaklarına erişim engellenir. Son kullanıcıdan BT yöneticisine başvurması istenir. İşletim sistemine izin veren bir kural değişikliği oluncaya kadar bu cihaz kuruluş kaynaklarına erişemez.
 
 - **En düşük işletim sistemi derleme sürümü** *(iOS 8,0 ve üzeri)* :  
@@ -83,12 +83,12 @@ E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Intune ile e-posta p
 
 ## <a name="system-security"></a>Sistem Güvenliği
 
-### <a name="password"></a>Parola
+### <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
 > [!NOTE]
 > iOS cihazına uyumluluk veya yapılandırma ilkesi uygulandıktan sonra her 15 dakikada bir kullanıcılardan bir geçiş kodu ayarlamaları istenir. Geçiş kodu ayarlanana kadar kullanıcılara sürekli bu istem gönderilir. İOS cihazı için bir geçiş kodu ayarlandığında, şifreleme işlemi otomatik olarak başlatılır. Geçiş kodu devre dışı bırakılıncaya kadar cihaz şifreli olarak kalır.
 
-- **Mobil cihazların kilidini açmak için bir parola iste**:  
+- **Mobil cihazların kilidini açmak için parola gerektir**:  
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.  
   - **Gerektir** -kullanıcıların cihazına erişebilmeleri için önce bir parola girmesi gerekir. Parola kullanılan iOS cihazları şifrelenir.
 
@@ -100,10 +100,10 @@ E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Intune ile e-posta p
   Parolanın sahip olması gereken minimum rakam veya karakter sayısını girin.  
 
 - **Gerekli parola türü**:  
-  Bir parolanın yalnızca **sayısal** karakterleri olması gerekip gerekmediğini veya sayıların ve diğer karakterlerin (**alfasayısal**) bir karışımı olması gerekip gerekmediğini seçin.
+  Parolanın yalnızca **Sayısal** karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından (**Alfasayısal**) mı oluşması gerektiğini seçin.
 
 - **Paroladaki alfasayısal olmayan karakter sayısı**:  
-  Parolada olması gereken `&`, `#`, `%`, `!`vb. gibi en az özel karakter sayısını girin. 
+  Parolada bulunması gereken `&`, `#`, `%`, `!` gibi özel karakterlerin alt sınırını girin. 
 
   Daha yüksek bir sayı ayarlanırsa kullanıcının daha karmaşık bir parola oluşturması gerekir.
 
@@ -113,7 +113,7 @@ E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Intune ile e-posta p
 - **Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**:  
   Cihazın ekranını kilitlemeleri için boşta geçen süreyi girin. Seçenekler varsayılan olarak *yapılandırılmamış*, *hemen*ve *1 dakikadan* *15 dakikaya*dahildir.
 
-- **Parola kullanım süresi (gün olarak)** :  
+- **Parola zaman aşımı (gün sayısı)** :  
   Parolanın süresi dolup yeni bir parola oluşturulması gerekmeden önce geçmesi gereken gün sayısını seçin. 
 
 - **Yeniden kullanılmasını önleyen önceki parola sayısı** *(iOS 8,0 ve üzeri)* :   
