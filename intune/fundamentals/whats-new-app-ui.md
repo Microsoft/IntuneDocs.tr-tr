@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098213"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125056"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 
@@ -36,9 +36,14 @@ Bir çalışan ya da öğrenciyseniz, Şirket Portalı yardım belgelerinin ekra
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-february-3-2020"></a>3 Şubat 2020 haftası
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment---6103987---"></a>Şirket Portalı, Android iş profili kaydından kaldırılan ekran <!--6103987 -->
+**Sonraki nedir?** ekranı, Kullanıcı deneyimini kolaylaştırmak Için Şirket portalı Android iş profili kayıt akışından kaldırılmıştır. Güncelleştirilmiş Android iş profili kayıt akışını görmek için [Android iş profiline kaydol](/intune-user-help/enroll-device-android-work-profile) ' a gidin.  
+
 ## <a name="week-of-november-11-2019"></a>11 Kasım 2019 haftası  
 
-#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows Şirket Portalı uygulamasından başlatılan web uygulamaları<!-- 5030972 -->
+### <a name="web-apps-launched-from-the-windows-company-portal-app----5030972---"></a>Windows Şirket Portalı uygulamasından başlatılan web uygulamaları <!-- 5030972 -->
 Son kullanıcılar artık doğrudan Windows Şirket Portalı uygulamasından Web uygulamaları başlatabilir. Son kullanıcılar Web uygulamasını seçip **tarayıcıda aç**seçeneğini belirleyebilir. Yayınlanan Web URL 'SI doğrudan bir Web tarayıcısında açılır. Bu işlevsellik bir sonraki hafta boyunca alınacaktır. Web Apps hakkında daha fazla bilgi için bkz. [Microsoft Intune Web Apps ekleme](~/apps/web-app.md).
 
 ![Windows Şirket Portalı uygulamasından başlatılan bir Web uygulamasının örnek görüntüsü](./media/whats-new-app-ui/webapp-open-in-browser.png)  
@@ -58,13 +63,13 @@ Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif b
 
 Aşağıdaki ekranlar, Android iş profili kaydı için güncelleştirilmiş denetim listesini gösterir:
 
-|Güncelleştirme tarihi|Önceki|  
+|Güncellendi|Önceki|  
 |---|---|  
 |![Şirket Portalı 'de iş profili kurulumunun örnek görüntüsü, Basitleştirilmiş denetim listesi ve yeni simgeler gösteriliyor.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Bir busier denetim listesi gösteren Şirket Portalı önceki iş profili kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
 
 Aşağıdaki ekranlar, Android Cihaz Yöneticisi kaydı için güncelleştirilmiş denetim listesini gösterir:  
 
-|Güncelleştirme tarihi|Önceki|  
+|Güncellendi|Önceki|  
 |---|---|  
 |![Şirket Portalı 'de, Basitleştirilmiş denetim listesi ve yeni simgeleri gösteren Android Cihaz Yöneticisi kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/android-checklist-1911.png)|![Bir busier denetim listesi gösteren Şirket Portalı önceki Android Cihaz Yöneticisi kurulumunun örnek görüntüsü.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
@@ -175,7 +180,7 @@ Karşılaşacağınız güncelleştirmeler şunlardır:
 - Büyük uygulama katalogları için iyileştirilmiş performans
 - Tüm kullanıcılar için artırılmış erişilebilirlik  
 
-|Güncelleştirme tarihi|Önceki|
+|Güncellendi|Önceki|
 |---|---|
 |![Güncelleştirilmiş cihaz sayfası, tam liste üzerinde açılmak yerine cihaz bilgileri üzerinde düzgün bir şekilde hizalı olarak gösteriliyor.](./media/whats-new-app-ui/iwp-device-after-1803.png)|![Cihaz sayfasının önceki sürümü.](./media/whats-new-app-ui/iwp-device-before-1803.png)|
 |![Güncelleştirilmiş uygulama yükleme sayfası; yayımlanma tarihi, sürüm ve uygulama türü gibi çeşitli yükleme bilgileri ve açıklama üzerinde uygulamayı düzgün bir şekilde gösteriyor.](./media/whats-new-app-ui/iwp-app-install-after-1803.png)|![Uygulama yükleme sayfasının önceki sürümü.](./media/whats-new-app-ui/iwp-app-install-before-1803.png)|  
@@ -557,9 +562,9 @@ Android Şirket Portalı uygulamasında yapılan güncelleştirme ile kullanıc�
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 Şirket Portalı uygulaması için geliştirilmiş uygulama yüklemesi durumu <!--676495-->
 Windows 10 Şirket Portalı uygulaması, artık uygulama ayrıntıları sayfasında bir yükleme durum çubuğu içermektedir. Bu, Windows 10 Yıldönümü Güncelleştirmesi ve üzeri çalıştıran cihazlardaki modern uygulamalar için desteklenir.
 
-__Önce__ ![Yükleme ekranının önceki sürümünün, durum olarak yalnızca 'yükleniyor' ifadesinin gösterildiği bir görüntüsü.](./media/whats-new-app-ui/cp_win10_install_status_before_1704.png)
+Yükleme ekranının önceki sürümünün bir görüntüsünü ![__önce__ , durumu yalnızca ' yükleniyor ' olarak söydi.](./media/whats-new-app-ui/cp_win10_install_status_before_1704.png)
 
-__Sonra__ ![Yükleme ekranının güncelleştirilmiş sürümünün, şimdi bir yükleme ilerleme çubuğunu gösteren bir görüntüsü.](./media/whats-new-app-ui/cp_win10_install_status_after_1704.png)
+Yükleme ekranının güncelleştirilmiş sürümünün bir görüntüsünü ![__sonra__ bir yükleme ilerleme çubuğu gösterir.](./media/whats-new-app-ui/cp_win10_install_status_after_1704.png)
 
 ## <a name="february-2017"></a>Şubat 2017
 
@@ -602,7 +607,7 @@ Bunlar, kullanıcı arabirimimizi güncelleştirerek kullanıcı deneyimini geli
 > Aşağıdaki görüntüler önizleme olabilir ve duyurulan ürün sunulan sürümlerden farklı olabilir.  
 
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 * [Microsoft Intune Blogu](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform yol haritası](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune’daki yenilikler](whats-new.md)

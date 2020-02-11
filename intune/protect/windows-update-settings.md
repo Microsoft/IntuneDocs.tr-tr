@@ -15,12 +15,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 06982bdf0aff1870f1a759f68bc6cdd48227a3cf
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72584465"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125005"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune için Windows Update ayarları  
 
@@ -28,7 +28,7 @@ Microsoft Intune ile [yapılandırabileceğiniz ve yönetebileceğiniz](windows-
 
 Intune 'da Windows 10 güncelleştirme halkaları için ayarları yapılandırdığınızda Windows Update ayarlarını yapılandırıyorsunuz. Bir Windows Update ayarında Windows 10 sürüm bağımlılığı varsa, ayarlar ayrıntıları ' nda sürüm bağımlılığı belirtilir.  
 
-## <a name="update-settings"></a>Ayarları güncelle  
+## <a name="update-settings"></a>Güncelleştirme ayarları  
 
 Güncelleştirme ayarları, bir cihazın indirileceği bitleri ve ne zaman yapılacağını denetler. Her ayarın davranışı hakkında daha fazla bilgi için, Windows başvuru belgelerine bakın.  
 
@@ -186,7 +186,7 @@ Kullanıcı deneyimi ayarları, cihaz yeniden başlatma ve anımsatıcıları i�
   **Varsayılan**: yapılandırılmadı  
   Windows Update CSP: [Update/AutoRestartRequiredNotificationDismissal](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
   
-  - **Yapılandırılmadı**  
+  - **Yapılandırılmamış**  
   - **Gerekli** -bir kullanıcının, çalışma saatleri dışında bir cihaz yeniden başlatmasını onayladığından emin olmanız gerekir.  
    
 - **Kullanıcıyı, kabul edilebilir anımsatıcı (saatler) ile gerekli otomatik yeniden başlatmadan önce hatırlat**  
@@ -212,7 +212,7 @@ Kullanıcı deneyimi ayarları, cihaz yeniden başlatma ve anımsatıcıları i�
   Kullanıcıların göreceği Windows Update bildirimi düzeyini belirtin. Bu ayar güncelleştirmelerin nasıl ve ne zaman indirildiğini ve yüklendiğini denetlemez.  
 
   Desteklenen seçenekler:
-  - **Yapılandırılmadı**
+  - **Yapılandırılmamış**
   - **Varsayılan Windows Update bildirimlerini kullan**
   - **Yeniden başlatma uyarılarını hariç tüm bildirimleri kapat**
   - **Yeniden başlatma uyarıları dahil tüm bildirimleri kapat**  
@@ -222,7 +222,7 @@ Kullanıcı deneyimi ayarları, cihaz yeniden başlatma ve anımsatıcıları i�
  
   Kullanıcının son tarih ayarlarını kullanmasına izin verir.  
 
-  - **Yapılandırılmadı**
+  - **Yapılandırılmamış**
   - **İzin ver**
 
   *Izin ver*olarak ayarlandığında, son tarihleri için aşağıdaki ayarları yapılandırabilirsiniz:
@@ -255,4 +255,4 @@ Kullanıcı deneyimi ayarları, cihaz yeniden başlatma ve anımsatıcıları i�
 
 Teslim iyileştirme artık yazılım güncelleştirmeleri kapsamında bir Windows 10 güncelleştirme halkası 'nin parçası olarak yapılandırılmamıştır. Teslim iyileştirme artık cihaz yapılandırması ile ayarlanır. Ancak, önceki yapılandırma konsolunda kullanılabilir kalır. Bu önceki konfigürasyonları, *Yapılandırılmadı*olarak düzenleyerek kaldırabilirsiniz, ancak başka bir şekilde değiştirilemez. 
 
-Yeni ve eski ilke arasındaki çakışmaları önlemek için bkz. [var olan güncelleştirme halkalarından teslim Iyileştirmeye geçme](../configuration/delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) ve sonra ayarlarınızı bir teslim iyileştirme profiline taşıma.
+Yeni ve eski ilke arasındaki çakışmaları önlemek için bkz. [Windows 10 güncelleştirme halkalarından teslim Iyileştirmeyi kaldırma](../configuration/delivery-optimization-windows.md#remove-delivery-optimization-from-windows-10-update-rings) ve sonra ayarlarınızı bir teslim iyileştirme profiline taşıma.

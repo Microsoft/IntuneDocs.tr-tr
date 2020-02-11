@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059970"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124818"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune teslim iyileştirme ayarları
 
-Intune ile, bu cihazlar uygulamaları ve güncelleştirmeleri indirdiğinizde bant genişliği tüketimini azaltmak için Windows 10 cihazlarınız için teslim iyileştirme ayarlarını kullanabilirsiniz. Teslim iyileştirme, cihaz yapılandırma profillerinizin bir parçası olarak yapılandırılır.  
+Intune ile, bu cihazlar uygulamaları ve güncelleştirmeleri indirdiğinizde bant genişliği tüketimini azaltmak için Windows 10 cihazlarınız için teslim Iyileştirme ayarlarını kullanın. Cihaz yapılandırma profillerinizin bir parçası olarak teslim iyileştirmesini yapılandırın.  
 
 Bu makalede, teslim iyileştirme ayarlarının cihaz yapılandırma profilinin bir parçası olarak nasıl yapılandırılacağı açıklanır. Bir profil oluşturduktan sonra, bu profili Windows 10 cihazlarınıza atar veya dağıtabilirsiniz. 
 
-Intune 'un desteklediği teslim iyileştirme ayarlarının listesi için bkz. [Intune Için teslim iyileştirme ayarları](../delivery-optimization-settings.md).  
+Intune 'un desteklediği teslim iyileştirme ayarlarının listesini görüntülemek için, bkz. [Intune Için teslim iyileştirme ayarları](../delivery-optimization-settings.md).  
 
 Windows 10 ' da teslim Iyileştirmesi hakkında bilgi edinmek için Windows belgelerindeki [teslim iyileştirme güncelleştirmeleri](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) bölümüne bakın.  
-
-> [!NOTE]
-> **Yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkaları** **teslim iyileştirme** ayarları ile değiştirilmiştir. Mevcut güncelleştirme halkalarınız **teslim iyileştirme** ayarlarını kullanacak şekilde değiştirilebilir. [Mevcut güncelleştirme halkalarını teslim Iyileştirmeye taşıyın](#move-existing-update-rings-to-delivery-optimization) (Bu makalede)
 
 ## <a name="create-the-profile"></a>Profili oluşturma
 
@@ -54,11 +51,16 @@ Windows 10 ' da teslim Iyileştirmesi hakkında bilgi edinmek için Windows belg
 
 Profil oluşturulur ve listede gösterilir. Sonra, [profili atayın](device-profile-assign.md) ve ardından [durumunu izleyin](device-profile-monitor.md).
 
-## <a name="move-existing-update-rings-to-delivery-optimization"></a>Mevcut güncelleştirme halkalarını teslim iyileştirmeye taşıyın
+<!-- ## Move existing update rings to delivery optimization
 
-**Teslim iyileştirme** ayarları, **yazılım güncelleştirmeleri – Windows 10 güncelleştirme halkalarını**değiştirir. Mevcut güncelleştirme halkalarınız, **teslim iyileştirme** ayarlarını kullanmak üzere kolayca değiştirilebilir. Teslim iyileştirme profili oluştururken aynı ayarları sürdürmek için, aynı *teslim iyileştirme indirme modunu* kullanın ve ardından, zaten kullandığınız ayarları ayarlayın. Bununla birlikte, teslim iyileştirme profilinin yönetebileceği tam kapsamlı ayarların avantajlarından yararlanmak için teslim iyileştirme ayarlarını yeniden yapılandırmayı tercih edebilirsiniz.
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage. 
+-->
 
-1. Teslim iyileştirme yapılandırma profili oluşturma:
+## <a name="remove-delivery-optimization-from-windows-10-update-rings"></a>Windows 10 güncelleştirme halkalarından teslim Iyileştirmeyi kaldır
+
+Teslim Iyileştirme daha önce yazılım güncelleştirme halkalarının bir parçası olarak yapılandırılmıştır. Dağıtım Iyileştirme ayarları, Şubat 2019 ' den itibaren cihazlara yazılım güncelleştirme teslimini etkileyen ek ayarlar içeren bir teslim Iyileştirme cihaz yapılandırma profilinin bir parçası olarak yapılandırılır. Henüz yapmadıysanız, dağıtım iyileştirme ayarını güncelleştirme halkalarından *Yapılandırılmadı*olarak ayarlayarak kaldırın ve daha fazla kullanılabilir seçenek aralığını yönetmek Için bir teslim iyileştirme profili kullanın.
+
+1. Teslim Iyileştirme cihaz yapılandırma profili oluşturma:
 
     1. Microsoft Endpoint Manager Yönetim Merkezi 'nde, **cihaz** > **yapılandırma profilleri** > **Profil oluştur**' u seçin.
     2. Aşağıdaki özellikleri girin:
@@ -68,7 +70,7 @@ Profil oluşturulur ve listede gösterilir. Sonra, [profili atayın](device-prof
         - **Platform**: **Windows 10 ve üstünü**seçin.
         - **Profil türü**: **teslim iyileştirmesi**' nı seçin.
         - **Ayarlar**: **teslim iyileştirme indirme modu**için, cihazlarınıza uyguladığınız ayarları değiştirmek istemediğiniz takdirde, var olan yazılım güncelleştirme halkası tarafından kullanılan modu seçin. Seçenekleriniz şunlardır:
-            - **Yapılandırılmadı**
+            - **Yapılandırılmamış**
             - **Yalnızca HTTP, eşleme yok**
             - **Aynı NAT 'nin arkasında eşleme ile HTTP karıştırılmış**
             - **Özel bir Grup genelinde eşleme ile HTTP karıştırılmış**

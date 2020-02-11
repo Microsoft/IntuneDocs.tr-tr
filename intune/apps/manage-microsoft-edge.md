@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 957e2b8065662af1b0f1a28108a740ef253a3b3e
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074657"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125022"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -293,7 +293,19 @@ Sınırlı bağlantıların, kullanıcılara daha sorunsuz bir gözatma deneyimi
 
 |    Anahtar    |    Değer    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **Doğru** , Microsoft Edge 'in engellenen siteleri açmak için kullanıcıları Kişisel bağlamlarına geçişine olanak sağlar.<p>**Blok** , Microsoft Edge 'in kullanıcıları geçişini engeller. Kullanıcılara erişmeye çalıştıkları sitenin engellendiğini bildiren bir ileti gösterilir.    |
+
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Parolaları kaydetmek için Microsoft Edge istemi 'ni devre dışı bırak
+
+|    Anahtar    |    Değer    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **Doğru** , kısıtlanmış bağlantıların doğrudan InPrivate göz atmaya açık olmasına neden olur.<p>**False** (varsayılan), kullanıcılara InPrivate Gözatma veya kIşIsel (MSA) hesabıyla kısıtlı bağlantıyı açmaya yönelik bir seçenek sunar.    |
+
+Varsayılan olarak, iOS 'ta Microsoft Edge, kullanıcılarınızın parolalarını anahtarlığa kaydetmenizi sağlar. Kuruluşunuz için bu istemi devre dışı bırakmak isterseniz, aşağıdaki ayarı yapılandırın:
+
+|    Anahtar    |    Değer    |
+|-----------|-------------|
+|     ' com. Microsoft. Intune. mam. managedbrowser. disableFeatures '    |    **parola** , parolaları kaydet isteğini devre dışı bırakır.    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>İOS üzerinde Microsoft Edge kullanarak yönetilen uygulama günlüklerine erişin 
 

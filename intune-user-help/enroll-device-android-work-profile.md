@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: ced722fd671826e828b4dd79956a7dad1010bd84
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 003141402c1d068775caee6ca4405efc5ca7552f
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75856760"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124869"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Cihazı Android iş profiline kaydetme
 
@@ -45,15 +45,12 @@ ms.locfileid: "75856760"
 3. Kuruluşunuzun neleri görebileceğini ve neleri görebileceklerini inceleyin. Sonra **devam**' a dokunun. 
 
     ![Örnek görüntü Şirket Portalı, gizlilik ekranınızı, devam düğmesini vurguladık.](./media/android-privacy-screen-1911.png)  
-4. Yaklaşan adımlarda neleri beklediğinizi gözden geçirin. Sonra **İleri**' ye dokunun.  
 
-    ![Şirket Portalı örnek görüntüsü, ileri bir sonraki düğme vurgulandığında.](./media/android-wp-04-1908.png)  
-
-5. Google 'ın iş profili oluşturma koşullarını gözden geçirin. Sonra **& devam et**' e dokunun. Bu ekranın görünümü cihazınızın Android sürümüne bağlı olarak değişir. 
+4. Google 'ın iş profili oluşturma koşullarını gözden geçirin. Sonra **&AMP; devam et**' e dokunun. Bu ekranın görünümü cihazınızın Android sürümüne bağlı olarak değişir. 
 
     ![Google 'ın iş profili koşullarının ekran görüntüsü](./media/android-wp-05-1908.png)  
 
-6. İş profiliniz ayarlandığında bekleyin.  
+5. İş profiliniz ayarlandığında bekleyin.  
 
     !["İş profili ayarlama" ekranının ekran görüntüsü.](./media/android-wp-05a-1908.png)  
 
@@ -61,20 +58,20 @@ ms.locfileid: "75856760"
 
     ![Yeniden yönlendirme iletisi içeren "üst yarısında bulunuyor" ekranının ekran görüntüsü.](./media/android-wp-05b-1908.png)  
 
-7. **Şirket erişimi kurulumu** ekranında, iş profilinizin oluşturulup oluşturulmadıysa emin olun. Sonra **devam**' a dokunun.  
+6. **Şirket erişimi kurulumu** ekranında, iş profilinizin oluşturulup oluşturulmadıysa emin olun. Sonra **devam**' a dokunun.  
 
     ![İş profilini gösteren şirket erişimi kurulumunun ekran görüntüsü.](./media/work-profile-complete-1911.png)  
 
-8. İş profilinizin etkin olup olmadığını denetleyin. Sonra **devam**' a dokunun. 
+7. İş profilinizin etkin olup olmadığını denetleyin. Sonra **devam**' a dokunun. 
 
     ![İş profilinin etkin olduğunu gösteren şirket erişimi kurulumunun ekran görüntüsü.](./media/work-profile-active-1911.png)  
 
-9. Kuruluşunuz, cihaz ayarlarınızı güncelleştirmenizi gerektirebilir. Bir ayarı ayarlamak için **Çöz** ' e dokunun. Ayarları güncelleştirmeyi tamamladığınızda **devam**' a dokunun.    
+8. Kuruluşunuz, cihaz ayarlarınızı güncelleştirmenizi gerektirebilir. Bir ayarı ayarlamak için **Çöz** ' e dokunun. Ayarları güncelleştirmeyi tamamladığınızda **devam**' a dokunun.    
 
     ![Şirket Portalı örnek görüntüsü, cihaz ayarlarını güncelleştirme ekranı, Çözümle ve devam et düğmelerine vurgu.](./media/resolve-settings-1911.png) 
 
 
-10. Kurulum tamamlandığında **bitti**' ye dokunun.  
+9. Kurulum tamamlandığında **bitti**' ye dokunun.  
 
     ![Şirket Portalı, şirket erişimi kurulumu ekranının örnek görüntüsü, tamamlanan kurulum ve vurgulama bitti düğmesini gösterir.](./media/work-profile-done-1911.png)  
 

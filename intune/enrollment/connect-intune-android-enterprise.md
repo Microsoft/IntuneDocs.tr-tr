@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 581d88e49391bc874625e9c84318c039706b0c1b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563838"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124835"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Intune hesabınızı Yönetilen Google Play hesabınıza bağlama
 
@@ -41,7 +41,7 @@ Android kurumsal yönetimini yapılandırıp kullanmanızı kolaylaştırmak iç
 > [!NOTE]
 > Google ve Microsoft etki alanları arasındaki etkileşim nedeniyle tarayıcı ayarlarınızı değiştirmeniz gerekebilir.  “portal.azure.com” ve “play.google.com” adreslerinin tarayıcınızda aynı güvenlik bölgesinde olduğundan emin olun.
 
-1. Henüz yapmadıysanız, [mobil cihaz yönetimi yetkilisini](../fundamentals/mdm-authority-set.md) **Microsoft Intune** olarak ayarlayarak mobil cihaz yönetimine hazırlanın.
+1. Henüz yapmadıysanız, [mobil cihaz yönetimi yetkilisini](../fundamentals/mdm-authority-set.md)**Microsoft Intune** olarak ayarlayarak mobil cihaz yönetimine hazırlanın.
 2. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' nde oturum açın, **cihazlar** > **Android** > **Android kayıt** > **yönetilen Google Play**' i seçin.  Özel bir Intune yönetici rolü kullanıyorsanız bu seçeneğe erişim, Kuruluş Okuma ve Güncelleştirme izinlerini gerektirir.
    
    ![Android kurumsal kayıt ekranı](./media/connect-intune-android-enterprise/android-work-bind.png)
@@ -69,4 +69,4 @@ Android Kurumsal kaydı ve yönetimini kapatabilirsiniz. Bunu yapmak için, önc
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Yönetilen Google Play hesabına bağlandıktan sonra, [Android kurumsal iş profili cihazlarını ayarlayabilir](android-work-profile-enroll.md), [Android kurumsal adanmış cihazları ayarlayabilir](android-kiosk-enroll.md) ve [Android kurumsal tam yönetilen cihazları ayarlayabilirsiniz](android-kiosk-enroll.md)
+Yönetilen Google Play hesabına bağlandıktan sonra, [Android kurumsal iş profili cihazlarını ayarlayabilir](android-work-profile-enroll.md), [Android kurumsal adanmış cihazları ayarlayabilir](android-kiosk-enroll.md) ve [Android kurumsal tam yönetilen cihazları ayarlayabilirsiniz](android-fully-managed-enroll.md)
