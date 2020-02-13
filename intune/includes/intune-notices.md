@@ -7,14 +7,29 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 4e93cb7f2d503704251b16d1af03924358020d4e
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966376"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77156641"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
+
+### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>Değişiklik planı: Android kurumsal adanmış cihazlarını Intune 'A kaydetme deneyiminde değişiklik<!--6114580-->
+Kasım sürümünde paylaşıyoruz ve Wi-Fi profillerine sertifika tabanlı erişim sağlamak için Android kurumsal adanmış cihazlara SCEP sertifikası dağıtımı desteği ekledik. Bu değişiklik, Android kurumsal adanmış cihazlar için bazı küçük kayıt akışı değişikliklerine dahil değildir. Yakında Mart hizmeti güncelleştirmesi veya 2003 ile farkında olduğumuz bazı değişiklikler vardır.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Ortamınızdaki Android kurumsal adanmış cihazları yönetiyorsanız, Mart 'ta bazı değişiklikleri kullanıma sunarak çalışmaya başlayabilirsiniz.
+- 22 Kasım 2019 veya 1911 hizmet güncelleştirmesinden önce kaydedilen mevcut Android adanmış cihazlar için: bu cihazlarda Microsoft Intune uygulaması yüklüdür. Mart 'daki Intune hizmetinde arka uç değişikliklerinden sonra, cihazlara dağıtılan ve Wi-Fi profilleriyle ilişkilendirilen SCEP sertifikaları uygulanmaya başlayacak.
+- 22 Kasım 2019 ' den sonra kaydedilmiş cihazlarda ve bu değişiklik Mart ayında silinmeden önce: bu cihazlarda Microsoft Intune uygulamasının yüklü olması gerekir. Cihazlara dağıtılan ve Wi-Fi profilleriyle ilişkilendirilen SCEP sertifikaları uygulanmaya devam edecektir.
+- Yeni Android kurumsal adanmış cihaz kayıtları için, Mart 'ta değişiklik yapıldıktan sonra: son kullanıcılar, kayıt sırasında cihazlarda farklı bir adım kümesi görür. Kayıt, bugün (QR, NFC, sıfır-Touch veya cihaz tanımlayıcısı ile) çalışmaya devam eder, ancak zorunlu uygulama yüklemesi adımı olmayacaktır. Bunun yerine, Microsoft Intune uygulaması cihazlara otomatik olarak yüklenir. Ayrıca, son kullanıcıların Flow sırasında "Intune Aracısını Etkinleştir" seçeneğine dokunması gerekmez. WiFi profilleriyle ilişkili SCEP sertifikaları, bu cihazlara dağıtılabilir.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapabilirim?
+Son Kullanıcı kılavuzunuzu güncelleştirebilir ve yardım masanızla bu değişikliği bilmesini sağlayabilirsiniz. Yenilikler sayfamızı güncelleştiririz ve bu değişiklik kullanıma sunulmaya başladığında Ileti merkezinde sizi bilgilendireceğiz.
+
+#### <a name="additional-information"></a>Ek bilgiler
+[Android kurumsal adanmış cihazlarda SCEP sertifikaları için destek](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>' Intune için Adobe Acrobat Reader ' mobil uygulaması için destek özeti güncelleştirildi<!--5746776-->
 Ağustos ayının sonunda MC188653 ' de paylaşıyoruz. Bu, Intune mobil uygulaması için Adobe Acrobat Reader 'ın 1 Aralık 2019 ' de sona erecek ve Adobe uygulamasının, ana Acrobat Reader uygulaması içinde Intune 'un uygulama koruma ilkelerini desteklemeyi planlıyor olması. Bundan sonra, BT yöneticilerinin hedeflemesini sağlamak için daha fazla zaman sunduğumuz ve son kullanıcıların Intune için Adobe Acrobat Reader kullanmaya başlamasını sağlayan müşteri geri bildirimi aldık. Son Kullanıcı cihazlarında Intune için Adobe Acrobat Reader 'ın yüksek kullanımı ve kurumsal senaryolarda önem derecesi verildiğinde, tüm deneyimin kuruluşunuzun uygulama koruma ihtiyaçlarını karşıladığından emin olmak istiyoruz. 
@@ -66,7 +81,7 @@ Daha fazla bilgi için [Microsoft Edge 'i uygulama koruma ilkeleriyle birlikte k
 
 Eski PC yönetimi, 15 Ekim 2020 ' de destek altına geçiyor. Cihazları Windows 10 ' a yükseltin ve Intune tarafından yönetilmek üzere bunları mobil cihaz yönetimi (MDM) cihazları olarak yeniden kaydedin.
 
-[Daha fazla bilgi edinin](https://go.microsoft.com/fwlink/?linkid=2107122)
+[Daha fazlasını öğrenin](https://go.microsoft.com/fwlink/?linkid=2107122)
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Android Cihaz Yöneticisi desteğini azaltma 
 Android Cihaz Yöneticisi (bazen "eski" Android yönetimi ve Android 2,2 ile kullanıma sunulan) Android cihazlarını yönetmenin bir yoludur. Ancak, geliştirilmiş yönetim işlevselliği artık [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (Android 5,0 ile yayımlanmıştır) ile kullanılabilir. Modern, daha zengin ve daha güvenli cihaz yönetimine geçiş çabasında, Google yeni Android sürümlerindeki Cihaz Yöneticisi desteğini düşürdüğünde.
