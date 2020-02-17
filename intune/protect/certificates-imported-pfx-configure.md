@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469ee615cd9a9f1d3a7aee40ce764b8d8100fe69
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912903"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258139"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune ile içeri aktarılan PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -44,7 +44,7 @@ Intune ile S/MIME kullanma hakkında daha fazla bilgi için, [e-postayı şifrel
 
   Bu bağlayıcı, yeni sürümler kullanılabilir hale geldiğinde kendisini otomatik olarak güncelleştirebilir. Güncelleştirme özelliğini kullanmak için, bağlayıcının **443**numaralı bağlantı noktasında **AutoUpdate.msappproxy.net** ile iletişim kurabildiğinden emin olmanız gerekir.
 
-  Bağlayıcının eriştiği tüm ağ uç noktaları hakkında daha fazla bilgi için bkz. [Intune ağ yapılandırma gereksinimleri ve bant genişliği](../fundamentals/network-bandwidth-use.md).
+  Daha fazla bilgi için bkz. [Microsoft Intune Için ağ uç noktaları](../fundamentals/intune-endpoints.md)ve [Intune ağ yapılandırma gereksinimleri ve bant genişliği](../fundamentals/network-bandwidth-use.md).
 
 - **Windows Server**:
 
@@ -149,7 +149,7 @@ Aşağıdaki işlem, PFX sertifikalarının nasıl içeri aktarılacağını gö
 Şu seçenekler mevcuttur:
 
 - Amaçlanan amaç (bir etiketi temel alarak sertifikaları gruplandırır):
-  - atanmadı
+  - atanmamış
   - SMIME şifreleme
   - SMIME imzalama
 
@@ -177,7 +177,7 @@ Anahtarı oluşturmak için kullandığınız sağlayıcıyla eşleşen anahtar 
 
 6. **Userpfxsertifika** nesnesi oluşturmak için `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>"` çalıştırın
 
-   Örneğin: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption"`
+   Örneğin: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption"`.
 
    > [!NOTE]
    > Sertifikayı bağlayıcının yüklü olduğu sunucudan başka bir sistemden içeri aktardığınızda, Use anahtar dosya yolunu içeren aşağıdaki komutu kullanmalıdır: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>" "<File path to public key file>"`

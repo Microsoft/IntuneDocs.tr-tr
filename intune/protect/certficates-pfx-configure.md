@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207256"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258105"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune ile PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -76,7 +76,7 @@ PKCS sertifikalarını Intune ile kullanmak için aşağıdaki altyapıya sahip 
   - Sunucunuza Microsoft Intune için PFX Sertifika bağlayıcısını yükler.  
   - Önemli güncelleştirmeleri otomatik olarak almak için, bağlayıcının **443**numaralı bağlantı noktasında **AutoUpdate.msappproxy.net** 'e başvurdığına izin veren güvenlik duvarlarının açık olduğundan emin olun.   
 
-  Intune ve bağlayıcının erişimi olan ağ uç noktaları hakkında daha fazla bilgi için bkz. [Microsoft Intune Için ağ uç noktaları](../fundamentals/intune-endpoints.md).
+  Daha fazla bilgi için bkz. [Microsoft Intune Için ağ uç noktaları](../fundamentals/intune-endpoints.md)ve [Intune ağ yapılandırma gereksinimleri ve bant genişliği](../fundamentals/network-bandwidth-use.md).
 
 - **Windows Server**:  
   Barındırmak için bir Windows Server kullanın:
@@ -106,7 +106,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 3. **Kullanıcı** sertifika şablonunu bulun, sağ tıklayın ve **Yinelenen şablon** ' u seçerek **yeni şablonun özelliklerini**açın.
 
     > [!NOTE]
-    > S/MIME e-posta imzalama ve şifreleme senaryolarında, birçok yönetici imzalama ve şifreleme için ayrı sertifikalar kullanır. Microsoft Active Directory Sertifika Hizmetlerini kullanıyorsanız, S/MIME e-posta imzalama sertifikaları için **Yalnızca Exchange İmzası** şablonunu ve S/MIME şifreleme sertifikaları için de **Exchange Kullanıcısı** şablonunu kullanabilirsiniz.  3. taraf bir sertifika yetkilisi kullanıyorsanız, imzalama ve şifreleme şablonlarını ayarlamaya yönelik kendi kılavuzlarını gözden geçirmeniz önerilir.
+    > S/MIME e-posta imzalama ve şifreleme senaryolarında, birçok yönetici imzalama ve şifreleme için ayrı sertifikalar kullanır. Microsoft Active Directory Sertifika Hizmetlerini kullanıyorsanız, S/MIME e-posta imzalama sertifikaları için **Yalnızca Exchange İmzası** şablonunu ve S/MIME şifreleme sertifikaları için de **Exchange Kullanıcısı** şablonunu kullanabilirsiniz.  3\. taraf bir sertifika yetkilisi kullanıyorsanız, imzalama ve şifreleme şablonlarını ayarlamaya yönelik kendi kılavuzlarını gözden geçirmeniz önerilir.
 
 4. **Uyumluluk** sekmesinde:
 
@@ -144,7 +144,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. **Kiracı yönetimi** > **bağlayıcılar ve belirteçler** > **sertifika bağlayıcıları** > **+ Ekle**' yi seçin.
+2. **Kiracı yönetimi** > **bağlayıcılar ve belirteçler** > **sertifika bağlayıcıları** >  **+ Ekle**' yi seçin.
 
 3. PKCS #12 Bağlayıcısı için *sertifika Bağlayıcısı yazılımını indir* ' e tıklayın ve dosyayı bağlayıcıyı yükleyeceğiniz sunucudan erişebileceğiniz bir konuma kaydedin.
 
@@ -157,7 +157,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
     3. Varsayılan olarak, bağlayıcı hizmeti yerel sistem hesabının altında çalışır. İnternet’e erişmek için bir ara sunucu gerekiyorsa, yerel hizmet hesabının sunucudaki ara sunucu ayarlarına erişebildiğinizden emin olun.
 
 5. Microsoft Intune Sertifika Bağlayıcısı **kayıt** sekmesini açar. Intune bağlantısını etkinleştirmek için **oturum açın**ve genel yönetici izinlerine sahip bir hesap girin.
-6. **Gelişmiş** sekmesinde **Bu bilgisayarın SİSTEM hesabını kullan (varsayılan)**’ı seçili bırakmanız önerilir.
+6. **Gelişmiş** sekmesinde **Bu bilgisayarın SİSTEM hesabını kullan (varsayılan)** ’ı seçili bırakmanız önerilir.
 7. **Uygula** > **Kapat**
 8. Intune portalına geri dönün (**ıntune** > **cihaz yapılandırması** > **sertifika bağlayıcıları**). Birkaç dakika sonra yeşil bir onay işareti gösterilir ve **bağlantı durumu** **etkin**olur. Bağlayıcı sunucunuz artık Intune'la iletişim kurabilir.
 9. Ağ ortamınızda bir Web proxy 'niz varsa, bağlayıcının çalışmasını sağlamak için ek yapılandırmalara ihtiyacınız olabilir. Daha fazla bilgi için, bkz. Azure Active Directory belgelerinde [mevcut şirket içi proxy sunucularıyla çalışma](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) .
@@ -229,7 +229,7 @@ VPN, WiFi veya diğer kaynaklarla bir cihazın kimliğini doğrulamak için bir 
 
 Aşağıdaki platformlar için bir PKCS sertifika profili oluşturduğunuzda, konu adı biçimi seçenekleri, seçtiğiniz sertifika türüne, **Kullanıcı** veya **cihaza**bağlıdır.  
 
-Platform
+Platformlar:
 
 - Android Enterprise (*Iş profili*)
 - iOS
@@ -244,17 +244,17 @@ Platform
 > - =
 
 - **Kullanıcı sertifika türü**  
-  *Konu adı biçimi* için biçim seçenekleri iki değişken Içerir: **ortak ad (CN)** ve **e-posta (e)**. **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
+  *Konu adı biçimi* için biçim seçenekleri iki değişken Içerir: **ortak ad (CN)** ve **e-posta (e)** . **Ortak Ad (CN)** şu iki değerden biri olarak ayarlanabilir:
 
-  - **CN = {{username}}**: kullanıcının janedoe@contoso.comgibi Kullanıcı asıl adı.
-  - **CN={{AAD_Device_ID}}**: Azure Active Directory’ye (AD) yeni bir cihaz kaydettiğinizde atanan bir kimlik. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
-  - **CN = {{SERIALNUMBER}}**: genellikle üretici tarafından bir cihazı tanımlamak için kullanılan benzersiz seri numarası (sn).
-  - **CN = {{ımekarmsayı}}**: bir cep telefonu tanımlamak Için kullanılan uluslararası mobil ekipman KIMLIĞI (IMEI) benzersiz numarası.
-  - **CN = {{OnPrem_Distinguished_Name}}**: *CN = Gamze Etikan, OU = USERACCOUNTS, DC = Corp, DC = contoso, DC = com*gibi virgülle ayrılmış göreli ayırt edici adların sırası.
+  - **CN = {{username}}** : kullanıcının janedoe@contoso.comgibi Kullanıcı asıl adı.
+  - **CN={{AAD_Device_ID}}** : Azure Active Directory’ye (AD) yeni bir cihaz kaydettiğinizde atanan bir kimlik. Bu kimlik genellikle Azure AD’de kimlik doğrulamak için kullanılır.
+  - **CN = {{SERIALNUMBER}}** : genellikle üretici tarafından bir cihazı tanımlamak için kullanılan benzersiz seri numarası (sn).
+  - **CN = {{ımekarmsayı}}** : bir cep telefonu tanımlamak Için kullanılan uluslararası mobil ekipman KIMLIĞI (IMEI) benzersiz numarası.
+  - **CN = {{OnPrem_Distinguished_Name}}** : *CN = Gamze Etikan, OU = USERACCOUNTS, DC = Corp, DC = contoso, DC = com*gibi virgülle ayrılmış göreli ayırt edici adların sırası.
 
     *{{OnPrem_Distinguished_Name}}* değişkenini kullanmak Için, Azure AD 'nize [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak *onpremisesdistinguishedname* Kullanıcı özniteliğini eşitlediğinizden emin olun.
 
-  - **CN = {{onPremisesSamAccountName}}**: Yöneticiler, *adlı BIR*özniteliğe Azure AD connect kullanarak sAMAccountName ÖZNITELIĞINI Active Directory 'den Azure AD 'ye eşitleyebilir. Intune, bu değişkeni bir sertifika konusunun sertifika verme isteğinin bir parçası olarak kullanabilir. SamAccountName özniteliği, Windows 'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan Kullanıcı oturum açma adıdır. Kullanıcı oturum açma adı biçimi: EtkiAlanıAdı \ *testuser*veya yalnızca *testuser*.
+  - **CN = {{onPremisesSamAccountName}}** : Yöneticiler, *adlı BIR*özniteliğe Azure AD connect kullanarak sAMAccountName ÖZNITELIĞINI Active Directory 'den Azure AD 'ye eşitleyebilir. Intune, bu değişkeni bir sertifika konusunun sertifika verme isteğinin bir parçası olarak kullanabilir. SamAccountName özniteliği, Windows 'un önceki bir sürümünden (Windows 2000 öncesi) istemcileri ve sunucuları desteklemek için kullanılan Kullanıcı oturum açma adıdır. Kullanıcı oturum açma adı biçimi: EtkiAlanıAdı \ *testuser*veya yalnızca *testuser*.
 
     *{{OnPremisesSamAccountName}}* değişkenini kullanmak Için, Azure AD 'nize [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) kullanarak *onPremisesSamAccountName* User özniteliğini eşitlediğinizden emin olun.
 
@@ -290,17 +290,17 @@ Platform
 
 İki sertifika Bağlayıcısı için güncelleştirmeler düzenli aralıklarla yayımlanır. Bir bağlayıcıyı güncelleştirdiğimiz zaman, buradaki değişiklikler hakkında bilgi edinebilirsiniz.
 
-*Microsoft Intune Için PFX sertifikaları Bağlayıcısı* , *Intune sertifika Bağlayıcısı* el ile güncelleştirilirken [otomatik güncelleştirmeleri destekler](#requirements).
+*Microsoft Intune Için PFX Sertifika Bağlayıcısı* , *Intune sertifika Bağlayıcısı* el ile güncelleştirilirken [otomatik güncelleştirmeleri destekler](#requirements).
 
 ### <a name="may-17-2019"></a>17 Mayıs 2019
 
-- **Microsoft Intune-sürüm 6.1905.0.404 için PFX sertifikaları Bağlayıcısı**  
+- **Microsoft Intune-sürüm 6.1905.0.404 için PFX Sertifika Bağlayıcısı**  
   Bu sürümdeki değişiklikler:  
   - Mevcut PFX sertifikalarının yeniden işlenmesine devam edildiği bir sorun düzeltildi ve bu, bağlayıcının yeni istekleri işlemeyi durdurmasına neden oluyor. 
 
 ### <a name="may-6-2019"></a>6 Mayıs 2019
 
-- **Microsoft Intune-sürüm 6.1905.0.402 için PFX sertifikaları Bağlayıcısı**  
+- **Microsoft Intune-sürüm 6.1905.0.402 için PFX Sertifika Bağlayıcısı**  
   Bu sürümdeki değişiklikler:  
   - Bağlayıcının yoklama aralığı 5 dakikadan 30 saniyeye düşürülür.
  
@@ -312,7 +312,7 @@ Platform
   - Sertifika iptalinde güvenilirlik düzeltmeleri içerir.  
   - PKCS sertifika isteklerinin işlenme hızını artırmak için performans düzeltmelerini içerir.  
 
-- **Microsoft Intune-sürüm 6.1904.0.401 için PFX sertifikaları Bağlayıcısı**
+- **Microsoft Intune-sürüm 6.1904.0.401 için PFX Sertifika Bağlayıcısı**
   > [!NOTE]  
   > PFX bağlayıcısının bu sürümü için otomatik güncelleştirme, 11 Nisan 2019 tarihine kadar kullanılabilir değildir.  
 

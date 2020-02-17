@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: cd2efc759f4edf2a2ae62c98cb04af61ff20088c
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125039"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258122"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -63,11 +63,11 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 #### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Windows 10 cihazlarda Microsoft Edge sürüm 77 ve üzeri<!-- 5843584 -->
 Intune artık Windows 10 cihazlarda Microsoft Edge sürüm 77 ve üstünü kaldırmayı desteklemektedir. Daha fazla bilgi için bkz. [Windows 10 Için Microsoft Edge 'i Microsoft Intune 'e ekleme](~/apps/apps-windows-edge.md).
 
-#### <a name="company-portal-app-improved-performance---6178652---"></a>Şirket Portalı Uygulama performansı geliştirildi<!-- 6178652 -->
-Şirket Portalı uygulaması, Surface Pro X gibi ARM64 işlemciler kullanan cihazlar için iyileştirilmiş performansı destekleyecek şekilde güncelleştirilmiştir. daha önce, öykünülmüş bir ARM32 modunda çalıştırılan Şirket Portalı. Artık Şirket Portalı uygulaması, ARM64 için yerel olarak derlenir. Şirket Portalı uygulaması hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](~/apps/company-portal-app.md).
-
 #### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Şirket Portalı, Android iş profili kaydından kaldırılan ekran<!--6103987 -->
 **Sonraki nedir?** ekranı, Kullanıcı deneyimini kolaylaştırmak Için Şirket portalı Android iş profili kayıt akışından kaldırılmıştır. Güncelleştirilmiş Android iş profili kayıt akışını görmek için [Android iş profiline kaydol](/intune-user-help/enroll-device-android-work-profile) ' a gidin.  
+
+#### <a name="company-portal-app-improved-performance---6178652---"></a>Şirket Portalı Uygulama performansı geliştirildi<!-- 6178652 -->
+Bu özellik, daha sonraki bir tarihte alınacaktır.
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>27 Ocak 2020 haftası
