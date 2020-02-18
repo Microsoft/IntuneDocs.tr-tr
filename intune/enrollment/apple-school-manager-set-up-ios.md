@@ -1,7 +1,7 @@
 ---
-title: iOS cihazları için Apple School Manager Programı kaydı
+title: İOS/ıpados cihazları için Apple Okul Yöneticisi program kaydı
 titleSuffix: Microsoft Intune
-description: Intune ile şirkete ait iOS cihazları için Apple School Manager Programı kaydını ayarlamayı öğrenin.
+description: Intune ile şirkete ait iOS/ıpados cihazları için Apple Okul Yöneticisi program kaydını ayarlamayı öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3336ed09c414538e2879a7c50d1e3a0111f58b11
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691834"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415371"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager ile iOS cihaz kaydını ayarlama
+# <a name="set-up-iosipados-device-enrollment-with-apple-school-manager"></a>Apple Okul Yöneticisi ile iOS/ıpados cihaz kaydını ayarlama
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Artık [Apple School Manager](https://school.apple.com/) programı aracılığıyla satın alınan iOS cihazlarını Intune ile yönetebilirsiniz. Intune’u Apple School Manager ile birlikte kullanarak, çok sayıda iOS cihazını hiç dokunmadan kaydedebilirsiniz. Bir öğrenci veya öğretmen cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz yönetime kaydedilir.
+Intune 'u [Apple Okul Yöneticisi](https://school.apple.com/) programı aracılığıyla satın alınan IOS/ıpados cihazlarını kaydedecek şekilde ayarlayabilirsiniz. Apple Okul Yöneticisi ile Intune 'u kullanarak, çok sayıda iOS/ıpados cihazını bunlara dokunmadan kaydedebilirsiniz. Bir öğrenci veya öğretmen cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz yönetime kaydedilir.
 
 Apple School Manager kaydını etkinleştirmek için Intune ve Apple School Manager portallarını kullanmanız gerekir. Cihazlarınızı, Intune ile yönetilmek üzere atayabilmeniz için seri numaraları listesi veya sipariş numarası gereklidir. Kayıt sırasında cihazlara uygulanan ayarları içeren DEP kayıt profilleri oluşturun.
 
@@ -39,14 +39,14 @@ Apple School Manager kaydı [Apple Aygıt Kayıt Programı](device-enrollment-pr
 - [Apple Mobil Cihaz Yönetimi (MDM) anında iletme sertifikası](apple-mdm-push-certificate-get.md)
 - [MDM Yetkilisi](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Anında İletme sertifikası](apple-mdm-push-certificate-get.md)
-- ADFS kullanılıyorsa kullanıcı benzeşimi [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+- ADFS kullanılıyorsa kullanıcı benzeşimi, [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - [Apple School Management](http://school.apple.com) programından satın alınan cihazlar
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Bir Apple belirteci alma ve cihaz atama
 
-Şirkete ait iOS cihazlarını Apple School Manager’a kaydedebilmek için Apple’dan bir belirteç (.p7m) dosyasına ihtiyacınız vardır. Bu belirteç, Intune’un Apple School Manager’a katılan cihazlara ait bilgileri eşitlemesini sağlar. Ayrıca Intune'un kayıt profilini Apple'a yüklemesine ve cihazları bu profillere atamasına izin verir. Apple portalındayken yönetilecek cihaz seri numaralarını da atayabilirsiniz.
+Şirkete ait iOS/ıpados cihazlarını Apple Okul Yöneticisi ile kaydedebilmek için Apple 'dan bir belirteç (. p7m) dosyası gerekir. Bu belirteç, Intune’un Apple School Manager’a katılan cihazlara ait bilgileri eşitlemesini sağlar. Ayrıca Intune'un kayıt profilini Apple'a yüklemesine ve cihazları bu profillere atamasına izin verir. Apple portalındayken yönetilecek cihaz seri numaralarını da atayabilirsiniz.
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>1\. Adım Apple belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>Adım 1. Apple belirteci oluşturmak için gereken Intune ortak anahtar sertifikasını indirin
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde, > iOS ** > ** IOS **kaydı** > **kayıt programı belirteçleri** **Ekle** > ' yi seçin.
 
@@ -55,7 +55,7 @@ Apple School Manager kaydı [Apple Aygıt Kayıt Programı](device-enrollment-pr
 2. **Kayıt programı belirteci** dikey penceresinde, şifreleme dosyasını (.pem) indirmek ve yerel olarak kaydetmek için **Ortak anahtarınızı indirin**’i seçin. .pem dosyası Apple School Manager portalından güven ilişkisi sertifikası istemek için kullanılır.
      ![Kayıt Programı Belirteci dikey penceresi.](./media/apple-school-manager-set-up-ios/image02.png)
 
-### <a name="step-2-download-a-token-and-assign-devices"></a>2\. Adım Bir belirteç indirin ve cihaz atayın
+### <a name="step-2-download-a-token-and-assign-devices"></a>Adım 2. Bir belirteç indirin ve cihaz atayın
 1. **Apple School Manager aracılığıyla belirteç oluşturma**’yı seçin ve şirketinizin Apple kimliğiyle Apple School’da oturum açın. Apple School Manager belirtecinizi yenilemek için bu Apple kimliğini kullanabilirsiniz.
 2. [Apple School Manager portalında](https://school.apple.com), **MDM Sunucuları**’na gidin ve **MDM Sunucusu Ekle**’yi (sağ üstte) seçin.
 3. **MDM Sunucusu Adını** girin. Sunucu adı, mobil cihaz yönetimi (MDM) sunucusunu tanımlarken kullanmanız içindir. Microsoft Intune sunucusunun adı veya URL'si değildir.
@@ -69,14 +69,14 @@ Apple School Manager kaydı [Apple Aygıt Kayıt Programı](device-enrollment-pr
 8. **Cihaz Seçme** işleminin nasıl olacağını belirtin ve daha sonra cihaza ait bilgileri ve ayrıntıları sağlayın.
 9. **Sunucuya Ata**'yı ve Microsoft Intune için belirtilen &lt;ServerName&gt; öğesini belirleyip **Tamam**'ı seçin.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Adım 3. Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Adım 3: Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin
 
 [Microsoft Uç Nokta Yöneticisi Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), daha sonra başvurmak üzere Apple kimliğini sağlayın.
 
 ![Kayıt programı belirtecini oluşturmak için kullanılan Apple kimliğini belirtme ve kayıt programı belirtecine gözatma işleminin ekran görüntüsü.](./media/apple-school-manager-set-up-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>Adım 4. Belirtecinizi karşıya yükleme
-**Apple belirteci** kutusunda sertifika (.pem) dosyasına gözatın, **Aç**’ı ve daha sonra **Oluştur**’u seçin. Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir. Intune, Apple School Manager cihazlarınızı Apple’dan otomatik olarak eşitler.
+### <a name="step-4-upload-your-token"></a>4\. Adım Belirtecinizi karşıya yükleme
+**Apple belirteci** kutusunda sertifika (.pem) dosyasına gözatın, **Aç**’ı ve daha sonra **Oluştur**’u seçin. Anında iletme sertifikası ile Intune, ilkeyi kayıtlı mobil cihazlara ileterek iOS/ıpados cihazlarını kaydedebilir ve yönetebilir. Intune, Apple School Manager cihazlarınızı Apple’dan otomatik olarak eşitler.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
 Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profili oluşturabilirsiniz. Bir cihaz kayıt profili, kayıt sırasında bir grup cihaza uygulanan ayarları tanımlar.
@@ -89,7 +89,7 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
     ![Profil adı ve açıklaması.](./media/apple-school-manager-set-up-ios/image05.png)
 
 4. **Kullanıcı Benzeşimi** için bu profile sahip cihazların atanan kullanıcıyla mı yoksa atanan kullanıcı olmadan mı kaydedilmesi gerektiğini seçin.
-    - **Kullanıcı Benzeşimi ile Kaydetme** - Uygulamaları yükleme gibi hizmetler için Şirket Portalı’nı kullanmak isteyen kullanıcılara ait cihazlar için bu seçeneği seçin. Bu seçenek ayrıca kullanıcılara, Şirket Portalı’nı kullanarak cihazlarının kimliğini doğrulama imkanı sağlar. ADFS kullanılıyorsa kullanıcı benzeşimi [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Apple School Manager’ın Paylaşılan iPad modu, kullanıcının kullanıcı benzeşimi olmadan kaydolmasını gerektirir.
+    - **Kullanıcı Benzeşimi ile Kaydetme** - Uygulamaları yükleme gibi hizmetler için Şirket Portalı’nı kullanmak isteyen kullanıcılara ait cihazlar için bu seçeneği seçin. Bu seçenek ayrıca kullanıcılara, Şirket Portalı’nı kullanarak cihazlarının kimliğini doğrulama imkanı sağlar. ADFS kullanılıyorsa kullanıcı benzeşimi, [WS-Trust 1.3 Kullanıcı adı/Karma uç noktası](https://technet.microsoft.com/library/adfs2-help-endpoints) gerektirir. [Daha fazla bilgi edinin](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Apple School Manager’ın Paylaşılan iPad modu, kullanıcının kullanıcı benzeşimi olmadan kaydolmasını gerektirir.
 
     - **Kullanıcı Benzeşimi Olmadan Kaydetme** - Paylaşılan cihazlar gibi tek bir kullanıcıyla bağlantılı olmayan cihazlar için bu seçeneği seçin. Yerel kullanıcı verilerine erişmeden görevleri yerine getiren cihazlar için bu seçeneği kullanın. Şirket Portalı uygulaması gibi uygulamalar çalışmaz.
 
@@ -106,7 +106,7 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
     > Apple Kurulum Yardımcısı ile kimliği doğrularken bunlar desteklenmez.
 
 6. **Cihaz Yönetim Ayarları**’nı ve bu profili kullanan cihazların denetlenmesini isteyip istemediğinizi seçin.
-    **Denetimli** cihazlar, varsayılan olarak size daha fazla yönetim seçeneği verir ve Etkinleştirme Kilidi’ni devre dışı bırakır. Microsoft, özellikle fazla sayıda iOS cihaz dağıtan kuruluşlar için denetimli modu etkinleştirme mekanizması olarak DEP’in kullanılmasını önerir.
+    **Denetimli** cihazlar, varsayılan olarak size daha fazla yönetim seçeneği verir ve Etkinleştirme Kilidi’ni devre dışı bırakır. Microsoft, özellikle çok sayıda iOS/ıpados cihazı dağıtan kuruluşlar için denetimli modu etkinleştirme mekanizması olarak DEP kullanılmasını önerir.
 
     Kullanıcılara cihazlarının denetimli olduğu iki yolla bildirilir:
 
@@ -114,9 +114,9 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
    - **Ayarlar** > **Genel** > **Hakkında** kısmında “Bu iPhone denetimlidir.” yazar. ifadesi ve
 
      > [!NOTE]
-     > Denetim olmadan kaydedilen bir cihaz, yalnızca Apple Configurator kullanılarak sıfırlanıp denetimli yapılabilir. Cihazı bu şekilde sıfırlamak için bir iOS cihazı USB kablosu ile bir Mac’e bağlamak gerekir. Bu konu hakkında daha fazla bilgi için [Apple Configurator belgelerine](http://help.apple.com/configurator/mac/2.3) bakın.
+     > Denetim olmadan kaydedilen bir cihaz, yalnızca Apple Configurator kullanılarak sıfırlanıp denetimli yapılabilir. Bu şekilde cihazın sıfırlanması, bir iOS/ıpados cihazının USB kablosuyla bir Mac 'e bağlanmasını gerektirir. Bu konu hakkında daha fazla bilgi için [Apple Configurator belgelerine](http://help.apple.com/configurator/mac/2.3) bakın.
 
-7. Bu profili kullanan cihazlarda kilitli kayıt isteyip istemediğinizi seçin. **Kilitli kayıt**, yönetim profilinin **Ayarlar** menüsünden kaldırılmasını sağlayan iOS ayarlarını devre dışı bırakır. Cihazı kaydettikten sonra cihazı silmeden bu ayarı değiştiremezsiniz. Bu cihazlarda **Denetimli** Yönetim Modu *Evet* olarak ayarlı olmalıdır. 
+7. Bu profili kullanan cihazlarda kilitli kayıt isteyip istemediğinizi seçin. **Kilitli kayıt** , yönetim profilinin **Ayarlar** menüsünden kaldırılmasına Izin veren iOS/ıpados ayarlarını devre dışı bırakır. Cihazı kaydettikten sonra cihazı silmeden bu ayarı değiştiremezsiniz. Bu cihazlarda **Denetimli** Yönetim Modu *Evet* olarak ayarlı olmalıdır. 
 
 8. Birden çok kullanıcının yönetilen Apple kimliği kullanarak kayıtlı iPad’lerde oturum açmasına izin verebilirsiniz. Bunu yapmak için, **paylaşılan iPad** altında **Evet** ' i seçin (Bu seçenek, **Kullanıcı benzeşimi olmadan kaydolma** ve **denetimli** mod **Evet**olarak ayarlanmış olması gerekir.) Yönetilen Apple kimlikleri, Apple Okul Yöneticisi portalında oluşturulur. [Paylaşılan iPad](../fundamentals/education-settings-configure-ios-shared.md) ve [Apple'ın paylaşılan iPad gereksinimleri](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) hakkında daha fazla bilgi edinin.
 
@@ -131,11 +131,11 @@ Belirtecinizi yüklediğinize göre, Apple School cihazları için kayıt profil
 13. Şu profil ayarlarını yapılandırmak için **Kurulum Yardımcısı Ayarları**’nı seçin: ![Kurulum Yardımcısı Özelleştirme.](./media/apple-school-manager-set-up-ios/setupassistantcustom.png)
 
 
-    |                 Ayar                  |                                                                                               Description                                                                                               |
+    |                 Ayar                  |                                                                                               Açıklama                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Departman Adı</strong>     |                                                             Kullanıcı, etkinleştirme sırasında <strong>Yapılandırma Hakkında</strong> öğesine dokunduğunda görüntülenir.                                                              |
     |    <strong>Departman Telefonu</strong>     |                                                          Kullanıcı, etkinleştirme sırasında <strong>Yardım Gerekli</strong> düğmesine dokunduğunda görüntülenir.                                                          |
-    | <strong>Kurulum Yardımcısı Seçenekleri</strong> |                                                     Aşağıdaki isteğe bağlı ayarlar, daha sonra iOS <strong>Ayarlar</strong> menüsünden ayarlanabilir.                                                      |
+    | <strong>Kurulum Yardımcısı Seçenekleri</strong> |                                                     Aşağıdaki isteğe bağlı ayarlar daha sonra iOS/ıpados <strong>ayarları</strong> menüsünde ayarlanabilir.                                                      |
     |        <strong>Geçiş kodu</strong>         | Etkinleştirme sırasında geçiş kodu ister. Güvenliği sağlanmayan veya erişim denetimi başka bir yolla (cihazı tek uygulamayla sınırlandıran bilgi noktası modu gibi) sağlanan cihazlar için her zaman geçiş kodu isteyin. |
     |    <strong>Konum Hizmetleri</strong>    |                                                                 Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında bu hizmeti sorar.                                                                  |
     |         <strong>Geri Yükle</strong>         |                                                                Bu etkinleştirilirse Kurulum Yardımcısı, etkinleştirme sırasında iCloud yedeklemesini sorar.                                                                 |
@@ -184,4 +184,4 @@ Intune tarafından yönetilen Apple School Manager cihazları kaydedilmeden önc
 
 ## <a name="distribute-devices-to-users"></a>Cihazları kullanıcılara dağıtma
 
-Apple ve Intune arasında eşitlemeyi ve yönetimi etkinleştirdiniz ve Apple School  cihazlarınızın kaydolmasına izin vermek için bir profil atadınız. Artık cihazları kullanıcılara dağıtabilirsiniz. Bir iOS Apple School Manager cihazı açıldığında, Intune yönetimine kaydedilir. Kullanılmakta olan etkinleştirilmiş cihazlar silinmeden profiller uygulanamaz.
+Apple ve Intune arasında eşitlemeyi ve yönetimi etkinleştirdiniz ve Apple School  cihazlarınızın kaydolmasına izin vermek için bir profil atadınız. Artık cihazları kullanıcılara dağıtabilirsiniz. Bir iOS/ıpados Apple Okul Yöneticisi cihazı açık olduğunda, Intune tarafından yönetime kaydolur. Kullanılmakta olan etkinleştirilmiş cihazlar silinmeden profiller uygulanamaz.

@@ -17,27 +17,27 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 70b7fbaa29434c775720ab423f38e29bc329861a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885884"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415163"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
 Bu makale, Intune yöneticilerinin Windows cihazlarını Intune 'A kaydetme sırasında sorunları anlamalarına ve sorunlarını gidermenize yardımcı olur.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 Sorun gidermeye başlamadan önce bazı temel bilgilerin toplanması önemlidir. Bu bilgiler sorunu daha iyi anlamanıza ve çözüm bulma süresini azaltmanıza yardımcı olabilir.
 
 Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 - Kullanıcıya atanan geçerli bir Intune lisansı mı var? Kullanıcıların cihazlarını kaydedebilmesi için gerekli lisansın atanmış olması gerekir.
 - Windows cihaza en son güncelleştirme yüklendi mi? Intune 'daki bazı özellikler yalnızca Windows 'un en son sürümüyle çalışır. Windows Update aracılığıyla kullanılabilen bilinen sorunlara yönelik birçok düzeltme vardır. En son güncelleştirmelerin uygulanması, genellikle bir Windows cihaz kayıt sorununu düzeltir. 
-- Hata iletisinde tam olarak ne yazıyor?
+- Tam hata iletisi nedir?
 - Hata iletisini nerede görüyorsunuz?
 - Sorun ne zaman başladı? Kayıt hiç çalıştı mı? 
-- Hangi platform (Android, iOS, Windows) soruna sahip?
+- Hangi platform (Android, iOS/ıpados, Windows) soruna sahip?
 - Kaç Kullanıcı etkilendi? Tüm kullanıcılar mı etkilendi?
 - Kaç cihaz etkilendi? Tüm cihazlar etkileniyor mu ya da yalnızca bir şey var mı?
 - MDM yetkilisi nedir?
@@ -71,7 +71,7 @@ Bu soruna yönelik birkaç olası çözüm vardır:
 > Bu yöntem, yalnızca etkilenen kullanıcıyı değil, tüm kullanıcılar için cihaz kayıt sınırını artırır.
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-2. **Cihazlar** > **Kayıt kısıtlamaları ' na gidin**  >  **(** cihaz sınırı **kısıtlamaları**' nın altında **) >**  > **Özellikler**(cihaz **sınırının**yanında) >, **cihaz sınırını** (en fazla 15) > **Gözden geçirme + kaydet**' i yükseltin.    
+2. **Cihazlar** > **Kayıt kısıtlamaları** ' na gidin ** > (** **cihaz sınırı kısıtlamaları**' nın altında) > ** > ** **Özellikler** (cihaz **sınırının**yanında) >, **cihaz sınırını** (en fazla 15) > **Gözden geçirme + kaydet**' i yükseltin.    
  
 
 ##### <a name="check-device-type-restrictions"></a>Cihaz türü kısıtlamalarını denetle
@@ -176,7 +176,7 @@ Hata: "yazılım yüklenemiyor, 0x80cf4017."
 **Neden:** İstemci yazılımı güncel değil.
 
 #### <a name="resolution"></a>Çözüm
-1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com) adresinde oturum açın.    
+1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)oturum açın.    
 2. **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
 3. Yükleme paketini kaydedin ve ardından istemci yazılımını yükleme. 
 
@@ -188,7 +188,7 @@ Hata: "hesap sertifikası geçerli değil ve zaman aşımına ermeyebilir, 0x80c
 **Neden:** İstemci yazılımı güncel değil.
 
 #### <a name="resolution"></a>Çözüm
-1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com) adresinde oturum açın.    
+1. [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)oturum açın.    
 2. **Yönetici** > **istemci yazılımı indirmesi**' ne gidin ve ardından **istemci yazılımını indir**' e tıklayın.    
 3. Yükleme paketini kaydedin ve ardından istemci yazılımını yükleme.    
 
@@ -369,7 +369,7 @@ Bu sorun genellikle Windows Autopilot cihazlarının oluşturulduğu kuruluş bi
 8. Klasör onay kutusunda **yalnızca şu nesneleri** seçin ve ardından **bilgisayar nesnelerini**seçin, **Bu klasörde seçili nesneleri oluşturun**ve **Seçili nesneleri bu klasörde silin** onay kutularını işaretleyin.
 9. **İleri**'yi seçin.
 10. **İzinler**altında **tam denetim** onay kutusunu seçin. Bu eylem diğer tüm seçenekleri seçer.
-11. **Sonraki** > **Son** seçeneğini belirleyin.
+11. **İleri** > **son**' u seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

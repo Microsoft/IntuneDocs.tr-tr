@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e018fb9888db19995556a6671d93a1db5fa78c2a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754788"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415441"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Microsoft Intune’a web uygulamaları ekleme
 
@@ -33,7 +33,7 @@ Intune, web uygulamaları da dahil olmak üzere çeşitli uygulama türlerini de
 
 Kullanıcılarınız için uygulamaları yönetebilmek ve atayabilmek için önce uygulamayı Intune’a ekleyin. 
 
-Intune, kullanıcının cihazında Web uygulaması için bir kısayol oluşturur. İOS cihazlarında, giriş ekranına Web uygulaması için bir kısayol eklenir. Android Cihaz Yöneticisi cihazlarda, Intune şirket portalı pencere öğesine Web uygulaması için bir kısayol eklenir ve pencere öğesinin Kullanıcı tarafından el ile sabitlenilmesi gerekir. Windows cihazlarında, Web uygulamasının bir kısayolu Başlat menüsüne yerleştirilir.
+Intune, kullanıcının cihazında Web uygulaması için bir kısayol oluşturur. İOS/ıpados cihazlarında, giriş ekranına Web uygulaması için bir kısayol eklenir. Android Cihaz Yöneticisi cihazlarda, Intune şirket portalı pencere öğesine Web uygulaması için bir kısayol eklenir ve pencere öğesinin Kullanıcı tarafından el ile sabitlenilmesi gerekir. Windows cihazlarında, Web uygulamasının bir kısayolu Başlat menüsüne yerleştirilir.
 
 > [!Note]
 > Web uygulamalarını başlatmak için kullanıcının cihazında bir tarayıcı yüklü olmalıdır. 
@@ -71,7 +71,7 @@ Bir uygulamayı web’de uygulamanın kısayolu olarak Intune’a eklemek için:
     Oluşturduğunuz uygulamanın **genel bakış** dikey penceresi görüntülenir.
 
 > [!Note]
-> Şu anda Intune web uygulamalarının iOS cihazlara dağıtımı, yönetim profiliyle ilişkili ve el ile kaldırılamaz. Intune portalında dağıtım türünü **Kaldır** seçeneğine değiştirerek web uygulamasının otomatik olarak kaldırılmasını sağlayabilirsiniz. Ancak uygulama ataması amacını **Kaldır** seçeneğine değiştirmeden dağıtımı kaldırırsanız, cihazın kaydı Intune’dan kaldırılana kadar web uygulaması cihazda kalır.
+> Şu anda, Intune Web uygulamalarının iOS/ıpados cihazlarına dağıtılması yönetim profiliyle ilişkili olduğundan el ile kaldırılamaz. Intune portalında dağıtım türünü **Kaldır** seçeneğine değiştirerek web uygulamasının otomatik olarak kaldırılmasını sağlayabilirsiniz. Ancak uygulama ataması amacını **Kaldır** seçeneğine değiştirmeden dağıtımı kaldırırsanız, cihazın kaydı Intune’dan kaldırılana kadar web uygulaması cihazda kalır.
 
 Son kullanıcılar, Web uygulamasını seçip **tarayıcıda aç**seçeneğini belirleyerek web uygulamalarını doğrudan Windows Şirket portalı uygulamasından başlatabilir. Yayınlanan Web URL 'SI doğrudan Web tarayıcısında açılır. 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812164"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413641"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune'u kullanarak kuruluşunuzdaki kaynaklara erişim izni verme amacıyla cihazlarda kural oluşturun
 
@@ -68,7 +68,7 @@ Intune, uyumluluk uygulanmasını sağlamak için Azure Active Directory (AD) [k
 
 - [Azure Active Directory'de cihaz yönetimi nedir?](https://docs.microsoft.com/azure/active-directory/device-management-introduction) sayfasında cihazların Azure AD'ye kayıt nedeni ve yöntemi hakkında ayrıntılı bilgiler verilmektedir.
 
-- [Koşullu erişim](conditional-access.md) ve [koşullu erişimi kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md) sayfalarında bu özelliğin Intune ile kullanımı ele alınmaktadır.
+- [Koşullu erişim](conditional-access.md) ve [koşullu erişim kullanmanın yaygın yolları](conditional-access-intune-common-ways-use.md) , Intune ile ilgili olarak bu özelliği tanımlar.
 
 ## <a name="ways-to-use-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini kullanma yolları
 
@@ -104,7 +104,9 @@ Intune ayrıca bir dizi yerleşik uyumluluk ilkesi ayarına da sahiptir. Aşağ�
   - Şirket Portalı’nın konum hizmetlerini kullanmasına izin verilmesi.
   - Cihazın jailbreak durumunun en az 72 saatte bir değerlendirilip Intune’a rapor edilmesi. Aksi takdirde cihaz uyumsuz olarak işaretlenir. Değerlendirme, Şirket Portalı uygulaması açıldığında veya cihaz fiziksel olarak 500 metre veya daha uzağa taşındığında tetiklenir. Cihazın 72 saat içinde 500 metre hareket etmemesi durumunda gelişmiş jailbreak değerlendirmesi yapılabilmesi için kullanıcının Şirket Portalı uygulamasını açması gerekir.
 
-- **Uyumluluk durumu geçerlilik süresi (gün)** : Alınan tüm uyumluluk ilkeleri için cihazların durum rapor etme süresini girin. Bu süre içinde durum döndürmeyen cihazlar uyumsuz olarak kabul edilir. Varsayılan değer 30 gündür.
+- **Uyumluluk durumu geçerlilik süresi (gün)** : Alınan tüm uyumluluk ilkeleri için cihazların durum rapor etme süresini girin. Bu süre içinde durum döndürmeyen cihazlar uyumsuz olarak kabul edilir. Varsayılan değer 30 gündür. En küçük değer 1 gündür.
+
+  Bu ayar, **etkin** varsayılan uyumluluk Ilkesi (**cihazlar** > **izleme** > **ayarı uyumluluğu**) olarak gösterilir. Bu ilke için arka plan görevi günde bir kez çalışır.
 
 Bu ayarları izlemek için bu yerleşik ilkeleri kullanabilirsiniz. Intune ayrıca cihaz platformuna göre belirlenen farklı aralıklarla [yenileme yapar veya güncelleştirmeleri denetler](create-compliance-policy.md#refresh-cycle-times). [Microsoft Intune'daki cihaz ilkeleri ve profiller hakkında yaygın sorular, sorunlar ve çözümler](../configuration/device-profile-troubleshoot.md) sayfası iyi bir kaynaktır.
 
@@ -140,9 +142,9 @@ Aşağıdaki tabloda, bir uyumluluk ilkesi koşullu erişim ilkesi ile kullanıl
 - [İlke oluşturun](create-compliance-policy.md) ve önkoşulları görüntüleyin.
 - Farklı cihaz platformlarına özgü uyumluluk ayarlarını görüntüleyin:
 
-  - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
+  - [Android](compliance-policy-create-android.md)
   - [Android Kurumsal](compliance-policy-create-android-for-work.md)
-  - [Android](compliance-policy-create-ios.md)
+  - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
   - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)

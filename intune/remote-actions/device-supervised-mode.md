@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune ile iOS denetimli modunu açma
+title: İOS/ıpados denetimli modu Microsoft Intune açın
 titleSuffix: ''
-description: Intune ile iOS denetimli modunu nasıl açacağınızı öğrenin.
+description: Intune ile iOS/ıpados denetimli modu açma hakkında bilgi edinin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713407"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413656"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>iOS denetimli modunu açma
+# <a name="turn-on-iosipados-supervised-mode"></a>İOS/ıpados denetimli modunu aç
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple iOS denetimli modu, Apple cihazları yönetirken yöneticilere daha fazla seçenek sağlar. Bu nedenle büyük ölçekte dağıtılan şirkete ait cihazlarda kullanışlıdır. Örneğin AirDrop’u kısıtlayabilir veya kullanıcıların cihaz adını değiştirmesini önleyebilirsiniz. Denetimli mod gerektiren ayarlar listesi için bkz. [Intune’da iOS cihaz kısıtlama ayarları](../configuration/device-restrictions-ios.md).
+Apple iOS/ıpados Denetimli mod yöneticilere Apple cihazlarını yönetirken daha fazla seçenek sunar ve bu sayede, ölçekli olarak dağıtılan şirkete ait cihazlar için yararlıdır. Örneğin AirDrop’u kısıtlayabilir veya kullanıcıların cihaz adını değiştirmesini önleyebilirsiniz. Denetimli mod gerektiren ayarlar listesi için bkz. [Intune’da iOS cihaz kısıtlama ayarları](../configuration/device-restrictions-ios.md).
 
 Intune, [Apple Aygıt Kayıt Programı](../enrollment/device-enrollment-program-enroll-ios.md)’nın (DEP) bir parçası olarak denetimli modu destekler.
 
@@ -41,7 +41,7 @@ Denetim gerektiren Apple denetimleri listesi için Apple’ın [Yük ayarları b
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>Denetimli modu kayıt sonrasında açma
 
-Kayıt sonrasında denetimli modu açmanın tek yolu, iOS cihazı bir Mac’e bağlayıp [Apple Configurator kullanmaktır](../enrollment/apple-configurator-enroll-ios.md) (böylece cihaz sıfırlanır). Kayıttan sonra bir cihazı Intune’da Denetimli mod için yapılandıramazsınız.
+Kayıt sonrasında denetimli modu açmak için tek yol, bir iOS/ıpados cihazını Mac 'e bağlamak ve [Apple Configurator](../enrollment/apple-configurator-enroll-ios.md) 'ı (cihazı sıfırlayacaktır) kullanmaktır. Kayıttan sonra bir cihazı Intune’da Denetimli mod için yapılandıramazsınız.
 
 ## <a name="identify-a-supervised-device"></a>Denetimli bir cihazı tanımlama
 

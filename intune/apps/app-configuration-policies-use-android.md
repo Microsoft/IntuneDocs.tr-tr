@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 52c8d10f0b8d06d68d75450c3d708f910bc5ddd4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755542"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415033"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Yönetilen Android Kurumsal cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -152,7 +152,7 @@ Ayrıca, Android cihaz özelliklerine erişmek için uygulama izinlerini öncede
 ## <a name="additional-information"></a>Ek bilgiler
 
 - [Android kurumsal cihazlara yönetilen Google Play uygulaması atama](apps-add-android-for-work.md#assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices)
-- [İOS ve Android uygulama yapılandırma ayarları için Outlook dağıtımı](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [İOS için Outlook 'U/ıpados ve Android uygulama yapılandırma ayarlarını dağıtma](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

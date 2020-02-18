@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9cb323dc6f8110d77343fb11c9e0a1c40f9e3cd8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885957"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415271"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune cihaz kaydı sorunlarını giderme
 
@@ -36,7 +36,7 @@ Bu makalede [cihaz kayıt](device-enrollment.md) sorunlarını gidermeye yöneli
 Sorun gidermeye başlamadan önce, Intune’u kayıt sağlamak üzere doğru şekilde yapılandırdığınızdan emin olmak için kontrol edin. Bu yapılandırma gereksinimleri hakkında daha fazla bilgi edinebilirsiniz:
 
 - [Microsoft Intune’da cihazları kaydetmeye hazırlanma](../fundamentals/setup-steps.md)
-- [iOS ve Mac yönetimini ayarlama](../ios-enroll.md)
+- [İOS/ıpados ve Mac cihaz yönetimini ayarlama](../ios-enroll.md)
 - [Windows cihaz yönetimini ayarlama](windows-enroll.md)
 - [Android cihaz yönetimini ayarlama](android-enroll.md) - Ek adım gerekmez
 
@@ -49,7 +49,7 @@ Ayrıca kullanıcının cihazında saatin ve tarihin doğru ayarlandığından e
 Yönetilen cihaz kullanıcılarınız, gözden geçirmeniz için kayıt ve tanılama günlüklerini toplayabilir. Kullanıcılar için günlükleri toplama yönergeleri, şu konu başlıkları altında sağlanır:
 
 - [Android kayıt hatalarını BT yöneticinize gönderme](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
-- [iOS hatalarını BT yöneticinize gönderme](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
+- [BT yöneticinize iOS/ıpados hataları gönderme](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>Genel kayıt sorunları
@@ -93,7 +93,7 @@ Cihaz sınırlarına ulaşmaktan kaçınmak için, eski cihaz kayıtlarını kal
 
 4. Bu da başarısız olursa, kullanıcının kimlik bilgilerinin Azure Active Directory ile doğru eşitlendiğinden emin olun.
 
-5. Kullanıcı başarıyla oturum açarsa, iOS cihazı Intune Şirket Portalı uygulamasını yüklemenizi ve kaydetmenizi ister. Bir Android cihazında kaydetmeyi yeniden denemeden önce Intune Şirket Portalı uygulamasını el ile yüklemeniz gerekir.
+5. Kullanıcı başarıyla oturum açarsa, bir iOS/ıpados cihazı Intune Şirket Portalı uygulamasını yüklemenizi ve kaydolmasını ister. Bir Android cihazında kaydetmeyi yeniden denemeden önce Intune Şirket Portalı uygulamasını el ile yüklemeniz gerekir.
 
 ### <a name="mdm-authority-not-defined"></a>MDM yetkilisi tanımlı değil
 **Sorun:** Bir kullanıcı, **MDM yetkilisi tanımlı değil** hatası alıyor.
@@ -244,23 +244,23 @@ Aşağıdaki adımlar sertifikanın doğru yüklendiğini doğrulamak için kull
 Sunucu sertifikası düzgün yüklendiyse, sonuçlarda tüm onay işaretlerini görürsünüz. Yukarıdaki sorun mevcutsa, raporun “Sertifika Adı Eşleşiyor” ve "SSL Sertifikası Düzgün Yüklendi" bölümlerinde kırmızı bir X görürsünüz.
 
 
-## <a name="ios-issues"></a>iOS sorunları
+## <a name="iosipados-issues"></a>iOS/ıpados sorunları
 
-### <a name="ios-enrollment-errors"></a>iOS kayıt hataları
-Aşağıdaki tabloda son kullanıcıların cihazlarını Intune’a kaydederken görebilecekleri hatalar listelenmektedir.
+### <a name="iosipados-enrollment-errors"></a>iOS/ıpados kayıt hataları
+Aşağıdaki tabloda, Intune 'da iOS/ıpados cihazlarını kaydederken son kullanıcıların görebileceği hatalar listelenmektedir.
 
 |Hata iletisi|Sorun|Çözüm|
 |-------------|-----|----------|
-|NoEnrollmentPolicy|Kayıt ilkesi bulunamadı|Apple Anında İletilen Bildirim Servisi (APNs) sertifikası gibi tüm kayıt önkoşullarının ayarlandığını ve “Platform olarak iOS”un etkinleştirildiğini denetleyin. Yönergeler için, bkz. [iOS ve Mac cihaz yönetimini ayarlama](../ios-enroll.md).|
-|DeviceCapReached|Zaten çok fazla mobil cihaz kaydedilmiş durumda.|Kullanıcı başka bir cihaz kaydetmeden önce o anda Şirket Portalı’na kayıtlı mobil cihazlarından birini kaldırmalıdır. Kullanmakta olduğunuz cihaz türüne yönelik yönergelere bakın: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Mobil cihazın şirketinizin ağıyla iletişim kurmasına olanak tanıyan sertifika ile ilgili bir sorun var.<br /><br />|Apple Anında İletilen Bildirim Servisi (APNs) kayıtlı iOS cihazlarıyla bağlantı kurmak için bir kanal sunar. Aşağıdakiler koşullarda kayıt başarısız olur ve bu ileti görüntülenir:<ul><li>APNs sertifikası alma adımları tamamlanmamıştır veya</li><li>APNs sertifikanın süresi bitmiştir.</li></ul>[Active Directory’yi eşitleme ve Intune’a kullanıcıları ekleme](../fundamentals/users-add.md) ve [Kullanıcıları ve cihazları düzenleme](../fundamentals/groups-add.md) konu başlıkları altında kullanıcıları ayarlamayla ilgili bilgileri gözden geçirin.|
-|AccountNotOnboarded|Mobil cihazın şirketinizin ağıyla iletişim kurmasına olanak tanıyan sertifika ile ilgili bir sorun var.<br /><br />|Apple Anında İletilen Bildirim Servisi (APNs) kayıtlı iOS cihazlarıyla bağlantı kurmak için bir kanal sunar. Aşağıdakiler koşullarda kayıt başarısız olur ve bu ileti görüntülenir:<ul><li>APNs sertifikası alma adımları tamamlanmamıştır veya</li><li>APNs sertifikanın süresi bitmiştir.</li></ul>Daha fazla bilgi için, [Microsoft Intune ile iOS ve Mac yönetimini ayarlama](../ios-enroll.md) konusunu gözden geçirin.|
-|DeviceTypeNotSupported|Kullanıcınız iOS olmayan bir cihaz kullanarak kaydolmayı denemiş olabilir. Kaydetmeye çalıştığınız mobil cihaz türü desteklenmemektedir.<br /><br />Cihazın iOS sürüm 8.0 veya üzerini çalıştırdığını onaylayın.<br /><br />|Kullanıcı cihazının iOS sürümü 8.0 veya üzerini çalıştırdığından emin olun.|
-|UserLicenseTypeInvalid|Kullanıcının hesabı henüz gerekli bir kullanıcı grubuna üye olmadığı için cihaz kaydedilemiyor.<br /><br />|Kullanıcıların cihazlarını kaydedebilmesi için doğru kullanıcı grubunun üyesi olmaları gerekir. Bu ileti kullanıcının mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin aşağıdakilerin her ikisi de doğruysa kullanıcı bu hatayı görür:<ol><li>Intune mobil cihaz yönetim yetkilisi olarak ayarlanmıştır</li><li>System Center 2012 R2 Configuration Manager lisansı kullanılıyordur.</li></ol>Daha fazla bilgi için aşağıdaki makaleleri inceleyin:<br /><br />[Microsoft Intune ile iOS ve Mac yönetimi ayarlama](../ios-enroll.md) konusunu ve [Active Directory’yi eşitleme ve Intune’a kullanıcı ekleme](../fundamentals/users-add.md) ve [kullanıcıları ve cihazları düzenleme](../fundamentals/groups-add.md) konularındaki kullanıcı ayarlamayla ilgili bilgileri gözden geçirin.|
+|NoEnrollmentPolicy|Kayıt ilkesi bulunamadı|Apple Anında İletilen Bildirim Servisi (APNs) sertifikası gibi tüm kayıt önkoşullarının ayarlanmış olduğunu ve "iOS/ıpados as platform" özelliğinin etkinleştirildiğini denetleyin. Yönergeler için bkz. [iOS/ıpados ve Mac cihaz yönetimini ayarlama](../ios-enroll.md).|
+|DeviceCapReached|Zaten çok fazla mobil cihaz kaydedilmiş durumda.|Kullanıcı başka bir cihaz kaydetmeden önce o anda Şirket Portalı’na kayıtlı mobil cihazlarından birini kaldırmalıdır. Kullanmakta olduğunuz cihaz türüne ilişkin yönergelere bakın: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [IOS/ıpados](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
+|APNSCertificateNotValid|Mobil cihazın şirketinizin ağıyla iletişim kurmasına olanak tanıyan sertifika ile ilgili bir sorun var.<br /><br />|Apple Anında İletilen Bildirim Servisi (APNs), kayıtlı iOS/ıpados cihazlarıyla iletişim kurmak için bir kanal sağlar. Aşağıdakiler koşullarda kayıt başarısız olur ve bu ileti görüntülenir:<ul><li>APNs sertifikası alma adımları tamamlanmamıştır veya</li><li>APNs sertifikanın süresi bitmiştir.</li></ul>[Active Directory’yi eşitleme ve Intune’a kullanıcıları ekleme](../fundamentals/users-add.md) ve [Kullanıcıları ve cihazları düzenleme](../fundamentals/groups-add.md) konu başlıkları altında kullanıcıları ayarlamayla ilgili bilgileri gözden geçirin.|
+|AccountNotOnboarded|Mobil cihazın şirketinizin ağıyla iletişim kurmasına olanak tanıyan sertifika ile ilgili bir sorun var.<br /><br />|Apple Anında İletilen Bildirim Servisi (APNs), kayıtlı iOS/ıpados cihazlarıyla iletişim kurmak için bir kanal sağlar. Aşağıdakiler koşullarda kayıt başarısız olur ve bu ileti görüntülenir:<ul><li>APNs sertifikası alma adımları tamamlanmamıştır veya</li><li>APNs sertifikanın süresi bitmiştir.</li></ul>Daha fazla bilgi için, [Microsoft Intune Ile iOS/ıpados ve Mac yönetimini ayarlama](../ios-enroll.md)konusunu gözden geçirin.|
+|DeviceTypeNotSupported|Kullanıcınız iOS olmayan bir cihaz kullanarak kaydolmayı denemiş olabilir. Kaydetmeye çalıştığınız mobil cihaz türü desteklenmemektedir.<br /><br />Cihazın iOS/ıpados sürüm 8,0 veya üzerini çalıştırdığından emin olun.<br /><br />|Kullanıcı cihazının iOS/ıpados sürüm 8,0 veya üzerini çalıştırdığından emin olun.|
+|UserLicenseTypeInvalid|Kullanıcının hesabı henüz gerekli bir kullanıcı grubuna üye olmadığı için cihaz kaydedilemiyor.<br /><br />|Kullanıcıların cihazlarını kaydedebilmesi için doğru kullanıcı grubunun üyesi olmaları gerekir. Bu ileti kullanıcının mobil cihaz yönetimi yetkilisi için yanlış lisans türüne sahip olduğu anlamına gelir. Örneğin aşağıdakilerin her ikisi de doğruysa kullanıcı bu hatayı görür:<ol><li>Intune mobil cihaz yönetim yetkilisi olarak ayarlanmıştır</li><li>System Center 2012 R2 Configuration Manager lisansı kullanılıyordur.</li></ol>Daha fazla bilgi için aşağıdaki makaleleri inceleyin:<br /><br />[Microsoft Intune Ile iOS/ıpados ve Mac yönetimini ayarlama](../ios-enroll.md) konusunu gözden geçirin ve kullanıcılara [eşitleme Active Directory ayarlama ve Intune 'a Kullanıcı ekleme](../fundamentals/users-add.md) ve kullanıcıları [ve cihazları düzenleme](../fundamentals/groups-add.md)hakkında bilgi edinmek için.|
 |MdmAuthorityNotDefined|Mobil cihaz yönetim yetkilisi tanımlanmamış.<br /><br />|Mobil cihaz yönetim yetkilisi Intune'da ayarlanmamış.<br /><br />[30 günlük Microsoft Intune denemesini başlatın](../fundamentals/free-trial-sign-up.md) bölümündeki “6. Adım: Mobil cihazları kaydetme ve uygulama yükleme” kısmında madde 1’i gözden geçirin.|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Cihazlar etkin değil veya yönetici konsolu cihazlarla iletişim kuramıyor
-**Sorun:** iOS cihazları Intune hizmetine giriş yapmıyor. Korumalı şirket kaynaklarına erişimin sürdürülmesi için cihazların hizmete düzenli olarak giriş yapması gerekir. Cihazlar giriş yapmazsa:
+**Sorun:** IOS/ıpados cihazları Intune hizmetini iade etmemektedir. Korumalı şirket kaynaklarına erişimin sürdürülmesi için cihazların hizmete düzenli olarak giriş yapması gerekir. Cihazlar giriş yapmazsa:
 
 - Intune hizmetinden ilke, uygulama ve uzak komutları alamaz.
 - Yönetici konsolunda Yönetim Durumu olarak **Uygun olmayan durumda** görüntülenir.
@@ -268,15 +268,15 @@ Aşağıdaki tabloda son kullanıcıların cihazlarını Intune’a kaydederken 
 
 **Çözüm:** Şirket kaynaklarına erişimi yeniden sağlamaları için son kullanıcılarla aşağıdaki çözümleri paylaşın.
 
-Kullanıcılar iOS Şirket Portalı uygulamasını başlattığında uygulama, cihazlarının Intune ile iletişiminin kesilip kesilmediğini bildirebilir. İletişim olmadığını algılarsa, yeniden bağlanmak için Intune ile eşitlemeyi otomatik olarak dener (kullanıcılar **Eşitlemeye çalışılıyor...** iletisini görür).
+Kullanıcılar iOS/ıpados Şirket Portalı uygulamasını başladıkları zaman, cihazındaki Intune ile ilgili iletişime kayıp olup olmadığını söyleyebilir. İletişim olmadığını algılarsa, yeniden bağlanmak için Intune ile eşitlemeyi otomatik olarak dener (kullanıcılar **Eşitlemeye çalışılıyor...** iletisini görür).
 
   ![Eşitlemeye çalışılıyor bildirimi](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-Eşitleme başarılı olursa, iOS Şirket Portalı uygulamasında cihazınızın iyi durumda olduğunu belirten **Eşitleme başarılı** satır içi bildirimini görürsünüz.
+Eşitleme başarılı olursa, iOS/ıpados Şirket Portalı uygulamasında, cihazınızın sağlıklı bir durumda olduğunu belirten başarılı bir çevrimiçi **eşitleme** bildirimi görürsünüz.
 
   ![Eşitleme başarılı bildirimi](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-Eşitleme başarısız olursa, kullanıcılar iOS Şirket portalı uygulamasında **Eşitleme yapılamıyor** satır içi bildirimini görür.
+Eşitleme başarısız olursa, kullanıcılar iOS/ıpados Şirket Portalı uygulamasında bir satır içi bildirim **ile eşitleme yapamıyor** .
 
   ![Eşitleme yapılamıyor bildirimi](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
@@ -287,7 +287,7 @@ Sorunu düzeltmek için kullanıcıların **Eşitleme yapılamıyor** bildirimin
 Kaydedildikten sonra cihazlar, iyi duruma geri döner ve şirket kaynaklarına yeniden erişim kazanır.
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3’ün etkinleştirildiğini doğrulama
-**Sorun** Aygıt Kayıt Programı (DEP) iOS cihazları kaydedilemiyor
+**Sorun** Aygıt Kayıt Programı (DEP) iOS/ıpados cihazları kaydedilemiyor
 
 DEP cihazlarının kullanıcı benzeşimi ile kaydedilmesi, kullanıcı belirteçleri istemek için WS-Trust 1.3 Kullanıcı Adı/Karma uç noktasının etkinleştirilmesini gerekir. Active Directory bu uç noktayı varsayılan olarak etkinleştirir. Etkinleştirilmiş uç noktaların bir listesini almak için Get-AdfsEndpoint PowerShell cmdlet'ini kullanın ve trust/13/UsernameMixed uç noktasını arayın. Örneğin:
 
@@ -301,7 +301,7 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 
 
 ### <a name="profile-installation-failed"></a>Profil yüklemesi başarısız oldu
-**Sorun:** Bir kullanıcı, bir iOS cihazında **Profil yüklemesi başarısız oldu** hatasını alıyor.
+**Sorun:** Bir Kullanıcı bir iOS/ıpados cihazında **profil yüklemesi başarısız oldu** hatasını alıyor.
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Başarısız olan profil yüklemesi sorunlarını giderme adımları
 
@@ -313,9 +313,9 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 
 4. [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) öğesine gidin ve istendiğinde profili yüklemeyi deneyin.
 
-5. iOS için Safari’nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
+5. İOS/ıpados için Safari 'nin varsayılan tarayıcı olduğunu ve tanımlama bilgilerinin etkinleştirildiğini doğrulayın.
 
-### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Kullanıcının iOS cihazı bir kayıt ekranında 10 dakikadan uzun bir süredir takılı
+### <a name="users-iosipados-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Kullanıcının iOS/ıpados cihazı 10 dakikadan uzun bir bir kayıt ekranında takılı
 
 **Sorun**: Kaydolmakta olan bir cihaz iki ekrandan birinde takılabilir:
 - "Microsoft"'tan son yapılandırmayı beklerken
@@ -323,11 +323,11 @@ Daha fazla bilgi için bkz. [Active Directory Federasyon Hizmetleri’nin güven
 
 Bu sorun şu koşullarda oluşabilir:
 - Apple hizmetlerinde geçici bir kesinti varsa veya
-- iOS kaydı, tabloda gösterildiği gibi VPP belirteçleri kullanmaya ayarlandıysa, ancak VPP belirtecinde bir sorun varsa.
+- iOS/ıpados kaydı, tabloda gösterildiği gibi VPP belirteçlerini kullanacak şekilde ayarlanmıştır, ancak VPP belirtecinde bir sorun var.
 
 | Kayıt ayarları | Değer |
 | ---- | ---- |
-| Platfveyam | iOS |
+| Platfveyam | iOS/ıpados |
 | Kullanıcı Benzeşimi | Kullanıcı Benzeşimi ile kaydolma |
 |Apple Kurulum Yardımcısı yerine Şirket Portalı ile kimlik doğrulama | Evet |
 | VPP ile Şirket Portalı'nı yükleme | Belirteç kullanma: belirteç adresi |
@@ -340,7 +340,7 @@ Bu sorun şu koşullarda oluşabilir:
 4. Kullanıcıya kayıt işlemini yeniden başlatmasını söyleyin.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>VPP belirtecinde bir şeyin yanlış gidip gitmediğini belirleyin
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431), **'nde,**  > **IOS** > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **profilleri** > profil adı > > **özelliklerini** **Yönet** ' i seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **IOS** > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **profilleri** > profil adı > > **özelliklerini** **Yönet** ' i seçin.
 2. Aşağıdaki gibi bir hata olup olmadığını görmek özellikleri gözden geçirin:
     - Bu belirtecin süresi sona erdi.
     - Bu belirtecin Şirket Portalı lisansları bitti.
@@ -350,7 +350,7 @@ Bu sorun şu koşullarda oluşabilir:
 3. Belirtecin sorunlarını giderin.
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>VPP belirteci tarafından engellenen cihazları belirleme
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) , **'nde** > **ios**k > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **cihazları**' nı seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **ios**k > **iOS kaydı** > **kayıt programı belirteçleri** > belirteç adı > **cihazları**' nı seçin.
 2. **Profil durumu** sütununu **Engellendi**'ye göre filtreleyin.
 3. **Engellenen** tüm cihazların seri numaralarını not edin.
 
@@ -414,7 +414,7 @@ Bu hata bilgisayarda şu koşullarda oluşabilir:
 1. Yeniden kaydetmeyi deneyin.
 
     > [!IMPORTANT]
-    > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Ancak, kayıt defterinde yanlış değişiklik yaparsanız önemli sorunlar oluşabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek koruma için değiştirmeden önce kayıt defterini yedekleyin. Ardından, bir sorun olduğunda kayıt defterini geri yükleyebilirsiniz.
+    > Bu bölüm, yöntem veya görev kayıt defterinde nasıl değişiklik yapacağınızı gösteren adımlar içerir. Bununla birlikte, kayıt defterinde yanlış değişiklikler yaparsanız ciddi sorunlar çıkabilir. Bu nedenle, bu adımları dikkatle izlediğinizden emin olun. Ek bir koruma için, değişiklikleri yapmadan önce kayıt defterini yedekleyin. Böylece bir sorun ortaya çıktığında kayıt defterini geri yükleyebilirsiniz.
     > Kayıt defterini yedekleme ve geri yükleme hakkında daha fazla bilgi için, [Windows’da kayıt defterini yedekleme ve geri yükleme](https://support.microsoft.com/kb/322756) konusunu okuyun.
 
 ## <a name="general-enrollment-error-codes"></a>Genel kayıt hata kodları

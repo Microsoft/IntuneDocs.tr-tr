@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune cihaz kaydı nedir?
 titleSuffix: Microsoft Intune
-description: iOS, Android ve Windows cihazları için kayıt hakkında bilgi edinin.
+description: İOS/ıpados, Android ve Windows cihazları için kayıt hakkında bilgi edinin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7955c91a33edef37b86f5bd8f29dfb681d28030e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547839"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415337"
 ---
 # <a name="what-is-device-enrollment"></a>Cihaz kaydı nedir?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -33,7 +33,7 @@ Aşağıdaki tablolarda görebileceğiniz gibi, iş gücünüzün cihazlarını 
 
 Varsayılan olarak tüm platform cihazları Intune'a kaydedilebilir. Ancak [cihazları platforma göre kısıtlayabilirsiniz](enrollment-restrictions-set.md#create-a-device-type-restriction).
 
-## <a name="ios-enrollment-methods"></a>iOS kayıt yöntemleri
+## <a name="iosipados-enrollment-methods"></a>iOS/ıpados kayıt yöntemleri
 
 | **Yöntem** | **Sıfırlama Gerekli** | [**Kullanıcı Benzeşimi**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Kilitli** | **Ayrıntılar** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -65,13 +65,13 @@ Varsayılan olarak tüm platform cihazları Intune'a kaydedilebilir. Ancak [ciha
 
 ## <a name="android-enrollment-methods"></a>Android kayıt yöntemleri
 
-| **C** | **Kayıt yöntemleri** | **Sıfırlama Gerekli** | **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
+| **Kişisel** | **Kayıt yöntemleri** | **Sıfırlama Gerekli** | **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**Android Cihaz Yöneticisi**|**Şirket Portalı aracılığıyla başlatılan Kullanıcı** | Hayır | Evet | Hayır | [Daha fazla bilgi](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
 |**Android kurumsal Iş profili**|**Şirket Portalı aracılığıyla başlatılan Kullanıcı**| Hayır | Evet | Hayır | [Daha fazla bilgi](android-work-profile-enroll.md)|
 
 
-| **Ağı** | **Kayıt yöntemleri** | **Sıfırlama Gerekli** | **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
+| **Kurumsal** | **Kayıt yöntemleri** | **Sıfırlama Gerekli** | **Kullanıcı Benzeşimi** | **Kilitli** | **Ayrıntılar**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**Android Cihaz Yöneticisi**|**[DEM](#device-enrollment-manager) Şirket Portalı aracılığıyla başlatıldı**| Hayır | Hayır | Hayır |[Daha fazla bilgi](device-enrollment-manager-enroll.md)|
 |**Android Cihaz Yöneticisi**|**(Önceden tanımlanmış ıMEı veya SN) Şirket Portalı aracılığıyla başlatılan Kullanıcı**| Hayır | Evet | Hayır | [Daha fazla bilgi](./../corporate-identifiers-add.md)|
@@ -84,36 +84,36 @@ Varsayılan olarak tüm platform cihazları Intune'a kaydedilebilir. Ancak [ciha
 Kendi cihazlarınızı getir (KCG), kişisel telefonlar, tabletleri ve bilgisayarları içerir. Kullanıcılar, KCG’leri kaydetmek için Şirket Portalı uygulamasını yükleyip çalıştırır. Bu program, kullanıcıların e-posta gibi şirket kaynaklarına erişmesini sağlar.
 
 ## <a name="corporate-owned-device"></a>Şirkete ait cihaz
-[Şirkete ait cihazlar (COD)](corporate-identifiers-add.md) arasında kuruluşa ait olan ve iş gücüne dağıtılmış telefonlar, tabletler ve bilgisayarlar bulunur. COD kaydı; otomatik kayıt, paylaşılan cihazlar veya önceden yetkilendirilmiş kaydetme gereksinimleri gibi yönetim senaryolarını destekler. COD’ları kaydetmenin yaygın bir yolu, bir yöneticinin cihaz kayıt yöneticisini (DEM) kullanarak kayıt yapmasıdır. iOS cihazlar, Apple tarafından sağlanan Aygıt Kayıt Programı (DEP) araçları üzerinden doğrudan kaydedilebilir. IMEI numaralı cihazlar da şirkete ait olarak tanımlanabilir ve etiketlenebilir.
+[Şirkete ait cihazlar (COD)](corporate-identifiers-add.md) arasında kuruluşa ait olan ve iş gücüne dağıtılmış telefonlar, tabletler ve bilgisayarlar bulunur. COD kaydı; otomatik kayıt, paylaşılan cihazlar veya önceden yetkilendirilmiş kaydetme gereksinimleri gibi yönetim senaryolarını destekler. COD’ları kaydetmenin yaygın bir yolu, bir yöneticinin cihaz kayıt yöneticisini (DEM) kullanarak kayıt yapmasıdır. iOS/ıpados cihazları, Apple tarafından sunulan Aygıt Kayıt Programı (DEP) araçları aracılığıyla doğrudan kaydedilebilir. IMEI numaralı cihazlar da şirkete ait olarak tanımlanabilir ve etiketlenebilir.
 
-### <a name="device-enrollment-manager"></a>Cihaz kayıt yöneticisi
+### <a name="device-enrollment-manager"></a>Cihaz kaydı yöneticisi
 Cihaz kayıt yöneticisi (DEM), şirkete ait birden çok cihazı kaydetmek ve yönetmek için kullanılan özel bir kullanıcı hesabıdır. Yöneticiler Şirket Portalı’nı yükleyebilir ve kullanıcısı olmayan birçok cihazı kaydedebilir. Bu tür cihazlar örneğin satış noktası veya yardımcı uygulamalara uygundur ancak e-postaya veya şirket kaynaklarına erişmesi gereken kullanıcılar için uygun değildir. [DEM](device-enrollment-manager-enroll.md) hakkında daha fazla bilgi edinin.
 
 ### <a name="apple-device-enrollment-program"></a>Apple Cihaz Kaydı Programı
-Apple Aygıt Kayıt Programı (DEP) yönetimi, “havadan” ilke oluşturmanıza ve DEP ile satın alınan ve yönetilen iOS ve macOS cihazlara dağıtmanıza olanak sağlar. Cihaz, kullanıcı cihazı ilk açtığında ve Ayarlama Yardımcısı’nı çalıştırdığında kaydedilir. Bu yöntem, iOS denetimli modunu destekler ve bu mod, bir cihazın belirli işlevlerle yapılandırılmasına olanak tanır.
+Apple Aygıt Kayıt Programı (DEP) yönetimi, DEP ile satın alınan ve yönetilen iOS/ıpados ve macOS cihazlarına "hava üzerinden" ilkesi oluşturmanıza ve dağıtmanıza olanak tanır. Cihaz, kullanıcı cihazı ilk açtığında ve Ayarlama Yardımcısı’nı çalıştırdığında kaydedilir. Bu yöntem, bir cihazın belirli işlevlerle yapılandırılmasını sağlayan iOS/ıpados denetimli modunu destekler.
 
-iOS DEP kaydı hakkında daha fazla bilgi edinin:
+İOS/ıpados DEP kaydı hakkında daha fazla bilgi edinin:
 
-- [iOS cihazlarının nasıl kaydedileceğini belirleme](ios-enroll.md)
-- [Cihaz Kayıt Programı’nı kullanarak iOS cihazlarını kaydetme](device-enrollment-program-enroll-ios.md)
+- [İOS/ıpados cihazlarının nasıl kaydedileceğini seçin](ios-enroll.md)
+- [Aygıt Kayıt Programı kullanarak iOS/ıpados cihazlarını kaydetme](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
 BT yöneticileri, şirkete ait tüm cihazları Kurulum Yardımcısı kullanarak el ile kaydetme işlemine hazırlamak için USB aracılığıyla Apple Configurator kullanır. BT yöneticisi bir kayıt profili oluşturur ve bunu Apple Configurator’a aktarır. Kullanıcılar cihazlarını alırken, daha sonra cihazını kaydetmek için Kurulum Yardımcısı 'Nı çalıştırması istenir. Bu yöntem **iOS Denetimli** modunu destekler ve bu mod da aşağıdaki özellikleri etkinleştirir:
 - Kilitli kayıt
 - Bilgi noktası modu ile diğer gelişmiş yapılandırmalar ve kısıtlamalar
 
-Kurulum Yardımcısı ile iOS Apple Configurator kaydı hakkında daha fazla bilgi edinin:
+Kurulum Yardımcısı ile iOS/ıpados Apple Configurator kaydı hakkında daha fazla bilgi edinin:
 
-- [iOS cihazlarının nasıl kaydedileceğine karar verme](ios-enroll.md)
-- [Configurator ve Kurulum Yardımcısı ile iOS cihazlarını kaydetme](apple-configurator-enroll-ios.md)
+- [İOS/ıpados cihazlarını kaydetme kararı verme](ios-enroll.md)
+- [Configurator ve Kurulum Yardımcısı ile iOS/ıpados cihazlarını kaydetme](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
 Doğrudan kayıt için yöneticinin bir kayıt ilkesi oluşturup bunu Apple Configurator’a aktararak her cihazı el ile kaydetmesi gerekir. USB bağlantılı, şirkete ait cihazlar silinmeye gerek kalmadan doğrudan kaydedilir. Cihazlar, kullanıcısız cihaz olarak yönetilir. Bunlar kilitli veya denetimli değildir ve koşullu erişimi, jailbreak algılamayı veya mobil uygulama yönetimini destekleyemez.
 
-iOS kaydı hakkında daha fazla bilgi için bkz:
+İOS/ıpados kaydı hakkında daha fazla bilgi edinmek için bkz.:
 
-- [iOS cihazlarının nasıl kaydedileceğine karar verme](ios-enroll.md)
-- [Configurator ve doğrudan kayıt ile iOS cihazlarını kaydetme](apple-configurator-enroll-ios.md)
+- [İOS/ıpados cihazlarını kaydetme kararı verme](ios-enroll.md)
+- [Configurator ve doğrudan kayıt ile iOS/ıpados cihazlarını kaydetme](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM sertifikası süre sonunda mobil cihazı temizleme
 

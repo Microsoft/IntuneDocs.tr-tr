@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune kullanıcılara özel bildirimler gönderme
 titleSuffix: Microsoft Intune
-description: İOS ve Android cihazlarının kullanıcılarına özel anında iletme bildirimleri oluşturmak ve göndermek için Intune 'U kullanın
+description: İOS/ıpados ve Android cihaz kullanıcılarına özel anında iletme bildirimleri oluşturmak ve göndermek için Intune 'U kullanın
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,30 +18,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517530"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413880"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
 
-Yönetilen iOS ve Android cihazların kullanıcılarına özel bildirimler göndermek için Microsoft Intune kullanın. Bu iletiler, Şirket Portalı uygulamadan ve bir kullanıcının aygıtındaki Microsoft Intune uygulamadan standart anında iletme bildirimleri olarak görünür, böylece cihazdaki diğer uygulamalardan gelen bildirimler görüntülenir. Intune özel bildirimleri macOS ve Windows cihazları tarafından desteklenmez.   
+Yönetilen iOS/ıpados ve Android cihazlarındaki kullanıcılara özel bildirimler göndermek için Microsoft Intune kullanın. Bu iletiler, Şirket Portalı uygulamadan ve bir kullanıcının aygıtındaki Microsoft Intune uygulamadan standart anında iletme bildirimleri olarak görünür, böylece cihazdaki diğer uygulamalardan gelen bildirimler görüntülenir. Intune özel bildirimleri macOS ve Windows cihazları tarafından desteklenmez.   
 
 Özel bildirim iletileri, kısa bir başlık ve 500 karakter veya daha kısa bir ileti gövdesi içerir. Bu iletiler, herhangi bir genel iletişim amacı için özelleştirilebilir.
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>Bildirim bir iOS cihazında nasıl görünür?
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>Bir iOS/ıpados cihazında bildirim nasıl görünür?
 
-İOS cihazında Şirket Portalı uygulaması açıksa, bildirim aşağıdaki ekran görüntüsüne benzer:
+İOS/ıpados cihazında Şirket Portalı uygulaması açıksa, bildirim aşağıdaki ekran görüntüsüne benzer:
 
 > [!div class="mx-imgBorder"]
-> ![Şirket Portalı iOS test bildirimi](./media/custom-notifications/105046-1.png)
+> ![Şirket Portalı iOS/ıpados test bildirimi](./media/custom-notifications/105046-1.png)
 
 Cihaz kilitliyse, bildirim aşağıdaki ekran görüntüsüne benzer:
 
 > [!div class="mx-imgBorder"]
-> ![kilitli cihaz iOS test bildirimi](./media/custom-notifications/105046-2.png)
+> ![kilitli cihaz iOS/ıpados test bildirimi](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>Bir Android cihazında bildirim nasıl görünür?
 
@@ -75,14 +75,14 @@ Android cihazda Şirket Portalı uygulaması açıksa, bildirim aşağıdaki ekr
 - Ayrı cihazlara ileti gönderirken aynı cihaza yalnızca saat başına en fazla 10 ileti gönderebilirsiniz. 
 - Gruplara bildirim atayarak, birden fazla kullanıcıya veya cihaza bildirim gönderebilirsiniz. Grupları kullanırken, her bildirim doğrudan 25 gruba kadar hedefleyebilir. İç içe gruplar bu toplama göre sayılmaz.  
 
-  Gruplar, kullanıcıları veya cihazları içerebilir ancak iletiler yalnızca kullanıcılara ve kullanıcının kaydettirdiğiniz her iOS veya Android cihazına gönderilir.  
+  Gruplar, kullanıcıları veya cihazları içerebilir ancak iletiler yalnızca kullanıcılara ve kullanıcının kaydettirdiğiniz her iOS/ıpados veya Android cihazına gönderilir.  
 - Tek bir cihaza bildirim gönderebilirsiniz. Grupları kullanmak yerine bir cihaz seçin ve ardından özel bildirimi göndermek için bir uzak [cihaz eylemi](device-management.md#available-device-actions) kullanın.  
 
 **Teslim**:  
 - Intune, kullanıcıların Şirket Portalı uygulamasına veya Microsoft Intune uygulamasına iletiler göndererek anında iletme bildirimi oluşturur. Bildirimin cihaza itilmesi için kullanıcıların uygulamada oturum açmış olması gerekmez.  
 - Intune 'un yanı sıra Şirket Portalı uygulaması ve Microsoft Intune uygulaması, özel bir bildirimin teslimini garanti edemez. Özel bildirimler, her biri bir süre sonra, acil iletilerde kullanılmamalıdır.  
-- Intune 'dan gelen özel bildirim iletileri cihazlarda standart anında iletme bildirimleri olarak görünür. Şirket Portalı uygulaması bildirimi aldığında bir iOS cihazında açıksa bildirim, bir anında iletme bildirimi yerine uygulamada görüntülenir.  
-- Özel bildirimler, cihaz ayarlarına bağlı olarak hem iOS hem de Android cihazlarda kilit ekranlarında görülebilir.  
+- Intune 'dan gelen özel bildirim iletileri cihazlarda standart anında iletme bildirimleri olarak görünür. Şirket Portalı uygulaması bildirimi aldığında iOS/ıpados cihazında açıksa bildirim, bir anında iletme bildirimi yerine uygulamada görüntülenir.  
+- Özel bildirimler, cihaz ayarlarına bağlı olarak hem iOS/ıpados hem de Android cihazlarda kilit ekranlarında görülebilir.  
 - Android cihazlarda, diğer uygulamaların özel Bildiriminizdeki verilere erişimi olabilir. Bunları hassas iletişimler için kullanmayın.  
 - Son kaydedilmemiş veya bir gruptan kaldırılmış olan kullanıcıların bir cihaz kullanıcıları daha sonra bu gruba gönderilen özel bir bildirim alabilir.  Benzer şekilde, gruba özel bir bildirim gönderildikten sonra bir Kullanıcı eklerseniz, yeni eklenen kullanım için daha önce gönderilen bildirim iletisini almak mümkündür.  
 
@@ -127,7 +127,7 @@ Intune iletiyi hemen işler. İletinin gönderildiği tek onay, konsolunda alaca
 
 Bir cihazda, kullanıcılar Intune tarafından Şirket Portalı uygulamasından veya Microsoft Intune uygulamadan standart bir anında iletme bildirimi olarak gönderilen özel bildirim iletilerini görürler. Bu bildirimler, kullanıcıların cihazdaki diğer uygulamalardan aldığı anında iletme bildirimlerine benzer.  
 
-İOS cihazlarında, bildirim alındığında Şirket Portalı uygulama açıksa bildirim, anında iletme bildirimi yerine uygulamada görüntülenir.  
+İOS/ıpados cihazlarında, bildirim alındığında Şirket Portalı uygulama açıksa bildirim, anında iletme bildirimi yerine uygulamada görüntülenir.  
 
 Bildirim, Kullanıcı tarafından kesilene kadar kalır.  
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1c6383b19943b8c501f86894a8c49b2130cb582a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564131"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414989"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -49,7 +49,7 @@ Bu ayarları kullanarak, uyumsuzluk durumunda son kullanıcının cihazından ş
 Uygulama koruma ilkesi ayarları tablosunda **Ayar**, **Değer**, ve **Eylem** sütunları bulunur.
 
 ### <a name="ios-policy-settings"></a>iOS ilke ayarları
-iOS’ta **Ayar** açılan menüsünü kullanarak şu ayarlar için eylemler yapılandırabilirsiniz:
+İOS/ıpados için aşağıdaki ayarlar **için açılan listeyi** kullanarak eylemleri yapılandırabileceksiniz:
 - En fazla PIN denemesi
 - Çevrimdışı kullanım süresi
 - Jailbreak uygulanmış/kök erişim izni verilmiş cihazlar

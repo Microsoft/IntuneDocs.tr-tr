@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme
+title: Microsoft Intune iOS/ıpados cihaz kaydı sorunlarını giderme
 titleSuffix: Microsoft Intune
-description: Intune 'A iOS cihazlarını kaydettiğinizde en yaygın sorunlardan bazılarının sorunlarını gidermeye yönelik öneriler.
+description: Intune 'A iOS/ıpados cihazlarını kaydettiğinizde en yaygın sorunlardan bazılarının sorunlarını gidermeye yönelik öneriler.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,27 +17,27 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 7e8234db93d9b06a71e1f5cd6e51daca2d1ea2b1
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885929"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415182"
 ---
-# <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihaz kaydı sorunlarını giderme
+# <a name="troubleshoot-iosipados-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 'de iOS/ıpados cihaz kaydı sorunlarını giderme
 
-Bu makale, Intune yöneticilerinin iOS cihazlarını Intune 'A kaydetme sırasında sorunları anlamalarına ve sorunlarını gidermenize yardımcı olur.
+Bu makalede, Intune 'da iOS/ıpados cihazlarını kaydetme sırasında Intune yöneticilerinin sorunları anlamasına ve sorunlarını gidermenize yardımcı olur.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Sorun gidermeye başlamadan önce bazı temel bilgilerin toplanması önemlidir. Bu bilgiler sorunu daha iyi anlamanıza ve çözüm bulma süresini azaltmanıza yardımcı olabilir.
 
 Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 
-- Hata iletisinde tam olarak ne yazıyor?
+- Tam hata iletisi nedir?
 - Hata iletisini nerede görüyorsunuz?
 - Sorun ne zaman başladı? Kayıt hiç çalıştı mı?
-- Hangi platform (Android, iOS, Windows) soruna sahip?
+- Hangi platform (Android, iOS/ıpados, Windows) soruna sahip?
 - Kaç Kullanıcı etkilendi? Tüm kullanıcılar mı etkilendi?
 - Kaç cihaz etkilendi? Tüm cihazlar etkileniyor mu ya da yalnızca bir şey var mı?
 - MDM yetkilisi nedir?
@@ -47,12 +47,12 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 
 ### <a name="profile-installation-failed-a-network-error-has-occurred"></a>Profil yüklemesi başarısız oldu. Bir ağ hatası oluştu.
 
-**Neden:** Cihazda iOS ile ilgili belirtilmeyen bir sorun var.
+**Neden:** Cihazda iOS/ıpados ile ilgili belirtilmeyen bir sorun var.
 
 #### <a name="resolution"></a>Çözüm
 
-1. Aşağıdaki adımlarda veri kaybını engellemek için (iOS geri yüklendiğinde cihazdaki tüm veriler silinir), verilerinizi yedeklediğinizden emin olun.
-2. Cihazı kurtarma moduna alın ve geri yükleyin. Bunu yeni bir cihaz olarak ayarladığınızdan emin olun. İOS cihazlarını geri yükleme hakkında daha fazla bilgi için bkz. [https://support.apple.com/HT201263](https://support.apple.com/HT201263).
+1. Aşağıdaki adımlarda veri kaybını engellemek için (iOS/ıpados geri yüklenirken cihazdaki tüm veriler silinir), verilerinizi yedeklediğinizden emin olun.
+2. Cihazı kurtarma moduna alın ve geri yükleyin. Bunu yeni bir cihaz olarak ayarladığınızdan emin olun. İOS/ıpados cihazlarını geri yükleme hakkında daha fazla bilgi için bkz. [https://support.apple.com/HT201263](https://support.apple.com/HT201263).
 3. Cihazı yeniden kaydedin.
 
 ### <a name="profile-installation-failed-connection-to-the-server-could-not-be-established"></a>Profil yüklemesi başarısız oldu. Sunucuyla bağlantı kurulamadı.
@@ -64,7 +64,7 @@ Sorunla ilgili olarak aşağıdaki bilgileri toplayın:
 2. **Diğer hizmetler**' i seçin, Intune ' u arayın ve ardından **Intune**' u seçin.
 3. **Cihaz kaydı** > **Kayıt kısıtlamaları**’nı seçin.
 4. **Cihaz türü kısıtlamaları**' nın altında, **özellikleri** > ayarlamak istediğiniz kısıtlamayı seçin > **platformları seçin** > **iOS**Için **izin ver** ' i seçin ve ardından **Tamam**' a tıklayın.
-5. **Platformları Yapılandır**' ı seçin, kişisel IOS cihazlarına **izin ver** ' i seçin ve ardından **Tamam**' a tıklayın.
+5. **Platformları Yapılandır**' ı seçin, kişisel IOS/ıpados cihazlarına **izin ver** ' i seçin ve ardından **Tamam**' a tıklayın.
 6. Cihazı yeniden kaydedin.
 
 **Neden:** DNS 'de gerekli CNAME kayıtları yok.
@@ -99,7 +99,7 @@ Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kayd
 **Neden:** Cihaz zaten başka bir MDM sağlayıcısına kayıtlı.
 
 #### <a name="resolution"></a>Çözüm
-1. İOS cihazında **ayarları** açın, **Genel > cihaz yönetimi**' ne gidin.
+1. İOS/ıpados cihazında **ayarları** açın, **Genel > cihaz yönetimi**' ne gidin.
 2. Var olan tüm yönetim profillerini kaldırın.
 3. Cihazı yeniden kaydedin.
 
@@ -111,7 +111,7 @@ Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kayd
 3. Bu kullanıcıya atamak istediğiniz lisansın konumunu **Açık** konumuna geçirin ve ardından **Kaydet**' i seçin.
 4. Cihazı yeniden kaydedin.
 
-### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Bu Hizmet desteklenmiyor. Kayıt Ilkesi yok.
+### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Bu hizmet desteklenmiyor. Kayıt Ilkesi yok.
 
 **Neden**: Intune 'Da BIR Apple MDM anında iletme sertifikası yapılandırılmamış veya sertifika geçersiz. 
 
@@ -131,7 +131,7 @@ Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kayd
  > [!NOTE]
     > Bu hata, Kullanıcı cihaz kaydı izin verilecek şekilde yapılandırıldığından daha fazla cihaz kaydetmeye çalışıyorsa de oluşabilir. Bu adımlar sorunu gidermezse, aşağıda **ulaşılan cihaz sınırına** yönelik çözüm adımlarını izleyin.
 
-### <a name="device-cap-reached"></a>Cihaz Sınırına Ulaşıldı
+### <a name="device-cap-reached"></a>Cihaz sınırına ulaşıldı
 
 **Neden:** Kullanıcı cihaz kayıt sınırından daha fazla cihaz kaydetmeye çalışır.
 
@@ -177,7 +177,7 @@ Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kayd
 
 #### <a name="resolution"></a>Çözüm
 
-1. İOS cihazında **ayarları** , **genel** > **cihaz yönetimi**> açın.
+1. İOS/ıpados cihazında **ayarları** , **genel** > **cihaz yönetimi**> açın.
 2. Var olan yönetim profiline dokunun ve **yönetimi kaldır**' a dokunun.
 3. Cihazı yeniden kaydedin.
 
@@ -186,7 +186,7 @@ Birden fazla doğrulanan etki alanı varsa, her etki alanı için bir CNAME kayd
 **Neden:** Apple Anında İletilen Bildirim Servisi (APNs) sertifikası eksik, geçersiz veya zaman aşımına uğradı.
 
 #### <a name="resolution"></a>Çözüm
-Intune 'a geçerli bir APNs sertifikası eklendiğini doğrulayın. Daha fazla bilgi için bkz. [iOS kaydını ayarlama](ios-enroll.md).
+Intune 'a geçerli bir APNs sertifikası eklendiğini doğrulayın. Daha fazla bilgi için bkz. [iOS/ıpados kaydını ayarlama](ios-enroll.md).
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -196,10 +196,10 @@ Intune 'a geçerli bir APNs sertifikası eklendiğini doğrulayın. Daha fazla b
 APNs sertifikasını yenileyin ve sonra cihazı yeniden kaydedin.
 
 > [!IMPORTANT]
-> APNs sertifikasını yenilediğinizden emin olun. APNs sertifikasını değiştirme. Sertifikayı değiştirirseniz, tüm iOS cihazlarını Intune 'a yeniden kaydetmeniz gerekir. 
+> APNs sertifikasını yenilediğinizden emin olun. APNs sertifikasını değiştirme. Sertifikayı değiştirirseniz, tüm iOS/ıpados cihazlarını Intune 'a yeniden kaydetmeniz gerekir. 
 
 - Tek başına Intune 'da APNs sertifikasını yenilemek için bkz. [Apple MDM anında iletme sertifikasını yenileme](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
-- Office 365 ' de APNs sertifikasını yenilemek için bkz. [iOS cihazları Için APNs sertifikası oluşturma](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
+- Office 365 ' de APNs sertifikasını yenilemek için bkz. [iOS/ıpados cihazları Için APNs sertifikası oluşturma](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR bağlantı geçersiz
 
@@ -238,6 +238,19 @@ Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, kimlik bi
 
 #### <a name="resolution"></a>Çözüm
 MFA 'yı devre dışı bırakın ve ardından cihazı yeniden kaydedin.
+
+### <a name="the-enrollment-status-page-times-out-before-the-sign-in-screen"></a>Kayıt durumu sayfası, oturum açma ekranından önce zaman aşımına uğrar
+
+**Neden:** Aşağıdaki koşulların tümü doğruysa bu sorun oluşabilir:
+- Iş uygulamaları Microsoft Store izlemek için kayıt durumu sayfasını kullanıyorsunuz.
+- Bir cihazın uyumlu denetim olarak işaretlenmesini gerektir ' i kullanan bir Azure AD koşullu erişim ilkeniz vardır.
+- İlke tüm bulut uygulamaları ve pencereleri için geçerlidir.
+
+#### <a name="resolution"></a>{1&gt;Çözüm&lt;1}:
+Aşağıdakilerden birini deneyin:
+- Intune uyumluluk ilkelerinizi cihazlara hedefleyin. Kullanıcı oturum açmadan önce uyumluluğun belirlenebilmesi için emin olun.
+- Mağaza uygulamaları için çevrimdışı lisanslama kullanın. Bu şekilde, Windows istemcisinin cihaz uyumluluğunu belirlemeden önce Microsoft Store denetlemesi gerekmez.
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

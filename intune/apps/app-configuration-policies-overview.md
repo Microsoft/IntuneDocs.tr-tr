@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune için uygulama yapılandırma ilkeleri
 titleSuffix: ''
-description: Microsoft Intune ile bir iOS veya Android cihazında uygulama yapılandırma ilkelerini nasıl kullanacağınızı öğrenin.
+description: Microsoft Intune 'de iOS/ıpados veya Android cihazında uygulama yapılandırma ilkelerini kullanmayı öğrenin.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812470"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414851"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
 Uygulama yapılandırma ilkeleri, uygulamayı çalıştırmadan önce son kullanıcılara atanan bir ilkeye yapılandırma ayarlarını atamanıza izin vererek uygulama kurulumu sorunlarını ortadan kaldırmanıza yardımcı olabilir. Bu ayarlar daha sonra uygulama son kullanıcılar cihazında yapılandırıldığında otomatik olarak sağlanır ve son kullanıcıların işlem yapması gerekmez. Yapılandırma ayarları her uygulama için benzersizdir. 
 
-Hem iOS hem de Android uygulamaları için yapılandırma ayarları sağlamak üzere uygulama yapılandırma ilkeleri oluşturabilir ve kullanabilirsiniz. Bu yapılandırma ayarları, uygulamanın uygulama yapılandırması ve Yönetimi kullanılarak özelleştirilbilmesine izin verir. Yapılandırma ilkesi ayarları, uygulama bu ayarları, genellikle uygulamanın ilk çalıştırılışında denetlediğinde kullanılır. 
+İOS/ıpados veya Android uygulamalarına yönelik yapılandırma ayarlarını sağlamak için uygulama yapılandırma ilkeleri oluşturabilir ve kullanabilirsiniz. Bu yapılandırma ayarları, uygulamanın uygulama yapılandırması ve Yönetimi kullanılarak özelleştirilbilmesine izin verir. Yapılandırma ilkesi ayarları, uygulama bu ayarları, genellikle uygulamanın ilk çalıştırılışında denetlediğinde kullanılır. 
 
 Örneğin, bir uygulama yapılandırma ayarı aşağıdaki ayrıntıların herhangi birini belirtmenizi gerektirebilir:
 
@@ -71,7 +71,7 @@ Uygulama yapılandırma ilkelerini, onu destekleyen uygulamalar için kullanabil
 ![Cihaz kayıt türü](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> Microsoft Outlook gibi çok kimlikli uygulamalarda Kullanıcı tercihleri göz önünde bulundurulmayabilir. Odaklanmış gelen kutusu, örneğin, Kullanıcı ayarına göre değişir ve yapılandırmayı değiştirmez. Diğer parametreler, bir kullanıcının ayarı değiştiremeyeceğini veya değiştiremeyeceğini denetlemenize olanak tanır. Daha fazla bilgi için bkz. [iOS Için Outlook dağıtımı ve Android uygulama yapılandırma ayarları](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+> Microsoft Outlook gibi çok kimlikli uygulamalarda Kullanıcı tercihleri göz önünde bulundurulmayabilir. Odaklanmış gelen kutusu, örneğin, Kullanıcı ayarına göre değişir ve yapılandırmayı değiştirmez. Diğer parametreler, bir kullanıcının ayarı değiştiremeyeceğini veya değiştiremeyeceğini denetlemenize olanak tanır. Daha fazla bilgi için bkz. [iOS Için Outlook dağıtımı/ıpados ve Android uygulama yapılandırma ayarları](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>Uygulanan uygulama yapılandırma ilkesini doğrulama
 
@@ -93,7 +93,7 @@ Aşağıdaki üç yöntemi kullanarak uygulama yapılandırma ilkesini doğrulay
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>yönetilmeyen cihazlarda iOS yapılandırması
 
-Yönetilen uygulama yapılandırması için, yönetilmeyen cihazlarda **Intune tanılama günlüğü** ile iOS yapılandırmasını doğrulayabilirsiniz. Aşağıdaki adımlara ek olarak, Microsoft Edge kullanarak yönetilen uygulama günlüklerine erişebilirsiniz. Daha fazla bilgi için bkz. [yönetilen uygulama günlüklerine erişmek Için iOS üzerinde Microsoft Edge kullanma](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
+Yönetilen uygulama yapılandırması için, yönetilmeyen cihazlarda **Intune tanılama günlüğü** ile IOS/ıpados yapılandırmasını doğrulayabilirsiniz. Aşağıdaki adımlara ek olarak, Microsoft Edge kullanarak yönetilen uygulama günlüklerine erişebilirsiniz. Daha fazla bilgi için bkz. [yönetilen uygulama günlüklerine erişmek Için iOS 'Ta Microsoft Edge 'ı kullanma/ıpados](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
 1. Cihazda zaten yüklü değilse, **Microsoft Edge** 'ı App Store 'dan indirip yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
 2. **Microsoft Edge** 'i başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
@@ -137,7 +137,7 @@ Uygulama yapılandırma ayrıntılarınız, kiracınız için yapılandırılmı
 
 ### <a name="ios-configuration-on-managed-devices"></a>Yönetilen cihazlarda iOS yapılandırması
 
-Yönetilen uygulama yapılandırması için, yönetilen cihazlarda **Intune tanılama günlüğü** ile iOS yapılandırmasını doğrulayabilirsiniz.
+Yönetilen uygulama yapılandırması için iOS/ıpados yapılandırmasını yönetilen cihazlarda **Intune tanılama günlüğü** ile doğrulayabilirsiniz.
 
 1. Cihazda zaten yüklü değilse, **Microsoft Edge** 'ı App Store 'dan indirip yükleyin. Daha fazla bilgi için bkz. [Microsoft Intune korumalı uygulamalar](apps-supported-intune-apps.md).
 2. **Microsoft Edge** 'i başlatın ve gezinti çubuğundan > **ıntunehelp** **hakkında** ' yı seçin.
@@ -149,7 +149,7 @@ Yönetilen uygulama yapılandırması için, yönetilen cihazlarda **Intune tan�
 
 ### <a name="android-configuration-on-managed-devices"></a>Yönetilen cihazlarda Android yapılandırması
 
-Yönetilen uygulama yapılandırması için, yönetilen cihazlarda **Intune tanılama günlüğü** ile iOS yapılandırmasını doğrulayabilirsiniz.
+Yönetilen uygulama yapılandırması için iOS/ıpados yapılandırmasını yönetilen cihazlarda **Intune tanılama günlüğü** ile doğrulayabilirsiniz.
 
 Android cihazından günlükleri toplamak için, siz veya son kullanıcının, bir USB bağlantısı aracılığıyla (veya cihazdaki **Dosya Gezgini** eşdeğerini) günlükleri cihazdan indirmesi gerekir. Adımlar aşağıdaki gibidir:
 
@@ -173,7 +173,7 @@ Günlükler, uygulanması onaylanan bir yapılandırma parametresi gösterip iş
 
 ### <a name="managed-devices"></a>Yönetilen cihazlar
 
-- iOS cihazlarınızla uygulama yapılandırmasını kullanma hakkında bilgi edinin.  Bkz. [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md).
+- İOS/ıpados cihazlarınızla uygulama yapılandırmasını nasıl kullanacağınızı öğrenin.  Bkz. [yönetilen iOS/ıpados cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md).
 - Android cihazlarınızla uygulama yapılandırmasını kullanma hakkında bilgi edinin.  Bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Yönetilen uygulamalar

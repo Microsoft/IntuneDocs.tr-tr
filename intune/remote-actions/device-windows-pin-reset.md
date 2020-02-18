@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907228"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413623"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune kullanarak Windows cihazlarında geçiş kodunu sıfırlama
 
@@ -55,19 +55,19 @@ Yönettiğiniz Windows cihazlarında PIN sıfırlamayı yapılandırmak için bi
 
 **Cihaz ilkesi kullanma** - `./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery`
 
-*Kiracı kimliğini*, [Azure portalında](https://portal.azure.com) Azure Active Directory'nin **Özellikler**'i arasında listelenen Azure AD Dizin Kimliğinizle değiştirin.
+*Kiracı kimliğini*, **Azure portalında** Azure Active Directory'nin [Özellikler](https://portal.azure.com)'i arasında listelenen Azure AD Dizin Kimliğinizle değiştirin.
 
 Bu CSP için değeri **True** olarak ayarlayın.
 
 > [!TIP]
-> İlkeyi oluşturduktan sonra, bunu bir gruba atarsınız (veya dağıtırsınız). İlke, kullanıcı gruplarına veya cihaz gruplarına atanabilir. Kullanıcı grubuna atarsanız, grup iOS gibi başka cihazları olan kullanıcıları içerebilir. Teknik olarak, ilke uygulanmaz ama bu cihazlar yine de durum ayrıntılarına eklenir.
+> İlkeyi oluşturduktan sonra, bunu bir gruba atarsınız (veya dağıtırsınız). İlke, kullanıcı gruplarına veya cihaz gruplarına atanabilir. Bunu bir Users grubuna atarsanız, Grup iOS/ıpados gibi başka cihazlara sahip olan kullanıcıları içerebilir. Teknik olarak, ilke uygulanmaz ama bu cihazlar yine de durum ayrıntılarına eklenir.
 
 ## <a name="reset-the-passcode"></a>Geçiş kodunu sıfırlama
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın. 
-2. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
+2. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
 3. Geçiş kodunu sıfırlamak istediğiniz cihazı seçin. Cihaz özellikleri ' nde **geçiş kodunu Sıfırla**' yı seçin.
-4. Onaylamak için **Evet**’i seçin. Böylece geçiş kodu oluşturulur ve gelecek yedi gün boyunca portalda görüntülenir.
+4. Onaylamak için **Evet**'i seçin. Böylece geçiş kodu oluşturulur ve gelecek yedi gün boyunca portalda görüntülenir.
 
 ## <a name="next-step"></a>Sonraki adım
 

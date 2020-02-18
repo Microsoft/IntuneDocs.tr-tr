@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5c980b3f9ababaf94aa7b279e533679ed74b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6941b3b79dd690c9861c8efead7f525e56e2b350
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503368"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415409"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune ile Android iş profili cihazlarını yönetme
 
@@ -55,7 +55,7 @@ Android Enterprise, uygulama yapılandırma değerlerini onları destekleyen uyg
 
 ## <a name="email-configuration"></a>E-posta yapılandırması
 
-Android Enterprise, iOS tarafından sağlananlar gibi varsayılan bir e-posta uygulaması veya yerel e-posta profili nesnesi sağlamaz. Bunun yerine, e-posta yapılandırmaları kendilerini destekleyen e-posta uygulamalarına uygulama yapılandırma ayarları uygulayarak ayarlanabilir. Gmail ve dokuz Iş, Android Enterprise App Configuration ile yapılandırmayı destekleyen Play Store iki Exchange ActiveSync (EAS) istemci uygulamasıdır.
+Android Enterprise, iOS/ıpados tarafından sağlananlar gibi varsayılan bir e-posta uygulaması veya yerel e-posta profili nesnesi sağlamaz. Bunun yerine, e-posta yapılandırmaları kendilerini destekleyen e-posta uygulamalarına uygulama yapılandırma ayarları uygulayarak ayarlanabilir. Gmail ve dokuz Iş, Android Enterprise App Configuration ile yapılandırmayı destekleyen Play Store iki Exchange ActiveSync (EAS) istemci uygulamasıdır.
 
 Intune, iş uygulamaları olarak yönetildiklerinde Gmail ve Nine Work uygulamaları için yapılandırma şablonları sağlar. Uygulama yapılandırma profillerini destekleyen diğer e-posta uygulamaları mobil uygulama yapılandırma ilkeleriyle yapılandırılabilir.
 

@@ -1,7 +1,7 @@
 ---
-title: iOS cihazlarını kaydetme - Cihaz Kayıt Programı
+title: İOS/ıpados cihazlarını kaydetme-Aygıt Kayıt Programı
 titleSuffix: Microsoft Intune
-description: Şirkete ait iOS cihazları Aygıt Kayıt Programı’nı kullanarak kaydetmeyi öğrenin.
+description: Aygıt Kayıt Programı kullanarak şirkete ait iOS/ıpados cihazlarını kaydetmeyi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
+ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074674"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415370"
 ---
-# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>iOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
+# <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>İOS/ıpados cihazlarını Apple 'ın Aygıt Kayıt Programı otomatik olarak kaydetme
 
-Artık Apple'ın [Aygıt Kayıt Programı (DEP)](https://deploy.apple.com) aracılığıyla satın alınan iOS cihazlarını Intune ile yönetebilirsiniz. DEP, hiç dokunmadan çok sayıda cihazı kaydetmenizi sağlar. IPhone, iPads ve MacBooks gibi cihazlar doğrudan kullanıcılara sevk edilebilir. Kullanıcı cihazı açtığında, Apple ürünleri için tipik kullanıma hazır deneyimi içeren Kurulum Yardımcısı, önceden yapılandırılmış ayarlarla çalışır ve cihaz yönetime kaydolur.
+Intune 'u Apple 'ın [aygıt kayıt programı (DEP)](https://deploy.apple.com)aracılığıyla satın alınan IOS/ıpados cihazlarını kaydedecek şekilde ayarlayabilirsiniz. DEP, hiç dokunmadan çok sayıda cihazı kaydetmenizi sağlar. IPhone, iPads ve MacBooks gibi cihazlar doğrudan kullanıcılara sevk edilebilir. Kullanıcı cihazı açtığında, Apple ürünleri için tipik kullanıma hazır deneyimi içeren Kurulum Yardımcısı, önceden yapılandırılmış ayarlarla çalışır ve cihaz yönetime kaydolur.
 
 DEP kaydını etkinleştirmek için hem Intune hem de Apple Business Manager (ABı) veya Apple Okul Yöneticisi (ASM) portallarını kullanın. Şirket içindeki yönetim için cihazları Intune 'a atayabilmeniz için seri numaralarının bir listesi veya bir satın alma siparişi numarası gereklidir. Intune 'da, kayıt sırasında cihazlara uygulanan ayarları içeren DEP kayıt profilleri oluşturursunuz. DEP kaydının bir [Cihaz Kayıt Yöneticisi](device-enrollment-manager-enroll.md) hesabıyla kullanılamayacağını unutmayın.
 
@@ -38,15 +38,15 @@ DEP kaydını etkinleştirmek için hem Intune hem de Apple Business Manager (AB
 
 DEP kayıtları, Şirket Portalı uygulamasının App Store sürümü ile uyumlu değildir. Kullanıcılara bir DEP cihazında Şirket Portalı uygulamasına erişim izni verebilirsiniz. Kullanıcıların cihazındaki hangi kurumsal uygulamaları kullanmasını istediğini veya kayıt işlemini tamamlaması için modern kimlik doğrulamasını kullanmasını sağlamak üzere bu erişimi sağlamak isteyebilirsiniz. 
 
-Kayıt sırasında modern kimlik doğrulamayı etkinleştirmek için, DEP profilinde VPP 'yi (toplu satın alma programı) **yükleme Şirket portalı** kullanarak uygulamayı cihaza gönderin. Daha fazla bilgi için bkz. [Apple aygıt kayıt programı iOS cihazlarını otomatik olarak kaydetme](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+Kayıt sırasında modern kimlik doğrulamayı etkinleştirmek için, DEP profilinde VPP 'yi (toplu satın alma programı) **yükleme Şirket portalı** kullanarak uygulamayı cihaza gönderin. Daha fazla bilgi için bkz. [Apple aygıt kayıt programı iOS/ıpados cihazlarını otomatik olarak kaydetme](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
 Şirket Portalı otomatik olarak güncelleştirilmesini ve Şirket Portalı uygulamayı DEP ile önceden kaydedilmiş cihazlara sağlamak için, [uygulama yapılandırma ilkesi](../apps/app-configuration-policies-use-ios.md) uygulanmış bir gerekli toplu satın alma programı (VPP) uygulaması olarak ıntune aracılığıyla şirket portalı uygulamasını dağıtın.
 
 ## <a name="what-is-supervised-mode"></a>Denetimli mod nedir?
 
-Apple, iOS 5 sürümünde denetimli modu kullanıma sundu. Denetimli moddaki bir iOS cihazı, engelleme ekranı yakalama ve App Store 'dan uygulama yüklemeyi engelleme gibi daha fazla denetim ile yönetilebilir. O neden bu mod, özellikle şirkete ait cihazlar için kullanışlıdır. Intune, Apple Aygıt Kayıt Programı’nın (DEP) bir parçası olarak denetimli mod için cihazların yapılandırılmasını destekler.
+Apple, iOS/ıpados 5 ' te Denetimli mod sunmuştur. Denetimli modda bulunan bir iOS/ıpados cihazı, engelleme ekranı yakalama ve App Store 'dan uygulama yüklemeyi engelleme gibi daha fazla denetim ile yönetilebilir. O neden bu mod, özellikle şirkete ait cihazlar için kullanışlıdır. Intune, Apple Aygıt Kayıt Programı’nın (DEP) bir parçası olarak denetimli mod için cihazların yapılandırılmasını destekler.
 
-Denetlenmeyen DEP cihazları destek iOS 11'de sona ermiştir. iOS 11 ve üstünde, DEP yapılandırmalı cihazların her zaman denetimli olması gerekir. Gelecekteki bir iOS sürümünde DEP denetimli bayrağı yoksayılacaktır.
+Onaylanmamış DEP cihazları için destek iOS/ıpados 11 ' de kullanımdan kaldırılmıştır. İOS/ıpados 11 ve sonrasında DEP yapılandırılmış cihazların her zaman denetimli olması gerekir. DEP is_supervised bayrağı gelecekteki bir iOS/ıpados sürümünde yok sayılacak.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -63,7 +63,7 @@ Denetlenmeyen DEP cihazları destek iOS 11'de sona ermiştir. iOS 11 ve üstünd
 
 ## <a name="get-an-apple-dep-token"></a>Bir Apple DEP belirteci alma
 
-iOS cihazlarını DEP ile kaydedebilmeniz için bir Apple DEP belirteci dosyasına (.p7m) ihtiyacınız vardır. Bu belirteç, Intune'un şirketinize ait olan DEP cihazları hakkındaki bilgileri eşitlemesini sağlar. Ayrıca Intune'un kayıt profilini Apple'a yüklemesine ve cihazları bu profillere atamasına izin verir.
+İOS/ıpados cihazlarını DEP ile kaydedebilmeniz için önce Apple 'dan bir DEP belirteci (. p7m) dosyası gerekir. Bu belirteç, Intune'un şirketinize ait olan DEP cihazları hakkındaki bilgileri eşitlemesini sağlar. Ayrıca Intune'un kayıt profilini Apple'a yüklemesine ve cihazları bu profillere atamasına izin verir.
 
 Bir belirteç oluşturmak için Apple Business Manager veya Apple Okul Yöneticisi portalını kullanın. Ayrıca, yönetim için Intune 'a cihaz atamak üzere aba/ASM portalını de kullanabilirsiniz.
 
@@ -105,7 +105,7 @@ Bir belirteç oluşturmak için Apple Business Manager veya Apple Okul Yönetici
 
    Apple portalında, cihazların listesini ve MDM sunucu atamasını görmek için **dağıtım programları** &gt; **aygıt kayıt programı** &gt; **atama geçmişini görüntüle** ' ye gidin.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3\. Adım Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Adım 3: Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin.
 
 [Microsoft Uç Nokta Yöneticisi Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), daha sonra başvurmak üzere Apple kimliğini sağlayın.
 
@@ -117,7 +117,7 @@ Bir belirteç oluşturmak için Apple Business Manager veya Apple Okul Yönetici
 2. Bu DEP belirtecine [kapsam etiketi](../fundamentals/scope-tags.md) uygulamak istiyorsanız **Kapsam (etiketler)** öğesini ve ardından istediğiniz kapsam etiketlerini seçin. Belirtece uygulanan kapsam etiketleri, bu belirtece eklenen profiller ve cihazlar tarafından devralınır.
 3. **Oluştur**’u seçin.
 
-Anında iletme sertifikasıyla, Intune ilkeyi kayıtlı mobil cihazlara ileterek iOS cihazları kaydedebilir ve yönetebilir. Intune, kayıt programı hesabınızı görmek için Apple ile otomatik olarak eşitlenir.
+Anında iletme sertifikası ile Intune, ilkeyi kayıtlı mobil cihazlara ileterek iOS/ıpados cihazlarını kaydedebilir ve yönetebilir. Intune, kayıt programı hesabınızı görmek için Apple ile otomatik olarak eşitlenir.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple kayıt profili oluşturma
 
@@ -155,7 +155,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
     >
     > Apple Kurulum Yardımcısı ile kimliği doğrularken bunlar desteklenmez.
 
-6. **Kullanıcıların kimliğini doğrulamak**için **Şirket Portalı** seçtiyseniz, Şirket portalı cihaza otomatik olarak yüklemek için bir VPP belirteci kullanabilirsiniz. Bu durumda kullanıcının bir Apple Kimliği sağlamasına gerek kalmaz. VPP belirteciyle Şirket Portalı'nı yüklemek için, **VPP ile Şirket Portalı yükle**'nin altında bir belirteç seçin. Şirket Portalı VPP belirtecine zaten eklenmiş olmasını gerektirir. Şirket Portalı uygulamasının kayıt sonrasında güncellenmeye devam etmesini sağlamak için, Intune 'da (Intune > Istemci uygulamaları) bir uygulama dağıtımı yapılandırdığınızdan emin olun. Kullanıcı etkileşimi gerekli olmadığından, büyük olasılıkla bir iOS VPP uygulaması olarak Şirket Portalı olması, gerekli bir uygulamayı yapmanız ve atama için cihaz lisansını kullanmanız gerekecektir. Belirtecin süresinin dolmadığından ve Şirket Portalı uygulaması için yeterli cihaz lisansınız olduğundan emin olun. Belirtecin süresi dolarsa veya yeterli lisans yoksa, Intune bunun yerine App Store Şirket Portalı’nı yükler ve Apple Kimliği ister. 
+6. **Kullanıcıların kimliğini doğrulamak**için **Şirket Portalı** seçtiyseniz, Şirket portalı cihaza otomatik olarak yüklemek için bir VPP belirteci kullanabilirsiniz. Bu durumda kullanıcının bir Apple Kimliği sağlamasına gerek kalmaz. VPP belirteciyle Şirket Portalı'nı yüklemek için, **VPP ile Şirket Portalı yükle**'nin altında bir belirteç seçin. Şirket Portalı VPP belirtecine zaten eklenmiş olmasını gerektirir. Şirket Portalı uygulamasının kayıt sonrasında güncellenmeye devam etmesini sağlamak için, Intune 'da (Intune > Istemci uygulamaları) bir uygulama dağıtımı yapılandırdığınızdan emin olun. Kullanıcı etkileşimi gerekli olmadığı için, büyük olasılıkla bir iOS/ıpados VPP uygulaması olarak Şirket Portalı olması, gerekli bir uygulamayı yapmanız ve atama için cihaz lisansını kullanmanız gerekecektir. Belirtecin süresinin dolmadığından ve Şirket Portalı uygulaması için yeterli cihaz lisansınız olduğundan emin olun. Belirtecin süresi dolarsa veya yeterli lisans yoksa, Intune bunun yerine App Store Şirket Portalı’nı yükler ve Apple Kimliği ister. 
 
     > [!NOTE]
     > **Kullanıcıların kimlik doğrulaması yapması gereken yeri seçin** **Şirket portalı**, cihaz kayıt IŞLEMININ, Şirket portalının DEP cihazına indirilmekte olan ilk 24 saat içinde gerçekleştirildiğinden emin olun. Aksi takdirde kayıt başarısız olabilir ve cihazı kaydetmek için bir fabrika sıfırlaması gerekecektir.
@@ -168,7 +168,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
     Multi-Factor Authentication tek bir uygulama modunda kilitlenmiş tek bir cihazda desteklenmez. Bu sınırlama, cihazın ikinci kimlik doğrulama faktörünü tamamlaması için farklı bir uygulamaya geçiş yaptığından oluşur. Bu nedenle, tek bir App Mode cihazında çok faktörlü kimlik doğrulaması istiyorsanız ikinci faktör farklı bir cihazda olmalıdır.
 
-    Bu özellik yalnızca iOS 11.3.1 ve üzeri sürümlerde desteklenir.
+    Bu özellik yalnızca iOS/ıpados 11.3.1 ve üzeri sürümlerde desteklenir.
 
    ![Tek uygulama modunun ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
@@ -176,7 +176,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 
     ![Cihaz Yönetimi Ayarları ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/supervisedmode.png)
 
-    **Denetimli** cihazlar, varsayılan olarak size daha fazla yönetim seçeneği verir ve Etkinleştirme Kilidi’ni devre dışı bırakır. Microsoft, özellikle fazla sayıda iOS cihaz dağıtanlar için denetimli modu etkinleştirme mekanizması olarak DEP’in kullanılmasını önerir.
+    **Denetimli** cihazlar, varsayılan olarak size daha fazla yönetim seçeneği verir ve Etkinleştirme Kilidi’ni devre dışı bırakır. Microsoft, özellikle çok sayıda iOS/ıpados cihazı dağıtıyorsanız, denetimli modu etkinleştirme mekanizması olarak DEP kullanılmasını önerir.
 
     Kullanıcılara cihazlarının denetimli olduğu iki yolla bildirilir:
 
@@ -184,9 +184,9 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
    - **Ayarlar** > **Genel** > **Hakkında** kısmında “Bu iPhone denetimlidir.” yazar. ifadesi ve
 
      > [!NOTE]
-     > Denetim olmadan kaydedilen bir cihaz, yalnızca Apple Configurator kullanılarak sıfırlanıp denetimli yapılabilir. Cihazı bu şekilde sıfırlamak için bir iOS cihazı USB kablosu ile bir Mac’e bağlamak gerekir. Bu konu hakkında daha fazla bilgi için [Apple Configurator belgelerine](http://help.apple.com/configurator/mac/2.3) bakın.
+     > Denetim olmadan kaydedilen bir cihaz, yalnızca Apple Configurator kullanılarak sıfırlanıp denetimli yapılabilir. Bu şekilde cihazın sıfırlanması, bir iOS/ıpados cihazının USB kablosuyla bir Mac 'e bağlanmasını gerektirir. Bu konu hakkında daha fazla bilgi için [Apple Configurator belgelerine](http://help.apple.com/configurator/mac/2.3) bakın.
 
-10. Bu profili kullanan cihazlarda kilitli kayıt isteyip istemediğinizi seçin. **Kilitli kayıt**, yönetim profilinin **Ayarlar** menüsünden kaldırılmasını sağlayan iOS ayarlarını devre dışı bırakır. Cihazı kaydettikten sonra cihazı silmeden bu ayarı değiştiremezsiniz. Bu cihazlarda **Denetimli** Yönetim Modu *Evet* olarak ayarlı olmalıdır. 
+10. Bu profili kullanan cihazlarda kilitli kayıt isteyip istemediğinizi seçin. **Kilitli kayıt** , yönetim profilinin **Ayarlar** menüsünden kaldırılmasına Izin veren iOS/ıpados ayarlarını devre dışı bırakır. Cihazı kaydettikten sonra cihazı silmeden bu ayarı değiştiremezsiniz. Bu cihazlarda **Denetimli** Yönetim Modu *Evet* olarak ayarlı olmalıdır. 
 
 11. Bu profili kullanan cihazların **Bilgisayarlarla eşitleme** imkanının olup olmayacağını seçin. **Sertifikaya göre Apple Configurator’a izin ver**’i seçerseniz, **Apple Configurator Sertifikaları**’nın altında bir sertifika seçmeniz gerekir.
 
@@ -270,7 +270,7 @@ Belirli bir belirteç ile kaydedilen tüm cihazlara uygulanacak varsayılan bir 
 ## <a name="distribute-devices"></a>Cihazları dağıtma
 Apple ve Intune arasında eşitlemeyi ve yönetimi etkinleştirdiniz ve DEP cihazlarınızın kaydolmasına izin vermek için bir profil atadınız. Artık cihazları kullanıcılara dağıtabilirsiniz. Kullanıcı benzeşimli cihazlar, her kullanıcıya bir Intune lisansı atanmasını gerektirir. Kullanıcı benzeşimi olmayan cihazlar, cihaz lisansı gerektirir. Etkinleştirilmiş bir cihaz, silinene kadar bir kayıt profili uygulayamaz.
 
-Bkz. [iOS cihazınızı Aygıt Kayıt Programı ile Intune’a kaydetme](/intune-user-help/enroll-your-device-dep-ios).
+Bkz. [aygıt kayıt programı iOS/ıpados cihazınızı Intune 'A kaydetme](/intune-user-help/enroll-your-device-dep-ios).
 
 ## <a name="renew-a-dep-token"></a>DEP belirtecini yenileme  
 1. deploy.apple.com adresine gidin.  

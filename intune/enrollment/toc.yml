@@ -10,7 +10,7 @@
       href: device-management-capabilities.md
     - name: Kayıt seçenekleri
       href: enrollment-options.md
-- name: Hızlı girişler
+- name: Hızlı başlangıçlar
   items:
     - name: Otomatik kayıt ayarlama
       href: quickstart-setup-auto-enrollment.md
@@ -20,7 +20,7 @@
   items:
     - name: Cihaz kaydetmek için Windows Autopilot kullanma
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: iOS cihazlarını kaydetmek için DEP kullanma
+    - name: iOS/iPadOS cihazlarını kaydetmek için DEP kullanma
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Kavramlar
   items:
@@ -36,7 +36,7 @@
     - name: Çok faktörlü kimlik doğrulaması
       href: multi-factor-authentication.md
       displayName: mfa; multifactor
-    - name: Cihaz kayıt yöneticisi
+    - name: Cihaz kaydı yöneticisi
       href: device-enrollment-manager-enroll.md
     - name: Cihazları gruplarla eşleme
       href: device-group-mapping.md
@@ -84,12 +84,12 @@
         - name: Samsung Knox Mobil Kayıt
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: iOS kaydını ayarlama
+    - name: iOS/iPadOS kaydını ayarlama
       href: ios-enroll.md
       items:
         - name: Cihaz Kaydı Programı
           href: device-enrollment-program-enroll-ios.md
-        - name: iOS ve iPadOS Kullanıcı Kaydını Ayarlama
+        - name: iOS/iPadOS Kullanıcı Kaydını Ayarlama
           href: ios-user-enrollment.md
         - name: Kullanıcı Kaydını destekleyen eylemler ve seçenekler
           href: ios-user-enrollment-supported-actions.md
@@ -109,7 +109,7 @@
         - name: Cihaz kaydıyla ilgili sorunları giderme
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: iOS cihaz kaydıyla ilgili sorunları giderme
+        - name: iOS/iPadOS cihaz kaydıyla ilgili sorunları giderme
           href: troubleshoot-ios-enrollment-errors.md
         - name: Windows cihaz kaydıyla ilgili sorunları giderme
           href: troubleshoot-windows-enrollment-errors.md

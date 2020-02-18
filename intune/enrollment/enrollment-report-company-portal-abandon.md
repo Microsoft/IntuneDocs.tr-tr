@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503183"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414219"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Tamamlanmamış Kullanıcı kayıtları raporu
 
@@ -44,7 +44,7 @@ Bir kullanıcı kaydı durdurmayı ve birden çok kez yeniden başlatmayı seçe
 
 ## <a name="what-does-the-report-show"></a>Rapor neleri gösterir?
 
-Raporlar iOS ve Android cihazlara yönelik verileri içerir.
+Raporlar iOS/ıpados ve Android cihazlara yönelik verileri içerir.
 
 Raporlar, son iki haftanın verilerini gösterir ancak geçmiş 30 gün içerisindeki herhangi bir dönemi gösterecek şekilde filtrelenebilir.
 
@@ -86,10 +86,10 @@ Aşağıdaki tablolarda, tamamlanmamış bir kayıt isteminde bulunarak nitelend
 
 | Eylem adı | Ekran veya akış | Platfveyam | Eylem |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | Bir yapılandırma profilini göstermeye yönelik istem | iOS | **Yoksay** |
-| iOSProfileLaunch | Profili yükleme ekranı | iOS | **İptal** |
-| iOSProfileLaunch | Profil kaynağının cihazı kaydetmesine güvenme istemi | iOS | **İptal** |
-| iOSProfileLaunch | Profil yüklenene kadar görüntülenen profil yükleme ekranı | iOS | 30 dakikadan fazla sürdü |
+| iOSProfileLaunch | Bir yapılandırma profilini göstermeye yönelik istem | iOS/ıpados | **Yoksay** |
+| iOSProfileLaunch | Profili yükleme ekranı | iOS/ıpados | **İptal** |
+| iOSProfileLaunch | Profil kaynağının cihazı kaydetmesine güvenme istemi | iOS/ıpados | **İptal** |
+| iOSProfileLaunch | Profil yüklenene kadar görüntülenen profil yükleme ekranı | iOS/ıpados | 30 dakikadan fazla sürdü |
 | AndroidPermissions | Cihaz yöneticisi etkinleştirme ekranı | Android | **İptal** |
 | AndroidPermissions | Cihaz yöneticisi için **Etkinleştir** düğmesine tıklanana kadar telefon çağrıları yapma ve bunları yönetmeye yönelik onay istemi | Android | 30 dakikadan fazla sürdü |
 | KnoxActivation | KLMS aracısını etkinleştirme (yalnızca Samsung) | Android| **İptal** |

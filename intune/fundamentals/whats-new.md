@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd2efc759f4edf2a2ae62c98cb04af61ff20088c
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
-ms.translationtype: HT
+ms.openlocfilehash: 7018e2ab4290219c752f44b4b391822438461e8e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258122"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415077"
 ---
-# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
+# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune yenilikler nelerdir?
 
 Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildirimler](#notices), [Geçmiş yayınlar](whats-new-archive.md)ve [Intune hizmet güncelleştirmelerinin nasıl yayımlandığına](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)ilişkin bilgileri de bulabilirsiniz. 
 
@@ -55,7 +55,11 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-february-03-2020"></a>03 Şubat 2020 haftası
+## <a name="week-of-february-10-2020"></a>10 Şubat 2020 haftası
+
+### <a name="windows-7-ends-extended-support---3042987--"></a>Windows 7 genişletilmiş desteği sonlandırır <!--3042987-->
+Windows 7, 14 Ocak 2020 ' de Genişletilmiş desteğin sonuna ulaştı. Intune, Windows 7 çalıştıran cihazlar için aynı anda kullanım dışı desteği. BILGISAYARıNıZı korumaya yardımcı olan teknik yardım ve otomatik güncelleştirmeler artık kullanılamaz. Windows 10 ' a yükseltmeniz gerekir. Daha fazla bilgi için bkz. [değişiklik için blog gönderisi planı](https://aka.ms/Windows7_Intune).
+
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Uygulama yönetimi
@@ -67,7 +71,7 @@ Intune artık Windows 10 cihazlarda Microsoft Edge sürüm 77 ve üstünü kald�
 **Sonraki nedir?** ekranı, Kullanıcı deneyimini kolaylaştırmak Için Şirket portalı Android iş profili kayıt akışından kaldırılmıştır. Güncelleştirilmiş Android iş profili kayıt akışını görmek için [Android iş profiline kaydol](/intune-user-help/enroll-device-android-work-profile) ' a gidin.  
 
 #### <a name="company-portal-app-improved-performance---6178652---"></a>Şirket Portalı Uygulama performansı geliştirildi<!-- 6178652 -->
-Bu özellik, daha sonraki bir tarihte alınacaktır.
+Şirket Portalı uygulaması, Surface Pro X gibi ARM64 işlemciler kullanan cihazlar için iyileştirilmiş performansı destekleyecek şekilde güncelleştirilmiştir. daha önce, öykünülmüş bir ARM32 modunda çalıştırılan Şirket Portalı. Artık sürüm 10.4.7080.0 ve üzeri sürümlerde Şirket Portalı uygulaması, ARM64 için yerel olarak derlenir. Şirket Portalı uygulaması hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](~/apps/company-portal-app.md).
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>27 Ocak 2020 haftası
@@ -112,7 +116,7 @@ Artık kuruluş türünü seçtiğinizde, `proxy.contoso.com`gibi bir proxy sunu
 
 Yapılandırabileceğiniz geçerli Wi-Fi ayarlarını görmek için [Microsoft Intune ' de Android Enterprise ve Android bilgi noktası çalıştıran cihazlar Için Wi-Fi ayarları ekle](../configuration/wi-fi-settings-android-enterprise.md)' ye gidin.
 
-Uygulama hedefi:
+Uygulama alanı:
 - Android kurumsal iş profili
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -209,7 +213,7 @@ Microsoft Edge, Office ve Windows ayarlarını denetlemek ve yönetmek için Mic
 
 Intune 'da ADMX şablonları hakkında daha fazla bilgi için, bkz. [Microsoft Intune Grup İlkesi ayarlarını yapılandırmak Için Windows 10 şablonlarını kullanma](../configuration/administrative-templates-windows.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - Windows 10 ve üzeri
 
@@ -247,7 +251,7 @@ Bu yeni ayarlar, SSO uygulama uzantıları ve Apple 'ın yerleşik Kerberos uzan
 
 Yapılandırabileceğiniz SSO uygulama uzantısı ayarlarının tam aralığını görmek için, [macOS 'Ta](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)IOS ve SSO ['daki SSO](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) ' ya gidin.
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - iOS/ıpados
 - Mac OS
@@ -356,7 +360,7 @@ Aşağıdakiler dahil olmak üzere kullanılabilir yeni Exchange ActiveSync ayar
 
 Bu ayar hakkında daha fazla bilgi için, [Intune 'Da iOS cihazları Için e-posta profili ayarları](../configuration/email-settings-ios.md)' na gidin. 
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -366,7 +370,7 @@ Android kurumsal tam yönetilen ve adanmış cihazlarda, kullanıcıların kişi
 
 Yapılandırabileceğiniz ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - Android kurumsal tam yönetilen cihazlar
 - Android kurumsal adanmış cihazlar
@@ -378,7 +382,7 @@ Bu ayarın cihazlar üzerinde hiçbir etkisi yoktur. Bu ayarı mevcut profillerd
 
 Yapılandırabileceğiniz tüm ayarları görmek için [iOS ve ıpados cihaz ayarları ' na bakın ve Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - iOS/ıpados
 
@@ -396,7 +400,7 @@ Yalnızca bazı uygulamalar yönetilen tercihleri destekler ve bu uygulamalar t�
 
 Bu özellik hakkında daha fazla bilgi için, bkz. [Microsoft Intune kullanarak macOS cihazlarına özellik listesi dosyası ekleme](../configuration/preference-file-settings-macos.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - 10,7 ve daha yeni çalıştıran macOS cihazları
 

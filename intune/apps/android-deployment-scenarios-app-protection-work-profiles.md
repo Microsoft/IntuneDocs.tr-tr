@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 99738de7efc473c7886762534c6e377b4dba8397
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059790"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415104"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune 'da Android kurumsal cihazlarda uygulama koruma ilkeleri ve iş profilleri
 
@@ -106,7 +106,7 @@ Outlook ve OneDrive gibi Office uygulamalarında "çoklu kimlik" davranışı va
 
 İş profillerini kullanırken, bu çoklu kimlik davranışını devre dışı bırakmak isteyebilirsiniz. Devre dışı bıraktığınızda, iş profilindeki uygulamanın bozuk örnekleri yalnızca bir kuruluş kimliğiyle yapılandırılabilir. Office Android uygulamalarını desteklemek için Izin verilen hesaplar uygulama yapılandırma ayarını kullanın.
 
-Daha fazla bilgi için bkz. [iOS ve Android uygulama yapılandırma ayarları Için Outlook dağıtma](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+Daha fazla bilgi için bkz. [iOS Için Outlook dağıtımı/ıpados ve Android uygulama yapılandırma ayarları](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="when-to-use-intune-app"></a>Intune UYGULAMASı ne zaman kullanılır?
 

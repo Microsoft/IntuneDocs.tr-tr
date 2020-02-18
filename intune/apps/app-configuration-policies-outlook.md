@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune'da iOS ve Android cihazlar için Outlook ayarları
-description: iOS ve Android cihazlarda çalışan Microsoft Outlook ayarlarını yapmak için bir yapılandırma ilkesi oluşturun.
+title: İOS/ıpados ve Android cihazlar için Outlook ayarları Microsoft Intune
+description: İOS/ıpados ve Android cihazlarda çalışan Microsoft Outlook ayarlarını ayarlamak için bir yapılandırma ilkesi oluşturun.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea33ae26983b33a1642d364281ed146a8a10184d
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0df11a6a09773e66fdad4387df101b2f64c24192
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692236"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415055"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook yapılandırma ayarları 
 
-iOS ve Android cihazlarda çalışan Microsoft Outlook ayarlarını yapmak için bir yapılandırma ilkesi kullanın. 
+İOS/ıpados ve Android cihazlarda çalışan Microsoft Outlook ayarlarını ayarlamak için bir yapılandırma ilkesi kullanın. 
 
 Kayıtlı cihazlar için:
-- Yönetilen iOS cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen iOS cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-ios.md). 
+- Yönetilen iOS/ıpados cihazlarına yönelik bir uygulama yapılandırma ilkesi oluşturmak için bkz. [yönetilen iOS cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md). 
 - Yönetilen Android cihazlarına bir uygulama yapılandırma ilkesi oluşturmak için bkz. [Yönetilen Android cihazları için uygulama yapılandırma ilkeleri ekleme](app-configuration-policies-use-android.md). 
 
 Kayıtlı olmayan cihazlar için, iOS ve Android için Outlook için bir uygulama yapılandırma ilkesi oluşturmak üzere [cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-managed-app.md) bölümüne bakın.

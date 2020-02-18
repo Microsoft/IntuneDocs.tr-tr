@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c4218dc02f11b9ada07126ce24d6dc4080b23ec
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0b16ab43a2b2c3b2a38aeee14614f2c8361c3d83
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692131"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415430"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Toplu satın alınan uygulama ve kitapları Microsoft Intune ile yönetme
 
@@ -39,6 +39,6 @@ Microsoft Intune, bu tür bir program aracılığıyla satın aldığınız uygu
 
 Intune ile iOS mağazasından topluca satın aldığınız uygulama ve kitapları ve İş İçin Microsoft Mağazası'ndan satın aldığınız uygulamaları yönetebilirsiniz. Mağazaların lisanslı uygulamalarının nasıl yönetileceğini keşfetmek için, aşağıdaki konu başlıklarından birini seçin:
 
-- [Toplu satın alınan iOS uygulamalarını yönetme](vpp-apps-ios.md)
+- [İOS/ıpados toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md)
 - [İş İçin Microsoft Mağazası'ndan toplu satın alınan uygulamaları yönetme](windows-store-for-business.md)
-- [iOS e-Kitapları yönetme](vpp-ebooks-ios.md)
+- [İOS/ıpados eBook 'ları yönetme](vpp-ebooks-ios.md)

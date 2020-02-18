@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/2/2019
+ms.date: 2/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 9c6fb7da3a791d369fc3005367ee7670af8bc63e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324874"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414141"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple Kullanıcı kaydıyla desteklenen Intune eylemleri ve seçenekleri
 
 Kullanıcı kaydı, cihaz yönetimi seçeneklerinin bir alt kümesini destekler. Önceden var olan bir yapılandırma profili bir kullanıcı kayıt cihazına uygulanmışsa, bu cihaza yalnızca Kullanıcı kaydı tarafından desteklenen ayarlar uygulanır.
 
 > [!NOTE]
-> Apple 'ın Intune 'da Kullanıcı kaydı desteği şu anda önizlemededir.
+> Apple 'ın Intune 'da Kullanıcı kaydı desteği şu anda iOS ve ıpados için önizleme aşamasındadır.
 
 ## <a name="password-settings"></a>Parola ayarları
 
@@ -43,7 +43,7 @@ Kullanıcı kayıt cihazlarında, herhangi bir parola ayarını yapılandırırs
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Yönetici uzak cihaz eylemleri ve seçenekleri
 Yöneticiler, Kullanıcı kayıt cihazlarında aşağıdaki eylemleri ve seçenekleri gerçekleştirebilir:
-- Devre Dışı Bırakma
+- Devre Dışı Bırak
 - Sil
 - Uzaktan Kilitleme
 - Eşitle
@@ -107,19 +107,15 @@ Kullanıcı kaydıyla kaydedilen cihazlarda aşağıdaki seçenekler desteklenme
 - Uygulama koruma Ilkeleri bu uygulamalar için uygulanmaya devam edecektir. Ancak, Kullanıcı bu uygulamaları cihazlarından silmedikleri takdirde yönetimi veya bu uygulamaların yönetilen bir sürümünü dağıtmanız mümkün olmayacaktır.
 - İşlemler, konfigürasyonlar, ayarlar ve gözetimvision gerektiren komutlar. 
 
-## <a name="options-not-supported-in-preview"></a>Önizlemede desteklenmeyen seçenekler
-- Kişisel cihazlara izin verme/engelleme için kayıt cihazı tür kısıtlamaları 
 
 ## <a name="known-issues-in-preview"></a>Önizlemede bilinen sorunlar
 - VPP lisansı iptali: lisansın iptal edildiğini belirten bir bildirim görüntülenir. Geçerli davranış, iptal işleminin başarılı olması ancak son kullanıcıya bildirilmemelidir. 
 - VPP uygulama raporlaması: Istemci uygulamalarında bulunan > Uygulamalar > [uygulama adı] > cihaz yüklemesi durumu, Kullanıcı tarafından kaydedilen cihazlara dağıtılan VPP uygulamaları, uygulama başarıyla cihaza dağıtıldığında bile "başarısız" olarak raporlanır. 
 - Uygulama raporlama: Kullanıcı kaydında desteklenmeyen uygulama türleri Için raporlar, ilgisiz hata iletileri sağlayabilir. 
 - Uygulama deneyimi Şirket Portalı: kullanıcılar, bu uygulama türlerinin Kullanıcı tarafından kaydedilen cihazlarda desteklenip desteklenmediğini bağımsız olarak, onlara hedeflenen tüm uygulamaları görür. 
-- Uygulama deneyimi Şirket Portalı: kullanıcılar, kuruluşların Kullanıcı ve cihaz kaydı için neleri görebileceğini ve göremeyeceğini belirten metni görürler.
-- Bir kullanıcı kayıt sırasında "Kuruluşumun bu cihaza sahip olduğu" seçeneğini seçerse, Yönetici Konsolu 'nda veya Graph aracılığıyla değiştirilmedikleri sürece cihaz hala Intune 'da kişisel olarak tanımlanır. 
-- Kayıt hedefleme: ıpados platform seçicisinde listelenmez. ıpados önizleme sürümünde desteklenir, ancak yönetici konsolu içinde açıkça belirtilmedi. 
+- Uygulama deneyimi Şirket Portalı: kullanıcılar, yöneticinin hangi kuruluşların göremeyeceğini gösteren metni özelleştirmiş olması halinde Kullanıcı ve cihaz kaydı için kuruluşların neleri görebileceğini belirten metni görürler.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[İOS ve ıpados Kullanıcı kaydını ayarlama](ios-user-enrollment.md)
+[İOS/ıpados ve ıpados Kullanıcı kaydını ayarlama](ios-user-enrollment.md)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 812b2e40c32b1442e632739c3964eb57027e6d9e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907211"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413724"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Intune cihazlarını uzaktan yönetmek için TeamViewer kullanma
 
@@ -29,7 +29,7 @@ Intune tarafından yönetilen cihazlar [TeamViewer](https://www.teamviewer.com) 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Desteklenen bir cihaz kullanın. Intune tarafından yönetilen Android Cihaz Yöneticisi, Android Iş profili, Windows, iOS ve macOS cihazları uzaktan yönetimi destekler. TeamViewer Windows Holographic (HoloLens), Windows Team (Surface Hub) veya Windows 10 S. desteklemeyebilir. Desteklenebilirlik için bkz. tüm güncelleştirmeler için [TeamViewer](https://www.teamviewer.com).
+- Desteklenen bir cihaz kullanın. Intune ile yönetilen Android Cihaz Yöneticisi, Android Iş profili, Windows, iOS/ıpados ve macOS cihazları uzaktan yönetimi destekler. TeamViewer Windows Holographic (HoloLens), Windows Team (Surface Hub) veya Windows 10 S. desteklemeyebilir. Desteklenebilirlik için bkz. tüm güncelleştirmeler için [TeamViewer](https://www.teamviewer.com).
 
 > [!NOTE]
 > Android adanmış ve tam olarak yönetilen desteklenmez.
@@ -58,7 +58,7 @@ Cihazlara uzaktan yardım sağlamak için, Intune TeamViewer bağlayıcısını 
 Bağlayıcı yapılandırıldıktan sonra bir cihazı uzaktan yönetebilirsiniz. Aşağıdaki adımları kullanın: 
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
+2. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
 3. Listeden uzaktan yönetmek istediğiniz cihazı seçin > **...** **Yeni uzaktan yardım oturumu** > .
 4. Intune TeamViewer hizmetine bağlandıktan sonra cihaz hakkında bazı bilgiler göreceksiniz. Uzak oturumu başlatmak için **Bağlanın**.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839299"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414879"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune’da iOS uygulamaları arasında veri aktarımını yönetme
 
@@ -45,7 +45,7 @@ Aşağıdaki yollarla şirket verilerini korumak için iOS **Açık yönetim** �
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Microsoft Intune veya üçüncü taraf EMM için kullanıcı UPN ayarını yapılandırma
 Kullanıcı UPN ayarını yapılandırmak, kayıtlı Kullanıcı hesabını tanımlamak için Intune veya üçüncü taraf EMM çözümü tarafından yönetilen cihazlar için **gereklidir** . UPN yapılandırması, Intune 'dan dağıttığınız uygulama koruma ilkeleriyle birlikte kullanılabilir. Aşağıdaki yordam, UPN ayarının ve elde edilen kullanıcı deneyiminin nasıl yapılandırılacağı hakkında genel bir akışdır:
 
-1. [Azure portalında](https://portal.azure.com), iOS için [bir uygulama koruma ilkesi oluşturup bunu atayın](app-protection-policies.md). İlke ayarlarını şirket gereksinimlerinize göre yapılandırın ve bu ilkeye sahip olacak iOS uygulamalarını seçin.
+1. [Azure Portal](https://portal.azure.com), IOS/ıpados için [bir uygulama koruma ilkesi oluşturun ve atayın](app-protection-policies.md) . İlke ayarlarını şirket gereksinimlerinize göre yapılandırın ve bu ilkeye sahip olacak iOS uygulamalarını seçin.
 
 2. Aşağıdaki Genelleştirilmiş adımları kullanarak, Intune veya üçüncü taraf MDM çözümünüz aracılığıyla yönetilmesini istediğiniz uygulamaları ve e-posta profilini dağıtın. Bu deneyim *Örnek 1*' de de ele alınmıştır.
 
@@ -90,7 +90,7 @@ Kullanıcı UPN ayarını yapılandırmak, kayıtlı Kullanıcı hesabını tan�
 
 1. Bir Kullanıcı Microsoft OneDrive uygulamasını kayıtlı bir iOS cihazında açar ve iş hesabında oturum açar.  Kullanıcının girdiği hesap, Microsoft OneDrive uygulamasının uygulama yapılandırma ayarlarında belirtilen hesap UPN 'si ile aynı olmalıdır.
 
-2. Oturum açtıktan sonra, yönetici tarafından yapılandırılan uygulama ayarları Microsoft OneDrive 'daki Kullanıcı hesabı için geçerlidir.  Bu, **işletim sistemi paylaşım değeriyle ilkeyle yönetilen uygulamalar** için **diğer uygulamalara kuruluş verileri gönder** ayarının yapılandırılmasını içerir.
+2. Oturum açtıktan sonra, yönetici uygulama ayarları Microsoft OneDrive 'daki Kullanıcı hesabı için geçerlidir.  Bu, **işletim sistemi paylaşım değeriyle ilkeyle yönetilen uygulamalar** için **diğer uygulamalara kuruluş verileri gönder** ayarının yapılandırılmasını içerir.
 
 3. Kullanıcı bir iş dosyasını önizleyip, iOS ile yönetilen uygulama ile birlikte açma ile paylaşmaya çalışır.  
 
@@ -124,5 +124,5 @@ Kullanıcı UPN ayarını yapılandırdıktan sonra, iOS uygulamasının Intune 
 İlk olarak iOS uygulamasına yönelik [bir uygulama koruma ilkesi oluşturup bunu atayın](app-protection-policies.md). Uygulama koruma ilkesini test etme hakkında daha fazla bilgi için bkz. [Uygulama koruma Ilkelerini doğrulama](app-protection-policies-validate.md).
 
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 [Intune uygulama koruma ilkesi nedir](app-protection-policy.md)

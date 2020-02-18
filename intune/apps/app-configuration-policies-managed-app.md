@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 4301afca471d0aa56fa1a0826ad7f88bcdf23de2
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755570"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414864"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Cihaz kaydı olmadan yönetilen uygulamalar için uygulama yapılandırma ilkeleri ekleme
 
@@ -41,7 +41,7 @@ Intune App SDK’sını destekleyen yönetilen uygulamalarla uygulama yapıland�
 5. **İleri** ' ye tıklayarak **Ayarlar** sayfasını görüntüleyin.
 6. Uygulamanın desteklediği her yapılandırma ayarı için, **adı** ve **değeri**yazın. 
 
-   Intune Uygulama SDK’sı özellikli uygulamalar, anahtar/değer çiftlerinde yapılandırmaları destekler. Hangi anahtar-değer yapılandırmalarının desteklendiğini öğrenmek için uygulamaların kendi belgelerine bakın. Uygulama tarafından oluşturulan verilerle dinamik olarak doldurulacak belirteçler kullanabileceğinizi unutmayın. Daha fazla bilgi için bkz. [belirteçleri kullanmak Için yapılandırma değerleri](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens). iOS için Outlook uygulama yapılandırma ilke ayarları hakkında daha fazla bilgi için bkz. [Microsoft Intune ile iOS için Outlook uygulama yapılandırması](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+   Intune Uygulama SDK’sı özellikli uygulamalar, anahtar/değer çiftlerinde yapılandırmaları destekler. Hangi anahtar-değer yapılandırmalarının desteklendiğini öğrenmek için uygulamaların kendi belgelerine bakın. Uygulama tarafından oluşturulan verilerle dinamik olarak doldurulacak belirteçler kullanabileceğinizi unutmayın. Daha fazla bilgi için bkz. [belirteçleri kullanmak Için yapılandırma değerleri](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens). İOS/ıpados uygulama yapılandırma ilkesi ayarları için Outlook hakkında daha fazla bilgi için, bkz. [Microsoft Intune iOS Için Outlook 'u/ıpados uygulama yapılandırmasını yönetme](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
 
     Bir yapılandırmayı silmek için üç nokta simgesini ( **…** ) seçip **Sil**’e tıklayın.  
 
@@ -59,7 +59,7 @@ Intune App SDK’sını destekleyen yönetilen uygulamalarla uygulama yapıland�
 
 ## <a name="configuration-values-for-using-tokens"></a>Belirteç kullanmak için yapılandırma değerleri
 
-Intune bazı belirteçleri oluşturabilir ve yönetilen uygulamaya gönderebilir. Örneğin uygulama yapılandırmanız bir e-posta ayarı kullanabiliyorsa, bir belirteç kullanarak dinamik bir e-posta ekleyebilirsiniz. **Ad** alanına uygulama tarafından beklenen adı yazıp **Değer** alanına `\{\{mail\}\}` yazın.
+Intune bazı belirteçleri oluşturabilir ve yönetilen uygulamaya gönderebilir. Örneğin uygulama yapılandırmanız bir e-posta ayarı kullanabiliyorsa, bir belirteç kullanarak dinamik bir e-posta ekleyebilirsiniz. **Ad** alanına uygulama tarafından beklenen adı yazıp `\{\{mail\}\}`Değer**alanına** yazın.
 
 Intune, yapılandırma ayarlarında aşağıdaki belirteç türlerini destekler. Diğer özel anahtar/değer çiftleri desteklenmez.
 

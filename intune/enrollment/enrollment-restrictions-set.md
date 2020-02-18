@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971868"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415315"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -44,11 +44,11 @@ Birden çok kısıtlama oluşturabilir ve bunları farklı kullanıcı grupları
 - Kaydedilebilecek cihaz platformları:
   - Android Cihaz Yöneticisi
   - Android kurumsal iş profili
-  - iOS
+  - iOS/ıpados
   - Mac OS
   - Windows
   - Windows Mobile
-- İOS, Android Cihaz Yöneticisi, Android kurumsal iş profili, Windows ve Windows Mobile için Platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
+- İOS/ıpados, Android Cihaz Yöneticisi, Android kurumsal iş profili, Windows ve Windows Mobile için Platform işletim sistemi sürümü. (Yalnızca Windows 10 sürümleri kullanılabilir. Windows 8.1'e izin veriliyorsa bunu boş bırakın.)
   - En düşük sürüm.
   - En yüksek sürüm.
 - [Kişisel cihazları](device-enrollment.md#bring-your-own-device) kısıtlama (IOS, Android Cihaz Yöneticisi, Android kurumsal iş profili, MacOS, Windows ve Windows Mobile).
@@ -67,7 +67,7 @@ Hem cihaz türü hem de cihaz sınırı kayıt kısıtlamaları için varsayıla
 5. **Sürümler**altında, izin verilen platformların desteklemesini istediğiniz en düşük ve en yüksek sürümleri seçin. Sürüm kısıtlamaları yalnızca Şirket Portalı kaydedilmiş cihazlara uygulanır.
      Desteklenen sürüm biçimleri:
     - Android Cihaz Yöneticisi ve Android kurumsal iş profili, ana. ikincil. Rev. Build 'yi destekler.
-    - iOS, ana. Minor. Rev 'ı destekler. İşletim sistemi sürümleri Aygıt Kayıt Programı, Apple Okul Yöneticisi veya Apple Configurator uygulaması ile kaydolmasını sağlayan Apple cihazlarına uygulanmaz.
+    - iOS/ıpados, ana. Minor. Rev 'ı destekler. İşletim sistemi sürümleri Aygıt Kayıt Programı, Apple Okul Yöneticisi veya Apple Configurator uygulaması ile kaydolmasını sağlayan Apple cihazlarına uygulanmaz.
     - Windows yalnızca Windows 10 için ana. Minor. Build. Rev 'ı destekler.
     
     > [!IMPORTANT]
@@ -148,18 +148,18 @@ Windows şirket kaydı olarak yetkilendirme için aşağıdaki yöntemler uygund
 - Cihaz, GPO 'dan kaydolur veya [ortak yönetim için Configuration Manager otomatik kayıt](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1)yapar.
  
 Aşağıdaki kayıtlar Intune tarafından kurumsal olarak işaretlenir. Ancak Intune yöneticisi cihaz başına denetim sağlamadığı için engellenir:
-- [Windows kurulumu sırasında Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
-- [Windows Ayarları'ndan Azure Active Directory'ye katılma](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows kurulumu sırasında Azure Active Directory'ye katılma](windows-enroll.md#enable-windows-10-automatic-enrollment)[ ile ](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)otomatik MDM kaydı\*.
+- [Windows Ayarları'ndan Azure Active Directory'ye katılma](windows-enroll.md#enable-windows-10-automatic-enrollment)*ile [otomatik MDM kaydı](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network).
  
 Aşağıdaki kişisel kayıt yöntemleri de engellenir:
-- [Windows Ayarları'ndan İş Hesabı ekleme](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\* ile [otomatik MDM kaydı](windows-enroll.md#enable-windows-10-automatic-enrollment).
+- [Windows Ayarları'ndan İş Hesabı ekleme](windows-enroll.md#enable-windows-10-automatic-enrollment)[ ile ](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)otomatik MDM kaydı\*.
 - Windows Ayarları’ndan [Yalnızca MDM kaydı]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) seçeneği.
 
 \* Bunlar, Autopilot ile kaydedilirse engellenmez.
 
 
-## <a name="blocking-personal-ios-devices"></a>Kişisel iOS cihazlarını engelleme
-Varsayılan olarak, Intune iOS cihazlarını kişisel olarak sınıflandırır. Şirkete ait olarak sınıflandırılacak bir iOS cihazı aşağıdaki koşullardan birini yerine getirmelidir:
+## <a name="blocking-personal-iosipados-devices"></a>Kişisel iOS/ıpados cihazlarını engelleme
+Varsayılan olarak, Intune iOS/ıpados cihazlarını kişisel olarak sınıflandırır. Şirkete ait olarak sınıflandırılacak bir iOS/ıpados cihazı aşağıdaki koşullardan birini yerine getirmelidir:
 - Seri numarası veya ıMEı ile kaydedilir.
 - Otomatik cihaz kaydı (eski adıyla Aygıt Kayıt Programı) kullanılarak kaydedildi
 

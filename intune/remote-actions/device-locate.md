@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azure ile kayıp iOS cihazlarını bulma | Microsoft Docs
-description: Microsoft Intune'un cihazı bulma özelliğini kullanarak kayıp veya çalınmış iOS cihazlarını bulabilirsiniz. Cihazı bulma eylemini kullanılırken güvenlik ve gizlilik bilgileri hakkındaki ayrıntıları alabilirsiniz.
+title: Microsoft Intune-Azure ile kayıp iOS/ıpados cihazları bulma | Microsoft Docs
+description: Microsoft Intune içindeki cihazı Bul özelliğini kullanarak kayıp veya çalınan iOS/ıpados cihazlarını bulun. Cihazı bulma eylemini kullanılırken güvenlik ve gizlilik bilgileri hakkındaki ayrıntıları alabilirsiniz.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 817f46558932c074abc37b45d2885496419a0db0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dc276a6235fb4951c83b62e3c488145062814728
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712416"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415588"
 ---
-# <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Kaybolan veya çalınan iOS cihazlarının yerini Intune ile bulma
+# <a name="locate-lost-or-stolen-iosipados-devices-with-intune"></a>Intune ile kaybolan veya çalınan iOS/ıpados cihazlarını bulma
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Kayıp veya çalınan bir iOS cihazının konumunu bir haritada görüntülemek için **Cihazı bul** eylemini kullanın. Cihazın denetimli modda olması gerekir. Bu eylemi kullanmadan önce cihazın [kayıp modunda](device-lost-mode.md) olduğundan emin olun.
+Bir haritadaki kayıp veya çalınmış bir iOS/ıpados cihazının konumunu almak için **Cihazı bul** eylemini kullanın. Cihazın denetimli modda olması gerekir. Bu eylemi kullanmadan önce cihazın [kayıp modunda](device-lost-mode.md) olduğundan emin olun.
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
-- iOS 9.3 ve üzeri
+- iOS/ıpados 9,3 ve üzeri
 
 Bu özellik aşağıdaki sistemlerde desteklenmez: 
 - Windows
@@ -42,17 +42,17 @@ Bu özellik aşağıdaki sistemlerde desteklenmez:
 ## <a name="locate-a-lost-or-stolen-device"></a>Kaybolan veya çalınan bir cihazın yerini bulma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-3. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
-4. Yönettiğiniz cihazların listesinden bir iOS cihazı seçin ve sonra da **...Diğer** öğesini seçin. Ardından **Cihazı bul** uzak eylemini seçin.
+3. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
+4. Yönettiğiniz cihazların listesinden bir iOS/ıpados cihazı seçin ve... seçeneğini belirleyin **. Daha fazla**. Ardından **Cihazı bul** uzak eylemini seçin.
 5. Cihaz bulunduktan sonra, konumu **Cihazı bul** kısmında gösterilir.
     ![Azure'da Intune kullanarak Cihazı bulma eyleminin ekran görüntüsü](./media/device-locate/locate-device.png)
 
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>iOS cihazında kayıp modu ses uyarısını etkinleştirme
 
-Birisi iOS 9.3 veya üzeri bir cihazını kaybettiyse, kullanıcının bulabilmesi için cihazda bir uyarı sesi çalınmasını uzaktan tetikleyebilirsiniz. Cihazın [kayıp modunda](device-lost-mode.md) olması gerekir.
+Birisi iOS/ıpados 9,3 veya üzeri cihazını kaybetmişse, kullanıcının bulması için cihazı bir uyarı sesi çalmak üzere uzaktan tetikleyebilirsiniz. Cihazın [kayıp modunda](device-lost-mode.md) olması gerekir.
 
-[Azure portalında Intune'da](https://aka.ms/intuneportal), **Cihazlar** > **Tüm cihazlar** > bir iOS cihazı seçin > **Genel Bakış** > **Daha Fazla** > **Kayıp modu sesi çal (yalnızca denetimli)** öğesini seçin.
+[Azure Portal Intune](https://aka.ms/intuneportal)' da, **tüm cihazlar** > **cihazlar** ' ı seçin > iOS/ıpados cihazı seçin > **genel bakış** >  **kayıp modu sesi çal (yalnızca denetimli)** . > 
 
 Kullanıcı cihazda sesi devre dışı bırakana veya cihaz kayıp modundan çıkarılana kadar ses çalmaya devam eder.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5d2902c876fab12c1ba1e45783327f1ea08ab4d8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205267"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414670"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ Uygulama koruma verileri için bekletme süresi 90 gündür. Son 90 gün içinde
 - **Bayraklı kullanıcılar**: cihazlarıyla ilgili sorun yaşayan Kullanıcı sayısı. Jailbreak uygulanmış (iOS) ve kökü belirtilmiş (Android) cihazlar **bayraklı kullanıcılar**altında raporlanır. Ayrıca, Google SafetyNet cihaz kanıtlama denetimi (BT Yöneticisi tarafından açıldıysa) tarafından işaretlenen cihazlara sahip kullanıcılar burada raporlanır. 
 - **Zararlı olabilecek uygulamalara sahip kullanıcılar**: Android cihazlarında Google Play koruma tarafından algılanan zararlı bir uygulamaya sahip olabilecek Kullanıcı sayısı. 
 - **İOS Için Kullanıcı** durumu ve **Android için Kullanıcı durumu**: ilgili platform için bir iş bağlamında kendisine atanmış bir ilkeyi olan bir uygulamayı kullanmış olan kullanıcıların sayısı. Bu bilgiler, ilke tarafından yönetilen kullanıcıların sayısını ve bir iş bağlamındaki herhangi bir ilke tarafından hedeflenmediği bir uygulamayı kullanan kullanıcı sayısını gösterir. Bu kullanıcıları ilkeye eklemeyi düşünebilirsiniz.
-- En çok **korunan IOS uygulamaları** ve en çok kullanılan **Android**uygulamaları: Bu bilgiler, platforma göre korunan ve korunmayan uygulamaların sayısını gösterir.
-- Kayıt olmadan, en çok kullanılan iOS ve **En Iyi yapılandırılmış Android**uygulamaları olmadan, en sık yapılandırılan **iOS uygulamaları** : kayıtlı olmayan cihazlar Için en çok kullanılan iOS ve Android uygulamalarına bağlı olarak, bu bilgiler platforma göre yapılandırılmış uygulama sayısını (içinde, uygulama yapılandırma ilkesi kullanarak) gösterir.
+- **En çok korunan iOS/ıpados uygulamaları** ve **En Iyi korunan Android Uygulamaları**: en çok kullanılan iOS/ıpados ve Android uygulamalarına göre, bu bilgiler platforma göre korunan ve korumasız uygulamaların sayısını gösterir.
+- Kayıt olmadan, en çok kullanılan iOS/ıpados **uygulamaları** ve kayıt olmadan En Iyi **yapılandırılmış Android**uygulamaları: Bu bilgiler, kayıtlı olmayan cihazlar Için en çok kullanılan iOS/ıpados ve Android uygulamalarına bağlı olarak, bu bilgiler platforma göre yapılandırılmış uygulama sayısını gösterir (' de, uygulama yapılandırma ilkesi kullanarak).
 
     > [!NOTE]
     > Platform başına birden çok ilkeniz varsa bir kullanıcıya atanmış en az bir ilke olduğunda bu kullanıcının ilke ile yönetildiği kabul edilir.
@@ -170,9 +170,9 @@ App Protection. csv dosyası veya uygulama yapılandırması. csv dosyası oluş
     ![Raporu kaydet onay kutusunun ekran görüntüsü](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune, uygulama kayıt KIMLIĞI, Android üreticisi, model ve güvenlik düzeltme eki sürümü ve iOS modelinin yanı sıra ek cihaz raporlama alanları sağlar. Intune 'da, **uygulamalar** > uygulama **koruma durumu** > uygulama koruma **raporu: iOS, Android '** i seçerek bu alanlara erişirsiniz. Ayrıca, bu parametreler cihaz üreticisi için **Izin verilenler** listesini (Android), cihaz modeli Için **izin verilenler** listesini (Android ve iOS) ve **En düşük Android güvenlik düzeltme eki sürümü** ayarını yapılandırmanıza yardımcı olur.   
+> Intune, uygulama kayıt KIMLIĞI, Android üreticisi, model ve güvenlik düzeltme eki sürümü ve iOS modelinin yanı sıra ek cihaz raporlama alanları sağlar. Intune 'da, **uygulamalar** > uygulama **koruma durumu** > uygulama koruma **raporu: IOS/ıpados, Android '** i seçerek bu alanlara erişirsiniz. Ayrıca, bu parametreler cihaz üreticisi için **Izin verilenler** listesini (Android), cihaz modeli Için **izin verilenler** listesini (Android ve iOS) ve **En düşük Android güvenlik düzeltme eki sürümü** ayarını yapılandırmanıza yardımcı olur.   
  
-## <a name="see-also"></a>Ayrıca bkz:
-- [iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [İOS/ıpados uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md)
 - [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-android.md)
-- [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-ios.md)
+- [İOS/ıpados uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-ios.md)

@@ -1,7 +1,7 @@
 ---
-title: iOS cihaz kaydı - Apple Configurator-Kurulum Yardımcısı
+title: iOS/ıpados cihaz kaydı-Apple Configurator-Kurulum Yardımcısı
 titleSuffix: Microsoft Intune
-description: Kurulum Yardımcısı ile şirkete ait iOS cihazlarını kaydetmek için Apple Configurator’ı kullanmayı öğrenin.
+description: Kurulum Yardımcısı 'Nı kullanarak şirkete ait iOS/ıpados cihazlarını kaydetmek için Apple Configurator 'ın nasıl kullanılacağını öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,26 +18,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8ccd41b6ebc9bdf62c1603e508cb881a1be62ee7
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691790"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415396"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Apple Configurator ile iOS cihaz kaydını ayarlama
+# <a name="set-up-iosipados-device-enrollment-with-apple-configurator"></a>Apple Configurator ile iOS/ıpados cihaz kaydını ayarlama
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune, bir Mac bilgisayarda çalıştırılan [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) kullanarak iOS cihazlarının kaydedilmesini destekler. Apple Configurator ile kaydetme işlemi, kurumsal kaydı ayarlamak için her iOS cihazını bir Mac bilgisayara USB ile bağlamanızı gerektirir. Apple Configurator ile Intune'a cihazları iki yolla kaydedebilirsiniz:
+Intune, bir Mac bilgisayarda çalışan [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) 'ı kullanarak IOS/ıpados cihazlarının kaydedilmesini destekler. Apple Configurator ile kaydetme, kurumsal kayıt kurulumu için her iOS/ıpados cihazını USB ile bir Mac bilgisayara bağlamanız gerekir. Apple Configurator ile Intune'a cihazları iki yolla kaydedebilirsiniz:
 - **Kurulum Yardımcısı kaydı** - Cihazı siler ve Kurulum Yardımcısı sırasında kayda hazırlar.
-- **Doğrudan kayıt** - Cihazı silmez ve iOS ayarları aracılığıyla kaydeder. Bu yöntem, yalnızca **kullanıcı benzeşimi olmayan** cihazları destekler.
+- **Doğrudan kayıt** -cihazı temizlemez ve IOS/ıpados ayarları aracılığıyla cihazı kaydeder. Bu yöntem, yalnızca **kullanıcı benzeşimi olmayan** cihazları destekler.
 
 Apple Configurator kayıt yöntemleri [cihaz kaydı yöneticisi](device-enrollment-manager-enroll.md) ile birlikte kullanılamaz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- iOS cihazlara fiziksel erişim
+- İOS/ıpados cihazlarına fiziksel erişim
 - [MDM yetkilisini ayarlama](../fundamentals/mdm-authority-set.md)
 - [Apple MDM anında iletme sertifikası](apple-mdm-push-certificate-get.md)
 - Cihaz seri numaraları (yalnızca Kurulum Yardımcısı kaydı)
@@ -46,7 +46,7 @@ Apple Configurator kayıt yöntemleri [cihaz kaydı yöneticisi](device-enrollme
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>Cihazlar için Apple Configurator profili oluşturma
 
-Bir cihaz kayıt profili kayıt sırasında uygulanan ayarları tanımlar. Bu ayarlar yalnızca bir kez uygulanır. iOS cihazlarını Apple Configurator ile kaydetmek üzere bir kayıt profili oluşturmak için aşağıdaki adımları izleyin.
+Bir cihaz kayıt profili kayıt sırasında uygulanan ayarları tanımlar. Bu ayarlar yalnızca bir kez uygulanır. Apple Configurator ile iOS/ıpados cihazlarını kaydetmek üzere bir kayıt profili oluşturmak için bu adımları izleyin.
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **IOS** > IOS **kaydı** > **Apple Configurator** > **profilleri** > **Oluştur**' u seçin.
 
@@ -87,7 +87,7 @@ Bir cihaz kayıt profili kayıt sırasında uygulanan ayarları tanımlar. Bu ay
     F7TLWCLBX196,cihaz ayrıntıları</br>
     DLXQPCWVGHMJ,cihaz ayrıntıları
 
-   [iOS cihaz seri numarasını bulmayı](https://support.apple.com/HT204073) öğrenin.
+   [İOS/ıpados cihaz seri numarasını bulmayı](https://support.apple.com/HT204073)öğrenin.
 2. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **, > ** **IOS** > IOS **kaydı** > **Apple Configurator** > **cihazları** > **Ekle**' yi seçin.
 
 5. İçeri aktardığınız seri numaralarına uygulamak için bir **Kayıt profili** seçin. Seri numara ayrıntılarının önceki tüm ayrıntıların üzerine yazmasını istiyorsanız **Geçerli tanımlayıcı ayrıntılarının üzerine yaz**’ı seçin.
@@ -95,7 +95,7 @@ Bir cihaz kayıt profili kayıt sırasında uygulanan ayarları tanımlar. Bu ay
 
 ### <a name="reassign-a-profile-to-device-serial-numbers"></a>Cihaz seri numaralarına bir profili yeniden atama
 
-Apple Configurator kaydı için iOS seri numaralarını içeri aktardığınızda bir kayıt profili atayabilirsiniz. Ayrıca Azure portalında da iki konumdan profil atayabilirsiniz:
+Apple Configurator kaydı için iOS/ıpados seri numaralarını içeri aktardığınızda bir kayıt profili atayabilirsiniz. Ayrıca Azure portalında da iki konumdan profil atayabilirsiniz:
 - **Apple Configurator cihazları**
 - **AC profilleri**
 
@@ -113,9 +113,9 @@ Profil oluşturup seri numaralarını atadıktan sonra profili Intune'dan URL ol
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde, > **iOS** > **ios kaydı** > **Apple Configurator** > **profilleri** ' ni seçin > dışarı aktarılacak **profili seçin.**
 2. Profilde **Profili Dışarı Aktar**’ı seçin.
-3. **Profil URL’sini** kopyalayın. Daha sonra iOS cihazlar tarafından kullanılan Intune profilini tanımlamak için bunu Apple Configurator’a ekleyebilirsiniz.
+3. **Profil URL’sini** kopyalayın. Ardından, iOS/ıpados cihazları tarafından kullanılan Intune profilini tanımlamak için bunu Apple Configurator 'a ekleyebilirsiniz.
 
-   Ardından iOS cihazlarında kullanılan Intune profilini tanımlamak için aşağıdaki yordamda bu profili Apple Configurator’a içeri aktarırsınız.
+   Ardından, iOS/ıpados cihazları tarafından kullanılan Intune profilini tanımlamak için aşağıdaki yordamda bu profili Apple Configurator 'a aktarın.
 
 ### <a name="enroll-devices-with-setup-assistant"></a>Kurulum Yardımcısı ile cihaz kaydetme
 
@@ -125,15 +125,15 @@ Profil oluşturup seri numaralarını atadıktan sonra profili Intune'dan URL ol
     > Cihaz Apple KIMLIĞI hesabıyla zaten kaydedilmişse, kayıt işlemine başlamadan önce cihazın Apple iCloud 'dan silinmesi gerekir. İstem hatası "etkinleştirilemiyor [Cihaz adı]" olarak görüntülenir.
 
 2. **Tercihler** bölmesinde **Sunucular**’ı seçin ve MDM Sunucusu sihirbazını başlatmak için (+) artı simgesini seçin. **İleri**’yi seçin.
-3. Microsoft Intune ile iOS cihazları için Kurulum Yardımcısı kaydı altındaki MDM sunucusunun **Konak adı veya URL’si** ve **kayıt URL'sini** girin. Kayıt URL’si olarak Intune’dan dışarı aktarılan kayıt profili URL’sini girin. **İleri**’yi seçin.  
+3. Microsoft Intune sahip iOS/ıpados cihazları için Kurulum Yardımcısı kaydı altındaki MDM sunucusunun **ana bilgisayar adını veya URL 'sini** ve **kayıt URL** 'sini girin. Kayıt URL’si olarak Intune’dan dışarı aktarılan kayıt profili URL’sini girin. **İleri**’yi seçin.  
     “Sunucu URL'si doğrulanmadı” uyarısı alırsanız göz ardı edebilirsiniz. Devam etmek için sihirbaz tamamlanana kadar **İleri**’yi seçin.
-4. iOS mobil cihazları bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
-5. Yönetmek istediğiniz iOS cihazları ve ardından **Hazırla**’yı seçin. **iOS Cihazını Hazırla** bölmesinde **El ile**’yi ve daha sonra **İleri**’yi seçin.
+4. İOS/ıpados mobil cihazlarını bir USB bağdaştırıcısı ile Mac bilgisayara bağlayın.
+5. Yönetmek istediğiniz iOS/ıpados cihazlarını seçin ve ardından **hazırla**' yı seçin. **İOS/ıpados cihazını hazırla** bölmesinde, **el ile**' yi seçin ve ardından **İleri**' yi seçin.
 6. **MDM Sunucusuna Kaydol** bölmesinde, oluşturduğunuz sunucunun adını ve sonra da **İleri**’yi seçin.
 7. **Cihazları Denetle** bölmesinde, denetim düzeyini seçin, sonra **İleri**’yi seçin.
 8. **Kuruluş Oluştur** bölmesinde **Kuruluş**’u seçin veya yeni bir kuruluş oluşturun, sonra **İleri**’yi seçin.
-9. **iOS Kurulum Yardımcısı’nı Yapılandır** bölmesinde, kullanıcıya sunulacak adımları ve sonra da **Hazırla**’yı seçin. İstenirse, güven ayarlarını güncelleştirmek için kimlik doğrulaması yapın.  
-10. iOS cihazı hazırlanmayı tamamladığında USB kablosunun bağlantısını kesin.  
+9. **İOS/ıpados Kurulum Yardımcısı 'Nı Yapılandır** bölmesinde, kullanıcıya sunulacak adımları seçin ve ardından **hazırla**' yı seçin. İstenirse, güven ayarlarını güncelleştirmek için kimlik doğrulayın.  
+10. İOS/ıpados cihazı hazırlanma işlemini bitirdiğinde USB kablosunu sökün.  
 
 ### <a name="distribute-devices"></a>Cihazları dağıtma
 Cihazlar artık kurumsal kayıt için hazırdır. Cihazları kapatın ve kullanıcılara dağıtın. Kullanıcılar cihazlarını açtığında Kurulum Yardımcısı başlatılır.
@@ -141,34 +141,34 @@ Cihazlar artık kurumsal kayıt için hazırdır. Cihazları kapatın ve kullan�
 Kullanıcıların, cihazlarını aldıktan sonra Kurulum Yardımcısı'nı tamamlamaları gerekir. Kullanıcı benzeşimi ile yapılandırılmış cihazlar, uygulama indirmek ve cihaz yönetmek için Şirket Portalı’nı yükleyip çalıştırabilir.
 
 ## <a name="direct-enrollment"></a>Doğrudan kayıt
-iOS cihazlarını Apple Configurator ile doğrudan kaydederken, cihazın seri numarasını almadan kayıt işlemini gerçekleştirebilirsiniz. Ayrıca Intune kayıt sırasında cihaz adını yakalamadan önce, cihazı tanımlama amacıyla adlandırabilirsiniz. Şirket Portalı uygulaması doğrudan kayıtlı cihazlar için desteklenmez. Bu yöntem, cihazı silmez.
+İOS/ıpados cihazlarını doğrudan Apple Configurator ile kaydettiğinizde, cihazın seri numarasını almadan bir cihaz kaydedebilirsiniz. Ayrıca Intune kayıt sırasında cihaz adını yakalamadan önce, cihazı tanımlama amacıyla adlandırabilirsiniz. Şirket Portalı uygulaması doğrudan kayıtlı cihazlar için desteklenmez. Bu yöntem, cihazı silmez.
 
 İş kolu uygulamalarını yüklemek için kullanılan Şirket Portalı uygulaması da dahil olmak üzere kullanıcı benzeşimi gerektiren uygulamalar yüklenemez.
 
-### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>Profili iOS cihazlarına .mobileconfig olarak dışarı aktarma
+### <a name="export-the-profile-as-mobileconfig-to-iosipados-devices"></a>Profili. mobileconfig olarak iOS/ıpados cihazlarına dışarı aktarma
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde, > **iOS** > **ios kaydı** > **Apple Configurator** > **profilleri** ' ni seçin > **dışarı aktarma profilini**dışarı aktarmak için **profili seçin.**
 2. **Doğrudan kayıt** altında **Profil indir**’i seçin ve dosyayı kaydedin. Bir kayıt profili yalnızca iki hafta geçerlidir, iki haftanın sonunda bunu yeniden oluşturmanız gerekir.
-3. Dosyayı [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) çalıştıran bir Mac bilgisayara aktararak iOS cihazlar için doğrudan bir yönetim profili olarak gönderebilirsiniz.
+3. İOS/ıpados cihazlarına doğrudan bir yönetim profili olarak göndermek için dosyayı [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) çalıştıran bir Mac bilgisayara aktarın.
 4. Aşağıdaki adımları izleyerek cihazı Apple Configurator ile hazırlayın:
     1. Mac bilgisayarda Apple Configurator 2.0'ı açın.
-    2. iOS cihazını bir USB kablosu ile Mac bilgisayara bağlayın. Fotoğraflar’ı, iTunes’u ve cihaz algılandığında cihaz için açık olan diğer uygulamaları kapatın.
-    3. Apple Configurator’da, bağlı iOS cihazını ve sonra **Ekle** düğmesini seçin. Cihaza eklenebilen seçenekler aşağı açılan listede görüntülenir. **Profiller**’i seçin.
+    2. İOS/ıpados cihazını bir USB kablosu ile Mac bilgisayara bağlayın. Fotoğraflar’ı, iTunes’u ve cihaz algılandığında cihaz için açık olan diğer uygulamaları kapatın.
+    3. Apple Configurator 'da bağlı iOS/ıpados cihazını seçin ve sonra **Ekle** düğmesini seçin. Cihaza eklenebilen seçenekler aşağı açılan listede görüntülenir. **Profiller**’i seçin.
 
         ![Kurulum Yardımcısı Kaydı için Profili Dışarı Aktar’ın Profil URL’si vurgulanmış ekran görüntüsü](./media/apple-configurator-enroll-ios/ios-apple-configurator-add-profile.png)
 
     4. Intune’dan dışarı aktardığınız .mobileconfig dosyasını seçmek için dosya seçiciyi kullanın ve sonra **Ekle**’yi seçin. Profil cihaza eklenir. Cihaz Denetimsiz ise, yüklemenin cihazda kabul edilmesi gerekir.
-5. Profili iOS cihazına yüklemek için aşağıdaki adımları kullanın. Cihaz, Kurulum Yardımcısı’nı zaten tamamlamış ve hazır olmalıdır. Kayıt içinde uygulama dağıtımları da varsa uygulama dağıtımı, App Store için imzalanmış bir Apple Kimliğiniz olmasını gerektirdiğinden cihazda bir Apple Kimliği ayarlanmış olmalıdır.
-    1. iOS cihazının kilidini açın.
+5. Profili iOS/ıpados cihazına yüklemek için aşağıdaki adımları kullanın. Cihaz, Kurulum Yardımcısı’nı zaten tamamlamış ve hazır olmalıdır. Kayıt içinde uygulama dağıtımları da varsa uygulama dağıtımı, App Store için imzalanmış bir Apple Kimliğiniz olmasını gerektirdiğinden cihazda bir Apple Kimliği ayarlanmış olmalıdır.
+    1. İOS/ıpados cihazının kilidini açın.
     2. **Yönetim profili**’nin **Profili yükle** iletişim kutusunda **Yükle**’yi seçin.
     3. Gerekirse, Cihaz Geçiş Kodu veya Apple Kimliği sağlayın.
     4. **Uyarı**’yı kabul edin ve **Yükle**’yi seçin.
     5. **Uzak Uyarı**’yı kabul edin ve **Güven**’i seçin.
     6. **Profil Yüklendi** kutusu profilin Yüklü olduğunu doğruladığında **Bitti**’yi seçin.
 
-6. iOS cihazında **Ayarlar**’ı açın ve **Genel** > **Cihaz Yönetimi** > **Yönetim Profili**’ne gidin. Profil yüklemesinin listelendiğini onaylayın, iOS ilke kısıtlamalarını ve yüklü uygulamaları denetleyin. İlke kısıtlamaları ve uygulamaların cihazda görünmesi 10 dakika kadar sürebilir.
+6. İOS/ıpados cihazında **Ayarlar** ' ı açın ve **genel** > **cihaz yönetimi** > **Yönetim profili**' ne gidin. Profil yüklemesinin listelendiğini onaylayın ve iOS/ıpados ilke kısıtlamalarını ve yüklü uygulamaları denetleyin. İlke kısıtlamaları ve uygulamaların cihazda görünmesi 10 dakika kadar sürebilir.
 
-7. Cihazları dağıtın. iOS cihazı Intune’a kaydedilmiştir ve yönetilmektedir.
+7. Cihazları dağıtın. İOS/ıpados cihazı artık Intune 'A kaydolmuş ve yönetilmektedir.
 
 
 

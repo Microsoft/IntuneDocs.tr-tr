@@ -16,17 +16,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713440"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415538"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Intune ile en son ilkeleri ve eylemleri almak için cihazları eşitleme
 
 
-Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorlar. Bir cihaz iade edildiğinde, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır. Bu özellik, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan hızla doğrulamanıza ve ilkelerin sorunlarını gidermenize yardımcı olur.
+Cihazı **Eşitle** eylemi, seçili cihazı Intune’a hemen giriş yapmaya zorlar. Bir cihaz giriş yaptığında, kendisine atanan beklemedeki eylem veya ilkeleri hemen alır. Bu özellik, atadığınız ilkeleri bir sonraki zamanlanmış iadeyi beklemenize gerek kalmadan hızla doğrulamanıza ve ilkelerin sorunlarını gidermenize yardımcı olur.
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
@@ -49,7 +49,7 @@ Eşitleme eyleminin durumunu görmek için **Cihaz** > **Cihaz eylemleri**’ni 
 
 ## <a name="retryable-error-codes"></a>Yeniden denenebilir hata kodları
 
-Bir yönetici **Eşitle** cihaz eylemini çalıştırdığında, başarısız olan ancak yeniden denenebilir bir hata kodu veren iOS ve Android uygulamaları o cihazda yine kullanılabilir. Ancak yeniden denenemez bir hata kodu vermiş uygulamalar, cihaz için kullanılabilir hale gelmeden önce yedi gün beklemek zorundadır.
+Bir yönetici **eşitleme** cihazı eylemini çalıştırdığında, başarısız olan ve yeniden denenebilir bir hata kodu veren IOS/ıpados ve Android Uygulamaları hala cihaz için kullanılabilir. Ancak yeniden denenemez bir hata kodu vermiş uygulamalar, cihaz için kullanılabilir hale gelmeden önce yedi gün beklemek zorundadır.
 
 
 | Hata kodu  | Önerilen açıklama | Yeniden denenebilir |

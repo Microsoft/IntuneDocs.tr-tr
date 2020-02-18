@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692113"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414605"
 ---
 # <a name="protecting-application-extensions"></a>Uygulama uzantılarını koruma
 
@@ -31,7 +31,7 @@ Bu makalede, Microsoft Intune uzantılar için uygulama koruma ilkeleri açıkla
 
 ## <a name="add-ins-for-outlook-app"></a>Outlook uygulaması için eklentiler
 
-Outlook eklentileri, popüler uygulamaları e-posta istemcisiyle tümleştirmenize imkan tanır. Outlook için eklentiler, Android ve iOS için Web, Windows, Mac ve Outlook 'ta kullanılabilir. Intune uygulama SDK 'Sı ve Intune uygulama koruma ilkeleri Outlook eklentilerini yönetme desteğini içermez, ancak kullanımlarını sınırlamak için başka yollar vardır. Eklentiler Microsoft Exchange yoluyla yönetildiğinden, eklentiler kullanıcı için Exchange tarafından kapatılmadığı sürece, kullanıcılar Outlook ile yönetilmeyen eklenti uygulamaları arasında verileri ve iletileri paylaşabilirler.
+Outlook eklentileri, popüler uygulamaları e-posta istemcisiyle tümleştirmenize imkan tanır. Outlook için eklentiler Web, Windows, Mac ve Android ve iOS/ıpados için Outlook 'ta kullanılabilir. Intune uygulama SDK 'Sı ve Intune uygulama koruma ilkeleri Outlook eklentilerini yönetme desteğini içermez, ancak kullanımlarını sınırlamak için başka yollar vardır. Eklentiler Microsoft Exchange yoluyla yönetildiğinden, eklentiler kullanıcı için Exchange tarafından kapatılmadığı sürece, kullanıcılar Outlook ile yönetilmeyen eklenti uygulamaları arasında verileri ve iletileri paylaşabilirler.
 
 Son kullanıcılarınızın Outlook eklentilerine erişmesini ve bunları yüklemesini durdurmak isterseniz (bu işlem tüm Outlook istemcilerini etkiler), Exchange yönetim merkezinde rollerde aşağıdaki değişikliklerin yapıldığından emin olun:
 
@@ -64,7 +64,7 @@ Kiracınız için LinkedIn tümleştirmesi etkinse kuruluşunuzdaki kullanıcıl
 Bir kullanıcı, Office eklentilerinde olduğu gibi hesaplar arasında veri paylaşımına izin verirse LinkedIn tümleştirmesi mevcut Microsoft Graph API’lerini kullanır. LinkedIn tümleştirmesi, Office eklentileri için kullanılabilir API’lerin yalnızca bir alt kümesini kullanır ve çeşitli dışlamaları destekler.
 
 
-|Microsoft Graph izinleri  |Description  |
+|Microsoft Graph izinleri  |Açıklama  |
 |---------|---------|
 |[Kişiler](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions) için okuma izinleri     |Uygulamanın oturum açan kullanıcıyla ilgili kişilerin puanlanmış bir listesini okumasına izin verir. Liste; yerel kişileri, sosyal ağ veya kuruluşunuzun dizinindeki kişileri ve son iletişim kurulan kişileri (e-posta ve Skype gibi) içerebilir.         |
 |[Takvimler](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions) için okuma izinleri     |Uygulamanın kullanıcı takvimlerindeki etkinlikleri okumasına izin verir. Oturum açan kullanıcının takvimindeki toplantıları, zamanlarını, yerlerini ve katılımcıları içerir.         |

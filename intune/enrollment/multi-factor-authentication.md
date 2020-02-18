@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 14347d12888ff5ef61d4543409a08fbdeb371c89
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955397"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415212"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune cihaz kayıtları için çok faktörlü kimlik doğrulaması isteme
 
@@ -36,7 +36,7 @@ MFA, aşağıdaki doğrulama yöntemlerinden herhangi ikisini veya daha fazlası
 - Sahip olduğunu bir şey (telefon gibi kopyalaması kolay olmayan güvenilir bir cihaz).
 - Sahip olduğunuz bir özellik (parmak izi gibi biyometrik bilgiler).
 
-MFA; iOS, Android, Windows 8.1 veya üzeri, Windows Phone 8.1 ya da Windows 10 Mobile veya üzeri cihazlar için desteklenir.
+MFA, iOS/ıpados, Android, Windows 8.1 veya üzeri, Windows Phone 8,1 ya da Windows 10 Mobile veya üzeri cihazlarda desteklenir.
 
 MFA’yı etkinleştirdiğinizde, son kullanıcıların bir cihazı kaydetmek için kimlik bilgilerini iki şekilde sağlamaları gerekir.
 

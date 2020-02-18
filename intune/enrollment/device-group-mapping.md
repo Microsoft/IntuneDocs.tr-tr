@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: f0976ff8e6ec45f1f861fd4a4e0474255d701ae4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955380"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414255"
 ---
 # <a name="categorize-devices-into-groups"></a>Cihazları gruplar halinde kategorilere ayırma
 
@@ -32,7 +32,7 @@ Cihaz yönetimini kolaylaştırmak için Microsoft Intune cihaz gruplarını kul
 
 Cihaz kategorileri aşağıdaki iş akışını kullanır:
 1. Kullanıcıların cihazlarını kaydederken arasından seçim yapabileceği kategoriler oluşturun.
-2. iOS ve Android cihazlarının kullanıcıları bir cihaz kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Bir Windows cihaza kategori atamak için kullanıcıların Şirket Portalı web sitesini kullanmaları gerekir.
+2. İOS/ıpados ve Android cihazlarının kullanıcıları bir cihazı kaydettiğinde, yapılandırdığınız kategori listesinden bir kategori seçmesi gerekir. Bir Windows cihaza kategori atamak için kullanıcıların Şirket Portalı web sitesini kullanmaları gerekir.
 3. Ardından bu gruplara ilkeler ve uygulamalar dağıtabilirsiniz.
 
 İstediğiniz herhangi bir cihaz kategorisini oluşturabilirsiniz. Örneğin:
@@ -76,13 +76,13 @@ Siz cihaz gruplarını yapılandırdıktan ve kullanıcılar cihazlarını kayde
 
 ## <a name="after-you-configure-device-groups"></a>Cihaz gruplarını yapılandırdıktan sonra
 
-iOS ve Android cihazlarının kullanıcıları cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmeleri gerekir. Kategoriyi seçip kaydı tamamladıktan sonra cihazlar, seçtikleri kategoriye karşılık gelen Intune cihaz grubuna veya Active Directory güvenlik grubuna eklenir.
+İOS/ıpados ve Android cihazlarının kullanıcıları cihazlarını kaydettiklerinde, yapılandırdığınız kategori listesinden bir kategori seçmesi gerekir. Kategoriyi seçip kaydı tamamladıktan sonra cihazlar, seçtikleri kategoriye karşılık gelen Intune cihaz grubuna veya Active Directory güvenlik grubuna eklenir.
 
 Windows kullanıcıları bir kategori seçmek için Şirket Portalı web sitesini kullanmalıdır.
 
 Platformları ne olursa olsun kullanıcılarınız cihazlarını kaydettikten sonra istedikleri zaman portal.manage.microsoft.com adresine gidebilir. Kullanıcının Şirket Portalı web sitesine erişmesini ve **Cihazlarım**’a gitmesini sağlayın. Kullanıcı, sayfada listelenen kayıtlı bir cihazı ve sonra da kategoriyi seçebilir.
 
-Bir kategori seçtikten sonra cihaz, oluşturduğunuz karşılık gelen gruba otomatik olarak eklenir. Kategorileri yapılandırmadan önce kaydedilmiş bir cihaz varsa kullanıcı, Şirket Portalı web sitesinde bu cihaz hakkında bildirim alır. Bu bildirim, kullanıcıya iOS veya Android’de Şirket Portalı’na eriştiğinde kategori seçmesi gerektiğini belirtir.
+Bir kategori seçtikten sonra cihaz, oluşturduğunuz karşılık gelen gruba otomatik olarak eklenir. Kategorileri yapılandırmadan önce kaydedilmiş bir cihaz varsa kullanıcı, Şirket Portalı web sitesinde bu cihaz hakkında bildirim alır. Bu, kullanıcının iOS/ıpados veya Android 'de Şirket Portalı uygulamasına bir sonraki erişimlerse bir kategori seçmesini bilmesini sağlar.
 
 ## <a name="further-information"></a>Daha fazla bilgi
 - Azure Portalı’nda cihaz kategorisini düzenleyebilirsiniz ama bu kategoriye başvuran tüm Azure AD güvenlik gruplarını kendiniz güncelleştirmeniz gerekir.

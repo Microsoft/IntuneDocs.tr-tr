@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4fdbf7ca252af9eb8513d437e3275692a1f8d13
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414401"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415251"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune yazılımı istemcisi ile Windows PC’leri bilgisayar olarak yönetme
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414401"
 > [!WARNING]
 > Microsoft [Windows 7 desteğinin 14 Ocak 2020'de sona erdiğini](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020) duyurdu. Aynı tarihte Intune'da Windows 7 çalıştıran cihazlar için desteğini kaldıracaktır. Microsft, hizmet ve destek kesintilerini önlemek için Windows 10'a geçmenizi özellikle önerir.
 > 
-> Daha fazla bilgi için bkz. [Intune için plan planı: Windows 7 için destek sonuna yaklaşma](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7).
+> Daha fazla bilgi için bkz. [plan for Change blog gönderisi](https://aka.ms/Windows7_Intune).
 
 > [!NOTE]
 > Aşağıda açıklandığı gibi Windows bilgisayarlarını [mobil cihaz yönetimi (MDM) ile mobil cihazlar olarak](../enrollment/windows-enroll.md) ya da Intune yazılım istemcisi ile bilgisayarlar olarak yönetmek için Microsoft Intune’u kullanabilirsiniz. Ancak Microsoft, müşterilerin mümkün olan her durumda [MDM yönetim çözümünü kullanmasını](../enrollment/windows-enroll.md) önerir. Daha fazla bilgi için bkz. [Windows bilgisayarlarını bilgisayar veya mobil cihaz olarak yönetmeyi karşılaştırma](pc-management-comparison.md) 
@@ -115,7 +115,7 @@ Yukarıdaki görevler hakkında daha fazla bilgi için [genel bilgisayar yöneti
 Bilgisayarları mobil cihaz olarak yönetmek için kullanılabilecek bazı yönetim seçenekleri, Intune istemci yazılımıyla yönetilen bilgisayarlar için kullanılamaz:
 
 - Tam silme (seçmeli silme bulunur)
-- Conditional Access
+- Koşullu Erişim
 
 Intune yönetim konsolundaki **Güncelleştirmeler**, **Koruma** ve **Lisanslar** gibi bazı bölümlerin, yalnızca Intune istemci yazılımını kullanarak cihazları kaydettiğinizde görüntülendiğini de aklınızda bulundurun.
 

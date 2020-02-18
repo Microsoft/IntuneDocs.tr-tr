@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754261"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413783"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
@@ -36,7 +36,7 @@ BT yöneticisi olarak, kullanıcılarınızın işlerini yapması için gereken 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 3. **Cihazlar**’ı seçin. Burada ayrı ayrı tüm cihazlar hakkında ayrıntılı bilgiler ve bu cihazlarla yapabilecekleriniz görüntülenir. Yapabilecekleriniz şöyledir:
 
-   - **Genel Bakış**, kayıtlı cihazların görsel anlık görüntüsünü ve kaç tane cihazın Android, iOS vb. gibi farklı platformlar kullandığını gösterir.
+   - **Genel bakış** , kayıtlı cihazların görsel anlık görüntüsünü gösterir ve ayrıca Android, IOS/ıpados gibi farklı platformları kaç cihazın kullandığını gösterir.
    - **Tüm cihazlar**, yönettiğiniz kayıtlı cihazların listesini gösterir.
 
      **Dışarı Aktar** özelliğini kullanarak tüm cihazların .csv listesini oluşturabilirsiniz. Listenin sınırları 10.000 (Internet Explorer) ve 30.000’dir (Microsoft Edge, Chrome).
@@ -70,7 +70,7 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
   - [Android için uzaktan denetim](teamviewer-support.md)
   - [Cihazı eşitleme](device-sync.md)
   - [Cihazı yeniden adlandırma](device-rename.md)
-  - [Özel bildirim gönderme](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [Özel bildirim gönder](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, IOS/ıpados)
   - [BitLocker anahtar döndürme](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (yalnızca Windows)
 
 ## <a name="next-steps"></a>Sonraki adımlar

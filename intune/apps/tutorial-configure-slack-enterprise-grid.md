@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206916"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415475"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Öğretici: EMM ve uygulama yapılandırması için Intune 'U kullanmak üzere bolluk yapılandırma
 
@@ -69,7 +69,7 @@ EMM için, Intune 'da yönetilen bir iOS uygulaması olarak bolluk ekleyin ve bo
 10. **Kaydet**'e tıklayın.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>EMM için bolluk için bir uygulama yapılandırma ilkesi ekleyin
-EMM iOS için bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgüdür. bu nedenle, Android cihazlarda bolluk kullanıcılarınıza ayrı bir ilke eklemeniz gerekir.
+EMM iOS/ıpados için bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgüdür. bu nedenle, Android cihazlarda bolluk kullanıcılarınıza ayrı bir ilke eklemeniz gerekir.
 1. Yönetim Merkezi 'nde **uygulamalar** > **uygulama yapılandırma ilkeleri** ' ni seçin >  > **yönetilen cihaz** **ekleyin** .
 2. Ad alanına ' bolluk uygulama yapılandırma ilkesi test ' girin.
 3. Cihaz kayıt türü ' nün altında, **yönetilen cihazların** ayarlandığını onaylayın.

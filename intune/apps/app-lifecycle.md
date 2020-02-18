@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce23d77d9b9d89ce51738a9c4e244dfca9a1c59
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 569906cea8467d568d302f4e44b26c3394213b62
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812416"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414979"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune'da uygulama yaşam döngüsüne genel bakış
 
@@ -30,7 +30,7 @@ Microsoft Intune uygulama yaşam döngüsü, bir uygulama eklendiğinde başlar,
 
 ![Uygulama yaşam döngüsü-ekleme, dağıtma, yapılandırma, koruma ve devre dışı bırakma.](./media/app-lifecycle/app-lifecycle.png "Intune uygulama yaşam döngüsü")
 
-## <a name="add"></a>Ekleme
+## <a name="add"></a>Ekle
 
 Uygulama dağıtımında ilk adım, yönetmek ve atamak istediğiniz uygulamayı Intune’a eklemektir. Birçok farklı uygulama türüyle çalışabilecek olmanıza karşın, temel yordamlar aynıdır. Intune ile, şirket içinde yazılmış uygulamalar (iş kolu), mağazadan uygulamalar, yerleşik uygulamalar ve Web üzerinde uygulamalar dahil farklı uygulama türleri ekleyebilirsiniz. Bu uygulama türlerinden her biri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md).
 
@@ -38,21 +38,21 @@ Uygulama dağıtımında ilk adım, yönetmek ve atamak istediğiniz uygulamayı
 
 Uygulamayı Intune’a ekledikten sonra, [yönettiğiniz kullanıcılara ve cihazlara atayabilirsiniz](apps-deploy.md). Intune bu işlemi kolaylaştırır ve uygulama dağıtıldıktan sonra, Azure portal içinde Intune 'dan dağıtım [başarısını izleyebilirsiniz](apps-monitor.md) . Buna ek olarak, [Apple](vpp-apps-ios.md) ve [Windows](windows-store-for-business.md) uygulama mağazaları gibi bazı uygulama mağazalarında şirketinize toplu uygulama lisansları satın alabilirsiniz. Bu tür uygulamalarda doğrudan Intune yönetim konsolundan lisans dağıtımı yapabilmeniz ve lisans kullanımını izleyebilmeniz için Intune verileri bu mağazalarla eşitleyebilir.
 
-## <a name="configure"></a>Yapılandırma
+## <a name="configure"></a>Yapılandır
 
 Uygulama yaşam döngüsü kapsamında, uygulamaların yeni sürümleri düzenli olarak kullanıma sunulur. Intune, dağıtmış olduğunuz uygulamaları kolayca yeni sürüme [güncelleştirmeniz](apps-add.md) için araçlar sağlar. Buna ek olarak, bazı uygulamalar için fazladan işlevsellik yapılandırabilirsiniz; örneğin:
 
-- [iOS uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md), uyumlu iOS uygulamaları için uygulama çalıştırıldığında kullanılan ayarlar sağlar. Örneğin, uygulama için belirli marka ayarları veya bağlanması gereken sunucunun adı gerekiyor olabilir.
+- [iOS uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md) , uygulama çalıştırıldığında kullanılan uyumlu IOS/ıpados uygulamalarına yönelik ayarları sağlar. Örneğin, uygulama için belirli marka ayarları veya bağlanması gereken sunucunun adı gerekiyor olabilir.
 - [Yönetilen tarayıcı ilkeleri](app-configuration-managed-browser.md) , varsayılan cihaz tarayıcısının yerini alan ve kullanıcılarınızın ziyaret edebileceği web sitelerini kısıtlamanızı sağlayan [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps)ayarlarını yapılandırmanıza yardımcı olur.
 
-## <a name="protect"></a>Koruma
+## <a name="protect"></a>Koru
 
 Intune, uygulamalarınızdaki verileri korumaya yardımcı olmanın yollarını sağlar. Ana yöntemler şunlardır:
 
 - Belirttiğiniz koşullara bağlı olarak e-posta ve diğer hizmetlere erişimi denetleyen [koşullu erişim](../protect/conditional-access.md). Bu koşullara cihaz türleri veya dağıttığınız bir [cihaz uyumluluk ilkesi](../protect/device-compliance-get-started.md) ile uyumluluk dahildir.
 - [Uygulama koruma ilkeleri](app-protection-policy.md), tek tek uygulamalarla çalışarak bunların kullandığı şirket verilerinin korunmasına yardımcı olur. Örneğin, yönetilmeyen uygulamalarla sizin yönettiğiniz uygulamalar arasında veri kopyalamayı kısıtlayabilir ya da uygulamaların yazılım kilidi kırılmış veya kök erişimine izin verilmiş cihazlarda çalıştırılmasını önleyebilirsiniz.
 
-## <a name="retire"></a>Devre Dışı Bırakma
+## <a name="retire"></a>Devre Dışı Bırak
 
 Sonunda, büyük olasılıkla dağıttığınız uygulamalar eskir ve kaldırılmaları gerekir. Intune, [uygulamaları hizmette devre dışı bırakmayı](../remote-actions/device-management.md) kolaylaştırır.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: b52a914e1577fe13f0bec970a9c3ebe38aa2cdc8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839387"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414954"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune Uygulama Koruması Ilkesi (uygulama) veri aktarımı ilkesi için özel durumlar oluşturma
 
@@ -38,7 +38,7 @@ Bir Intune uygulama koruma Ilkesinde, uygulamanın diğer uygulamalara verileri 
 > Veri aktarımı ilkelerini değiştirmek veya eklemek; kesme, kopyalama ve yapıştırma kısıtlamaları gibi diğer Uygulama Koruma İlkelerini etkilemez. 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS veri aktarımı özel durumları
-iOS'u hedefleyen bir ilke için, veri aktarımı özel durumlarını URL protokolü ile yapılandırabilirsiniz. Bir özel durum eklemek için desteklenen URL protokolleri hakkında bilgi bulmak üzere uygulamanın geliştiricisi tarafından sağlanan belgelere bakın. İOS veri aktarımı özel durumları hakkında daha fazla bilgi için bkz. [iOS uygulama koruma ilkesi ayarları-veri aktarımı muafiyetleri](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+İOS/ıpados 'ı hedefleyen bir ilke için, veri aktarımı özel durumlarını URL protokolüne göre yapılandırabilirsiniz. Bir özel durum eklemek için desteklenen URL protokolleri hakkında bilgi bulmak üzere uygulamanın geliştiricisi tarafından sağlanan belgelere bakın. İOS/ıpados veri aktarımı özel durumları hakkında daha fazla bilgi için bkz. [iOS uygulama koruma ilkesi ayarları-veri aktarımı muafiyetleri](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > Microsoft’un üçüncü taraf uygulamalarında uygulama istisnaları oluşturan URL protokollerini el ile bulmak için bir yöntemi yoktur. 
@@ -53,9 +53,9 @@ Android'i hedefleyen bir ilke için, uygulama paketi adına göre veri aktarım�
 ### <a name="example"></a>Örnek
 MAM veri aktarımı ilkesine bir özel durum olarak **Webex** paketinin eklenmesiyle, yönetilen bir Outlook e-posta iletisindeki Webex bağlantılarının doğrudan Webex uygulamasında açılmasına izin verilir. Diğer yönetilmeyen uygulamalarda veri aktarımı kısıtlı olmaya devam eder.
 
-- iOS **WebEx** örneği: Intune tarafından yönetilen uygulamalar tarafından çağrılmasına izin verilmesi Için **WebEx** uygulamasını muaf tutmak üzere, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>wbx</code>
+- iOS/ıpados **WebEx** örneği: Intune tarafından yönetilen uygulamalar tarafından çağrılmasına izin verilmesi Için **WebEx** uygulamasını muaf tutmak üzere, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>wbx</code>
     
-- iOS **Maps** örneği: Intune tarafından yönetilen uygulamalar tarafından çağrılmasına izin verilmesi Için yerel **haritalar** uygulamasını muaf tutmak üzere, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>maps</code>
+- iOS/ıpados **haritaları** örneği: Intune tarafından yönetilen uygulamalar tarafından çağrılmasına izin verilmesi Için yerel **haritalar** uygulamasını muaf tutmak üzere, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>maps</code>
 
 - Android **WebEx** örneği: Intune tarafından yönetilen uygulamalar tarafından çağrılmasına izin verilmesi Için **WebEx** uygulamasını muaf tutmak üzere, aşağıdaki dize için bir veri aktarımı özel durumu eklemeniz gerekir: <code>com.cisco.webex.meetings</code>
     

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: a727cf03f53ee003c27708a04ad475f0b370c487
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75857052"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415012"
 ---
 # <a name="intune-discovered-apps"></a>Intune bulunan uygulamalar
 
@@ -57,9 +57,9 @@ Aşağıdaki liste, uygulama platformu türünü, kişisel cihazlar için izlene
 | Windows 10 (Win32 uygulamaları) NOTE: cihazda [Intune yönetim uzantısı gerekir](intune-management-extension.md) | Uygulanamaz | Yalnızca yönetilen uygulamalar | Cihaz kaydından her 24 saatte bir |
 | Windows 10 (modern uygulamalar) | Yalnızca yönetilen modern uygulamalar | Cihazda yüklü tüm modern uygulamalar | Her 7 günde bir cihaz kaydı |
 | Windows 8.1 | Yalnızca yönetilen uygulamalar | Yalnızca yönetilen uygulamalar | Her 7 günde bir cihaz kaydı |
-| Windows Phone 8 | Yalnızca yönetilen uygulamalar | Yalnızca yönetilen uygulamalar | Her 7 günde bir cihaz kaydı |
-| Windows RT | Yalnızca yönetilen uygulamalar | Yalnızca yönetilen uygulamalar | Her 7 günde bir cihaz kaydı |
-| iOS | Yalnızca yönetilen uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
+| Windows Phone 8 | Yalnızca yönetilen uygulamalar | Yalnızca yönetilen uygulamalar | Her 7 günde bir cihaz kaydı |
+| Windows RT | Yalnızca yönetilen uygulamalar | Yalnızca yönetilen uygulamalar | Her 7 günde bir cihaz kaydı |
+| iOS/ıpados | Yalnızca yönetilen uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
 | Mac OS | Yalnızca yönetilen uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
 | Android | Yalnızca yönetilen uygulamalar | Cihazda yüklü tüm uygulamalar | Her 7 günde bir cihaz kaydı |
 | Android Kurumsal | Yalnızca yönetilen uygulamalar | Yalnızca Iş profilinde yüklü olan uygulamalar | Her 7 günde bir cihaz kaydı |

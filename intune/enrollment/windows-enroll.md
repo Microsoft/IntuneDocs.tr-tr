@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207443"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415129"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
@@ -91,7 +91,7 @@ Contoso DNS yöneticisinin aşağıdaki CNAME'leri oluşturması gerekir:
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 saat|
 |CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 saat|
 
-`EnterpriseEnrollment-s.manage.microsoft.com` – E-postanın etki alanı adından etki alanını tanıma ile Intune hizmetine yeniden yönlendirmeyi destekler
+`EnterpriseEnrollment-s.manage.microsoft.com` – E-postanın etki alanı adından etki alanı tanıma ile Intune hizmetine yeniden yönlendirmeyi destekler
 
 DNS kaydındaki değişikliklerin yaygınlaştırılması 72 saat kadar sürebilir. DNS kaydı yayılıncaya kadar DNS değişikliğini Intune'da doğrulayamazsınız.
 
@@ -119,7 +119,7 @@ Son kullanıcı kayıt talimatları için bkz. [Windows cihazınızı Intune'a k
 Son kullanıcı görevleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’da son kullanıcı deneyimi hakkında kaynaklar](../fundamentals/end-user-educate.md).
 
 ## <a name="registration-and-enrollment-cnames"></a>Kayıt ve kayıt CNAMEs
-Azure Active Directory iOS, Android ve Windows cihazları için cihaz kaydı için kullandığı farklı bir CNAME 'e sahiptir. Intune koşullu erişimi, cihazların "çalışma alanına katılmış" olarak da kaydedilmesini gerektirir. Koşullu erişim kullanmayı planlıyorsanız, sahip olduğunuz her şirket adı için EnterpriseRegistration CNAME 'i de yapılandırmalısınız.
+Azure Active Directory, iOS/ıpados, Android ve Windows cihazları için cihaz kaydı için kullandığı farklı bir CNAME 'e sahiptir. Intune koşullu erişimi, cihazların "çalışma alanına katılmış" olarak da kaydedilmesini gerektirir. Koşullu erişim kullanmayı planlıyorsanız, sahip olduğunuz her şirket adı için EnterpriseRegistration CNAME 'i de yapılandırmalısınız.
 
 | Tür | Konak adı | Şunu gösterir: | TTL |
 | --- | --- | --- | --- |

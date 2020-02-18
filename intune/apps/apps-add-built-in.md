@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 96cd4997029c15396db91e9866bbb387c20f1044
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755383"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414441"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Microsoft Intune’a yerleşik uygulama ekleme
 
-*Yerleşik* uygulama türü, iOS ve Android cihazlara Office 365 uygulamaları gibi seçkin yönetilen uygulamaları atamanızı kolaylaştırır. Bu uygulama türüne belirli uygulamaları atayabilirsiniz; örneğin Excel, OneDrive, Outlook, Skype ve diğerleri. Bir uygulamayı ekledikten sonra uygulama türü, *Yerleşik iOS uygulaması* veya *Yerleşik Android uygulaması* olarak görüntülenir. Yerleşik uygulama türünü kullanarak bu uygulamalardan hangilerini cihaz kullanıcılarına yayımlayacağınızı seçebilirsiniz.
+*Yerleşik* uygulama türü, Office 365 uygulamaları gibi seçkin yönetilen uygulamaları IOS/ıpados ve Android cihazlara atamanızı kolaylaştırır. Bu uygulama türüne belirli uygulamaları atayabilirsiniz; örneğin Excel, OneDrive, Outlook, Skype ve diğerleri. Bir uygulamayı ekledikten sonra uygulama türü, *Yerleşik iOS uygulaması* veya *Yerleşik Android uygulaması* olarak görüntülenir. Yerleşik uygulama türünü kullanarak bu uygulamalardan hangilerini cihaz kullanıcılarına yayımlayacağınızı seçebilirsiniz.
 
 Intune konsolunun önceki sürümlerinde Intune, Outlook ve OneDrive gibi varsayılan olarak yönetilen birkaç Office 365 uygulaması sağlar. Bu yönetilen uygulamalar için uygulama türü *Yönetilen iOS Mağaza Uygulaması* veya *Yönetilen Android Uygulaması* olarak etiketlenmiştir. Bu uygulama türlerini kullanmak yerine yerleşik uygulama türünü kullanmanızı öneririz. Yerleşik uygulama türünü kullanarak Office 365 uygulamalarını düzenleme ve silme konusunda daha fazla esneklik kazanırsınız.
 
@@ -63,12 +63,12 @@ Yerleşik uygulama hakkındaki bilgileri değiştirebilirsiniz. Bu bilgiler, uyg
 4. **Uygulama bilgileri** bölmesinde aşağıdaki bilgileri değiştirebilirsiniz:
     - **Ad**: Yerleşik uygulamanın Şirket Portalı’nda görüntülenen adını girin. Kullandığınız tüm adların benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri şirket portalında kullanıcılara görüntülenir.
     - **Açıklama**: Uygulama için bir açıklama girin. 
-    - **Yayımcı**: Uygulama yayımcısının adını girin.
+    - **Yayımcı**: Uygulama yayıncısının adını girin.
     - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden birini seçin. Bu seçeneği ayarladığınızda, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
     - **Bunu şirket portalı 'nda öne çıkan bir uygulama olarak göster**: kullanıcılar uygulamalara gözatarken, uygulamayı şirket portalının ana sayfasında göze çarpacak şekilde görüntüleyin.
     - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
     - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
+    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricinin adını girin.
     - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin (örneğin *İK departmanı*).
     - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Simge Yükle**: Kullanıcılar şirket portalına gözatarken uygulamayla birlikte görüntülenecek bir simge yükleyin.

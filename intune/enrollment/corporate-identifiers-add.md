@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 51538f8994557bba718f0e8344b1da8d3c7193fa
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956290"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414418"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Cihazları şirkete ait olarak tanımlama
 
@@ -39,7 +39,7 @@ Kayıt sırasında Intune, şu özellikleri taşıyan cihazlara otomatik olarak 
 - İş veya okul kimlik bilgileriyle Azure Active Directory katıldı. [Azure Active Directory kayıtlı olan cihazlar](https://docs.microsoft.com/azure/active-directory/devices/overview) kişisel olarak işaretlenir.
 - [Cihazın özellikler listesinde](#change-device-ownership) şirket olarak ayarlı
 
-Kayıttan sonra **Kişisel** veya **Şirket** arasında [sahiplik ayarını değiştirebilirsiniz](#change-device-ownership).
+Kayıttan sonra [Kişisel](#change-device-ownership) veya **Şirket** arasında **sahiplik ayarını değiştirebilirsiniz**.
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Şirkete ait cihazları IMEI veya seri numarası ile belirleme
 
@@ -54,7 +54,7 @@ Bu özellik aşağıdaki platformlar için desteklenir:
 | Cihaz Yöneticisi yönetilen Android OS ile v10 arasındaki | Desteklenmez | Desteklenmez |
 | Diğer Android | Desteklenmez | Desteklenir |
 
-<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS/iPadOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
 [Apple cihaz seri numarasını bulmayı öğrenin](https://support.apple.com/HT204308).<br>
 [Android cihaz seri numaranızı bulmayı öğrenin](https://support.google.com/store/answer/3333000).
@@ -77,8 +77,8 @@ Bu .csv dosyası bir metin düzenleyicisinde görüntülendiğinde aşağıdaki 
 ```
 
 > [!IMPORTANT]
-> Bazı Android ve iOS cihazları birden çok IMEI numarasına sahiptir. Intune, kayıtlı cihaz başına yalnızca bir IMEI numarasını okur. IMEI numarasını içeri aktarıyorsanız ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse cihaz şirkete ait değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değerini görüntüler.<br>
->Ayrıca Note: seri numaralar, iOS cihazları için önerilen tanımlama biçimidir.
+> Bazı Android ve iOS/ıpados cihazlarında birden çok ıMEı numarası vardır. Intune, kayıtlı cihaz başına yalnızca bir IMEI numarasını okur. IMEI numarasını içeri aktarıyorsanız ancak bu numara Intune tarafından envantere alınan IMEI numarası değilse cihaz şirkete ait değil, kişisel cihaz olarak sınıflandırılır. Bir cihaz için birden fazla IMEI numarası içe aktarırsanız envantere alınmayan numaralar kayıt durumunda **Bilinmeyen** değerini görüntüler.<br>
+>Ayrıca Note: seri numaralar ıios/ıpadosos cihazları için önerilen tanımlama biçimidir.
 >Android Seri numaralarının mevcut veya benzersiz olacağı garanti değildir. Seri numarasının güvenilir bir cihaz kimliği olup olmadığını anlamak için cihaz sağlayıcınızla görüşün.
 >Cihazın Intune’a gönderdiği seri numaralar, cihazdaki Android Ayarları/Hakkında menülerinde gösterilen kimlikle eşleşmeyebilir. Cihaz üreticisi tarafından belirtilen seri numarasının türünü doğrulayın.
 >Nokta (.) içeren seri numaralara sahip bir dosya yükleme denemesi, karşıya yükleme işleminin başarısız olmasına yol açar. Nokta içeren seri numaraları desteklenmez.

@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 4e93cb7f2d503704251b16d1af03924358020d4e
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77156641"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415093"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
 
@@ -126,23 +126,5 @@ Android sürüm 4. x çalıştıran Intune 'A kayıtlı ortak cihazların listes
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
 Uygulamalarınızı en son Intune uygulama SDK 'Sı ile sarın. Ayrıca, kişisel cihazlarda son kullanıcıların yükseltmesini bildirmek için "En düşük işletim sistemi sürümünü gerektir (yalnızca uyarı)" koşullu başlatma ayarını da ayarlayabilirsiniz.
-
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Intune değişiklik planı: Windows 7 için destek sonuna yaklaşıyor<!-- 3042987 -->
-MC148476 içinde, son 2018 Eylül ' de ve yeniden MC176794 ' de 2019 ' de, Windows 7, 14 Ocak 2020 tarihinde genişletilmiş destek sonuna ulaştı. Bu sırada Intune, Windows 7 çalıştıran cihazların desteğini devre dışı bırakacaktır, böylece yeni teknolojileri desteklemeye ve harika yeni son kullanıcı deneyimleri sağlamaya yönelik yatırımımızı odaklamaya devam edebilir. Bu tarihten sonra, Windows 7 BILGISAYARıNıZı korumaya yardımcı olan teknik yardım ve otomatik güncelleştirmeler artık Intune aracılığıyla kullanılamayacak. Microsoft, artık mevcut olmayan hizmet veya destek gerektiren bir senaryoya engel olmak için 2020 Ocak 'tan önce Windows 10 ' a geçmeniz önerilir. [Burada](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)Windows destek yaşam döngüsü hakkında daha fazla bilgi edinin.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-Bu iletiyi, şu anda eski Intune PC yazılım Aracısı 'nı kullanarak Windows 7 bilgisayarlarını yönettiğiniz için alıyorsunuz. Bir yıldan daha az Windows 7 genişletilmiş destek 'in sonundan önce kaldığı için, kuruluşunuzun Windows 10 ' a en kısa sürede yükseltmeye başlamasını kesinlikle öneririz.  
-
-BILGISAYAR yönetimi özellikleri doğrudan Windows 10 işletim sisteminde yerleşiktir ve artık Windows 7 için Intune yazılım istemcisi gibi bir istemci aracısını yüklemeniz gerekmez. Microsoft, Windows 8.1 başlayarak Windows bilgisayarlarını sağlamak, yapılandırmak, güncelleştirmek ve yönetmek için mobil cihaz yönetimi (MDM) mimarisini kullanır. Intune 'u ayarladıktan sonra, Windows 10 bilgisayarlarını MDM kanalı aracılığıyla [Intune 'a](..\windows-enroll.md) kaydederek Windows kaydını kolaylaştırabilirsiniz. Windows 10 bilgisayarlarınızı yönetmek için bu "aracısız" MDM yönetimi çözümünü kullanmanızı öneririz.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Kuruluşunuzun bu eylem planını anında kabul etmeyi öneririz:
-
-- 14 Ocak 2020 tarihinden önce Windows 7 ' yi planlayın ve Windows 10 ' a yükseltin.
-- Mevcut Windows 7 PC 'nizi Windows 10 ' a yükseltme hakkında daha fazla bilgi edinmek için [Windows 10 dağıtım desteği](https://docs.microsoft.com/windows/deployment/) ' ni araştırın.
-- Microsoft uygulama uyumluluğu taahhüdüne yardımcı olacak, FastTrack aracılığıyla sunulan [Masaüstü uygulamasını](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) gözden geçirin.
-- MDM yönetimini kullanarak Windows 10 yönetmek için, mevcut eski Intune yazılım istemcisi tarafından yönetilen ve Microsoft tarafından önerilen çözüme geçiş yapın. Tüm yeni Windows 10 bilgisayarlarını Azure portal Intune için MDM yönetimini kullanarak kaydedin.
-
-Daha fazla bilgi için [buraya blog gönderisine](https://aka.ms/Windows7_Intune)bakın.
 
 
