@@ -25,11 +25,11 @@
           href: device-restart.md
     - name: Apple cihaz eylemleri
       items:
-        - name: Kayıp iOS cihazı bulma
+        - name: Kayıp iOS/iPadOS cihazı bulma
           href: device-locate.md
-        - name: iOS kayıp modunu etkinleştirme
+        - name: iOS/iPadOS kayıp modunu etkinleştirme
           href: device-lost-mode.md
-        - name: iOS denetimli modunu açma
+        - name: iOS/iPadOS denetimli modunu açma
           href: device-supervised-mode.md
         - name: macOS cihazını silme
           href: device-erase.md
