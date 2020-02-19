@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c6383b19943b8c501f86894a8c49b2130cb582a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414989"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437894"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -59,7 +59,7 @@ Uygulama koruma ilkesi ayarları tablosunda **Ayar**, **Değer**, ve **Eylem** s
 - Cihaz modeli/modelleri
 - İzin verilen en fazla cihaz tehdit düzeyi
 
-**Cihaz modelleri** ayarını kullanmak için iOS model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini ekleyin. Bu değerler büyük/küçük harfe duyarlı değildir. ' Cihaz modeli (ler) ' girişi için Intune raporlama kapsamında, [HockeyApp 'in destek belgelerindeki](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) veya bu [üçüncü taraf GitHub deposundaki](https://gist.github.com/adamawolf/3048717)cihaz türü sütununda bir iOS model tanımlayıcısı bulabilirsiniz.<br>
+**Cihaz model** ayarlarını kullanmak Için, IOS/ıpados model tanımlayıcılarının noktalı virgülle ayrılmış bir listesini girin. Bu değerler büyük/küçük harfe duyarlı değildir. ' Cihaz modeli (ler) ' girişi için Intune raporlama kapsamında, [HockeyApp 'in destek belgelerindeki](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) veya bu [üçüncü taraf GitHub deposundaki](https://gist.github.com/adamawolf/3048717)cihaz türü sütununda bir iOS/ıpados model tanımlayıcısı bulabilirsiniz.<br>
 Örnek giriş: *iPhone5,2;iPhone5,3*
 
 Son kullanıcı cihazlarında Intune istemcisi, Intune’un Uygulama Koruma İlkeleri'nde belirtilen cihaz modeli dizelerinin basit eşleştirmesine dayalı olarak eylem gerçekleştirir. Eşleştirme tamamen cihazın bildirdiklerine bağlıdır. BT yöneticisi olarak, çeşitli cihaz üreticileri ve modelleri temelinde ve küçük bir kullanıcı grubunu hedefleyerek bu ayarı test etmenizi ve beklenen davranışın gerçekleştiğinden emin olmanızı öneririz. Varsayılan değer **Yapılandırılmadı**'dır.<br>
@@ -67,8 +67,8 @@ Aşağıdaki eylemlerden birini ayarlayın:
 - Belirtilenlere izin ver (Belirtilmeyenleri engelle)
 - Belirtilenlere izin ver (Belirtilmeyenleri sil)
 
-**BT yöneticisi aynı Intune kullanıcısı için aynı uygulamaları hedefleyen ilkeler arasında farklı bir iOS model tanımlayıcısı listesi girerse ne olur?**<br>
-Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışmalar ortaya çıktığında, Intune normalde en kısıtlayıcı yaklaşımı benimser. Dolayısıyla, sonuçta hedeflenen Intune kullanıcısının açtığı hedef uygulamaya gönderilen ilke, aynı uygulama/kullanıcı bileşimini hedefleyen *İlke A* ile *İlke B*'de listelenen iOS model tanımlayıcılarının kesişimi olabilir. Örneğin, *İlke A* "iPhone5,2;iPhone5,3" öğelerini belirtirken *İlke B* "iPhone5,3" öğelerini belirtiyor olabilir. Sonuçta hem *İlke A* hem de *İlke B* ile hedeflenen Intune kullanıcısının ilkesi "iPhone5,3" olacaktır. 
+**BT Yöneticisi aynı Intune kullanıcısı için aynı uygulamalara hedeflenmiş ilkeler arasında farklı bir iOS/ıpados model tanımlayıcı listesi girdi içeriyorsa ne olur?**<br>
+Yapılandırılan değerler için iki uygulama koruma ilkesi arasında çakışmalar ortaya çıktığında, Intune normalde en kısıtlayıcı yaklaşımı benimser. Bu nedenle, hedeflenen Intune kullanıcısı tarafından açılan hedeflenen uygulamaya gönderilen sonuç ilkesi, aynı uygulama/Kullanıcı birleşimine hedeflenmiş ilke *A* ve *ilke B* 'Deki listelenen iOS/ıpados modeli tanımlayıcılarını kesişmesi olacaktır. Örneğin, *İlke A* "iPhone5,2;iPhone5,3" öğelerini belirtirken *İlke B* "iPhone5,3" öğelerini belirtiyor olabilir. Sonuçta hem *İlke A* hem de *İlke B* ile hedeflenen Intune kullanıcısının ilkesi "iPhone5,3" olacaktır. 
 
 ### <a name="android-policy-settings"></a>Android ilkesi ayarları
 

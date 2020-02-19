@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f4fca28329a5cd0adc7269929c4b2c2807bebf5e
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755604"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437962"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Intune 'da cihaz eylemlerinin sorunlarını giderme
 
@@ -34,7 +34,7 @@ Microsoft Intune, cihazlarınıza yardımcı olacak çok sayıda eyleme sahiptir
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Portalda "Etkinleştirme Kilidi devre dışı bırak" eylemine tıkladım, ancak cihazda hiçbir şey yapılmadı.
 Bu beklenen bir değer. Devre dışı bırakma Etkinleştirme Kilidi eylemini başlattıktan sonra, Intune Apple 'dan güncelleştirilmiş bir kod istedi. Cihazınız Etkinleştirme Kilidi ekranında olduktan sonra kodu geçiş kodu alanına el ile girersiniz. Bu kod yalnızca 15 gün için geçerlidir. bu nedenle, silme işlemini gerçekleştirmeden önce eyleme tıkladıktan sonra kodu kopyalamanız gerekir.
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>İOS cihazımın donanımla genel bakış dikey penceresinde devre dışı bırak Etkinleştirme Kilidi kodunu neden görmüyorum?
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>İOS/ıpados cihazımın donanım genel bakış dikey penceresinde neden devre dışı bırak Etkinleştirme Kilidi kodunu görmüyorum?
 En olası nedenler şunlardır:
 - Kodun süresi doldu ve hizmetten temizlendi.
 - Cihaz, Etkinleştirme Kilidi izin vermek için cihaz kısıtlama Ilkesiyle denetlenmiyor.
@@ -43,7 +43,7 @@ Aşağıdaki sorguyla Graph Explorer 'da kodu kontrol edebilirsiniz:
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>Etkinleştirme Kilidi devre dışı bırakma eylemi, iOS cihazım için neden gri renkte?
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>Etkinleştirme Kilidi devre dışı bırakma eylemi, iOS/ıpados cihazım için neden gri renkte?
 En olası nedenler şunlardır: 
 - Kodun süresi doldu ve hizmetten temizlendi.
 - Cihaz, Etkinleştirme Kilidi izin vermek için cihaz kısıtlama Ilkesiyle denetlenmiyor.
@@ -90,7 +90,7 @@ Sıfırlama belirteci cihazda etkinleştirilmediği için. Sıfırlama belirteci
 3. Son kullanıcının, geçiş kodu sıfırlamasına izin vermek için ikincil istemi kabul etmesi gerekir.
 Bu adımlar tamamlandıktan sonra, artık bu yanıtı almamanız gerekir.
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>Geçiş kodunu kaldır eylemini yayındığımda, neden iOS cihazmda yeni bir geçiş kodu ayarlayacağım?
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>Geçiş kodunu kaldır eylemini yayımladığımda, neden iOS/ıpados cihazım üzerinde yeni bir geçiş kodu ayarlaması istendim?
 Uyumluluk ilkelerinizin bir geçiş kodu gerektirdiğinden.
 
 ## <a name="next-steps"></a>Sonraki adımlar

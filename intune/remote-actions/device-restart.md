@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure ile cihazları yeniden başlatma | Microsoft Docs
-description: Azure portalında Microsoft Intune'u kullanarak Yeniden başlatma uzak eylemiyle Windows ve iOS cihazlarını yeniden başlatın.
+description: Uzak yeniden başlatma eylemini kullanarak Azure portal Microsoft Intune kullanarak Windows ve iOS/ıpados cihazlarını yeniden başlatın.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517550"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415611"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Cihazları Intune ile uzaktan başlatma
 
@@ -35,10 +35,10 @@ Cihazı **Yeniden Başlat** eylemi, seçtiğiniz cihazın yeniden başlatılmas�
 - Windows - Windows 8.1 ve üzerinde desteklenir
 - Windows Phone - Windows Phone 8.1 ve sonraki sürümlerde desteklenir
 - Android bilgi noktası cihazları-Android 7,0 ve üzeri sürümlerde desteklenir
-- iOS - Desteklenir
+- iOS/ıpados-destekleniyor
 
     > [!Note]  
-    > Bu komut için, denetlenen bir cihaz ve **Cihaz Kilidi** erişim hakkı gerekir. Cihaz hemen yeniden başlatılır. Geçiş koduyla kilitlenen iOS cihazları, yeniden başlatma sonrasında Wi-Fi ağına yeniden katılmaz. Yeniden başlatma sonrasında, cihaz sunucuyla iletişim kuramayabilir.
+    > Bu komut için, denetlenen bir cihaz ve **Cihaz Kilidi** erişim hakkı gerekir. Cihaz hemen yeniden başlatılır. Geçiş kodu-kilitli iOS/ıpados cihazları yeniden başlattıktan sonra Wi-Fi ağına yeniden katılmaz. Yeniden başlatma sonrasında, cihaz sunucuyla iletişim kuramayabilir.
 - macOS - Desteklenmiyor
 - Android ve Android iş profili cihazları - Desteklenmiyor
 

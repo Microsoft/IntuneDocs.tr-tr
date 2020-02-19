@@ -17,24 +17,24 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49bf59805476ebbcce3148738e40bfd11e4744eb
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: e7214c4d262c332933e88af2cc158870bd844c5d
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839323"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415463"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Mobil uygulama yönetimi sorunlarını giderme
 
 Bu konu, Intune Uygulama Koruması kullanılırken gerçekleşen yaygın sorunlara çözümler sağlar (Ayrıca MAM veya mobil uygulama yönetimi olarak da adlandırılır).
 
-Bu bilgiler sorununuzu çözmezse, yardım almanın daha fazla yolunu öğrenmek için bkz. [Microsoft Intune için destek alma](../fundamentals/get-support.md).
+Bu bilgiler sorununuzu çözmezse, yardım almanın diğer yollarını öğrenmek için bkz. [Microsoft Intune için destek alma](../fundamentals/get-support.md).
 
 ## <a name="common-it-administrator-issues"></a>Yaygın BT yöneticisi sorunları
 
 Bunlar, Intune uygulama koruma ilkelerini kullanırken BT yöneticisinin karşılaşabileceği yaygın sorunlardır.
 
-| Sorun | Description | Çözüm |
+| Sorun | Açıklama | Çözüm |
 | -- | -- | -- |
 | İlke, Skype Kurumsal’a uygulanmamış | Azure portalında yapılan cihaz kaydı olmadan uygulama koruma ilkesi, iOS ve Android cihazlardaki Skype Kurumsal uygulaması için uygulanmıyor. | Skype Kurumsal’ın modern kimlik doğrulaması için ayarlanması gerekir.  Skype için modern kimlik doğrulamasını ayarlamak için lütfen [Modern kimlik doğrulaması için kiracınızı etkinleştirme](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) bölümündeki yönergeleri izleyin. |
 | Office uygulama ilkesi uygulanmamış | Uygulama koruma ilkeleri, tüm kullanıcılar için hiçbir [desteklenen Office Uygulamasına](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) uygulanmıyor. | Kullanıcının Intune lisansı olduğunu ve Office uygulamalarının dağıtılmış bir uygulama koruma ilkesi tarafından hedeflendiğini doğrulayın. Yeni dağıtılmış bir uygulama koruma ilkesinin uygulanması 8 saate kadar sürebilir. |
@@ -42,7 +42,7 @@ Bunlar, Intune uygulama koruma ilkelerini kullanırken BT yöneticisinin karşı
 |Uygulama koruma ilkesi raporlarında eksik kullanıcı hesapları var | Yönetim konsolu raporları, uygulama koruma ilkesinin en son dağıtıldığı kullanıcı hesaplarını göstermiyor. | Kullanıcı bir uygulama koruma ilkesiyle henüz hedeflenmişse, bu kullanıcının raporlarda hedeflenen kullanıcı olarak görünmesi 24 saate kadar sürebilir. |
 | İlke değişiklikleri çalışmıyor | Uygulama koruma ilkesinde yapılan değişikliklerin ve güncelleştirmelerin uygulanması 8 saate kadar sürebilir. | Mümkünse, son kullanıcı uygulama oturumunu kapatıp hizmetle eşitlemeyi zorlayarak tekrar oturum açabilir. |
 | Uygulama koruma ilkesi DEP ile çalışmıyor | Uygulama koruma ilkesi Apple DEP cihazlara uygulanmıyor. | Lütfen Kullanıcı Benzeşimi’ni Apple Aygıt Kayıt Programı (DEP) ile kullandığınızdan emin olun. Kullanıcı benzeşimi, DEP altında kullanıcı kimlik doğrulaması gerektiren her uygulama için gereklidir. <br><br>İOS DEP kaydı hakkında daha fazla bilgi için [iOS cihazlarını Apple 'ın aygıt kayıt programı otomatik olarak kaydetme](../enrollment/device-enrollment-program-enroll-ios.md) bölümüne bakın.|
-| Veri aktarım ilkesi iOS ile çalışmıyor | **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** ve **Uygulamanın diğer uygulamalardan veri almasına izin ver** ilkeleri iOS’ta veri aktarımı gerçekleştiremiyor. | Bkz. [Microsoft Intune iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md). |
+| Veri aktarım ilkesi iOS ile çalışmıyor | **Uygulamanın diğer uygulamalara veri aktarmasına** ve **uygulamanın diğer uygulamalardan veri almasına** Izin ver Ilkesi, iOS/ıpados 'daki veri aktarımını başarıyla yönetemez. | Bkz. [Microsoft Intune iOS uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md). |
 
 ## <a name="common-end-user-issues"></a>Yaygın son kullanıcı sorunları
 
@@ -58,7 +58,7 @@ Yaygın son kullanıcı sorunları aşağıdaki kategorilere ayrılmıştır:
 
 Platfveyam | Senaryo | Açıklama |
 ---| --- | --- |
-iOS | Son kullanıcı, veri aktarımı ilkesi **Yalnızca yönetilen uygulamalar** veya **Uygulama yok** olarak ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS paylaşım uzantısını kullanabilir. Bu veri sızıntısına neden olmaz mı? | Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle **Intune, “kurumsal” verileri uygulama dışında paylaşmadan önce şifreler**. Bunu, yönetilen uygulama dışında "kurumsal" dosyayı açmaya çalışarak doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
+iOS | Son kullanıcı, veri aktarımı ilkesi **Yalnızca yönetilen uygulamalar** veya **Uygulama yok** olarak ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS paylaşım uzantısını kullanabilir. Bu veri sızıntısına neden olmaz mı? | Intune uygulama koruma ilkesi cihazı yönetmiyorsa iOS paylaşım uzantısını denetleyemez. Bu nedenle **Intune, “kurumsal” verileri uygulama dışında paylaşmadan önce şifreler**. Bunu, yönetilen uygulama dışında "kurumsal" dosyayı açmaya çalışarak doğrulayabilirsiniz. Bu dosya yalnızca şifrelenmiş ve yönetilen bir uygulama olarak açılmalıdır.
 iOS | Son kullanıcıdan **Microsoft Authenticator uygulamasını neden yüklemesi isteniyor** | Bu, uygulama tabanlı koşullu erişim uygulandığında gereklidir, bkz. [onaylanan istemci uygulaması gerektir](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access).
 Android | MAM uygulama korumasını cihaz kaydı olmadan kullanıyor olsam bile son kullanıcının neden **Şirket Portalı uygulamasını yüklemesi gerekir**?  | Android’de, uygulama koruma işlevlerinin çoğu Şirket Portalı uygulamasında yerleşik olarak bulunur. **Şirket Portalı uygulaması her zaman gerekli olsa bile cihaz kaydı gerekli değildir**. Kayıt olmadan uygulama koruması için son kullanıcının cihazında Şirket Portalı uygulamasının yüklü olması yeterlidir.
 iOS/Android | Uygulama koruma ilkesi, Outlook uygulamasında taslak e-postasına uygulanmadı | Outlook hem kurumsal hem de kişisel bağlamı desteklediğinden, taslak e-postada MAM uygulamaz.

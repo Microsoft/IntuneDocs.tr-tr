@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f79a9bc845cb87c0536552b4d214cb82280b041
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 1a9ce1a881e9a30d0f18cb676e7f7f11c4b5c8b1
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414674"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437843"
 ---
 # <a name="intune-app-installation-error-reference"></a>Intune uygulama yükleme hatası başvurusu
 
@@ -62,7 +62,7 @@ Aşağıdaki hata iletileri ve açıklamaları, iOS/ıpados yükleme hatalarıyl
 | 0x87D11388 | -2016341112 | iOS/ıpados cihazı şu anda meşgul.  | İOS/ıpados cihazı meşguldü ve bu, bir hatayla sonuçlandı. Cihaz kilitlendi. Uygulamayı yüklemek için kullanıcının cihazın kilidini açması gerekir. |
 | 0x87D13B64 | -2016330908 | Uygulama yüklemesi başarısız oldu.  | Uygulama yükleme hatası oluştu. Bu hatayı gidermek için iOS/ıpados konsol günlükleri gereklidir. |
 | 0x87D13B66 | -2016330906 | Uygulama yönetiliyor, ancak süresi doldu veya Kullanıcı tarafından kaldırıldı.  | Kullanıcı uygulamayı açıkça kaldırdı ya da uygulamanın geçerliliği, ancak indirilemedi ya da uygulama algılaması cihazdaki Yanıtla eşleşmiyor.   Ayrıca, bu hata bir iOS/ıpados 9.2.2 platform hatasına bağlı olarak gerçekleşebilir. |
-| 0x87D13B60 | -2016330912 | Uygulama yüklenmek üzere zamanlandı, ancak işlemi tamamlaması için bir kullanım kodu gerekiyor.  | Bu hata genellikle ücretli uygulamalar olan iOS/ıpados Mağazası uygulamalarıyla oluşur. |
+| 0x87D13B60 | -2016330912 | Uygulama yüklenmek üzere zamanlandı, ancak işlemi tamamlaması için bir kullanım kodu gerekiyor.  | Bu hata normalde ücretli uygulamalar olan iOS Store uygulamalarıyla oluşur. |
 | 0x87D1041C | -2016345060 | Yükleme başarıyla tamamlandıktan sonra uygulama algılanmadı.  | Uygulama algılama işlemi cihazdan gelen yanıtla eşleşmedi. |
 | 0x87D13B62 | -2016330910 | Kullanıcı uygulamayı yüklemeye yönelik teklifi reddetti.  | İlk uygulama yükleme sırasında kullanıcı iptal düğmesine tıkladı. Kullanıcıdan bir sonraki sefer Install isteğini kabul etmesini isteyin. |
 | 0x87D13B63 | -2016330909 | Kullanıcı, uygulamayı güncelleştirme teklifini reddetti.  | Son Kullanıcı güncelleştirme işlemi sırasında iptal ' i tıkladı. Gerekli olarak dağıtın veya yükseltme isteğini kabul etmek için kullanıcıyı eğitin. |
@@ -83,7 +83,7 @@ Aşağıdaki hata iletileri ve açıklamaları, iOS/ıpados yükleme hatalarıyl
 | 0x87d13b69 | -2016330903 | Cihaz VPP lisansı yalnızca iOS/ıpados 9.0 + cihazları için geçerlidir.  | Etkilenen iOS/ıpados cihazlarını iOS/ıpados 9.0 + sürümüne yükseltin. |
 | 0x87d13b8f | -2016330865 | Uygulama cihaza yüklenir, ancak yönetilmez.  | Bu hata yalnızca LOB uygulamalarında meydana gelir. Uygulama, Intune dışında yüklendi. Bu hatayı gidermek için, uygulamayı cihazdan kaldırın. Cihazın eşitlenmesi bir sonraki sefer olduğunda, cihazın uygulamayı Intune 'dan yüklemesi gerekir. |
 | 0x87d13b68 | -2016330904 | Kullanıcı, uygulama yönetimini reddetti  | Kullanıcıdan uygulama yönetimini kabul etmesini isteyin. |
-| 0x87d1279d | -2016335971 | Bilinmeyen hata.  | Bu hata iOS/Idos Mağazası uygulamalarına, ancak hata senaryosu bilinmiyor. |
+| 0x87d1279d | -2016335971 | Bilinmeyen hata.  | Bu hata iOS Mağazası uygulamaları için gerçekleşir, ancak hata senaryosu bilinmez. |
 | 0x87D13B9D | -2016330851 | Uygulamanın en son sürümü önceki bir sürümden güncelleştirilemedi.  | Bu hata iletisi, uygulama yüklenip yönetiliyorsa, ancak cihazda yanlış sürüm ile birlikte görüntülenir. Bu durum, bir cihazın uygulamayı güncelleştirmek için bir komut aldığında, ancak yeni sürümün henüz yüklenmemiş ve geri raporlanmadığında oluşur. Bu hata, yükseltme dağıtıldıktan sonra bir cihazın ilk iadede raporlanır ve cihaz yeni sürümün yüklü olduğunu bildirene veya farklı bir hata nedeniyle başarısız olana kadar gerçekleşmeyecektir. |
 | 0x87D13B6F | -2016330897 | Intune bağlantınız zaman aşımına uğradı.  | Ağ bağlantısı nedeniyle uygulama bildirimi doğrulama hatası (zaman aşımı) |
 | 0x87D13B70 | -2016330896 | Internet bağlantınızı kaybettiniz.  | Ağ bağlantısı nedeniyle uygulama bildirimi doğrulama hatası (konak bulunamıyor) |

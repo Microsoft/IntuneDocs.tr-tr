@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d2902c876fab12c1ba1e45783327f1ea08ab4d8
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414670"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437979"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Uygulama koruma ilkelerini izleme
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -170,7 +170,7 @@ App Protection. csv dosyası veya uygulama yapılandırması. csv dosyası oluş
     ![Raporu kaydet onay kutusunun ekran görüntüsü](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune, uygulama kayıt KIMLIĞI, Android üreticisi, model ve güvenlik düzeltme eki sürümü ve iOS modelinin yanı sıra ek cihaz raporlama alanları sağlar. Intune 'da, **uygulamalar** > uygulama **koruma durumu** > uygulama koruma **raporu: IOS/ıpados, Android '** i seçerek bu alanlara erişirsiniz. Ayrıca, bu parametreler cihaz üreticisi için **Izin verilenler** listesini (Android), cihaz modeli Için **izin verilenler** listesini (Android ve iOS) ve **En düşük Android güvenlik düzeltme eki sürümü** ayarını yapılandırmanıza yardımcı olur.   
+> Intune, uygulama kayıt KIMLIĞI, Android üreticisi, model ve güvenlik düzeltme eki sürümü ve iOS/ıpados modelinin yanı sıra ek cihaz raporlama alanları sağlar. Intune 'da, **uygulamalar** > uygulama **koruma durumu** > uygulama koruma **raporu: IOS/ıpados, Android '** i seçerek bu alanlara erişirsiniz. Ayrıca, bu parametreler cihaz üreticisi için **Izin verilenler** listesini (Android), cihaz modeli Için **izin verilenler** listesini (Android ve iOS) ve **En düşük Android güvenlik düzeltme eki sürümü** ayarını yapılandırmanıza yardımcı olur.   
  
 ## <a name="see-also"></a>Ayrıca bkz.
 - [İOS/ıpados uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md)

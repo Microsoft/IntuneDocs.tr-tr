@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812490"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415556"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune’da bir cihazın geçiş kodunu sıfırlama veya kaldırma
 
@@ -35,8 +35,8 @@ Bu belgede, Android Enterprise 'ta (eski adıyla Android for Work veya AfW) ciha
 | ---- | ---- |
 | Sürüm 6.x veya öncesindeki Android cihazları | Evet |
 | Cihaz sahibi olarak kaydedilmiş Android Kurumsal cihazları | Evet |
-| iOS cihazları | Evet |
-| Kullanıcı kaydıyla kaydedilen iOS cihazları | Hayır |
+| iOS/ıpados cihazları | Evet |
+| Kullanıcı kaydıyla kaydedilen iOS/ıpados cihazları | Hayır |
 | İş profiliyle kaydedilmiş Android cihazları | Hayır |
 | Sürüm 7.0 veya üzeri Android cihazlar | Hayır |
 | Mac OS | Hayır |
@@ -58,7 +58,7 @@ Yeni bir iş profili geçiş kodu oluşturmak için Geçiş Kodunu Sıfırla eyl
 
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) şu rollerden herhangi biriyle oturum açın: Azure Active Directory genel yönetici, Azure Active Directory Intune Hizmet Yöneticisi, yardım masası Işleci veya rol yöneticisi.
-2. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
+2. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
 3. Yönettiğiniz cihazların listesinden bir cihaz seçin ve sonra da **...Diğer** öğesini seçin. Ardından **Geçiş kodunu kaldır** cihaz uzak eylemini seçin.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Android iş profili geçiş kodlarını sıfırlama
@@ -68,9 +68,9 @@ Yeni bir iş profili geçiş kodu oluşturmak için Geçiş Kodunu Sıfırla eyl
 Sürüm 8.x veya sonrasını çalıştıran ve bir iş profili ile kayıtlı Android Kurumsal cihazlarda, kayıtları tamamlandıktan hemen sonra sıfırlama geçiş kodlarını etkinleştirmeleri için son kullanıcılara bildirim gönderilir. Bir iş profili parolası gerekli ve ayarlıysa bildirim görüntülenir. Geçiş kodu girildikten sonra bildirim kaybolur.
 
 
-## <a name="remove-ios-passcodes"></a>iOS geçiş kodlarını kaldırma
+## <a name="remove-iosipados-passcodes"></a>İOS/ıpados geçiş kodlarını kaldır
 
-Geçiş kodları sıfırlanmak yerine iOS cihazlardan kaldırılır. Ayarlı bir geçiş kodu uyumluluk ilkesi varsa, cihaz kullanıcıdan Ayarlar'da yeni bir geçiş kodu ayarlamasını ister.
+Geçiş yapmak yerine, geçiş kodlarını iOS/ıpados cihazlarından kaldırılır. Ayarlı bir geçiş kodu uyumluluk ilkesi varsa, cihaz kullanıcıdan Ayarlar'da yeni bir geçiş kodu ayarlamasını ister.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

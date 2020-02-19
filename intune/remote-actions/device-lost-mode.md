@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azure ile iOS kayıp modunu etkinleştirme | Microsoft Docs
-description: Microsoft Intune kullanarak kayıp veya çalınan bir iOS cihazının kilit ekranında gösterilen iletiyi özelleştirmek için kayıp modunu açın veya başlatın. Kayıp modu eylemini kullanırken güvenlik ve gizlilik bilgileri hakkındaki ayrıntıları alın.
+title: Microsoft Intune-Azure ile iOS/ıpados kayıp modunu etkinleştirme | Microsoft Docs
+description: Microsoft Intune kullanarak kayıp veya çalınan bir iOS/ıpados cihazının kilit ekranında görüntülenen bir iletiyi özelleştirmek için kayıp modunu açın veya başlatın. Kayıp modu eylemini kullanırken güvenlik ve gizlilik bilgileri hakkındaki ayrıntıları alın.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712235"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415594"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Intune ile iOS cihazlarda kayıp modunu etkinleştirme
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>Intune ile iOS/ıpados cihazlarında kayıp modunu etkinleştirme
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-**Kayıp modu** cihaz eylemi, kayıp veya çalınan iOS cihazlarında kayıp modunu etkinleştirmenize yardımcı olur. Bu mod, cihazın kilit ekranında gösterilecek iletiyi ve telefon numarasını girmenize olanak tanır. Kayıp modu kullanmak için cihazın denetimli modda olan, şirkete ait bir iOS cihazı olması gerekir.
+**Kayıp modu** cihaz eylemi, kayıp veya çalınan IOS/ıpados cihazlarında kayıp modunu etkinleştirmenize yardımcı olur. Bu mod, cihazın kilit ekranında gösterilecek iletiyi ve telefon numarasını girmenize olanak tanır. Kayıp modu kullanmak için, cihazın denetimli modda olan şirkete ait bir iOS/ıpados cihazı olması gerekir.
 
 ## <a name="supported-platforms"></a>Desteklenen platformlar
 
-- iOS 9.3 ve üzeri
+- iOS/ıpados 9,3 ve üzeri
 
 Bu özellik aşağıdakilerde desteklenmez: 
 - Windows
@@ -42,8 +42,8 @@ Bu özellik aşağıdakilerde desteklenmez:
 ## <a name="enable-lost-mode"></a>Kayıp modunu etkinleştirme
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
-3. **Cihazlar**’ı ve ardından **Tüm Cihazlar**’ı seçin.
-4. Yönettiğiniz cihazların listesinden bir iOS cihazı seçin ve **kayıp modu (yalnızca denetimli)** seçin.
+3. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
+4. Yönettiğiniz cihazların listesinden bir iOS/ıpados cihazı seçin ve **kayıp modu (yalnızca denetimli)** seçin.
 5. **Kayıp modu**altında **Etkinleştir**' i seçin.
 6. **Kilit ekranında görüntülenecek ileti**içinde, cihazın kilit ekranında görüntülenecek bir ileti yazın.
 7. İsteğe bağlı olarak, **görüntülenecek telefon numarası** kutusuna bir telefon numarası girin.

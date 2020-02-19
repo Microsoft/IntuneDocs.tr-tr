@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b52a914e1577fe13f0bec970a9c3ebe38aa2cdc8
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414954"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437860"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune Uygulama Koruması Ilkesi (uygulama) veri aktarımı ilkesi için özel durumlar oluşturma
 
@@ -66,7 +66,7 @@ MAM veri aktarımı ilkesine bir özel durum olarak **Webex** paketinin eklenmes
     
     <code>com.samsung.android.messaging</code>
 
-- Android **sertifika yükleyicisi** örneği: Android Için Outlook 'un Android keystore 'A bir S/MIME sertifikası (e-posta eki olarak sunulan) yükleyebilmesi Için yerel **sertifika yükleyicisi** uygulamasını muaf tutmak üzere şu dize için veri aktarımı özel durumu eklemeniz gerekir: <code>com.android.certinstaller</code>. Daha fazla bilgi için bkz. [iOS ve Android Için Outlook 'Ta duyarlılık etiketleme ve koruma](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
+- Android **sertifika yükleyicisi** örneği: Android Için Outlook 'un Android keystore 'A bir S/MIME sertifikası (e-posta eki olarak sunulan) yükleyebilmesi Için yerel **sertifika yükleyicisi** uygulamasını muaf tutmak üzere şu dize için veri aktarımı özel durumu eklemeniz gerekir: <code>com.android.certinstaller</code>. Daha fazla bilgi için bkz. [iOS Için Outlook 'ta/ıpados ve Android Için duyarlılık etiketleme ve koruma](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
