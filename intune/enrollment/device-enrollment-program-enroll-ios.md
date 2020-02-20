@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415370"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473749"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>İOS/ıpados cihazlarını Apple 'ın Aygıt Kayıt Programı otomatik olarak kaydetme
 
@@ -77,6 +77,9 @@ Bir belirteç oluşturmak için Apple Business Manager veya Apple Okul Yönetici
     ![Bir kayıt programı belirteci alın.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. **Onaylıyorum**’u seçerek Microsoft’un Apple’a kullanıcı ve cihaz bilgilerini göndermesine izin verin.
+
+> [!NOTE]
+> Intune ortak anahtar sertifikasını indirmek için adım 2 ' den sonra devam ederseniz, Sihirbazı kapatmayın veya bu sayfadan uzaklaşmayın. Bunun yapılması, indirdiğiniz sertifikayı geçersiz kılar ve bu işlemi tekrar yinelemeniz gerekecektir. Bu durumla karşılaşırsanız, genellikle Inceleme ve oluşturma sekmesindeki Oluştur düğmesinin gri olduğunu ve işlemi tamamlayamayacağınızı görürsünüz.
 
    ![Apple Sertifikaları çalışma alanındaki Kayıt Programı Belirteci panelinde bulunan ortak anahtarı indirme öğesinin ekran görüntüsü.](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 
