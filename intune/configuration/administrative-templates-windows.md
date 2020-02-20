@@ -52,7 +52,7 @@ Bu makalede, Windows 10 cihazları için şablon oluşturma adımları listeleni
     - **Platform**: **Windows 10 ve üstünü**seçin.
     - **Profil türü**: **Yönetim Şablonları**seçin.
 
-4. **Oluştur**’u seçin. Yeni pencerede, açılan listeyi seçin ve **Tüm ürünler**' i seçin. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
+4. **Oluştur**’u seçin. Yeni pencerede, açılan listeyi seçin ve **Tüm ürünler**' i seçin. Ayrıca, ayarları yalnızca **Windows** ayarlarını göstermek, yalnızca **Office** ayarlarını göstermek veya yalnızca **Microsoft Edge sürüm 77 veya üzeri** ayarları göstermek için filtreleyebilirsiniz:
 
     > [!div class="mx-imgBorder"]
     > ![, Intune 'daki yönetim şablonlarındaki tüm pencereleri veya tüm Office ayarlarını göstermek için listeyi filtreleyin](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)

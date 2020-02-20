@@ -291,7 +291,7 @@ Bu bölümde, Intune 'da ve Grup İlkesi Yönetimi Düzenleyicisi eşleşen ilke
 #### <a name="compare-an-edge-policy"></a>Kenar ilkesini karşılaştırın
 
 1. Cihaz Yönetimi yönetim merkezinde, **yönetici şablonunuz-Windows 10 öğrenci cihazları** şablonuna gidin.
-2. Aşağı açılan listeden **Edge sürüm 77 ve üstünü** seçin.
+2. Aşağı açılan listeden **Microsoft Edge sürüm 77 ve üstünü** seçin.
 3. **Başlangıç**için arama yapın. Kullanılabilir ayarlara dikkat edin.
 4. Grup İlkesi Yönetimi Düzenleyicisi, şu ayarları bulun:
 
