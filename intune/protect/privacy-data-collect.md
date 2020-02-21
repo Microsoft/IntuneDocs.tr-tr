@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509073"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514243"
 ---
 # <a name="data-collection-in-intune"></a>Intune’da veri toplama
 
@@ -60,7 +60,7 @@ Intune tarafından toplanan tanımlanan veriler şunları içerebilir ancak bu k
   - ICCID
   - Telefon numarası
 - Aşağıdaki etkinliklere ilişkin veriler dahil olmak üzere denetim günlüğü bilgileri
-  - Bilgisayarlarda
+  - Manage
   - Oluştur
   - Güncelleştirme (düzenleme)
   - Sil
@@ -112,7 +112,7 @@ Intune tarafından toplanan takma ad kullanılan veriler şunları içerebilir a
   - Hesap kimliği
   - EAS cihaz kimliği
   - Platforma özgü kimlikler
-  - iOS cihazlar için AppleID
+  - İOS için AppleID/ıpados cihazları
   - Mac cihazlar için Mac Adresi
   - Windows cihazlar için Windows kimliği
 - Yönetilen uygulama bilgileri
@@ -136,7 +136,7 @@ Intune tarafından toplanan toplam veriler şunları içerebilir ancak bu kadarl
   - installedDeviceCount: Uygulamanın yüklü olduğu cihaz sayısı.
   - notApplicableDeviceCount: Uygulamanın kullanılamadığı cihaz sayısı.
   - notInstalledDeviceCount: Uygulamanın kullanılabildiği ancak yüklü olmadığı cihaz sayısı.
-  - pendingInstallDeviceCount: Uygulamanın kullanılabildiği ve yüklemenin beklemede olduğu cihaz sayısı.
+  - Pendingınstalldevicecount: uygulamanın geçerli olduğu ve yüklemenin beklediği cihaz sayısı.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

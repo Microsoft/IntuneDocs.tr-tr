@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 47be57dece7867109565622ec2a1380e9a9d57d7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207069"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512509"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Intune kullanarak VPN bağlantıları eklemek için Windows 10 ve Windows holographic cihaz ayarları
 
@@ -121,11 +121,11 @@ Seçtiğiniz ayarlara bağlı olarak, değerlerden bazıları yapılandırılama
 
 - **Bu VPN bağlantısının ağ trafiği kuralları**: VPN bağlantısı için hangi protokollerin, yerel ve uzak bağlantı noktasının ve adres aralıklarının etkinleştirileceğini seçin. Bir ağ trafiği kuralı oluşturmazsanız, bu durumda tüm protokoller, bağlantı noktaları ve adres aralıkları etkinleştirilir. Bir kural oluşturduktan sonra, VPN bağlantısı yalnızca bu kuralda veya ek kurallarda girdiğiniz protokolleri, bağlantı noktalarını ve adres aralıklarını kullanır.
 
-## <a name="conditional-access"></a>Conditional Access
+## <a name="conditional-access"></a>Koşullu Erişim
 
 - **Bu VPN bağlantısı Için koşullu erişim**: istemciden cihaz uyumluluk akışını mümkün olarak sunar. Etkinleştirildiğinde, VPN istemcisi kimlik doğrulama için kullanmak üzere bir sertifika almak için Azure Active Directory (AD) ile iletişim kurar. VPN’nin sertifika kimlik doğrulamasını kullanacak şekilde ayarlanmış olması ve VPN sunucusunun Azure AD tarafından döndürülen sunucuya güvenmesi gerekir.
 
-- **Alternatif sertifika ile çoklu oturum açma (SSO)**: Cihaz uyumluluğu amacıyla Kerberos kimlik doğrulaması için VPN kimlik doğrulama sertifikasından farklı bir sertifika kullanın. Aşağıdaki ayarlarla sertifikayı girin:
+- **Alternatif sertifika ile çoklu oturum açma (SSO)** : Cihaz uyumluluğu amacıyla Kerberos kimlik doğrulaması için VPN kimlik doğrulama sertifikasından farklı bir sertifika kullanın. Aşağıdaki ayarlarla sertifikayı girin:
 
   - **Ad**: Genişletilmiş anahtar kullanımı (EKU) adı
   - **Nesne Tanımlayıcısı**: EKU için nesne tanımlayıcısı
@@ -185,4 +185,4 @@ Bir Kullanıcı listede bir DNS sonekine bağlıysa, Kullanıcı otomatik olarak
 
 Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Sonra, [profili atayın](device-profile-assign.md)ve [durumunu izleyin](device-profile-monitor.md).
 
-[Android](vpn-settings-android.md), [IOS](vpn-settings-ios.md)ve [MacOS](vpn-settings-macos.md) cihazlarında VPN ayarlarını yapılandırın.
+[Android](vpn-settings-android.md), [IOS/ıpados](vpn-settings-ios.md)ve [MacOS](vpn-settings-macos.md) cihazlarında VPN ayarlarını yapılandırın.

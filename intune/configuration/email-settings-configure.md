@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune'da e-posta ayarlarını yapılandırma - Azure | Microsoft Docs
 titleSuffix: ''
-description: Microsoft Intune’da bir e-posta profili oluşturun ve bu profili Android Kurumsal, iOS ve Windows cihazlarına dağıtın. Yönettiğiniz cihazlarda şirket e-postasına bağlanmak için bir e-posta sunucusu ve kimlik doğrulama yönteminin de dahil olduğu yaygın e-posta ayarlarını yapılandırmak için e-posta profilini kullanın.
+description: Microsoft Intune ' de bir e-posta profili oluşturun ve bu profili Android Enterprise, iOS, ıpados ve Windows cihazlarına dağıtın. Yönettiğiniz cihazlarda şirket e-postasına bağlanmak için bir e-posta sunucusu ve kimlik doğrulama yönteminin de dahil olduğu yaygın e-posta ayarlarını yapılandırmak için e-posta profilini kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 110db564dce5ad68d3c2a26b85e60ecbe99e7335
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 908a20098917540e6f823d94c6643d15f13ecf68
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059425"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511094"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune kullanarak cihazlara e-posta ayarları ekleme
 
@@ -29,10 +29,11 @@ Microsoft Intune, kuruluşunuzdaki cihazlara dağıtabileceğiniz farklı e-post
 
 Aşağıdaki cihazlarda yerleşik e-posta ayarlarını yapılandırmak için e-posta profillerini kullanabilirsiniz:
 
-- Android Samsung Knox Standard 4.0 ve üzeri
+- Android Samsung KNOX Standard 4,0 ve üzeri
 - Android Kurumsal
-- iOS 8.0 ve üzeri
-- Windows Phone 8.1 ve üzeri
+- iOS 8,0 ve üzeri
+- ıpados 13,0 ve üzeri
+- Windows Phone 8,1 ve üzeri
 - Windows 10 (masaüstü) ve Windows 10 Mobile
 
 Bu makalede, Microsoft Intune’da e-posta profili oluşturma işlemi gösterilir. Ayrıca daha özel ayarlar için farklı platformlara bağlantılar içerir.
@@ -89,7 +90,7 @@ E-posta profillerinin güvenliği sağlamaya yardımcı olmak için aşağıdaki
 
 Kullanıcı zaten bir e-posta hesabı yapılandırılmışsa e-posta profili platforma bağlı olarak farklı şekilde atanır.
 
-- **iOS**: Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili algılanmıştır. Yinelenen e-posta profili, Intune profilinin atamasını engeller. Bu durumda, Şirket Portalı uygulama kullanıcıya uyumlu olmadıkları konusunda bilgilendirir ve son kullanıcıdan yapılandırılmış profili el ile kaldırmasını ister. Bu senaryoyu önlemeye yardımcı olmak için son kullanıcılarınıza Intune 'un profili ayarlamasına izin veren bir e-posta profili yüklemeden *önce* kaydolmalarını söyleyin.
+- **iOS/ıpados**: Ana bilgisayar adı ve e-posta adresine bağlı olarak var olan, yinelenen bir e-posta profili algılanır. Yinelenen e-posta profili, Intune profilinin atamasını engeller. Bu durumda, Şirket Portalı uygulama kullanıcıya uyumlu olmadıkları konusunda bilgilendirir ve son kullanıcıdan yapılandırılmış profili el ile kaldırmasını ister. Bu senaryoyu önlemeye yardımcı olmak için son kullanıcılarınıza Intune 'un profili ayarlamasına izin veren bir e-posta profili yüklemeden *önce* kaydolmalarını söyleyin.
 
 - **Windows:** Konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğu algılanır. Intune, son kullanıcı tarafından oluşturulan mevcut e-posta profilinin üzerine yazar.
 

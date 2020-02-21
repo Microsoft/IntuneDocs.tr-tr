@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414064"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514736"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Son kullanıcıların Şirket Portalı uygulama iletilerini anlamasına yardımcı olma
 
@@ -126,7 +126,7 @@ Kullanıcılarınızı [Günlükleri e-posta ile BT yöneticinize gönderme](/in
 
 Şirket Portalı’nı Windows Bilgi Koruması (WIP) uygulama koruma ilkesindeki **İzin verilen uygulamalar** veya **Muaf uygulamalar** listelerine ekleyin. Daha fazla bilgi için bkz. [Intune ile Windows Bilgi Koruması (WIP) uygulama koruma ilkesi oluşturma ve dağıtma](../apps/windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>iOS cihazınızda iOS şirket uygulamasını (iş kolu uygulaması) onaylama 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>İOS/ıpados cihazındaki iOS/ıpados şirket uygulamasını (iş kolu uygulaması) onaylama 
 
 ### <a name="where-it-appears"></a>Göründüğü yer
 
@@ -136,7 +136,7 @@ Cihazınız, kuruluşunuz tarafından geliştirilen ancak App Store'da bulunmaya
 
 ### <a name="what-it-means"></a>Anlamı
 
-Bu ileti, şirketiniz tarafından geliştirilen bir uygulamayı iOS cihazınızda onaylamak ve yüklemek için iOS cihazı ayarlarınızı değiştirmeniz gerektiğini belirtir.
+Bu ileti, iOS/ıpados cihazınızda şirketiniz tarafından geliştirilen bir uygulamayı onaylamak ve yüklemek için iOS/ıpados cihaz ayarlarınızı değiştirmeniz gerektiği anlamına gelir.
 
 Bu tür uygulamaları Şirket Portalı'ndan yükleyip çalıştırmak için indirdikten sonra aşağıdaki adımları izleyerek onaylamanız gerekir:
 
@@ -156,5 +156,5 @@ Bu tür uygulamaları Şirket Portalı'ndan yükleyip çalıştırmak için indi
     Bu adımların ardından şirket uygulamasını çalıştırabilir ve kullanabilirsiniz.
 
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 [Son kullanıcılarınıza Intune kullanma hakkında söylemeniz gerekenler](end-user-educate.md)

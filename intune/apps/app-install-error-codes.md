@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a9ce1a881e9a30d0f18cb676e7f7f11c4b5c8b1
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ef20d378740eae73c41521d8dfc7f8fdd853fdb9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437843"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513915"
 ---
 # <a name="intune-app-installation-error-reference"></a>Intune uygulama yükleme hatası başvurusu
 
@@ -51,7 +51,7 @@ Bu bölüm hem Cihaz Yöneticisi (DA) hem de Samsung KNOX kaydı ile bahsetmekte
 | 0xC7D14FB1  | -942583887 | Son Kullanıcı, uygulama yüklemesini iptal etti. | Kullanıcı uygulamayı açıkça kaldırdı. Bu hata, Android işletim sistemi yüklemesi etkinliği Kullanıcı tarafından iptal edildiğinde döndürülür. İşletim sistemi yükleme istemi gösterildiğinde kullanıcı iptal düğmesine bastı veya istemin dışına tıkladı. Bu hata yalnızca DA Bu senaryolar için döndürülür. KNOX senaryolarında, kullanıcının yüklemesi istenmez, bu işlem sessizce yapılabilir. Intune kullanıcıların yeniden denemek için tıklayabileceği bir bildirim gösterir. Uygulama kullanılabilir bir uygulama ise, bildirim kapatılabilir. Ancak, uygulama gerekliyse, bu, kapatılabilir. Kullanıcıdan yüklemeyi iptal etmesini isteyin. |
 | 0xC7D14FB9 | -942583879 | Son Kullanıcı, uygulama yüklemesini iptal etti. (Kabul etme isteminde) | Intune tarafından dağıtılan uygulamayı kabul etmek ve istendiğinde uygulamayı yüklemek için kullanıcıyı eğitin. |
 
-## <a name="ios-app-installation-errors"></a>iOS uygulama yükleme hataları
+## <a name="ios-and-ipados-app-installation-errors"></a>iOS ve ıpados uygulama yükleme hataları
 
 Aşağıdaki hata iletileri ve açıklamaları, iOS/ıpados yükleme hatalarıyla ilgili ayrıntıları sağlar. 
 

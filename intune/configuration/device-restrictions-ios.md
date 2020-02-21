@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune'da iOS ayarlarını kullanma - Azure | Microsoft Docs
+title: Microsoft Intune-Azure 'da iOS/ıpados cihaz ayarları | Microsoft Docs
 titleSuffix: ''
-description: İOS cihazlarına ayarlar ekleme, yapılandırma veya oluşturma, parola gereksinimlerini ayarlama, kilitli ekranı denetleme, yerleşik uygulamalar kullanma, kısıtlı veya onaylanan uygulamalar ekleme, Bluetooth cihazlarını işleme, yedekleme ve depolama için buluta bağlanma, bilgi noktası modunu etkinleştirin, etki alanları ekleyin ve kullanıcıların Microsoft Intune ' de Safari web tarayıcısıyla nasıl etkileşime gireceğini denetleyin.
+description: İOS/ıpados cihazlarında ayarlar ekleme, yapılandırma veya oluşturma; parola gereksinimlerini ayarlama, kilitli ekranı denetleme, yerleşik uygulamalar kullanma, kısıtlı veya onaylanan uygulamalar ekleme, Bluetooth cihazlarını işleme, yedekleme ve depolama için buluta bağlanma, bilgi noktası modunu etkinleştirme, etki alanı ekleme ve kullanıcıların Microsoft Intune ' de Safari web tarayıcısıyla nasıl etkileşime gireceğini denetleme.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/04/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.openlocfilehash: 1e352ca0c0100ebe1756d621feb725e040521901
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051618"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513086"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
 Bu makalede iOS ve ıpados cihazlarında denetleyebileceğinizi belirten farklı ayarlar listelenir. Mobil cihaz yönetimi (MDM) yönteminizin bir parçası olarak bu ayarları kullanabilir ve bu sayede özellikleri etkinleştirip devre dışı bırakabilir, parola kuralları uygulayabilir, belirli uygulamalara izin verebilir veya bunları kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
 
-Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra iOS cihazlarınıza atanır veya dağıtılır.
+Bu ayarlar, Intune 'da bir cihaz yapılandırma profiline eklenir ve sonra iOS/ıpados cihazlarınıza atanır veya dağıtılır.
 
 > [!TIP]
 > Bu ayarlar Apple MDM ayarlarını kullanır. Bu ayarlar hakkında daha fazla bilgi için bkz. [Apple 'ın mobil cihaz yönetimi ayarları](https://support.apple.com/guide/mdm/welcome/web) (Apple 'ın Web sitesini açar).
@@ -37,7 +37,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 [Cihaz kısıtlamaları yapılandırma profili oluşturma](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Bu ayarlar, bazı ayarların tüm kayıt seçeneklerine uygulanmasıyla farklı kayıt türleri için geçerlidir. Farklı kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](../ios-enroll.md).
+> Bu ayarlar, bazı ayarların tüm kayıt seçeneklerine uygulanmasıyla farklı kayıt türleri için geçerlidir. Farklı kayıt türleri hakkında daha fazla bilgi için bkz. [iOS/ıpados kaydı](../ios-enroll.md).
 
 ## <a name="general"></a>Genel
 
@@ -45,7 +45,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 - **Kullanım verilerini paylaşma**: cihazın Apple 'a tanılama ve kullanım verileri göndermesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı bu verilerin gönderilmesine izin verir.
 
-- **Ekran yakalama**: cihazda ekran görüntülerini veya ekran yakalamalarını engellemek için **Engelle** ' yi seçin. İOS 9,0 ve üzeri sürümlerde ekran kayıtlarını da engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının ekran içeriğini bir resim veya video olarak yakalamasına olanak tanır.
+- **Ekran yakalama**: cihazda ekran görüntülerini veya ekran yakalamalarını engellemek için **Engelle** ' yi seçin. İOS/ıpados 9,0 ve üzeri sürümlerde, ekran kayıtlarını da engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının ekran içeriğini bir resim veya video olarak yakalamasına olanak tanır.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
@@ -61,6 +61,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 9.3.2 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **Sınıf uygulamasına göre uzak ekran gözlemlemesi**: sınıf uygulamasının cihazda ekranı uzaktan görüntülemesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı Apple Classroom uygulamasının ekranı görüntülemesine izin verir.
 
@@ -68,21 +69,22 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 9,3 ve üzeri
+  - ıpados 13,0 ve üzeri
 
-- **Sınıf uygulamasına göre istem dışı ekran izleme**: **izin ver**olarak ayarlanırsa, öğretmenler öğrenciler hakkında bilgi sahibi olmadan ders uygulamasını kullanarak öğrenciler iOS cihazlarının ekranını sessizce gözlemleyebilirsiniz. Classroom uygulaması kullanılarak sınıfa kaydedilmiş olan öğrenci cihazları, söz konusu dersin öğretmenine otomatik olarak izin verir. **Yapılandırılmadı** (varsayılan) ayarı bu özelliği engeller.
+- **Sınıf uygulamasına göre istem dışı ekran izleme**: **izin ver**olarak ayarlanırsa, öğretmenler, öğrenciler hakkında bilgi sahibi olmadan ders uygulamasını kullanan iOS/ıpados cihazlarının ekranını sessizce gözlemleyebilirsiniz. Classroom uygulaması kullanılarak sınıfa kaydedilmiş olan öğrenci cihazları, söz konusu dersin öğretmenine otomatik olarak izin verir. **Yapılandırılmadı** (varsayılan) ayarı bu özelliği engeller.
 
   Bu ayarı kullanmak için **ekran yakalama** ayarını **Engelle**olarak ayarlayın.
 
 - **Kurumsal Uygulama güveni**: Ayarlar > Genel > profilleri cihaz & cihaz yönetimi ' nde **Kurumsal Geliştirici güveni** Kaldır düğmesini kaldırmak için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının uygulama mağazasından indirilmemiş uygulamalara güvenmeyi seçmesine olanak tanır.
-- **Hesap değişikliği**: **blok**olarak ayarlandığında Kullanıcı, iOS ayarları uygulamasından cihaza özgü ayarları güncelleştiremez. Örneğin kullanıcı yeni cihaz hesapları oluşturamaz ya da kullanıcı adını veya parolasını değiştiremez. **Yapılandırılmadı** (varsayılan) ayarı kullanıcıların bu ayarları değiştirmesine izin verir.
+- **Hesap değişikliği**: **blok**olarak ayarlandığında, Kullanıcı iOS/ıpados ayarları uygulamasından cihaza özgü ayarları güncelleştiremez. Örneğin kullanıcı yeni cihaz hesapları oluşturamaz ya da kullanıcı adını veya parolasını değiştiremez. **Yapılandırılmadı** (varsayılan) ayarı kullanıcıların bu ayarları değiştirmesine izin verir.
 
-  Bu özellik Posta, Kişiler, Takvim ve Twitter gibi iOS ayarları uygulamasından erişilebilen ayarlar için de geçerlidir. Bu özellik hesap ayarları iOS ayarları uygulamasından yapılandırılamayan uygulamalar (Microsoft Outlook uygulaması gibi) için geçerli değildir.
+  Bu özellik ayrıca, e-posta, kişiler, takvim, Twitter ve daha fazlası gibi iOS/ıpados ayarları uygulamasından erişilebilen ayarlar için de geçerlidir. Bu özellik, Microsoft Outlook uygulaması gibi iOS/ıpados ayarları uygulamasından yapılandırılamayan hesap ayarlarına sahip uygulamalar için geçerlidir.
 
 - **Ekran zamanı**: kullanıcıların ekran zamanında (cihaz ayarları) kendi kısıtlamalarını ayarlamalarını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** kullanıcının cihazda cihaz kısıtlamalarını (ebeveyn denetimleri veya içerik ve gizlilik kısıtlamaları gibi) yapılandırmasına izin verir.
 
   Bu ayar **Cihaz ayarlarında kısıtlamaları etkinleştirme** ayarının yeniden adlandırılmış halidir. Bu değişikliğin etkisi:  
   
-  - iOS 11.4.1 ve önceki sürümler: **Block** , son kullanıcıların cihaz ayarlarında kendi kısıtlamalarını değiştirmesini engeller. Davranış aynıdır; ve son kullanıcılar için herhangi bir değişiklik yoktur.
+  - iOS 11.4.1 ve üzeri: **blok** , son kullanıcıların cihaz ayarlarında kendi kısıtlamalarını değiştirmesini engeller. Davranış aynıdır; ve son kullanıcılar için herhangi bir değişiklik yoktur.
   - iOS 12,0 ve üzeri: **blok** , son kullanıcıların, içerik ve gizlilik kısıtlamaları da dahil olmak üzere cihaz ayarları 'Nda (Ayarlar > Genel > ekran süresi) kendi **ekran süresini** değiştirmesini engeller. iOS 12.0'dan yükseltilen cihazlar artık cihaz ayarlarında kısıtlamalar sekmesini (Ayarlar > Genel > Cihaz Yönetimi > Yönetim Profili > Kısıtlamalar) görmez. Bu ayarlar **Ekran Saati** altındadır.
   
 - **Cihazdaki tüm içeriği ve ayarları Sil seçeneğinin kullanımı**: **Engelle** ' yi seçin, böylece kullanıcılar cihazdaki tüm içeriği ve ayarları silme seçeneğini kullanamaz. **Yapılandırılmadı** (varsayılan) ayarı kullanıcılara bu ayarlar için erişim verir.
@@ -91,7 +93,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 - **Duvar kağıdı değişikliği**: **blok** duvar kağıdının değiştirilmesini önler. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının cihazda duvar kağıdını değiştirmesine izin verir.
 - **Kurumsal uygulama güven ayarları değişikliği**: **blok** , kullanıcının denetimli cihazlarda kurumsal uygulama güven ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının uygulama mağazasından indirilmemiş uygulamalara güvenmesine izin verir.
 - **Yapılandırma profili değişiklikleri**: **blok** , cihazdaki yapılandırma profili değişikliklerini engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının yapılandırma profillerini yüklemesine izin verir.
-- **Etkinleştirme Kilidi**: denetimli iOS cihazlarında Etkinleştirme Kilidi etkinleştirmek Için **izin ver** ' i seçin. Etkinleştirme Kilidi, kaybolan veya çalınan bir cihazın yeniden etkinleştirilmesini zorlaştırır.
+- **Etkinleştirme Kilidi**: denetimli IOS/ıpados cihazlarında Etkinleştirme Kilidi etkinleştirmek Için **izin ver** ' i seçin. Etkinleştirme Kilidi, kaybolan veya çalınan bir cihazın yeniden etkinleştirilmesini zorlaştırır.
 - **Uygulama kaldırmayı engelle**: kullanıcıların uygulamaları kaldırmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı kullanıcıların cihazdan uygulama kaldırmasına izin verir.
 - **Cihaz KILITLIYKEN USB donatılara Izin ver**: **ızın ver** , USB aksesuarları 'nin bir saatten daha fazla kilitlenmiş bir cihazla veri alışverişi yapmasına olanak sağlar. **Yapılandırılmamış** (varsayılan), USB kısıtlı modunu cihazda güncelleştirmez ve USB aksesuarları bir saatten daha fazla kilitleniyorsa cihazdan veri aktarımını engellenecektir.
 - **Otomatik tarih ve saati zorla**: **gerekli** cihazların otomatik olarak tarih & zamanını ayarlamaya zorlar. Cihazın hücresel bağlantıları olduğunda veya konum hizmetleriyle arasında Wi-Fi etkinleştirildiğinde saat dilimi güncelleştirilir.
@@ -99,24 +101,28 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11,3 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **Sınıfa sormadan bir uygulamayı kilitlemesine ve cihazı kilitlemesine Izin ver**: **Enable** , öğretmenin uygulamaları kilitlemesine veya öğrenciye sormadan ders uygulamasını kullanarak cihazı kilitlemesine olanak tanır. Uygulamaların kilitlenmesi cihazın yalnızca öğretmenin belirttiği uygulamalara erişebileceği anlamına gelir. **Yapılandırılmadı** (varsayılan) ayarı öğretmenlerin öğrenciye sormadan Classroom uygulamasını kullanarak uygulamaları veya cihazları kilitlemesini önler.
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **Sınıf sınıflarını sorulmadan otomatik olarak birleştir**: **Etkinleştir** otomatik olarak, öğrencilerin öğretme istenmeden ders uygulamasındaki bir sınıfa katılmasına izin verir. **Yapılandırılmadı** (varsayılan) ayarı öğrencilerin Classroom uygulamasındaki derse katılma isteğini öğretmene sorar.
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **VPN oluşturmayı engelle**: **blok** , kullanıcıların VPN yapılandırma ayarları oluşturmasını engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcıların cihazda VPN'ler oluşturmasına olanak tanır.
 - **Esım ayarlarını değiştirme**: **Block** , kullanıcıların cihazdaki esım 'e bir hücresel plan kaldırmasını veya bu planı eklemesini önler. **Yapılandırılmadı** (varsayılan) ayarı kullanıcıların bu ayarları değiştirmesine izin verir.
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 12,1 ve üzeri
+  - ıpados 13,0 ve üzeri
 
-- **Yazılım güncelleştirmelerini ertele**: **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yazılım güncelleştirmeleri cihazda, Apple tarafından yayımlandığında görüntülenir. Örneğin Apple tarafından bir iOS güncelleştirmesinin yayımlanması durumunda ilgili güncelleştirme normal bir şekilde yayın tarihinde cihazda görünür.
+- **Yazılım güncelleştirmelerini ertele**: **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yazılım güncelleştirmeleri cihazda, Apple tarafından yayımlandığında görüntülenir. Örneğin, bir iOS/ıpados güncelleştirmesi Apple tarafından belirli bir tarihte yayınlanmışsa, bu güncelleştirme doğal olarak cihazda yayın tarihinin etrafında görüntülenir.
 
   **Etkinleştir** ayarını kullanarak güncelleştirmelerin cihazlarda gösterilmesini 0-90 gün boyunca geciktirebilirsiniz. Bu ayar, güncelleştirmelerin yüklenme tarihini veya durumunu denetlemez. 
 
@@ -126,8 +132,9 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
     Bu ayarın geçerli olduğu sürümler:  
     - iOS 11,3 ve üzeri
+    - ıpados 13,0 ve üzeri
 
-## <a name="password"></a>Parola
+## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri
 
@@ -159,13 +166,13 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 - **Cihaz silinmeden önceki oturum açma hatalarının sayısı**: cihaz temizlenmeden önce izin verilecek başarısız oturum açma işlemlerinin sayısını girin (4-11 arasında).
   
-  iOS, bu ayarı etkileyebilecek yerleşik güvenliğe sahiptir. Örneğin, iOS, oturum açma hatalarının sayısına bağlı olarak ilkeyi tetikleyebilir. Aynı zamanda aynı geçiş kodunu bir girişimlerle tekrar girmeyi de düşünebilirsiniz. Apple 'ın [iOS Güvenlik Kılavuzu](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (Apple 'ın Web sitesini açar) iyi bir kaynaktır ve Passcodes hakkında daha ayrıntılı bilgiler sağlar.
+  iOS/ıpados, bu ayarı etkileyebilecek yerleşik güvenliğe sahiptir. Örneğin, iOS/ıpados, oturum açma hatalarının sayısına bağlı olarak ilkeyi tetikleyebilir. Aynı zamanda aynı geçiş kodunu bir girişimlerle tekrar girmeyi de düşünebilirsiniz. Apple 'ın [iOS/ıpados Güvenlik Kılavuzu](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (Apple 'ın Web sitesini açar) iyi bir kaynaktır ve Passcodes hakkında daha ayrıntılı bilgiler sağlar.
   
-- **Parola istenmeden önce ekran kilitlenmesinden sonraki en fazla dakika**<sup>1</sup>: kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalacağını girin. Girdiğiniz süre cihazda şu anda ayarlanmış olan süreden uzunsa, cihaz girdiğiniz süreyi yoksayar. iOS 8.0 ve daha yeni cihazlarda desteklenir.
+- **Parola istenmeden önce ekran kilitlenmesinden sonraki en fazla dakika**<sup>1</sup>: kullanıcının parolasını yeniden girmesi gerekmeden önce cihazın ne kadar süreyle boşta kalacağını girin. Girdiğiniz süre cihazda şu anda ayarlanmış olan süreden uzunsa, cihaz girdiğiniz süreyi yoksayar. İOS 8.0 + çalıştıran cihazlarda desteklenir ve ıpados 13.0 +.
 
 - **Ekran kilitlenmeden önce geçmesi gereken en fazla dakika**sayısı<sup>1</sup>: ekran kilitlenmeden önce cihazda izin verilen en fazla dakika cinsinden süre sayısını girin.
 
-  **iOS seçenekleri**:  
+  **iOS/ıpados seçenekleri**:  
 
   - **Yapılandırılmadı** (varsayılan): Intune bu ayara dokunmaz.
   - **Hemen**: 30 saniyelik işlem yapılmadan sonra ekran kilitleri.
@@ -174,7 +181,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
   - **3**: 3 dakikalık bir işlem yapılmadan sonra ekran kilitleri.
   - **4**: 4 dakikalık bir işlem yapılmadan sonra ekran kilitleri.
   - **5**: 5 dakikalık bir işlem yapılmadan sonra ekran kilitleniyor.
-    
+
   **ıpados seçenekleri**:  
 
   - **Yapılandırılmadı** (varsayılan): Intune bu ayara dokunmaz.
@@ -184,7 +191,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
   - **10**: 10 dakikalık bir işlem yapılmadan sonra ekran kilitleniyor.
   - **15**: 15 dakika etkin olmadığında ekran kilitleri.
 
-  Bir değer iOS veya ıpados için uygulanmazsa, Apple en yakın *En düşük* değeri kullanır. Örneğin, `4` dakika girerseniz, ıpados cihazları `2` dakika kullanır. `10` dakika girerseniz, iOS cihazları `5` dakika kullanır. Bu bir Apple kısıtlamasıdır.
+  Bir değer iOS ve ıpados için uygulanmazsa, Apple en yakın *En düşük* değeri kullanır. Örneğin, `4` dakika girerseniz, ıpados cihazları `2` dakika kullanır. `10` dakika girerseniz, iOS cihazları `5` dakika kullanır. Bu bir Apple kısıtlamasıdır.
   
   > [!NOTE]
   > Bu ayar için Intune kullanıcı arabirimi iOS ve ıpados tarafından desteklenen değerleri birbirinden ayırır. Kullanıcı arabirimi gelecek bir sürümde güncelleştirilmiş olabilir.
@@ -197,10 +204,11 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
   Yüz KIMLIĞI şu şekilde geçerlidir:  
   - iOS 11,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
-- **Geçiş kodu değişikliği**: geçiş kodunun değiştirilmesini, eklenmesini veya kaldırılmasını durdurmak için **Engelle** ' yi seçin. Bu özellik engellendikten sonra denetimli cihazlarda geçiş kodu kısıtlamalarında yapılan değişiklikler yoksayılır. **Yapılandırılmadı** (varsayılan) ayarı geçiş kodu ekleme, değiştirme veya kaldırma işlemlerine izin verir.
+- **Geçiş kodu değişikliği**: geçiş kodunun değiştirilmesini, eklenmesini veya kaldırılmasını durdurmak için **Engelle** ' yi seçin. Bu özellik engellendikten sonra denetimli cihazlarda geçiş kodu kısıtlamalarında yapılan değişiklikler yoksayılır. **Yapılandırılmadı** (varsayılan) ayarı, geçiş kodu ekleme, değiştirme veya kaldırma işlemlerine izin verir.
 
   - **Dokunma kimliği ve yüz kimliği değişikliği**: **engelleme** , kullanıcının TouchID parmak izlerini ve yüz kimliğini değiştirmesini, eklemesini veya kaldırmasını engeller. **Yapılandırılmadı** (varsayılan), kullanıcının cihazdaki TouchID parmak Izlerini ve yüz kimliğini güncelleştirmesine izin verir.
 
@@ -208,8 +216,9 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
     Yüz KIMLIĞI şu şekilde geçerlidir:  
     - iOS 11,0 ve üzeri
+    - ıpados 13,0 ve üzeri
 
-- **Parola Otomatik doldurmayı engelle**: IOS 'Ta parolaları otomatik doldur özelliğinin kullanılmasını engellemek için **Engelle** ' yi seçin. **Engelle** ayarını seçmek şu sonuçlara da neden olur:
+- **Parola Otomatik doldurmayı engelle**: IOS/ıpados üzerinde parolaları otomatik doldur özelliğinin kullanılmasını engellemek için **Engelle** ' yi seçin. **Engelle** ayarını seçmek şu sonuçlara da neden olur:
 
   - Safari'de veya diğer uygulamalarda kullanıcılara parolaları kaydetmek isteyip istemedikleri sorulmaz.
   - Otomatik Güçlü Parolalar devre dışı bırakılır ve kullanıcılara güçlü parola önerisi sunulmaz.
@@ -222,6 +231,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11,0 ve üzeri
+  - ıpados 13,0 ve üzeri
   
 <sup>1</sup> **parola istenmeden önce ekran kilitlenmesinden sonra ekran kilitlenmeden ve en fazla dakika geçtikten sonra** **işlem yapılmadan maksimum dakika** sayısını yapılandırdığınızda, bunlar sırayla uygulanır. Örneğin, her iki ayarın da değerini **5** dakikaya ayarlarsanız, ekran beş dakika sonra otomatik olarak kapanır ve cihazın kilitlenmesi için beş dakika daha geçmesi gerekir. Ancak, kullanıcı ekranı el ile kapatırsa ikinci ayar hemen uygulanır. Aynı örnekte, kullanıcı ekranı kapattıktan sonraki beş dakikanın sonunda cihaz kilitlenir.
 
@@ -247,25 +257,25 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
   > [!NOTE]
   > Bu ayar engellendiğinde, App Store 'dan yüklenen üçüncü taraf klavyeler de engellenir.
 
-  - **Yönetilmeyen uygulamaların yönetilen kişiler hesaplarından okumasına Izin ver**: **izin ver**olarak ayarlandığında, yerleşik iOS kişileri uygulaması gibi yönetilmeyen uygulamalar, Outlook mobil uygulaması dahil olmak üzere yönetilen uygulamalardan Iletişim bilgilerini okuyabilir ve bunlara erişebilir. **Yapılandırılmadı** (varsayılan), cihazdaki yerleşik Kişiler uygulamasından yinelenenleri kaldırma dahil olmak üzere okumayı engeller.  
+  - **Yönetilmeyen uygulamaların yönetilen kişiler hesaplarından okumasına Izin ver**: **izin ver**olarak ayarlandığında, yerleşik IOS/ıpados kişileri uygulaması gibi yönetilmeyen uygulamalar, Outlook mobil uygulaması da dahil olmak üzere yönetilen uygulamalardaki iletişim bilgilerini okuyabilir ve bunlara erişebilir. **Yapılandırılmadı** (varsayılan), cihazdaki yerleşik Kişiler uygulamasından yinelenenleri kaldırma dahil olmak üzere okumayı engeller.  
   
     Bu ayar, iletişim bilgilerinin okunmasına izin verir veya bunu engeller. Uygulamalar arasındaki kişileri eşitlemeyi denetlemez.
   
     Bu ayarı kullanmak için **Yönetilmeyen uygulamalarda kurumsal belgeleri görüntüleme** ayarını **Engelle** olarak belirtin.
 
-  Bu iki ayar hakkında daha fazla bilgi edinmek ve iOS için Outlook 'a yönelik ilgili kişileri dışarı aktarma eşitlemesine yönelik etkileri öğrenmek için bkz. [destek İpucu: IOS yerel kişiler uygulamasıyla Intune özel profil ayarlarını kullanma](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
+  Bu iki ayar hakkında daha fazla bilgi edinmek ve iOS/ıpados 'a yönelik Outlook 'a yönelik etkileri için Outlook 'ta etkileri için bkz. [destek İpucu: iOS/ıpados yerel kişiler uygulamasıyla Intune özel profil ayarlarını kullanma](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
 
 - **AirDrop 'u yönetilmeyen hedef olarak değerlendir**: **gerektir** AirDrop, yönetilmeyen bir bırakma hedefi olarak değerlendirilir. Yönetilen uygulamaların Airdrop'u kullanarak veri göndermesini durdurur. 
 - Kurumsal **olmayan belgeleri kurumsal uygulamalarda görüntüleme**: **blok** kurumsal uygulamalarda kurumsal olmayan belgelerin görüntülenmesini önler. **Yapılandırılmadı** (varsayılan), şirket tarafından yönetilen uygulamalarda tüm belgelerin görüntülenmesine izin verir.
 
-  **Engelleme** ayarı, IOS için Outlook 'ta de ilgili kişileri dışarı aktarma eşitlemesini engeller. Daha fazla bilgi için bkz. [destek İpucu: IOS12 MDM denetimleriyle Outlook IOS Iletişim eşitlemesini etkinleştirme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
+  **Engelleme** ayarı, IOS için Outlook/ıpados için de ilgili kişileri dışarı aktarma eşitlemesini engeller. Daha fazla bilgi için bkz. [destek İpucu: IOS12 MDM denetimleriyle Outlook iOS/ıpados Iletişim eşitlemesini etkinleştirme](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
 - **Tüm satın alımlarda ITunes mağazası parolası gerektir**: kullanıcının her uygulama Içi veya iTunes satın alma IÇIN Apple Kimliği parolasını girmesini **gerektir** . **Yapılandırılmadı** (varsayılan), her seferinde parola sormadan satın alma işlemlerine izin verir.
 - **Uygulama içi satın almalar**: mağazadan uygulama içi satın alımlardan kaçınmak için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan), çalışan bir uygulama içinde satın alma işlemlerine izin verir.
 - **' Erotik ' olarak Işaretlenen iBook mağazasından Içerik indir**: engellemek için **Engelle** ' yi seçin kullanıcıların IBook mağazasından Erotika olarak etiketlenmiş bir medya indirmesini önler. **Yapılandırılmadı** (varsayılan), kullanıcının "Erotika" kategorisiyle kitap indirmesine izin verir.
-- **Yönetilen uygulamaların yönetilmeyen kişiler hesaplarına kişi yazmasına Izin ver**: **izin ver**olarak ayarlandığında, Outlook Mobile uygulaması gibi yönetilen uygulamalar, iş ve şirket kişileri dahil Iletişim bilgilerini yerleşik iOS kişileri uygulamasına kaydedebilir veya eşitleyebilir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yönetilen uygulamalar cihazdaki yerleşik iOS kişileri uygulamasına iletişim bilgilerini kaydedemez veya eşitleyemez.
+- **Yönetilen uygulamaların yönetilmeyen kişiler hesaplarına kişi yazmasına Izin ver**: **izin ver**olarak ayarlandığında, Outlook Mobile uygulaması gibi yönetilen uygulamalar, iş ve şirket kişileri dahil iletişim bilgilerini yerleşik IOS/ıpados kişileri uygulamasına kaydedebilir veya eşitleyebilir. **Yapılandırılmadı** (varsayılan) olarak ayarlandığında, yönetilen uygulamalar cihazdaki yerleşik IOS/ıpados kişileri uygulamasına iletişim bilgilerini kaydedemez veya eşitleyemez.
   
   Bu ayarı kullanmak için **Yönetilmeyen uygulamalarda kurumsal belgeleri görüntüleme** ayarını **Engelle** olarak belirtin.
 
@@ -275,28 +285,29 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 - **App Store**: **Block** , denetimli cihazlarda uygulama deposuna erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
   - **App Store 'dan uygulama yükleme**: cihaz ana ekranından uygulama mağazasını engellemek için **Engelle** ' yi seçin. Son kullanıcılar, uygulamaları yüklemek için iTunes’u veya Apple Configurator aracını kullanmaya devam edebilir. **Yapılandırılmadı** (varsayılan), uygulama mağazasının giriş ekranında yapılmasına izin verir.
-  - **Otomatik uygulama indirmeleri**: diğer cihazlarda satın alınan uygulamaların otomatik olarak indirilmesini engellemek için **Engelle** ' yi seçin. Mevcut uygulamalarında yapılan güncelleştirmeler bundan etkilenmez. **Yapılandırılmadı** (varsayılan), diğer iOS cihazlarında satın alınan uygulamaların cihaza indirilmesi için izin verir.
+  - **Otomatik uygulama indirmeleri**: diğer cihazlarda satın alınan uygulamaların otomatik olarak indirilmesini engellemek için **Engelle** ' yi seçin. Mevcut uygulamalarında yapılan güncelleştirmeler bundan etkilenmez. **Yapılandırılmadı** (varsayılan), diğer IOS/ıpados cihazlarında satın alınan uygulamaların cihaza indirilmesine izin verir.
 
-- **Açık iTunes Music, podcast veya News içeriği**: açık iTunes Music, podcast veya News içeriğini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan), cihazın mağazadan yetişkinlere yönelik olarak derecelendirilmiş içeriğe erişmesine izin verir. iOS 13 ve üzeri, yalnızca denetimli cihazlar gerektirebilir. 
+- **Açık iTunes Music, podcast veya News içeriği**: açık iTunes Music, podcast veya News içeriğini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan), cihazın mağazadan yetişkinlere yönelik olarak derecelendirilmiş içeriğe erişmesine izin verir.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
 - **Game Center arkadaş ekleme**: **blok** kullanıcıların Game Center arkadaş eklemesini engeller. **Yapılandırılmadı** (varsayılan), kullanıcının Game Center arkadaş eklemesine izin verir.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
 - **Game Center**: Game Center uygulamasının kullanımını **engelleyin** . **Yapılandırılmadı** (varsayılan), cihazda Game Center uygulamasının kullanılmasına izin verir.
 - Çok **oyunculu oyunlar**: çok oyunculu oyunları engellemek için **blok** seçin. **Yapılandırılmadı** (varsayılan), kullanıcının cihazda çok oyunculu oyunlar oynamasına izin verir.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
 - **Dosyalar uygulamasında ağ sürücüsüne erişim**: sunucu ileti bloğu (SMB) protokolünü kullanarak, cihazlar bir ağ sunucusundaki dosyalara veya diğer kaynaklara erişebilir. **Devre dışı bırak ayarı** , BIR ağ SMB sürücüsündeki dosyalara erişimi engeller. **Yapılandırılmadı** (varsayılan) erişime izin verir.
 
   Bu özellik şu platformlarda geçerlidir:  
-  - iOS ve ıpados 13,0 ve üzeri
+  - iOS 13,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 ## <a name="built-in-apps"></a>Yerleşik Uygulamalar
 
@@ -325,11 +336,11 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 - **Kamera**: cihazdaki kameraya erişimi engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, cihazın kamerasına erişim sağlar.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
   - Çok **yönlü saat**: çok yönlü uygulama erişimini engelleme **bloğu** . **Yapılandırılmadı** (varsayılan), cihazda çok yönlü bir zaman uygulamasına erişime izin verir.
 
-    İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+    İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
 - **Siri küfür filtresi**: **gerektir** , Siri 'ın dikte etmesini veya küfürlü dilini kullanmasını önler.
 
@@ -349,16 +360,19 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 4,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **İPhone 'umu bul**: **Yapılandırılmadı** (varsayılan), cihazın yaklaşık konumunu almak Için bu uygulamamı Bul özelliğinin kullanılmasına izin verir. **Block** , bu özelliğin uygulamamda Bul özelliğini engelliyor. 
 
   Bu özellik şu platformlarda geçerlidir:  
-  - iOS 13,0 ve ıpados 13,0 ve üzeri
+  - iOS 13,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **Arkadaşlarımı bul**: **Yapılandırılmadı** (varsayılan), bir Apple cihazından veya iCloud.com aile ve arkadaşlar bulmak Için bu uygulamamı Bul özelliğinin kullanılmasına izin verir. **Block** , bu özelliğin uygulamamda Bul özelliğini engelliyor.
 
   Bu özellik şu platformlarda geçerlidir:  
-  - iOS 13,0 ve ıpados 13,0 ve üzeri
+  - iOS 13,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **Arkadaşlarımı bul uygulama ayarlarında yapılan değişiklikler**: **Block** Arkadaşlarımı bul uygulama ayarlarında değişiklik yapılmasını önler. **Yapılandırılmadı** (varsayılan), kullanıcının Arkadaşlarımı Bul uygulamasının ayarlarını değiştirmesine izin verir.
 
@@ -368,11 +382,11 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra i
 
 - **Safari**: cihazda Safari tarayıcısını kullanmayı **engelleyin** . **Yapılandırılmadı** (varsayılan), kullanıcıların Safari tarayıcısını kullanmasına izin verir.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
 - **Safari otomatik doldurma**: **blok** cihazdaki otomatik doldurma özelliğini devre dışı bırakır. **Yapılandırılmadı** (varsayılan) ayarı, kullanıcıların web tarayıcısındaki otomatik tamamlama ayarlarını değiştirmesine olanak tanır.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
 ## <a name="restricted-apps"></a>Kısıtlı uygulamalar
 
@@ -399,7 +413,7 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
 
 ## <a name="show-or-hide-apps"></a>Uygulamaları gösterme veya gizleme
 
-İOS 9,3 veya üstünü çalıştıran cihazlar için geçerlidir.
+İOS 9,3 + ve ıpados 13.0 + çalıştıran cihazlar için geçerlidir.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
@@ -459,6 +473,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **Kişisel etkin noktanın Kullanıcı değişikliği**: **blok**olarak ayarlandığında Kullanıcı kişisel etkin nokta ayarını değiştiremez. **Yapılandırılmadı** (varsayılan) son kullanıcıların kendi kişisel etkin kullanımlarını etkinleştirmesine veya devre dışı bırakmasına izin verir.
 
@@ -466,6 +481,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 12,2 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **Yalnızca yapılandırma profillerini kullanarak Wi-Fi ağlarına katılarak**: **gerektir** ayarı, cihazı yalnızca Intune yapılandırma profilleri aracılığıyla ayarlanan Wi-Fi ağlarını kullanmaya zorlar. **Yapılandırılmadı** (varsayılan) ayarı cihazın diğer Wi-Fi ağlarını kullanmasına izin verir.
 
@@ -478,7 +494,8 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
   Bu ayarın yapılandırılması, kullanıcıların bir Wi-Fi ağı seçmesini engellemez.
 
   Bu özellik şu platformlarda geçerlidir:  
-  - iOS ve ıpados 13,0 ve üzeri
+  - iOS 13,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 ## <a name="connected-devices"></a>Bağlı Cihazlar
 
@@ -492,10 +509,10 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
-- **AirDrop**: **Block** cihazda AirDrop kullanımını engelliyor. **Yapılandırılmadı** (varsayılan) ayarı yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verir.
+- **AirDrop**: **Block** cihazda AirDrop kullanımını engelliyor. **Yapılandırılmadı** (varsayılan) ayarı, yakındaki cihazlarla içerik değişimi için AirDrop özelliğinin kullanılmasına izin verir.
 - **Apple Watch eşleştirme**: **blok** bir Apple Watch eşlemeyi engeller. **Yapılandırılmadı** (varsayılan) ayarı cihazın Apple Watch ile eşleştirilmesine izin verir.
 - **Bluetooth değişikliği**: **blok** son kullanıcının cihazdaki Bluetooth ayarlarını değiştirmesini engeller. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının bu ayarları değiştirmesine izin verir.
-- **İOS cihazının eşleştirilebileceği cihazları denetlemek Için konak eşleştirme**: **Yapılandırılmadı** (varsayılan), yöneticinin bir iOS cihazının hangi cihazlara eşlenebileceğini denetlemesine izin vermek için konak eşleştirmesine izin verir. **Engelle** ayarı konak eşleştirmeyi önler.
+- **İOS/ıpados cihazının eşleşebileceği cihazları denetlemek Için konak eşleştirme**: **Yapılandırılmadı** (varsayılan), yöneticinin bir iOS/ıpados cihazının hangi cihazlara eşlenebileceğini denetlemesine izin vermek için konak eşleştirmesine izin verir. **Engelle** ayarı konak eşleştirmeyi önler.
 - **AirPrint 'ı engelle**: cihazda AirPrint özelliğinin kullanılmasını engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı kullanıcının AirPrint'i kullanmasına izin verir.
   - **Anahtarlıkta AirPrint kimlik bilgilerinin depolanmasını engelle**: **blok** , cihazdaki Kullanıcı adı ve parola için Anahtarlık depolamanın kullanılmasını önler. **Yapılandırılmadı** (varsayılan) ayarı AirPrint kullanıcı adı ve parolasının Anahtar Zinciri uygulamasında depolanmasına izin verir.
   - **AirPrint için güvenilir BIR TLS sertifikası gerektir**: **gerektır** , cihazın TLS yazdırma iletişimi için güvenilir sertifikaları kullanmasını zorlar.
@@ -504,11 +521,13 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 
   Bu özellik şu platformlarda geçerlidir:  
   - iOS 11,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 - **USB sürücüsündeki dosyalara erişim**: cihazlar, dosyaları bir USB sürücüsünde bağlayıp açabilir. **Devre dışı bırak ayarı** , cihaza USB bağlandığında dosyalar uygulamasında USB sürücüsüne cihaz erişimini engeller. Bu özelliğin devre dışı bırakılması, son kullanıcıların bir iPad 'e bağlı USB sürücüsüne dosya aktarımını engeller. **Yapılandırılmadı** (varsayılan) dosyalar uygulamasında USB sürücüsüne erişime izin verir.
 
   Bu özellik şu platformlarda geçerlidir:  
-  - iOS ve ıpados 13,0 ve üzeri
+  - iOS 13,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 ## <a name="keyboard-and-dictionary"></a>Klavye ve Sözlük
 
@@ -523,7 +542,8 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 - **Hızlı yol**: **Yapılandırılmadı** (varsayılan), kullanıcıların, cihazın klavyesinde sürekli bir giriş sağlayan hızlı yol kullanmasına izin verir. Kullanıcılar, sözcükler oluşturmak için anahtarlar arasında çekerek yazı yazabilir. **Block** , kullanıcıların hızlı yol kullanmasını engeller. 
 
   Bu özellik şu platformlarda geçerlidir:  
-  - iOS 13,0 ve ıpados 13,0 ve üzeri
+  - iOS 13,0 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 ## <a name="cloud-and-storage"></a>Bulut ve Depolama
 
@@ -539,21 +559,21 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 - **İCloud 'A fotoğraf akışı eşitleniyor**: **Yapılandırılmadı** (varsayılan), kullanıcıların cihazlarındaki **fotoğraf akışımı** iCloud 'a eşitlemesine ve tüm kullanıcıların cihazlarında kullanılabilir fotoğraflara sahip olmasını sağlar. **Engelle** ayarı iCloud'a fotoğraf akışının eşitlenmesini önler. Bu özelliğin engellenmesi veri kaybına neden olabilir. 
 - **ICloud Fotoğraf Kitaplığı**: fotoğraf ve videoları bulutta depolamak için iCloud Fotoğraf Kitaplığı 'nı kullanmayı devre dışı bırakmak için **Engelle** olarak ayarlayın. iCloud Fotoğraf Arşivi'nden cihaza tamamen indirilmeyen tüm fotoğraflar cihazdan kaldırılır. **Yapılandırılmadı** (varsayılan) iCloud Fotoğraf kitaplığının kullanılmasına izin verir.
 - **Paylaşılan fotoğraf akışı**: cihazda **iCloud Fotoğraf paylaşımını** devre dışı bırakmak için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan), paylaşılan fotoğraf akışına izin verir.
-- **İletim**: **Yapılandırılmadı** (varsayılan), kullanıcıların bir iOS cihazında iş başlatmasını sağlar ve sonra başka bir iOS veya MacOS cihazında başlattıkları çalışmaya devam eder. **Engelle** ayarı bu iletimi önler.
+- **İletim**: **Yapılandırılmadı** (varsayılan), kullanıcıların bir iOS/ıpados cihazında çalışmaya başlamasını sağlar ve sonra başka bir iOS/ıpados veya MacOS cihazında başlattıkları çalışmaya devam eder. **Engelle** ayarı bu iletimi önler.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
 - **İCloud 'A yedekleme**: **Yapılandırılmadı** (varsayılan) kullanıcının cihazı iCloud 'a yedeklemesine izin verir. **Engelle** ayarı kullanıcının cihazı iCloud'a yedeklemesini durdurur.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
-- **ICloud belge eşitlemesini engelle**: **Yapılandırılmadı** (varsayılan), iCloud depolama alanınıza belge ve anahtar-değer eşitlemeye izin verir. **Engelle** ayarı iCloud'ın belgeleri ve verileri eşitlemesini engeller.
+- **ICloud belge eşitlemesini engelle**: **Yapılandırılmadı** (varsayılan), iCloud depolama alanınıza belge ve anahtar-değer eşitlemeye izin verir. **Engelle** ayarı, iCloud'ın belgeleri ve verileri eşitlemesini engeller.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
 - **ICloud anahtar zinciri eşitlemesini engelle**: anahtarlıkta depolanan kimlik bilgilerinin iCloud 'a eşitlenmesini devre dışı bırakmak için **bloğu** seçin. **Yapılandırılmadı** (varsayılan), kullanıcıların bu kimlik bilgilerini eşitlemesine izin verir.
 
-  İOS 13,0 ' den itibaren, bu ayar denetimli cihazlar gerektirir.
+  İOS/ıpados 13,0 ile başlayarak, bu ayar denetimli cihazlar gerektirir.
 
 ## <a name="autonomous-single-app-mode"></a>Otonom tek uygulama modu
 
@@ -569,7 +589,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 
 Ayrıca, uygulama adlarının ve paket kimliklerinin listesini içeren bir CSV dosyasını **Içeri aktarabilirsiniz** . Alternatif olarak uygulamaları içeren mevcut listeyi **dışarı aktarabilirsiniz**.
 
-## <a name="kiosk"></a>Bilgi Noktası
+## <a name="kiosk"></a>Bilgi noktası
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
@@ -612,14 +632,14 @@ Ayrıca, uygulama adlarının ve paket kimliklerinin listesini içeren bir CSV d
 - **Yakınlaştırma denetimi**: Kullanıcı tarafından değişikliklere **izin ver** . **Yapılandırılmadı** ayarı yakınlaştırma değişikliklerini engeller.
 
 > [!NOTE]
-> Bir iOS cihazını bilgi noktası modunda yapılandırabilmek için, önce Apple Configurator aracını veya Apple Cihaz Kayıt Programı’nı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracını kullanma konusunda Apple'ın kılavuzuna bakın.
-> Girdiğiniz iOS uygulaması siz profil atadıktan sonra yüklendiyse, cihaz yeniden başlatılana kadar bilgi noktası moduna girmez.
+> İOS/ıpados cihazını bilgi noktası modu için yapılandırmadan önce, Apple Configurator aracını veya Apple Aygıt Kayıt Programı kullanarak cihazı denetimli moda almanız gerekir. Apple Configurator aracını kullanma konusunda Apple'ın kılavuzuna bakın.
+> Girdiğiniz iOS/ıpados uygulaması profili atadıktan sonra yüklendiyse, cihaz yeniden başlatılana kadar cihaz bilgi noktası moduna girmez.
 
-## <a name="domains"></a>Etki alanları
+## <a name="domains"></a>Domains
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
-- **İşaretlenmemiş e-** posta etki alanları > **eposta etki alanı URL 'si**: listeye bir veya daha fazla URL ekleyin. Son kullanıcılar, girdiğiniz etki alanları dışındaki bir etki alanından e-posta aldığında bu e-posta iOS Mail uygulamasında güvenilmeyen olarak işaretlenir.
+- **İşaretlenmemiş e-** posta etki alanları > **eposta etki alanı URL 'si**: listeye bir veya daha fazla URL ekleyin. Son kullanıcılar, girdiğiniz etki alanlarından başka bir etki alanından e-posta aldığınızda, iOS/ıpados posta uygulamasında e-posta güvenilir değil olarak işaretlenir.
 
 - **Yönetilen web etki alanları** > **Web Etki Alanı URL'si**; Listeye bir veya daha fazla URL ekleyin. Belgeler girdiğiniz etki alanlarından indirildiğinde yönetilen belgeler olarak değerlendirilir. Bu ayar yalnızca Safari tarayıcısı kullanılarak indirilen belgeler için geçerlidir.
 
@@ -629,10 +649,11 @@ Ayrıca, uygulama adlarının ve paket kimliklerinin listesini içeren bir CSV d
 
   Bu ayarın geçerli olduğu sürümler:  
   - iOS 9,3 ve üzeri
+  - ıpados 13,0 ve üzeri
 
 ## <a name="settings-that-require-supervised-mode"></a>Denetimli mod gerektiren ayarlar
 
-iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz kurulumu sırasında veya Apple Configurator kullanılarak etkinleştirilebilir. Denetimli mod etkinleştirildikten sonra, Intune şu işlevleri kullanarak bir cihazı yapılandırabilir:
+iOS/ıpados Denetimli mod yalnızca Apple Aygıt Kayıt Programı aracılığıyla veya Apple Configurator kullanılarak ilk cihaz kurulumu sırasında etkinleştirilebilir. Denetimli mod etkinleştirildikten sonra, Intune şu işlevleri kullanarak bir cihazı yapılandırabilir:
 
 - Uygulama Kilidi (Tek Uygulama Modu) 
 - Genel HTTP Proxy’si 
@@ -676,7 +697,7 @@ iOS denetimli modu yalnızca Apple Aygıt Kayıt Programı üzerinden ilk cihaz 
 > - Müstehcen içerik
 > - iCloud belgeleri ve verileri
 > - Çok oyunculu oyun
-> - Oyun Merkezi Arkadaşları Ekleyin
+> - Oyun Merkezi arkadaşları ekleme
 > - Siri
 
 ## <a name="next-steps"></a>Sonraki adımlar

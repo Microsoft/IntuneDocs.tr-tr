@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: d2d8d50f7ac5d79d4d0081e7eee2169e9ff45d49
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971891"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512084"
 ---
 # <a name="app-protection-policies-overview"></a>Uygulama koruma ilkelerine genel bakış
 
@@ -52,7 +52,7 @@ Aşağıdaki özelliklere sahip cihazlarda çalıştırılan uygulamalar için u
 - **Herhangi bir mobil cihaz yönetimi çözümüne kayıtlı değil:** Bu cihazlar genellikle, Intune veya diğer MDM çözümlerinde yönetilmeyen veya kayıtlı olmayan, çalışana ait cihazlardır.
 
 > [!IMPORTANT]
-> Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. iOS ve Android için Outlook'a yönelik olarak karma Modern Kimlik Doğrulaması ile etkinleştirilen Intune uygulama koruma ilkeleri oluşturarak Exchange şirket içi posta kutularına erişimi de koruyabilirsiniz. Bu özelliği kullanmadan önce [iOS ve Android için Outlook gereksinimlerini](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) karşıladığınızdan emin olun. Uygulama koruma ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan diğer uygulamalar için desteklenmez.
+> Office 365 hizmetlerine bağlanan Office mobil uygulamaları için mobil uygulama yönetimi ilkeleri oluşturabilirsiniz. İOS için Outlook ve karma modern kimlik doğrulamasıyla etkinleştirilmiş Android için Intune uygulama koruma ilkeleri oluşturarak şirket içi Exchange posta kutularına erişimi de koruyabilirsiniz. Bu özelliği kullanmadan önce [iOS Için Outlook/ıpados ve Android gereksinimlerini](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)karşıladığınızdan emin olun. Uygulama koruma ilkeleri, şirket içi Exchange veya SharePoint hizmetlerine bağlanan diğer uygulamalar için desteklenmez.
 
 ## <a name="benefits-of-using-app-protection-policies"></a>Uygulama koruma ilkelerini kullanmanın avantajları
 
@@ -79,7 +79,7 @@ Kullanıcıya cihaz durumunu ayarlamadan bir MAM ilkesi uygularsanız, Kullanıc
 
 Intune, ihtiyacınız olan uygulamaları çalıştırmak istediğiniz cihazlara almanıza yardımcı olacak çeşitli özellikler sunar. Daha fazla bilgi için bkz. [platforma göre uygulama yönetimi özellikleri](app-management.md#app-management-capabilities-by-platform).
 
-Intune uygulama koruma ilkeleri platformu desteği, Android ve iOS cihazlar için Office mobil uygulama platformu desteği ile uyumludur. Ayrıntılar için [Office Sistem Gereksinimleri](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)'nin **Mobil uygulamalar** bölümüne bakın.
+Intune uygulama koruma ilkeleri platformu desteği, Android ve iOS/ıpados cihazları için Office mobil uygulama platformu desteği ile hizalanır. Ayrıntılar için **Office Sistem Gereksinimleri**'nin [Mobil uygulamalar](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg) bölümüne bakın.
 
 > [!IMPORTANT]
 > Android 'de uygulama koruma Ilkelerini almak için cihazda Intune Şirket Portalı gereklidir. Daha fazla bilgi için bkz. [Intune Şirket Portalı uygulama erişim gereksinimleri](../fundamentals/end-user-mam-apps-android.md#access-apps).
@@ -135,7 +135,7 @@ Bununla birlikte, dikkat edilecek bazı sınırlamalar vardır, örneğin:
 
 Intune [SDK](../developer/app-sdk.md) ile tümleştirilmiş veya [Intune uygulama sarmalama aracı](../developer/apps-prepare-mobile-application-management.md) tarafından Sarmalanan tüm uygulamalar, Intune uygulama koruma ilkeleri kullanılarak yönetilebilir. Bu araçlar kullanılarak oluşturulan ve genel kullanıma açık olan [Microsoft Intune korunan uygulamaların](apps-supported-intune-apps.md) resmi listesine bakın.
 
-Intune SDK geliştirme ekibi etkin bir şekilde sınar ve yerel Android, iOS (obj-C, Swift), Xamarin, Xamarin. Forms ve Cordova platformlarıyla oluşturulmuş uygulamalar için destek sağlar. Bazı müşteriler, bir Kullanıcı ve NativeScript gibi diğer platformlarla Intune SDK tümleştirmesi ile başarılı olmuş olsa da, desteklenen platformlarımızdan başka herhangi bir şeyi kullanarak uygulama geliştiricileri için açık rehberlik veya eklentiler sağlamayız.
+Intune SDK geliştirme ekibi, yerel Android, iOS/ıpados (obj-C, Swift), Xamarin, Xamarin. Forms ve Cordova platformları ile oluşturulmuş uygulamalar için desteği etkin bir şekilde sınar ve korur. Bazı müşteriler, bir Kullanıcı ve NativeScript gibi diğer platformlarla Intune SDK tümleştirmesi ile başarılı olmuş olsa da, desteklenen platformlarımızdan başka herhangi bir şeyi kullanarak uygulama geliştiricileri için açık rehberlik veya eklentiler sağlamayız.
 
 [INTUNE SDK](../developer/app-sdk.md) 'sı, hem 1. taraf hem de SDK 'nın 3. taraf sürümleri Için[Azure Active Directory kimlik doğrulama kitaplıklarından](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) gelişmiş modern kimlik doğrulama özellikleri kullanır. Bu nedenle, [Microsoft kimlik doğrulama kitaplığı](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (msal), Intune uygulama koruması hizmetinde kimlik doğrulaması ve koşullu başlatma gibi temel senaryolarımızda iyi çalışmaz. Microsoft 'un kimlik ekibinin tüm Microsoft Office uygulamalar için MSAL 'e geçiş yapması, [Intune SDK 'sının](../developer/app-sdk.md) bu uygulamayı desteklemesi gerekir, ancak bugün bir plan yoktur.
 
@@ -188,7 +188,7 @@ Bir OneDrive Yöneticisi **admin.OneDrive.com** 'e gözatan **cihaz erişimini**
 
 OneDrive Admin konsolundan bulunabilecek ayarlar **Genel** ilke olarak adlandırılan özel bir Intune uygulama koruma ilkesini yapılandırır. Bu genel ilke kiracınızdaki tüm kullanıcılar için geçerlidir ve ilkenin uygulanacağı nesneleri seçmenin bir yolu yoktur. 
 
-Etkinleştirildikten sonra iOS ve Android için OneDrive ve SharePoint uygulamaları varsayılan olarak seçilen ayarlar tarafından korunur. Bir BT uzmanı bu ilkeyi Intune konsolunda düzenleyebilir ve hedeflenen başka uygulamalar ekleyebilir ve herhangi bir ilke ayarını değiştirebilir. 
+Etkinleştirildikten sonra, iOS/ıpados ve Android için OneDrive ve SharePoint uygulamaları varsayılan olarak seçilen ayarlarla korunur. Bir BT uzmanı bu ilkeyi Intune konsolunda düzenleyebilir ve hedeflenen başka uygulamalar ekleyebilir ve herhangi bir ilke ayarını değiştirebilir. 
 
 Varsayılan olarak kiracı başına yalnızca bir **Genel** ilke olabilir. Ancak kiracı başına fazladan genel ilkeler oluşturmak için [Intune Grafik API'leri](../developer/intune-graph-apis.md) kullanılabilirse de bu önerilmez. Fazladan genel ilkeler oluşturmak, böyle bir ilkenin uygulanmasındaki sorunları gidermek karmaşık hale gelebileceği için önerilmez.
 
@@ -218,11 +218,11 @@ Intune, kullanıcının uygulama PIN’ini yalnızca kullanıcı “kurumsal” 
 **PIN istemi veya Şirket kimlik bilgileri istemi, sıklık**<br>
 BT Yöneticisi, Intune yönetici konsolunda **(dakika) sonra erişim gereksinimlerini yeniden denetle** Intune uygulama koruma ilkesi ayarını tanımlayabilir. Bu ayar, erişim gereksinimlerinin cihazda denetlenme süresini ve uygulama PIN ekranı veya Şirket kimlik bilgileri istemi 'nin yeniden gösterildiğini belirtir. Ancak kullanıcıdan PIN istenme sıklığını etkileyen önemli PIN ayrıntıları şöyledir:
 
-- **PIN, kullanılabilirliği geliştirmek için aynı yayımcının uygulamaları arasında paylaşılır:**<br> İOS 'ta, bir uygulama PIN 'i **aynı uygulama yayımcısının**tüm uygulamaları arasında paylaşılır. Örneğin, tüm Microsoft uygulamaları aynı PIN 'ı paylaşır. Android’de bir uygulama PIN’i tü uygulamalar arasında paylaşılır.
-- **Cihaz yeniden başlatıldıktan sonra *erişim gereksinimlerini yeniden denetle (dakika)* davranışı:**<br> Bir zamanlayıcı, Intune uygulama PIN 'inin ne zaman gösterileceğini veya bir sonraki Şirket kimlik bilgisi isteğini belirten işlem yapılmayan dakika sayısını izler. İOS 'ta Zamanlayıcı, cihaz yeniden başlatıldıktan sonra etkilenmez. Bu nedenle, cihazın yeniden başlatılması, kullanıcının Intune PIN (veya Şirket kimlik bilgileri) ilkesiyle hedeflenen bir iOS uygulamasından etkin olmadığı dakika sayısı üzerinde hiçbir etkiye sahip değildir. Android 'de Zamanlayıcı, cihaz yeniden başlatıldığında sıfırlanır. Bu nedenle, Intune PIN (veya Şirket kimlik bilgileri) ilkesi ile Android Uygulamaları, **cihaz yeniden başlatıldıktan sonra**' erişim gereksinimlerini yeniden denetle (dakika) ' ayarından bağımsız olarak BIR uygulama PIN 'i veya Şirket kimlik bilgileri istemi ister.  
+- **PIN, kullanılabilirliği geliştirmek için aynı yayımcının uygulamaları arasında paylaşılır:**<br> İOS/ıpados 'da, bir uygulama PIN 'i **aynı uygulama yayımcısının**tüm uygulamaları arasında paylaşılır. Örneğin, tüm Microsoft uygulamaları aynı PIN 'ı paylaşır. Android’de bir uygulama PIN’i tü uygulamalar arasında paylaşılır.
+- **Cihaz yeniden başlatıldıktan sonra *erişim gereksinimlerini yeniden denetle (dakika)* davranışı:**<br> Bir zamanlayıcı, Intune uygulama PIN 'inin ne zaman gösterileceğini veya bir sonraki Şirket kimlik bilgisi isteğini belirten işlem yapılmayan dakika sayısını izler. İOS/ıpados 'da Zamanlayıcı, cihaz yeniden başlatıldıktan sonra etkilenmez. Bu nedenle, cihazın yeniden başlatılması, kullanıcının Intune PIN (veya Şirket kimlik bilgileri) ilkesiyle hedeflenen bir iOS/ıpados uygulamasından etkin olmadığı dakika sayısı üzerinde hiçbir etkiye sahip değildir. Android 'de Zamanlayıcı, cihaz yeniden başlatıldığında sıfırlanır. Bu nedenle, Intune PIN (veya Şirket kimlik bilgileri) ilkesi ile Android Uygulamaları, **cihaz yeniden başlatıldıktan sonra**' erişim gereksinimlerini yeniden denetle (dakika) ' ayarından bağımsız olarak BIR uygulama PIN 'i veya Şirket kimlik bilgileri istemi ister.  
 - **PIN ile ilişkili zamanlayıcının hareketli yapısı:**<br> Bir uygulamaya (uygulama A) erişmek için bir PIN girildikten sonra uygulama, ön planda (ana giriş odağını), bu PIN için sıfırlanarak kalır. Bu PIN’i paylaşan başka bir uygulama (uygulama B), zamanlayıcı sıfırlandığı için kullanıcıdan PIN girmesini istemeyecektir. “(dakika) sonra erişim gereksinimlerini yeniden denetle” değeri yeniden karşılandığında istem yeniden görüntülenecektir.
 
-iOS cihazlarda PIN, farklı yayımcılardan gelen uygulamalar arasında paylaşılsa bile **(dakika) sonra erişim gereksinimlerini yeniden denetle** süresi geçtikten sonra ana giriş odağı olmayan uygulamada istem yeniden görüntülenir. Yani, örneğin bir kullanıcıda _X_ yayımcısının _A_ uygulaması ve _Y_ yayımcısının _B_ uygulaması varsa bu iki uygulama aynı PIN’i paylaşır. Kullanıcı, _A_ uygulamasına odaklanmıştır (uygulama ön plandadır) ve _B_ uygulaması simge durumuna küçültülmüştür. **(dakika) sonra erişim gereksinimlerini yeniden denetle** süresi geçtikten sonra kullanıcı _B_ uygulamasına geçerse PIN gerekir.
+İOS/ıpados cihazlarında, PIN farklı yayımcıların uygulamaları arasında paylaşılsa bile, ana giriş odağı olmayan uygulama için **(dakika) sonra erişim gereksinimlerini yeniden denetle** değeri karşılandığında istem tekrar görünür. Yani, örneğin bir kullanıcıda _X_ yayımcısının _A_ uygulaması ve _Y_ yayımcısının _B_ uygulaması varsa bu iki uygulama aynı PIN’i paylaşır. Kullanıcı, _A_ uygulamasına odaklanmıştır (uygulama ön plandadır) ve _B_ uygulaması simge durumuna küçültülmüştür. **(dakika) sonra erişim gereksinimlerini yeniden denetle** süresi geçtikten sonra kullanıcı _B_ uygulamasına geçerse PIN gerekir.
 
   >[!NOTE]
   > Kullanıcının erişim gereksinimlerini (örneğin PIN istemini) daha sık doğrulamak için “(dakika) sonra erişim gereksinimlerini yeniden denetle” ayarındaki değeri azaltmanız önerilir.
@@ -237,7 +237,7 @@ PIN, uygulamadaki kuruluş verilerine yalnızca doğru kullanıcının erişmesi
 Uygulama PIN’i ilkesinin parçası olarak BT yöneticisi, bir kullanıcının uygulama kilitlenmeden önce PIN’ini doğrulamayı en fazla kaç kez deneyebileceğini belirleyebilir. Deneme sayısı karşılandıktan sonra, [ıNTUNE SDK](../developer/app-sdk.md) uygulamadaki "Kurumsal" verileri silebilir.
 
 **Intune PIN ve seçmeli silme**<br>
-İOS 'ta uygulama düzeyi PIN bilgileri, tüm birinci taraf Microsoft uygulamaları gibi aynı yayımcıya sahip uygulamalar arasında paylaşılan anahtarlıkta saklanır. Bu PIN bilgileri ayrıca bir son kullanıcı hesabına bağlıdır. Bir uygulamanın seçmeli Temizleme işlemi, farklı bir uygulamayı etkilememelidir. 
+İOS/ıpados 'da, uygulama düzeyi PIN bilgileri, aynı yayımcının tüm birinci taraf Microsoft uygulamaları gibi uygulamalar arasında paylaşılan anahtarlıkta depolanır. Bu PIN bilgileri ayrıca bir son kullanıcı hesabına bağlıdır. Bir uygulamanın seçmeli Temizleme işlemi, farklı bir uygulamayı etkilememelidir. 
 
 Örneğin, oturum açmış kullanıcı için Outlook için bir PIN kümesi, paylaşılan bir anahtarlıkta saklanır. Kullanıcı OneDrive 'da oturum açtığında (Microsoft tarafından yayımlandığında), aynı paylaşılan anahtarlığı kullandığından bu PIN Outlook ile aynı PIN 'i görür. Outlook oturumunu kapatma veya Outlook 'taki Kullanıcı verilerini silme işlemi yaparken, OneDrive bu PIN 'ı hala kullanıyor olabileceğinden Intune SDK 'Sı bu anahtarlığı temizlemez. Bu nedenle, seçmeli wpes, PIN 'ı de içeren paylaşılan anahtarlığı temizlemez. Bu davranış, cihazda yalnızca bir yayımcı tarafından tek bir uygulama mevcut olsa bile aynı kalır. 
 
@@ -246,21 +246,21 @@ PIN, aynı yayımcıya sahip uygulamalar arasında paylaşıldığından, silme 
 PIN 'in bazı cihazlarda temizlenmiş olduğunu gözlemlerseniz, şunlar olasıdır: PIN bir kimliğe bağlı olduğundan, Kullanıcı silme işleminden sonra farklı bir hesapla oturum açmışsa, yeni bir PIN girmesi istenir. Ancak, önceden var olan bir hesapla oturum açtıklarında, anahtarlıkta depolanan bir PIN, oturum açmak için zaten kullanılabilir.
 
 **Aynı yayımcıdaki uygulamalarda iki kez bir PIN mi ayarlanıyor?**<br>
-MAM (iOS üzerinde) Şu anda, [iOS Için Intune SDK 'sını](../developer/app-sdk-ios.md)bütünleştirmek için uygulamaların (örneğin WXP, Outlook, Managed Browser, Yammer) katılımını gerektiren alfasayısal ve özel karakterler (' geçiş kodu ' olarak adlandırılır) ile uygulama düzeyinde PIN 'e izin verir. Bu olmadan geçiş kodu ayarları, hedeflenmiş uygulamalar için doğru şekilde zorlanır. Bu, iOS için Intune SDK'sı 7.1.12 sürümünde kullanıma sunulmuş olan bir özellikti.
+MAM (iOS 'ta/ıpados) Şu anda, [iOS Için Intune SDK 'sını](../developer/app-sdk-ios.md)bütünleştirmek için uygulamaların (ör. WXP, Outlook, Managed Browser, Yammer) katılımını gerektiren alfasayısal ve özel karakterler (' geçiş kodu ' adı verilir) ile uygulama düzeyinde PIN 'e izin veriyor. Bu olmadan geçiş kodu ayarları, hedeflenmiş uygulamalar için doğru şekilde zorlanır. Bu, iOS için Intune SDK'sı 7.1.12 sürümünde kullanıma sunulmuş olan bir özellikti.
 
-Bu özelliği desteklemek ve iOS için Intune SDK'sının önceki sürümleriyle geriye dönük uyumluluğu güvence altına almak için, 7.1.12+ sürümlerinde tüm PIN'ler (sayısal veya geçiş kodu) SDK'nın önceki sürümlerindeki sayısal PIN'den ayrı işlenir. Bu nedenle, cihazda aynı yayımcının iOS için Intune SDK'sının 7.1.12 öncesi VE 7.1.12 sonrası sürümlerini içeren uygulamalar varsa, iki PIN ayarlamaları gerekir. İki PIN (her uygulama için) herhangi bir şekilde ilişkili değildir (yani, uygulamaya uygulanan uygulama koruma ilkesine uyması gerekir). Bu nedenle, *yalnızca* A ve B uygulamaları aynı ilkelerin uygulanmış olması durumunda (PIN 'e göre), Kullanıcı aynı PIN 'i iki kez ayarlayabilir. 
+Bu özelliği desteklemek ve iOS/ıpados için Intune SDK 'sının önceki sürümleriyle geriye dönük uyumluluk sağlamak için, 7.1.12 + içindeki tüm PIN 'Ler (sayısal veya geçiş kodu), SDK 'nın önceki sürümlerindeki sayısal PIN 'ten ayrı olarak işlenir. Bu nedenle, cihazda aynı yayımcının iOS için Intune SDK'sının 7.1.12 öncesi VE 7.1.12 sonrası sürümlerini içeren uygulamalar varsa, iki PIN ayarlamaları gerekir. İki PIN (her uygulama için) herhangi bir şekilde ilişkili değildir (yani, uygulamaya uygulanan uygulama koruma ilkesine uyması gerekir). Bu nedenle, *yalnızca* A ve B uygulamaları aynı ilkelerin uygulanmış olması durumunda (PIN 'e göre), Kullanıcı aynı PIN 'i iki kez ayarlayabilir. 
 
-Bu davranış Intune Mobil Uygulama Yönetimi'nin etkinleştirildiği iOS uygulamalardaki PIN’e özgüdür. Zaman içinde, uygulamalar iOS için Intune SDK'sının daha yeni sürümlerini benimsedikçe aynı yayımcıdan gelen uygulamalarda iki kez PIN ayarlama gereği sorun olmaktan çıkar. Örnek görmek için lütfen aşağıdaki nota bakın.
+Bu davranış, Intune mobil uygulama yönetimi ile etkinleştirilen iOS/ıpados uygulamalarındaki PIN 'e özgüdür. Zamanla, uygulamalar iOS için Intune SDK/ıpados 'ın sonraki sürümlerini benimsediği için, aynı yayımcıdan gelen uygulamalarda bir PIN 'ı iki kez ayarlamaya gerek bir sorundan daha az olur. Örnek görmek için lütfen aşağıdaki nota bakın.
 
   >[!NOTE]
-  > Örneğin, aynı yayımcının A uygulaması 7.1.12 öncesi bir sürümle oluşturulduysa ve B uygulaması 7.1.12 ile veya sonraki bir sürümle oluşturulduysa, iOS cihazında her iki uygulamanın da yüklü olması durumunda son kullanıcının A ve B için ayrı PIN'ler ayarlaması gerekir.
+  > Örneğin, A uygulaması, 7.1.12 ' den önceki bir sürümle derlenirse ve B uygulaması aynı yayımcıdan gelen veya 7.1.12 ' den büyük bir sürüm ile derlenirse, her ikisi de bir iOS/ıpados cihazında yüklüyse son kullanıcının PIN 'leri ve B için ayrı olarak ayarlaması gerekir.
   > SDK sürümü 7.1.9 olan bir uygulama cihazda yüklüyse, aynı PIN 'ı App A ile paylaşır. 7.1.14 ile oluşturulan bir uygulama, B uygulamasıyla aynı PIN 'ı paylaşır.  
   > Cihazda yalnızca A ve C uygulamaları yüklüyse, tek bir PIN'in ayarlanması yeterli olur. Cihazda yalnızca B ve D uygulamaları yüklü olduğunda da aynı durum geçerlidir.
 
 ### <a name="app-data-encryption"></a>Uygulama veri şifrelemesi
 BT yöneticileri uygulama verilerinin şifrelenmesini gerektiren bir uygulama koruma ilkesi dağıtabilir. İlkenin bir parçası olarak BT yöneticisi, içeriğin ne zaman şifreleneceğini de belirtebilir.
 
-**Intune veri şifreleme işlemi nasıl yapılır?**<br> Şifreleme uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) ve [iOS uygulama koruma ilkesi ayarlarına](app-protection-policy-settings-ios.md) bakın.
+**Intune veri şifreleme işlemi nasıl yapılır?**<br> Şifreleme uygulama koruma ilkesi ayarı hakkında ayrıntılı bilgi için [Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) ve [IOS/ıpados uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md) bölümüne bakın.
 
 **Şifrelenen veriler**<br>
 BT yöneticisinin uygulama koruma ilkesine uygun şekilde, yalnızca “kurumsal” olarak işaretlenen veriler şifrelenir. Veriler bir iş konumundan geliyorsa “kurumsal” olarak kabul edilir. Intune, Office uygulamalarında şunları iş konumları olarak değerlendirir:
@@ -304,15 +304,15 @@ BT yöneticisi, Microsoft Intune tarafından geliştirilen ve Intune ile kolayca
 ### <a name="device-fingerprint-or-face-ids"></a>Cihaz parmak izi veya yüz kimlikleri 
 Intune uygulama koruma ilkeleri, yalnızca Intune lisanslı kullanıcılara uygulama erişimi denetimi verir. Uygulamaya erişimi denetleme yollarından biri, desteklenen cihazlarda Apple’ın Touch ID veya Face ID özelliğini gerekli kılmaktır. Intune, cihazın biyometrik veritabanında bir değişiklik olduğunda ve etkin olmama zaman aşımı değeri karşılandığında kullanıcıdan PIN isteyen bir davranış uygular. Biyometrik verilerdeki değişikliklere parmak izi veya yüz kimliği eklenmesi veya kaldırılması dahildir. Intune kullanıcısı bir PIN ayarlamamışsa, Intune PIN’i ayarlamak üzere yönlendirilir.
  
-Bu işlemin amacı, kuruluşunuzun uygulama içindeki verilerinin güvenli ve uygulama düzeyinde korunmasını sürdürmeye devam etmek için kullanılır. Bu özellik yalnızca iOS için kullanılabilir ve iOS, sürüm 9.0.1 veya üzeri için Intune SDK 'sını tümleştiren uygulamaların katılımını gerektirir. Hedeflenen uygulamalarda davranışın zorlanabilmesi için SDK tümleştirmesi gereklidir. Bu tümleştirme, sıralı bir şekilde gerçekleşir ve belirli uygulama ekiplerine bağımlıdır. Katılan uygulamalardan bazıları WXP, Outlook, Managed Browser ve Yammer’dır.
+Bu işlemin amacı, kuruluşunuzun uygulama içindeki verilerinin güvenli ve uygulama düzeyinde korunmasını sürdürmeye devam etmek için kullanılır. Bu özellik yalnızca iOS/ıpados için kullanılabilir ve iOS/ıpados, sürüm 9.0.1 veya üzeri için Intune SDK 'sını tümleştiren uygulamaların katılımını gerektirir. Hedeflenen uygulamalarda davranışın zorlanabilmesi için SDK tümleştirmesi gereklidir. Bu tümleştirme, sıralı bir şekilde gerçekleşir ve belirli uygulama ekiplerine bağımlıdır. Katılan uygulamalardan bazıları WXP, Outlook, Managed Browser ve Yammer’dır.
   
 ### <a name="ios-share-extension"></a>iOS Share uzantısı
-Veri Aktarım İlkesi **yalnızca yönetilen uygulamalar** veya **uygulama olmadan**ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS Share uzantısını kullanabilirsiniz. Intune uygulama koruma ilkesi, cihaz yönetilmeden iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_ . Yönetilen uygulama dışında bir "Kurumsal" dosya açmaya çalışırken bu şifreleme davranışını doğrulayabilirsiniz. Bu dosya şifrelenmiş olmalı ve yönetilen bir uygulama dışında açılamamalıdır.
+Veri Aktarım İlkesi **yalnızca yönetilen uygulamalar** veya **uygulama olmadan**ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak Için iOS/ıpados Share uzantısını kullanabilirsiniz. Intune uygulama koruma ilkesi, cihazı yönetmeksizin iOS/ıpados paylaşma uzantısını denetlemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_ . Yönetilen uygulama dışında bir "Kurumsal" dosya açmaya çalışırken bu şifreleme davranışını doğrulayabilirsiniz. Bu dosya yalnızca şifrelenmiş ve yönetilen bir uygulama olarak açılmalıdır.
 
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>Aynı uygulama ve kullanıcı kümesi için birden çok Intune uygulama koruma erişimi ayarı
-Erişim için Intune uygulama koruma ilkeleri, hedeflenen bir uygulamaya kurumsal hesabından erişmeyi denediğinde Son Kullanıcı cihazlarında belirli bir sırada uygulanır. Genel olarak öncelik temizlemededir; ardından engelleme, sonra da kapatılabilen uyarı gelir. Örneğin, belirli bir kullanıcı/uygulama için uygunsa, kullanıcıyı iOS sürümünü güncelleştirmesi için uyaran en düşük iOS işletim sistemi ayarı, kullanıcının erişimini engelleyen en düşük iOS işletim sistemi ayarından sonra uygulanacaktır. Dolayısıyla, BT yöneticisinin en düşük iOS işletim sistemi olarak 11.0.0.0 ve en düşük iOS işletim sistemi (yalnızca Uyarı) olarak 11.1.0.0'ı ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın işletim sistemi iOS 10 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük iOS işletim sistemi sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir.
+Erişim için Intune uygulama koruma ilkeleri, hedeflenen bir uygulamaya kurumsal hesabından erişmeyi denediğinde Son Kullanıcı cihazlarında belirli bir sırada uygulanır. Genel olarak öncelik temizlemededir; ardından engelleme, sonra da kapatılabilen uyarı gelir. Örneğin, belirli bir Kullanıcı/uygulama için geçerliyse, bir kullanıcıyı iOS/ıpados sürümünü güncelleştirmek üzere uyaran en düşük iOS/ıpados işletim sistemi ayarı, kullanıcının erişimini engelleyen en düşük iOS/ıpados işletim sistemi ayarından sonra uygulanır. Dolayısıyla, BT yöneticisinin en düşük iOS işletim sistemi olarak 11.0.0.0 ve en düşük iOS işletim sistemi (yalnızca Uyarı) olarak 11.1.0.0'ı ayarladığı bir senaryoda, uygulamaya erişmeye çalışan cihazın işletim sistemi iOS 10 olduğunda, son kullanıcı erişimin engellenmesine yol açan en düşük iOS işletim sistemi sürümüne yönelik daha kısıtlayıcı ayar temel alınarak engellenebilir.
 
-Farklı ayar türleriyle ilgilenirken, bir Intune SDK sürümü gereksinimi öncelikli olarak bir uygulama sürümü gereksinimini ve ardından iOS işletim sistemi sürümü gereksinimini alır. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir. Intune SDK sürümü gereksiniminin, yalnızca Intune ürün ekibinden önemli engelleme senaryoları için rehberlik sağlandığında yapılandırılmasını öneririz.
+Farklı ayar türleriyle ilgilenirken, bir Intune SDK sürümü gereksinimi öncelikli olarak bir uygulama sürümü gereksinimini ve ardından iOS/ıpados işletim sistemi sürümü gereksinimini alır. Ardından, tüm ayarlar türlerine yönelik uyarılar aynı sırada denetlenir. Intune SDK sürümü gereksiniminin, yalnızca Intune ürün ekibinden önemli engelleme senaryoları için rehberlik sağlandığında yapılandırılmasını öneririz.
 
 ## <a name="app-protection-experience-for-android-devices"></a>Android cihazlar için uygulama koruma deneyimi
 
@@ -354,7 +354,7 @@ Google Play koruma API 'Lerinden yararlanan uygulama koruma ilkesi ayarları Goo
 
 [Microsoft Intune ile kullanılabilir Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md)
 
-[Microsoft Intune ile kullanılabilir iOS uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md)
+[Microsoft Intune ile kullanılabilir iOS/ıpados uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md)
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 Salesforce mobil uygulaması gibi üçüncü taraf uygulamalar, Intune ile özel şekillerde çalışarak şirket verilerini korur. Doğrudan Salesforce uygulamasının Intune ile nasıl çalıştığını (MDM uygulama yapılandırma ayarları dahil) öğrenmek için bkz. [Salesforce Uygulaması ve Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

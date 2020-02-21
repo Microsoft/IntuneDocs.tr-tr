@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune-Azure 'da iOS cihaz özelliği ayarları | Microsoft Docs
-description: İOS cihazlarını AirPrint için yapılandırma, giriş ekranı düzeni, uygulama bildirimleri, paylaşılan cihaz, çoklu oturum açma ve Microsoft Intune ' deki Web içeriği filtresi ayarları için tüm ayarları görüntüleyin. Bu ayarları, kuruluşunuzda bu Apple özelliklerini kullanmak üzere iOS cihazlarını yapılandırmak için bir cihaz yapılandırma profilinde kullanın.
+title: iOS/ıpados cihaz özelliği ayarları Microsoft Intune-Azure | Microsoft Docs
+description: İOS ve ıpados cihazlarını AirPrint için yapılandırma, giriş ekranı düzeni, uygulama bildirimleri, paylaşılan cihaz, çoklu oturum açma ve Microsoft Intune içindeki Web içeriği filtresi ayarları için tüm ayarları görüntüleyin. Bu ayarları, kuruluşunuzda bu Apple özelliklerini kullanmak üzere iOS/ıpados cihazlarını yapılandırmak için bir cihaz yapılandırma profilinde kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,27 +16,27 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85fc8bf002a4d5d00d2163c0b75c49d11dcd9b61
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 7f19ccfb6949dbfa0de62a8b711436ab9cde8c9c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206372"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512951"
 ---
-# <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune 'da ortak iOS özelliklerini kullanmak için iOS ve ıpados cihaz ayarları
+# <a name="ios-and-ipados-device-settings-to-use-common-iosipados-features-in-intune"></a>Intune 'da ortak iOS/ıpados özelliklerini kullanmak için iOS ve ıpados cihaz ayarları
 
-Intune, iOS kullanıcılarının cihazlarında farklı Apple özellikleri kullanmasına izin veren bazı yerleşik ayarlar içerir. Örneğin, Yöneticiler iOS kullanıcılarının AirPrint yazıcılarını nasıl kullandığını denetleyebilir, giriş ekranındaki yerleştirme ve sayfalara uygulama ve klasör ekleme, uygulama bildirimlerini gösterme, kilit ekranında varlık etiketi ayrıntılarını gösterme, çoklu oturum açma kimlik doğrulaması kullanma ve kullanıcıların kimliğini doğrulama işlemlerinin nasıl yapılacağını denetleyebilir Sertifikalar ile.
+Intune, iOS/ıpados kullanıcılarının cihazlarında farklı Apple özellikleri kullanmasına izin veren bazı yerleşik ayarlar içerir. Örneğin, Yöneticiler iOS/ıpados kullanıcılarının AirPrint yazıcılarını nasıl kullandığını denetleyebilir, giriş ekranındaki yerleştirme ve sayfalara uygulama ve klasör ekleme, uygulama bildirimlerini gösterme, kilit ekranında varlık etiketi ayrıntılarını gösterme, çoklu oturum açma kimlik doğrulaması kullanma ve sertifikalarla kullanıcıların kimliğini doğrulama işlemlerinin nasıl yapılacağını denetleyebilir.
 
-Bu özellikleri, mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak iOS cihazlarını denetlemek için kullanın.
+Bu özellikleri, mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak iOS/ıpados cihazlarını denetlemek için kullanın.
 
-Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Bu özellikler hakkında daha fazla bilgi için [iOS veya macOS cihaz özelliği ayarları ekle](../device-features-configure.md)' ye gidin.
+Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Bu özellikler hakkında daha fazla bilgi için [iOS/ıpados veya macOS cihaz özelliği ayarları ekle](../device-features-configure.md)' ye gidin.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[İOS cihaz yapılandırma profili oluşturun](../device-features-configure.md).
+[İOS/ıpados cihaz yapılandırma profili oluşturun](../device-features-configure.md).
 
 > [!NOTE]
-> Bu ayarlar, bazı ayarların tüm kayıt seçeneklerine uygulanmasıyla farklı kayıt türleri için geçerlidir. Farklı kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](../ios-enroll.md).
+> Bu ayarlar, bazı ayarların tüm kayıt seçeneklerine uygulanmasıyla farklı kayıt türleri için geçerlidir. Farklı kayıt türleri hakkında daha fazla bilgi için bkz. [iOS/ıpados kaydı](../ios-enroll.md).
 
 ## <a name="airprint"></a>AirPrint
 
@@ -47,8 +47,8 @@ Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Bu �
 
 - **IP adresi**: yazıcının IPv4 veya IPv6 adresini girin. Yazıcıları tanımlamak için ana bilgisayar adları kullanırsanız, terminaldeki yazıcıya ping ekleyerek IP adresini alabilirsiniz. IP adresini ve yolu al (Bu makalede) daha fazla ayrıntı sağlar.
 - **Yol**: yol, genellikle ağınızdaki yazıcılar için `ipp/print`. IP adresini ve yolu al (Bu makalede) daha fazla ayrıntı sağlar.
-- **Bağlantı noktası**: AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özelliği boş bırakırsanız AirPrint varsayılan bağlantı noktasını kullanır. İOS 11,0 ve üzeri sürümlerde kullanılabilir.
-- **TLS**: Aktarım katmanı GÜVENLIĞI (TLS) Ile AirPrint bağlantılarını güvenli hale getirmek için **Etkinleştir** ' i seçin. İOS 11,0 ve üzeri sürümlerde kullanılabilir.
+- **Bağlantı noktası**: AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özelliği boş bırakırsanız AirPrint varsayılan bağlantı noktasını kullanır. İOS 11.0 + ve ıpados 13.0 + ' da kullanılabilir.
+- **TLS**: Aktarım katmanı GÜVENLIĞI (TLS) Ile AirPrint bağlantılarını güvenli hale getirmek için **Etkinleştir** ' i seçin. İOS 11.0 + ve ıpados 13.0 + ' da kullanılabilir.
 
 AirPrint sunucuları eklemek için şunları yapabilirsiniz:
 
@@ -75,22 +75,23 @@ AirPrinter sunucuları eklemek için, yazıcının IP adresi, kaynak yolu ve ba�
 Bu özellik şu platformlarda geçerlidir:
 
 - iOS 9,3 veya üzeri
+- ıpados 13,0 ve üzeri
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
 ### <a name="dock"></a>Dock
 
-İOS ekranının Dock 'a en fazla altı öğe veya klasör eklemek için **yerleştirme** ayarlarını kullanın. Birçok cihaz daha az öğeyi destekler. Örneğin, iPhone cihazları en fazla dört öğeyi destekler. Bu durumda, cihazda yalnızca eklediğiniz ilk dört öğe gösterilir.
+İOS/ıpados ekranının Dock 'a en fazla altı öğe veya klasör eklemek için **yerleştirme** ayarlarını kullanın. Birçok cihaz daha az öğeyi destekler. Örneğin, iPhone cihazları en fazla dört öğeyi destekler. Bu durumda, cihazda yalnızca eklediğiniz ilk dört öğe gösterilir.
 
 Cihaz yuvası için en fazla **altı** öğe (birleştirilmiş uygulamalar ve klasörler) ekleyebilirsiniz.
 
 - **Ekle**: cihazdaki yuvaya uygulama veya klasör ekler.
 - **Tür**: bir **uygulama** veya **klasör**ekleyin:
 
-  - **Uygulama**: ekrandaki yerleştirmeyi uygulama eklemek için bu seçeneği belirleyin. Girmesini
+  - **Uygulama**: ekrandaki yerleştirmeyi uygulama eklemek için bu seçeneği belirleyin. Girin:
 
-    - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
-    - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
+    - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS/ıpados *cihazında gösterilmez.*
+    - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS/ıpados uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
   - **Klasör**: ekrandaki yerleştirmeyi bir klasör eklemek için bu seçeneği belirleyin.
 
@@ -99,24 +100,24 @@ Cihaz yuvası için en fazla **altı** öğe (birleştirilmiş uygulamalar ve kl
     - **Klasör adı**: klasörün adını girin. Bu ad, cihazlarındaki kullanıcılara gösterilir.
     - **Sayfaların listesi**: sayfa **ekleyin** ve aşağıdaki özellikleri girin:
 
-      - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
-      - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
-      - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
+      - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS/ıpados *cihazında gösterilmez.*
+      - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS/ıpados *cihazında gösterilmez.*
+      - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS/ıpados uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
       Cihaz yuvası için en fazla **20** sayfa ekleyebilirsiniz.
 
 > [!NOTE]
-> Yerleştirme ayarlarını kullanarak simgeler eklediğinizde, ana ekrandaki ve sayfalardaki simgeler kilitlenir ve taşınamaz. Bu, iOS ve Apple 'ın MDM ilkeleriyle tasarlayabilirsiniz.
+> Yerleştirme ayarlarını kullanarak simgeler eklediğinizde, ana ekrandaki ve sayfalardaki simgeler kilitlenir ve taşınamaz. Bu, iOS/ıpados ve Apple 'ın MDM ilkeleriyle tasarım sağlayabilir.
 
 #### <a name="example"></a>Örnek
 
 Aşağıdaki örnekte, Dock ekranında yalnızca Safari, mail ve hisse senetleri uygulamaları gösterilmektedir. Posta uygulaması özelliklerini göstermek için seçilmiştir:
 
-![Örnek iOS dock ayarları](./media/ios-device-features-settings/FfFiUcP.png)
+![Örnek iOS/ıpados yerleştirme ayarları](./media/ios-device-features-settings/FfFiUcP.png)
 
 İlkeyi bir iPhone 'a atadığınızda, yuva aşağıdaki resme benzer şekilde görünür:
 
-![iPhone’da örnek iOS dock düzeni](./media/ios-device-features-settings/bAgCe8F.png)
+![İPhone 'daki örnek iOS/ıpados yerleştirme düzeni](./media/ios-device-features-settings/bAgCe8F.png)
 
 ### <a name="pages"></a>Pages
 
@@ -129,7 +130,7 @@ Bir cihaza en fazla **40** sayfa ekleyebilirsiniz.
 
 - **Sayfaların listesi**: sayfa **ekleyin** ve aşağıdaki özellikleri girin:
 
-  - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim merkezinde başvurağınız için *kullanılır ve iOS* cihazında gösterilmez.
+  - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için *kullanılır ve iOS* /ıpados cihazında gösterilmez.
 
   Bir cihaza en fazla **60** öğe (birleştirilmiş uygulamalar ve klasör) ekleyebilirsiniz.
 
@@ -139,8 +140,8 @@ Bir cihaza en fazla **40** sayfa ekleyebilirsiniz.
 
       - **Uygulama**: ekrandaki bir sayfaya uygulama eklemek için bu seçeneği belirleyin. Şunları da girin:
 
-        - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
-        - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
+        - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS/ıpados *cihazında gösterilmez.*
+        - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS/ıpados uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
       - **Klasör**: ekrandaki yerleştirmeyi bir klasör eklemek için bu seçeneği belirleyin.
 
@@ -149,19 +150,19 @@ Bir cihaza en fazla **40** sayfa ekleyebilirsiniz.
         - **Klasör adı**: klasör için bir ad girin. Bu ad, cihazdaki kullanıcılara gösterilir.
         - **Ekle**: klasöre sayfa ekler. Aşağıdaki özellikleri de girin:
 
-          - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
-          - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS *cihazında gösterilmez.*
-          - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
+          - **Sayfa adı**: sayfa için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS/ıpados *cihazında gösterilmez.*
+          - **Uygulama adı**: uygulama için bir ad girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. İOS/ıpados *cihazında gösterilmez.*
+          - **Uygulama PAKETI kimliği**: UYGULAMANıN paket kimliğini girin. Bazı örnekler için bkz. [yerleşik iOS/ıpados uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
 
 #### <a name="example"></a>Örnek
 
 Aşağıdaki örnekte, **contoso** adlı yeni bir sayfa eklenmiştir. Sayfa, arkadaşları ve ayarları bul uygulamalarını gösterir. Ayarlar uygulaması özelliklerini göstermek için seçilmiştir:
 
-![iOS Giriş ekranı ayarları örneği](./media/ios-device-features-settings/Jc2OxyX.png)
+![Intune 'da iOS/ıpados giriş ekranı ayarları örneği](./media/ios-device-features-settings/Jc2OxyX.png)
 
 İlkeyi bir iPhone 'a atadığınızda, sayfa aşağıdaki resme benzer şekilde görünür:
 
-![Değiştirilmiş giriş ekranı ile iOS cihazı](./media/ios-device-features-settings/Bd37PHa.png)
+![Intune 'da değiştirilmiş giriş ekranına sahip iOS/ıpados cihazı](./media/ios-device-features-settings/Bd37PHa.png)
 
 ## <a name="app-notifications"></a>Uygulama bildirimleri
 
@@ -169,9 +170,9 @@ Aşağıdaki örnekte, **contoso** adlı yeni bir sayfa eklenmiştir. Sayfa, ark
 
 - **Ekle**: uygulamalar için bildirim ekleme:
 
-    ![Intune 'da iOS profiline uygulama bildirimi ekleme](./media/ios-device-features-settings/ios-macos-app-notifications.png)
+    ![Intune 'da iOS/ıpados profilinde uygulama bildirimi ekleme](./media/ios-device-features-settings/ios-macos-app-notifications.png)
 
-  - **Uygulama PAKETI kimliği**: eklemek Istediğiniz uygulamanın **uygulama paket kimliğini** girin. Bazı örnekler için bkz. [yerleşik iOS uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
+  - **Uygulama PAKETI kimliği**: eklemek Istediğiniz uygulamanın **uygulama paket kimliğini** girin. Bazı örnekler için bkz. [yerleşik iOS/ıpados uygulamaları Için paket kimlikleri](bundle-ids-built-in-ios-apps.md) .
   - **Uygulama adı**: eklemek istediğiniz uygulamanın adını girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. Cihazda *gösterilmez.*
   - **Yayımcı**: eklemekte olduğunuz uygulamanın yayımcısını girin. Bu ad, Microsoft Endpoint Manager Yönetim Merkezi ' nde başvurunuz için kullanılır. Cihazda *gösterilmez.*
   - **Bildirimler**: uygulamanın cihaza bildirim göndermesini **etkinleştirin** veya **devre dışı bırakın** .
@@ -189,6 +190,7 @@ Aşağıdaki örnekte, **contoso** adlı yeni bir sayfa eklenmiştir. Sayfa, ark
 Bu özellik şu platformlarda geçerlidir:
 
 - iOS 9.3 ve üzeri
+- ıpados 13,0 ve üzeri
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: otomatik cihaz kaydı (denetimli)
 
@@ -196,7 +198,7 @@ Bu özellik şu platformlarda geçerlidir:
 
   Girdiğiniz metin, cihazdaki oturum açma penceresinde ve kilit ekranında görüntülenir.
 
-- **Kilit ekranı dipnotu**: Cihaz kaybolur veya çalınırsa, cihazın döndürülmesini sağlamaya yardımcı olabilecek bir durum girin. İstediğiniz herhangi bir metin girebilirsiniz. Örneğin `If found, call Contoso at ...` gibi bir URI girebilirsiniz.
+- **Kilit ekranı dipnotu**: Cihaz kaybolur veya çalınırsa, cihazın döndürülmesini sağlamaya yardımcı olabilecek bir durum girin. İstediğiniz herhangi bir metin girebilirsiniz. Örneğin `If found, call Contoso at ...` gibi bir URL girebilirsiniz.
 
   Cihaz belirteçleri, bu alanlara cihaza özgü bilgiler eklemek için de kullanılabilir. Örneğin, seri numarasını göstermek için `Serial Number: {{serialnumber}}`girin. Kilit ekranında metin `Serial Number 123456789ABC`benzer şekilde görünür. Değişken girerken `{{ }}`kaşlı ayraç kullandığınızdan emin olun. [Uygulama yapılandırma belirteçleri](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) , kullanılabilecek değişkenlerin bir listesini içerir. `deviceName` veya başka bir cihaza özgü değeri de kullanabilirsiniz.
 
@@ -211,7 +213,7 @@ Bu özellik şu platformlarda geçerlidir:
 
   - **Kullanıcı asıl adı**: UPN aşağıdaki şekilde ayrıştırılır:
 
-    ![Kullanıcı adı özniteliği](./media/ios-device-features-settings/User-name-attribute.png)
+    ![Intune 'da iOS/ıpados Kullanıcı adı SSO özniteliği](./media/ios-device-features-settings/User-name-attribute.png)
 
     Ayrıca, **Bölge** metin kutusuna girdiğiniz metinle bölge değerinin üzerine yazabilirsiniz.
 
@@ -229,12 +231,12 @@ Bu özellik şu platformlarda geçerlidir:
 - **Bölge**: URL 'nin etki alanı parçasını girin. Örneğin, şunu girin: `contoso.com`.
 - **Çoklu Oturum Açma kullanacak URL ön ekleri**: Kuruluşunuzda kullanıcının çoklu oturum açma kimlik doğrulaması yapmasını gerektiren tüm URL’leri **ekleyin**.
 
-  Örneğin, kullanıcı bu sitelerden birine bağlandığında iOS cihaz çoklu oturum açma kimlik bilgilerini kullanır. Kullanıcının başka kimlik bilgisi girmesi gerekmez. Multi-Factor Authentication etkinleştirilirse, kullanıcıların ikinci kimlik doğrulamasını girmesi gerekir.
+  Örneğin, bir Kullanıcı bu sitelerden birine bağlanırsa, iOS/ıpados cihazı çoklu oturum açma kimlik bilgilerini kullanır. Kullanıcının başka kimlik bilgisi girmesi gerekmez. Multi-Factor Authentication etkinleştirilirse, kullanıcıların ikinci kimlik doğrulamasını girmesi gerekir.
 
   > [!NOTE]
   > Bu URL'ler düzgün biçimlendirilmiş FQDN'ler olmalıdır. Apple bunların `http://<yourURL.domain>` biçiminde olmasını gerektirir.
 
-  URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit bir dize eşleşmesi çalıştırılır, bu nedenle `http://www.contoso.com/` URL öneki `http://www.contoso.com:80/`eşleşmez. İOS 10,0 veya üzeri ile, eşleşen tüm değerleri girmek için tek bir joker \* kullanılabilir. Örneğin, `http://*.contoso.com/` hem `http://store.contoso.com/` hem de `http://www.contoso.com`eşleşir.
+  URL eşleştirme desenleri `http://` veya `https://` ile başlamalıdır. Basit bir dize eşleşmesi çalıştırılır, bu nedenle `http://www.contoso.com/` URL öneki `http://www.contoso.com:80/`eşleşmez. İOS 10.0 + ve ıpados 13.0 + ile, eşleşen tüm değerleri girmek için tek bir joker \* kullanılabilir. Örneğin, `http://*.contoso.com/` hem `http://store.contoso.com/` hem de `http://www.contoso.com`eşleşir.
 
   `http://.com` ve `https://.com` desenleri sırasıyla tüm HTTP ve HTTPS URL 'Leriyle eşleşir.
 
@@ -283,7 +285,7 @@ Bu özellik şu platformlarda geçerlidir:
   - **Yapılandırılmadı**: uygulama uzantıları kullanılmıyor. Bir uygulama uzantısını devre dışı bırakmak için, SSO uygulama uzantısı türü ' ni **Yapılandırılmadı**' ya geçirebilirsiniz.
   - **Yeniden yönlendir**: Modern kimlik doğrulama akışlarıyla SSO gerçekleştirmek için genel, özelleştirilebilir bir yeniden yönlendirme uygulama uzantısı kullanın. Kuruluşunuzun uygulama uzantısının uzantı KIMLIĞINI öğrendiğinizden emin olun.
   - **Kimlik bilgisi**: sınama ve yanıt kimlik doğrulama akışlarıyla SSO gerçekleştirmek için genel, özelleştirilebilir bir kimlik bilgisi uygulama uzantısı kullanın. Kuruluşunuzun uygulama uzantısının uzantı KIMLIĞINI öğrendiğinizden emin olun.
-  - **Kerberos**: iOS 13,0 (ve üzeri) ve ıpados 13,0 (ve daha yeni) ' de bulunan Apple 'ın yerleşik Kerberos uzantısını kullanın. Bu seçenek, **kimlik bilgisi** uygulama uzantısının Kerberos 'a özgü bir sürümüdür.
+  - **Kerberos**: iOS 13.0 + ve ıpados 13.0 + ' da bulunan Apple 'ın yerleşik Kerberos uzantısını kullanın. Bu seçenek, **kimlik bilgisi** uygulama uzantısının Kerberos 'a özgü bir sürümüdür.
 
   > [!TIP]
   > **Yeniden yönlendirme** ve **kimlik bilgisi** türleriyle, uzantıdan geçirilecek kendi yapılandırma değerlerinizi eklersiniz. **Kimlik bilgisi**kullanıyorsanız, Apple tarafından **Kerberos** türünde sunulan yerleşik yapılandırma ayarlarını kullanmayı göz önünde bulundurun.
@@ -353,7 +355,7 @@ Var olan bir görüntüye sahip cihazlara sahip olmayan bir profil atandığınd
 - **Duvar kağıdı resmi**: kullanmak istediğiniz var olan bir. png,. jpg veya. JPEG görüntüsünü karşıya yükleyin. Dosya boyutunun 750 KB 'tan az olduğundan emin olun. Ayrıca, eklediğiniz bir görüntüyü de **kaldırabilirsiniz** .
 
 > [!TIP]
-> Kilit ekranında ve ana ekranda farklı görüntüleri göstermek için, kilit ekranı görüntüsüyle bir profil oluşturun. Giriş ekranı görüntüsüyle başka bir profil oluşturun. Her iki profili de iOS Kullanıcı veya cihaz gruplarına atayın.
+> Kilit ekranında ve ana ekranda farklı görüntüleri göstermek için, kilit ekranı görüntüsüyle bir profil oluşturun. Giriş ekranı görüntüsüyle başka bir profil oluşturun. Her iki profili de iOS/ıpados Kullanıcı veya cihaz gruplarına atayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

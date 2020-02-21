@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune-Azure 'da iOS cihazları için e-posta ayarlarını yapılandırma | Microsoft Docs
-description: Exchange sunucularını kullanma ve Azure Active Directory öznitelikleri alma dahil olmak üzere Microsoft Intune ' de iOS cihazlarına yapılandırabileceğiniz ve ekleyebileceğiniz tüm e-posta ayarlarının listesini görüntüleyin. Ayrıca, SSL 'yi etkinleştirebilir, sertifikalar veya Kullanıcı adı/parola ile kullanıcıların kimliğini doğrulayabilir ve Microsoft Intune ' deki cihaz yapılandırma profillerini kullanarak iOS cihazlarındaki e-postaları eşitleyebilir.
+title: Microsoft Intune-Azure 'da iOS/ıpados cihazları için e-posta ayarlarını yapılandırma | Microsoft Docs
+description: Exchange sunucularını kullanma ve Azure Active Directory öznitelikleri alma dahil olmak üzere Microsoft Intune ' de iOS ve ıpados cihazlarını yapılandırabileceğiniz ve ekleyebileceğiniz tüm e-posta ayarlarının listesini görüntüleyin. Ayrıca, SSL 'yi etkinleştirebilir, sertifikalar veya Kullanıcı adı/parola ile kullanıcıların kimliğini doğrulayabilir ve Microsoft Intune ' deki cihaz yapılandırma profillerini kullanarak iOS/ıpados cihazlarındaki e-postaları eşitleyebilir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73de0ac94ff02e43fe73ca6357f6008ba71e3b93
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0ea06c50b1da237d4a822e80a8085b3b51913cec
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390829"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512815"
 ---
-# <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihazları için e-posta ayarları ekleme
+# <a name="add-e-mail-settings-for-ios-and-ipados-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS ve ıpados cihazları için e-posta ayarları ekleme
 
 Microsoft Intune, e-posta sunucusuna bağlanmak için e-posta oluşturup yapılandırabilir, kullanıcıların kimliğini nasıl doğrulayacağınızı, şifreleme için S/MIME 'yi kullanmayı ve daha fazlasını yapabilirsiniz.
 
-Bu makalede iOS çalıştıran cihazlar için kullanılabilen tüm e-posta ayarları listelenir ve açıklanmaktadır. Bu e-posta ayarlarını iOS cihazlarınıza göndermek veya dağıtmak için bir cihaz yapılandırma profili oluşturabilirsiniz.
+Bu makalede iOS/ıpados çalıştıran cihazlarda kullanılabilen tüm e-posta ayarları listelenir ve açıklanmaktadır. Bu e-posta ayarlarını iOS/ıpados cihazlarınıza göndermek veya dağıtmak için bir cihaz yapılandırma profili oluşturabilirsiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Bir cihaz yapılandırma profili oluşturma](../email-settings-configure.md).
+[Bir cihaz yapılandırma profili oluşturun](../email-settings-configure.md).
 
 > [!NOTE]
-> Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](../ios-enroll.md).
+> Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS/ıpados kaydı](../ios-enroll.md).
 
 ## <a name="exchange-activesync-account-settings"></a>Exchange ActiveSync hesap ayarları
 
@@ -72,7 +72,7 @@ Bu makalede iOS çalıştıran cihazlar için kullanılabilen tüm e-posta ayarl
 
   - Bazı kuruluşlar, son kullanıcının [self servis uygulama erişimi](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-self-service-access) sağlama becerisini devre dışı bırakır. Bu senaryoda bir Yönetici “iOS Hesapları” kurumsal uygulamasını oluşturup kullanıcıya Azure AD’de uygulama erişimi verene kadar Modern Kimlik Doğrulaması oturum açma denemesi başarısız olabilir.
 
-    Varsayılan eylem, [Uygulama Erişim Paneli](https://docs.microsoft.com/azure/active-directory/user-help/active-directory-saas-access-panel-introduction) **Uygulama Ekle** özelliğini **iş onayı olmadan** kullanarak uygulama eklemektir. Daha fazla bilgi için bkz. [uygulamalara kullanıcı atama](https://docs.microsoft.com/azure/active-directory/manage-apps/ways-users-get-assigned-to-applications).
+    Varsayılan eylem, uygulama [erişimi paneli](https://docs.microsoft.com/azure/active-directory/user-help/active-directory-saas-access-panel-introduction) uygulama **Ekle** özelliği **iş onayı olmadan**kullanılarak uygulama eklemektir. Daha fazla bilgi için bkz. [uygulamalara kullanıcı atama](https://docs.microsoft.com/azure/active-directory/manage-apps/ways-users-get-assigned-to-applications).
 
   > [!NOTE]
   > OAuth’u etkinleştirdiğinizde şunlar olur:  
@@ -114,7 +114,7 @@ Bu makalede iOS çalıştıran cihazlar için kullanılabilen tüm e-posta ayarl
   Seçenekleriniz şunlardır:
 
   - **S/MIME 'Yi devre dışı bırak** (varsayılan): e-postaları imzalamak, şifrelemek veya şifresini çözmek için s/MIME e-posta sertifikası kullanmaz.
-  - **S/MIME 'Yi etkinleştir**: kullanıcıların iOS Native Mail uygulamasında e-postayı imzalayıp/veya şifrelemesine izin verir. Şunları da girin:
+  - **S/MIME 'Yi etkinleştir**: kullanıcıların IOS/ıpados Native Mail uygulamasında e-postayı imzalayıp/veya şifrelemesine izin verir. Şunları da girin:
 
     - **S/MIME imzalama etkin**: **devre dışı bırak** (varsayılan), kullanıcıların iletiyi dijital olarak imzalamasına izin vermez. **Etkinleştir** ayarı, kullanıcıların girdiğiniz hesap için giden e-postayı dijital olarak imzalamasını sağlar. İmzalama, ileti alan kullanıcılara iletinin belirli bir gönderenden geldiğini ve gönderenin, gönderici olmaya hazır olmasını sağlar.
       - **Kullanıcının ayarı değiştirmesine Izin ver**: **Etkinleştir** seçeneği, kullanıcıların imzalama seçeneklerini değiştirmesine izin verir. **Devre dışı bırak** (varsayılan), kullanıcıların imzalamayı değiştirmesini engeller ve kullanıcıların yapılandırdığınız imzalamayı kullanmasına zorlar.

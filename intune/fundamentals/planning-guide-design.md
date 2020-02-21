@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886733"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514974"
 ---
 # <a name="create-a-design"></a>Tasarım oluşturma
 
@@ -188,7 +188,7 @@ Bu alanları daha ayrıntılı bir şekilde gözden geçirelim.
 
 ### <a name="determine-supported-device-platforms"></a>Desteklenen cihaz platformlarını belirleme
 
-Ortamda hangi cihazların olacağını bilmeniz ve tasarımınızı oluştururken bunların Intune tarafından desteklenip desteklenmediğini doğrulamanız gerekir. Intune; iOS, Android ve Windows platformlarını destekler.
+Ortamda hangi cihazların olacağını bilmeniz ve tasarımınızı oluştururken bunların Intune tarafından desteklenip desteklenmediğini doğrulamanız gerekir. Intune, iOS/ıpados, Android ve Windows platformlarını destekler.
 
 [Intune desteklenen cihazların tam listesi](supported-devices-browsers.md).
 
@@ -225,11 +225,11 @@ Bu bölümlerde, kullanım örneği senaryo gereksinimlerinize uygun aşağıdak
 
 - Kaynak profilleri
 
-- Apps
+- Uygulamalar
 
 - Uyumluluk ilkesi
 
-- Conditional Access
+- Koşullu Erişim
 
 Bu alanların her birini daha ayrıntılı bir şekilde gözden geçirelim.
 
@@ -242,7 +242,7 @@ Hüküm ve koşul ilkelerinin gerekli olup olmadığını belirlemeniz gerekir. 
 | **Hüküm ve Koşullar adı** | **Kullanım örneği** | **Hedeflenen grup** |
 |:---:|:---:|:---:|
 | Kurumsal Hüküm ve Koşullar | Kurumsal | Kurumsal kullanıcılar |                 
-| KCG Hüküm ve Koşulları | BYOD | KCG kullanıcıları |                
+| KCG Hüküm ve Koşulları | KCG | KCG kullanıcıları |                
 
 
 Hüküm ve koşullarınızı kullanıcı gruplarınıza eşlemek için [yukarıdaki tablonun şablonu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -296,8 +296,8 @@ Tasarım sırasında sertifikaları belgelemeye dair bir örnek aşağıda veril
 
 | **Tür** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |   
 |:---:|:---:|:---:|:---:|
-| Kök CA | Kurumsal Kök CA | Android, iOS, Windows mobile | Kurumsal, KCG  |                                                           
-| SCEP | Kullanıcı Sertifikası | Android, iOS, Windows mobile | Kurumsal, KCG |                                                           
+| Kök CA | Kurumsal Kök CA | Android, iOS/ıpados, Windows Mobile | Kurumsal, KCG  |                                                           
+| SCEP | Kullanıcı Sertifikası | Android, iOS/ıpados, Windows Mobile | Kurumsal, KCG |                                                           
 
 
 Sertifika profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -311,7 +311,7 @@ Bir Wi-Fi profili için bir tasarım örneği aşağıda verilmiştir:
 | **Tür** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | Asya Wi-Fi profili | Android | Kurumsal, KCG Asya bölgesi|
-| Wi-Fi | Kuzey Amerika Wi-Fi profili | Android, iOS, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika bölgesi |
+| Wi-Fi | Kuzey Amerika Wi-Fi profili | Android, iOS/ıpados, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika bölgesi |
 
 Wi-Fi profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
@@ -323,7 +323,7 @@ Bir VPN profili tasarımının belgelenmesine ilişkin bir örnek aşağıda ver
 
 | **Tür** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |
 |:---:|:---:|:---:|:---:|
-| VPN | VPN Cisco herhangi bir bağlantı Profili | Android, iOS, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika ve Almanya|
+| VPN | VPN Cisco herhangi bir bağlantı Profili | Android, iOS/ıpados, Windows 10 Mobile | Kurumsal, KCG Kuzey Amerika ve Almanya|
 | VPN | Pulse Secure | Android | Kurumsal, KCG Asya bölgesi |
 
 VPN profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -337,10 +337,10 @@ E-posta profillerinin tasarımının belgelenmesine dair bir örnek aşağıda v
 | **Tür** | **Profil adı** | **Cihaz platformu** | **Kullanım örnekleri** |
 |:---:|:---:|:---:|:---:|
 | E-posta profili | iOS e-posta profili | iOS | Kurumsal – KCG bilgi çalışanı |
-| E-posta profili | Android Knox e-posta profili | Android Knox | BYOD |
+| E-posta profili | Android Knox e-posta profili | Android Knox | KCG |
 
 E-posta profili ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
-### <a name="apps"></a>Apps
+### <a name="apps"></a>Uygulamalar
 
 Kullanıcılara veya cihazlara uygulamaları çeşitli yollarla sunmak için Intune kullanabilirsiniz. Uygulama türü yazılım yükleme uygulamalarını, genel uygulama mağazası uygulamalarını, dış bağlantıları veya yönetilen iOS uygulamalarını içerir. Tek tek uygulama dağıtımlarına ek olarak, iOS ve Windows için toplu satın alma programları aracılığıyla edinilen toplu satın alınan uygulamaları yönetilebilir ve dağıtılabilirsiniz. Daha fazla bilgi:
 
@@ -348,7 +348,7 @@ Kullanıcılara veya cihazlara uygulamaları çeşitli yollarla sunmak için Int
 
 - [iOS İş için Toplu Satın Alma Programı (VPP)](../apps/vpp-apps-ios.md)
 
-- [İş uygulamaları için Microsoft Mağazası](../apps/windows-store-for-business.md)
+- [İş İçin Microsoft Mağazası uygulamaları](../apps/windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Uygulama türü gereksinimleri
 
@@ -374,7 +374,7 @@ Uygulama koruma ilkeleri, uygulamanın kurumsal verileri nasıl yönettiğini ta
 | **Uygulama** | **Amaç** | **Platformlar** | **Kullanım örneği** | **Uygulama koruma ilkesi** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook mobile  | Kullanılabilir | iOS | Kurumsal - Yöneticiler | Jailbreak uygulanmış olamaz, dosyaları şifreleyin |                                                         
-| Word | Kullanılabilir | iOS, Android - Samsung Knox, Knox harici, Windows 10 mobile | Kurumsal, KCG | Jailbreak uygulanmış olamaz, dosyaları şifreleyin |                                                         
+| Word | Kullanılabilir | iOS/ıpados, Android-Samsung KNOX, Knox dışı, Windows 10 Mobile | Kurumsal, KCG | Jailbreak uygulanmış olamaz, dosyaları şifreleyin |                                                         
 
 
 Uygulama koruma ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -388,7 +388,7 @@ Bir uyumluluk ilkesi tasarlamaya ilişkin bir örnek aşağıda verilmiştir:
 
 | **İlke adı** | **Cihaz platformu** | **Ayarlar** | **Hedef grup** |
 |:---:|:---:|:---:|:---:|
-| Uyumluluk ilkesi | iOS, Android - Samsung Knox, Knox harici, Windows 10 mobile | PIN - gerekli, jailbreak uygulanmış olamaz | Kurumsal, KCG |
+| Uyumluluk ilkesi | iOS/ıpados, Android-Samsung KNOX, Knox dışı, Windows 10 Mobile | PIN - gerekli, jailbreak uygulanmış olamaz | Kurumsal, KCG |
 
 
 Uyumluluk ilkesi ihtiyaçlarınızı belirlemek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
@@ -404,8 +404,8 @@ Koşullu erişim ilkelerini Belgeme hakkında bir örnek aşağıda verilmiştir
 
 | **Hizmet** | **Modern Kimlik Doğrulaması Platformları** | **Temel Kimlik Doğrulaması** | **Kullanım örnekleri** |
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS, Android | Intune’un desteklediği platformlarda uyumlu olmayan cihazları engelle | Kurumsal, KCG |
-| SharePoint Online | iOS, Android |  | Kurumsal, KCG |
+| Exchange Online | iOS/ıpados, Android | Intune’un desteklediği platformlarda uyumlu olmayan cihazları engelle | Kurumsal, KCG |
+| SharePoint Online | iOS/ıpados, Android |  | Kurumsal, KCG |
 
 Koşullu erişim ilkesi gereksinimlerinizi belirlemek için [Yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) .
 

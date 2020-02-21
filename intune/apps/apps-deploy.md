@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912667"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511880"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune ile uygulamaları gruplara atama
 
@@ -49,7 +49,7 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
 | Son kullanıcıların web tabanlı Şirket Portalı’ndan kullanılabilir uygulamaları yüklemesi | Evet | Evet |
 
 > [!NOTE]
-> Şu anda, iOS ve Android uygulamalarını (iş kolu uygulamaları ve mağazadan satın alınan uygulamalar), Intune’a kayıtlı olmayan cihazlara atayabilirsiniz.
+> Şu anda, Intune 'a kayıtlı olmayan cihazlara iOS/ıpados ve Android Uygulamaları (iş kolu ve mağaza satın alınan uygulamalar) atayabilirsiniz.
 >
 > Intune'da kayıtlı olmayan cihazlarda uygulama güncelleştirmeleri almak için, cihaz kullanıcıları kendi kuruluşlarının Şirket Portalı'na gitmeli ve uygulama güncelleştirmelerini el ile yüklemelidir.
 
@@ -67,9 +67,9 @@ Aşağıdaki tabloda uygulamaları kullanıcılara ve cihazlara atamaya yönelik
    - **Kaldır**: Intune, uygulamayı daha önce kayıtlı cihazlar için kullanılabilir "veya aynı dağıtımı kullanarak" gerekli "atama yoluyla cihaza daha önce yükletiyse, seçilen gruplardaki cihazlardan kaldırılır. Dağıtım sonrasında web bağlantıları kaldırılamaz.
 
      > [!NOTE]
-     > **Yalnızca iOS uygulamaları için**:
-     > - Cihazların artık yönetilmediği yönetilen uygulamalara ne olduğunu yapılandırmak için, **cihaz kaldırma sırasında**, istenen ayarını seçebilirsiniz. Daha fazla bilgi için bkz. [iOS tarafından yönetilen uygulamalar Için uygulama kaldırma ayarı](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
-     > - Uygulama başına VPN ayarlarını içeren bir iOS VPN profili oluşturduysanız **VPN**altında VPN profilini seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS cihazlar için VPN ayarları](../vpn-settings-ios.md).
+     > **Yalnızca iOS/ıpados uygulamaları için**:
+     > - Cihazların artık yönetilmediği yönetilen uygulamalara ne olduğunu yapılandırmak için, **cihaz kaldırma sırasında**, istenen ayarını seçebilirsiniz. Daha fazla bilgi için bkz. [iOS/ıpados ile yönetilen uygulamalar Için uygulama kaldırma ayarı](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
+     > - Uygulama başına VPN ayarlarını içeren bir iOS/ıpados VPN profili oluşturduysanız **VPN**altında VPN profilini seçebilirsiniz. Uygulamayı çalıştırdığınızda VPN bağlantısı açılır. Daha fazla bilgi için bkz. [iOS/ıpados cihazları Için VPN ayarları](../vpn-settings-ios.md).
      >
      > **Yalnızca Android uygulamaları için**: bir Android uygulamasını **kayıt olmadan veya kaydıyla kullanılabilir**olarak dağıtırsanız, raporlama durumu yalnızca kayıtlı cihazlarda kullanılabilir olur.
      >
@@ -114,7 +114,7 @@ Aşağıdaki tablodaki bilgiler, bir çakışma oluştuğunda ortaya çıkan ama
 
 > [!NOTE]
 > Yalnızca yönetilen iOS mağazası uygulamalarını Microsoft Intune’a ekleyip **Gerekli** olarak atadığınızda, bu uygulamalar hem **Gerekli** hem de **Kullanılabilir** amaçlarıyla otomatik olarak oluşturulur.<br><br>
-> Gerekli amaçla hedefi belirlenmiş iOS Store uygulamaları (iOS VPP uygulamaları değil), cihazı iade etme sırasında cihazda zorunlu tutulur ve Şirket Portalı uygulamasında da gösterilir.<br><br>
+> gerekli amaca yönelik olarak hedeflenen iOS Mağazası uygulamaları (iOS/ıpados VPP uygulamaları değil) cihaz iade etme sırasında cihaza zorlanır ve ayrıca Şirket Portalı uygulamasında da görünür.<br><br>
 > **Cihaz kaldırma** ayarında çakışmalar oluştuğunda, cihaz artık yönetilmediğinde uygulama cihazdan kaldırılmaz.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Yönetilmeyen cihazlara Yönetilen Google Play uygulaması dağıtımı
@@ -132,7 +132,7 @@ Yönetilmeyen cihazlara Yönetilen Google Play uygulaması atama adımları:
 Intune konsolundan uygulamaya özgü bir silme işlemi başlatıldığında iş hesabı Play Store uygulamasından otomatik olarak kaldırılır ve bu işlemden sonra son kullanıcı Play Store uygulama kataloğunda iş uygulamalarını göremez. İş hesabı bir cihazdan kaldırıldığında Play Store'dan yüklenen uygulamalar cihazda yüklü şekilde kalır ve kaldırılmaz. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>İOS ile yönetilen uygulamalar için uygulama kaldırma ayarı
-İOS cihazlarında, cihazın Intune kaydını silmek veya **cihaz kaldırma ayarında Kaldır '** ı kullanarak yönetim profilini kaldırmak için, yönetilen uygulamalara ne olacağını seçebilirsiniz. Bu ayar yalnızca cihaz kaydedildikten ve uygulamalar yönetilen olarak yüklendikten sonra uygulamalar için geçerlidir. Ayar Web uygulamaları veya Web bağlantıları için yapılandırılamaz. Uygulama seçmeli silme işlemi tarafından kullanımdan kaldırıldıktan sonra yalnızca mobil uygulama yönetimi (MAM) tarafından korunan veriler kaldırılır.
+İOS/ıpados cihazlarında, cihazın Intune kaydını silmek veya **cihaz kaldırma ayarında Kaldır '** ı kullanarak yönetim profilini kaldırmak için, yönetilen uygulamalara ne olacağını seçebilirsiniz. Bu ayar yalnızca cihaz kaydedildikten ve uygulamalar yönetilen olarak yüklendikten sonra uygulamalar için geçerlidir. Ayar Web uygulamaları veya Web bağlantıları için yapılandırılamaz. Uygulama seçmeli silme işlemi tarafından kullanımdan kaldırıldıktan sonra yalnızca mobil uygulama yönetimi (MAM) tarafından korunan veriler kaldırılır.
 
 Ayar için varsayılan değerler, yeni atamalar için aşağıdaki gibi önceden doldurulur:
 

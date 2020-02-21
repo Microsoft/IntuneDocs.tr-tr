@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 9afb8f431ae301fe74f420c11205a7ed2637434b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839368"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514634"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>Kılavuzlu senaryo-mobil için Microsoft Edge dağıtma 
 
-Bu [Kılavuzlu senaryoyu](~/fundamentals/guided-scenarios-overview.md)izleyerek, kuruluşunuzda IOS veya Android cihazlarda Microsoft Edge uygulamasını kullanıcılarınıza atayabilirsiniz. Bu uygulamayı atamak, kullanıcılarınızın kurumsal cihazlarını kullanarak içeriğe sorunsuz bir şekilde gözatmasına olanak tanır. 
+Bu [Kılavuzlu senaryoyu](~/fundamentals/guided-scenarios-overview.md)Izleyerek, Microsoft Edge uygulamasını, kuruluşunuzda IOS/ıpados veya Android cihazlarda kullanıcılarınıza atayabilirsiniz. Bu uygulamayı atamak, kullanıcılarınızın kurumsal cihazlarını kullanarak içeriğe sorunsuz bir şekilde gözatmasına olanak tanır. 
 
-Microsoft Edge, kullanıcıların, iş içeriğini birleştirmelerine, düzenlemenize ve yönetmesine yardımcı olan yerleşik özelliklerle Web 'in dağınıklığını kesmesine olanak sağlar. Microsoft Edge uygulamasındaki kurumsal Azure AD hesaplarıyla oturum açan iOS ve Android cihazlarının kullanıcıları, çalışma alanı **sık kullanılanları** ve tanımladığınız Web sitesi filtreleriyle önceden yüklenmiş olan tarayıcılarıdır.
+Microsoft Edge, kullanıcıların, iş içeriğini birleştirmelerine, düzenlemenize ve yönetmesine yardımcı olan yerleşik özelliklerle Web 'in dağınıklığını kesmesine olanak sağlar. Microsoft Edge uygulamasındaki kurumsal Azure AD hesaplarıyla oturum açan iOS/ıpados ve Android cihazlarından oluşan kullanıcılar, çalışma alanı **sık kullanılanları** ve tanımladığınız Web sitesi filtreleri ile tarayıcınızı önceden yüklenmiş olarak bulur.
 
 > [!NOTE]
-> Kullanıcıların iOS veya Android cihazlarını kaydetmelerine izin verirseniz, bu senaryo kaydı etkinleştirmez ve kullanıcıların kendi başına Microsoft Edge yüklemesi gerekir.
+> Kullanıcıların iOS/ıpados veya Android cihazlarını kaydetmelerine izin verirseniz, bu senaryo kaydı etkinleştirmez ve kullanıcıların kendi için Edge yüklemesi gerekir.
 Intune ilkeleri tarafından etkinleştirilen aşağıdaki Microsoft Edge kurumsal özellikleri şunları içerir: 
 
 - **Çift kimlik**: Kullanıcılar hem iş hesabı hem de kişisel hesap ekleyerek göz atabilir. Office 365 ve Outlook mimarilerinde ve deneyimlerinde olduğu gibi iki kimlik arasında belirgin bir ayrım vardır. Intune yöneticileri, iş hesabını kullanarak korumalı bir göz atma deneyimi sağlamak üzere istenen ilkeleri belirleyebilir. 
@@ -38,7 +38,7 @@ Intune ilkeleri tarafından etkinleştirilen aşağıdaki Microsoft Edge kurumsa
 - **Azure Uygulama Ara Sunucusu tümleştirmesi**: Yöneticiler artık SaaS ve web uygulamaları erişimini denetleyerek kullanıcıların şirket ağı veya İnternet üzerinden bağlanma durumlarından bağımsız olarak tarayıcı tabanlı uygulamaların yalnızca güvenli Microsoft Edge tarayıcısında çalıştırılmasının sağlanmasına yardımcı olabilir. 
 - **Yönetilen Sık Kullanılanlar ve Giriş Sayfası kısayolları**: Yöneticiler, erişim kolaylığı sunmak için şirket bağlamına geçen son kullanıcıların sık kullanılanlar listesinde yer alacak URL'ler belirleyebilir. Yöneticiler, şirket kullanıcıları Microsoft Edge'de yeni bir sayfa veya sekme açtığında birincil kısayol olarak görüntülenecek bir giriş sayfası kısayolu ayarlayabilir.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 - [MDM yetkilisini Intune olarak ayarlama](mdm-authority-set.md#set-mdm-authority-to-intune) -mobil cihaz YÖNETIMI (MDM) yetkilisi ayarı, cihazlarınızı nasıl yöneteceğinizi belirler. Kullanıcıların yönetilmek üzere cihaz kaydedebilmeleri için, BT yöneticisi olarak bir MDM yetkilisi ayarlamanız gerekir.
 - Gerekli Intune yönetici izinleri:
@@ -47,11 +47,11 @@ Intune ilkeleri tarafından etkinleştirilen aşağıdaki Microsoft Edge kurumsa
     - İlke ayarları okuma, oluşturma ve atama izinleri
     - Kuruluş okuma, güncelleştirme izni
 
-## <a name="step-1---introduction"></a>Adım 1 - Giriş
+## <a name="step-1---introduction"></a>1\. adım-giriş
 
-Mobil destekli senaryo **Için Microsoft Edge** dağıtımı ' nı izleyerek, seçilen bir IOS ve Android kullanıcıları grubu Için Microsoft Edge 'in temel bir dağıtımını ayarlayacaksınız. Bu dağıtım, **çift kimlik** ve **yönetilen sık kullanılanlar ve giriş sayfası kısayollarını**uygular. Ayrıca, seçilen kullanıcılar tarafından kaydedilen cihazlar, Intune tarafından otomatik olarak yüklenen Microsoft Edge uygulamasına sahip olur. Bu otomatik yükleme, aşağıdakiler dahil olmak üzere tüm Kullanıcı odaklı kayıt türlerinde gerçekleşir: 
-- Şirket Portalı uygulaması aracılığıyla iOS kaydı 
-- Apple Business Manager aracılığıyla iOS Kullanıcı benzeşimi kaydı 
+Mobil destekli senaryo **Için Microsoft Edge** dağıtımı ' nı izleyerek, seçilen bir IOS/ıpados ve Android kullanıcıları grubu Için Microsoft Edge 'in temel bir dağıtımını ayarlayacaksınız. Bu dağıtım, **çift kimlik** ve **yönetilen sık kullanılanlar ve giriş sayfası kısayollarını**uygular. Ayrıca, seçilen kullanıcılar tarafından kaydedilen cihazlar, Intune tarafından otomatik olarak yüklenen Microsoft Edge uygulamasına sahip olur. Bu otomatik yükleme, aşağıdakiler dahil olmak üzere tüm Kullanıcı odaklı kayıt türlerinde gerçekleşir: 
+- Şirket Portalı uygulaması aracılığıyla iOS/ıpados kaydı 
+- Apple Business Manager aracılığıyla iOS/ıpados Kullanıcı benzeşimi kaydı 
 - Şirket Portalı uygulama aracılığıyla eski Android kaydı 
 
 Bu Kılavuzlu senaryo, **Uyglların** Microsoft Edge sık kullanılanları 'nda görünmesini ve tarayıcıyı Intune şirket portalı uygulaması için ayarlamış olduğunuz markala yapılandırmasını otomatik olarak sağlayacaktır. 
@@ -60,13 +60,13 @@ Bu Kılavuzlu senaryo, **Uyglların** Microsoft Edge sık kullanılanları 'nda 
 Kullanıcılarınızın ihtiyacı olan çalışma alanı sık kullanılanlarını ve Web 'e göz atmak için gereken filtreleri isteyeceğiz. Devam etmeden önce aşağıdaki görevleri tamamladığınızdan emin olun:
 
 - Kullanıcıları Azure AD gruplarına ekleyin. Daha fazla bilgi için bkz. [temel Grup oluşturma ve Azure Active Directory kullanarak üye ekleme](https://go.microsoft.com/fwlink/?linkid=2102458).
-- İOS veya Android cihazlarını Intune 'A kaydetme. Daha fazla bilgi için bkz. [cihaz kaydı](https://go.microsoft.com/fwlink/?linkid=2102547).
+- İOS/ıpados veya Android cihazlarını Intune 'A kaydedin. Daha fazla bilgi için bkz. [cihaz kaydı](https://go.microsoft.com/fwlink/?linkid=2102547).
 - Microsoft Edge 'de eklenecek çalışma alanı sık kullanılanları listesini toplayın.
 - Microsoft Edge 'de zorlamak için Web sitesi filtrelerinin bir listesini toplayın.
 
 ## <a name="step-2---basics"></a>2\. adım-temel bilgiler
 
-Bu adımda, yeni Microsoft Edge ilkeleriniz için bir ad ve açıklama girmeniz gerekir. Atamaları ve konfigürasyonları değiştirmeniz gerekiyorsa, bu ilkelere daha sonra başvurulabilir. Kılavuzlu senaryo iOS cihazlarınız için bir Microsoft Edge iOS uygulaması ve Android cihazlarınız için bir Microsoft Edge Android uygulaması ekler ve atayacaktır. Ayrıca, bu adım bu uygulamalar için yapılandırma ilkeleri oluşturacaktır.
+Bu adımda, yeni Microsoft Edge ilkeleriniz için bir ad ve açıklama girmeniz gerekir. Atamaları ve konfigürasyonları değiştirmeniz gerekiyorsa, bu ilkelere daha sonra başvurulabilir. Kılavuzlu senaryo iOS/ıpados cihazlarınız için Microsoft Edge iOS/ıpados uygulaması ve Android cihazlarınız için bir Microsoft Edge Android uygulaması ekler ve atar. Ayrıca, bu adım bu uygulamalar için yapılandırma ilkeleri oluşturacaktır.
 
 ## <a name="step-3---configuration"></a>3\. adım-yapılandırma
 
@@ -74,7 +74,7 @@ Bu adımda, Kılavuzlu senaryo Microsoft Edge 'i Intune aracılığıyla kullan�
 
 ## <a name="step-4---assignments"></a>4\. adım-atamalar
 
-Bu adımda, Microsoft Edge Mobile 'ın iş için yapılandırılmasını sağlamak üzere eklemek istediğiniz kullanıcı gruplarını seçebilirsiniz. Microsoft Edge, bu kullanıcılar tarafından kaydedilen tüm iOS ve Android cihazlara da yüklenir.
+Bu adımda, Microsoft Edge Mobile 'ın iş için yapılandırılmasını sağlamak üzere eklemek istediğiniz kullanıcı gruplarını seçebilirsiniz. Microsoft Edge, bu kullanıcılar tarafından kaydedilen tüm iOS/ıpados ve Android cihazlarına da yüklenir.
 
 ## <a name="step-5---review--create"></a>5\. adım-Inceleme ve oluşturma
 

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure’da cihazlar için Wi-Fi profili oluşturma | Microsoft Docs
-description: Microsoft Intune’da Wi-Fi cihaz yapılandırma profilleri oluşturmak için adımları inceleyin. Android, Android Enterprise, Android bilgi noktası, iOS, macOS, Windows 10 ve üzeri ve Windows holographic for Business için Profiller oluşturun. Bu profilleri kullanarak sertifika kullanmak için bir Wi-Fi bağlantısı oluşturmak, EAP türü seçmek, kimlik doğrulama yöntemi seçmek, proxy etkinleştirmek gibi pek çok şey yapabilirsiniz.
+description: Microsoft Intune’da Wi-Fi cihaz yapılandırma profilleri oluşturmak için adımları inceleyin. Android, Android Enterprise, Android bilgi noktası, iOS, Idos, macOS, Windows 10 ve üzeri ve Windows holographic for Business için Profiller oluşturun. Bu profilleri kullanarak sertifika kullanmak için bir Wi-Fi bağlantısı oluşturmak, EAP türü seçmek, kimlik doğrulama yöntemi seçmek, proxy etkinleştirmek gibi pek çok şey yapabilirsiniz.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47eae4d2e662be85de2831666f944e57ba674417
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 3110998970eeaf654ab57397ec827090a4103f34
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206117"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512339"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune’da cihazlarınız için Wi-Fi ayarları ekleme ve kullanma
 
 Wi-Fi, ağ erişimi sağlamak için birçok mobil cihaz tarafından kullanılan bir kablosuz ağ. Microsoft Intune, kuruluşunuzdaki kullanıcılara ve cihazlara dağıtılabilecek yerleşik Wi-Fi ayarlarını içerir. Bu ayar grubu "profil" olarak adlandırılır ve farklı kullanıcılara ve gruplara atanabilir. Atandıktan sonra kullanıcılarınız, kuruluşunuzun Wi-Fi ağına kendi kendilerini yapılandırmadan erişin.
 
-Örneğin Contoso Wi-Fi adında yeni bir Wi-Fi ağı kurdunuz. Ağı kurduktan sonra tüm iOS cihazları bu ağa bağlanacak şekilde ayarlamak isteyeceksiniz. İşlem şöyledir:
+Örneğin Contoso Wi-Fi adında yeni bir Wi-Fi ağı kurdunuz. Ardından, bu ağa bağlanmak için tüm iOS/ıpados cihazlarını ayarlamak istersiniz. İşlem şöyledir:
 
 1. Contoso Wi-Fi kablosuz ağına bağlanan ayarları içeren bir Wi-Fi profili oluşturun.
-2. Profili iOS cihazlarının tüm kullanıcılarını içeren bir gruba atayın.
+2. Profili iOS/ıpados cihazlarının tüm kullanıcılarını içeren bir gruba atayın.
 3. Kullanıcılar, yeni Contoso Wi-Fi ağını cihazlarındaki kablosuz ağ listesinde bulabilirler. Daha sonra seçtiğiniz kimlik doğrulama yöntemini kullanarak ağa bağlanabilirler.
 
 Bu makalede, Wi-Fi profili oluşturma adımları listelenir. Ayrıca, her platform için farklı ayarları tanımlayan bağlantıları da içerir.
@@ -41,9 +41,10 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
 - Android 4 ve üzeri
 - Android Kurumsal ve bilgi noktası
-- iOS 8.0 ve üzeri
+- iOS 8,0 ve üzeri
+- ıpados 13,0 ve üzeri
 - macOS X 10,11 ve üzeri
-- Windows 10 ve sonrası, Windows 10 Mobile ve Windows Holographic for Business
+- Windows 10 ve üzeri, Windows 10 Mobile ve Windows holographic for Business
 
 > [!NOTE]
 > Windows 8.1 çalıştıran cihazlarda daha önce başka bir cihazdan dışarı aktarılmış olan bir Wi-Fi yapılandırmasını içeri aktarabilirsiniz.
@@ -58,7 +59,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
     - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
     - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:
 
-      - **Outlook Web Access (OWA)**
+      - **Android**
       - **Android Kurumsal**
       - **iOS/ıpados**
       - **macOS**
@@ -74,7 +75,7 @@ Wi-Fi profilleri aşağıdaki cihaz platformlarını destekler:
 
 4. Bazı Wi-Fi ayarları platformdan platforma farklılık gösterir. Belirli bir platformun ayarlarını görmek için platformunuzu seçin:
 
-    - [Outlook Web Access (OWA)](wi-fi-settings-android.md)
+    - [Android](wi-fi-settings-android.md)
     - Adanmış cihazlar dahil [Android Enterprise](wi-fi-settings-android-enterprise.md)
     - [iOS/ıpados](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)

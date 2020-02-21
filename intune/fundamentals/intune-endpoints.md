@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2503013e6ca0d907a05c81f895b44878784dbbd4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 817f68d7082674145d482dc4c0bd1527fe0edb0b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502731"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514515"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune için ağ uç noktaları  
 
@@ -143,10 +143,10 @@ Teslim Iyileştirme meta verileri için:
 
 ## <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri  
 
-|Kullanım alanı:|Ana bilgisayar adı (IP adresi/alt ağ)|Protokol|Bağlantı Noktası|
+|Ne için kullanılır|Ana bilgisayar adı (IP adresi/alt ağ)|Protokol|Bağlantı Noktası|
 |-----|--------|------|-------|
 |Apple sunucularından içerik alma ve görüntüleme|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    istemcileri iki protokolü de kullandığından, proxy sunucusu hem    |      80      |
 |APNS sunucularıyla iletişim|#-courier.push.apple.com<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|    TCP     |  5223 ve 443  |
 |World Wide Web, iTunes Mağazası, macOS App Store, iCloud, mesajlaşma vb. erişim dahil çeşitli işlevler |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 veya 443   |
 
-Daha fazla bilgi için şu Apple belgelerine bakın: [Apple yazılım ürünleri tarafından kullanılan TCP ve UDP bağlantı noktaları](https://support.apple.com/en-us/HT202944), [macOS, iOS ve iTunes sunucusu ana bilgisayar bağlantıları ve iTunes arka plan işlemleri hakkında](https://support.apple.com/en-us/HT201999) ve [macOS ve iOS istemcileriniz Apple anında iletme bildirimlerini almıyorsa](https://support.apple.com/en-us/HT203609).  
+Daha fazla bilgi için bkz. [Apple yazılım ürünleri tarafından kullanılan Apple 'ın TCP ve UDP bağlantı noktaları](https://support.apple.com/HT202944), [MacOS, IOS/ıpados ve iTunes Server ana bilgisayar bağlantıları ve iTunes arka plan Işlemleriyle Ilgili](https://support.apple.com/HT201999), [MacOS ve IOS/ıpados istemcileriniz Apple anında iletme bildirimleri almıyorsanız](https://support.apple.com/HT203609).  

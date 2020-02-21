@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057575"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514855"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Intune ile Mobile Threat Defense tümleştirmesi
 
@@ -50,7 +50,7 @@ Etkinleştirilirse, Intune hem kişisel hem de şirkete ait cihazlardan uygulama
 Bu hizmet isteğe bağlıdır, varsayılan olarak hiçbir uygulama envanteri bilgisi paylaşılmaz. Bir Intune Yöneticisi, herhangi bir uygulama envanteri bilgisinin paylaşılmadan önce Mobile Threat Defense bağlayıcı ayarlarındaki **iOS cihazları Için uygulama eşitlemesini** etkinleştirmelidir.
 
 **Uygulama envanteri**  
-iOS cihazlar için Uygulama Eşitleme’yi etkinleştirirseniz hem şirkete ait hem de kişisel iOS cihazlar için envanterler MTD hizmet sağlayıcınıza gönderilir. Uygulama envanterindeki veriler şunları içerir:
+İOS/ıpados cihazları için uygulama eşitlemesini etkinleştirirseniz, hem şirkete ait hem de kişisel iOS/ıpados cihazlarındaki envanterler MTD hizmet sağlayıcınıza gönderilir. Uygulama envanterindeki veriler şunları içerir:
 
 - Uygulama Kimliği
 - Uygulama Sürümü

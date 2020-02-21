@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 492c90bc1d032b32ebc3a4b8465163085674f245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506929"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511455"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune’da macOS cihazlar için özel ayarlar kullanma
 
@@ -42,7 +42,7 @@ Bu makalede, Apple Configurator ve Apple Profile Manager kullanımı hakkında b
 
 ## <a name="what-you-need-to-know"></a>Bilmeniz gerekenler
 
-- Yapılandırma profilini oluşturmak için **Apple Configurator** kullanırken, dışarı aktarma yaptığınız ayarların cihazlardaki MacOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
+- Yapılandırma profilini oluşturmak için **Apple Configurator** kullanırken, dışarı aktarma yaptığınız ayarların cihazlardaki MacOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için **Apple Developer** web sitesinde **Configuration Profile Reference** ve [Mobile Device Management Protocol Reference](https://developer.apple.com/) başlıklarını arayın.
 
 - **Apple Profile Manager**’ı kullanırken şunları yapmayı unutmayın:
 
@@ -52,7 +52,7 @@ Bu makalede, Apple Configurator ve Apple Profile Manager kullanımı hakkında b
 
     Bu dosyayı indirin ve kaydedin. Intune profilinde bu dosyayı girmeniz istenir. 
 
-  - Apple Profile Manager 'dan dışarı verdiğiniz ayarların cihazlardaki macOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
+  - Apple Profile Manager 'dan dışarı verdiğiniz ayarların cihazlardaki macOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için **Apple Developer** web sitesinde **Configuration Profile Reference** ve [Mobile Device Management Protocol Reference](https://developer.apple.com/) başlıklarını arayın.
 
 ## <a name="custom-configuration-profile-settings"></a>Özel yapılandırma profili ayarları
 
@@ -70,4 +70,4 @@ Değişikliklerinizi kaydetmek için **Tamam** > **Oluştur**’u seçin. Profil
 
 Profil oluşturulur ancak henüz herhangi bir işlem gerçekleştirmez. Daha sonra, [profili atayın](device-profile-assign.md).
 
-Bkz. [iOS cihazlarda profil oluşturma](../custom-settings-ios.md).
+Bkz. [iOS/ıpados cihazlarında profil oluşturma](../custom-settings-ios.md).

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812355"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511336"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'deki cihaz ilkeleri ve profillerle ilgili yaygın sorular, sorunlar ve çözümler
 
@@ -36,11 +36,11 @@ Bu sorunu azaltmak için konuk Wi-Fi kurulumu yapın. Şirket Wi-Fi başarısız
 
 Bazı ek öneriler:  
 
-- Bağlanmakta olduğunuz Wi-Fi ağı bir parola veya parola kullanıyorsa, Wi-Fi yönlendiricisine doğrudan bağlanabildiğinizden emin olun. Bir iOS cihazıyla test edebilirsiniz.
+- Bağlanmakta olduğunuz Wi-Fi ağı bir parola veya parola kullanıyorsa, Wi-Fi yönlendiricisine doğrudan bağlanabildiğinizden emin olun. İOS/ıpados cihazından test edebilirsiniz.
 - Bir Wi-Fi uç noktasına (Wi-Fi yönlendiricisi) başarıyla bağlandıktan sonra SSID’yi ve kullanılan kimlik bilgilerini (bu değer erişim kodu veya paroladır) not edin.
 - SSID ve kimlik bilgilerini (parola) Önceden Paylaşılan Anahtar alanına girin. 
 - Profili, tercihen yalnızca BT ekibinden oluşan, sınırlı sayıda kullanıcıları olan bir test grubuna dağıtın. 
-- iOS cihazınızı Intune ile eşitleyin. Daha önce kaydolmadıysanız kaydolun. 
+- İOS/ıpados cihazınızı Intune 'a eşitleyin. Daha önce kaydolmadıysanız kaydolun. 
 - Aynı Wi-Fi uç noktasına bağlantıyı (ilk adımda bahsedildiği gibi) tekrar test edin.
 - Daha büyük gruplara veya sonuçta kuruluşunuzdaki tüm beklenen kullanıcılara dağıtın. 
 
@@ -54,7 +54,7 @@ Bir cihaz, ilk bildirimden sonra ilkeyi veya profili almak için iade vermezse, 
 
 | Platfveyam | Döngü süresi|
 | --- | --- |
-| iOS | Her 8 saatte bir |
+| iOS/ıpados | Her 8 saatte bir |
 | Mac OS | Her 8 saatte bir |
 | Android | Her 8 saatte bir |
 | Cihaz olarak kaydedilen Windows 10 bilgisayarlar | Her 8 saatte bir |
@@ -65,7 +65,7 @@ Cihaz son zamanlarda kaydedildiyse, uyumluluk, uyumsuzluk ve yapılandırma iade
 
 | Platfveyam | Sıklık |
 | --- | --- |
-| iOS | 1 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir |  
+| iOS/ıpados | 1 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir |  
 | Mac OS | 1 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
 | Android | 15 dakika boyunca 3 dakikada bir, sonra 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
 | Cihaz olarak kaydedilen Windows 10 bilgisayarlar | 15 dakika boyunca 3 dakikada bir, sonra 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
@@ -102,7 +102,7 @@ Aynı kullanıcı veya cihaza iki veya daha fazla ilke atandığında, uygulanan
 
 Bir ilke uygulamaya dağıtılır ve devreye girer. İkinci bir ilke dağıtılır. Bu senaryoda, ilk ilke öncelik kazanır ve uygulanır. İkinci ilke bir çakışma gösterir. Her ikisi de aynı anda uygulanırsa, önceki ilke olmadığında, her ikisi de çakışmadır. Çakışmadaki ayarlarda, en kısıtlayıcı olan değerler kullanılır.
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS özel ilkeleri çakışırsa ne olur?
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>İOS/ıpados özel ilkeleri çakıştığında ne olur?
 
 Intune, Apple yapılandırma dosyalarının veya özel bir Open Mobile Alliance Tekdüzen Kaynak Tanımlayıcısı (OMA-URI) ilkesinin yükünü değerlendirmez. Yalnızca bir teslim mekanizması olarak görev yapar.
 
@@ -144,7 +144,7 @@ Bir profili sildiğinizde veya bir cihazı profilin bulunduğu bir gruptan kald�
     - NFC'ye izin ver
     - Wi-Fi'a izin ver
 
-  - **iOS**: Aşağıdakiler dışında tüm ayarlar kaldırılır:
+  - **iOS/ıpados**: aşağıdakiler dışında tüm ayarlar kaldırılır:
   
     - Sesli dolaşıma izin ver
     - Veri dolaşımına izin ver
@@ -156,7 +156,7 @@ Windows Phone cihazlar bir kez ayarlandıktan sonra MDM veya EAS kullanılarak a
 
 Profili daha az güvenli bir değerle değiştirmek için güvenlik ilkelerini sıfırlayın. Örneğin, Windows 8.1 Masaüstünde, sağ tarafta içeri doğru kaydırın > **ayarlar** > **Denetim Masası**' nı seçin. **Kullanıcı Hesapları** uygulamasını seçin. Sol taraftaki gezinti menüsünde **güvenlik Ilkelerini Sıfırla** bağlantısı vardır (en alta doğru). Bunu seçin ve ardından **İlkeleri Sıfırla**’yı seçin.
 
-Android, Windows Phone 8,1 ve üzeri, iOS ve Windows 10 gibi diğer MDM cihazlarının devre dışı bırakılması ve daha az kısıtlayıcı bir profil uygulamak için Intune 'a yeniden kaydedilmesi gerekebilir.
+Android, Windows Phone 8,1 ve üzeri, iOS/ıpados ve Windows 10 gibi diğer MDM cihazlarının devre dışı bırakılması ve daha az kısıtlayıcı bir profil uygulamak için Intune 'a yeniden kaydedilmesi gerekebilir.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Windows 10 profilindeki bazı ayarlar "uygulanamaz" olarak döndürülür
 

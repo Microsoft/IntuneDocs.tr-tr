@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c81fa9b521b0d950fb69c29f7625981e709863d
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7945f1df3ddf1a6ff2c42a537e1071d1b5acff24
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913270"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514277"
 ---
 # <a name="troubleshoot-device-to-ndes-server-communication-for-scep-certificate-profiles-in-microsoft-intune"></a>Microsoft Intune 'daki SCEP sertifika profilleri için cihazdan NDES sunucu iletişimi sorunlarını giderme
 
@@ -40,7 +40,7 @@ IIS günlükleri tüm platformlar için aynı tür girdileri içerir.
 
    `fe80::f53d:89b8:c3e8:5fec%13 GET /certsrv/mscep/mscep.dll/pkiclient.exe operation=GetCACaps&message=default 80 - fe80::f53d:89b8:c3e8:5fec%13 Mozilla/4.0+(compatible;+Win32;+NDES+client) - 200 0 0 186 0.`
 
-   And
+   Ve
 
    `fe80::f53d:89b8:c3e8:5fec%13 GET /certsrv/mscep/mscep.dll/pkiclient.exe operation=GetCACert&message=default 80 - fe80::f53d:89b8:c3e8:5fec%13 Mozilla/4.0+(compatible;+Win32;+NDES+client) - 200 0 0 3567 0`
 
@@ -89,7 +89,7 @@ fe80::f53d:89b8:c3e8:5fec%13 GET /certsrv/mscep/mscep.dll operation=GetCACaps&me
 fe80::f53d:89b8:c3e8:5fec%13 Dalvik/2.1.0+(Linux;+U;+Android+5.0;+P01M+Build/LRX21V) - 200 0 0 421 
 ```
 
-### <a name="ios-and-ipados-devices"></a>iOS ve ıpados cihazları
+### <a name="iosipados-devices"></a>iOS/ıpados cihazları
 
 [Cihazlar hata ayıklama günlüğünü](troubleshoot-scep-certificate-profiles.md#logs-for-ios-and-ipados-devices)gözden geçirin. Cihaz NDES 'ye bağlanırken günlüğe kaydedilecek aşağıdakine benzer girdileri arayın:
 
@@ -333,11 +333,11 @@ SCEP sunucu URL 'sine gözattığınızda, şu hatayı alırsınız:
 
   11. **Sertifika özellikleri**' nde **Konu** sekmesine tıklayın, **konu adını** adım 2 sırasında topladığınız bilgilerle girin, **Ekle**' ye tıklayın.
 
-      ![Sertifika Özellikleri](../protect/media/troubleshoot-scep-certificate-device-to-ndes/certificate-properties.png)
+      ![Sertifika özellikleri](../protect/media/troubleshoot-scep-certificate-device-to-ndes/certificate-properties.png)
 
       **Özel anahtar** sekmesini seçin, **özel anahtarı dışarı aktarılabilir yap**' ı seçin ve ardından **Tamam**' a tıklayın.
 
-      ![özel anahtar](../protect/media/troubleshoot-scep-certificate-device-to-ndes/private-key.png)
+      ![Özel anahtar](../protect/media/troubleshoot-scep-certificate-device-to-ndes/private-key.png)
 
   12. Sertifika kaydını doldurun.
 

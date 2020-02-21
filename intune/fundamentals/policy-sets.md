@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206134"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514838"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Yönetim nesnelerinin koleksiyonlarını gruplamak için ilke kümelerini kullanma
 
@@ -40,7 +40,7 @@ ms.locfileid: "75206134"
 - Tüm kullanıcılara yaygın olarak kullanılan veya ilgili uygulamaları atama
 
 Aşağıdaki yönetim nesnelerini bir ilke kümesine dahil edebilirsiniz:
-- Apps
+- Uygulamalar
 - Uygulama yapılandırma ilkeleri
 - Uygulama koruma ilkeleri
 - Cihaz yapılandırma profilleri
@@ -52,7 +52,7 @@ Aşağıdaki yönetim nesnelerini bir ilke kümesine dahil edebilirsiniz:
 Bir ilke kümesi oluşturduğunuzda, tek bir atama birimi oluşturur ve farklı nesneler arasındaki ilişkilendirmeleri yönetebilirsiniz. İlke kümesi, onun dış nesnelerine bir başvuru olacaktır. Dahil edilen nesnelerdeki tüm değişiklikler ilke kümesini de etkileyecektir. Bir ilke kümesi oluşturduktan sonra, nesnelerini ve atamalarını art arda görüntüleyebilir ve düzenleyebilirsiniz. 
 
 > [!NOTE]
-> İlke kümeleri Windows, Android, macOS ve iOS ayarlarını destekler ve platformlar arası bir şekilde atanabilir.
+> İlke kümeleri Windows, Android, macOS ve iOS/ıpados ayarlarını destekler ve platformlar arası bir şekilde atanabilir.
 
 ## <a name="how-to-create-a-policy-set"></a>İlke kümesi oluşturma
 
@@ -82,15 +82,15 @@ Bir ilke kümesi oluşturduğunuzda, tek bir atama birimi oluşturur ve farklı 
 - Bir ilke kümesi oluştururken, kapsamlı bir yönetici hiçbir kapsam etiketi seçmeden bir ilke kümesi oluşturmayı denediğinde, **Gözden geçirme ve oluşturma** sayfasına ulaştıktan sonra doğrulama başarısız olur ve durum çubuğunda bir hata görüntülenir. Yönetici, işlemdeki farklı bir sayfaya geçiş yapmak ve ardından **gözden geçir + oluştur** sayfasına geri dönmelidir. Bu, **Oluştur** seçeneğini etkinleştirir.  
  
 - Aşağıdaki uygulama türleri şu anda ilke kümeleri tarafından destekleniyor:
-    - iOS mağazası uygulaması
-    - iOS iş kolu uygulaması
-    - Yönetilen iOS iş kolu uygulaması
+    - iOS/ıpados Mağazası uygulaması
+    - iOS/ıpados iş kolu uygulaması
+    - Yönetilen iOS/ıpados iş kolu uygulaması
     - Android mağazası uygulaması
     - Android iş kolu uygulaması
     - Yönetilen Android iş kolu uygulaması
     - Office 365 ProPlus Suite (Windows 10)
     - Web bağlantısı
-    - Yerleşik iOS uygulaması
+    - Yerleşik iOS/ıpados uygulaması
     - Yerleşik Android uygulaması
 
 - **Tüm kullanıcıların** bir ilke kümesi atamasını **Autopilot profiline** ayarlama desteklenmez.
@@ -103,18 +103,18 @@ Bir ilke kümesi oluşturduğunuzda, tek bir atama birimi oluşturur ve farklı 
 
 - İlke kümelerini destekleyen MAM ilke türleri şunları içerir: 
     - MAM WıP (Windows) MDM hedeflenen yönetilen uygulama koruması 
-    - MAM iOS hedeflenen yönetilen uygulama koruması
+    - MAM iiOS/ıpadosos hedeflenen yönetilen uygulama koruması
     - MAM Android hedeflenen yönetilen uygulama koruması
-    - MAM iOS hedeflenen yönetilen uygulama yapılandırması
+    - MAM iOS/ıpados hedeflenen yönetilen uygulama yapılandırması
     - MAM Android hedeflenen yönetilen uygulama yapılandırması
 
 - İlke kümelerini desteklemeyen MAM ilke türleri şunları içerir: 
     - MAM WıP (Windows) hedeflenen yönetilen uygulama koruması
 
 - MAM, ilkeyi aşağıdaki ilke türleri için doğrudan atamalar olarak ayarlar.
-    - MAM iOS hedeflenen yönetilen uygulama koruması
+    - MAM iOS/ıpados hedeflenen yönetilen uygulama korumasını
     - MAM Android hedeflenen yönetilen uygulama koruması
-    - MAM iOS hedeflenen yönetilen uygulama yapılandırması
+    - MAM iOS/ıpados hedeflenen yönetilen uygulama yapılandırması
     - MAM Android hedeflenen yönetilen uygulama yapılandırması
 
     Bir gruba dağıtılan bir ilke kümesine bir ilke eklenirse, Grup "ilke kümesi ile atanmamış" değil, iş yükünde doğrudan atanmış olarak gösterilir. Bunun sonucunda, MAM, ilke kümelerinden gelen grup atama silme işlemlerini işlemez.

@@ -7,14 +7,25 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
+ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415093"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77529353"
 ---
 Bu bildirimler, gelecekteki Intune değişiklik ve özelliklerine hazırlanmanıza yardımcı olabilecek önemli bilgiler sağlar.
+
+### <a name="microsoft-intune-support-for-windows-10-mobile-ending--3544938--"></a>Windows 10 Mobile bitiş için Microsoft Intune desteği<!--3544938-->
+Windows 10 Mobile için Microsoft temel desteği Aralık 2019 ' de sona erdi. Bu destek bildiriminde bahsedildiği gibi, Windows 10 Mobile kullanıcıları artık yeni güvenlik güncelleştirmeleri, güvenlikle ilgili olmayan düzeltmeler, ücretsiz yardımlı destek seçenekleri veya Microsoft 'un çevrimiçi teknik içerik güncelleştirmeleri almak için uygun olmayacaktır. Microsoft Intune, tüm mobil işletim sistemi desteğine göre, artık 11 Mayıs 2020 ' de Windows 10 Mobile uygulaması ve Windows 10 mobil Işletim sistemi için Şirket Portalı desteğini sona erdirmek üzere.
+
+#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
+Kuruluşunuzda dağıtılmış Windows 10 Mobile cihazları varsa, şu an ve 11 Mayıs 2020 arasında yeni cihazlar kaydedebilir, ilke ve uygulama ekleyebilir veya kaldırabilir ya da herhangi bir yönetim ayarını güncelleştirebilirsiniz. 11 Mayıs 'tan sonra yeni kayıtları durduracağız ve sonuç olarak Windows 10 Mobile yönetimini Intune kullanıcı arabiriminden kaldıracağız. Cihazlar artık Intune hizmetini denetmayacak ve cihaz ve ilke verilerini silecağız.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
+Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune raporlamayı kontrol edebilirsiniz. **Tüm cihazlar** > **cihazlar** ' a gidin ve işletim sistemine göre filtreleyin. Kuruluşunuzun Windows 10 Mobile çalıştıran cihazlara sahip olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın cihazlarını yükseltmesini isteyin veya şirket erişimi için cihazları kullanmaya devam edin.
+
+
 
 ### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>Değişiklik planı: Android kurumsal adanmış cihazlarını Intune 'A kaydetme deneyiminde değişiklik<!--6114580-->
 Kasım sürümünde paylaşıyoruz ve Wi-Fi profillerine sertifika tabanlı erişim sağlamak için Android kurumsal adanmış cihazlara SCEP sertifikası dağıtımı desteği ekledik. Bu değişiklik, Android kurumsal adanmış cihazlar için bazı küçük kayıt akışı değişikliklerine dahil değildir. Yakında Mart hizmeti güncelleştirmesi veya 2003 ile farkında olduğumuz bazı değişiklikler vardır.
@@ -44,16 +55,6 @@ Son kullanıcılarınıza ve yardım masasına bu değişikliğin haberdar olmas
 
 #### <a name="additional-information"></a>Ek Bilgiler
 https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
-
-
-### <a name="end-support-for-windows-phone-81--3544909--"></a>Windows Phone 8,1 için destek bitişi<!--3544909-->
-Windows Phone 8,1 için Microsoft temel desteği 2017 Temmuz 'da sona erdi ve genişletilmiş destek Haziran 2019 ' de sona erdi. Windows Phone 8,1 için Şirket Portalı uygulaması, 2017 ' den bu yana bir moda sahip. Microsoft Intune, Windows Phone 8,1 için 20 Şubat 2020 ' de desteği sona erdirmek için.
-
-#### <a name="how-does-this-affect-me"></a>Bu değişiklik beni nasıl etkileyecek?
-20 Şubat 2020 ' den sonra bu cihazlar herhangi bir güvenlik güncelleştirmesi almaz ve yeni cihazları kaydedemeyeceksiniz. Mevcut Windows Phone 8,1 cihazları kayıtlı kalır (ilke, uygulamalar, raporlama), ancak üçüncü taraf sertifikalar gibi birçok bileşen bu tarihten sonra bu tarihten sonra mevcut bir kayıt ile ilgili sorun gidermeyi desteklemez platformunun. Intune, Intune ile uyumluluk sınamasını durdurur ve 8,1 Windows Phone.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Bu değişikliğe hazırlanmak için ne yapmam gerek?
-Hangi cihazların veya kullanıcıların etkilendiğini görmek için Intune raporlamayı kontrol edebilirsiniz. Cihazlar > Tüm cihazlar'a gidin ve işletim sistemine göre filtre uygulayın. Kuruluşunuzda Windows Phone 8,1 çalıştıran cihazların kim olduğunu belirlemenize yardımcı olması için ek sütunlar ekleyebilirsiniz. Son kullanıcılarınızın cihazlarını desteklenen bir işletim sistemi sürümüne yükseltmesini isteyin.
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Işlem yapın: korumalı Intune tarayıcı deneyiminiz için Microsoft Edge kullanın<!--5728447-->

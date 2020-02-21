@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 94ff28cf36457d2d8b20e173508b7c9894a7d5bc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72999515"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510546"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Klasik Intune portalındaki yenilikler - önceki aylar
 
@@ -143,7 +143,7 @@ Artık, Microsoft Intune ile tümleşen bir mobil tehdit savunması çözümü o
 - Uygulama savunması
 - Güvenlik açıkları savunması
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Symantec Endpoint Protection Mobile (ufuk) risk değerlendirmesi temelinde EMS koşullu erişim ilkelerini yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumsuz cihazların şirket kaynaklarına erişimine izin vermek ya da erişimi engellemek için bu ilkeleri kullanabilirsiniz. Daha fazla bilgi için [Symantec Endpoint Protection Mobile Bağlayıcısı](../protect/skycure-mobile-threat-defense-connector.md).
+Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Symantec Endpoint Protection Mobile (ufuk) risk değerlendirmesi temelinde EMS koşullu erişim ilkelerini yapılandırabilirsiniz. Algılanan tehditler temelinde, uyumsuz cihazların şirket kaynaklarına erişimine izin vermek ya da erişimi engellemek için bu ilkeleri kullanabilirsiniz. Daha fazla bilgi için bkz. [Symantec Endpoint Protection Mobile Bağlayıcısı](../protect/skycure-mobile-threat-defense-connector.md).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android için Şirket Portalı uygulaması için yeni kullanıcı deneyimi <!--621622-->
 
@@ -253,7 +253,7 @@ Azure’da Intune önizlemesindeki yenilikleri [buradan](whats-new.md) bulabilir
 ### <a name="new-capabilities"></a>Yeni Özellikler
 
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Kayıt olmadan MAM için konsol içi raporlar <!--677961-->
-Hem kayıtlı hem kayıtlı olmayan cihazlar için yeni uygulama koruma raporları eklenmiştir. Nasıl yapabilecekleriniz hakkında daha fazla bilgi edinin [Intune ile mobil uygulama yönetimi ilkelerini izleme](../apps/app-protection-policies-monitor.md).
+Hem kayıtlı hem kayıtlı olmayan cihazlar için yeni uygulama koruma raporları eklenmiştir. [Intune ile mobil uygulama yönetimi ilkelerini nasıl izleyebileceğinizi](../apps/app-protection-policies-monitor.md)öğrenmek için daha fazla bilgi edinin.
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 desteği <!--694397-->
 Intune artık Android 7.1.1 sürümünü tam olarak destekler ve yönetir.
@@ -361,9 +361,9 @@ Yeni uygulama, kullanıcının Windows 10 cihazlarında çoklu oturum açma (SSO
 > [!IMPORTANT]
 > __Intune ve Android for Work hakkında bir Güncelleştirme__ Android for Work uygulamalarını __Gerekli__ eylemiyle dağıtabilirsiniz ancak uygulamaları __Kullanılabilir__ olarak dağıtmak için Intune gruplarınızın yeni Azure AD grupları deneyimine geçirilmiş olması gerekir.
 
-__Cordova için Intune Uygulama SDK'sı eklentisi artık kayıtsız MAM desteği sunuyor__ Uygulama geliştiricileri artık Cordova için Intune Uygulama SDK'sı eklentisini Android ve iOS için Cordova tabanlı uygulamalarında cihaz kaydı olmadan da MAM işlevlerini etkinleştirmek için kullanabilir. Cordova için Intune Uygulama SDK'sı eklentisine [buradan](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) ulaşabilirsiniz.
+__Cordova Için Intune uygulama SDK 'sı eklentisi artık kayıt olmadan mam destekliyor__ Uygulama geliştiricileri artık Cordova için Intune uygulama SDK 'Sı eklentisini kullanarak, Android ve iOS/ıpados için Cordova tabanlı uygulamalarında cihaz kaydı olmadan MAM işlevselliğini etkinleştirebilir. Cordova için Intune Uygulama SDK'sı eklentisine [buradan](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) ulaşabilirsiniz.
 
-__Xamarin için Intune Uygulama SDK'sı bileşeni artık kayıtsız MAM desteği sunuyor__ Uygulama geliştiricileri artık Xamarin için Intune Uygulama SDK'sı bileşenini Android ve iOS için Xamarin tabanlı uygulamalarında cihaz kaydı olmadan da MAM işlevlerini etkinleştirmek için kullanabilir. Xamarin için Intune Uygulama SDK'sı bileşenine [buradan](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) ulaşabilirsiniz.
+__Intune uygulama SDK 'Sı Xamarin bileşeni artık kayıt olmadan mam destekliyor__ Uygulama geliştiricileri artık Android ve iOS/ıpados için Xamarin tabanlı uygulamalarında cihaz kaydı olmadan MAM işlevselliğini etkinleştirmek için Intune uygulama SDK 'Sı Xamarin bileşenini kullanabilir. Xamarin için Intune Uygulama SDK'sı bileşenine [buradan](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) ulaşabilirsiniz.
 
 ### <a name="notices"></a>Bildirimler
 
@@ -374,5 +374,5 @@ __Symantec imzalama sertifikası artık yükleme için imzalanmış Windows Phon
 __Windows Phone 8 Şirket Portalı Desteği__ Windows Phone 8 Şirket Portalı desteği artık kullanım dışı bırakılacak. Windows Phone 8 ve WinRT platformları için sunulan destek de Ekim 2016'da kullanım dışı bırakıldı. Windows Phone 8 Şirket Portalı için sunulan destek de Ekim 2016'da kullanım dışı bırakıldı.
 
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 Son geliştirmelere ilişkin ayrıntılar için bkz. [Microsoft Intune’daki Yenilikler](whats-new.md).

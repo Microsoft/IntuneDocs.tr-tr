@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4fca28329a5cd0adc7269929c4b2c2807bebf5e
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437962"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514753"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Intune 'da cihaz eylemlerinin sorunlarını giderme
 
@@ -92,6 +92,20 @@ Bu adımlar tamamlandıktan sonra, artık bu yanıtı almamanız gerekir.
 
 ### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>Geçiş kodunu kaldır eylemini yayımladığımda, neden iOS/ıpados cihazım üzerinde yeni bir geçiş kodu ayarlaması istendim?
 Uyumluluk ilkelerinizin bir geçiş kodu gerektirdiğinden.
+
+
+## <a name="wipe-action"></a>Silme eylemi
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>Silme eylemini kullanarak bir Windows 10 cihazını yeniden başlatamıyorum
+Bu, **silme cihazını seç seçeneğini kullanırsanız ve cihazlar güç kaybediyor olsa bile temizlemeye devam ederse oluşabilir. Bu seçeneği belirlerseniz, bazı Windows 10 cihazlarının yeniden başlatılmasını engelleyebileceğini lütfen unutmayın.** bir Windows 10 cihazında.
+
+Bu durum, Windows yüklemesinde işletim sisteminin yeniden yüklenmesini engelleyen büyük bir bozulma olduğunda meydana gelebilir. Böyle bir durumda, işlem başarısız olur ve sistemi [Windows kurtarma ortamında]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference)bırakır.
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>Silme eylemini kullandıktan sonra BitLocker ile şifrelenen bir cihazı yeniden başlatamıyorum
+Bu, **silme cihazını seç seçeneğini kullanırsanız ve cihazlar güç kaybediyor olsa bile temizlemeye devam ederse oluşabilir. Bu seçeneği belirlerseniz, bazı Windows 10 cihazlarının yeniden başlatılmasını engelleyebileceğini lütfen unutmayın.** seçeneğini BitLocker ile şifrelenen bir cihazda yapın.
+
+Bu sorunu çözmek için önyüklenebilir medyayı kullanarak cihaza Windows 10 ' u yeniden yüklemeyi açın.
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

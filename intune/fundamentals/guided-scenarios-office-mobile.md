@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691815"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514617"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Kılavuzlu senaryo-güvenli Microsoft Office mobil uygulamalar 
 
-Cihaz yönetimi portalında Bu Kılavuzlu senaryoyu izleyerek iOS ve Android cihazlarda temel Intune uygulama korumasını etkinleştirebilirsiniz.
+Cihaz yönetimi portalında Bu Kılavuzlu senaryoyu izleyerek iOS/ıpados ve Android cihazlarda temel Intune uygulama korumasını etkinleştirebilirsiniz.
 
 Etkinleştirdiğiniz uygulama koruması aşağıdaki eylemleri uygular: 
 - İş dosyalarını şifreleyin.
@@ -51,13 +51,13 @@ Kullanıcıların korumasız konumlarda iş dosyalarını kaydetmesini engelleme
 
 Uygulama tabanlı koşullu erişim ve istemci uygulama yönetimi Exchange online ve diğer Office 365 hizmetlerine yalnızca Intune uygulama koruma ilkelerini destekleyen istemci uygulamaların erişmesine izin vererek bir güvenlik katmanı ekler.
 
-Exchange Online'a yalnızca Microsoft Outlook uygulamasının erişmesine izin verdiğinizde, iOS ve Android üzerindeki yerleşik posta uygulamalarını engelleyebilirsiniz. Ayrıca, Intune uygulama koruma ilkelerinin uygulanmadığı uygulamaların SharePoint Online'a erişmesini engelleyebilirsiniz.
+Yalnızca Microsoft Outlook uygulamasının Exchange Online 'a erişmesine izin vermek için iOS/ıpados ve Android 'teki yerleşik posta uygulamalarını engelleyebilirsiniz. Ayrıca, Intune uygulama koruma ilkelerinin uygulanmadığı uygulamaların SharePoint Online'a erişmesini engelleyebilirsiniz.
 
 Bu örnekte, yönetici Outlook uygulamasına uygulama koruma ilkeleri uygulamış, ardından Outlook uygulamasını kurumsal e-postaya erişirken kullanılabilecek onaylı uygulamalar listesine ekleyen bir koşullu erişim ilkesi eklemiştir.
 
 ![Outlook uygulaması koşullu erişim işlem akışı](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Intune yönetici izinlerini takip etmeniz gerekir:
 
@@ -65,11 +65,11 @@ Intune yönetici izinlerini takip etmeniz gerekir:
    - İlke ayarları okuma, oluşturma ve atama izinleri
    - Kuruluş okuma izni
 
-## <a name="step-1---introduction"></a>Adım 1 - Giriş
+## <a name="step-1---introduction"></a>1\. adım-giriş
 
 **Intune uygulama koruması** Kılavuzlu senaryoyu izleyerek verilerin kuruluşunuz dışında paylaşılmasını veya sızmasını önleyecaksınız. 
 
-Atanan iOS ve Android kullanıcıları, her bir Office uygulaması her açtıklarında PIN girmeleri gerekir. 5 başarısız PIN girişiminden sonra, kullanıcılar PIN kodlarını sıfırlamalıdır. Zaten bir cihaz PIN 'ı gerekliyse, kullanıcılar etkilenmez.
+Atanan iOS/ıpados ve Android kullanıcıları, her bir Office uygulaması her açtıklarında PIN girmeleri gerekir. 5 başarısız PIN girişiminden sonra, kullanıcılar PIN kodlarını sıfırlamalıdır. Zaten bir cihaz PIN 'ı gerekliyse, kullanıcılar etkilenmez.
 
 ### <a name="what-you-will-need-to-continue"></a>Devam etmeniz gerekenler
 
@@ -86,7 +86,7 @@ Bu adımda, yeni uygulama koruma ilkeniz için bir **ön ek** ve **Açıklama** 
 
 ## <a name="step-3---apps"></a>3\. adım-uygulamalar
 
-Başlamanıza yardımcı olması için, Bu Kılavuzlu senaryo iOS ve Android cihazlarda korumak üzere aşağıdaki mobil uygulamaları önceden seçer:
+Başlamanıza yardımcı olması için, Bu Kılavuzlu senaryo iOS/ıpados ve Android cihazlarında korumak üzere aşağıdaki mobil uygulamaları önceden seçer:
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 
@@ -105,7 +105,7 @@ Uygulamaları seçtikten **sonra ileri**' ye tıklayın.
 
 Bu adımda, bu uygulamalardaki kurumsal dosyalara ve e-postalara erişmek ve bunları paylaşmak için gereksinimleri yapılandırmanız gerekir. Varsayılan olarak, kullanıcılar kuruluşunuzun OneDrive ve SharePoint hesaplarına veri kaydedebilir.
 
-| Ayar | Description | Varsayılan Değer |
+| Ayar | Açıklama | Varsayılan Değer |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | PIN türü | Sayısal PIN 'Ler tüm numaralardan oluşur. Passcodes, alfasayısal karakterlerden ve özel karakterlerden oluşur.  İOS/ıpados 'ta, "geçiş kodu" türünü yapılandırmak için, uygulamanın Intune SDK sürüm 7.1.12 veya üstüne sahip olmasını gerektirir. Sayısal türlerde Intune SDK sürümü kısıtlaması yoktur. | Sayısal |
 | Minimum PIN uzunluğunu seçin | PIN dizisindeki basamak sayısı alt sınırını belirtin. | 6 |

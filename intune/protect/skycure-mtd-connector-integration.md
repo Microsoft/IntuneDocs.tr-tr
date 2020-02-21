@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 9f639c4d2c2bcfa62f828fa18973fe6a513b1a82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912616"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514872"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile'ın Intune ile tümleştirmesini ayarlama
 
@@ -54,7 +54,7 @@ SEP Mobile, Intune ile iki tümleştirme modunu destekler:
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile uygulamaları Azure AD ve Intune ile nasıl kullanılır?
 
-- **iOS uygulaması:** Son kullanıcıların iOS uygulaması kullanarak Azure AD’de oturum açmasına olanak tanır.
+- **iOS uygulaması:** Son kullanıcıların bir iOS/ıpados uygulaması kullanarak Azure AD 'de oturum açmasına olanak tanır.
 
 - **Android uygulaması:** Son kullanıcıların Android uygulaması kullanarak Azure AD’de oturum açmasına olanak tanır.
 
@@ -77,11 +77,11 @@ SEP Mobile, Intune ile iki tümleştirme modunu destekler:
 
 5. Oturum açma sayfası açıldığında Intune kimlik bilgilerinizi girin ve **Kabul Et**’i seçin.
 
-    ![iOS uygulaması Intune oturum açma istemi resmi](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
+    ![İOS/ıpados uygulaması Intune oturum açma istemi görüntüsü](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
 
 6. Uygulama Azure AD'ye eklendikten sonra, uygulamanın başarıyla eklendiğine ilişkin bir gösterge görürsünüz.
 
-    ![iOS uygulaması tamamlanma ekranı resmi](./media/skycure-mtd-connector-integration/symantec-portal-basic-added.png)
+    ![İOS/ıpados uygulaması tamamlama ekranının görüntüsü](./media/skycure-mtd-connector-integration/symantec-portal-basic-added.png)
 
 7. **SEP Mobile Android** ve **Yönetim** uygulamaları için bu adımları yineleyin.
 
@@ -136,11 +136,11 @@ SEP Mobile, Mobile Threat Defense hizmetini çalıştıran cihazları Azure AD g
 
 6. **iOS Uygulaması**'nın yanında **Active Directory'ye Ekle** düğmesini seçin.
 
-    ![iOS uygulamasını Active Directory'ye eklemeyi gösteren resim](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
+    ![Active Directory iOS/ıpados uygulaması eklemeyi gösteren resim](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
 
 7. Dizini yöneten Office 365 hesabının Azure Active Directory kimlik bilgilerini kullanarak oturum açın.
 
-8. SEP Mobile iOS uygulamasını Azure Active Directory'ye eklemek için **Kabul Et** düğmesini seçin.
+8. Azure Active Directory için SEP mobil iOS/ıpados uygulamasını eklemek için **kabul et** düğmesini seçin.
 
     ![Kabul et düğmesini gösteren resim](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
 

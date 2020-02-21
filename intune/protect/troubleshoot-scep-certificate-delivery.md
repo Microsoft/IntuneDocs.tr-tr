@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77be59d126dc7e73bee468ca938938c6bb1b2e1a
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 40075ad3c90f9ce5131d88780d15eec5c258e276
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913198"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515263"
 ---
 # <a name="troubleshoot-the-delivery-of-certificates-provisioned-by-scep-to-devices-in-microsoft-intune"></a>Microsoft Intune 'daki cihazlara SCEP tarafından sağlanan sertifikaların tesliminde sorun giderme
 
@@ -73,9 +73,9 @@ Android 'de yüklü bir sertifikayı görüntülemek için 3. taraf sertifika g�
 2018-02-27T05:20:15.3520000    INFO    Event     com.microsoft.omadm.platforms.android.certmgr.state.NativeScepCertInstallStateMachine    18327       21    SCEP cert 'ModelName=AC_51…%2FLogicalName_39907…;Hash=1677525787' state changed from CERT_ACCESS_REQUESTED to CERT_ACCESS_GRANTED
 ```
 
-### <a name="ios-and-ipados"></a>iOS ve ıpados
+### <a name="iosipados"></a>iOS/ıpados
 
-İOS veya ıpados cihazında, sertifikayı cihaz yönetimi profili altında görebilirsiniz. Yüklü sertifikalara ilişkin ayrıntıları görmek için ayrıntıya gidin.
+İOS/ıpados veya ıpados cihazında, sertifikayı cihaz yönetimi profili altında görebilirsiniz. Yüklü sertifikalara ilişkin ayrıntıları görmek için ayrıntıya gidin.
 
 ![iOS sertifikası](../protect/media/troubleshoot-scep-certificate-delivery/ios-certificate.png)
 
@@ -108,7 +108,7 @@ Cihazdaki sertifikayı görüntülemek için, Sertifikalar MMC 'yi açmak üzere
 
 Bu adımı gidermek için, OMA DM günlüğünde günlüğe kaydedilen hataları gözden geçirin.
 
-### <a name="ios-and-ipados"></a>iOS ve ıpados
+### <a name="iosipados"></a>iOS/ıpados
 
 Bu adımı gidermek için, cihazlar hata ayıklama günlüğünde günlüğe kaydedilen hataları gözden geçirin.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 40a7e1884a7e36bf56038bdafdd15a1556ef46c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125022"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513461"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -36,7 +36,7 @@ Intune uygulama koruma ilkelerinin Microsoft Edge ile kullanılması, kurumsal w
 
 Microsoft Edge için Microsoft Intune koruma ilkeleri, kuruluşunuzun verilerini ve kaynaklarını korumanıza yardımcı olur. Bu ilkelerin Microsoft Edge ile kullanılması, şirketinizin kaynaklarının yalnızca yerel olarak yüklü uygulamalar içinde değil, ayrıca Web tarayıcısından erişilen şekilde korunmasını sağlar.
 
-## <a name="getting-started"></a>Kullanmaya başlama
+## <a name="getting-started"></a>Başlarken
 
 Siz ve son kullanıcılarınız, kuruluşunuzda kullanılmak üzere genel uygulama mağazalarından Microsoft Edge 'i indirebilir. Tarayıcı ilkeleri için işletim sistemi gereksinimleri aşağıdakilerden biri olabilir:
 - Android 4 ve üzeri
@@ -101,7 +101,7 @@ Microsoft Edge için uygulama yapılandırması oluşturmak için:
 2. **Ekle** > **uygulama yapılandırma ilkeleri** > **uygulamalar** ' ı seçin.
 3. **Yapılandırma Ilkesi Ekle** bölmesinde, uygulama yapılandırma ayarları Için bir **ad** ve isteğe bağlı bir **Açıklama** girin.
 4. **Cihaz kayıt** türü için **Yönetilen uygulamalar**’ı seçin.
-5. **Gerekli uygulamayı Seç ' i**seçin. Ardından, **hedeflenen uygulamalar** bölmesinde iOS için **Managed Browser** veya **kenarı** , Android için veya her ikisi için de seçin.
+5. **Gerekli uygulamayı Seç ' i**seçin. Ardından, **hedeflenen uygulamalar** bölmesinde IOS/ıpados, Android için veya her ikisi için **Managed Browser** veya **kenarı** seçin.
 6. **Yapılandırma Ilkesi Ekle** bölmesine dönmek için **Tamam ' ı** seçin.
 7. **Yapılandırma ayarlarını** seçin. **Yapılandırma** bölmesinde, Microsoft Edge yapılandırmalarını sağlamak için anahtar ve değer çiftlerini tanımlarsınız. Tanımlayabileceğiniz farklı anahtar ve değer çiftleri hakkında bilgi edinmek için bu makalenin ilerleyen bölümlerine göz atın.
 
@@ -136,7 +136,7 @@ Android’de:
 - Microsoft Edge, cihazda yalnızca Microsoft Edge indirildiyse ve Intune ilkesi ile hedeflenirse başlatılır.
 - Managed Browser, yalnızca cihazda Managed Browser ve Intune ilkesiyle hedeflenirse başlatılır.
 
-Intune SDK’sını iOS v için tümleştiren uygulamalarda iOS’ta. 9.0.9+:
+İOS/ıpados ' da iOS için Intune SDK 'Sı ile tümleştirilmiş uygulamalar için. 9.0.9+:
 - Intune Managed Browser, hem Managed Browser hem de Microsoft Edge cihazında yer alıyorsa başlatılır.  
 - Microsoft Edge, yalnızca cihazda Microsoft Edge varsa ve Intune ilkesi ile hedeflenirse başlatılır.
 - Managed Browser, yalnızca cihazda Managed Browser ve Intune ilkesiyle hedeflenirse başlatılır.
@@ -201,7 +201,7 @@ Daha sonra, kuruluşların markasını Microsoft Edge 'e çekmek için aşağıd
 
 ## <a name="display-relevant-industry-news-on-new-tab-pages"></a>Yeni sekme sayfalarında ilgili sektör haberlerini görüntüleme
 
-Microsoft Edge Mobile içindeki yeni sekme sayfası deneyimini, kuruluşunuzla ilgili sektör haberlerini görüntüleyecek şekilde yapılandırabilirsiniz. Bu özelliği etkinleştirdiğinizde, mikro Osft Edge Mobile kuruluşunuzun etki alanı adını kuruluşunuz, kuruluşunuzun sektör ve comeptitors hakkındaki haberleri toplamak için kullanır. böylece kullanıcılarınız, ilgili harici haberleri her yeni merkezden bulabilir. Microsoft Edge içindeki sekme sayfaları. Sektör Haberleri varsayılan olarak kapalıdır ve kuruluşunuz için bu uygulamayı kabul etmek için kullanabilirsiniz. 
+Microsoft Edge Mobile içindeki yeni sekme sayfası deneyimini, kuruluşunuzla ilgili sektör haberlerini görüntüleyecek şekilde yapılandırabilirsiniz. Bu özelliği etkinleştirdiğinizde, Microsoft Edge Mobile kuruluşunuzun etki alanı adını kuruluşunuz, kuruluşunuzun sektör ve rakipler hakkında Web 'den toplamak için kullanır. böylece kullanıcılarınız, tüm merkezi yeni Microsoft Edge içindeki sekme sayfaları. Sektör Haberleri varsayılan olarak kapalıdır ve kuruluşunuz için bu uygulamayı kabul etmek için kullanabilirsiniz. 
 
 |    Anahtar    |    Değer    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -252,7 +252,7 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
   - https için bağlantı noktası 443
 - Bağlantı noktası numarası için joker karakter kullanılması **desteklenmez.** Örneğin `http://www.contoso.com:*` ve `http://www.contoso.com:*/` desteklenmez. 
 
-    |    URL    |    Ayrıntılar    |    Eşleşir    |    Eşleşmez    |
+    |    URL    |    Details    |    Eşleşir    |    Eşleşmez    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    Tek bir sayfayla eşleşir    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Tek bir sayfayla eşleşir    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
@@ -293,7 +293,7 @@ Sınırlı bağlantıların, kullanıcılara daha sorunsuz bir gözatma deneyimi
 
 |    Anahtar    |    Değer    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **Doğru** , Microsoft Edge 'in engellenen siteleri açmak için kullanıcıları Kişisel bağlamlarına geçişine olanak sağlar.<p>**Blok** , Microsoft Edge 'in kullanıcıları geçişini engeller. Kullanıcılara erişmeye çalıştıkları sitenin engellendiğini bildiren bir ileti gösterilir.    |
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **Doğru** , kullanıcının kişisel hesabına anahtar yapmasını istemeden siteler doğrudan bir InPrivate sekmesinde otomatik olarak açılır. <p> **False** (varsayılan), siteyi Microsoft Edge içinde engeller ve kullanıcının, kendi kişisel hesabına görüntülemesi istenir.    |
 
 ## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Parolaları kaydetmek için Microsoft Edge istemi 'ni devre dışı bırak
 

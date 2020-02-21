@@ -15,24 +15,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 15147a1d9ffd82e2f900d15c4a9d2b4d23ad23e3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801484"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515161"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Intune 'da e-posta imzalama ve şifreleme için S/MIME 'ye Genel Bakış
 
 S/MIME sertifikası olarak da bilinen e-posta sertifikaları, şifreleme ve şifre çözme kullanarak e-posta iletişimlerinizi ek güvenlik sağlar. Microsoft Intune, aşağıdaki platformları çalıştıran mobil cihazlarda e-postaları imzalamak ve şifrelemek için S/MIME sertifikaları kullanabilir:
 
 - Android
-- iOS
+- iOS/ıpados
 - Mac OS
 - Windows 10 ve üzeri
 - Windows Phone
 
-iOS cihazlarında, gelen ve gönderilen e-postaları imzalamak ve şifrelemek için S/MIME ve sertifikaları kullanan, Intune tarafından yönetilen bir e-posta profili oluşturabilirsiniz. Diğer platformlarda S/MIME desteklenmiyor olabilir. Destekleniyorsa, S/MIME imzalama ve şifreleme kullanan sertifikaları yükler. Ardından, son kullanıcı e-posta uygulamasında S/MIME 'yi etkinleştirmesine izin vermez.
+İOS/ıpados cihazlarında, gelen ve giden e-postaları imzalamak ve şifrelemek için S/MIME ve sertifikaları kullanan bir Intune ile yönetilen e-posta profili oluşturabilirsiniz. Diğer platformlarda S/MIME desteklenmiyor olabilir. Destekleniyorsa, S/MIME imzalama ve şifreleme kullanan sertifikaları yükler. Ardından, son kullanıcı e-posta uygulamasında S/MIME 'yi etkinleştirmesine izin vermez.
 
 S/MIME e-posta imzalama ve Exchange ile şifreleme hakkında daha fazla bilgi için bkz. [s/MIME, ileti imzalama ve şifreleme için](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
 
@@ -77,7 +77,7 @@ E-posta şifreleme amacıyla kullanılan, Intune’a aktarılmış bir PKCS sert
 
 ## <a name="smime-email-profiles"></a>S/MIME e-posta profilleri
 
-S/MIME imzalama veya şifreleme sertifikası profillerini oluşturduktan sonra [iOS yerel postası için S/MIME’yi etkinleştirebilirsiniz](../configuration/email-settings-ios.md).
+S/MIME imzalama ve şifreleme sertifikası profilleri oluşturduktan sonra, [iOS/ıpados yerel postası Için s/MIME 'yi etkinleştirebilirsiniz](../configuration/email-settings-ios.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

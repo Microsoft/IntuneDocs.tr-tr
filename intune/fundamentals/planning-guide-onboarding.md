@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505191"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514957"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune planınızı uygulama
 
@@ -39,7 +39,7 @@ Tek başına Intune temel gereksinimleri şöyledir:
 
 - Office 365 aboneliği (Office uygulamaları ve uygulama koruma ilkesiyle yönetilen uygulamalar için)
 
-- Apple APNs Sertifikası (iOS cihaz platformu yönetimini etkinleştirmek için)
+- Apple APNs sertifikası (iOS/ıpados cihaz platformu yönetimini etkinleştirmek için)
 
 - Azure AD Connect (dizin eşitleme için)
 
@@ -88,7 +88,7 @@ Intune kullanarak cihazları kurmaya, yapılandırmaya, yönetmeye ve kaydetmeye
 
 ### <a name="task-6-enable-device-platforms"></a>Görev 6: Cihaz platformlarını etkinleştirme
 
-Varsayılan olarak, Apple cihazları (iOS ve Mac) dışında çoğu cihaz platformu etkinleştirilmiştir. iOS cihazlarını Intune’a kaydetmek ve Intune ile yönetmek için önce cihaz platformunun etkinleştirilmesi gerekir. Bunu yapmak için bir MDM Anında İletme sertifikası oluşturup bunu Intune’a eklemeniz gerekir.
+Varsayılan olarak, çoğu cihaz platformu Apple cihazları (iOS/ıpados ve Mac) dışında etkindir. İOS/ıpados cihazlarının Intune 'A kaydedilebilmesi ve yönetilmesi için cihaz platformunun etkinleştirilmiş olması gerekir. Bunu yapmak için bir MDM Anında İletme sertifikası oluşturup bunu Intune’a eklemeniz gerekir.
 
 - [Apple cihazların kaydını etkinleştirme](../enrollment/apple-mdm-push-certificate-get.md) hakkında daha fazla bilgi edinin.
 
@@ -130,7 +130,7 @@ Intune, Exchange Online, şirket içi Exchange, SharePoint Online, Skype Kurumsa
 
 ### <a name="task-13-enroll-devices"></a>Görev 13: Cihazları kaydetme
 
-Intune; iOS, Mac OS, Android, Windows masaüstü ve Windows mobil cihaz platformlarını destekler. Mobil cihaz platformlarını Intune dağıtımı kullanım örneklerinize ve gereksinimlerinize göre uygun şekilde kaydedin.
+Intune, iOS/ıpados, Mac OS, Android, Windows Masaüstü ve Windows mobil cihaz platformlarını destekler. Mobil cihaz platformlarını Intune dağıtımı kullanım örneklerinize ve gereksinimlerinize göre uygun şekilde kaydedin.
 
 - [Cihazları kaydetme](../enrollment/device-enrollment.md) hakkında daha fazla bilgi edinin.
 

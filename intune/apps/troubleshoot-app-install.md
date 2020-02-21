@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7216dedf67f6ee9fc8d899756f789d1c0dccc6
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 13aea23f58c69d5c7e38f77ae7dfa19bd12edd35
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415504"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511660"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Uygulama yükleme sorunlarını giderme
 
@@ -50,7 +50,7 @@ Intune, belirli bir kullanıcının cihazında yüklü uygulamalar temelinde sor
     > Aynı uygulama, birden çok gruba atanabilir ancak uygulama için amaçlanan farklı eylemleri (amaçları) olmalıdır. Örneğin uygulama ataması sırasında bir kullanıcı için uygulama dışlandıysa uygulama için çözümlenen amaç **dışlandı** olarak görüntülenecektir. Daha fazla bilgi için bkz. [Uygulama amaçları arasındaki çakışmalar nasıl çözümlenir](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Gerekli bir uygulama için yükleme hatası oluşursa siz veya yardım masanız tarafından cihaz eşitlenebilir ve uygulama yüklemesi yeniden denenebilir.
 
-Uygulama yükleme hatası ayrıntıları, sorunu gösterecektir. Sorunu çözmek için yapılacak en iyi eylemi belirlemek üzere bu ayrıntıları kullanabilirsiniz. Uygulama yükleme sorunlarını giderme hakkında daha fazla bilgi için bkz. [Android uygulama yükleme hataları](app-install-error-codes.md#android-app-installation-errors) ve [iOS uygulama yükleme hataları](app-install-error-codes.md#ios-app-installation-errors).
+Uygulama yükleme hatası ayrıntıları, sorunu gösterecektir. Sorunu çözmek için yapılacak en iyi eylemi belirlemek üzere bu ayrıntıları kullanabilirsiniz. Uygulama yükleme sorunlarını giderme hakkında daha fazla bilgi için bkz. [Android uygulama yükleme hataları](app-install-error-codes.md#android-app-installation-errors) ve [iOS uygulama yükleme hataları](app-install-error-codes.md#ios-and-ipados-app-installation-errors).
 
 > [!Note]  
 > **Sorun giderme** bölmesine tarayıcınızı [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) adresine yönlendirerek de erişebilirsiniz.
@@ -65,7 +65,7 @@ Uygulamaları yüklerken sorun yaşadığınızda aşağıdaki eylemler göz ön
   3. [Azure Active Directory kullanıcılara](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)gidin.
   4. Etkilenen kullanıcıyı seçin ve **cihazlar**' a tıklayın.
   5. Kullanıcı ayarlanan sınırın üzerinde ise artık gerekli olmayan eski kayıtları silin.
-- İOS/ıpados DEP cihazlarında, kullanıcının Intune cihazına genel bakış bölmesinde Kullanıcı **tarafından kaydedilmiş** olarak listelendiğinden emin olun. Varsa, Intune Şirket Portalı için bir yapılandırma ilkesi dağıtın. Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yapılandırma](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- İOS/ıpados DEP cihazlarında, kullanıcının Intune cihazına genel bakış bölmesinde Kullanıcı **tarafından kaydedilmiş** olarak listelendiğinden emin olun. Varsa, Intune Şirket Portalı için bir yapılandırma ilkesi dağıtın. Daha fazla bilgi için bkz. [Şirket Portalı uygulamasını yapılandırma](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 uygulaması yükleme sorunlarını giderme
 

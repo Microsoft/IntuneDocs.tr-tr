@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058520"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510393"
 ---
 # <a name="device-management-overview"></a>Cihaz yönetimine genel bakış
 
@@ -33,7 +33,7 @@ Kuruluş, bir cihaz yönetimi sağlayıcısı kullanarak yalnızca yetkili kişi
 
 Yanıt [Microsoft Intune](what-is-intune.md). Intune, mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) sunar. Her MDM ya da MAM çözümünün aşağıdakiler gibi bazı başlıca görevleri vardır:
 
-- Farklı bir mobil ortamı destekler ve iOS, Android, Windows ve macOS cihazlarını güvenli bir şekilde yönetin.
+- Farklı bir mobil ortamı destekler ve iOS/ıpados, Android, Windows ve macOS cihazlarını güvenli bir şekilde yönetin.
 - Cihazların ve uygulamaların kuruluşunuzun güvenlik gereksinimleriyle uyumlu olduğundan emin olun.
 - Kuruluş verilerinizi kuruluşa ait ve kişisel cihazlarda güvende tutmaya yardımcı olan ilkeler oluşturun.
 - Bu ilkeleri yaptırmak ve cihazları, uygulamaları, kullanıcıları ve grupları yönetmek için birleştirilmiş tek bir mobil çözüm sunma.
@@ -47,7 +47,7 @@ Microsoft gibi birçok kuruluş, Intune'u kullanıcıların şirkete ait ve kiş
 
 İnsanların farklı platformlar kullanan birden çok cihazı olması sık görülen bir durumdur. Örneğin bir çalışan iş için Surface Pro ve kişisel yaşamı için bir Android mobil cihaz kullanabilir. Aynı kişilerin bu değişik cihazlardan Microsoft Outlook ve SharePoint gibi kuruluş kaynaklarına erişmesi de yine sık görülen bir durumdur.
 
-Intune ile herkesin cihazlarını ve bu cihazlarda çalışan iOS, macOS, Android ve Windows gibi farklı platformları yönetebilirsiniz. Intune, ilkeleri ve ayarları cihaz platformuna göre ayırır. Bu nedenle belirli bir platformun cihazlarını kolayca yönetebilir ve görüntüleyebilirsiniz.
+Intune ile, her kişi için birden çok cihazı ve iOS/ıpados, macOS, Android ve Windows dahil olmak üzere her cihazda çalışan farklı platformları yönetebilirsiniz. Intune, ilkeleri ve ayarları cihaz platformuna göre ayırır. Bu nedenle belirli bir platformun cihazlarını kolayca yönetebilir ve görüntüleyebilirsiniz.
 
 **[Yaygın senaryolar](common-scenarios.md)** Intune'un mobil cihazlarla çalışılırken sık karşılaşılan soruları nasıl yanıtladığını görmek için harika bir kaynaktır. Burada aşağıdakilerle ilgili senaryolar bulabilirsiniz:  
 
@@ -63,7 +63,7 @@ Cihaz yönetim çözümlerinin başlıca görevlerinden biri güvenlik ve koruma
 
 - **Microsoft 365** yaygın BT görevlerini basitleştirmek için temel bir bileşenidir. Microsoft 365 Yönetim merkezinde, kullanıcılar oluşturur ve grupları yönetirsiniz. Intune, Azure AD ve daha fazlası gibi diğer hizmetlere da erişebilirsiniz.
 
-  Örneğin, Microsoft 365 ' de bir iOS cihazları grubu oluşturun. Daha sonra Intune'u uygulama mağazasına erişim, AirDrop, iCloud'a yedekleme, Apple'ın web filtresini kullanma vb. iOS özelliklerine odaklı iOS cihazları grubuna anında ilke iletmek için kullanabilirsiniz.
+  Örneğin, Microsoft 365 ' de bir iOS/ıpados cihazları grubu oluşturun. Ardından, Intune 'u kullanarak App Store 'a erişim, AirDrop, iCloud 'a yedekleme, Apple 'ın Web Filter ve daha fazlası gibi iOS/ıpados özelliklerine odaklanılmış olan iOS/ıpados cihazları grubuna da
 
 - **Windows Defender** Windows 10 cihazlarını korumaya yardımcı olacak birçok güvenlik özelliği içerir. Örneğin Intune'u ve Windows Defender'ı birlikte kullanarak şunları yapabilirsiniz:
 
@@ -97,11 +97,11 @@ Cihaz Yönetimi yönetim merkezinde şunları yapabilirsiniz:
 - [Rolleri yönetme](role-based-access-control.md)  
 - Yazılım güncelleştirmelerini yönetme
   - [Windows 10 güncelleştirmelerini yönetme](../protect/windows-update-for-business-configure.md)  
-  - [iOS güncelleştirmelerini yönetme](../protect/software-updates-ios.md)  
+  - [İOS/ıpados güncelleştirmelerini yönetme](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Kullanıcıları yönetme](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Grupları ve üyeleri yönetme](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [Sorun Giderme](help-desk-operators.md)
+- [Sorun giderme](help-desk-operators.md)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

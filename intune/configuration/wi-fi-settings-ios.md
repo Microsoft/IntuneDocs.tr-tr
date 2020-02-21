@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune - Azure’da iOS cihazlar için Wi-Fi ayarlarını yapılandırma - Azure | Microsoft Docs
+title: Microsoft Intune-Azure 'da iOS/ıpados cihazları için Wi-Fi ayarlarını yapılandırma | Microsoft Docs
 titleSuffix: ''
-description: iOS cihazlar için bir Wi-Fi cihaz yapılandırma profili oluşturun veya ekleyin. Microsoft Intune’da sertifika ekleme, EAP türü seçme ve bir kimlik doğrulama yöntemi seçme gibi farklı ayarları inceleyin.
+description: İOS/ıpados cihazları için bir WiFi cihaz yapılandırma profili oluşturun veya ekleyin. Microsoft Intune’da sertifika ekleme, EAP türü seçme ve bir kimlik doğrulama yöntemi seçme gibi farklı ayarları inceleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 68685428ac94dfe08306858774eaf98fb079e66c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059212"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512322"
 ---
-# <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için Wi-Fi ayarları ekleme
+# <a name="add-wi-fi-settings-for-ios-and-ipados-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS ve ıpados cihazları için Wi-Fi ayarları ekleme
 
-Belirli Wi-Fi ayarları ile bir profil oluşturabilir ve ardından bu profili iOS cihazlarınıza dağıtabilirsiniz. Microsoft Intune, ağınızda kimlik doğrulaması, PKCS veya SCEP sertifikası ekleme ve daha fazlası dahil olmak üzere birçok özellik sunar.
+Belirli bir WiFi ayarlarına sahip bir profil oluşturabilir ve ardından bu profili iOS/ıpados cihazlarınıza dağıtabilirsiniz. Microsoft Intune, ağınızda kimlik doğrulaması, PKCS veya SCEP sertifikası ekleme ve daha fazlası dahil olmak üzere birçok özellik sunar.
 
 Bu Wi-Fi ayarları iki kategoriye ayrılır: Temel ayarlar ve Kurumsal düzeydeki ayarlar.
 
@@ -36,7 +36,7 @@ Bu makalede bu ayarlar açıklanır.
 [Cihaz profili oluşturma](../device-profile-create.md).
 
 > [!NOTE]
-> Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](../enrollment/ios-enroll.md).
+> Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS/ıpados kaydı](../enrollment/ios-enroll.md).
 
 ## <a name="basic-profiles"></a>Temel profiller
 

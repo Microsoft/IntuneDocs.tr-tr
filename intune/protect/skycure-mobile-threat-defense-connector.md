@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be8fbb0bd96891eb3af3157deddfc325ebc5f2b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508933"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515280"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile bağlayıcısı
 
@@ -41,7 +41,7 @@ Intune cihaz uyumluluk ilkeleri aracılığıyla merkezi mobil risk değerlendir
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune ve SEP Mobile şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
-Android veya iOS için SEP Mobile uygulaması dosya sistemi, ağ yığını, cihaz ve uygulama telemetrisini (varsa) yakalar ve mobil tehditlere karşı cihazın riskini değerlendirmek için bunları Symantec bulut hizmetine gönderir.
+Android veya iOS/ıpados için araç mobil uygulaması, kullanılabilir olduğunda dosya sistemi, ağ yığını, cihaz ve uygulama telemetrisini yakalar ve mobil tehditlere karşı cihazın riskini değerlendirmek için bunu Symantec bulut hizmetine gönderir.
 
 Intune cihaz uyumluluğu ilkesi, SEP Mobile risk değerlendirmesini temel alan bir SEP Mobile’a yönelik bir kural içerir. Bu kural etkinleştirildiğinde Intune, cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir.
 
@@ -121,7 +121,7 @@ Burada, Intune’u SEP Mobile ile tümleştirme işlemini tamamlamak için gerek
 
 - [Intune ile SEP Mobile tümleştirmesini ayarlama](skycure-mtd-connector-integration.md)
 
-- [ uygulamaları, Microsoft Authenticator ve iOS uygulama yapılandırma ilkesi ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [SEP mobil uygulamaları ekleme ve atama, Microsoft Authenticator ve iOS/ıpados uygulama yapılandırma ilkesi](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
 - [Intune ile SEP Mobile cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)
 

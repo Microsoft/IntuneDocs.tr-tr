@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e8234db93d9b06a71e1f5cd6e51daca2d1ea2b1
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: a29fab4be6e2046b2c6757505001a7ba3455b8d6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415182"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514328"
 ---
 # <a name="troubleshoot-iosipados-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 'de iOS/ıpados cihaz kaydı sorunlarını giderme
 
@@ -238,18 +238,6 @@ Kayıt profili atanan DEP ile yönetilen bir cihazı açtığınızda, kimlik bi
 
 #### <a name="resolution"></a>Çözüm
 MFA 'yı devre dışı bırakın ve ardından cihazı yeniden kaydedin.
-
-### <a name="the-enrollment-status-page-times-out-before-the-sign-in-screen"></a>Kayıt durumu sayfası, oturum açma ekranından önce zaman aşımına uğrar
-
-**Neden:** Aşağıdaki koşulların tümü doğruysa bu sorun oluşabilir:
-- Iş uygulamaları Microsoft Store izlemek için kayıt durumu sayfasını kullanıyorsunuz.
-- Bir cihazın uyumlu denetim olarak işaretlenmesini gerektir ' i kullanan bir Azure AD koşullu erişim ilkeniz vardır.
-- İlke tüm bulut uygulamaları ve pencereleri için geçerlidir.
-
-#### <a name="resolution"></a>{1&gt;Çözüm&lt;1}:
-Aşağıdakilerden birini deneyin:
-- Intune uyumluluk ilkelerinizi cihazlara hedefleyin. Kullanıcı oturum açmadan önce uyumluluğun belirlenebilmesi için emin olun.
-- Mağaza uygulamaları için çevrimdışı lisanslama kullanın. Bu şekilde, Windows istemcisinin cihaz uyumluluğunu belirlemeden önce Microsoft Store denetlemesi gerekmez.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c662de98ffa497c5fbc89ac1b78ed8537ff0d80c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71729233"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514209"
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
 Bu makalede, kullanıcılarınız koşullu erişimle korunan kaynaklara erişim izni alamazsanız veya kullanıcılar korumalı kaynaklara erişebiliyorsa ve engellenmesi gereken durumlarda ne yapılacağını açıklar.
@@ -60,7 +60,7 @@ Azure Yönetim Portalı’nda ve cihaz envanteri raporunda her cihaz için bu ko
 
 - Cihaz ilk kaydedildiğinde cihazın uyumluluk bilgilerinin kaydedilmesi biraz zaman alabilir. Birkaç dakika bekleyin ve tekrar deneyin.
 
-- İOS cihazlarında, var olan bir e-posta profili, bu kullanıcıya atanan bir Intune yönetici tarafından oluşturulan e-posta profilinin dağıtımını engelleyebilir ve cihaz uyumsuz hale gelebilir. Bu senaryoda, Şirket Portalı uygulama kullanıcıya el ile yapılandırılmış e-posta profilleri nedeniyle uyumlu olmadıklarını bildirir ve kullanıcıdan bu profili kaldırmasını ister. Kullanıcı mevcut e-posta profilini kaldırdığında, Intune e-posta profili başarıyla dağıtılabilir. Bu sorunu önlemek için kullanıcılarınızdan kaydolmadan önce cihazlarında bulunan e-posta profillerini kaldırmalarını isteyin.
+- İOS/ıpados cihazlarında, var olan bir e-posta profili, bu kullanıcıya atanan Intune yönetici tarafından oluşturulan e-posta profilinin dağıtımını engelleyebilir ve cihaz uyumsuz hale gelebilir. Bu senaryoda, Şirket Portalı uygulama kullanıcıya el ile yapılandırılmış e-posta profilleri nedeniyle uyumlu olmadıklarını bildirir ve kullanıcıdan bu profili kaldırmasını ister. Kullanıcı mevcut e-posta profilini kaldırdığında, Intune e-posta profili başarıyla dağıtılabilir. Bu sorunu önlemek için kullanıcılarınızdan kaydolmadan önce cihazlarında bulunan e-posta profillerini kaldırmalarını isteyin.
 
 - Bir cihaz, bir denetim uyumluluğu durumunda takılmasına ve kullanıcının başka bir iade başlatmasına karşı bir durum alabilir. Bu durumda bir cihazınız varsa:
   - Cihazın Şirket Portalı uygulamasının en son sürümünü kullandığından emin olun.

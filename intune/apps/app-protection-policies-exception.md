@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 77a4f0ea0ee076907d2a6cd14000c5cf319231e6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437860"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513784"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Intune Uygulama Koruması Ilkesi (uygulama) veri aktarımı ilkesi için özel durumlar oluşturma
 
@@ -32,13 +32,13 @@ Yönetici olarak, Intune Uygulama Koruması Ilkesi (uygulama) veri aktarımı il
 >[!WARNING] 
 > Veri aktarımı özel durum ilkesinde değişiklik yapmaktan siz sorumlusunuz. Bu ilkeye yapılan eklemeler, yönetilmeyen uygulamaların (Intune tarafından yönetilmeyen uygulamalar) yönetilen uygulamalar tarafından korunan verilere erişmesine izin verir. Korunan verilere bu erişim, veri güvenliği sızıntılarına neden olabilir. Yalnızca kuruluşunuzun kullanması gereken, ancak Intune APP'yi (Uygulama Koruma İlkeleri) desteklemeyen uygulamalar için veri aktarımı özel durumları ekleyin. Ayrıca, yalnızca veri sızıntısı riski içerdiğini düşünmediğiniz uygulamalar için özel durumlar ekleyin.
 
-Bir Intune uygulama koruma Ilkesinde, uygulamanın diğer uygulamalara verileri **ilkeyle yönetilen uygulamalara** **aktarmasına izin ver** ayarı, uygulamanın verileri yalnızca Intune tarafından yönetilen uygulamalara aktarabileceği anlamına gelir. Verilerin Intune UYGULAMASıNı desteklemeyen belirli uygulamalara aktarılmasına izin vermeniz gerekiyorsa, **muaf tutulacak uygulamaları seçin**' i kullanarak bu ilkeye özel durumlar oluşturabilirsiniz. Muafiyetler, Intune tarafından yönetilen uygulamaların yönetilmeyen uygulamaları URL protokolüne (iOS) veya paket adına (Android) bağlı olarak çağırmasına imkan verir. Varsayılan olarak Intune, önemli yerel uygulamaları bu özel durumlar listesine ekler. 
+Bir Intune uygulama koruma Ilkesinde, uygulamanın diğer uygulamalara verileri **ilkeyle yönetilen uygulamalara** **aktarmasına izin ver** ayarı, uygulamanın verileri yalnızca Intune tarafından yönetilen uygulamalara aktarabileceği anlamına gelir. Verilerin Intune UYGULAMASıNı desteklemeyen belirli uygulamalara aktarılmasına izin vermeniz gerekiyorsa, **muaf tutulacak uygulamaları seçin**' i kullanarak bu ilkeye özel durumlar oluşturabilirsiniz. Muafiyetler, Intune tarafından yönetilen uygulamaların URL protokolüne (iOS/ıpados) veya paket adına (Android) dayalı yönetilmeyen uygulamaları çağırmasına izin verir. Varsayılan olarak Intune, önemli yerel uygulamaları bu özel durumlar listesine ekler. 
 
 > [!NOTE]
 > Veri aktarımı ilkelerini değiştirmek veya eklemek; kesme, kopyalama ve yapıştırma kısıtlamaları gibi diğer Uygulama Koruma İlkelerini etkilemez. 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS veri aktarımı özel durumları
-İOS/ıpados 'ı hedefleyen bir ilke için, veri aktarımı özel durumlarını URL protokolüne göre yapılandırabilirsiniz. Bir özel durum eklemek için desteklenen URL protokolleri hakkında bilgi bulmak üzere uygulamanın geliştiricisi tarafından sağlanan belgelere bakın. İOS/ıpados veri aktarımı özel durumları hakkında daha fazla bilgi için bkz. [iOS uygulama koruma ilkesi ayarları-veri aktarımı muafiyetleri](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+İOS/ıpados 'ı hedefleyen bir ilke için, veri aktarımı özel durumlarını URL protokolüne göre yapılandırabilirsiniz. Bir özel durum eklemek için desteklenen URL protokolleri hakkında bilgi bulmak üzere uygulamanın geliştiricisi tarafından sağlanan belgelere bakın. İOS/ıpados veri aktarımı özel durumları hakkında daha fazla bilgi için bkz. [iOS/ıpados uygulama koruma ilkesi ayarları-veri aktarımı muafiyetleri](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > Microsoft’un üçüncü taraf uygulamalarında uygulama istisnaları oluşturan URL protokollerini el ile bulmak için bir yöntemi yoktur. 
@@ -71,5 +71,5 @@ MAM veri aktarımı ilkesine bir özel durum olarak **Webex** paketinin eklenmes
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Uygulama koruma ilkelerini oluşturma ve dağıtma](app-protection-policies.md)
-- [iOS uygulama koruma ilkesi ayarları - Veri aktarımı muafiyetleri](app-protection-policy-settings-ios.md#data-transfer-exemptions)
+- [iOS/ıpados uygulama koruma ilkesi ayarları-veri aktarımı muafiyetleri](app-protection-policy-settings-ios.md#data-transfer-exemptions)
 - [Android uygulama koruma ilkesi ayarları - Veri aktarımı muafiyetleri](app-protection-policy-settings-android.md#data-transfer-exemptions)

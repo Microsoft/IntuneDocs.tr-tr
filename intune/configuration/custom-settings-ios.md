@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune - Azure’da iOS cihazlara özel ayarlar ekleme | Microsoft Docs
+title: Microsoft Intune-Azure 'da iOS/ıpados cihazlarına özel ayarlar ekleme | Microsoft Docs
 titleSuffix: ''
-description: Apple Configurator veya Apple Profile Manager araçlarından iOS ayarlarını dışarı aktarın ve daha sonra bu ayarları Microsoft Intune’a aktarın. Bu ayarlar iOS cihazlarında özel ayarları ve özellikleri oluşturabilir, kullanabilir ve denetleyebilir. Daha sonra bu özel profil, bir ana hat veya standart oluşturmak için kuruluşunuzdaki iOS cihazlara atanabilir veya dağıtılabilir.
+description: Apple Configurator veya Apple Profile Manager araçlarından iOS ve ıpados ayarlarını dışa aktarın ve ardından bu ayarları Microsoft Intune içine aktarın. Bu ayarlar iOS/ıpados cihazlarında özel ayarları ve özellikleri oluşturabilir, kullanabilir ve denetleyebilir. Bu özel profil daha sonra, bir taban çizgisi veya standart oluşturmak için kuruluşunuzdaki iOS/ıpados cihazlarına atanabilir veya dağıtılabilir.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a167fa4f0ddc9832ea70b4281a42b5c0aae5bb81
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a5dbb56a20d778a0fffc9abde1bc6ce80eb0add
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74694939"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513121"
 ---
-# <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune’da iOS cihazlar için özel ayarlar kullanma
+# <a name="use-custom-settings-for-ios-and-ipados-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS ve ıpados cihazları için özel ayarlar kullanın
 
-Microsoft Intune’u kullanarak, “özel profiller” kullanan iOS cihazlarınız için özel ayarlar ekleyebilir veya oluşturabilirsiniz. Özel profiller, bir Intune özelliğidir. Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini eklemek için tasarlanmıştır.
+Microsoft Intune kullanarak, "özel profiller" i kullanarak iOS/ıpados cihazlarınız için özel ayarlar ekleyebilir veya oluşturabilirsiniz. Özel profiller, bir Intune özelliğidir. Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini eklemek için tasarlanmıştır.
 
-iOS cihazlarda Intune’a özel ayarlar eklemenin iki yolu vardır:
+İOS/ıpados cihazları kullanılırken, Intune 'a özel ayarlar almanın iki yolu vardır:
 
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-Bir yapılandırma profiline ayar aktarmak için bu araçları kullanabilirsiniz. Intune’da bu dosyayı içeri aktarır ve sonra profili, iOS kullanıcılarınıza ve cihazlarınıza atarsınız. Atandıktan sonra ayarlar dağıtılır. Ayrıca, kuruluşunuzda iOS için bir taban çizgisi veya standart oluşturur.
+Bir yapılandırma profiline ayar aktarmak için bu araçları kullanabilirsiniz. Intune 'da, bu dosyayı içeri aktarır ve ardından profili iOS/ıpados kullanıcılarınıza ve cihazlarınıza atarsınız. Atandıktan sonra ayarlar dağıtılır. Ayrıca, kuruluşunuzda iOS/ıpados için bir taban çizgisi veya standart oluşturur.
 
 Bu makalede, Apple Configurator ve Apple Profile Manager kullanımı hakkında bazı yönergeler sağlanır ve yapılandırabileceğiniz özellikler açıklanmaktadır.
 
@@ -42,17 +42,17 @@ Bu makalede, Apple Configurator ve Apple Profile Manager kullanımı hakkında b
 
 ## <a name="what-you-need-to-know"></a>Bilmeniz gerekenler
 
-- Yapılandırma profilini oluşturmak için **Apple Configurator** kullanırken, dışarı aktarma yaptığınız ayarların cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
+- Yapılandırma profilini oluşturmak için **Apple Configurator** kullanırken, dışarı aktarma yaptığınız ayarların cihazlarda IOS/ıpados sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için **Apple Developer** web sitesinde **Configuration Profile Reference** ve [Mobile Device Management Protocol Reference](https://developer.apple.com/) başlıklarını arayın.
 
 - **Apple Profile Manager**’ı kullanırken şunları yapmayı unutmayın:
 
   - Profile Manager’da [mobil cihaz yönetimini](https://help.apple.com/serverapp/mac/5.7/#/apd05B9B761-D390-4A75-9251-E9AD29A61D0C) etkinleştirin.
-  - Profile Manager’a [iOS cihazlar](https://help.apple.com/profilemanager/mac/5.7/#/pm9onzap1984) ekleyin.
+  - Profil Yöneticisi 'ne [iOS/ıpados cihazları](https://help.apple.com/profilemanager/mac/5.7/#/pm9onzap1984) ekleyin.
   - Profile Manager’a cihaz ekledikten sonra **Under the Library (Kitaplık Altında)**  > **Devices** (Cihazlar) seçeneğine gidip cihazınızı seçin ve **Settings** (Ayarlar) seçeneğine gidin. Cihazın genel ayarlarını girin.
 
     Bu dosyayı indirin ve kaydedin. Intune profilinde bu dosyayı girmeniz istenir.
 
-  - Apple Profile Manager 'dan dışarı verdiğiniz ayarların cihazlardaki iOS sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için [Apple Developer](https://developer.apple.com/) web sitesinde **Configuration Profile Reference** ve **Mobile Device Management Protocol Reference** başlıklarını arayın.
+  - Apple Profile Manager 'dan dışarı verdiğiniz ayarların cihazlarda iOS/ıpados sürümüyle uyumlu olduğundan emin olun. Uyumsuz ayarların çözümlenmesi hakkında bilgi için **Apple Developer** web sitesinde **Configuration Profile Reference** ve [Mobile Device Management Protocol Reference](https://developer.apple.com/) başlıklarını arayın.
 
 ## <a name="custom-configuration-profile-settings"></a>Özel yapılandırma profili ayarları
 

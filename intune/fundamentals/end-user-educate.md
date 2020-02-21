@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 94c52257072bc713cfd3b7a44f342d5d9a4ba2f8
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502900"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514685"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Son kullanıcılarınızı Microsoft Intune hakkında bilgilendirme
 
@@ -63,13 +63,13 @@ Kuruluşunuzun Intune dağıtımını cihaz kullanıcıları açısından kolayl
 
 * __Farkında olun.__ Intune kullanıcı deneyimi üretkenliğinizi de etkiler. Kullanıcıların deneyimini anladığınızda, cihaz ve kullanıcı sorunlarını daha kolay giderebilirsiniz. Örneğin, kullanıcılarınızın uygulamalarını nasıl aldığını öğrenebilir ve anlayabilirsiniz. Bu bilgiye önceden sahip olmak, sorunları tanılamayı ve çözmeyi kolaylaştırır ve hızlandırır.
 
-* **Outlook Web Access (OWA)**
+* **Android**
   * [Intune ile Android cihaz kullanma](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
   * [Android kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-android.md)
 
-* **Android**
-  * [Intune ile iOS cihaz kullanma](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
-  * [iOS kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-ios.md)
+* **iOS**
+  * [Intune ile iOS/ıpados cihazı kullanma](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
+  * [İOS/ıpados kullanıcılarınızın uygulamalarını nasıl alır](end-user-apps-ios.md)
 
 * **Windows**
   * [Intune ile Windows cihaz kullanma](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)

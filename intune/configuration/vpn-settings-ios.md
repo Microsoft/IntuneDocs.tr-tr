@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune-Azure 'da VPN ayarlarını iOS cihazlarına yapılandırma | Microsoft Docs
-description: iOS çalıştıran cihazlarda Microsoft Intune’da bağlantı ayrıntıları, kimlik doğrulama yöntemleri ve temel ayarlarda bölünmüş tünel; tanımlayıcı ile özel VPN ayarları ve anahtar-değer çiftleri; Safari URL’lerini içeren uygulama başına VPN ayarları, SSID veya DNS arama etki alanları ile isteğe bağlı VPN’ler; bir yapılandırma betiği, IP veya FQDN adresini içeren proxy ayarları ile TCP bağlantı noktası dahil olmak üzere sanal özel ağ (VPN) yapılandırma ayarlarını kullanarak bir VPN yapılandırma profili ekleyin veya oluşturun.
+title: Microsoft Intune-Azure 'da VPN ayarlarını iOS/ıpados cihazlarına yapılandırma | Microsoft Docs
+description: Bağlantı ayrıntıları, kimlik doğrulama yöntemleri ve temel ayarlarda bölünmüş tünel dahil olmak üzere, sanal özel ağ (VPN) yapılandırma ayarlarını kullanarak bir VPN yapılandırma profili ekleyin veya oluşturun; tanımlayıcı ile özel VPN ayarları ve anahtar ve değer çiftleri; Safari URL 'Leri ve SSID veya DNS arama etki alanları ile isteğe bağlı VPN 'Leri içeren uygulama başına VPN ayarları; ve iOS/ıpados çalıştıran cihazlarda Microsoft Intune bir yapılandırma betiği, IP veya FQDN adresi ve TCP bağlantı noktası dahil edilecek proxy ayarları.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,23 +15,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9eb7ee99d69fd56707bd9dfe5453ffe0bb107bad
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 01c6ae06459590fa9bb9842e90ad53e6c522d6a6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885643"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512492"
 ---
-# <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS cihazlarına VPN ayarları ekleme
+# <a name="add-vpn-settings-on-ios-and-ipados-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS ve ıpados cihazlarına VPN ayarları ekleme
 
-Microsoft Intune, iOS cihazlarınıza dağıtılabilir pek çok VPN ayarı içerir. Bu ayarlar, kuruluşunuzun ağına yönelik VPN bağlantıları oluşturmak ve yapılandırmak için kullanılır. Bu makalede bu ayarlar açıklanır. Bazı ayarlar yalnızca Citrix ve Zscaler gibi bazı VPN istemcileri için kullanılabilir.
+Microsoft Intune iOS/ıpados cihazlarınıza dağıtılabilecek birçok VPN ayarı içerir. Bu ayarlar, kuruluşunuzun ağına yönelik VPN bağlantıları oluşturmak ve yapılandırmak için kullanılır. Bu makalede bu ayarlar açıklanır. Bazı ayarlar yalnızca Citrix ve Zscaler gibi bazı VPN istemcileri için kullanılabilir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Bir cihaz yapılandırma profili oluşturma](vpn-settings-configure.md).
+[Bir cihaz yapılandırma profili oluşturun](vpn-settings-configure.md).
 
 > [!NOTE]
-> Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS kaydı](../enrollment/ios-enroll.md).
+> Bu ayarlar tüm kayıt türleri için kullanılabilir. Kayıt türleri hakkında daha fazla bilgi için bkz. [iOS/ıpados kaydı](../enrollment/ios-enroll.md).
 
 ## <a name="connection-type"></a>Bağlantı türü
 
@@ -130,7 +130,7 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
 - **Sunucu sertifikası ortak adı**: sertifikanın kendısı için CN 'yi girin. Boş bırakılırsa, uzak tanımlayıcı değeri kullanılır.
 
 - **Kullanılmayan eş algılama oranı**: VPN istemcisinin etkin olup OLMADıĞıNı, VPN istemcisinin ne sıklıkta denetleyeceğini seçin. Seçenekleriniz şunlardır:
-  - **Yapılandırılmadı**:, **Orta**' i seçmeyle aynı olabilen iOS sistemi varsayılanını kullanır.
+  - **Yapılandırılmadı**: IOS/ıpados sistemi varsayılanını kullanır, bu da **Orta**seçim ile aynı olabilir.
   - **Hiçbiri**: kullanılmayan eşdüzey algılamayı devre dışı bırakır.
   - **Düşük**: her 30 dakikada bir canlı tutma iletisi gönderir.
   - **Orta** (varsayılan): 10 dakikada bir canlı tutma iletisi gönderir.
@@ -145,7 +145,7 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
 - **Kusursuz iletme gizliliği**: kusursuz iletme gizliliği 'NI (PFS) açmak için **Etkinleştir** ' i seçin. PFS, bir oturum anahtarının güvenliğinin tehlikeye girdiği etkiyi azaltan bir IP güvenlik özelliğidir. **Devre dışı bırak** (varsayılan) PFS kullanmaz.
 - **Sertifika iptal denetimi**: VPN bağlantısının başarılı olmasına izin vermeden önce sertifikaların iptal edilmediğinden emin olmak için **Etkinleştir** ' i seçin. Bu denetim en iyi çabadır. Sertifikanın iptal edilip edilmediğini belirlemekten önce VPN sunucusu zaman aşımına uğrarsa, erişim izni verilir. **Devre dışı bırak** (varsayılan) iptal edilen sertifikaları denetlemez.
 
-- **Güvenlik ilişkisi parametrelerini yapılandırma**: **Yapılandırılmadı** (varsayılan) iOS sistemi varsayılanını kullanır. VPN sunucusuyla güvenlik ilişkilendirmeleri oluştururken kullanılan parametreleri girmek için **Etkinleştir** ' i seçin:
+- **Güvenlik ilişkisi parametrelerini yapılandırma**: **Yapılandırılmadı** (varsayılan) iOS/ıpados Sistem varsayılanını kullanır. VPN sunucusuyla güvenlik ilişkilendirmeleri oluştururken kullanılan parametreleri girmek için **Etkinleştir** ' i seçin:
   - **Şifreleme algoritması**: istediğiniz algoritmayı seçin:
     - DES
     - 3DES
@@ -160,9 +160,9 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
     - SHA2-384
     - SHA2-512
   - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2`.
-  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). `1440` varsayılan değerdir.
+  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440`.
 
-- **Alt güvenlik ilişkilendirmeleri için ayrı bir parametre kümesi yapılandırın**: IOS, Ike bağlantısı için ayrı parametreleri ve tüm alt bağlantıları yapılandırmanıza olanak tanır. 
+- **Alt güvenlik ilişkilendirmeleri için ayrı bir parametre kümesi yapılandırın**: IOS/ıPADOS, Ike bağlantısı için ayrı parametreleri ve tüm alt bağlantıları yapılandırmanıza olanak tanır. 
 
   **Yapılandırılmadı** (varsayılan), önceki **güvenlik ilişkisi parametrelerini Yapılandır** ayarında girdiğiniz değerleri kullanır. VPN sunucusu ile *alt* güvenlik ilişkilendirmeleri oluştururken kullanılan parametreleri girmek için **Etkinleştir** ' i seçin:
   - **Şifreleme algoritması**: istediğiniz algoritmayı seçin:
@@ -179,13 +179,13 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
     - SHA2-384
     - SHA2-512
   - **Diffie-Hellman grubu**: istediğiniz grubu seçin. Varsayılan Grup `2`.
-  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). `1440` varsayılan değerdir.
+  - **Yaşam süresi** (dakika): anahtarlar döndürülünceye kadar güvenlik ilişkisinin ne kadar süreyle etkin kalacağını seçin. `10` ve `1440` arasında bir tam değer girin (1440 dakika 24 saat). Varsayılan değer `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Otomatik VPN ayarları
 
-- **Uygulama başına VPN**: Uygulama başına VPN’i etkinleştirir. Belirli uygulamalar açıldığında VPN bağlantısının otomatik olarak tetiklenmesine izin verir. Ayrıca uygulamaları bu VPN profiliyle ilişkilendirir. Ikev2 üzerinde uygulama başına VPN desteklenmez. Daha fazla bilgi için bkz. [iOS için uygulama başına VPN ayarlama yönergeleri](vpn-setting-configure-per-app.md). 
+- **Uygulama başına VPN**: Uygulama başına VPN’i etkinleştirir. Belirli uygulamalar açıldığında VPN bağlantısının otomatik olarak tetiklenmesine izin verir. Ayrıca uygulamaları bu VPN profiliyle ilişkilendirir. Ikev2 üzerinde uygulama başına VPN desteklenmez. Daha fazla bilgi için bkz. [iOS/ıpados için uygulama BAŞıNA VPN ayarlama yönergeleri](vpn-setting-configure-per-app.md). 
   - **Sağlayıcı Türü**: Yalnızca Pulse Secure ve Özel VPN için kullanılabilir.
-  - Pulse Secure veya Özel VPN ile iOS **uygulama başına VPN** profillerini kullanırken uygulama katmanı tünelini (app-proxy) veya paket düzeyi tüneli (packet-tunnel) seçin. **ProviderType** değerini uygulama katmanı tüneli için **app-proxy** olarak veya paket katmanı tüneli için **packet-tunnel** ayarlayın. Hangi değeri kullanmanız gerektiğini bilmiyorsanız VPN sağlayıcınızın belgelerine bakın.
+  - Pulse Secure veya Custom VPN ile iOS/ıpados **BAŞıNA VPN** profilleri kullanırken, uygulama katmanı Tüneli (App-proxy) veya paket düzeyinde tünel oluşturma (paket-tünel) seçeneğini belirleyin. **ProviderType** değerini uygulama katmanı tüneli için **app-proxy** olarak veya paket katmanı tüneli için **packet-tunnel** ayarlayın. Hangi değeri kullanmanız gerektiğini bilmiyorsanız VPN sağlayıcınızın belgelerine bakın.
   - **Bu VPN’i tetikleyecek Safari URL’leri**: Bir veya daha fazla web sitesi URL’si ekleyin. Bu URL’ler cihazda Safari tarayıcıyla ziyaret edildiğinde, VPN bağlantısı otomatik olarak kurulur.
 
 - **İsteğe bağlı VPN**: VPN bağlantısının ne zaman başlatılacağını denetleyen koşullu kurallar yapılandırın. Örneğin, yalnızca cihaz şirketin Wi-Fi ağına bağlı olmadığında VPN bağlantısının kullanılacağı bir koşul oluşturun. Ya da bir koşul oluşturun. Örneğin, bir cihaz girdiğiniz DNS arama etki alanına erişemezse VPN bağlantısı başlatılmaz.
@@ -194,7 +194,7 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
   - **URL dizesi araştırması**: İsteğe bağlıdır. Kuralın test olarak kullanacağı bir URL girin. Cihaz bu URL 'ye yeniden yönlendirmesiz erişirse VPN bağlantısı başlatılır. Cihaz hedef URL’ye bağlanır. Kullanıcı, URL dize araştırma sitesini görmez.
 
     Örneğin, URL dize araştırması, VPN 'i bağlamadan önce cihaz uyumluluğunu denetleyen bir denetim Web sunucusu URL 'sidir. Ya da URL, VPN aracılığıyla cihazı hedef URL 'ye bağlamadan önce VPN 'in bir siteye bağlanma yeteneğini sınar.
-biçimindeki telefon numarasıdır.
+.
   - **Etki alanı eylemi**: Aşağıdaki öğelerden birini seçin:
     - Gerekirse bağlan
     - Hiçbir zaman bağlanma

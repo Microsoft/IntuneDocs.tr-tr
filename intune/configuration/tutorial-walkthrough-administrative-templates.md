@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/07/2020
+ms.date: 02/18/2020
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80f489bc91f6d2f51cf9ee378793043a49c4e949
-ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
+ms.openlocfilehash: a96f291203e1513ab89196b26a7802856f90e048
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75735028"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511235"
 ---
 # <a name="tutorial-use-the-cloud-to-configure-group-policy-on-windows-10-devices-with-admx-templates-and-microsoft-intune"></a>Öğretici: Windows 10 cihazlarında ADMX şablonları ve Microsoft Intune Grup İlkesi yapılandırmak için bulutu kullanın
 
@@ -55,7 +55,7 @@ Bu özellik şu platformlarda geçerlidir:
 
 - Windows 10 sürüm 1703 ve üzeri
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 - Intune ve Azure Active Directory (AD) Premium içeren bir Microsoft 365 E3 veya E5 aboneliği. E3 veya E5 aboneliğiniz yoksa [ücretsiz olarak deneyin](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365?view=o365-worldwide).
 
@@ -110,7 +110,7 @@ Bu Yönetim Merkezi cihaz yönetimine odaklanır ve Azure AD ve Intune gibi Azur
 
 Ayrıca, [Microsoft 365 Yönetim merkezinden](https://admin.microsoft.com)Endpoint Manager yönetim merkezini açabilirsiniz:
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com) kısmına gidin.
+1. [https://admin.microsoft.com](https://admin.microsoft.com)gidin.
 2. Microsoft 365 Kiracı aboneliğinizin Yönetici hesabınızla oturum açın.
 3. **Yönetim Merkezleri**altında, **uç nokta yönetimi** > **tüm yönetici merkezleri** ' ı seçin. Endpoint Manager Yönetim Merkezi açılır.
 
@@ -193,9 +193,9 @@ Bu sonraki adımlarda güvenlik grupları oluşturacak ve gruplara kullanıcıla
 
   - Tüm öğrenciler
   - Tüm Android cihazlar
-  - Tüm iOS cihazları
+  - Tüm iOS/ıpados cihazları
   - Pazarlama
-  - İnsan Kaynakları
+  - İnsan kaynakları
   - Tüm Charlotte çalışanları
   - Tüm Redmond çalışanları
   - Batı Yakası IT yöneticileri
@@ -291,7 +291,7 @@ Bu bölümde, Intune 'da ve Grup İlkesi Yönetimi Düzenleyicisi eşleşen ilke
 #### <a name="compare-an-edge-policy"></a>Kenar ilkesini karşılaştırın
 
 1. Cihaz Yönetimi yönetim merkezinde, **yönetici şablonunuz-Windows 10 öğrenci cihazları** şablonuna gidin.
-2. Aşağı açılan listeden **Microsoft Edge sürüm 77 ve üstünü** seçin.
+2. Aşağı açılan listeden **Edge sürüm 77 ve üstünü** seçin.
 3. **Başlangıç**için arama yapın. Kullanılabilir ayarlara dikkat edin.
 4. Grup İlkesi Yönetimi Düzenleyicisi, şu ayarları bulun:
 
@@ -474,7 +474,7 @@ Bu bölüm aşağıdaki kaynakları kullanır. Bu kaynakları bu bölüme yükle
         **Kullanıcı**: Microsoft 365 Kiracı aboneliğinizin yönetici hesabını girin.  
         **Parola**: parolasını girin.
 
-    4. **Kabul Et**’i seçin.
+    4. **Kabul et**'i seçin.
 
 9. **Test yapılandırması** yapılandırma profilini oluşturun. Girin:
 

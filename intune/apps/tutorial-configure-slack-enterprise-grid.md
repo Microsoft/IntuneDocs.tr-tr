@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f5045e78eaca19e5a78468c7c4b6698e4e1a5019
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415475"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511557"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Öğretici: EMM ve uygulama yapılandırması için Intune 'U kullanmak üzere bolluk yapılandırma
 
@@ -32,8 +32,8 @@ Bolluk, Microsoft Intune kullanabileceğiniz bir işbirliği uygulamasıdır.
 Bu öğreticide şunları yapacaksınız:
 > [!div class="checklist"]
 > - Intune 'U, bolluk kurumsal kılavuzunuzda Enterprise Mobility Management (EMM) sağlayıcısı olarak ayarlayın. Kılavuza ait çalışma alanlarınıza erişimi Intune tarafından yönetilen cihazlara sınırlayabilirsiniz.
-> - İOS 'ta EMM için bolluk uygulamasını ve Android iş profili cihazları için bolluk uygulamasını yönetmek üzere uygulama yapılandırma ilkeleri oluşturun.
-> - Android ve iOS cihazlarının uyumlu kabul edilmesi için uyması gereken koşulları ayarlamak için Intune cihaz uyumluluk ilkeleri oluşturun.
+> - İOS/ıpados üzerindeki EMM için bolluk uygulamasını ve Android iş profili cihazları için bolluk uygulamasını yönetmek üzere uygulama yapılandırma ilkeleri oluşturun.
+> - Android ve iOS/ıpados cihazlarının uyumlu kabul edilmesi için uyması gereken koşulları ayarlamak için Intune cihaz uyumluluk ilkeleri oluşturun.
 
 Bir Intune aboneliğiniz yoksa [ücretsiz bir deneme hesabı için kaydolun](../fundamentals/free-trial-sign-up.md).
 
@@ -51,10 +51,10 @@ Ayrıca, bir [bolluk kurumsal kılavuz](https://get.slack.help/hc/articles/36000
 [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) genel yönetici veya Intune Hizmet Yöneticisi olarak oturum açın. Intune Deneme aboneliği oluşturduysanız aboneliği oluşturduğunuz hesap Genel yönetici rolüne sahip olur.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>İOS cihazlarında EMM için bolluk ayarlama
-Kuruluşunuzun iOS kullanıcılarının bir EMM sağlayıcısı olarak Intune ile bolluk 'e erişmesini sağlamak için, bir uygulama yapılandırma ilkesi oluşturmak üzere EMM için iOS uygulama bolluğu ' ni ekleyin.
+Kuruluşunuz için iOS/ıpados uygulaması bolluğu ' nı Intune kiracınıza ekleyin ve kuruluşların iOS/ıpados kullanıcılarının bir EMM sağlayıcısı olarak Intune ile bolluk 'e erişmesine olanak tanımak için bir uygulama yapılandırma ilkesi oluşturun.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Intune 'a EMM için bolluk ekleme
-EMM için, Intune 'da yönetilen bir iOS uygulaması olarak bolluk ekleyin ve bolluk kullanıcılarınızı atayın. Uygulamalar platforma özgüdür, bu nedenle Android cihazlarda bolluk kullanıcılarınız için ayrı bir Intune uygulaması eklemeniz gerekir.
+Intune 'da bir yönetilen iOS/ıpados uygulaması olarak EMM için bolluk ekleyin ve bolluk kullanıcılarınızı atayın. Uygulamalar platforma özgüdür, bu nedenle Android cihazlarda bolluk kullanıcılarınız için ayrı bir Intune uygulaması eklemeniz gerekir.
 1. Yönetim merkezinde, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin.
 2. **Uygulama türü**altında **iOS** Mağazası uygulamasını seçin.
 3. **App Store’da Ara**’yı seçin. "EMM için bolluk" arama terimini girin ve uygulamayı seçin. **App Store 'Da ara** bölmesinde **Seç** ' e tıklayın.
@@ -84,7 +84,7 @@ EMM iOS/ıpados için bolluk için bir uygulama yapılandırma ilkesi ekleyin. Y
 12. **Kaydet**'e tıklayın.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>Seçim İOS cihaz uyumluluk ilkesi oluşturma
-Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune cihaz uyumluluk ilkesi ayarlayın. Bu öğreticide iOS cihazlar için bir cihaz uyumluluk ilkesi oluşturacağız. Uyumluluk ilkeleri platforma özgüdür, bu nedenle Android cihazlarda bolluk kullanıcılarınız için ayrı bir ilke oluşturmanız gerekir.
+Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune cihaz uyumluluk ilkesi ayarlayın. Bu öğreticide iOS/ıpados cihazları için bir cihaz uyumluluk ilkesi oluşturacağız. Uyumluluk ilkeleri platforma özgüdür, bu nedenle Android cihazlarda bolluk kullanıcılarınız için ayrı bir ilke oluşturmanız gerekir.
 1. Yönetim merkezinde, **Ilke oluştur** > **cihaz uyumluluk** > **ilkeleri** ' ni seçin.
 2. Ad alanına "iOS uyumluluk ilkesi sınaması" yazın.
 3. Açıklama ' da "iOS uyumluluk ilkesi sınaması" yazın.
@@ -105,7 +105,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 , Kuruluşların Android kullanıcılarına bir EMM sağlayıcısı olarak Intune ile bolluk erişimi sağlamak için Google Play, bir uygulama yapılandırma ilkesi oluşturun ve bu uygulamaları Intune kiracınıza ekleyin.
 
 ### <a name="add-slack-to-intune"></a>Intune 'a bolluk ekleme
-Intune 'da bir yönetilen Google Play uygulaması olarak bolluk ekleyin ve bolluk kullanıcılarınızı atayın. Uygulamalar platforma özgüdür, bu nedenle iOS cihazlarında bolluk kullanıcılarınız için ayrı bir Intune uygulaması eklemeniz gerekir.
+Intune 'da bir yönetilen Google Play uygulaması olarak bolluk ekleyin ve bolluk kullanıcılarınızı atayın. Uygulamalar platforma özgüdür, bu nedenle iOS/ıpados cihazlarındaki bolluk kullanıcılarınıza ayrı bir Intune uygulaması eklemeniz gerekir.
 1. Intune 'da, **uygulamalar** > **tüm uygulamalar** > **Ekle**' yi seçin.
 2. Uygulama türü altında **Mağaza uygulaması – yönetilen Google Play**seçin.
 3. **Yönetilen Google Play-Onayla**' yı seçin. "EMM için bolluk" arama terimini girin ve uygulamayı seçin.
@@ -120,7 +120,7 @@ Intune 'da bir yönetilen Google Play uygulaması olarak bolluk ekleyin ve bollu
 10. **Kaydet**'e tıklayın.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Bolluk için bir uygulama yapılandırma ilkesi ekleyin
-Bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgüdür, bu nedenle iOS cihazlarında bolluk kullanıcılarınıza ayrı bir ilke eklemeniz gerekir.
+Bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar için uygulama yapılandırma ilkeleri platforma özgüdür, bu nedenle iOS/ıpados cihazlarındaki bolluk kullanıcılarınıza ayrı bir ilke eklemeniz gerekir.
 1. Intune 'da, **uygulama yapılandırma ilkeleri** ** >  > ** **Ekle**' yi seçin.
 2. Ad alanına bolluk uygulama yapılandırma ilkesi testi girin.
 3. Cihaz kayıt türü ' nün altında, **yönetilen cihazlar**' ı seçin.
@@ -136,7 +136,7 @@ Bolluk için bir uygulama yapılandırma ilkesi ekleyin. Yönetilen cihazlar iç
 12. **Kaydet**'e tıklayın.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>Seçim Android cihaz uyumluluk ilkesi oluşturma
-Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune cihaz uyumluluk ilkesi ayarlayın. Bu öğreticide, Android cihazlar için bir cihaz uyumluluk ilkesi oluşturacağız. Uyumluluk ilkeleri platforma özgüdür, bu nedenle iOS cihazlarında bolluk kullanıcılarınız için ayrı bir ilke oluşturmanız gerekir.
+Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlamak için bir Intune cihaz uyumluluk ilkesi ayarlayın. Bu öğreticide, Android cihazlar için bir cihaz uyumluluk ilkesi oluşturacağız. Uyumluluk ilkeleri platforma özgüdür, bu nedenle iOS/ıpados cihazlarında bolluk kullanıcılarınıza ayrı bir ilke oluşturmanız gerekir.
 1. Intune’da **Cihaz uyumluluğu** > **İlkeler** > **İlke Oluştur**’u seçin.
 2. Ad alanına "Android uyumluluk ilkesi sınaması" yazın.
 3. Açıklama ' da "Android uyumluluk ilkesi sınaması" yazın.
@@ -155,13 +155,13 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 
 ## <a name="launch-slack"></a>Başlatma bolluğu
 
-Az önce oluşturduğunuz ilkeler sayesinde, çalışma alanlarınızdan birinde oturum açmaya çalışan tüm iOS veya Android iş profili cihazları Intune 'a kaydolmaları gerekir. Bu senaryoyu test etmek için, Intune 'a kayıtlı bir iOS cihazında EMM için bolluk başlatmayı veya Intune 'A kayıtlı bir Android iş profili cihazında bolluk başlatmayı deneyin. 
+Az önce oluşturduğunuz ilkeler sayesinde, çalışma alanlarınızdan birinde oturum açmaya çalışan tüm iOS/ıpados veya Android iş profili cihazları Intune 'a kaydolmaları gerekir. Bu senaryoyu test etmek için, Intune 'a kayıtlı bir iOS/ıpados cihazında EMM için bolluk başlatmayı veya Intune 'A kayıtlı bir Android iş profili cihazında bolluk başlatmayı deneyin. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Bu öğreticide:
 - Intune 'U, bolluk kurumsal kılavuzunuzda Enterprise Mobility Management (EMM) sağlayıcısı olarak ayarlarsınız. 
-- İOS 'ta EMM için bolluk uygulamasını ve Android iş profili cihazları için bolluk uygulamasını yönetmek üzere uygulama yapılandırma ilkeleri oluşturdunuz.
-- Android ve iOS cihazlarının uyumlu kabul edilmesi için uyması gereken koşulları ayarlamak için Intune cihaz uyumluluk ilkelerini oluşturdunuz.
+- İOS/ıpados üzerindeki EMM için bolluk uygulamasını ve Android iş profili cihazları için bolluk uygulamasını yönetmek üzere uygulama yapılandırma ilkeleri oluşturdunuz.
+- Android ve iOS/ıpados cihazlarının uyumlu kabul edilmesi için uyması gereken koşulları ayarlamak için Intune cihaz uyumluluk ilkelerini oluşturdunuz.
 
 Uygulama yapılandırma ilkeleri hakkında daha fazla bilgi için bkz. [Microsoft Intune Için uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md). Cihaz uyumluluk ilkeleri hakkında daha fazla bilgi edinmek için bkz. [Intune kullanarak kuruluşunuzdaki kaynaklara erişime izin vermek için cihazlarda kuralları ayarlama](../protect/device-compliance-get-started.md).

@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956237"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515025"
 ---
 # <a name="plan-communications"></a>İletişimi planlama
 
@@ -52,7 +52,7 @@ Kullanıcılarınızın cihazlarını Intune 'A kolayca kaydetmelerini sağlamak
 
 - [Android cihazınızı kaydetme](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
 - [Android Iş profili cihazınızı kaydetme](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [iOS cihazınızı kaydetme](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [İOS/ıpados cihazınızı kaydetme](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [macOS cihazınızı kaydetme](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [Windows hesabınızı kaydetme](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
@@ -61,5 +61,5 @@ Kullanıcılarınızın cihazlarını Intune 'A kolayca kaydetmelerini sağlamak
 Intune, kullanıcılarınız ile cihaz kaydını yükseltmek için kullanabileceğiniz ek kaynaklara sahiptir:
 
 - [Son kullanıcılarınızı Microsoft Intune hakkında eğitme](end-user-educate.md) başlığında, mobil işletim sistemi platformuna göre kayıt adımları ayrıntılı olarak açıklanmıştır.
-- [BT yöneticileri Için Intune cihaz kaydı](../enrollment/device-enrollment.md) , Intune 'da Android, IOS ve Mac cihazlarının nasıl kaydedileceğini açıklar.
-- Şirket Portalı uygulamasını Android, iOS ve Windows kullanıcılarınızla paylaşabilirsiniz.
+- [BT yöneticileri Için Intune cihaz kaydı](../enrollment/device-enrollment.md) , Intune 'da Android, IOS/ıpados ve Mac cihazlarının nasıl kaydedileceğini açıklar.
+- Şirket Portalı uygulamasını Android, iOS/ıpados ve Windows kullanıcılarınızla paylaşabilirsiniz.

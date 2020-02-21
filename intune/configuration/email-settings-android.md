@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43a2b00ae824656621c8a586e41ba6425c69ed40
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0a1bc53e0f05818b28bbd975e0de5cf5c9368afb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506777"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512866"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune 'da e-posta, kimlik doğrulama ve eşitlemeyi yapılandırmak için Android cihaz ayarları
 
@@ -32,7 +32,7 @@ Intune 'da e-posta profilleri hakkında daha fazla bilgi için bkz. [e-posta aya
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-[Bir cihaz yapılandırma profili oluşturma](email-settings-configure.md#create-a-device-profile).
+[Bir cihaz yapılandırma profili oluşturun](email-settings-configure.md#create-a-device-profile).
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 
@@ -83,4 +83,4 @@ Intune 'da e-posta profilleri hakkında daha fazla bilgi için bkz. [e-posta aya
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
-[Android kurumsal iş profili](email-settings-android-enterprise.md), [iOS](email-settings-ios.md), [Windows 10 ve üzeri](email-settings-windows-10.md)ve [8,1 Windows Phone](email-settings-windows-phone-8-1.md)için e-posta profilleri de oluşturabilirsiniz.
+[Android kurumsal iş profili](email-settings-android-enterprise.md), [IOS/ıpados](email-settings-ios.md), [Windows 10 ve üzeri](email-settings-windows-10.md)ve [8,1 Windows Phone](email-settings-windows-phone-8-1.md)için e-posta profilleri de oluşturabilirsiniz.

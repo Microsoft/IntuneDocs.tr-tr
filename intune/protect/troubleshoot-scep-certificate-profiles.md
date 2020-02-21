@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034252"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515229"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Microsoft Intune ile SCEP sertifika profillerinde sorun gidermeye genel bakış
 
@@ -123,9 +123,9 @@ Ayrıca, destek için [e-posta günlükleri de yükleyebilir](/intune-user-help/
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>İOS ve ıpados cihazları için Günlükler
 
-İOS veya ıpados çalıştıran cihazlarda, bir Mac bilgisayarda çalışan hata ayıklama günlükleri ve **Xcode** kullanın:
+İOS/ıpados çalıştıran cihazlarda, bir Mac bilgisayarda çalışan hata ayıklama günlükleri ve **Xcode** kullanın:
 
-1. İOS cihazını Mac 'e bağlayın ve ardından **uygulamalar** > **yardımcı programlar** ' a giderek konsol uygulamasını açın. 
+1. İOS/ıpados cihazını Mac 'e bağlayın ve ardından **uygulamalar** > **yardımcı programlar** ' a giderek konsol uygulamasını açın. 
 
 2. **Eylem**altında, **bilgi Iletilerini Içer** ve **hata ayıklama iletilerini içer**' i seçin.
 

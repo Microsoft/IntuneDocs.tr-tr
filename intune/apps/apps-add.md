@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc262dc67c967ffd2c6525c4370df8e9fa0e4dff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755281"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511846"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme 
 
@@ -52,7 +52,7 @@ Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygu
 | --- | --- | --- |
 | Android mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Android**’i seçin ve uygulamanın Google Play mağaza URL’sini girin. |
 | Android Kurumsal uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Android**’i seçin ve uygulamanın Yönetilen Google Play Store URL’sini girin. <sup>1</sup> |
-| iOS mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **iOS**’u seçin, Intune’da uygulama için arama yapın ve uygulamayı seçin. |
+| iOS/ıpados Mağazası uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **iOS**’u seçin, Intune’da uygulama için arama yapın ve uygulamayı seçin. |
 | Windows Phone 8.1 mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Windows Phone 8.1**’i seçin ve uygulamanın Microsoft mağaza URL’sini girin. |
 | Microsoft mağaza uygulamaları  | Mağaza uygulaması  | **Uygulama türü** olarak **Windows**’u seçin ve uygulamanın Microsoft mağaza URL’sini girin. |
 | Yönetilen Google Play uygulamaları | Mağaza uygulaması  | **Uygulama türü** olarak **Yönetilen Google Play**’i seçin, Intune’da uygulama için arama yapın ve uygulamayı seçin. |
@@ -61,10 +61,10 @@ Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygu
 | Windows 10 için Microsoft Edge, sürüm 77 ve üzeri | Mağaza uygulaması | **Uygulama türü**olarak **Microsoft Edge, sürüm 77 ve üzeri** altında **Windows 10** ' u seçin. |
 | MacOS için Microsoft Edge, sürüm 77 ve üzeri | Mağaza uygulaması | **Uygulama türü**olarak **Microsoft Edge, sürüm 77 ve üzeri** altında **MacOS** ' u seçin. |
 | Android iş kolu (LOB) uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.apk** uzantısına sahip bir Android yükleme dosyası girin.  |
-| iOS LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu uygulaması**’nı seçin, **Uygulama paketi dosyası**’nı seçin ve **.ipa** uzantısına sahip bir iOS yükleme dosyası girin.  |
+| iOS/ıpados LOB uygulamaları | LOB uygulaması | **Uygulama türü**olarak **iş kolu** uygulaması ' nı seçin, **uygulama paketi dosyasını**seçin ve **. IPA**uzantısına sahip bir iOS/ıpados yükleme dosyası girin.  |
 | Windows Phone LOB uygulamaları | LOB uygulaması | **Uygulama türü** olarak **İş kolu** uygulamasını seçin, **Uygulama paketi dosyasını** seçin ve **.xap** uzantısına sahip bir Windows Phone yükleme dosyası girin.  |
 | Windows LOB uygulaması | LOB uygulaması | Uygulama türü olarak **İş kolu** uygulamasını seçin, **Uygulama paketi dosyasını** seçin ve **.msi**, **.appx**, **.appxbundle**, **.msix** veya **.msixbundle** uzantılı bir Windows yükleme dosyası girin. |
-| Yerleşik iOS uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
+| Yerleşik iOS/ıpados uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
 | Yerleşik Android uygulaması  | Yerleşik uygulama | **Uygulama türü** olarak **Yerleşik uygulama**’yı seçin ve sağlanan uygulamalar listesinde yerleşik uygulama seçeneğine tıklayın.  |
 | Web uygulamaları  | Web uygulaması  | **Uygulama türü** olarak **Web bağlantısı**’nı seçin ve ardından web uygulamasına bağlantı sağlayan geçerli bir URL girin.  |
 | Android Kurumsal sistem uygulamaları  | Mağaza uygulaması  | **Uygulama türü**olarak **Android kurumsal sistem uygulaması** ' nı seçin ve ardından uygulama adı, yayımcı ve paket dosyası ' nı girin.  |
@@ -77,7 +77,7 @@ Aşağıdaki tablo, belirli uygulama türlerini ve bunları Intune’daki **Uygu
 Microsoft Intune, **tüm uygulamalar** >  > **Ekle**' ye tıklayarak **bir uygulama ekleyebilirsiniz** . **Uygulama türünü seç** bölmesi görüntülenir ve **uygulama türünü**seçmenizi sağlar. 
 
 >[!TIP]
-> LOB uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Örneğin, bir iOS LOB uygulaması yüklemek için uygulama **türü seç** bölmesinde Uygulama **türü** olarak **iş kolu uygulaması** ' nı seçerek uygulamayı eklersiniz. Ardından uygulama paket dosyası uzantısını (.ipa) seçersiniz. Bu tür uygulamalar genellikle şirket içinde yazılanlardır.
+> LOB uygulaması, bir uygulama yükleme dosyasından eklediğiniz bir uygulamadır. Örneğin, bir iOS/ıpados LOB uygulaması yüklemek için uygulama **türü seç** bölmesinde Uygulama **türü** olarak **iş kolu uygulaması** ' nı seçerek uygulamayı eklersiniz. Ardından uygulama paket dosyası uzantısını (.ipa) seçersiniz. Bu tür uygulamalar genellikle şirket içinde yazılanlardır.
 
 ## <a name="assess-app-requirements"></a>Uygulama gereksinimlerini değerlendirme
 BT yöneticisi olarak yalnızca grubunuzun hangi uygulamaları kullanacağına karar vermeniz değil, her bir grup ve alt grup için gereken yetenekleri de belirlemeniz gerekir. Her bir uygulama için gereken platformları, uygulamaya ihtiyacı olan kullanıcı gruplarını, bu gruplara uygulanacak yapılandırma ilkelerini ve koruma ilkelerini belirlersiniz.  
@@ -109,8 +109,8 @@ Her bir kullanım örneği ve alt kullanım örneği uygulama senaryosu ile ili�
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Çözümünüz için uygulama türünü belirleme
 
 Aşağıdaki uygulama türlerinden birini seçebilirsiniz:
-- **Mağazadan uygulamalar**: Microsoft mağazası, iOS mağazası veya Android mağazasına yüklenmiş uygulamalar mağaza uygulamalarıdır. Bir mağaza uygulamasının sağlayıcısı, uygulama güncelleştirmeleriyle ilgilenir ve bunları sağlar. Uygulamayı mağaza listesinden seçer ve Intune aracılığıyla bunu kullanıcılarınız için mevcut bir uygulama olarak eklersiniz.
-- **Şirket içinde yazılmış uygulamalar (iş kolu)** : Şirket içinde oluşturulmuş uygulamalar, iş kolu (LOB) uygulamalarıdır. Windows, iOS, macOS veya Android gibi Intune tarafından desteklenen platformlardan biri için bu tür bir uygulamanın işlevselliği oluşturulmuştur. Kuruluşunuz, güncelleştirmeleri ayrı bir dosya olarak oluşturur ve size gönderir. Siz de Intune aracılığıyla güncelleştirmeleri ekleyerek ve dağıtarak, bunları kullanıcılara gönderirsiniz.
+- **Mağazadan uygulamalar**: Microsoft Mağazası 'Na, IOS/ıpados deposuna veya Android Store 'a yüklenmiş olan uygulamalar, mağaza uygulamalardır. Bir mağaza uygulamasının sağlayıcısı, uygulama güncelleştirmeleriyle ilgilenir ve bunları sağlar. Uygulamayı mağaza listesinden seçer ve Intune aracılığıyla bunu kullanıcılarınız için mevcut bir uygulama olarak eklersiniz.
+- **Şirket içinde yazılmış uygulamalar (iş kolu)** : Şirket içinde oluşturulmuş uygulamalar, iş kolu (LOB) uygulamalarıdır. Windows, iOS/ıpados, macOS veya Android gibi Intune tarafından desteklenen platformlardan biri için bu tür bir uygulamanın işlevselliği oluşturulmuştur. Kuruluşunuz, güncelleştirmeleri ayrı bir dosya olarak oluşturur ve size gönderir. Siz de Intune aracılığıyla güncelleştirmeleri ekleyerek ve dağıtarak, bunları kullanıcılara gönderirsiniz.
 - **Web uygulamaları**: Web uygulamaları, istemci-sunucu uygulamalarıdır. Sunucu; kullanıcı arabirimi, içerik ve işlevleri içeren web uygulamasını sağlar. Ayrıca modern web barındırma platformları çoğu zaman güvenlik, yük dengeleme ve diğer yararlar da sunar. Bu tür bir uygulama web’de ayrı olarak korunur. Bu uygulama türüne ulaşmak için Intune kullanırsınız. Bu uygulamaya erişebilecek kullanıcı gruplarını da atarsınız. Android’in web uygulamalarını desteklemediğini hatırlatırız.
 
 Kuruluşunuz için gereken uygulamaları belirlerken bu uygulamaların bulut hizmetleriyle tümleşme durumuna, hangi verilere eriştiğine, KCG kullanıcıları için mevcut olup olmadığına ve İnternet erişimi gerektirip gerektirmediğine dikkat edin.
@@ -128,7 +128,7 @@ Intune ile yönetilen uygulamalar ayrıca kayıt gerekmeksizin uygulama korumas�
 
 ### <a name="understanding-licensed-apps"></a>Lisanslı uygulamaları anlama
 Web uygulamaları, mağaza uygulamaları ve LOB uygulamalarını anlamaya ek olarak toplu satın alma programı uygulamalarının hedefi ve lisanslı uygulamalar hakkında da bilgi sahibi olmalısınız, örneğin: 
-- **İş İçin Apple Volume Purchasing Program (iOS)** : iOS App Store, şirketinizde çalıştırmak istediğiniz uygulama için birden fazla lisans satın almanıza olanak sağlar. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [iOS toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
+- **İş Için Apple Volume Purchase program (iOS)** : IOS/ıpados App Store, şirketinizde çalıştırmak istediğiniz bir uygulama için birden fazla lisans satın almanıza olanak tanır. Birden fazla kopya satın almak, şirketinizdeki uygulamaları etkili bir şekilde yönetmenize yardımcı olur. Daha fazla bilgi için bkz. [ıios/ıpadoss toplu satın alınan uygulamaları yönetme](vpp-apps-ios.md).
 - **Android iş profili**: Android iş profili cihazlara uygulama atama işlemi, standart Android cihazlara uygulama atamaktan farklıdır. Android iş profili için yüklediğiniz tüm uygulamalar Yönetilen Google Play mağazasından gelir. Intune'u kullanarak uygulamalara göz atar ve bunları onaylarsınız. Daha sonra uygulama, Azure portalının **Lisanslı uygulamalar** düğümünde görünür ve uygulamanın atamasını diğer uygulamalarda olduğu gibi yaparsınız.
 - **İş için Microsoft Store (Windows 10)** : İş için Microsoft Store, kuruluşunuz için tek tek veya toplu olarak uygulamalar bulabileceğiniz ve satın alabileceğiniz bir yer sağlar. Mağazayı Microsoft Intune’a bağlayarak toplu satın alınan uygulamaları Azure portalında yönetebilirsiniz. Daha fazla bilgi için bkz. [İş İçin Microsoft Mağazası’ndan uygulamaları yönetme](windows-store-for-business.md).
 
@@ -139,7 +139,7 @@ Web uygulamaları, mağaza uygulamaları ve LOB uygulamalarını anlamaya ek ola
 Uygulamaları eklemeye ve atamaya başlamadan önce aşağıdaki noktaları göz önünde bulundurun:
 
 - Bir mağazadan uygulama eklediğinizde ve atadığınızda, kullanıcılarınızın uygulamayı yükleyebilmesi için o mağazada bir hesapları olması gerekir.
-- Atadığınız uygulama veya öğelerden bazıları yerleşik iOS uygulamalarına bağlı olabilir. Örneğin, iOS mağazasından bir kitap atarsanız cihazda iBooks uygulaması olmalıdır. Yerleşik iBooks uygulamasını kaldırdıysanız, yeniden devreye sokmak için Intune'u kullanamazsınız.
+- Atadığınız bazı uygulamalar veya öğeler yerleşik iOS/ıpados uygulamalarına bağlı olarak değişebilir. Örneğin, iOS/ıpados mağazasındaki bir kitabı atarsanız, cihazda IBOOKS uygulamasının mevcut olması gerekir. Yerleşik iBooks uygulamasını kaldırdıysanız, yeniden devreye sokmak için Intune'u kullanamazsınız.
 
 > [!IMPORTANT]
 > Uygulamayı dağıttıktan ve yükledikten sonra Intune Azure portalı aracılığıyla uygulamanın adını değiştirirseniz, uygulama artık komutlar kullanılarak hedeflenemez.
@@ -153,7 +153,7 @@ Bulut depolama alanı gereksinimleri aşağıda belirtilmiştir:
 - Karşıya yüklediğiniz her dosya için boyut üst sınırı 8 GB’tır.
 
   > [!NOTE]
-  > Win32, Windows Universal AppX, Windows Universal AppX demeti, Windows Universal MSI X ve Windows Universal MSI X demeti dahil olmak üzere Windows iş kolu (LOB) uygulamaları, uygulama başına en fazla 8 GB boyut sınırına sahiptir. İOS LOB uygulamaları dahil olmak üzere tüm diğer LOB uygulamaları, uygulama başına en fazla 2 GB boyut sınırına sahiptir.
+  > Win32, Windows Universal AppX, Windows Universal AppX demeti, Windows Universal MSI X ve Windows Universal MSI X demeti dahil olmak üzere Windows iş kolu (LOB) uygulamaları, uygulama başına en fazla 8 GB boyut sınırına sahiptir. İOS/ıpados LOB uygulamaları dahil olmak üzere tüm diğer LOB uygulamaları, uygulama başına en fazla 2 GB boyut sınırına sahiptir.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Uygulamalar için kategorileri oluşturma ve düzenleme
 

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune-Azure 'da Wi-Fi cihaz profili günlüklerini sorun giderme ve gözden geçirme | Microsoft Docs
-description: Microsoft Intune 'de Android, iOS ve Windows cihazlarında Wi-Fi cihaz yapılandırma profili sorunlarını anlayın ve sorun giderin. Günlükleri gözden geçirin ve bazı yaygın sorunları ve olası çözümleri görüntüleyin.
+description: Microsoft Intune 'de Android, iOS/ıpados ve Windows cihazlarında Wi-Fi cihaz yapılandırma profili sorunlarını anlayın ve sorun giderin. Günlükleri gözden geçirin ve bazı yaygın sorunları ve olası çözümleri görüntüleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547964"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512832"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune 'de Wi-Fi cihaz yapılandırma profillerinin sorunlarını giderme
 
-Intune 'da, WiFi ağınız için bağlantı ayarlarını içeren cihaz yapılandırma profilleri oluşturabilirsiniz. Kullanıcıların Android, iOS ve Windows cihazlarını kuruluş ağına bağlamak için bu ayarları kullanın.
+Intune 'da, WiFi ağınız için bağlantı ayarlarını içeren cihaz yapılandırma profilleri oluşturabilirsiniz. Kullanıcıların Android, iOS/ıpados ve Windows cihazlarını kuruluş ağına bağlamak için bu ayarları kullanın.
 
 Bu makalede, bir Wi-Fi profilinin cihazlara başarıyla uygulandığı sırada nasıl göründüğü gösterilmektedir. Ayrıca günlük bilgilerini, yaygın sorunları ve daha fazlasını içerir. Wi-Fi profillerinizi sorun gidermeye yardımcı olması için bu makaleyi kullanın.
 
@@ -100,25 +100,25 @@ Aşağıdaki günlük, arama sonuçlarınızı gösterir ve başarıyla uygulana
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/ıpados
 
 Wi-Fi profili cihaza yüklendikten sonra **Yönetim profilinde**gösterilir:
 
 > [!div class="mx-imgBorder"]
-> iOS cihazında yönetim profilini ![](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+> Intune 'da iOS/ıpados cihazında yönetim profilini ![](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
 > [!div class="mx-imgBorder"]
-> ![Wi-Fi bağlantısı iOS cihazında Wi-Fi ağı olarak gösterilir](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> ![Wi-Fi bağlantısı, Intune 'da iOS/ıpados cihazında Wi-Fi ağı olarak gösterilir](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>İOS konsolunu ve cihaz günlüklerini gözden geçirme
+### <a name="review-the-iosipados-console-and-device-logs"></a>İOS/ıpados konsolunu ve cihaz günlüklerini gözden geçirin
 
-İOS cihazlarında Şirket Portalı Uygulama günlüğü Wi-Fi profilleriyle ilgili bilgileri içermez. Wi-Fi profillerinizin yükleme ayrıntılarını görmek için konsol/cihaz günlüklerini kullanın:
+İOS/ıpados cihazlarında Şirket Portalı Uygulama günlüğü, Wi-Fi profilleriyle ilgili bilgileri içermez. Wi-Fi profillerinizin yükleme ayrıntılarını görmek için konsol/cihaz günlüklerini kullanın:
 
-1. İOS cihazını Mac 'e bağlayın. **Uygulamalar** > **yardımcı programlar**' a gidin ve konsol uygulamasını açın.
+1. İOS/ıpados cihazını Mac 'e bağlayın. **Uygulamalar** > **yardımcı programlar**' a gidin ve konsol uygulamasını açın.
 2. **Eylem**altında, **bilgi iletilerini dahil et** ve **hata ayıklama iletilerini içer**' i seçin:
 
     > [!div class="mx-imgBorder"]
-    > ![bilgi Iletilerini dahil edin ve iOS konsol uygulamasına hata ayıklama Iletileri ekleyin](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![bilgi Iletilerini dahil edin ve iOS/ıpados konsol uygulamasına hata ayıklama Iletileri ekleyin](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. Senaryoyu yeniden oluşturun ve günlükleri bir metin dosyasına kaydedin:
 
@@ -194,7 +194,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   1. **İş veya okula erişim** > **Ayarlar** > **hesaplar** ' a gidin.
   2. İş veya okul hesabınızın **bilgilerini**> seçin.
   3. **Ayarlar** sayfasının en altında **rapor oluştur**' u seçin.
-  4. Günlük dosyalarının yolunu gösteren bir pencere açılır. **Export** (Dışarı aktar) öğesini seçin.
+  4. Günlük dosyalarının yolunu gösteren bir pencere açılır. **Dışarı aktar**' ı seçin.
   5. `\Users\Public\Documents\MDMDiagnostics` yoluna gidin ve raporu görüntüleyin:
 
       > [!div class="mx-imgBorder"]
@@ -263,7 +263,7 @@ Genellikle, bu soruna Intune dışından bir şey neden olur. Aşağıdaki göre
 
 - Microsoft Intune 'daki Wi-Fi profilleri hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-  - [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md)ve [Windows 10 ve üzeri](wi-fi-settings-windows.md)çalıştıran cihazlar için Wi-Fi ayarlarını ekleyin.
+  - [Android](wi-fi-settings-android.md), [IOS/ıpados](wi-fi-settings-ios.md)ve [Windows 10 ve üzeri](wi-fi-settings-windows.md)çalıştıran cihazlar için Wi-Fi ayarlarını ekleyin.
   - [Destek Ipucu-Intune 'da SCEP sertifika dağıtımları için NDES 'yi yapılandırma](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
   - [SCEP sertifika profili dağıtımı](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune) ve [NDES yapılandırması](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune)sorunlarını giderin.
 

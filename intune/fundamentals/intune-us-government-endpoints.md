@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: d7edf84ada3c84b7ad31748909ef81a877237fd5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966292"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514481"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune için ABD devlet uç noktaları
 
@@ -42,7 +42,7 @@ ABD kamu müşterileri için Windows 10 otomatik kaydı ve cihaz kaydı hakkınd
 
 Aşağıdaki tabloda Intune istemcisinin eriştiği bağlantı noktaları ve hizmetler listelenir:
 
-|**Uç noktası**|**IP adresi**|
+|**Bkz**|**IP adresi**|
 |---------------------|-----------|
 |*.manage.microsoft.us | 52.243.26.209 <br> 52.247.173.11 <br> 52.227.183.12 <br>52.227.180.205 <br> 52.227.178.107 <br> 13.72.185.168 <br> 52.227.173.179 <br> 52.227.175.242 <br> 13.72.39.209 <br> 52.243.26.209 <br> 52.247.173.11 |
 | enterpriseregistration.microsoftonline.us | 13.72.188.239 <br> 13.72.55.179 |
@@ -65,7 +65,7 @@ Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune tarafından yönetil
 
 ## <a name="apple-device-network-information"></a>Apple cihaz ağ bilgileri
 
-|**İçin kullanılan**|**Ana bilgisayar adı (IP adresi/alt ağ)**|**Protokol**|**Bağ**|
+|**Kullanıldığı yer**|**Ana bilgisayar adı (IP adresi/alt ağ)**|**Protokol**|**Bağ**|
 |------------|-----------|------------|-----------|
 |Apple sunucularından içerik alma ve görüntüleme|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|istemcileri iki protokolü de kullandığından, proxy sunucusu hem|80|
 |APNS sunucularıyla iletişim|#-courier.push.apple.com<br>"#", 0 ile 50 arasında rastgele bir sayıdır.|TCP|5223 ve 443|
@@ -74,8 +74,8 @@ Mobil cihaz yönetimi (MDM) kullanılarak yönetilen Intune tarafından yönetil
 Daha fazla bilgi için bkz.:
 
 - [Apple yazılım ürünleri tarafından kullanılan TCP ve UDP bağlantı noktaları](https://support.apple.com/HT202944)
-- [MacOS, iOS ve iTunes Server ana bilgisayar bağlantıları ve iTunes arka plan işlemi hakkında](https://support.apple.com/HT201999)
-- [MacOS ve iOS istemcileriniz Apple anında iletme bildirimleri almıyorsanız](https://support.apple.com/HT203609)
+- [MacOS, iOS/ıpados ve iTunes Server ana bilgisayar bağlantıları ve iTunes arka plan işlemi hakkında](https://support.apple.com/HT201999)
+- [MacOS ve iOS/ıpados istemcileriniz Apple anında iletme bildirimleri almıyorsanız](https://support.apple.com/HT203609)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 [Microsoft Intune için ağ uç noktaları](intune-endpoints.md)

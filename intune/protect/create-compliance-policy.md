@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 68fcdb66591ec0e566aa702b3ca4d6c5c5448859
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860239"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514022"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune’da uyumluluk ilkesi oluşturma
 
@@ -67,7 +67,7 @@ Cihaz uyumluluk ilkelerini kullanmak için aşağıdakilerden emin olun:
 
 3. Aşağıdaki özellikleri belirtin:
 
-   - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. **Jailbreak uygulanmış iOS cihazlarını uyumlu değil olarak işaretle** iyi bir ilke adı örneğidir.
+   - **Ad**: ilke için açıklayıcı bir ad girin. İlkelerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir ilke adı **iOS/ıpados jailbreak uygulanmış cihazlarını uyumlu değil olarak işaretler**.
 
    - **Açıklama**: ilke için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
 
@@ -159,9 +159,9 @@ Aşağıdaki tabloda bu noktalar özetlenmektedir:
 
 |Asıl uyumluluk durumu|Atanmış yetkisiz kullanım süresi değeri|Geçerli uyumluluk durumu|
 |---------|---------|---------|
-|Uyumsuz |Bir yetkisiz kullanım süresi atanmamış |Uyumsuz |
-|Uyumsuz |Önceki günün tarihi|Uyumsuz|
-|Uyumsuz |Sonraki günün tarihi|YetkisizKullanımSüresinde|
+|NonCompliant |Bir yetkisiz kullanım süresi atanmamış |NonCompliant |
+|NonCompliant |Önceki günün tarihi|NonCompliant|
+|NonCompliant |Sonraki günün tarihi|InGracePeriod|
 
 Cihaz uyumluluk ilkelerini izleme hakkında daha fazla bilgi için bkz. [Intune Cihaz uyumluluk ilkelerini izleme](compliance-policy-monitor.md).
 
@@ -171,11 +171,11 @@ Bir cihazda birden fazla uyumluluk ilkesi varsa ve cihazın bu atanmış uyumlul
 
 |Durum  |Önem Derecesi  |
 |---------|---------|
-|Bilinmiyor     |1|
+|Bilinmiyor     |1\.|
 |NotApplicable     |2|
 |Uyumlu|3|
-|YetkisizKullanımSüresinde|4|
-|Uyumsuz|5|
+|InGracePeriod|4|
+|NonCompliant|5|
 |Hata|6|
 
 Bir cihazda birden fazla uyumluluk ilkesi varsa, bu ilkelerden en yüksek önem derecesine sahip olanı bu cihaza atanır.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438013"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513971"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Yönetilen iOS/ıpados cihazları için uygulama yapılandırma ilkeleri ekleme
 
@@ -43,7 +43,7 @@ Uygulama yapılandırma ilkenize dahil edilen grupları seçtikten sonra, dışl
 > [!TIP]
 > Bu ilke türü şu anda yalnızca iOS/ıpados 8,0 ve üstünü çalıştıran cihazlar için kullanılabilir. Aşağıdaki uygulama yükleme türlerini destekler:
 >
-> - **Uygulama mağazasından yönetilen iOS uygulaması**
+> - **App Store 'dan yönetilen iOS/ıpados uygulaması**
 > - **iOS için uygulama paketi**
 >
 > Uygulama yükleme türleri hakkında daha fazla bilgi için bkz. [Microsoft Intune’a uygulama ekleme](apps-add.md). Uygulama yapılandırmasını yönetilen cihazlar için. ipa uygulama paketinize ekleme hakkında daha fazla bilgi için bkz. [iOS Geliştirici belgelerindeki](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html)yönetilen uygulama yapılandırması.
@@ -108,9 +108,10 @@ Microsoft Intune, bir uygulamaya özgü yapılandırma ayarları sağlar. Micros
 
 İOS/ıpados cihazları için aşağıdaki anahtar/değer çiftlerini kullanın:
 
-| **Anahtar** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Değerler** | <ul><li>**Enabled**: İzin verilen tek hesap, [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarıyla tanımlanan yönetilen kullanıcı hesabıdır.</li><li>**Disabled** (veya **Enabled** ile eşleşmeyen bir değer): Tüm hesaplara izin verilir.</li></ul> |.
+| **Anahtar** | **Değerler** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**Enabled**: İzin verilen tek hesap, [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) anahtarıyla tanımlanan yönetilen kullanıcı hesabıdır.</li><li>**Disabled** (veya **Enabled** ile eşleşmeyen bir değer): Tüm hesaplara izin verilir.</li></ul> |
+| IntuneMAMUPN | <ul><li>Uygulamada oturum açmaya izin verilen hesabın UPN 'si.</li><li> Intune'a kayıtlı cihazlar için <code>{{userprincipalname}}</code> belirteci kayıtlı kullanıcı hesabını temsil etmek için kullanılabilir.</li></ul>  |
 
    > [!NOTE]
    > İOS için OneDrive 10,34 veya üzeri, iOS 2.99.0 veya sonraki bir sürümü veya iOS 44.8.7 veya üzeri için Outlook 'U ya da yalnızca çok kimlikli kuruluş hesaplarına izin verirken uygulamanın [Intune uygulama koruma ilkelerini](app-protection-policy.md) hedeflemeli olması gerekir.
@@ -181,7 +182,7 @@ Ayrıca, Intune özellik listesinde aşağıdaki belirteç türlerini destekler:
 - \{\{serialnumberlast4digits\}\}— Örneğin, **G5V2** (IOS/ıpados cihazları için)
 - \{\{aaddeviceid\}\}—örneğin **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>İOS DEP cihazlarını desteklemek için Şirket Portalı uygulamasını yapılandırma
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>Şirket Portalı uygulamasını iOS ve ıpados DEP cihazlarını destekleyecek şekilde yapılandırma
 
 DEP (Apple Aygıt Kayıt Programı) kayıtları, Şirket Portalı uygulamasının App Store sürümü ile uyumlu değildir. Ancak, aşağıdaki adımları kullanarak Şirket Portalı uygulamasını iOS/ıpados DEP cihazlarını destekleyecek şekilde yapılandırabilirsiniz.
 
@@ -204,7 +205,7 @@ DEP (Apple Aygıt Kayıt Programı) kayıtları, Şirket Portalı uygulamasını
 3. Şirket Portalı, istenen gruplara hedeflenmiş uygulama yapılandırma ilkesiyle cihazlara dağıtın. İlkeyi yalnızca DEP kaydı yapılmış olan cihazların gruplarına dağıttığınızdan emin olun.
 4. Son kullanıcılara otomatik olarak yüklendiğinde Şirket Portalı uygulamasında oturum açmasını söyleyin.
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>Cihaz başına iOS uygulama yapılandırma durumunu izleme 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>Cihaz başına iOS/ıpados uygulama yapılandırma durumunu izle 
 Bir yapılandırma ilkesi atandıktan sonra, yönetilen her cihaz için iOS/ıpados uygulama yapılandırma durumunu izleyebilirsiniz. Azure portalında **Microsoft Intune**'dan **Cihazlar** > **Tüm cihazlar**'ı seçin. Yönetilen cihazlar listesinden cihaz için bir bölme göstermek üzere belirli bir cihaz seçin. Cihaz bölmesinde **uygulama yapılandırması**' nı seçin.  
 
 ## <a name="additional-information"></a>Ek bilgiler

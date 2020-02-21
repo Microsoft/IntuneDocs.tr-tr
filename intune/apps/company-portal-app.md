@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6c016dd8a1d8a21e3ac96ab8637e26a029b18dbc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563631"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511812"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -39,7 +39,7 @@ Microsoft Intune şirket portalı, kullanıcıların şirket verilerine erişti�
 
 Şirket Portalı’nı özelleştirerek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlanmasına yardımcı olabilirsiniz. Bunu yapmak için, Intune portalında **uygulamalar** > **marka ve özelleştirme**' yı seçin ve gerekli ayarları yapılandırın.
 
-Bir Kullanıcı Şirket Portalı bir iOS uygulaması yüklerken bir istem alır. Bu durum, iOS uygulaması bir toplu satın alma programı (VPP) ile bağlantılı veya iş kolu (LOB) uygulamasına bağlanan bir App Store 'a bağlandığında oluşur. İstem, kullanıcıların eylemi kabul etmesine veya uygulamanın yönetimine izin veriyor. İstem şirketinizin adını gösterir veya şirketinizin adı kullanılamadığında **Şirket portalı** görüntülenir. 
+Bir Kullanıcı Şirket Portalı bir iOS/ıpados uygulaması yüklerken bir istem alır. Bu durum, iOS/ıpados uygulamasının bir toplu satın alma programı (VPP) ile bağlantılı veya iş kolu (LOB) uygulamasına bağlı olan App Store 'a bağlanması durumunda meydana gelir. İstem, kullanıcıların eylemi kabul etmesine veya uygulamanın yönetimine izin veriyor. İstem şirketinizin adını gösterir veya şirketinizin adı kullanılamadığında **Şirket portalı** görüntülenir. 
 
 > [!Note]
 > Azure Kamu kullanıyorsanız, bir sorunla ilgili yardım alma sürecini başlattığında bunu nasıl paylaşacağına karar vermesi için son kullanıcıya uygulama günlükleri sunulur. Ancak Azure Kamu kullanmıyorsa, kullanıcı bir sorunla ilgili yardım alma sürecini başlattığında Windows 10 için Şirket Portalı uygulama günlüklerini doğrudan Microsoft'a gönderir. Uygulama günlüklerini Microsoft'a göndermek sorunları gidermeyi ve çözmeyi kolaylaştıracaktır. 
@@ -92,11 +92,11 @@ Beyaz veya açık renk arka planlarda en iyi görünecek logoyu seçin.
 
 ### <a name="brand-image-for-company-portal"></a>Şirket Portalı için marka imajı
 
-Şirket markanızı yansıtan bir marka imajı kullanın. Değişikliklerinizi kaydettikten sonra, yapılandırımlarınızın nasıl görüneceğine bakmak için bölmenin en üstündeki Intune web portalında **ayarlarınızı önizleyin** ' i seçebilirsiniz. Marka imajını Intune Web Portalı’nda değil, yalnızca bir iOS cihazında görüntüleyebileceğinizi unutmayın. 
+Şirket markanızı yansıtan bir marka imajı kullanın. Değişikliklerinizi kaydettikten sonra, yapılandırımlarınızın nasıl görüneceğine bakmak için bölmenin en üstündeki Intune web portalında **ayarlarınızı önizleyin** ' i seçebilirsiniz. Yalnızca bir iOS/ıpados cihazında bulunan marka görüntüsünü, Intune Web Portalı ' nı görüntüleyebileceğinizi unutmayın. 
 
 |Alan adı|Daha fazla bilgi|
 |---|---|
-|**Marka imajınızı karşıya yükleyin**| Bu seçenek, marka imajı görüntülemenizi sağlar. iOS Şirket Portalı'nda kullanıcı profili sayfasında arka plan görüntüsü olarak görünür.<p><ul><li>Önerilen Görüntü genişliği: 1125mb 'den büyük (en az 650 piksel olması gerekir)</li><li>En yüksek görüntü boyutu: 1,3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
+|**Marka imajınızı karşıya yükleyin**| Bu seçenek, marka imajı görüntülemenizi sağlar. İOS/ıpados Şirket Portalı, kullanıcının profil sayfasında bir arka plan görüntüsü olarak gösterilir.<p><ul><li>Önerilen Görüntü genişliği: 1125mb 'den büyük (en az 650 piksel olması gerekir)</li><li>En yüksek görüntü boyutu: 1,3 MB</li><li>Dosya türü: PNG, JPG veya JPEG</li></ul>|
 
 Doğru bir marka imajı sayesinde şirket markanızı güçlü bir şekilde tanıtarak Şirket Portalı’nda kullanıcı güvenini artırabilirsiniz. Aşağıda, Şirket Portalı için imaj elde etme, seçme ve iyileştirme hakkında bazı ipuçları bulabilirsiniz. 
 
@@ -108,7 +108,7 @@ Doğru bir marka imajı sayesinde şirket markanızı güçlü bir şekilde tan�
 
 - Gereksiz meta verileri kaldırın. İmaj dosyası; kamera profili, coğrafi konum, başlık, açıklama gibi meta veriler içerebilir. Kaliteyi korumak ve dosya boyutu sınırını aşmamak için bir görüntü iyileştirme aracını kullanarak bu bilgileri kaldırın. 
 
-Intune'da marka imajı eklendikten veya değiştirildikten sonra son kullanıcıların bu değişikliği iOS cihazlarında görebilmeleri için Şirket Portalı'nın başlangıçta değişikliği algılaması ve ardından marka imajının görüntülenmesi için yeniden başlatılması gerekir. 
+Intune 'da marka resmi eklendikten veya değiştirildikten sonra, Son Kullanıcı iOS/ıpados cihazlarındaki değişikliği, Şirket Portalı başlangıç sırasında değişiklik yapana kadar görmeyebilir ve ardından marka görüntüsünü görüntülemek için yeniden başlatılmıştır. 
 
 ### <a name="brand-image-examples"></a>Marka imajı örnekleri
 
@@ -122,20 +122,20 @@ Aşağıdaki görüntüde örnek bir iPhone marka imajı gösterilmektedir:
 
 ## <a name="privacy-statement-customization"></a>Gizlilik bildirimi özelleştirmesi
 
-Kuruluşunuzda yönetilen iOS cihazlarında görüntülenen gizlilik bildirimini özelleştirebilirsiniz. Bu ileti, kuruluşunuzun yönetilen iOS cihazlarını göremediği veya üzerinde yapayapabileceği öğeleri listeler.
+Kuruluşunuzda yönetilen iOS/ıpados cihazlarında görüntülenen gizlilik bildirimini özelleştirebilirsiniz. Bu ileti, kuruluşunuzun yönetilen iOS/ıpados cihazlarını göremediği veya üzerinde yapacakları öğeleri listeler.
 
 **Şirket portalı özelleştirme** > **cihaz yönetimi ve gizlilik iletisi**altında şunları yapabilirsiniz:
 
 - Listenin gösterildiği gibi kullanılması için **Varsayılanı** kabul edin veya
-- Kuruluşunuzun yönetilen iOS cihazlarını göremediği veya bu cihazlarda yapayapabileceği öğelerin listesini özelleştirmek için **özel** ' i seçin. [Marku](https://daringfireball.net/projects/markdown/) kullanarak madde işaretleri, kalın, italik ve bağlantılar ekleyebilirsiniz.
+- Kuruluşunuzun yönetilen iOS/ıpados cihazlarını göremediği veya bu cihazlarda yapacakları öğelerin listesini özelleştirmek için **özel** ' i seçin. [Marku](https://daringfireball.net/projects/markdown/) kullanarak madde işaretleri, kalın, italik ve bağlantılar ekleyebilirsiniz.
 
 ## <a name="company-portal-derived-credentials-for-ios-devices"></a>İOS cihazları için türetilmiş kimlik bilgilerini Şirket Portalı
-Intune, kişisel kimlik doğrulama (PıV) ve ortak erişim kartı (CAC) ile birlikte gelen kimlik bilgilerini, DıŞA geçmiş kimlik bilgisi sağlayıcıları, Entrust Datacard ve ıntercede ile iş ortaklığı için destekler. Son kullanıcılar, Şirket Portalı uygulamasındaki kimliklerini doğrulamak üzere iOS cihazlarının kayıt sonrası ek adımlara geçer. Türetilmiş kimlik bilgileri, önce kiracınız için bir kimlik bilgisi sağlayıcısı ayarlayıp, ardından kullanıcılara veya cihazlara türetilmiş kimlik bilgilerini kullanan bir profili hedefleyerek kullanıcılara etkinleştirilir.
+Intune, kişisel kimlik doğrulama (PıV) ve ortak erişim kartı (CAC) ile birlikte gelen kimlik bilgilerini, DıŞA geçmiş kimlik bilgisi sağlayıcıları, Entrust Datacard ve ıntercede ile iş ortaklığı için destekler. Son kullanıcılar, Şirket Portalı uygulamasındaki kimliklerini doğrulamak için iOS/ıpados cihazının kayıt sonrası ek adımlara geçer. Türetilmiş kimlik bilgileri, önce kiracınız için bir kimlik bilgisi sağlayıcısı ayarlayıp, ardından kullanıcılara veya cihazlara türetilmiş kimlik bilgilerini kullanan bir profili hedefleyerek kullanıcılara etkinleştirilir.
 
 > [!NOTE]
 > Kullanıcı, Intune aracılığıyla belirttiğiniz bağlantıya bağlı olarak türetilmiş kimlik bilgileri hakkındaki yönergeleri görür.
 
-İOS cihazları için türetilmiş kimlik bilgileri hakkında daha fazla bilgi için bkz. [Microsoft Intune türetilmiş kimlik bilgilerini kullanma](~/protect/derived-credentials.md).
+İOS/ıpados cihazlarının türetilmiş kimlik bilgileri hakkında daha fazla bilgi için bkz. [Microsoft Intune türetilmiş kimlik bilgilerini kullanma](~/protect/derived-credentials.md).
 
 ## <a name="dark-mode-for-ios-company-portal"></a>İOS Şirket Portalı için koyu mod
 
@@ -147,15 +147,15 @@ Son kullanıcılar, Windows Şirket Portalı’nda klavye kısayollarını (hız
 
 Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir.
 
-| Alan | Description | Klavye kısayolu |
+| Alan | Açıklama | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
-| Gezinti menüsü | Gezinti | Alt+M |
-|  | Giriş | Alt+H |
+| Gezinti menüsü | Gezinti | Alt + a |
+|  | Giriş | Alt + H |
 |  | Tüm uygulamalar | Alt + A |
 |  | Yüklenen uygulamalar | Alt+I |
-|  | Geri bildirim gönder | Alt+F |
-|  | Profilim | Alt+U |
-|  | Ayarlar | Alt+T |
+|  | Geri bildirim gönder | Alt + F |
+|  | Profilim | Alt + U |
+|  | Ayarlar | Alt + T |
 | Giriş - Cihaz kutucuğu | Yeniden Adlandır | F2 |
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
@@ -177,7 +177,7 @@ Kullanıcılar, Şirket Portalı uygulaması veya Web sitesi aracılığıyla ye
 - **Yeniden Adlandır** – bu eylem, kullanıcının şirket portalı görebileceği cihaz adını değiştirir. Yerel cihaz adını değiştirmez, yalnızca Şirket Portalı listelemez.
 - **Eşitleme** – bu eylem, Intune hizmeti ile bir cihaz iade işlemini başlatır. Bu, Şirket Portalı **denetim durumunu** gösterir.
 - **Uzaktan kilitleme** – bu, cihazın kilidini açmak için PIN gerektiren cihazı kilitler.
-- **Geçiş kodunu Sıfırla** – bu eylem, cihaz geçiş kodunu sıfırlamak için kullanılır. İOS cihazlarında geçiş kodu kaldırılır ve son kullanıcının ayarlar ' da yeni bir kod girmesi gerekecektir. Desteklenen Android cihazlarda Intune tarafından yeni bir geçiş kodu oluşturulur ve geçici olarak Şirket Portalı görüntülenir.
+- **Geçiş kodunu Sıfırla** – bu eylem, cihaz geçiş kodunu sıfırlamak için kullanılır. İOS/ıpados cihazlarında geçiş kodu kaldırılır ve son kullanıcının ayarlar ' da yeni bir kod girmesi gerekecektir. Desteklenen Android cihazlarda Intune tarafından yeni bir geçiş kodu oluşturulur ve geçici olarak Şirket Portalı görüntülenir.
 - **Anahtar kurtarma** – bu eylem, Şirket portalı Web sitesinden şifrelenmiş MacOS cihazları için kişisel kurtarma anahtarını kurtarmak üzere kullanılır. 
 
 ### <a name="self-service-actions"></a>Self Servis eylemleri
@@ -187,12 +187,12 @@ Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez
 |  | Windows 10<sup>(3)</sup> | iOS/ıpados<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
 | Devre dışı bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
-| Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | NA | Kullanılabilir<sup>(7)</sup> |
+| Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | Yok | Kullanılabilir<sup>(7)</sup> |
 | Yeniden Adlandır<sup>(4)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
 | Eşitle | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
 | Uzaktan Kilitleme | Yalnızca Windows Phone | Kullanılabilir | Kullanılabilir | Kullanılabilir |
-| Geçiş Kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir<sup>(8)</sup> | NA | Kullanılabilir<sup>(6)</sup> |
-| Anahtar Kurtarma | NA | NA | Kullanılabilir<sup>(2)</sup> | NA |
+| Geçiş Kodunu Sıfırla | Yalnızca Windows Phone | Kullanılabilir<sup>(8)</sup> | Yok | Kullanılabilir<sup>(6)</sup> |
+| Anahtar kurtarma | Yok | Yok | Kullanılabilir<sup>(2)</sup> | Yok |
 
 <sup>(1)</sup> **devre dışı BıRAKMA** , Azure AD 'ye katılmış Windows cihazlarında her zaman engellenir.<br>
 <sup>(2)</sup> MacOS Için **anahtar kurtarma** yalnızca Web portalı aracılığıyla kullanılabilir.<br>

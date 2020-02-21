@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure’da iOS veya macOS cihaz profili oluşturma | Microsoft Docs
-description: İOS veya macOS cihaz profili ekleyin veya oluşturun ve ardından Microsoft Intune ' deki AirPrint, ana ekran düzeni, uygulama bildirimleri, paylaşılan cihaz, çoklu oturum açma ve Web içerik filtresi ayarlarını yapılandırın.
+title: Microsoft Intune-Azure ile iOS/ıpados veya macOS cihaz profili oluşturma | Microsoft Docs
+description: İOS, ıpados veya macOS cihaz profili ekleyin veya oluşturun ve ardından Microsoft Intune ' deki AirPrint, ana ekran düzeni, uygulama bildirimleri, paylaşılan cihaz, çoklu oturum açma ve Web içerik filtresi ayarları ayarlarını yapılandırın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 52c31cc7d3949b42251d3e45075864762cda6930
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206729"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513155"
 ---
-# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune’da iOS veya macOS cihaz özelliği ayarları ekleme
+# <a name="add-ios-ipados-or-macos-device-feature-settings-in-intune"></a>Intune 'da iOS, ıpados veya macOS cihaz özelliği ayarları ekleme
 
-Intune, yöneticilerin iOS ve macOS cihazlarını denetlemesine yardımcı olan birçok özellik ve ayarı içerir. Örneğin, yöneticiler şunları yapabilir:
+Intune, yöneticilerin iOS, ıpados ve macOS cihazlarını denetlemesine yardımcı olan birçok özellik ve ayarı içerir. Örneğin, yöneticiler şunları yapabilir:
 
 - Kullanıcılarınızın ağınızdaki AirPrint yazıcılara erişmesine izin ver
 - Yeni sayfa ekleme dahil olmak üzere giriş ekranına uygulama ve klasör ekleme
@@ -34,15 +34,15 @@ Intune, yöneticilerin iOS ve macOS cihazlarını denetlemesine yardımcı olan 
 - Kullanıcılara kimlik bilgilerini uygulamalar arasında paylaşmak için güvenli bir çoklu oturum açma deneyimi sağlayın
 - Yetişkinlere yönelik dil kullanan ve belirli Web sitelerine izin veren veya engelleyen web sitelerini filtrele
 
-Intune, kuruluşunuzun ihtiyaçlarına göre bu ayarları oluşturmak ve özelleştirmek için "yapılandırma profillerini" kullanır. Bu özellikleri bir profile ekledikten sonra, profili kuruluşunuzdaki iOS ve macOS cihazlarına gönderirsiniz veya dağıtabilirsiniz.
+Intune, kuruluşunuzun ihtiyaçlarına göre bu ayarları oluşturmak ve özelleştirmek için "yapılandırma profillerini" kullanır. Bu özellikleri bir profile ekledikten sonra, profili kuruluşunuzdaki iOS/ıpados ve macOS cihazlarına gönderirsiniz veya dağıtabilirsiniz.
 
-Bu makalede yapılandırabileceğiniz farklı özellikler açıklanmakta ve bir cihaz yapılandırma profili nasıl oluşturacağınız gösterilmektedir. [İOS](ios-device-features-settings.md) ve [MacOS](macos-device-features-settings.md) cihazları için kullanılabilir tüm ayarları da görebilirsiniz.
+Bu makalede yapılandırabileceğiniz farklı özellikler açıklanmakta ve bir cihaz yapılandırma profili nasıl oluşturacağınız gösterilmektedir. [İOS/ıpados](ios-device-features-settings.md) ve [MacOS](macos-device-features-settings.md) cihazları için kullanılabilir tüm ayarları da görebilirsiniz.
 
 ## <a name="airprint"></a>AirPrint
 
 AirPrint, cihazların bir kablosuz ağ üzerinden dosyalara yazdırmasını sağlayan bir Apple özelliğidir. Intune 'da cihazlara AirPrint bilgilerini ekleyebilirsiniz.
 
-Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. macOS 'ta iOS ve [AirPrint](macos-device-features-settings.md#airprint) [üzerinde AirPrint](ios-device-features-settings.md#airprint) .
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [macOS](macos-device-features-settings.md#airprint)'ta [IOS/ıpados ve AirPrint üzerinde AirPrint](ios-device-features-settings.md#airprint) .
 
 AirPrint hakkında daha fazla bilgi için Apple 'ın Web sitesinde [AirPrint hakkında](https://support.apple.com/HT201311) bölümüne bakın.
 
@@ -54,9 +54,9 @@ Uygulama hedefi:
 
 ## <a name="app-notifications"></a>Uygulama bildirimleri
 
-İOS ve iPad cihazlarınızdaki uygulamaların nasıl bildirim alacağını seçin. Örneğin, Intune 'dan bildirim merkezinde göstermek, kilit ekranında göstermek veya ses çalmak için uygulama bildirimleri gönderin.
+İOS ve ıpados cihazlarınızdaki uygulamaların nasıl bildirim alacağını seçin. Örneğin, Intune 'dan bildirim merkezinde göstermek, kilit ekranında göstermek veya ses çalmak için uygulama bildirimleri gönderin.
 
-Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde uygulama bildirimleri](ios-device-features-settings.md#app-notifications).
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS/ıpados üzerinde uygulama bildirimleri](ios-device-features-settings.md#app-notifications).
 
 Bu özellik hakkında daha fazla bilgi için bkz. Apple 'ın Web sitesindeki [Bildirimler](https://developer.apple.com/notifications/) .
 
@@ -89,7 +89,7 @@ Bu ayarlar, iOS ve ıpados cihazlarında yerleştirme ve giriş ekranlarındaki 
 - Ekrana uygulama veya klasör eklemek için **yerleştirme** ayarlarını kullanın. Örneğin, cihaz Dock 'da Safari ve posta uygulamasını görüntüleyin.
 - Giriş ekranında görünmesini istediğiniz **sayfaları** ve her sayfada görünmesini istediğiniz uygulamaları ekleyin. Örneğin, bir **contoso** sayfası ekleyin ve Ayarlar uygulamasını bu sayfaya ekleyin.
 
-Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS 'Ta giriş ekranı düzeni](ios-device-features-settings.md#home-screen-layout).
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS/ıpados üzerinde giriş ekranı düzeni](ios-device-features-settings.md#home-screen-layout).
 
 Uygulama hedefi:
 
@@ -100,7 +100,7 @@ Uygulama hedefi:
 
 Oturum açma penceresinde ve kilit ekranında özel bir ileti veya metin göstermek için bu ayarları kullanın. Örneğin, bir "kaybolursa, return to..." girebilirsiniz. ileti ve varlık etiketi bilgilerini göster.
 
-Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde kilit ekranı ileti ayarları](ios-device-features-settings.md#lock-screen-message).
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS/ıpados üzerinde kilit ekranı ileti ayarları](ios-device-features-settings.md#lock-screen-message).
 
 Kilit ekranı Iletisi hakkında daha fazla bilgi için bkz. Apple 'ın Web sitesinde [Lockscreenmessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) .
 
@@ -136,11 +136,11 @@ Uygulama hedefi:
 Çoklu oturum açma 'yı kullanmak için, şunları yaptığınızdan emin olun:
 
 - Cihazdaki çoklu oturum açma bölümünde Kullanıcı kimlik bilgileri deposunu aramak için kodlanmış bir uygulama.
-- Intune'u iOS cihazında çoklu oturum açma için yapılandırma.
+- İOS/ıpados cihaz çoklu oturum açma için Intune yapılandırıldı.
 
 ![Çoklu Oturum Açma bölmesi](./media/device-features-configure/sso-blade.png)
 
-Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS 'Ta çoklu oturum açma](ios-device-features-settings.md#single-sign-on).
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS 'Ta çoklu oturum açma/ıpados](ios-device-features-settings.md#single-sign-on).
 
 Uygulama hedefi:
 
@@ -156,7 +156,7 @@ Intune 'da, kuruluşunuz, kimlik sağlayıcınız veya Apple tarafından oluştu
 - Yeniden yönlendirme türü, OAuth ve SAML2 gibi modern kimlik doğrulama protokolleri için tasarlanmıştır.
 - Kimlik bilgisi türü, sınama ve yanıt kimlik doğrulama akışları için tasarlanmıştır. Apple tarafından sunulan Kerberos 'a özgü kimlik bilgisi uzantısı ve genel kimlik bilgisi uzantısı arasında seçim yapabilirsiniz.
 
-Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [IOS SSO uygulama uzantısı](ios-device-features-settings.md#single-sign-on-app-extension) ve [MacOS SSO uygulama uzantısı](macos-device-features-settings.md#single-sign-on-app-extension).
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS/ıpados SSO uygulama uzantısı](ios-device-features-settings.md#single-sign-on-app-extension) ve [MacOS SSO uygulama uzantısı](macos-device-features-settings.md#single-sign-on-app-extension).
 
 SSO uygulama uzantısı geliştirme hakkında daha fazla bilgi için Apple 'ın Web sitesinde [Genişletilebilir Kurumsal SSO](https://developer.apple.com/videos/play/tech-talks/301) 'yu izleyin. Apple 'ın özelliğin açıklamasını okumak için [Çoklu oturum açma uzantıları yük ayarlarını](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web)ziyaret edin. 
 
@@ -171,7 +171,7 @@ SSO uygulama uzantısı geliştirme hakkında daha fazla bilgi için Apple 'ın 
 >
 > - **Çoklu oturum açma uygulama uzantısı**ile bir geliştirme perspektifinden, herhangi bir YENIDEN yönlendirme SSO veya KIMLIK bilgisi SSO kimlik doğrulaması türü kullanabilirsiniz. **Çoklu oturum açma**Ile yalnızca Kerberos SSO kimlik doğrulamasını kullanabilirsiniz.
 >
-> - Kerberos **Çoklu oturum açma uygulaması uzantısı** Apple tarafından geliştirilmiştir ve iOS 13.0 + ve MacOS 10.15 + platformları içinde yerleşiktir. Yerleşik Kerberos uzantısı, kullanıcıları, Kerberos kimlik doğrulamasını destekleyen yerel uygulamalar ve web sitelerinde günlüğe kaydetmek için kullanılabilir. **Çoklu oturum açma** , Kerberos 'un bir Apple uygulamasıdır.
+> - Kerberos **Çoklu oturum açma uygulaması uzantısı** Apple tarafından geliştirilmiştir ve IOS/ıpados 13.0 + ve MacOS 10.15 + platformlarında yerleşiktir. Yerleşik Kerberos uzantısı, kullanıcıları, Kerberos kimlik doğrulamasını destekleyen yerel uygulamalar ve web sitelerinde günlüğe kaydetmek için kullanılabilir. **Çoklu oturum açma** , Kerberos 'un bir Apple uygulamasıdır.
 >
 > - Yerleşik Kerberos **Çoklu oturum açma uygulaması uzantısı** , Web sayfaları ve uygulamaları Için yalnızca **Çoklu oturum**açma gibi Kerberos sorunlarını işler. Bununla birlikte, yerleşik Kerberos uzantısı, parola değişikliklerini destekler ve kurumsal ağlarda daha iyi davranır. Kerberos **Çoklu oturum açma uygulaması uzantısı** ve **Çoklu oturum açma**arasında karar verirken, gelişmiş performans ve yetenekler nedeniyle uzantının kullanılmasını öneririz.
 
@@ -183,9 +183,9 @@ Uygulama hedefi:
 
 ## <a name="wallpaper"></a>Duvar
 
-Denetimli iOS cihazlarınıza özel bir. png,. jpg veya. JPEG görüntüsü ekleyin. Örneğin, cihazlarınızdaki kilit ekranına bir şirket logosu eklemek için Intune ' u kullanın.
+Denetimli iOS/ıpados cihazlarınıza özel bir. png,. jpg veya. JPEG görüntüsü ekleyin. Örneğin, cihazlarınızdaki kilit ekranına bir şirket logosu eklemek için Intune ' u kullanın.
 
-Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde duvar kağıdı](ios-device-features-settings.md#wallpaper).
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS/ıpados üzerinde duvar kağıdı](ios-device-features-settings.md#wallpaper).
 
 Uygulama hedefi:
 
@@ -196,7 +196,7 @@ Uygulama hedefi:
 
 Bu ayarlar Apple 'ın yerleşik otomatik filtre algoritmasını, Web sayfalarını değerlendirmek ve yetişkinlere yönelik içeriği ve yetişkinlere yönelik dili engellemek için kullanabilir. Ayrıca, izin verilen Web bağlantıları ve kısıtlanmış Web bağlantıları listesini de oluşturabilirsiniz. Örneğin, yalnızca `contoso` Web sitelerinin açmasına izin verebilirsiniz.
 
-Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS üzerinde Web içeriği filtresi](ios-device-features-settings.md#web-content-filter).
+Intune 'da yapılandırabileceğiniz ayarların listesi için bkz. [iOS/ıpados 'Ta Web içeriği filtresi](ios-device-features-settings.md#web-content-filter).
 
 Uygulama hedefi:
 
@@ -229,4 +229,4 @@ Profil oluşturulur ve profiller listesinde gösterilir. [Profili atayıp](devic
 
 Profil oluşturulduktan sonra atanmak için hazırlanın. Ardından [profili atayın](device-profile-assign.md) ve [durumunu izleyin](device-profile-monitor.md).
 
-[İOS](ios-device-features-settings.md) ve [MacOS](macos-device-features-settings.md) cihazları için tüm cihaz özelliği ayarlarını görüntüleyin.
+[İOS/ıpados](ios-device-features-settings.md) ve [MacOS](macos-device-features-settings.md) cihazları için tüm cihaz özelliği ayarlarını görüntüleyin.

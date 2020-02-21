@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 183e8cc5924f6ce1f002225150d808841924e20c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956272"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514651"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Kullanıcıları ve cihazları düzenlemek için grup ekleme
 
@@ -34,7 +34,7 @@ Aşağıdaki grup türlerini ekleyebilirsiniz:
 - **Atanan gruplar** -kullanıcıları veya cihazları statik bir gruba el ile ekleyin. 
 - **Dinamik Gruplar** (Azure AD Premium gerekir)-oluşturduğunuz bir ifadeye göre Kullanıcı veya cihazları Kullanıcı gruplarına veya cihaz gruplarına otomatik olarak ekleyin.
 
-  Örneğin, yönetici başlığıyla bir kullanıcı eklendiğinde, Kullanıcı otomatik olarak **Tüm Yöneticiler** kullanıcı grubuna eklenir. Ya da bir cihazda iOS cihaz işletim sistemi türü olduğunda, cihaz otomatik olarak **tüm iOS cihazlar** cihazlar grubuna eklenir.
+  Örneğin, yönetici başlığıyla bir kullanıcı eklendiğinde, Kullanıcı otomatik olarak **Tüm Yöneticiler** kullanıcı grubuna eklenir. Ya da bir cihazda iOS/ıpados cihaz işletim sistemi türü varsa, cihaz otomatik olarak **tüm iOS/ıpados cihazları** cihazları grubuna eklenir.
 
 ## <a name="add-a-new-group"></a>Yeni bir grup ekleme
 
@@ -47,7 +47,7 @@ Yeni bir grup oluşturmak için aşağıdaki adımları kullanın.
 
 3. **Grup türü**' nde, aşağıdaki seçeneklerden birini seçin:
 
-    - **Güvenlik**: güvenlik grupları, kaynaklara kimlerin erişebileceğini tanımlar ve Intune 'daki gruplarınız için önerilir. Örneğin, kullanıcılar için **Tüm Charlotte çalışanları** veya **uzak çalışanlar**gibi gruplar oluşturabilirsiniz. Ya da, **tüm iOS cihazları** veya **tüm Windows 10 öğrenci cihazları**gibi cihazlar için gruplar oluşturabilirsiniz.
+    - **Güvenlik**: güvenlik grupları, kaynaklara kimlerin erişebileceğini tanımlar ve Intune 'daki gruplarınız için önerilir. Örneğin, kullanıcılar için **Tüm Charlotte çalışanları** veya **uzak çalışanlar**gibi gruplar oluşturabilirsiniz. Ya da, **tüm iOS/ıpados cihazları** veya **tüm Windows 10 öğrenci cihazları**gibi cihazlar için gruplar oluşturabilirsiniz.
 
         > [!TIP]
         > Oluşturulan kullanıcılar ve gruplar, [Microsoft 365 Yönetim Merkezi](https://admin.microsoft.com)'nde, Azure Active Directory Yönetim merkezinde ve [Azure Portal Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973)de görülebilir. Kuruluş kiracınızda, tüm bu alanlarda gruplar oluşturabilir ve yönetebilirsiniz.
@@ -85,7 +85,7 @@ Yeni bir grup oluşturmak için aşağıdaki adımları kullanın.
 > - Tüm Android Kurumsal cihazları
 > - Tüm iOS 11 ve eski cihazlar
 > - Pazarlama
-> - İnsan Kaynakları
+> - İnsan kaynakları
 > - Tüm Charlotte çalışanları
 > - Tüm WA çalışanları
 
@@ -103,7 +103,7 @@ Kuruluşunuzun temel uyumluluk gereksinimlerini oluşturmak için tüm gruplara 
 
 Yapılandırma profili önerileri ve Kılavuzu için bkz. [Kullanıcı gruplarına veya cihaz gruplarına Ilke atama](../configuration/device-profile-assign.md#user-groups-vs-device-groups) ve [profil önerileri](../configuration/device-profile-create.md#recommendations).
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Microsoft Intune ile rol tabanlı erişim denetimi (RBAC)](role-based-access-control.md)
 - [Azure AD gruplarıyla kaynaklara erişimi yönetme](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

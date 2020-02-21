@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a9c74281df61fbf81914461286353d49b89a4f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504970"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510754"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune 'da günlük verilerini depolama, Olay Hub 'ları veya Log Analytics 'e gönderme (Önizleme)
 
 Microsoft Intune, ortamınız hakkında bilgi sağlayan yerleşik günlükleri içerir:
 
-- **Denetim günlükleri** , Intune 'da gerçekleşen farklı olay veya görevlerle ilgili ayrıntıları gösterir.
+- **Denetim günlükleri** , oluşturma, güncelleştirme (düzenleme), silme, atama ve uzak eylemler dahil olmak üzere Intune 'da değişiklik üreten etkinliklerin kaydını gösterir.
 - **Işletimsel Günlükler (Önizleme)** , uyumlu olmayan cihazlara başarıyla (veya başarısız) kaydolma ve ayrıntıları içeren Kullanıcı ve cihazlara ilişkin ayrıntıları gösterir.
 - **Cihaz uyumluluğu kuruluş günlükleri (Önizleme)** Intune 'da cihaz uyumluluğu ve uyumlu olmayan cihazların ayrıntıları için bir kuruluş raporu gösterir.
 
@@ -45,7 +45,7 @@ Bu makalede, farklı hizmetlere günlük verileri göndermek, örnek ve maliyet 
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu özelliği kullanmak için şunlara ihtiyacınız vardır:
+Bu özelliği kullanmak için şunlar gerekir:
 
 * Azure aboneliği: bir Azure aboneliğiniz yoksa, [ücretsiz deneme için kaydolabilirsiniz](https://azure.microsoft.com/free/).
 * Azure 'da bir Microsoft Intune ortamı (kiracı)
@@ -53,16 +53,17 @@ Bu özelliği kullanmak için şunlara ihtiyacınız vardır:
 
 Denetim günlüğü verilerini yönlendirmek istediğiniz yere bağlı olarak, aşağıdaki hizmetlerden birine ihtiyacınız vardır:
 
-* *ListKeys* izinleri olan bir [Azure depolama hesabı](https://docs.microsoft.com/azure/storage/common/storage-account-overview) . BLOB depolama hesabı değil, genel bir depolama hesabı kullanmanızı öneririz. Depolamayla fiyatlandırma bilgileri için bkz. [Azure Depolama fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/calculator/?service=storage). 
+* *ListKeys* izinleri olan bir [Azure depolama hesabı](https://docs.microsoft.com/azure/storage/common/storage-account-overview) . BLOB depolama hesabı değil, genel bir depolama hesabı kullanmanızı öneririz. Depolama fiyatlandırma bilgileri için bkz. [Azure Storage Fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/calculator/?service=storage). 
 * Üçüncü taraf çözümlerle tümleştirilecek bir [Azure Olay Hub 'ı ad alanı](https://docs.microsoft.com/azure/event-hubs/event-hubs-create#create-an-event-hubs-namespace) .
 * Log Analytics Günlükler göndermek için bir [Azure Log Analytics çalışma alanı](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) .
 
 ## <a name="send-logs-to-azure-monitor"></a>Günlükleri Azure izleyici 'ye gönderme
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **İzleme**altında **Tanılama ayarları**' nı seçin. İlk kez açtığınızda açın. Aksi takdirde, bir ayar ekleyin.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+2. **Tanılama ayarları** > **raporlar** ' ı seçin. İlk kez açtığınızda açın. Aksi takdirde, bir ayar ekleyin.
 
-    ![Azure Izleyici 'ye Günlükler göndermek için Intune 'da tanılama ayarlarını etkinleştirin](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
+    > [!div class="mx-imgBorder"]
+    > Azure Izleyici 'de Günlükler göndermek için Intune 'da tanılama ayarlarını ![](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
 
 3. Aşağıdaki özellikleri girin:
 
@@ -104,7 +105,8 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz yere bağlı olarak, a
 
     İşiniz bittiğinde, ayarlarınız aşağıdaki ayarlara benzer şekilde görünür: 
 
-    ![Intune denetim günlüklerini bir Azure depolama hesabına gönderen örnek resim](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
+    > [!div class="mx-imgBorder"]
+    > Intune denetim günlüklerini bir Azure depolama hesabına gönderen örnek görüntü ![](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
 
 4. Yaptığınız değişiklikleri **kaydedin**. Ayarınız listede gösterilir. Oluşturulduktan sonra ayarları **düzenle** > **Kaydet**' i seçerek değiştirebilirsiniz.
 
@@ -112,14 +114,7 @@ Denetim günlüğü verilerini yönlendirmek istediğiniz yere bağlı olarak, a
 
 Ayrıca, kayıt, uyumluluk, yapılandırma, cihazlar, istemci uygulamaları ve daha fazlası dahil olmak üzere Intune 'un diğer bölümlerinde denetim günlüklerini dışarı aktarabilirsiniz.
 
-Örneğin, cihaz uyumluluğunu kullanırken denetim günlüklerini dışarı aktarmak için:
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
-2. **Cihaz uyumluluğu** > **izleme** > **Denetim günlüklerini**seçin:
-
-    ![Intune verilerini Azure Izleyici depolama, Olay Hub 'ları veya analiz 'e yönlendirmek için Denetim günlüklerini seçin](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
-
-3. **Veri ayarlarını dışarı aktar**' ı seçin. Etkin değilse, **tanılama ayarlarını**açabilirsiniz. Günlükleri [Azure izleyici 'ye gönderme](#send-logs-to-azure-monitor) (Bu makalede) bölümünde açıklandığı gibi günlüklerin nereden gönderileceğini de seçebilirsiniz.
+Daha fazla bilgi için bkz. [olayları izlemek ve izlemek için Denetim günlüklerini kullanma](monitor-audit-logs.md). [Günlükleri Azure izleyici 'ye gönderme](#send-logs-to-azure-monitor) (Bu makalede) bölümünde açıklandığı gibi, denetim günlüklerinin nereye gönderileceğini seçebilirsiniz.
 
 ## <a name="cost-considerations"></a>Maliyetle ilgili konular
 
@@ -135,7 +130,7 @@ Aşağıdaki tablolarda, kiracının boyutuna bağlı olarak maliyet tahmini gö
 
 | | |
 |---|---|
-|Günlük olay sayısı| 1,5 milyon|
+|Gün başına olay| 1.500.000|
 |Aylık tahmini veri hacmi| 90 GB|
 |Aylık tahmini maliyet (USD)| $1,93|
 |Yıllık tahmini maliyet (USD)| $23,12|
@@ -144,27 +139,27 @@ Aşağıdaki tablolarda, kiracının boyutuna bağlı olarak maliyet tahmini gö
 
 | | |
 |---|---|
-|Günlük olay sayısı| 15.000|
+|Gün başına olay| 15.000|
 |Aylık tahmini veri hacmi| 900 MB|
 |Aylık tahmini maliyet (USD)| $0,02|
 |Yıllık tahmini maliyet (USD)| $0,24|
 
-### <a name="event-hub-messages-for-activity-logs"></a>Etkinlik günlükleri için olay hub'ı iletileri
+### <a name="event-hub-messages-for-activity-logs"></a>Etkinlik günlükleri için Olay Hub 'ı iletileri
 
 Olaylar genellikle beş dakikalık aralıklarla toplanmış ve bu zaman çerçevesi içindeki tüm olaylara sahip tek bir ileti olarak gönderilir. Olay Hub 'ındaki bir ileti en fazla 256 KB boyutunda bir ileti içerir. Zaman çerçevesi içindeki tüm iletilerin toplam boyutu o birimi aşarsa, birden çok ileti gönderilir.
 
 Örneğin, saniye başına yaklaşık 18 olay, 100.000 'den fazla Kullanıcı büyük bir kiracısında gerçekleşir. Bu, beş dakikada bir 5.400 olayına karşılık gelir (300 saniye x 18 olay). Denetim günlükleri Olay başına yaklaşık 2 KB 'dir. Bu, 10,8 MB veri ile eşitleme yapar. Bu nedenle, 43 ileti bu beş dakikalık aralıkta Olay Hub 'ına gönderilir.
 
-Aşağıdaki tabloda Batı ABD bölgesinde yer alan temel bir olay hub'ı için olay verileri hacmine göre yaklaşık aylık maliyet hesabı gösterilmiştir. Günlüklerinizi istediğiniz veri hacminin tahminini almak için [Event Hubs Fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/details/event-hubs/)' nı kullanın.
+Aşağıdaki tabloda, olay verileri hacmine bağlı olarak Batı ABD bir temel olay hub 'ı için aylık tahmini maliyetler yer alır. Günlüklerinizi istediğiniz veri hacminin tahminini almak için [Event Hubs Fiyatlandırma hesaplayıcısı](https://azure.microsoft.com/pricing/details/event-hubs/)' nı kullanın.
 
 **100.000 kullanıcısı ile denetim günlüğü**
 
 | | |
 |---|---|
-|Saniye başına olay sayısı| 18|
-|Beş dakikalık aralık başına olay sayısı| 5400|
-|Aralık başına boyut| 10,8 MB|
-|Aralık başına ileti sayısı| 43|
+|Saniye başına olay| 18|
+|Beş dakikalık Aralık başına olay sayısı| 5\.400|
+|Aralık başına birim| 10,8 MB|
+|Aralık başına ileti| 43|
 |Aylık ileti sayısı| 371.520|
 |Aylık tahmini maliyet (USD)| $10,83|
 
@@ -172,11 +167,11 @@ Aşağıdaki tabloda Batı ABD bölgesinde yer alan temel bir olay hub'ı için 
 
 | | |
 |---|---|
-|Saniye başına olay sayısı|0.1 |
-|Beş dakikalık aralık başına olay sayısı| 52|
-|Aralık başına boyut|104 KB |
-|Aralık başına ileti sayısı|1 |
-|Aylık ileti sayısı|8640 |
+|Saniye başına olay|0.1 |
+|Beş dakikalık Aralık başına olay sayısı| 52|
+|Aralık başına birim|104 KB |
+|Aralık başına ileti|1\. |
+|Aylık ileti sayısı|8\.640 |
 |Aylık tahmini maliyet (USD)|$10,80 |
 
 ### <a name="log-analytics-cost-considerations"></a>Log Analytics maliyet konuları
@@ -213,15 +208,15 @@ Akış maliyetleri, dakika başına aldığınız ileti sayısına bağlıdır. 
 
 ### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Nasıl yaparım? SıEM sistemim ile Intune denetim günlüklerini tümleştirsin mi?
 
-Azure İzleyici ile Event Hubs'ı birlikte kullanarak günlüklerinizin akışını SIEM sisteminize yapabilirsiniz. İlk olarak, [günlükleri bir olay hub 'ına akışı](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)yapın. Ardından, yapılandırılmış olay hub 'ını kullanarak [SıEM aracınızı ayarlayın](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) . 
+Günlükleri SıEM sisteminize akışındaki Event Hubs Azure Izleyici 'yi kullanın. İlk olarak, [günlükleri bir olay hub 'ına akışı](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)yapın. Ardından, yapılandırılmış olay hub 'ını kullanarak [SıEM aracınızı ayarlayın](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) . 
 
 ### <a name="what-siem-tools-are-currently-supported"></a>Şu anda hangi SıEM araçları destekleniyor?
 
-Şu anda Azure Izleyici, [splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar ve [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (yeni bir Web sitesi açar) tarafından desteklenir. Bağlayıcıların çalışma şekli hakkında daha fazla bilgi için bkz. [Azure izleme verilerini bir dış araç tarafından kullanılmak üzere bir olay hub'ına aktarma](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
+Şu anda Azure Izleyici, [splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar ve [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (yeni bir Web sitesi açar) tarafından desteklenir. Bağlayıcıların nasıl çalıştığı hakkında daha fazla bilgi için bkz. [bir dış araçla tüketim Için Azure izleme verilerini bir olay hub 'ına akış](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
 
 ### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Bir dış SıEM aracı kullanmadan veriye bir olay hub 'ından erişebilir miyim?
 
-Evet. Günlüklere özel uygulamanızdan erişmek için [Event Hubs API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph)’sini kullanabilirsiniz.
+Evet. Özel uygulamanızdan günlüklere erişmek için [Event HUBS API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph)'sini kullanabilirsiniz.
 
 ### <a name="what-data-is-stored"></a>Hangi veriler depolanır?
 
@@ -229,6 +224,6 @@ Intune, işlem hattı aracılığıyla gönderilen herhangi bir veriyi depolamaz
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* [Etkinlik günlüklerini depolama hesabında arşivleme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
-* [Etkinlik günlüklerini olay hub'ına yönlendirme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)
+* [Etkinlik günlüklerini bir depolama hesabına arşivleme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
+* [Etkinlik günlüklerini bir olay hub 'ına yönlendirme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)
 * [Etkinlik günlüklerini Log Analytics ile tümleştirme](https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)

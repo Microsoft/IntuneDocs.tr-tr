@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437911"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513733"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Uygulama koruma ilkelerini oluşturma ve atama
 
@@ -74,21 +74,21 @@ Kuruluşunuzun iş kolu (LOB) uygulamalarını uygulama koruma ilkelerine hazır
     Bu sayfa, kesme, kopyalama, yapıştırma ve farklı kaydet kısıtlamaları dahil olmak üzere veri kaybı önleme (DLP) denetimleri için ayarlar sağlar. Bu ayarlar, kullanıcıların bu uygulama koruma ilkesinin uygulandığı uygulamalardaki verilerle nasıl etkileşime gireceğini tespit ediyor.
 
     **Veri koruma ayarları**:<br>
-    - **iOS/ıpados veri koruma** -bilgi için bkz. [iOS uygulama koruma Ilkesi ayarları-veri koruma](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **iOS/ıpados veri koruma** -bilgi için bkz. [IOS/ıpados uygulama koruma Ilkesi ayarları-veri koruma](~/apps/app-protection-policy-settings-ios.md#data-protection).
     - **Android veri koruma** -bilgi için bkz. [Android uygulama koruma Ilkesi ayarları-veri koruma](~/apps/app-protection-policy-settings-android.md#data-protection).
 
 7. **İleri** ' ye tıklayarak **erişim gereksinimleri** sayfasını görüntüleyin.<br>
     Bu sayfa, kullanıcıların bir iş bağlamındaki uygulamalara erişmek için karşılaması gereken PIN ve kimlik bilgisi gereksinimlerini yapılandırmanıza izin veren ayarları sağlar. 
  
     **Erişim gereksinimleri ayarları**:<br>
-    - **iOS/ıpados erişim gereksinimleri** -bilgi için bkz. [iOS uygulama koruma Ilkesi ayarları-erişim gereksinimleri](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    - **iOS/ıpados erişim gereksinimleri** -bilgi için bkz. [IOS/ıpados uygulama koruma Ilkesi ayarları-erişim gereksinimleri](~/apps/app-protection-policy-settings-ios.md#access-requirements).
     - **Android erişim gereksinimleri** -daha fazla bilgi için bkz. [Android uygulama koruma Ilkesi ayarları-erişim gereksinimleri](~/apps/app-protection-policy-settings-android.md#access-requirements).
 
 8. **Koşullu başlatma** sayfasını göstermek için **İleri** ' ye tıklayın.<br>
     Bu sayfa, uygulama koruma ilkeniz için oturum açma güvenlik gereksinimlerini ayarlamaya yönelik ayarları sağlar. Bir **Ayar** seçin ve kullanıcıların şirket uygulamanızda oturum açması için karşılaması gereken bir **Değer** girin. Ardından, kullanıcılar gereksinimlerinizi karşılamıyorsa gerçekleştirmek istediğiniz **eylemi** seçin. Bazı durumlarda tek bir ayar için birden çok eylem yapılandırılabilir.
 
     **Koşullu başlatma ayarları**:<br>
-    - **iOS/ıpados koşullu başlatma** -bilgi için bkz. [iOS uygulama koruma Ilkesi ayarları-koşullu başlatma](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    - **iOS/ıpados koşullu başlatma** -bilgi için bkz. [IOS/ıpados uygulama koruma Ilkesi ayarları-koşullu başlatma](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
     - **Android koşullu başlatma** -bilgi için bkz. [Android uygulama koruma Ilkesi ayarları-koşullu başlatma](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
 9. **Atamalar** sayfasını göstermek için **İleri** ' ye tıklayın.<br>
@@ -180,7 +180,7 @@ Bu ilkeleri oluşturmak için Intune konsolundaki **uygulamalar** > **Uygulama k
 > [!NOTE]
 > Android cihazlar, hangi cihaz türünün seçildiğine bakılmaksızın Intune Şirket Portalı uygulamasını yüklemek isteyip istecektir. Örneğin, ' Android Enterprise ' seçeneğini belirlerseniz, yönetilmeyen Android cihazlara sahip olan kullanıcılara yine de sorulur.
 
-İOS için, uygulama koruma ilkesi (uygulama) ayarlarını Intune 'a kayıtlı cihazlardaki uygulamalara hedeflemek için ek uygulama yapılandırma ayarları gerekir:
+İOS/ıpados için, Intune kayıtlı cihazlarındaki uygulamalara Uygulama koruma ilkesi (uygulama) ayarlarını hedeflemek üzere ek uygulama yapılandırma ayarları gereklidir:
 
 - MDM ile yönetilen tüm uygulamalarda **IntuneMAMUPN** yapılandırılmalıdır. Daha fazla bilgi için bkz. [Microsoft Intune Içindeki iOS/ıpados uygulamaları arasında veri aktarımını yönetme](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 - **Intunemamdeviceıd** , tüm üçüncü taraf ve Iş kolu MDM ile yönetilen uygulamalar için yapılandırılmalıdır. **IntuneMAMDeviceID**, cihaz kimliği belirtecinde yapılandırılmalıdır. Örneğin, `key=IntuneMAMDeviceID, value={{deviceID}}`. Daha fazla bilgi için bkz. [yönetilen iOS/ıpados cihazları için uygulama yapılandırma Ilkeleri ekleme](app-configuration-policies-use-ios.md).
@@ -192,7 +192,7 @@ Bu ilkeleri oluşturmak için Intune konsolundaki **uygulamalar** > **Uygulama k
 ## <a name="policy-settings"></a>İlke ayarları
 İOS/ıpados ve Android ilke ayarlarının tam listesini görmek için, aşağıdaki bağlantılardan birini seçin:
 
-- [iOS ilkeleri](app-protection-policy-settings-ios.md)
+- [iOS/ıpados ilkeleri](app-protection-policy-settings-ios.md)
 - [Android ilkeleri](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>Sonraki adımlar

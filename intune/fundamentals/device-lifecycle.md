@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46a23ca18e385fa085afb59a654290702465a0ce
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 57a1e1c9c8a03fae67f2a4a25b6b4f16a20a8ec7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414045"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514464"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune mobil cihaz yönetimi (MDM) yaşam döngüsüne genel bakış
 
@@ -30,7 +30,7 @@ Yönettiğiniz tüm cihazlarda *yaşam döngüsü* adı verilen bir unsur vardı
 
 ## <a name="enroll"></a>Kaydetme
 
-Günümüzün mobil cihaz yönetimi (MDM) stratejileri, çeşitli telefonlar ve tabletler ve bilgisayarlarla (iOS, Android, Windows ve Mac OS X) ilgilenir. Şirkete ait cihazlarda çoğunlukla söz konusu olduğu gibi cihazı yönetebilmeniz gerekiyorsa, ilk adım [cihaz kaydını ayarlamaktır](../enrollment/device-enrollment.md). Windows bilgisayarları da Intune’a (MDM) kaydederek veya [Intune istemci yazılımını yükleyerek](../manage-windows-pcs-with-microsoft-intune.md) yönetebilirsiniz.
+Günümüzün mobil cihaz yönetimi (MDM) stratejileri, çeşitli telefonlar, tabletler ve bilgisayarlar (iOS/ıpados, Android, Windows ve Mac OS X) ile ilgilenir. Şirkete ait cihazlarda çoğunlukla söz konusu olduğu gibi cihazı yönetebilmeniz gerekiyorsa, ilk adım [cihaz kaydını ayarlamaktır](../enrollment/device-enrollment.md). Windows bilgisayarları da Intune’a (MDM) kaydederek veya [Intune istemci yazılımını yükleyerek](../manage-windows-pcs-with-microsoft-intune.md) yönetebilirsiniz.
 
 ## <a name="configure"></a>Yapılandırma
 

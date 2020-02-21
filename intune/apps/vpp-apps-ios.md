@@ -1,7 +1,7 @@
 ---
 title: Apple toplu satın alınan uygulamaları yönetme
 titleSuffix: Microsoft Intune
-description: İOS ve macOS App Store 'dan satın aldığınız uygulamaları Microsoft Intune olarak nasıl eşitleyebileceğinizi öğrenin ve ardından kullanımlarını yönetebilir ve izleyebilirsiniz.
+description: İOS/ıpados ve macOS App Store 'dan satın aldığınız uygulamaları Microsoft Intune olarak nasıl eşitleyebileceğinizi öğrenin ve ardından kullanımlarını yönetebilir ve izleyebilirsiniz.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.openlocfilehash: 9127ee06bc2125f476c18e9b8e46a127e48d0245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051635"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513410"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile Apple Volume Purchase Program aracılığıyla satın alınan iOS ve macOS uygulamalarını yönetme
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple, [Apple Business Manager](https://business.apple.com/) veya [Apple Okul Yöneticisi 'ni](https://school.apple.com/)kullanarak iOS ve MacOS cihazlarında kuruluşunuzda kullanmak istediğiniz bir uygulama için birden çok lisans satın almanızı sağlar. Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz. Uygulama lisansı satın alma, şirketinizdeki uygulamaları etkin bir şekilde yönetmenize ve satın alınan uygulamaların sahipliğini ve denetimini tutmanıza yardımcı olur. 
+Apple, [Apple Business Manager](https://business.apple.com/) veya [Apple Okul Yöneticisi 'ni](https://school.apple.com/)kullanarak iOS/ıpados ve MacOS cihazlarında kuruluşunuzda kullanmak istediğiniz bir uygulama için birden çok lisans satın almanızı sağlar. Toplu satın alma bilgilerinizi daha sonra Intune’la eşitleyebilir ve toplu satın alınan uygulama kullanımınızı izleyebilirsiniz. Uygulama lisansı satın alma, şirketinizdeki uygulamaları etkin bir şekilde yönetmenize ve satın alınan uygulamaların sahipliğini ve denetimini tutmanıza yardımcı olur. 
 
 Microsoft Intune, bu program aracılığıyla satın alınan uygulamaları yönetmenize yardımcı olur:
 
@@ -38,13 +38,13 @@ Microsoft Intune, bu program aracılığıyla satın alınan uygulamaları yöne
 - Kaç tane lisansın kullanılabilir olduğunu ve satın alınan uygulamalar için kullanıldığını izleme.
 - Sahip olduğunuz lisansların sayısına kadar uygulama yüklemenize yardımcı olur.
 
-Ayrıca, Apple Business Manager 'dan satın aldığınız kitapları Intune ile iOS cihazlarına eşitleyebilir, yönetebilir ve atayabilirsiniz. Daha fazla bilgi için bkz. [Bir toplu satın alma programı aracılığıyla satın aldığınız iOS e-Kitaplarını yönetme](vpp-ebooks-ios.md).
+Ayrıca, Apple Business Manager 'dan satın aldığınız kitapları Intune ile iOS/ıpados cihazlarına eşitleyebilir, yönetebilir ve atayabilirsiniz. Daha fazla bilgi için bkz. [toplu satın alma programı aracılığıyla satın aldığınız iOS/ıpados eBook 'ları yönetme](vpp-ebooks-ios.md).
 
 ## <a name="what-are-location-tokens"></a>Konum belirteçleri nedir?
 Konum belirteçleri, toplu satın alma programı (VPP) belirteçleri olarak da bilinir. Bu belirteçler, Apple Business Manager kullanılarak satın alınan lisansları atamak ve yönetmek için kullanılır. İçerik yöneticileri, Apple Business Manager 'da izinlerine sahip oldukları konum belirteçleriyle lisanslar satın alabilir ve ilişkilendirebilir. Bu konum belirteçleri daha sonra Apple Business Manager 'dan indirilir ve Microsoft Intune karşıya yüklenir. Microsoft Intune, kiracı başına birden çok konum belirtecinin yüklenmesini destekler. Her belirteç bir yıl için geçerlidir.
 
 ## <a name="how-are-purchased-apps-licensed"></a>Satın alınan uygulamalar nasıl lisanslanır?
-Satın alınan uygulamalar, Apple 'ın iOS ve macOS cihazları için sunduğu iki lisans türü kullanılarak gruplara atanabilir.
+Satın alınan uygulamalar, Apple 'ın iOS/ıpados ve macOS cihazları için sunduğu iki lisans türü kullanılarak gruplara atanabilir.
 
 |   | Cihaz lisanslama | Kullanıcı lisanslama |
 |-----|------------------|----------------|
@@ -142,11 +142,11 @@ Son kullanıcı, birkaç senaryoda VPP uygulama yüklemesi için istem alır. A�
 
 | # | Senaryo                                | Bir Apple VPP programına davet                              | Uygulama yükleme istemi | Apple kimliği istemi |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | KCG – kullanıcı lisanslı (Kullanıcı kayıt cihazı değil)                             | E                                                                                               | E                                           | E                                 |
-| 2 | Şirket – kullanıcı lisanslı (denetimsiz cihaz)     | E                                                                                               | E                                           | E                                 |
-| 3 | Şirket – kullanıcı lisanslı (denetimli cihaz)         | E                                                                                               | N                                           | E                                 |
-| 4 | KCG – cihaz lisanslı                           | N                                                                                               | E                                           | N                                 |
-| 5 | ŞİRKET – cihaz lisanslı (denetimsiz cihaz)                           | N                                                                                               | E                                           | N                                 |
+| 1\. | KCG – kullanıcı lisanslı (Kullanıcı kayıt cihazı değil)                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Şirket – kullanıcı lisanslı (denetimsiz cihaz)     | Y                                                                                               | Y                                           | Y                                 |
+| 3 | Şirket – kullanıcı lisanslı (denetimli cihaz)         | Y                                                                                               | N                                           | Y                                 |
+| 4 | KCG – cihaz lisanslı                           | N                                                                                               | Y                                           | N                                 |
+| 5 | ŞİRKET – cihaz lisanslı (denetimsiz cihaz)                           | N                                                                                               | Y                                           | N                                 |
 | 6 | ŞİRKET – cihaz lisanslı (denetimli cihaz)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Bilgi noktası modu (denetimli cihaz) – cihaz lisanslı | N                                                                                               | N                                           | N                                 |
 | 8 | Bilgi noktası modu (denetimli cihaz) – kullanıcı lisanslı   | --- | ---                                          | ---                                |
@@ -156,9 +156,9 @@ Son kullanıcı, birkaç senaryoda VPP uygulama yüklemesi için istem alır. A�
 
 ## <a name="revoking-app-licenses"></a>Uygulama lisanslarını iptal etme
 
-Belirli bir cihaz, Kullanıcı veya uygulamayı temel alan tüm ilişkili iOS veya macOS toplu satın alma programı (VPP) uygulama lisanslarını iptal edebilirsiniz.  Ancak iOS ve macOS platformları arasında bazı farklılıklar vardır. 
+Belirli bir cihaz, Kullanıcı veya uygulamayı temel alan tüm ilişkili iOS/ıpados veya macOS toplu satın alma programı (VPP) uygulama lisanslarını iptal edebilirsiniz.  Ancak iOS/ıpados ve macOS platformları arasında bazı farklılıklar vardır. 
 
-|   | iOS | Mac OS |
+|   | iOS/ıpados | Mac OS |
 |-----|------------------|----------------|
 | **Uygulama atamasını Kaldır** | Bir kullanıcıya atanan uygulamayı kaldırdığınızda Intune, kullanıcı veya cihaz lisansını geri kazanır ve uygulamayı cihazdan kaldırır. | Bir kullanıcıya atanmış bir uygulamayı kaldırdığınızda, Intune kullanıcı veya cihaz lisansını geri kazanır. Uygulama cihazdan kaldırılmadı. |
 | **Uygulama lisansını iptal et** | Kullanıcı veya cihazdan uygulama lisansını geri kazanır bir uygulama lisansını iptal etme. Uygulamayı cihazdan kaldırmak için atamayı **kaldırmak** üzere değiştirmeniz gerekir. | Kullanıcı veya cihazdan uygulama lisansını geri kazanır bir uygulama lisansını iptal etme. İptal edilen lisans olan macOS uygulaması cihazda kullanılabilir durumda kalır, ancak bir lisans Kullanıcı veya cihaza yeniden atanana kadar güncelleştirilemez. Apple 'a göre, bu gibi uygulamalar 30 günlük yetkisiz kullanım süresinden sonra kaldırılır. Ancak, Apple atama kaldırma eylemini kullanarak Intune 'un uygulamayı kaldırması için bir yol sağlamaz.
@@ -184,14 +184,14 @@ Apple Business Manager veya Apple Okul Yöneticisi 'nden yeni bir belirteç indi
 
 ## <a name="deleting-a-vpp-app"></a>VPP uygulamasını silme
 
-Şu anda bir iOS VPP uygulamasını Microsoft Intune’dan silmeniz mümkün değildir.
+Şu anda Microsoft Intune bir iOS/ıpados VPP uygulamasını silemezsiniz.
 
 ## <a name="assigning-custom-role-permissions-for-vpp"></a>VPP için özel rol izinleri atama
 
 Apple VPP belirteçlerine ve VPP uygulamalarına erişim, Intune 'daki özel yönetici rollerine atanan izinler kullanılarak bağımsız olarak denetlenebilir.
 
 * Intune özel rolünün, **Apple VPP belirteçlerini** > **uygulamalar** altında Apple VPP belirteçlerini yönetmesine Izin vermek için, **yönetilen uygulamalar**için izin atayın.
-* Intune özel rolünün, **uygulamalar** > **tüm uygulamalar**altında iOS VPP belirteçleri kullanılarak satın alınan uygulamaları yönetmesine Izin vermek için, **mobil uygulamalar**için izin atayın. 
+* Intune özel rolünün, **uygulamalar** > **tüm uygulamalar**' ın altında IOS/ıpados VPP belirteçleri kullanılarak satın alınan uygulamaları yönetmesine Izin vermek için, **mobil uygulamalar**için izin atayın. 
 
 ## <a name="additional-information"></a>Ek bilgiler
 

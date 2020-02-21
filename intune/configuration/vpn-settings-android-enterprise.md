@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 81300651355e52f438ea2a314eeb1d0d48e3fcbc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206321"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510873"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Intune 'da VPN yapılandırmak için Android kurumsal cihaz ayarları
-
-
 
 Bu makalede, Android kurumsal cihazlarda denetleyebilmeniz için kullanabileceğiniz farklı VPN bağlantısı ayarları listelenir ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak, bu ayarları kullanarak bir VPN bağlantısı oluşturun, VPN 'in kimlik doğrulamasını yapın, bir VPN sunucusu türü seçin ve daha fazlasını yapın.
 
@@ -77,4 +75,4 @@ Intune 'da VPN profilleri hakkında daha fazla bilgi edinmek için bkz. [VPN pro
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
-[Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md), [MacOS](vpn-settings-macos.md), [Windows 10 ve üzeri](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md)ve [Windows Phone 8,1](vpn-settings-windows-phone-8-1.md) cihazları için de VPN profilleri oluşturabilirsiniz.
+[Android](vpn-settings-android.md), [IOS/ıpados](vpn-settings-ios.md), [MacOS](vpn-settings-macos.md), [Windows 10 ve üzeri](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md)ve [Windows Phone 8,1](vpn-settings-windows-phone-8-1.md) cihazları için de VPN profilleri oluşturabilirsiniz.

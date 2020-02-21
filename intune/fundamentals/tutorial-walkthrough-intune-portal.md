@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 203d243df3e8ae496e7ff78f20222fd361417c3d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712989"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514056"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Öğretici: Azure portal Microsoft Intune Izlenecek yol
 
@@ -67,7 +67,7 @@ Azure portal Intune 'U daha iyi anlamak için aşağıdaki adımları izleyin. T
     
     Intune, iş gücünüzün cihazlarını ve uygulamalarını, şirket verilerinize nasıl eriştikleri gibi yönetmenize olanak sağlar. Bu mobil cihaz yönetimi (MDM) hizmetini kullanmak için önce cihazların Intune 'A kaydolması gerekir. Bir cihaz kaydedildiğinde, ona bir MDM sertifikası verilir. Bu sertifika, Intune hizmeti ile iletişim kurmak için kullanılır. 
 
-    İş gücünüzün cihazlarını Intune 'a kaydetmek için çeşitli yöntemler vardır. Her bir yöntem cihazın sahipliği (kişisel veya şirket), cihaz türü (iOS, Windows, Android) ve yönetim gereksinimlerine (sıfırlama, benzeşim, kilitleme) bağlıdır. Ancak, cihaz kaydını etkinleştirebilmeniz için Intune altyapınızı ayarlamanız gerekir. Cihaz kaydı özellikle [MDM yetkilinizi ayarlamanızı](mdm-authority-set.md) gerektirir. Intune ortamınızı (kiracı) hazırlayın hakkında daha fazla bilgi için bkz. [Intune 'U ayarlama](setup-steps.md). Intune kiracınızı kullanmaya başladıktan sonra cihazları kaydedebilirsiniz. Cihaz kaydı hakkında daha fazla bilgi için bkz. [Cihaz kaydı nedir?](../enrollment/device-enrollment.md)
+    İş gücünüzün cihazlarını Intune 'a kaydetmek için çeşitli yöntemler vardır. Her yöntem cihazın sahipliğini (kişisel veya şirket), cihaz türü (iOS/ıpados, Windows, Android) ve yönetim gereksinimlerine (sıfırlamaları, benzeşim, kilitleme) bağlıdır. Ancak, cihaz kaydını etkinleştirebilmeniz için Intune altyapınızı ayarlamanız gerekir. Cihaz kaydı özellikle [MDM yetkilinizi ayarlamanızı](mdm-authority-set.md) gerektirir. Intune ortamınızı (kiracı) hazırlayın hakkında daha fazla bilgi için bkz. [Intune 'U ayarlama](setup-steps.md). Intune kiracınızı kullanmaya başladıktan sonra cihazları kaydedebilirsiniz. Cihaz kaydı hakkında daha fazla bilgi için bkz. [Cihaz kaydı nedir?](../enrollment/device-enrollment.md)
 
 3. Intune tarafından yönetilen cihazların uyumluluk ayrıntılarını göstermek için [Intune](https://aka.ms/intuneportal)'dan **cihaz uyumluluğu** ' nu seçin. Aşağıdaki görüntüye benzer Ayrıntılar görürsünüz.
 
@@ -85,7 +85,7 @@ Azure portal Intune 'U daha iyi anlamak için aşağıdaki adımları izleyin. T
 
     ![Cihaz yapılandırma bölmesinin ekran görüntüsü](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve özellikler "yapılandırma profillerine" eklenir. iOS, Android ve Windows dahil olmak üzere farklı cihazlar ve platformlar için profil oluşturabilirsiniz. Daha sonra, Intune 'u kuruluşunuzdaki cihazlara uygulamak için Intune ' u kullanabilirsiniz.   
+    Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve özellikler "yapılandırma profillerine" eklenir. Farklı cihazlar ve iOS/ıpados, Android ve Windows dahil farklı platformlar için profiller oluşturabilirsiniz. Daha sonra, Intune 'u kuruluşunuzdaki cihazlara uygulamak için Intune ' u kullanabilirsiniz.   
 
     Cihaz yapılandırması hakkında daha fazla bilgi için bkz. [Microsoft Intune cihaz profillerini kullanarak cihazlarınızda özellik ayarlarını uygulama](../configuration/device-profiles.md).
 

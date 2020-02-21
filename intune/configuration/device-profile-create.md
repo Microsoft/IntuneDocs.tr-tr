@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206678"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511438"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune’da cihaz profili oluşturma
 
@@ -39,7 +39,7 @@ Bu makalede:
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
-2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Aşağıdaki seçenekleriniz vardır:
+2. **Yapılandırma profillerinin** > **cihazları** ' nı seçin. Şu seçenekleriniz vardır:
 
     - **Genel bakış**: profillerinizin durumunu listeler ve kullanıcılara ve cihazlara atadığınız profiller hakkında ek ayrıntılar sağlar.
     - **Yönetin**: cihaz profilleri oluşturun, profil içinde çalıştırılacak özel [PowerShell betikleri](../apps/intune-management-extension.md) yükleyin ve [esım](esim-device-configuration.md)kullanarak cihazlara veri planları ekleyin.
@@ -52,7 +52,7 @@ Bu makalede:
    - **Açıklama**: Profil için bir açıklama girin. Bu ayar isteğe bağlıdır ancak önerilir.
    - **Platform**: cihazlarınızın platformunu seçin. Seçenekleriniz şunlardır:  
 
-       - **Outlook Web Access (OWA)**
+       - **Android**
        - **Android kurumsal**
        - **iOS/ıpados**
        - **macOS**
@@ -87,7 +87,7 @@ Bu makalede:
 
      Örneğin, platform için **iOS/ıpados** ' ı seçerseniz, profil türü seçenekleriniz aşağıdaki profile benzer şekilde görünür:
 
-     ![Intune'da iOS profili oluşturma](./media/device-profile-create/create-device-profile.png)
+     ![Intune 'da iOS/ıpados profili oluşturma](./media/device-profile-create/create-device-profile.png)
 
 4. Bitirdiğinizde, yaptığınız değişiklikleri kaydetmek için **Tamam** > **Oluştur**'u seçin. Profil oluşturulur ve listede gösterilir.
 
@@ -134,7 +134,7 @@ Bu senaryolara yaklaşımak için şunları yapın:
 
 Profili gruplara atadığınızda, uygulanabilirlik kuralları bir filtre işlevi görür ve yalnızca ölçütlerinizi karşılayan cihazları hedefleyin.
 
-### <a name="add-a-rule"></a>Kural Ekle
+### <a name="add-a-rule"></a>Kural ekleme
 
 1. **Uygulanabilirlik kuralları**' nı seçin. **Kural**, **özellik**ve **işletim sistemi sürümünü**seçebilirsiniz:
 
@@ -171,10 +171,10 @@ Profiller oluştururken aşağıdaki önerileri göz önünde bulundurun:
   **Profil adı**: yönetici şablonu-tüm Windows 10 kullanıcıları için OneDrive yapılandırma profili  
   **Profil açıklaması**: tüm Windows 10 kullanıcıları için en düşük ve temel ayarları içeren OneDrive yönetici şablonu profili. Kullanıcıların kurumsal verileri kişisel OneDrive hesaplarına paylaşmasını engellemek için user@contoso.com tarafından oluşturulur.
 
-  **Profil adı**: tüm iOS kullanıcıları için VPN profili  
-  **Profil açıklaması**: Tüm IOS KULLANıCıLARıNıN contoso VPN 'ye bağlanması için en düşük ve temel ayarları içeren VPN profili. Kullanıcıların Kullanıcı adı ve parola istemek yerine VPN 'de otomatik olarak kimlik doğrulaması yaptığı için user@contoso.com tarafından oluşturulur.
+  **Profil adı**: Tüm IOS/ıpados kullanıcıları için VPN profili  
+  **Profil açıklaması**: contoso VPN 'ye bağlanacak tüm IOS/ıpados kullanıcıları için en düşük ve temel ayarları içeren VPN profili. Kullanıcıların Kullanıcı adı ve parola istemek yerine VPN 'de otomatik olarak kimlik doğrulaması yaptığı için user@contoso.com tarafından oluşturulur.
 
-- Microsoft Edge ayarlarını yapılandırma, Microsoft Defender Anti-Virus ayarlarını etkinleştirme, iOS jailbreak uygulanmış cihazlarını engelleme vb. gibi kendi görevine göre profilinizi oluşturun.
+- Microsoft Edge ayarlarını yapılandırma, Microsoft Defender Anti-Virus ayarlarını etkinleştirme, iOS/ıpados jailbreak uygulanmış cihazlarını engelleme vb. gibi görevine göre profilinizi oluşturun.
 
 - Pazarlama, satış, BT yöneticileri veya konuma veya okul sistemine göre belirli gruplar için uygulanan Profiller oluşturun.
 

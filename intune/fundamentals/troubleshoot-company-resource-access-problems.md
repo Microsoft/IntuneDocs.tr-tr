@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune-Azure 'daki hata ve durum kodları | Microsoft Docs
-description: MDM ile yönetilen cihazları kullanırken, şirket kaynaklarına erişim ve iOS cihazlarındaki hatalar ve Microsoft Intune 'daki OMA yanıt hataları hakkında bilgi için bkz. hata, durum kodu, açıklama ve çözümlerin listesi.
+description: MDM ile yönetilen cihazları kullanırken, şirket kaynaklarına erişimi, iOS/ıpados cihazlarındaki hataları ve Microsoft Intune 'de OMA yanıt hatalarını görmek için hata, durum kodu, açıklama ve çözümlerin listesini görüntüleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17a8ebfcad2bcf485771f26184377aeb2c4bf4e1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bf31ce5f812603534f30b3b3aa3836ede0be6f6d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509797"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510597"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Microsoft Intune ortak hata kodları ve açıklamaları
 
@@ -78,7 +78,7 @@ Destek yardıma ihtiyacınız varsa bkz. [Microsoft Intune için destek alın](.
 |-2016341111|0x87D11389|iOS cihazı, beklenmeyen bir Boşta durumu döndürdü|
 |-2016341112|0x87D11388|iOS cihazı şu anda meşgul|
 
-## <a name="errors-returned-by-ios-devices"></a>iOS cihazları tarafından döndürülen hatalar
+## <a name="errors-returned-by-iosipados-devices"></a>İOS/ıpados cihazları tarafından döndürülen hatalar
 
 ### <a name="company-portal-errors"></a>Şirket Portalı hataları
 
@@ -87,7 +87,7 @@ Destek yardıma ihtiyacınız varsa bkz. [Microsoft Intune için destek alın](.
 |__İç sunucu sorunu__ <br>Sunucumuzdaki bir iç hata nedeniyle bize ulaşamıyorsunuz gibi görünüyor. Yeniden deneyin ve ardından sorun devam ederse BT yöneticinize danışın.|500 hatası|Bu hata büyük olasılıkla Intune hizmetindeki bir sorundan kaynaklanır. Sorun Intune sunucusu tarafında çözülmelidir ve büyük olasılıkla müşteri tarafındaki bir soruna bağlı değildir.|
 |__Geçici olarak kullanılamıyor__ <br>Hizmetimiz geçici olarak kullanım dışı kaldığından bize ulaşamıyorsunuz gibi görünüyor. Yeniden deneyin ve ardından sorun devam ederse BT yöneticinize danışın.|503 hatası|Bu hata büyük olasılıkla Intune hizmetindeki geçici bir sorundan, örneğin hizmetin bakıma alınmış olmasından kaynaklanır. Sorun Intune sunucusu tarafında çözülmelidir ve büyük olasılıkla müşteri tarafındaki bir soruna bağlı değildir.|
 |__Sunucuya bağlanılamıyor__ <br>Bize ulaşamıyorsunuz gibi görünüyor. Yeniden deneyin ve ardından sorun devam ederse BT yöneticinize danışın.|HTTP durum koduyla ilişkili değil|Sunucuyla güvenli bir bağlantı kurulamadı; bunun nedeni büyük olasılıkla kullanılan sertifikalardaki bir SSL sorunudur. Bu sorun müşteri yapılandırmalarının Apple’ın Uygulama Taşıma Güvenliği (ATS) gereksinimleriyle uyumlu olmamasından kaynaklanıyor olabilir.|
-|__Bir sorun oluştu__ <br>Şirket Portalı istemcisi yüklenemedi. Yeniden deneyin ve ardından sorun devam ederse BT yöneticinize danışın.|400 hatası|400’lü bir HTTP durum kodunda oluşan ve daha belirgin bir hata iletisi olmayan hatalarda bu gösterilir. Bu, iOS için Şirket Portalı uygulamasında oluşan bir istemci tarafı hatasıdır.|
+|__Bir sorun oluştu__ <br>Şirket Portalı istemcisi yüklenemedi. Yeniden deneyin ve ardından sorun devam ederse BT yöneticinize danışın.|400 hatası|400’lü bir HTTP durum kodunda oluşan ve daha belirgin bir hata iletisi olmayan hatalarda bu gösterilir. Bu, iOS/ıpados Şirket Portalı uygulamasında bir istemci tarafı hatasıdır.|
 |__Sunucuya erişilemiyor__ <br>Bize ulaşamıyorsunuz gibi görünüyor. Yeniden deneyin ve ardından sorun devam ederse BT yöneticinize danışın.|500 hatası|500’lü bir HTTP durum kodunda oluşan ve daha belirgin bir hata iletisi olmayan hatalarda bu gösterilir. Bu, Intune hizmetinde oluşan bir hizmet tarafı hatasıdır.|
 
 ### <a name="service-errors"></a>Hizmet hataları
@@ -276,7 +276,7 @@ Destek yardıma ihtiyacınız varsa bkz. [Microsoft Intune için destek alın](.
 |-2016332105|0x87D136B7|4007:Tanınmayan dosya biçimi|
 |-2016332106|0x87D136B6|4006:Profil kaldırma tarihi geçmişte|
 |-2016332107|0x87D136B5|4005:Geçiş kodu uyumlu değil|
-|-2016332108|0x87D136B4|4004:Kullanıcı yüklemeyi iptal etti|
+|-2016332108|0x87D136B4|4004: Kullanıcı yüklemeyi iptal etti|
 |-2016332109|0x87D136B3|4003:Profil, yükleme için kuyruğa alınmamış|
 |-2016332110|0x87D136B2|4002:Yinelenen UUID|
 |-2016332111|0x87D136B1|4001:Yükleme hatası|
@@ -316,7 +316,7 @@ Destek yardıma ihtiyacınız varsa bkz. [Microsoft Intune için destek alın](.
 |-2016344112|0x87D107D0|DCMO(1200): İşlem başarıyla gerçekleştirildi|
 |-2016345595|0x87D10205|Syncml(517): Atomik bir komuta verilen yanıt tek iletiye sığmayacak kadar büyük.|
 |-2016345596|0x87D10204|Syncml(516): Komut, Atomik öğe içindeydi ve Atomik başarısız oldu. Bu komut başarıyla geri alınmadı.|
-|-2016345598|0x87D10202|Syncml(514): İşlem, komut işlenmeden önce zaten iptal edilmiş olduğundan, SyncML komutu başarıyla tamamlanamadı.|
+|-2016345598|0x87D10202|SyncML (514): işlem, komut işlenmeden önce zaten iptal edilmiş olduğundan, SyncML komutu başarıyla tamamlanamadı.|
 |-2016345599|0x87D10201|Syncml(513): Alıcı, istek SyncML İletisinde kullanılan SyncML Eşitleme Protokolü'nün belirtilen sürümünü desteklemiyor veya desteklemeyi reddediyor.|
 |-2016345600|0x87D10200|Syncml (512): Eşitleme oturumu sırasında bir uygulama hatası oluştu.|
 |-2016345601|0x87D101FF|Syncml(511): İstek işlenirken sunucuda ciddi bir hata oluştu.|
@@ -368,7 +368,7 @@ Destek yardıma ihtiyacınız varsa bkz. [Microsoft Intune için destek alın](.
 |-2016345812|0x87D1012C|Syncml(300): İstenen hedef, istenen birden çok alternatif istenen hedeften biri.|
 |-2016345896|0x87D100D8|Syncml(216): Komut, Atomik öğenin içindeydi ve Atomik başarısız oldu. Bu komut başarıyla geri alındı.|
 |-2016345897|0x87D100D7|Syncml(215): Kullanıcı etkileşimi ve kullanıcının seçimi kabul etmemeyi seçmesi nedeniyle bir komut yürütülmedi.|
-|-2016345898|0x87D100D6|Syncml(214): İşlem iptal edildi. SyncML komutu başarıyla tamamlandı, ancak oturum içinde başka komut işlenmeyecek.|
+|-2016345898|0x87D100D6|SyncML (214): Işlem iptal edildi. SyncML komutu başarıyla tamamlandı, ancak oturum içinde başka komut işlenmeyecek.|
 |-2016345899|0x87D100D5|Syncml(213): Öbeklenmiş öğe kabul edildi ve arabelleğe alındı.|
 |-2016345900|0x87D100D4|Syncml(212): Kimlik doğrulaması kabul edildi. Eşitleme oturumunun kalanı için başka bir kimlik doğrulaması gerekmiyor. Bu yanıt kodu yalnızca kimlik bilgilerinin sağlandığı bir isteğe verilen yanıtta kullanılabilir.|
 |-2016345901|0x87D100D3|Syncml(211): Öğe silinmedi. İstenen öğe bulunamadı. Daha önce silinmiş olabilir.|

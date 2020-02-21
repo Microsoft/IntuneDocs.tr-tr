@@ -1,7 +1,7 @@
 ---
-title: iOS Classroom uygulaması için Intune ayarları
+title: İOS/ıpados sınıf uygulaması için Intune ayarları
 titleSuffix: Microsoft Intune
-description: iOS cihazlarındaki Classroom uygulamasının ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.
+description: İOS/ıpados cihazlarında derslik uygulamasının ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6814b4d98b8512ce95119b05cc299964e486ac64
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 74b9e6818de2853ae22a1fa1bb580b32075dcf19
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784230"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514430"
 ---
-# <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom uygulaması için Intune ayarlarını yapılandırma
+# <a name="how-to-configure-intune-settings-for-the-iosipados-classroom-app"></a>İOS/ıpados sınıf uygulaması için Intune ayarlarını yapılandırma
 
 > [!NOTE]
-> Intune Şu anda derslik uygulamasının yapılandırılmasını desteklememektedir. Bu makale yalnızca Intune 'da mevcut iOS Eğitim profillerine sahip olan kullanıcılar için geçerlidir.  
+> Intune Şu anda derslik uygulamasının yapılandırılmasını desteklememektedir. Bu makale yalnızca Intune 'da mevcut iOS/ıpados eğitim profillerinin bulunduğu kullanıcılar için geçerlidir.  
 
 ## <a name="introduction"></a>Giriş
 [Classroom](https://itunes.apple.com/app/id1085319084), öğretmenlerin öğrenmeye yol göstermesine ve sınıftaki öğrenci cihazlarını denetlemesine yardımcı olan bir uygulamadır. Örneğin bu uygulama sayesinde bir öğretmen:
@@ -39,7 +39,7 @@ ms.locfileid: "74784230"
 - Öğrenci iPad’lerini bir yer işaretine veya kitaptaki bir bölüme yönlendirebilir
 - Apple TV’de bir öğrenci iPad’inin ekranını görüntüleyebilir
 
-Cihazınızda Classroom’u ayarlamak için bir Intune iOS eğitim cihaz profili oluşturmanız ve yapılandırmanız gerekir.
+Cihazınızda sınıf ayarlamak için bir Intune iOS/ıpados eğitim cihaz profili oluşturmanız ve yapılandırmanız gerekecektir.
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
@@ -47,9 +47,9 @@ Bu ayarları yapılandırmaya başlamadan önce, aşağıdakilere dikkat edin:
 
 - Hem öğretmen hem de öğrenci iPad cihazlarının Intune’a kayıtlı olması gerekir.
 - Öğretmenin cihazına [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) uygulamasını yüklediğinizden emin olun. Uygulamayı el ile yükleyebilir veya [Intune uygulama yönetimi](../apps/app-management.md)'ni kullanabilirsiniz.
-- Öğretmen ve öğrenci cihazları arasındaki bağlantıların kimliğini doğrulamak için sertifikaları yapılandırmanız gerekir (bkz. 2. Adım, Intune’da biriOS Education profili oluşturma ve atama).
+- Öğretmen ve öğrenci cihazları arasındaki bağlantıların kimliğini doğrulamak için sertifikaları yapılandırmanız gerekir (bkz. 2. adım, Intune 'da iOS/ıpados eğitim profili oluşturma ve atama).
 - Öğretmen ve öğrencilerin iPad cihazları aynı Wi-Fi ağında olmalı ve cihazların Bluetooth özellikleri etkin olmalıdır.
-- Classroom uygulaması iOS 9.3 veya üzerini çalıştıran denetimli iPad cihazlarında çalışır.
+- Sınıf uygulaması, iOS/ıpados 9,3 veya üzeri çalıştıran denetimli iPads üzerinde çalışır.
 - Bu sürümde, Intune her öğrencinin kendine ait bir iPad cihazının olduğu 1:1 senaryosunu yönetmeyi destekler.
 
 
@@ -72,7 +72,7 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 - [Microsoft School Data Sync hakkında daha fazla bilgi edinin](https://sds.microsoft.com/)
 - [Azure Active Directory'de lisanslama hakkında daha fazla bilgi edinin](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>2\. Adım - Intune’da bir iOS Eğitim profili oluşturun ve atayın
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>2\. adım-Intune 'da iOS/ıpados eğitim profili oluşturma ve atama
 
 ### <a name="configure-general-settings"></a>Genel ayarları yapılandırma
 
@@ -80,7 +80,7 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 5. Profiller bölmesinde **Profil oluştur**’u seçin.
-6. **Profil oluştur** bölmesinde, iOS eğitim profili için **Ad** ve **Açıklama** girin.
+6. **Profil oluştur** bölmesinde, IOS/ıpados eğitim profili Için bir **ad** ve **Açıklama** girin.
 7. **Platform** açılan listesinden **iOS**’yi seçin.
 8. **Profil türü** açılan listesinde **Eğitim**’i seçin.
 9. **Ayarlar** > **Yapılandır**’ı seçin.
@@ -147,7 +147,7 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 ## <a name="finish-up"></a>Bitirme
 
 1. **Eğitim** bölmesinde Tamam'ı seçin.
-2. **Profil Oluştur** bölmesinde **Oluştur**’u seçin.
+2. **Profil oluştur** bölmesinde **Oluştur**’u seçin.
 
 Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 

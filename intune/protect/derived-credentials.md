@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207221"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510529"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Microsoft Intune ' de türetilmiş kimlik bilgilerini kullan
 
@@ -37,7 +37,7 @@ Türetilmiş kimlik bilgileri, özel yayın (SP) 800-157 kapsamında türetilmi�
 
 - Intune Yöneticisi, aşağıdaki nesneler için *kimlik doğrulama yöntemi* olarak **türetilmiş kimlik bilgilerini** belirtir:
 
-  - İOS yerel posta uygulamasını içeren Wi-Fi, VPN ve e-posta gibi ortak profil türleri
+  - İOS/ıpados Native Mail uygulamasını içeren Wi-Fi, VPN ve e-posta gibi ortak profil türleri
 
   - Uygulama kimlik doğrulaması
 
@@ -76,7 +76,7 @@ Farklı verenler kullanma hakkında önemli ayrıntılar için bu veren için k�
 
 Intune Şirket Portalı uygulamayı türetilmiş bir kimlik bilgisi için kaydedilecek cihazlara dağıtmayı planlayın. Cihaz kullanıcıları kimlik bilgileri kayıt işlemini başlatmak için Şirket Portalı uygulamasını kullanır.
 
-İOS cihazları için bkz. [Microsoft Intune iOS Mağazası uygulamaları ekleme](../apps/store-apps-ios.md).
+İOS/ıpados cihazları için bkz. [Microsoft Intune Için iOS/ıpados Mağazası uygulamaları ekleme](../apps/store-apps-ios.md).
 
 ## <a name="plan-for-derived-credentials"></a>Türetilmiş kimlik bilgilerini planlayın
 
@@ -198,14 +198,14 @@ Uygulamayı Intune ile dağıtmaya ek olarak, DıŞA Popurebred uygulaması içi
 **Aşağıdaki görevleri doldurun**:
   
 1. [Dışa Popurebred uygulamasını](https://cyber.mil/pki-pke/purebred/)indirin.
-2. Diğer Intune 'da bulunan DıŞA ınpurebred uygulamasını dağıtın.  [Microsoft Intune için bir iOS iş kolu uygulaması ekleme](../apps/lob-apps-ios.md)bölümüne bakın.
+2. Diğer Intune 'da bulunan DıŞA ınpurebred uygulamasını dağıtın.  [Microsoft Intune Için iOS/ıpados iş kolu uygulaması ekleme](../apps/lob-apps-ios.md)bölümüne bakın.
 3. DıŞA purebred uygulaması için [uygulama BAŞıNA VPN oluşturun](../configuration/vpn-settings-configure.md) .
 
 ## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>Kimlik doğrulaması ve S/MIME imzalama ve şifreleme için türetilmiş kimlik bilgilerini kullan
 
 Aşağıdaki profil türleri ve amaçları için **türetilmiş kimlik bilgilerini** belirtebilirsiniz:
 
-- [Uygulamaları](#use-derived-credentials-for-app-authentication)
+- [Uygulamalar](#use-derived-credentials-for-app-authentication)
 - [E-posta](../configuration/email-settings-ios.md)
 - [VPN](../configuration/vpn-settings-ios.md)
 - [S/MIME imzalama ve şifreleme](certificates-s-mime-encryption-sign.md)
@@ -224,7 +224,7 @@ Web siteleri ve uygulamalarına sertifika tabanlı kimlik doğrulaması için t�
 2. **Profil oluşturma** > **yapılandırma profilleri** > **cihazları** seçin.
 3. Aşağıdaki ayarları girin:
 
-    - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı, **iOS cihazlar profili Için türetilmiş kimlik bilgileridir**.
+    - **Ad**: profil için açıklayıcı bir ad girin. Profillerinizi daha sonra kolayca tanıyacak şekilde adlandırın. Örneğin, iyi bir profil adı, **iOS/ıpados cihazları profili Için türetilmiş kimlik bilgileridir**.
     - **Açıklama**: Ayara genel bir bakış sağlayan ve diğer önemli ayrıntıları veren bir açıklama girin.
     - **Platform**: **IOS/ıpados**' ı seçin.
     - **Profil türü**: **türetilmiş kimlik bilgilerini**seçin.

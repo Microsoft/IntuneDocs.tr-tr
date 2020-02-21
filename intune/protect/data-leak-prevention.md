@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502404"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514447"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune kullanarak yönetilmeyen cihazlarda veri sızıntılarını önleme
 
@@ -47,7 +47,7 @@ Aşağıdaki koşulları yerine getirdiğinizde aşağıdaki eylem planı kullan
 
 ## <a name="action-plan"></a>Eylem planı
 
-iOS ve Android cihazları için:
+İOS/ıpados ve Android cihazlar için:
 
 1. [Uygulama koruma ilkelerinin](../apps/app-protection-policy.md) nasıl çalıştığını öğrenin.
 2. Office mobil uygulamaları için nasıl [uygulama koruma ilkeleri oluşturulup dağıtılacağını](../apps/app-protection-policies.md) öğrenin.
@@ -63,7 +63,7 @@ Windows 10 cihazları için:
 
 Gerektiğinde, ek bilgi sağlamak için aşağıdaki bağlantıları paylaşın:
 
-* [iOS uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-ios.md)
+* [İOS/ıpados uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-ios.md)
 * [Android uygulamanız uygulama koruma ilkeleriyle yönetildiğinde beklemeniz gerekenler](../fundamentals/end-user-mam-apps-android.md)
 
 ## <a name="next-steps"></a>Sonraki adımlar

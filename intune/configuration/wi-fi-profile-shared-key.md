@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9b56ba1515608afb6c2a0d151f5412711d49e57
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: b83367bb2f1d3622a1fc4e11eedd88f3f26ee8dd
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886707"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510614"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune 'da önceden paylaşılan anahtarla bir WiFi profili oluşturmak için özel cihaz profili kullanma
 
@@ -44,7 +44,7 @@ Bu özellik şunları destekler:
 
 - Kodu, bu makalenin sonraki bölümlerinde açıklandığı gibi, o ağa bağlanan bir bilgisayardan kopyalamak daha kolay olabilir.
 - Daha fazla OMA-URI ayarı ekleyerek, birden çok ağ ve anahtar ekleyebilirsiniz.
-- iOS için, bir Mac istasyonunda profili kurmak üzere Apple Configurator’ı kullanın.
+- İOS/ıpados için, profili ayarlamak için bir Mac istasyonunda Apple Configurator 'ı kullanın.
 - PSK 64 onaltılık rakamdan oluşan bir dize veya 8 ile 63 arası yazdırılabilir ASCII karakterden oluşan bir parola gerektirir. Yıldız işareti (*) gibi bazı karakterler desteklenmez.
 
 ## <a name="create-a-custom-profile"></a>Özel profil oluşturma
@@ -229,8 +229,8 @@ Ayrıca, var olan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilir
 
 1. C:\WiFi. gibi, dışarıya aktarılmış W-Fi profilleri için yerel bir klasör oluşturun
 2. Yönetici olarak bir komut istemi açın ( **yönetici olarak çalıştır** > `cmd`sağ tıklayın).
-3. `netsh wlan show profiles`'i çalıştırın. Tüm profillerin adları listelenir.
-4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`'i çalıştırın. Bu komut, c:\Wifi. içinde `Wi-Fi-YourProfileName.xml` adlı bir dosya oluşturur
+3. `netsh wlan show profiles`bağlantısını okuyun. Tüm profillerin adları listelenir.
+4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`bağlantısını okuyun. Bu komut, c:\Wifi. içinde `Wi-Fi-YourProfileName.xml` adlı bir dosya oluşturur
 
     - Önceden paylaşılan anahtar içeren bir Wi-Fi profilini dışarı aktarıyorsanız komuta `key=clear` ekleyin:
   

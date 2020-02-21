@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune'da iOS yazılım güncelleştirme ilkelerini yapılandırma - Azure | Microsoft Docs
-description: Microsoft Intune ' de, yazılım güncelleştirmelerinin iOS cihazlarına otomatik olarak ne zaman yükleneceğini kısıtlamak için bir yapılandırma ilkesi oluşturun veya ekleyin. Güncelleştirmelerin yükleneceği tarihi ve saati seçebilirsiniz. Bu ilkeyi gruplara, kullanıcılara veya cihazlara da atayarak yükleme hatalarını denetleyebilirsiniz.
+title: Microsoft Intune-Azure 'da iOS/ıpados yazılım güncelleştirme ilkelerini yapılandırma | Microsoft Docs
+description: Microsoft Intune içinde, yazılım güncelleştirmelerinin iOS/ıpados cihazlarına otomatik olarak ne zaman yükleneceğini kısıtlamak için bir yapılandırma ilkesi oluşturun veya ekleyin. Güncelleştirmelerin yükleneceği tarihi ve saati seçebilirsiniz. Bu ilkeyi gruplara, kullanıcılara veya cihazlara da atayarak yükleme hatalarını denetleyebilirsiniz.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -13,16 +13,16 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 8f977e449bc38aee84262a401b4b238505aa5b8b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207494"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514804"
 ---
-# <a name="add-ios-software-update-policies-in-intune"></a>Intune 'A iOS yazılım güncelleştirme ilkeleri ekleme
+# <a name="add-iosipados-software-update-policies-in-intune"></a>Intune 'da iOS/ıpados yazılım güncelleştirme ilkeleri ekleme
 
-Yazılım güncelleştirme ilkeleri, denetimli iOS cihazlarını otomatik olarak en yeni işletim sistemi güncelleştirmesini yüklemeye zorlamanıza olanak sağlar. İlke yapılandırırken, cihazların güncelleştirme yüklemesi yapmalarını istemediğiniz gün ve saatleri ekleyebilirsiniz.
+Yazılım güncelleştirme ilkeleri, denetimli iOS/ıpados cihazlarını, kullanılabilir en son işletim sistemi güncelleştirmesini otomatik olarak yüklemeye zorlamanıza olanak sağlar. İlke yapılandırırken, cihazların güncelleştirme yüklemesi yapmalarını istemediğiniz gün ve saatleri ekleyebilirsiniz.
 
 Bu özellik şu platformlarda geçerlidir:
 
@@ -52,7 +52,7 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Bir güncelleştirme varsa, cihaz, k
    > [!IMPORTANT]  
    > *Başlangıç zamanı* ve *bitiş zamanı* 12 ' ye ayarlanmış bir ilke, 24 saat değil 0 saat olarak değerlendirilir. Bu durum hiçbir kısıtlama vermez.  
     
-   Denetimli iOS cihazlarınızda yazılım güncelleştirmelerinin görünürlüğünü belirli bir süre boyunca geciktirmek için bu ayarları [cihaz kısıtlamalarında](../configuration/device-restrictions-ios.md#general)yapılandırın. Yazılım güncelleştirme ilkeleri tüm cihaz kısıtlamalarını geçersiz kılar. Yazılım güncelleştirmelerinin görünürlüğünü geciktirmek için hem yazılım güncelleştirme ilkesi hem de kısıtlama ayarladığınızda, cihaz ilke başına bir yazılım güncelleştirmesi zorlar. Kısıtlama, kullanıcıların cihazın kendisini güncelleştirme seçeneğini görmemesi için geçerlidir ve güncelleştirme, iOS güncelleştirme ilkenize göre belirlenen ilk pencerede gönderilir.
+   Denetimli iOS/ıpados cihazlarınızda belirli bir süre için yazılım güncelleştirmelerinin görünürlüğünü geciktirmek için bu ayarları [cihaz kısıtlamalarında](../configuration/device-restrictions-ios.md#general)yapılandırın. Yazılım güncelleştirme ilkeleri tüm cihaz kısıtlamalarını geçersiz kılar. Yazılım güncelleştirmelerinin görünürlüğünü geciktirmek için hem yazılım güncelleştirme ilkesi hem de kısıtlama ayarladığınızda, cihaz ilke başına bir yazılım güncelleştirmesi zorlar. Kısıtlama, kullanıcıların cihazın kendisini güncelleştirme seçeneğini görmemesi için geçerlidir ve güncelleştirme, iOS güncelleştirme ilkenize göre belirlenen ilk pencerede gönderilir.
 
    *Güncelleştirme ilkesi ayarlarını*yapılandırdıktan sonra **İleri**' yi seçin. 
 
@@ -66,7 +66,7 @@ Cihaz, 8 saatte bir Intune’a iade edilir. Bir güncelleştirme varsa, cihaz, k
 
    İlkenin hedeflediği kullanıcılar tarafından kullanılan cihazlar, güncelleştirme uyumluluğu için denetlenir. Bu ilke kullanıcısı olmayan cihazları da destekler.
 
-7. **Gözden geçir + oluştur** sekmesinde ayarları gözden geçirin ve ardından iOS güncelleştirme ilkenizi kaydetmeye hazırsanız **Oluştur** ' u seçin. Yeni ilkeniz iOS için güncelleştirme ilkeleri listesinde görüntülenir.
+7. **Gözden geçir + oluştur** sekmesinde ayarları gözden geçirin ve ardından IOS/ıpados güncelleştirme ilkenizi kaydetmeye hazırsanız **Oluştur** ' u seçin. Yeni ilkeniz iOS için güncelleştirme ilkeleri listesinde görüntülenir.
 
 
 Intune destek ekibinin Kılavuzu için bkz. [denetimli cihazlar Için Intune 'da yazılım güncelleştirmeleri gecikmesi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
@@ -90,7 +90,7 @@ Varolan bir ilkeyi, sınırlı zamanları değiştirme dahil olmak üzere düzen
 
 ## <a name="monitor-device-installation-failures"></a>Cihaz yükleme hatalarını izleme
 <!-- 1352223 -->
-İOS cihazları için **yazılım güncelleştirmeleri** > **yükleme hatalarıyla ilgili** güncelleştirme Ilkesi tarafından hedeflenen Denetlenen iOS cihazlarının bir listesi görüntülenir, güncelleştirme denenir ve güncelleştirilemez. Her cihazda, cihazın otomatik olarak güncelleştirilememesinin nedenini açıklayan bir durum görebilirsiniz. İyi durumda, güncel cihazlar bu listede gösterilmez. “Güncel” cihazlar, cihazın desteklediği en yeni güncelleştirmeyi içerir.
+İOS cihazları için **yazılım güncelleştirmeleri** > **yükleme hatalarıyla ilgili** güncelleştirme Ilkesi tarafından hedeflenen Denetlenen iOS/ıpados cihazlarının bir listesini gösterir, güncelleştirme denenir ve güncelleştirilemez. Her cihazda, cihazın otomatik olarak güncelleştirilememesinin nedenini açıklayan bir durum görebilirsiniz. İyi durumda, güncel cihazlar bu listede gösterilmez. “Güncel” cihazlar, cihazın desteklediği en yeni güncelleştirmeyi içerir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

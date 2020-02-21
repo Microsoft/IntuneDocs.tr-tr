@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 03775716763125d61a8d31ef8d73bfca44f1d4d8
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966309"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514073"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
@@ -84,7 +84,7 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
 
        *Konu adı biçimi* için biçim seçenekleri şunları içerir:
 
-       - **Yapılandırılmadı**
+       - **Yapılandırılmamış**
        - **Ortak ad**
        - **E-postayı içeren ortak ad**
        - **E-posta olarak ortak ad**
@@ -280,7 +280,7 @@ SCEP sertifika profillerini, diğer amaçlar için [Cihaz profillerini dağıtt�
 - Güvenilen sertifika profilini ve SCEP sertifika profilini ayrı ayrı oluşturup atarsanız, her ikisi de atanmalıdır. Bir cihaza her ikisi de yüklü olmadan, SCEP sertifika ilkesi başarısız olur. Tüm güvenilen kök sertifika profillerinin Ayrıca SCEP profiliyle aynı gruplara dağıtıldığından emin olun.
 
 > [!NOTE]
-> İOS cihazlarında, bir SCEP sertifika profili, Wi-Fi veya VPN profili gibi ek bir profille ilişkilendirildiğinde, cihaz bu ek profillerin her biri için bir sertifika alır. Bu, iOS cihazının SCEP sertifika isteği tarafından sunulan birden çok sertifikaya sahip olmasına neden olur.  Tek bir sertifika isteniyorsa, SCEP sertifikaları yerine PKCS sertifikalarını kullanmanız gerekir.  Bunun nedeni, SCEP ve PKCS sertifikalarının cihazlara nasıl teslim edileceği farklardır.
+> İOS/ıpados cihazlarında, bir SCEP sertifika profili, Wi-Fi veya VPN profili gibi ek bir profille ilişkilendirildiğinde, cihaz bu ek profillerin her biri için bir sertifika alır. Bu, iOS/ıpados cihazının SCEP sertifika isteği tarafından sunulan birden çok sertifikaya sahip olmasına neden olur.  Tek bir sertifika isteniyorsa, SCEP sertifikaları yerine PKCS sertifikalarını kullanmanız gerekir.  Bunun nedeni, SCEP ve PKCS sertifikalarının cihazlara nasıl teslim edileceği farklardır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

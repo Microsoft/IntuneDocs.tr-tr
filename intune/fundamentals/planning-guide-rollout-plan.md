@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509954"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514923"
 ---
 # <a name="develop-a-rollout-plan"></a>Dağıtım planı geliştirme
 
@@ -58,7 +58,7 @@ Başarılı bir pilot aşamasının ardından, kuruluşunuzun geri kalan gruplar
 
 - **Coğrafya** <br/>Bu yaklaşımda, aynı kıta, ülke/bölge veya aynı şirketin Binası gibi belirli bir Coğrafya 'daki tüm kullanıcılara dağıtırsınız. Bu tür aşamalı dağıtım, kullanıcıların belirli konumuna odaklanma olanağı sağlar. Bu, Intune’un aynı anda dağıtıldığı konum sayısının azalmasıyla daha fazla [beyaz eldiven](#user-assisted-enrollment) yaklaşımına olanak tanıyabilir. Farklı departmanların veya kullanım örneklerinin aynı konumda olma olasılığından dolayı farklı kullanım örnekleri aynı anda dağıtılabilir.
 
-- **Platform** <br/>Bu dağıtım türü aynı anda benzer platformları dağıtmaya dayalıdır. Örneğin ilk ay tüm iOS cihazları, ardından Android ve daha sonra Windows dağıtılabilir. Bu tür aşamalı dağıtımda yardım masasının aynı anda yalnızca tek bir platformu desteklemesi yeterli olacağından, yardım masası desteğini basitleştirmeye yardımcı olur.
+- **Platform** <br/>Bu dağıtım türü aynı anda benzer platformları dağıtmaya dayalıdır. Örnek olarak, ilk ay, Android ve Windows tarafından izlenen tüm iOS/ıpados cihazları olabilir. Bu tür aşamalı dağıtımda yardım masasının aynı anda yalnızca tek bir platformu desteklemesi yeterli olacağından, yardım masası desteğini basitleştirmeye yardımcı olur.
 
 Hedeflenen grupları ve zaman çizelgelerini içeren bir Intune dağıtım planı örneği şu şekildedir:
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 191be009f8d9e6fc448126834ef48f0bc6e2edc4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c8e4671790b72583219f1df64a0ef3491d707ea7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505335"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515042"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune’a geçerken cihaz uyumluluk ve uygulama yönetimi ilkelerini yapılandırma
 
@@ -60,11 +60,11 @@ Kaynak erişim profilleri, sertifikalar sağlar ve kaydedilen cihazların yapıl
 
 Cihaz düzeyinde ayarları uygulamak için bir cihaz yapılandırma profili oluşturmanız gerekir, örneğin kamerayı devre dışı bırakma, uygulama mağazası, tek uygulama modu yapılandırma, giriş ekranı vb. [Cihaz profilleri](../configuration/device-profiles.md) hakkında bilgi edinin.
 
-#### <a name="directly-import-ios-configuration-profiles-optional"></a>iOS yapılandırma profillerini doğrudan içeri aktarma (isteğe bağlı)
+#### <a name="directly-import-iosipados-configuration-profiles-optional"></a>İOS/ıpados yapılandırma profillerini doğrudan içeri aktarma (isteğe bağlı)
 
 - **Apple Configurator iOS profilleri (iOS 7.1 ve üzeri):** Mevcut MDM çözümünüz Apple Configurator profilleri (.mobileconfig dosyaları) kullanıyorsa Intune, bunları özel yapılandırma ilkeleri olarak doğrudan içeri aktarabilir.
 
-- **iOS Mobil Uygulama Yapılandırma ilkeleri:** Mevcut MDM çözümünüz iOS Mobil Uygulama Yapılandırma ilkeleri kullanıyorsa özellik listeleri için Apple'ın belirttiği XML biçimini karşıladıkları sürece Intune bunları doğrudan içeri aktarabilir.
+- **IOS mobil uygulama yapılandırma ilkeleri:** Mevcut MDM çözümünüz iOS/ıpados mobil uygulama yapılandırma ilkelerini kullanıyorsa, Intune, özellik listeleri için Apple tarafından belirtilen XML biçimini karşılayan sürece doğrudan içeri aktarabilir.
 
 - [iOS](../configuration/custom-settings-ios.md) için özel bir ilke eklemeyi öğrenin.
 

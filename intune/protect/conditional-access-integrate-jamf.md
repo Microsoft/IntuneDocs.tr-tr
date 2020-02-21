@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
-ms.reviewer: elocholi
+ms.reviewer: jinyoon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 9dab1025e283ed1591c22b03ed4e3a61d40a20c3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946691"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515093"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Uyumluluk için Jamf Pro’yu Intune ile tümleştirme
 
@@ -71,7 +71,7 @@ Intune 'u JAMF Pro ile bağlamak için:
 2. Intune 'u JAMF Pro ile tümleşecek şekilde etkinleştirin.
 3. JAMF Pro 'da koşullu erişimi yapılandırın.
 
-### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory’de uygulama oluşturma
+### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory bir uygulama oluşturma
 
 1. [Azure Portal](https://portal.azure.com), **Azure Active Directory** > **uygulama kayıtları**' na gidin ve ardından **Yeni kayıt**' ı seçin.
 
@@ -90,21 +90,19 @@ Intune 'u JAMF Pro ile bağlamak için:
    > [!IMPORTANT]
    > Bu sayfadan ayrılmadan önce, istemci sırrı için değeri kopyalayın ve daha sonra kullanmak üzere kaydedin. Sonraki yordamlarda bu değere ihtiyacınız olacaktır. Bu değer, uygulama kaydını yeniden oluşturmadan tekrar kullanılamaz.
 
-6. **Yönet** altındaki **API izinleri**’ni seçin. 
+6. **Yönet**altında **API izinleri** ' ni seçin. 
 
-7. API izinleri sayfasında, yeni izin eklemek için **Izin Ekle** ' yi seçin. **API Izinleri iste** sayfasında, **Intune**' u seçin ve ardından **Uygulama izinleri**' ni seçin. Yalnızca **update_device_attributes**onay kutusunu seçin.
+7. API izinleri sayfasında, varolan her iznin yanındaki **...** simgesini seçerek bu uygulamadaki tüm izinleri kaldırın. Bunun gerekli olduğunu unutmayın; Bu uygulama kaydında beklenmeyen ek izinler varsa, tümleştirme başarılı olmaz.
 
-8. Yeni iznin etkili olabilmesi için birkaç dakika bekleyin. Ardından,  **_kiracınızı >\<_ Için yönetici onayı ver**' i seçin. Yeni pencerede hesabınızın kimliğini doğrulayın ve istemleri izleyerek uygulamaya erişim izni verin.  
+8. Ardından, cihaz özniteliklerini güncelleştirme izinleri ekleyeceğiz. **API izinleri** sayfasının sol üst kısmında, yeni izin eklemek Için **izin Ekle** ' yi seçin. 
 
-9. Yönetici izninin etkili olabilmesi için birkaç dakika beklemeniz gerekebilir.
+9. **API Izinleri iste** sayfasında, **Intune**' u seçin ve ardından **Uygulama izinleri**' ni seçin. Yalnızca **update_device_attributes** onay kutusunu seçin ve yeni izni kaydedin.
 
-10. Sayfanın üst kısmındaki **Yenile** düğmesine tıklayarak sayfayı yenileyin. **Update_device_attributes** izni için yönetici onayı verildiğini doğrulayın. 
+10. Sonra, **API izinleri** sayfasının sol üst kısmında  **_> kiracınızı\<_ için yönetici onayı ver** ' i seçerek bu uygulama için yönetici onayı verin. Yeni pencerede hesabınızın kimliğini yeniden kimlik doğrulaması yapmanız ve istemleri izleyerek uygulama erişimi vermeniz gerekebilir.  
 
-11. Yönetici onayını **Kullanıcı.** **.. menüsünü seçerek** ve **yönetici onayını Iptal et**' i seçerek Oku iznini kaldırın.
+11. Sayfanın üst kısmındaki **Yenile** düğmesine tıklayarak sayfayı yenileyin. **Update_device_attributes** izni için yönetici onayı verildiğini doğrulayın. 
 
-12. Ayrıca **Kullanıcı. oku** iznini de kaldırmanız gerekecektir. Kullanıcıya göre **...** menüsünü seçin **. oku** ve **Kaldır iznini**seçin. 
-
-8. Uygulama başarıyla kaydedildikten sonra, API izinleri yalnızca **update_device_attributes** adlı bir izin içermeli ve aşağıdaki gibi görünmelidir:
+12. Uygulama başarıyla kaydedildikten sonra, API izinleri yalnızca **update_device_attributes** adlı bir izin içermeli ve aşağıdaki gibi görünmelidir:
 
    ![Başarılı izinler](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

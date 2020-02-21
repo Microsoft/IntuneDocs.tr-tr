@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c0571eb2a369e440b3c7732b6d55ba05ace2c34
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 183a1dc7083aa9b427df225297fb7c393939220f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839351"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515059"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Uygulama koruma ilkelerini yapılandırma (isteğe bağlı)
 
@@ -38,7 +38,7 @@ Uygulama koruma ilkeleri uygulama düzeyinde güvenlik uygular ve cihaz kaydı g
 
 ## <a name="app-protection-policies-with-lob-apps"></a>İş kolu uygulamaları ile uygulama koruma ilkeleri
 
-[Microsoft Intune App SDK](../developer/app-sdk-get-started.md) veya Microsoft Intune Uygulama Sarmalama Aracını hem iOS hem de Android platformları için kullanarak mobil uygulama koruma ilkelerini iş kolu (LOB) uygulamalarınıza genişletebilirsiniz. Daha fazla bilgi için bkz. [iOS için Uygulama Sarmalama Aracı](../developer/app-wrapper-prepare-ios.md) ve [Android için Uygulama Sarmalama Aracı](./../developer/app-wrapper-prepare-android.md). Ayrıca bkz. [Uygulama koruması için LOB uygulamalarını hazırlama](../developer/apps-prepare-mobile-application-management.md).
+Ayrıca, hem iOS/ıpados hem de Android platformları için [Microsoft Intune uygulama SDK 'sını](../developer/app-sdk-get-started.md) Microsoft Intune veya uygulama sarmalama aracı 'nı kullanarak mobil uygulama koruma ilkelerini iş kolu (LOB) uygulamalarınıza genişletebilirsiniz. Daha fazla bilgi için bkz. [iOS için Uygulama Sarmalama Aracı](../developer/app-wrapper-prepare-ios.md) ve [Android için Uygulama Sarmalama Aracı](./../developer/app-wrapper-prepare-android.md). Ayrıca bkz. [Uygulama koruması için LOB uygulamalarını hazırlama](../developer/apps-prepare-mobile-application-management.md).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Uygulama koruma ilkeleri geçiş sırasında nasıl yardımcı olur?
 

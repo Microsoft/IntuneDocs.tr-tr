@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40e8dd8409f70a70934684c56ed9e9729f4ebf0f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 231b30e93a3e56811e1569c32cc1286e02320f0d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414597"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514413"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android kullanıcılarınız uygulamalarını nasıl alır
 
@@ -33,7 +33,7 @@ Bu makale, Android son kullanıcılarınızın Microsoft Intune aracılığıyla
 | Uygulama türü | İş kolu (LOB) uygulamaları | Play Store uygulamaları  |
 | ------------- |-------------| -----|
 | Kullanılabilir uygulamalar      | Kullanıcılar Şirket Portalı’nda **yükle**’ye dokunur. Bir bildirim görüntülenir ve kullanıcılar buna dokunarak yüklemeyi başlatır. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. | Kullanıcılar Şirket Portalı uygulamaya dokunur ve Play Store bir uygulama sayfasına alınmıştır. Bu, yüklemeyi başlattıkları yerdir.|
-| Gerekli uygulamalar      | Kullanıcılara, bir uygulama yüklemeleri gerektiğini belirten bir bildirim gösterilir. Kullanıcılar yüklemeyi başlatmak için bildirime dokunur. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır.    | Kullanıcılara, bir uygulama yüklemeleri gerektiğini belirten bir bildirim gösterilir. Kullanıcılar bildirime dokunur ve Play Store bir uygulama sayfasına alınır. Bu, yüklemeyi başlattıkları yerdir. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. |
+| Required apps      | Kullanıcılara, bir uygulama yüklemeleri gerektiğini belirten bir bildirim gösterilir. Kullanıcılar yüklemeyi başlatmak için bildirime dokunur. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır.    | Kullanıcılara, bir uygulama yüklemeleri gerektiğini belirten bir bildirim gösterilir. Kullanıcılar bildirime dokunur ve Play Store bir uygulama sayfasına alınır. Bu, yüklemeyi başlattıkları yerdir. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. |
 
 Son kullanıcılarınızın [LOB uygulamalarını](../apps/lob-apps-android.md)yüklemek için bilinmeyen kaynaklardan yükleme yapmasına izin vermeniz gerekir. Bu ayar normalde iki farklı yerde bulunur:
 
@@ -47,7 +47,7 @@ Bu durumda Şirket Portalı uygulaması, son kullanıcıya bilgi verip onu doğr
 | Uygulama türü | İş kolu (LOB) uygulamaları | Play Store uygulamaları  |
 | ------------- |-------------| -----|
 | Kullanılabilir uygulamalar      | Kullanıcılar Şirket Portalı’nda **yükle**’ye dokunur. Uygulama, başka kullanıcı müdahalesi olmadan yüklenir. | Kullanıcılar Şirket Portalı uygulamaya dokunur ve Play Store bir uygulama sayfasına alınır. Bu, yüklemeyi başlattıkları yerdir.|
-| Gerekli uygulamalar      | Uygulama, hiçbir kullanıcı müdahalesi olmadan yüklenir.    | Kullanıcılara, bir uygulama yüklemeleri gerektiğini belirten bir bildirim gösterilir. Kullanıcılar bildirime dokunur ve Play Store bir uygulama sayfasına alınır. Bu, yüklemeyi başlattıkları yerdir. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. |
+| Required apps      | Uygulama, hiçbir kullanıcı müdahalesi olmadan yüklenir.    | Kullanıcılara, bir uygulama yüklemeleri gerektiğini belirten bir bildirim gösterilir. Kullanıcılar bildirime dokunur ve Play Store bir uygulama sayfasına alınır. Bu, yüklemeyi başlattıkları yerdir. Yükleme başarılı olduktan sonra, bildirim görüntüden kaldırılır. |
 
 Uygulamalar, aşağıda açıklandığı gibi yönetilebilir veya yönetilmeyebilir. Uygulamaları yönetilen uygulama yapma işlemi, tüm Android cihaz türlerinde aynıdır.
 
@@ -61,10 +61,10 @@ Intune, Cihaz Yöneticisi tarafından yönetilen Zeköşeli cihazlara uygulamala
 
 Zeköşeli cihazlara dağıtılan LOB uygulamalarının, cihazdaki ortak bir konumdan yüklenmesi gerekir. . Apk uygulama paketine, cihazdaki ortak depolamaya da erişimi olan diğer uygulama ve hizmetlerle erişilebilir. Genellikle bu erişim, uygulamanın indirilmesi tamamlanırken ve yükleme başlangıcında küçük bir pencere olur. Bu pencere bir zamanlama saldırısına izin verebilir. Örneğin, bu pencere sırasında bir. APK paketi değiştirilebilir. Intune,. apk 'nin Genel depolamada harcadığı süreyi en aza indirir ve imzasız uygulamaların yüklenmesine izin vermez. Güvenlik riskini en aza indirmenize yardımcı olmak için karşıya yüklediğiniz. apk dosyalarının hassas bilgiler içermediğinden emin olun.
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 [Microsoft Intune’la uygulama ekleme](../apps/apps-add.md)
 
-[iOS kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-ios.md)
+[İOS/ıpados kullanıcılarınızın uygulamalarını nasıl alır](end-user-apps-ios.md)
 
 [Windows kullanıcılarınız uygulamalarını nasıl alır](end-user-apps-windows.md)

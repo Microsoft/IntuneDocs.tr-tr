@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70b7fbaa29434c775720ab423f38e29bc329861a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: dae8e92209a8640ab3254e073d3043d390c3791b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415163"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514260"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Windows cihaz kaydı sorunlarını giderme
 
@@ -370,6 +370,20 @@ Bu sorun genellikle Windows Autopilot cihazlarının oluşturulduğu kuruluş bi
 9. **İleri**'yi seçin.
 10. **İzinler**altında **tam denetim** onay kutusunu seçin. Bu eylem diğer tüm seçenekleri seçer.
 11. **İleri** > **son**' u seçin.
+
+### <a name="the-enrollment-status-page-times-out-before-the-sign-in-screen"></a>Kayıt durumu sayfası, oturum açma ekranından önce zaman aşımına uğrar
+
+**Neden:** Aşağıdaki koşulların tümü doğruysa bu sorun oluşabilir:
+- Iş uygulamaları Microsoft Store izlemek için kayıt durumu sayfasını kullanıyorsunuz.
+- Bir cihazın uyumlu denetim olarak işaretlenmesini gerektir ' i kullanan bir Azure AD koşullu erişim ilkeniz vardır.
+- İlke tüm bulut uygulamaları ve pencereleri için geçerlidir.
+
+#### <a name="resolution"></a>Çözüm:
+Aşağıdakilerden birini deneyin:
+- Intune uyumluluk ilkelerinizi cihazlara hedefleyin. Kullanıcı oturum açmadan önce uyumluluğun belirlenebilmesi için emin olun.
+- Mağaza uygulamaları için çevrimdışı lisanslama kullanın. Bu şekilde, Windows istemcisinin cihaz uyumluluğunu belirlemeden önce Microsoft Store denetlemesi gerekmez.
+
+
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

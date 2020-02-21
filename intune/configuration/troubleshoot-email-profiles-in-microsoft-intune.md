@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a19830130f992a002b73402f5e13a8f062539917
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059853"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512679"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 'daki e-posta profilleriyle ilgili yaygın sorunlar ve çözümler
 
@@ -33,7 +33,7 @@ Bazı genel e-posta profili sorunlarını gözden geçirin ve bunları nasıl gi
 
 - E-posta profilleri, cihazı kaydeden Kullanıcı için dağıtılır. Intune, e-posta profilini yapılandırmak için kayıt sırasında kullanıcının e-posta profilindeki Azure Active Directory (AD) özelliklerini kullanır. [Cihazlara e-posta ayarları eklemek](email-settings-configure.md) iyi bir kaynak olabilir.
 - Android Enterprise için, yönetilen Google Play Store kullanarak Gmail veya dokuz Iş için dağıtım yapın. [Yönetilen Google Play uygulamaları ekleme](../apps/apps-add-android-for-work.md) adımları listeler.
-- İOS ve Android için Microsoft Outlook, e-posta profillerini desteklemez. Bunun yerine, bir uygulama yapılandırma ilkesi dağıtın. Daha fazla bilgi için bkz. [Outlook yapılandırma ayarı](../apps/app-configuration-policies-outlook.md).
+- İOS için Microsoft Outlook/ıpados ve Android e-posta profillerini desteklemez. Bunun yerine, bir uygulama yapılandırma ilkesi dağıtın. Daha fazla bilgi için bkz. [Outlook yapılandırma ayarı](../apps/app-configuration-policies-outlook.md).
 - Cihaz gruplarına (Kullanıcı grupları değil) hedeflenmiş e-posta profilleri cihaza teslim edilemeyebilir. Cihazın birincil kullanıcısı varsa, cihaz hedefleme çalışmalıdır. E-posta profili Kullanıcı sertifikaları içeriyorsa, Kullanıcı gruplarını hedeflediğinizden emin olun.
 - Kullanıcıların e-posta profili için parolasını girmesi birkaç kez istenebilir. Bu senaryoda, e-posta profilinde başvurulan tüm sertifikaları kontrol edin. Sertifikalardan biri bir kullanıcıya hedeflenmemişse, Intune e-posta profilini dağıtmayı yeniden dener.
 
@@ -41,7 +41,7 @@ Bazı genel e-posta profili sorunlarını gözden geçirin ve bunları nasıl gi
 
 Kullanıcılar Intune veya Office 365 MDM 'ye kaydolmadan önce bir e-posta profili oluşturmazsa, Intune tarafından dağıtılan e-posta profili beklendiği gibi çalışmayabilir:
 
-- **iOS**: Intune, konak adına ve e-posta adresine bağlı olarak var olan ve yinelenen bir e-posta profili olduğunu algılar. Kullanıcı tarafından oluşturulan e-posta profili, Intune tarafından oluşturulan profilin dağıtımını engeller. İOS kullanıcıları tipik olarak bir e-posta profili oluşturduğundan bu yaygın bir sorundur ve kaydolmasına neden olur. Şirket Portalı uygulama, kullanıcının uyumlu olmadığını ve kullanıcıdan e-posta profilini kaldırmasını isteyebilir.
+- **iOS/ıpados**: Intune, ana bilgisayar adı ve e-posta adresine dayalı mevcut, yinelenen bir e-posta profili Kullanıcı tarafından oluşturulan e-posta profili, Intune tarafından oluşturulan profilin dağıtımını engeller. Bu, iOS/ıpados kullanıcılarının tipik olarak bir e-posta profili oluşturması ve ardından kaydedilmesi gibi yaygın bir sorundur. Şirket Portalı uygulama, kullanıcının uyumlu olmadığını ve kullanıcıdan e-posta profilini kaldırmasını isteyebilir.
 
   Intune profilinin dağıtılması için kullanıcının e-posta profilini kaldırması gerekir. Bu sorunu engellemek için kullanıcılarınıza kaydolmasını ve Intune 'un e-posta profilini dağıtmasına izin vermesini isteyin. Ardından, kullanıcılar e-posta profilini oluşturabilir.
 

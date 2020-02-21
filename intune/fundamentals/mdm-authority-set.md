@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c5d0731736df193bf615391ad486a60dff6cdd
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: b611b2307b7b4f7e789e7db9d070e4b6b3f1350c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885909"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514498"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Mobil cihaz yönetimi yetkilisini ayarlayın
 
@@ -69,7 +69,7 @@ Bu durumların tamamında onay kesinlikle bir mobil cihaz yönetimi hizmetinin �
 Yeni MDM yetkilisine geçtikten sonra cihazın iade edilmesi ve hizmetle eşitlenmesi için bir geçiş süresi (sekiz saate kadar) olması olasıdır. Kayıtlı cihazların değişiklikten sonra yönetilmeye ve korumaya devam edecek şekilde emin olmak için yeni MDM yetkilisinde ayarları yapılandırmanız gerekir. 
 - Yeni MDM yetkilisinden (tek başına Intune) gelen ayarların cihazdaki mevcut ayarların yerini alması için değişiklik sonrasında cihazların hizmete bağlanması gerekir.
 - MDM yetkilisini değiştirdikten sonra önceki MDM yetkilisinden bazı temel ayarlar (örneğin, profiller) en fazla yedi güne kadar veya cihaz hizmete ilk kez bağlanana kadar cihazda kalır. Yeni MDM yetkilisinde uygulama ve ayarları (ilkeler, profiller, uygulamalar vb.) mümkün olan en kısa sürede yapılandırmanız ve ayarı, kayıtlı cihazları olan kullanıcıları içeren Kullanıcı gruplarına dağıtmanız önerilir. MDM yetkilisindeki değişiklikten sonra cihaz hizmete ilk bağlandığı zaman, yeni MDM yetkilisinden yeni ayarları alacaktır, böylece yönetim ve korumada boşluk oluşması önlenecektir.
-- İlişkili kullanıcısı olmayan cihazlar (genellikle iOS Aygıt Kayıt Programı veya toplu kayıt senaryoları kullandığınızda ortaya çıkar), yeni MDM yetkilisine geçirilmez. Bu cihazları yeni MDM yetkilisine taşımak için destek ile iletişime geçip yardım almanız gerekir.
+- İlişkili kullanıcıları olmayan cihazlar (genellikle iOS/ıpados Aygıt Kayıt Programı veya toplu kayıt senaryolarında) yeni MDM yetkilisine geçirilmez. Bu cihazları yeni MDM yetkilisine taşımak için destek ile iletişime geçip yardım almanız gerekir.
 
 ## <a name="change-mdm-authority-to-office-365"></a>MDM yetkilisini Office 365 olarak değiştirme
 
@@ -93,7 +93,7 @@ MDM yetkilisi tekrar Bilinmeyen olarak değiştirilemez. MDM yetkilisi, hizmet t
 - MDM yetkilisindeki değişiklik sırasında (veya hemen sonrasında) açık ve çevrimiçi olan cihazlarda bile, cihazlar yeni MDM yetkilisi altında hizmete kaydolmadan önce sekiz saate kadar (bir sonraki zamanlanmış düzenli iadenin zamanına bağlı olarak) bir gecikme olur.    
 
   > [!IMPORTANT]    
-  > MDM yetkilisini değiştirmeniz ve yeni yetkiliye yenilenmiş APNs sertifikasının yüklenmesi arasında geçen sürede, yeni iOS cihazların kaydı ve bildirimi başarısız olacaktır. Bu nedenle MDM yetkilisindeki değişiklikten hemen sonra APNs sertifikasını gözden geçirmeniz ve yeni yetkiliye yüklemeniz önemlidir.
+  > MDM yetkilisini değiştirdiğiniz saat arasında ve yenilenen APNs sertifikası yeni yetkiliye yüklendiğinde, iOS/ıpados cihazları için yeni cihaz kayıtları ve cihaz denetimi başarısız olur. Bu nedenle MDM yetkilisindeki değişiklikten hemen sonra APNs sertifikasını gözden geçirmeniz ve yeni yetkiliye yüklemeniz önemlidir.
 
 - Kullanıcılar, el ile cihazdan hizmete iadeyi başlatarak hızlıca yeni MDM yetkilisine geçebilir. Bu değişikliği Şirket Portalı uygulamasını kullanarak ve bir cihaz uyumluluk denetimi başlatarak kolaylıkla yapabilirler.
 - Cihazların, MDM yetkilisindeki değişiklikten sonra iade ettikten ve hizmetle eşitlendikten sonra düzgün çalıştığını doğrulamak için, yeni MDM yetkilisindeki cihazları arayın.

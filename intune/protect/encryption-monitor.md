@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune şifreli cihazlar için şifreleme raporu
 titleSuffix: Microsoft Intune
-description: İOS veya Windows cihaz şifreleme durumunuz hakkında bir rapor görüntüleyin ve Microsoft Intune portalından Filekasası ve BitLocker Kurtarma anahtarlarına erişin.
+description: İOS/ıpados veya Windows cihaz şifreleme durumunuz üzerinde bir rapor görüntüleyin ve Microsoft Intune portalından dosya kasası ve BitLocker Kurtarma anahtarlarına erişin.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164665"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510512"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini izleme
 
@@ -225,7 +225,7 @@ Intune, Windows 10 cihazlarınızın BitLocker anahtar kimliklerini ve kurtarma 
    Azure AD 'de anahtarlar kullanılabilir olduğunda aşağıdaki bilgiler kullanılabilir:
    - BitLocker anahtar KIMLIĞI
    - BitLocker kurtarma anahtarı
-   - Sürücü türü
+   - Sürücü Türü
 
    Anahtarlar Azure AD 'de olmadığında, Intune *Bu cihaz Için hiçbir BitLocker anahtarı bulunamadığını*gösterir.
 

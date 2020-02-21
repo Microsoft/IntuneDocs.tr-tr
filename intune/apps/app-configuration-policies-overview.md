@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 334cadfb7e668febad95a512eb34f62a73667ec6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414851"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514005"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune için uygulama yapılandırma ilkeleri
 
@@ -91,7 +91,7 @@ Aşağıdaki üç yöntemi kullanarak uygulama yapılandırma ilkesini doğrulay
 
 ## <a name="diagnostic-logs"></a>Tanılama günlükleri
 
-### <a name="ios-configuration-on-unmanaged-devices"></a>yönetilmeyen cihazlarda iOS yapılandırması
+### <a name="iosipados-configuration-on-unmanaged-devices"></a>yönetilmeyen cihazlarda iOS/ıpados yapılandırması
 
 Yönetilen uygulama yapılandırması için, yönetilmeyen cihazlarda **Intune tanılama günlüğü** ile IOS/ıpados yapılandırmasını doğrulayabilirsiniz. Aşağıdaki adımlara ek olarak, Microsoft Edge kullanarak yönetilen uygulama günlüklerine erişebilirsiniz. Daha fazla bilgi için bkz. [yönetilen uygulama günlüklerine erişmek Için iOS 'Ta Microsoft Edge 'ı kullanma/ıpados](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
@@ -135,7 +135,7 @@ Uygulama yapılandırma ayrıntılarınız, kiracınız için yapılandırılmı
 
 ![Hedeflenen uygulama yapılandırması](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
 
-### <a name="ios-configuration-on-managed-devices"></a>Yönetilen cihazlarda iOS yapılandırması
+### <a name="iosipados-configuration-on-managed-devices"></a>Yönetilen cihazlarda iOS/ıpados yapılandırması
 
 Yönetilen uygulama yapılandırması için iOS/ıpados yapılandırmasını yönetilen cihazlarda **Intune tanılama günlüğü** ile doğrulayabilirsiniz.
 

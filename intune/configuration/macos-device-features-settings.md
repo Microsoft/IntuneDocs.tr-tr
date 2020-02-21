@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: df5b53be159fd082090e61fd736e4c9329644c85
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206355"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512747"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 'da macOS cihaz özelliği ayarları
 
@@ -29,7 +29,7 @@ Intune, macOS cihazlarınızdaki özellikleri özelleştirmek için bazı yerle�
 
 Bu özellikleri, macOS cihazlarını mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak denetlemek için kullanın.
 
-Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Ayrıca, Terminal uygulaması 'nı (öykünücü) kullanarak AirPrint yazıcılarının IP adresini, yolunu ve bağlantı noktasını almak için gereken adımları listeler. Cihaz özellikleri hakkında daha fazla bilgi için bkz. [iOS veya macOS cihaz özelliği ayarları ekleme](device-features-configure.md).
+Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Ayrıca, Terminal uygulaması 'nı (öykünücü) kullanarak AirPrint yazıcılarının IP adresini, yolunu ve bağlantı noktasını almak için gereken adımları listeler. Cihaz özellikleri hakkında daha fazla bilgi için [iOS/ıpados veya macOS cihaz özelliği ayarları ekle](device-features-configure.md)' ye gidin.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -44,8 +44,8 @@ Bu makale, bu ayarları listeler ve her ayarın ne yaptığını açıklar. Ayr�
 
 - **IP adresi**: yazıcının IPv4 veya IPv6 adresini girin. Yazıcıları tanımlamak için konak adlarını kullanıyorsanız, Terminal uygulamasındaki yazıcıya ping ekleyerek IP adresini alabilirsiniz. [IP adresini ve yolu al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
 - **Yol**: yazıcının yolunu girin. Yol, genellikle ağınızdaki yazıcılar için `ipp/print`. [IP adresini ve yolu al](#get-the-ip-address-and-path) (Bu makalede) daha fazla ayrıntı sağlar.
-- **Bağlantı noktası** (iOS 11,0 ve üzeri): AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özelliği boş bırakırsanız AirPrint varsayılan bağlantı noktasını kullanır.
-- **TLS** (iOS 11,0 ve üzeri): Aktarım katmanı GÜVENLIĞI (TLS) Ile güvenli AirPrint bağlantıları sağlamak için **Etkinleştir** ' i seçin.
+- **Bağlantı noktası** (iOS 11.0 +, ıpados 13.0 +): AirPrint hedefinin dinleme bağlantı noktasını girin. Bu özelliği boş bırakırsanız AirPrint varsayılan bağlantı noktasını kullanır.
+- **TLS** (iOS 11.0 +, ıpados 13.0 +): Aktarım katmanı GÜVENLIĞI (TLS) Ile güvenli AirPrint bağlantıları sağlamak için **Etkinleştir** ' i seçin.
 
 - **Ekle** AirPrint sunucusu. Birçok AirPrint sunucusu ekleyebilirsiniz.
 
@@ -219,7 +219,7 @@ Bu özellik şu platformlarda geçerlidir:
 
   `osascript -e 'id of app "ExampleApp"'`
 
-- **Etki alanı**: bir uygulamayla ilişkilendirilecek Web sitesi etki alanını girin. Etki alanı, `webcredentials:www.contoso.com`gibi bir hizmet türü ve tam konak adı içerir.
+- **Etki alanı**: bir uygulamayla ilişkilendirilecek Web sitesi etki alanını girin. Etki alanı, `webcredentials: www.contoso.com`gibi bir hizmet türü ve tam konak adı içerir.
 
   Etki alanının başlangıcından önce `*.` (bir yıldız joker karakteri ve bir nokta) girerek ilişkili bir etki alanının tüm alt etki alanlarını eşleştirebilirsiniz. Süre gereklidir. Tam etki alanları joker etki alanlarından daha yüksek önceliğe sahiptir. Bu nedenle, tam alt etki *alanında bir eşleşme* bulunmazsa üst etki alanlarından desenler eşleştirilir.
 
@@ -238,4 +238,4 @@ Bu özellik şu platformlarda geçerlidir:
 
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
-[İOS](ios-device-features-settings.md)üzerinde cihaz özelliklerini de yapılandırabilirsiniz.
+[İOS/ıpados](ios-device-features-settings.md)üzerinde cihaz özelliklerini de yapılandırabilirsiniz.

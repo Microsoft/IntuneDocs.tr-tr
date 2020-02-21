@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437894"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513920"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune 'da uygulama koruma ilkesi koşullu başlatma eylemlerini kullanarak verileri seçmeli olarak silme
 
@@ -122,5 +122,5 @@ Bir ayar tamamen yapılandırıldıktan sonra ayara ait satır, salt okunur gör
 
 Intune uygulama koruma ilkeleri hakkında daha fazla bilgi edinmek için şu makalelere bakın:
 - [Uygulama koruma ilkeleri oluşturma ve atama](app-protection-policies.md)
-- [iOS uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md)
+- [iOS/ıpados uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md)
 - [Microsoft Intune’da Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md) 

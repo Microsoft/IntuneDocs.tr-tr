@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure'da özel cihaz ayarlarını kullanma | Microsoft Docs
-description: Microsoft Intune kullanarak Windows Phone, Windows 8.1, Windows 10 ve üzeri, Android, Android Enterprise, macOS ve iOS cihazları için özel ayarları kullanmak üzere bir profil ekleyin veya oluşturun
+description: Microsoft Intune kullanarak Windows Phone, Windows 8.1, Windows 10 ve üzeri, Android, Android Enterprise, macOS ve iOS/ıpados cihazları için özel ayarları kullanmak üzere bir profil ekleyin veya oluşturun
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,22 +15,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c815a2c911dba6d17fc864b446122931fa88e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d2ca5a120e50819208743564279a5d16c6b4aa2f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73755389"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511523"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune'da özel ayarlarla profil oluşturma
 
 ## <a name="what-are-custom-profiles"></a>Özel profil nedir?
 
-Microsoft Intune, bir cihazdaki farklı özellikleri denetlemek için pek çok yerleşik ayar içerir. Ayrıca özel profiller de oluşturabilirsiniz. Özel profiller, Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini kullanabilmenizi sağlar. Bu profiller, kuruluşunuzdaki cihazlarda denetleyebileceğiniz bazı özellik ve ayarlar içerir. Örneğin tüm iOS cihazlar için aynı özelliği ayarlayan bir özel profil oluşturabilirsiniz.
+Microsoft Intune, bir cihazdaki farklı özellikleri denetlemek için pek çok yerleşik ayar içerir. Ayrıca özel profiller de oluşturabilirsiniz. Özel profiller, Intune’da yerleşik olarak bulunmayan cihaz ayarları ve özelliklerini kullanabilmenizi sağlar. Bu profiller, kuruluşunuzdaki cihazlarda denetleyebileceğiniz bazı özellik ve ayarlar içerir. Örneğin, her iOS/ıpados cihazı için aynı özelliği ayarlayan özel bir profil oluşturabilirsiniz.
 
 Yapılandırma profilleri hakkında daha fazla bilgi için bkz. [Microsoft Intune cihaz profili nedir?](device-profiles.md). 
 
-Bu makale; Android, Android Kurumsal, iOS, macOS ve Windows için özel profiller oluşturmaya yönelik bağlantılar içerir.
+Bu makalede, Android, Android Enterprise, iOS/ıpados, macOS ve Windows için özel profiller oluşturma bağlantıları yer alır.
 
 ## <a name="available-platforms"></a>Kullanılabilir platformlar
 
@@ -38,7 +38,7 @@ Bu makale; Android, Android Kurumsal, iOS, macOS ve Windows için özel profille
 
 Özel profiller, yerleşik profillere benzer şekilde oluşturulur ve aşağıdaki platformlarda kullanılabilir:
 
-- [Outlook Web Access (OWA)](../custom-settings-android.md)
+- [Android](../custom-settings-android.md)
 - [Android Kurumsal](../custom-settings-android-for-work.md)
 - [iOS/ıpados](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
@@ -50,7 +50,7 @@ Bu makale; Android, Android Kurumsal, iOS, macOS ve Windows için özel profille
 
 Platformunuzu seçin ve kullanmaya başlayın:
 
-- [Outlook Web Access (OWA)](../custom-settings-android.md)
+- [Android](../custom-settings-android.md)
 - [Android Kurumsal](../custom-settings-android-for-work.md)
 - [iOS/ıpados](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)

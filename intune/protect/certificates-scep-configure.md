@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966394"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514107"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Altyapıyı Intune ile SCEP destekleyecek şekilde yapılandırma
 
@@ -148,7 +148,7 @@ Aşağıdaki bölümlerde Windows Server 2012 R2 veya üzeri bilgileri ve Active
        > [!IMPORTANT]
        > Yalnızca gerekli olan uygulama ilkelerini ekleyin. Seçimlerinizi güvenlik yöneticilerinizle onaylayın.
 
-     - İOS ve macOS sertifika şablonları için Ayrıca **anahtar kullanımını** düzenleyin ve **imzanın kaynak kanıtı olmadığından** emin olun.
+     - İOS/ıpados ve macOS sertifika şablonları için Ayrıca **anahtar kullanımını** düzenleyin ve **imzanın kaynak kanıtı olmadığından** emin olun.
 
      ![Şablon, uzantılar sekmesi](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Sertifika şablonunun geçerlilik süresini değiştirmek isteğe bağlıdır.
 Varsayılan olarak, Intune şablonda yapılandırılan değeri kullanır. Ancak, CA 'yı istekte bulunan kişinin farklı bir değer girmesine izin verecek şekilde yapılandırabilir ve bu değer Intune konsolu içinden ayarlanabilir.
 
 > [!IMPORTANT]
-> İOS ve macOS için her zaman şablonda bir değer kümesi kullanın.
+> İOS/ıpados ve macOS için, her zaman şablonda bir değer kümesi kullanın.
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Intune konsolu içinden ayarlanabilir bir değer yapılandırmak için
 

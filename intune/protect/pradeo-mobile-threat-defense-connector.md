@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 563b117583f8b8c1f4da08d5d4e3399d5939bf97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504376"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514889"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Intune ile Pradeo Mobile Threat Defense bağlayıcısı
 
@@ -30,7 +30,7 @@ Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen koşullu eriş
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune ve Pradeo şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
-Android ve iOS için Pradeo uygulaması; dosya sistemi, ağ yığını, cihaz ve varsa uygulama telemetrisini yakalar ve telemetri verilerini mobil tehditlere karşı cihaz riskini değerlendirmek için Pradeo bulut hizmetine gönderir.
+Android ve iOS/ıpados için pradeo uygulaması dosya sistemi, ağ yığını, cihaz ve kullanılabilir olduğunda uygulama telemetrisini yakalar ve ardından telemetri verilerini, cihazın mobil tehditlere karşı riskini değerlendirmek için Pradeo bulut hizmetine gönderir.
 
 Intune cihaz uyumluluğu ilkesi, Pradeo risk değerlendirmesini temel alan Pradeo Mobile Threat Defense’e yönelik bir kural içerir. Bu kural etkinleştirildiğinde Intune, cihazın etkinleştirdiğiniz ilke ile uyumluluğunu değerlendirir. Cihaz uyumsuz bulunursa kullanıcıların Exchange Online ve SharePoint Online gibi kurumsal kaynaklara erişimi engellenir. Kullanıcılar ayrıca, sorunu çözmek ve kurumsal kaynaklara yeniden erişim kazanmak için cihazlarında yüklü olan Pradeo uygulamasından yönergeler alır.
 

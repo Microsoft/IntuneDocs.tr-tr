@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: aaed7ec6ba1daa28949b2c1f0997b76135b7e88f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755400"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513614"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune ile Yönetilen Google Play uygulamalarını Android Kurumsal cihazlarına ekleme
 
@@ -81,20 +81,6 @@ Intune ile yönetilen Google Play Mağazası uygulamalarını taramak ve onaylam
 10. Uygulamayı yönetilen Google Play hizmetiyle eşitlemek için dikey pencerenin en üstündeki **Eşitle** ' ye tıklayın.
 11. Uygulama listesini güncelleştirmek ve yeni eklenen uygulamayı göstermek için **Yenile** ' ye tıklayın.
 
-### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>Yönetilen bir Google Play Mağazası uygulamasına ek uygulama ayarları ekleme
-1. Ek uygulama ayrıntıları eklemeniz gerekiyorsa uygulama listesinden uygulamayı seçin.
-2. **Özellikler** ' e tıklayın > **uygulama bilgileri**' nin yanında **düzenleyin** . **Uygulama bilgileri** sayfası görüntülenir.
-3. **Uygulama bilgileri** sayfasında, uygulama ayrıntılarını ekleyin:
-    - **Kategori**: İsteğe bağlı olarak, yerleşik uygulama kategorilerinden veya kendi oluşturduğunuz kategorilerden birini ya da birkaçını seçin. Böylelikle, Şirket Portalı’na göz atarken kullanıcıların uygulamayı bulmaları kolaylaşır.
-    - **Bunu şirket portalı öne çıkan uygulama olarak göster**: kullanıcılar uygulamalara gözatarken, uygulama paketini Şirket portalının ana sayfasında göze çarpacak şekilde görüntülemek için bu seçeneği belirleyin.
-    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, şirket portalında kullanıcılara görüntülenir.
-    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
-    - **Sahip**: İsteğe bağlı olarak, bu uygulamanın sahibi için bir ad girin, örneğin *İK departmanı*.
-    - **Notlar**: İsteğe bağlı olarak bu uygulamayla ilişkilendirmek istediğiniz notları girin.
-4. Gözden **geçir + Kaydet ' e** tıklayarak **İnceleme + kaydet** sayfasını görüntüleyin. 
-5. İşiniz bittiğinde, uygulamayı Intune 'da güncelleştirmek için **Kaydet** ' e tıklayın.
-
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Yönetilen Google Play konsoluna yönetilen bir Google Play Mağazası uygulaması ekleme (alternatif)
 Yönetilen Google Play uygulamasını doğrudan Intune kullanarak eklemek yerine Intune'la eşitlemeyi tercih ediyorsanız aşağıdaki adımları kullanın.
 
@@ -136,7 +122,7 @@ Yönetilen Google Play LOB uygulamaları eklemenin iki yolu vardır:
 5. Google Play penceresinde **özel uygulamalar** ( *kilit* simgesinin yanında) seçeneğini belirleyin. 
 6. Yeni bir uygulama eklemek için sağ alt köşedeki **"+"** düğmesine tıklayın.
 7. Bir uygulama **başlığı** ekleyin ve APK uygulama paketini Ekle **' ye tıklayın** .
-8. **Oluştur**'u tıklatın.
+8. **Oluştur**'a tıklayın.
 9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın.
 10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. 
 
@@ -180,7 +166,7 @@ Web bağlantıları, Microsoft Edge veya dağıtmayı seçtiğiniz başka bir ta
 5. Google Play penceresinde **Web Apps** ( *Dünya* simgesinin yanında) seçeneğini belirleyin.
 6. Yeni bir uygulama eklemek için sağ alt köşedeki **"+"** düğmesine tıklayın.
 7. Uygulama **başlığı**, Web uygulaması **URL 'si**ekleyin, uygulamanın nasıl görüntüleneceğini seçin ve bir uygulama simgesi seçin.
-8. **Oluştur**'u tıklatın.
+8. **Oluştur**'a tıklayın.
 9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın.
 10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. 
 

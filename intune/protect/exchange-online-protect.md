@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ffcc4a7e48064e6a458126667cf6ab2c4e75777
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac670fd5e17462688fdfcde1b047e1071a49353a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502264"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515212"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Cihaz yönetimi gerektirmeden Office 365 Exchange Online’ı koruma
 
-Bir cihaz yönetim sistemi ayarlama zahmetine katlanmaksızın çalışanların e-posta adreslerine erişimini sağlamak istiyorsanız, bu mümkündür. Intune aracılığıyla Office 365 Exchange Online’a erişim verebilirsiniz. Gerekli adımları tamamlamak için Microsoft 365 veya Azure Active Directory (premium) ve Intune lisanslarınızın olduğunu onaylayın. Çalışanların [desteklenen bir iOS veya Android cihazı](../fundamentals/supported-devices-browsers.md) olmalıdır. 
+Bir cihaz yönetim sistemi ayarlama zahmetine katlanmaksızın çalışanların e-posta adreslerine erişimini sağlamak istiyorsanız, bu mümkündür. Intune aracılığıyla Office 365 Exchange Online’a erişim verebilirsiniz. Gerekli adımları tamamlamak için Microsoft 365 veya Azure Active Directory (premium) ve Intune lisanslarınızın olduğunu onaylayın. Çalışanların [desteklenen bir iOS/ıpados veya Android cihazı](../fundamentals/supported-devices-browsers.md)olması gerekir. 
 
 Bir cihaz yönetim sistemi ayarlamak istiyorsanız, bu da mümkündür. Bu tür bir uygulama koruması, cihaz yönetiminden bağımsız olarak çalışır. 
 
@@ -41,7 +41,7 @@ Bir cihaz yönetim sistemi ayarlamak istiyorsanız, bu da mümkündür. Bu tür 
 
 ## <a name="what-to-tell-employees-and-students"></a>Çalışanlara ve öğrencilere söylenecekler
 
-* Çalışanlarınızdan ve öğrencilerinizden, iOS için Apple App Store veya Android için Google Play Store’dan Microsoft Outlook veya Microsoft SharePoint’i yüklemelerini isteyin. 
+* Çalışanlarınızın ve öğrencilerinizin, Apple App Store 'dan veya Android için Microsoft Outlook veya Microsoft SharePoint for iOS/ıpados ' i indirip Google Play Store. 
 * Modern kimlik doğrulaması kullanmayan uygulamalara erişimi engellerseniz, çalışanlarınızı ve öğrencilerinizi bu kısıtlamadan haberdar edin. 
 
 ## <a name="next-steps"></a>Sonraki adımlar

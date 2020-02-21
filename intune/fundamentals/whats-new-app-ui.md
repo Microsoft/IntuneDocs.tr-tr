@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: b4999a813384c68bb394c7e73dee1c5c452459b9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125056"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515297"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune son kullanıcı uygulamaları arabirimlerinde yapılan güncelleştirmeler
 
@@ -59,7 +59,7 @@ MacOS kayıt deneyiminin Şirket Portalı, iOS kayıt deneyimi için Şirket Por
 ## <a name="week-of-october-28-2019"></a>28 Ekim 2019 haftası  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Android için Şirket Portalı App 'te geliştirilmiş denetim listesi tasarımı <!-- 5550857 -->  
-Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif bir tasarım ve yeni simgelerle güncelleştirilmiştir. Değişiklikler, iOS için Şirket Portalı uygulamasına yapılan son güncelleştirmelerle birlikte hizalanır. Güncelleştirilmiş kayıt adımlarına bakmak için bkz. [Android iş profiline kaydolma](/intune-user-help/enroll-device-android-work-profile) ve [Android cihazınızı kaydetme](/intune-user-help/enroll-device-android-company-portal).  
+Android için Şirket Portalı uygulamasındaki kurulum denetim listesi, hafif bir tasarım ve yeni simgelerle güncelleştirilmiştir. Değişiklikler iOS/ıpados Şirket Portalı uygulamasına yapılan son güncelleştirmelerle birlikte hizalanır. Güncelleştirilmiş kayıt adımlarına bakmak için bkz. [Android iş profiline kaydolma](/intune-user-help/enroll-device-android-work-profile) ve [Android cihazınızı kaydetme](/intune-user-help/enroll-device-android-company-portal).  
 
 Aşağıdaki ekranlar, Android iş profili kaydı için güncelleştirilmiş denetim listesini gösterir:
 
@@ -216,7 +216,7 @@ Windows 10 için Intune Şirket Portalı, [Fluent Design System'in gezinti gör�
 ## <a name="week-of-april-2-2018"></a>2 Nisan 2018 Haftası
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS için Şirket Portalı uygulamasında kullanıcı deneyimi güncelleştirmesi <!-- 1412866 -->
-iOS için Şirket Portalı uygulamasına büyük bir kullanıcı deneyimi güncelleştirmesi yayımladık. Güncelleştirme, modern bir görünüm ve his sağlayan yepyeni bir görsel tasarım sunmaktadır. Uygulamanın işlevselliğini korurken kullanılabilirliğini ve erişilebilirliğini artırdık.  
+İOS/ıpados için Şirket Portalı uygulamasına büyük bir kullanıcı deneyimi güncelleştirmesi yayımladık. Güncelleştirme, modern bir görünüm ve his sağlayan yepyeni bir görsel tasarım sunmaktadır. Uygulamanın işlevselliğini korurken kullanılabilirliğini ve erişilebilirliğini artırdık.  
 
 Şunları da göreceksiniz:
 - iPhone X desteği.
@@ -267,7 +267,7 @@ Android için Şirket Portalı uygulamasını, Android'in [Materyal Tasarım](ht
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Sürüm 2.9.0'da iOS için Şirket Portalı'nda cihaz kurulum iş akışındaki iyileştirmeler <!-- 1417174 -->
 
-IOS için Şirket Portalı uygulamasında cihaz kurulum iş akışını geliştirdik. Dil artık daha kullanıcı dostu ve mümkün olan yerlerde ekranları birleştirdik. Ayrıca kurulum metninde şirket adınızı kullanarak dilinizi firmanıza özel hale getirdik.
+İOS/ıpados için Şirket Portalı App 'teki cihaz kurulumu iş akışını geliştirdik. Dil artık daha kullanıcı dostu ve mümkün olan yerlerde ekranları birleştirdik. Ayrıca kurulum metninde şirket adınızı kullanarak dilinizi firmanıza özel hale getirdik.
 
 > [!NOTE]
 > Azure portalında **Microsoft Intune** > **İstemci Uygulamaları** > **Şirket Portalı markası** > **Şirket adı** altında ayarladığınız şirket adını kullanıyoruz. Bu değeri ayarlamadıysanız, **Azure Active Directory** > **Özellikler** > **Ad**'da ayarlanan kiracı adını kullanacağız. Şirket Portalı markasında bir şirket adı ayarlamazsanız ve kiracı adınızın görüntülenmesini istemiyorsanız, şirket adını Şirket Portalı marka sekmesinden ayarlamanızı öneririz. Bu dizenin Şirket Portalı üst bilgide görünmesini istemiyorsanız, "logo 'nin yanında şirket adını göster" onay kutusunun işaretini kaldırabilirsiniz.
@@ -303,7 +303,7 @@ Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıy
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Şirket Portalı Web sitesinde iyileştirmeler arama <!-- 1331697 -->
 [Şirket Portalı web sitesinden](https://portal.manage.microsoft.com) başlayarak uygulama arama becerilerimizi iyileştiriyoruz. Artık aramalar, Ad ve Açıklama alanlarına ek olarak uygulama kategorilerinde de gerçekleştirilecek. Varsayılan olarak sonuçlar, azalan ilgi düzeyine göre sıralanacak. 
 
-Şirket Portalı web sitesi, iOS için Şirket Portalı uygulamasının da bir parçası olarak kullanıldığı için bu değişikliği iOS kullanıcıları da alacaktır. Android ve Windows için Şirket Portalı uygulamaları, gelecek aylar içerisinde benzer güncelleştirmeler alacaktır.
+Şirket Portalı Web sitesi Ayrıca iOS/ıpados Şirket Portalı uygulamasının bir parçası olarak da kullanıldığından, iOS kullanıcıları bu değişikliği de alacaktır. Android ve Windows için Şirket Portalı uygulamaları, gelecek aylar içerisinde benzer güncelleştirmeler alacaktır.
 
 Hala ilgi düzeyinin izlenme şekliyle ilgili ayrıntılar üzerinde çalışıyoruz, bu nedenle lütfen Şirket Portalı web sitesinin en altında bulunan “Geri Bildirim” bağlantısını kullanarak bizi konuyla ilgili bilgilendirin.
 

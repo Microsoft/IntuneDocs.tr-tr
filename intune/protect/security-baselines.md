@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: f468518130b1a3a98fd31fb235679ece574c3029
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548136"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514294"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
 
@@ -38,7 +38,7 @@ Ayrı taban çizgisi türleri aynı ayarları içerebilir, ancak bu ayarlar içi
 > [!NOTE]
 > Microsoft, bir üretim ortamında güvenlik temellerinin önizleme sürümlerinin kullanılmasını önermez. Önizleme temelindeki ayarlar Önizleme kursu üzerinde değişebilir.
 
-Güvenlik temelleri, Microsoft 365 çalışırken uçtan uca güvenli bir iş akışına sahip olmanıza yardımcı olabilir. Bazı avantajları şunlardır:
+Güvenlik temelleri, Microsoft 365 çalışırken uçtan uca güvenli bir iş akışına sahip olmanıza yardımcı olabilir. Bazı avantajlardan bazıları şunlardır:
 
 - Güvenlik temeli, güvenliği etkileyen ayarlarla ilgili en iyi uygulamaları ve önerileri içerir. Intune, Grup İlkesi güvenlik temelleri oluşturan aynı Windows güvenlik ekibine sahip iş ortakları. Bu öneriler, kılavuzluk ve kapsamlı deneyimi temel alır.
 - Intune 'a yeni başladıysanız ve nereden başlayabileceğiniz konusunda emin değilseniz, güvenlik temelleri size bir avantaj sunar. Kuruluşunuzun kaynaklarını ve verilerini korumaya yardımcı olduğunuzu bilerek, güvenli bir profil oluşturup dağıtabilirsiniz.
@@ -95,7 +95,7 @@ Güvenlik temellerinde çalışırken ortak görevler şunları içerir:
 - [Taban çizgisi atamasını kaldırma](#remove-a-security-baseline-assignment) -ayarları güvenlik temeliyle yönetmeyi durdurduğunuzda ne olacağını öğrenin.
 
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Önkoşullar
 
 - Intune 'da temelleri yönetmek için hesabınızın [ilke ve Profil Yöneticisi](../fundamentals/role-based-access-control.md#built-in-roles) yerleşik rolüne sahip olması gerekir.
 
@@ -182,7 +182,7 @@ Kaydetme sırasında, dönüştürme işlemi tamamlandıktan sonra, taban çizgi
    - **Temel değişiklikleri kabul et ancak var olan ayar özelleştirmelerini tut** -Bu seçenek, taban çizgisi profilinde yaptığınız özelleştirmeleri korur ve bunları kullanmak üzere seçtiğiniz yeni sürüme uygular.
    - **Temel değişiklikleri kabul et ve var olan ayar özelleştirmelerini at** -Bu seçenek özgün profilinizi tamamen geçersiz kılar. Güncelleştirilmiş profil tüm ayarlar için varsayılan değerleri kullanır.
 
-7. Seçin **gönderme**. Profil, seçili temel sürüme ve dönüştürme tamamlandıktan sonra güncelleştirilir ve taban çizgisi atanan gruplara hemen yeniden dağıtılır.
+7. **Gönder**' i seçin. Profil, seçili temel sürüme ve dönüştürme tamamlandıktan sonra güncelleştirilir ve taban çizgisi atanan gruplara hemen yeniden dağıtılır.
 
 ### <a name="remove-a-security-baseline-assignment"></a>Güvenlik temeli atamasını kaldırma
 
@@ -214,7 +214,7 @@ Kesinlikle konuşuyor, hayır. Microsoft Güvenlik ekibi, bu kuruluşların öne
 
 - Microsoft, birçok yıla sahip olduğu için Grup ilkeleri (GPO 'Lar) ve [Güvenlik uyumluluk araç seti](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10)için güvenlik temellerini yayımlamaya devam etmektedir. Bu taban çizgileri birçok kuruluş tarafından kullanılır. Bu temellerin önerileri, Microsoft Güvenlik ekibinin, Savunma Bakanlığı (DoD), ulusal standartlar ve Teknoloji Enstitüsü (NıST) ve daha fazlası dahil olmak üzere kurumsal müşteriler ve dış kurumlarla olan katılımından oluşur. Önerilerimizi ve temellerimizi bu kuruluşlarla paylaşıyoruz. Bu kuruluşların, Microsoft 'un önerilerini yakından yansıtan kendi önerileri de vardır. Mobil cihaz yönetimi (MDM) buluta büyümeye devam ettiğinden, Microsoft bu Grup İlkesi temellerinin eşdeğer MDM önerilerini oluşturmuştur. Bu ek taban çizgileri Microsoft Intune için yerleşiktir ve taban çizgisini izleyen (veya takip etmeyin) kullanıcılara, gruplara ve cihazlara uyumluluk raporları dahil edilir.
 
-- Birçok müşteri, Intune temel önerilerini başlangıç noktası olarak kullanıyor ve ardından BT ve güvenlik taleplerini karşılayacak şekilde özelleştiriliyor. Microsoft 'un Windows 10 RS5 **MDM güvenlik temeli** , yayınlanacak ilk temeldir. Bu taban çizgisi, müşterilerin, en sonunda CIS, NıST ve diğer standartlara dayalı diğer güvenlik temellerini içeri aktarmasını sağlayan bir genel altyapı olarak oluşturulmuştur. Şu anda Windows için kullanılabilir ve sonunda iOS ve Android de bulunur.
+- Birçok müşteri, Intune temel önerilerini başlangıç noktası olarak kullanıyor ve ardından BT ve güvenlik taleplerini karşılayacak şekilde özelleştiriliyor. Microsoft 'un Windows 10 RS5 **MDM güvenlik temeli** , yayınlanacak ilk temeldir. Bu taban çizgisi, müşterilerin, en sonunda CIS, NıST ve diğer standartlara dayalı diğer güvenlik temellerini içeri aktarmasını sağlayan bir genel altyapı olarak oluşturulmuştur. Şu anda Windows için kullanılabilir ve sonunda iOS/ıpados ve Android de bulunur.
 
 - Şirket içi Active Directory Grup ilkelerinden Microsoft Intune ile Azure Active Directory (AD) kullanan saf bir bulut çözümüne geçiş bir yolculuğa sahip olur. Yardım için, karma AD ve Azure AD 'ye katılmış cihazları yönetmeye yardımcı olabilecek [Güvenlik uyumluluğu araç seti](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) 'ne dahil edilen grup ilkesi şablonları vardır. Bu cihazlar, bulut (Intune) ve Grup İlkesi ayarlarından, gerektiğinde şirket içi etki alanı denetleyicilerinden MDM ayarları alabilir.
 

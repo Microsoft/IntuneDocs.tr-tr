@@ -1,7 +1,7 @@
 ---
-title: iOS Classroom uygulaması için Intune paylaşılan cihaz ayarları
+title: İOS/ıpados sınıf uygulaması için Intune paylaşılan cihaz ayarları
 titleSuffix: Microsoft Intune
-description: iOS cihazlarındaki Classroom uygulamasının ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.
+description: İOS/ıpados cihazlarında derslik uygulamasının ayarlarını denetlemek için kullanabileceğiniz Intune ayarlarını öğrenin.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 412dc9a12f5a13b5fbd738f3ac1b5b1033a2635b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784264"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514719"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Paylaşılan iPad cihazları için Intune eğitim ayarlarını yapılandırma
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> Intune Şu anda derslik uygulamasının yapılandırılmasını desteklememektedir. Bu makale yalnızca Intune 'da mevcut iOS Eğitim profillerine sahip olan kullanıcılar için geçerlidir.
+> Intune Şu anda derslik uygulamasının yapılandırılmasını desteklememektedir. Bu makale yalnızca Intune 'da mevcut iOS/ıpados eğitim profillerinin bulunduğu kullanıcılar için geçerlidir.
 
-Intune, öğretmenlerin sınıfta öğrenimi yönlendirmesine ve öğrenci cihazlarını denetlemesine yardımcı olan iOS Classroom uygulamasını destekler. Classroom uygulamasına ek olarak Apple, öğrenci iPad cihazlarının, birden çok öğrenci tek bir cihazı paylaşacak şekilde yapılandırılmasını destekler. Bu belge, Intune ile bu hedefe ulaşmada size yol gösterir.
+Intune, öğretmenlerin ders ' i öğrenmesini ve derslerdeki öğrenci cihazlarını denetlemesine yardımcı olan iOS/ıpados sınıf uygulamasını destekler. Classroom uygulamasına ek olarak Apple, öğrenci iPad cihazlarının, birden çok öğrenci tek bir cihazı paylaşacak şekilde yapılandırılmasını destekler. Bu belge, Intune ile bu hedefe ulaşmada size yol gösterir.
 
-Ayrılmış (1:1) iPad cihazlarını Classroom uygulamasında kullanmak üzere yapılandırma hakkında daha fazla bilgi için bkz. [Intune ayarlarını iOS Classroom uygulaması için yapılandırma](education-settings-configure-ios.md).
+Sınıf uygulamasını kullanmak üzere adanmış (1:1) iPad cihazlarını yapılandırma hakkında daha fazla bilgi için bkz. [iOS/ıpados Derslik uygulaması Için Intune ayarlarını yapılandırma](education-settings-configure-ios.md).
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
@@ -64,7 +64,7 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 - [Azure Active Directory'de lisanslama hakkında daha fazla bilgi edinin](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>2\. Adım - Intune’da bir iOS Eğitim profili oluşturun ve atayın
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>2\. adım-Intune 'da iOS/ıpados eğitim profili oluşturma ve atama
 
 ### <a name="configure-general-settings"></a>Genel ayarları yapılandırma
 
@@ -72,7 +72,7 @@ Aşağıdaki yöntemlerden birini kullanarak SDS’ye bilgi aktarabilirsiniz:
 3. **Intune** bölmesinde, **Cihaz yapılandırması**’nı seçin.
 2. **Yönet** bölümü altındaki **Cihaz yapılandırması** bölmesinden **Profiller**’i seçin.
 5. Profiller bölmesinde **Profil oluştur**’u seçin.
-6. **Profil oluştur** bölmesinde, iOS eğitim profili için **Ad** ve **Açıklama** girin.
+6. **Profil oluştur** bölmesinde, IOS/ıpados eğitim profili Için bir **ad** ve **Açıklama** girin.
 7. **Platform** açılan listesinden **iOS**’yi seçin.
 8. **Profil türü** açılan listesinde **Eğitim**’i seçin.
 9. **Ayarlar** > **Yapılandır**’ı seçin.
@@ -132,7 +132,7 @@ Sertifikaları yapılandırmayı bitirdiğinizde **Tamam**’ı seçin.
 ### <a name="complete-certificate-setup"></a>Sertifika Kurulumunu Tamamlama
 
 1. **Eğitim** bölmesinde **Tamam**'ı seçin.
-2. **Profil Oluştur** bölmesinde **Oluştur**’u seçin.
+2. **Profil oluştur** bölmesinde **Oluştur**’u seçin.
 
 Profil oluşturulur ve profil listesi bölmesinde görüntülenir.
 

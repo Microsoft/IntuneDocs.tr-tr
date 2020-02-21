@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune-Azure 'da yerleşik uygulamalar için iOS paket kimlikleri | Microsoft Docs
+title: Microsoft Intune-Azure 'da yerleşik uygulamalar için iOS/ıpados paket kimlikleri | Microsoft Docs
 titleSuffix: ''
-description: Yerleşik iOS uygulamaları için paket kimliklerinin listesini görüntüleyin. Microsoft Intune ' deki cihaz yapılandırma profilleri ve ilkelerindeki uygulamalara açıkça izin vermek için bu paket kimliklerini kullanın.
+description: Yerleşik iOS ve ıpados uygulamalarına ait paket kimliklerinin listesini görüntüleyin. Microsoft Intune ' deki cihaz yapılandırma profilleri ve ilkelerindeki uygulamalara açıkça izin vermek için bu paket kimliklerini kullanın.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 10c6ea8e3afd7bb1f5a583c0088c72fc155cb0f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691858"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513308"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune 'da kullanabileceğiniz yerleşik iOS uygulamaları için paket kimlikleri
+# <a name="bundle-ids-for-built-in-ios-and-ipados-apps-you-can-use-in-intune"></a>Intune 'da kullanabileceğiniz yerleşik iOS ve ıpados uygulamalarının paket kimlikleri
 
-İOS cihazlarında özellikleri yapılandırdığınızda, iOS cihazlarına yerleşik uygulamaları da ekleyebilirsiniz. Bu makalede, bazı yaygın yerleşik iOS uygulamalarının paket kimlikleri listelenir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun. Apple 'ın [iOS paket kimlikleri](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) listesine bakın (Apple 'ın Web sitesini açar).
+İOS/ıpados cihazlarında özellikleri yapılandırdığınızda, iOS/ıpados cihazlarına yerleşik uygulamaları da ekleyebilirsiniz. Bu makalede, bazı yaygın yerleşik iOS/ıpados uygulamalarının paket kimlikleri listelenir. Diğer uygulamaların paket kimliğini bulmak için yazılım satıcınıza başvurun. Apple 'ın [iOS/ıpados paket kimlikleri](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) listesine bakın (Apple 'ın Web sitesini açar).
 
 ## <a name="bundle-ids"></a>Paket kimlikleri
 
-| Paket Kimliği                   | Uygulama Adı     | Publisher |
+| Paket Kimliği                   | Uygulama Adı     | Yayımcı |
 |-----------------------------|--------------|-----------|
 | com.apple.AppStore          | Uygulama Mağazası    | Apple     |
 | com.apple.calculator        | Hesap Makinesi   | Apple     |
@@ -46,7 +46,7 @@ ms.locfileid: "75691858"
 | com.apple.gamecenter        | Oyun Merkezi  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | Sistem Durumu       | Apple     |
-| com.apple.Home              | Ana Sayfası         | Apple     |
+| com.apple.Home              | Giriş         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
 | com.apple.iMovie            | iMovie       | Apple     |
 | com.apple.itunesconnect.mobile | iTunes Connect | Apple |
@@ -69,7 +69,7 @@ ms.locfileid: "75691858"
 | com.apple.reminders         | Anımsatıcılar    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Ayarlar     | Apple     |
-| com. Apple. kýsayollar         | Kısayollar    | Apple     |
+| com. Apple. kýsayollar         | Kýsayol    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Borsa       | Apple     |
 | com.apple.tips              | İpuçları         | Apple     |
@@ -78,8 +78,8 @@ ms.locfileid: "75691858"
 | com.apple.VoiceMemos        | Sesli Notlar   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
-| com.apple.weather           | Hava Durumu      | Apple     |      
+| com.apple.weather           | Hava Durumu      | Apple     |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu paket kimliklerini, [cihaz özelliklerini](ios-device-features-settings.md) yapılandırmak ve iOS cihazlarında [bazı ayarlara izin vermek veya kısıtlamak](device-restrictions-ios.md) için kullanın.
+Bu paket kimliklerini [cihaz özelliklerini](ios-device-features-settings.md) yapılandırmak ve IOS/ıpados cihazlarında [bazı ayarlara izin vermek veya kısıtlamak](device-restrictions-ios.md) için kullanın.

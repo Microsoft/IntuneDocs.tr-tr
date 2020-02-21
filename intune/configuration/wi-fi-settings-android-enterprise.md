@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04d35f49f9e07cb72a1fea92210b05e0a95ec256
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: aef1747fdbb3118db82f6e99c2838632c8a9d369
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390801"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512458"
 ---
 # <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Microsoft Intune 'de Android kurumsal adanmış ve tam olarak yönetilen cihazlar için Wi-Fi ayarları ekleme
 
@@ -157,4 +157,4 @@ Android kurumsal adanmış veya tam olarak yönetilen bir cihaza dağıtım yap�
 
 Profil oluşturuldu ancak hiçbir şey yapmıyor. Sonra, [Bu profili atayın](device-profile-assign.md) ve [durumunu izleyin.](device-profile-monitor.md)
 
-[Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md), [macos](wi-fi-settings-macos.md), [Windows 10](wi-fi-settings-windows.md)ve [Windows 8.1](wi-fi-settings-import-windows-8-1.md) cihazları için Wi-Fi profilleri de oluşturabilirsiniz.
+[Android](wi-fi-settings-android.md), [IOS/ıpados](wi-fi-settings-ios.md), [macos](wi-fi-settings-macos.md), [Windows 10](wi-fi-settings-windows.md)ve [Windows 8.1](wi-fi-settings-import-windows-8-1.md) cihazları için Wi-Fi profilleri de oluşturabilirsiniz.

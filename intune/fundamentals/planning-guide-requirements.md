@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505131"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514940"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Kullanım örneği senaryosu gereksinimlerini belirleme
 
@@ -35,13 +35,13 @@ Ayrıca, kurumsal kullanım örneği senaryosu için farklı gereksinimler küme
 
 Her bir kullanım örneği ve alt kullanım örneği senaryosu, kuruluş grubu ve mobil cihaz platformu için farklı gereksinimler kümesini gösteren kuruluş kullanım örneği gereksinimlerine ilişkin birkaç örneği aşağıda bulabilirsiniz. Kuruluşunuzun kullanım örneği gereksinimlerini girmek için aşağıdaki tabloyu da kullanabilirsiniz:
 
-| **Kullanım örnekleri** | **Alt kullanım örnekleri** | **GRUPLAR** | **Cihaz platformları** | **Requirements** |
+| **Kullanım örnekleri** | **Alt kullanım örnekleri** | **Gruplar** | **Cihaz platformları** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|
-| Kurumsal | Bilgi çalışanı | İK, Finans | iOS | Güvenli e-posta, cihaz ayarları, profiller, uygulamalar |                                                          
-| Kurumsal | Yöneticiler | İK, Finans | iOS | Güvenli e-posta, cihaz ayarları, profiller, uygulamalar |                                                         
+| Kurumsal | Bilgi çalışanı | İK, Finans | iOS/ıpados | Güvenli e-posta, cihaz ayarları, profiller, uygulamalar |                                                          
+| Kurumsal | Yöneticiler | İK, Finans | iOS/ıpados | Güvenli e-posta, cihaz ayarları, profiller, uygulamalar |                                                         
 | Kurumsal | Bilgi noktası | Perakende | Android | Cihaz ayarları, profiller, uygulamalar |
-| BYOD | Bilgi çalışanı | Pazarlama, Satış | iOS | Güvenli e-posta, cihaz ayarları, profiller, uygulamalar |                                                         
-| BYOD | Yöneticiler | Pazarlama, Satış | iOS | Güvenli e-posta, cihaz ayarları, profiller, uygulamalar |
+| KCG | Bilgi çalışanı | Pazarlama, Satış | iOS/ıpados | Güvenli e-posta, cihaz ayarları, profiller, uygulamalar |                                                         
+| KCG | Yöneticiler | Pazarlama, Satış | iOS/ıpados | Güvenli e-posta, cihaz ayarları, profiller, uygulamalar |
 
 Kuruluşunuzun kullanım örneği ve alt kullanım örneği gereksinimlerini girmek için [yukarıdaki tablonun bir şablonunu indirebilirsiniz](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 

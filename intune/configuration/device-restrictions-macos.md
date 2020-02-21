@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 3d26c4c6cd05a411555f7824ad21b72431eb569c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206559"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511181"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune'u kullanarak özelliklere izin vermeyi veya bunları kısıtlamayı sağlayan macOS cihaz ayarları
 
@@ -80,7 +80,7 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra m
 
 - **Öğrenciler ders sınıfına otomatik olarak katılabilir**: **izin ver** , öğrenciye sormadan bir sınıfa katılmasına olanak sağlar. **Yapılandırılmadı** (varsayılan), bir sınıfa katılması için öğretmen onayını gerektirir.
 
-## <a name="password"></a>Parola
+## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Ayarlar için geçerlidir: cihaz kaydı ve otomatik cihaz kaydı
 
@@ -90,12 +90,12 @@ Bu ayarlar, Intune'da bir cihaz yapılandırma profiline eklenir ve daha sonra m
     Bu özellik şu platformlarda geçerlidir:  
     - macOS 10.10.3 ve üzeri
 
-  - **Paroladaki alfasayısal olmayan karakter sayısı**: parolada gereken karmaşık karakter sayısını belirtin (**0** ile **4**arasında).<br>Karmaşık bir karakter, “**?**” gibi bir simgedir.
+  - **Paroladaki alfasayısal olmayan karakter sayısı**: parolada gereken karmaşık karakter sayısını belirtin (**0** ile **4**arasında).<br>Karmaşık bir karakter, “ **?** ” gibi bir simgedir.
   - **Minimum parola uzunluğu**: bir kullanıcının yapılandırması gereken parola uzunluğu alt sınırını girin ( **4** ile **16** karakter arasında).
   - **Basit parolalar**: **0000** veya **1234**gibi basit parolaların kullanılmasına izin verin.
   - **Parola istenmeden önce ekran kilitlenmesinden sonra geçen en fazla dakika**: kilidini açmak için bir parola istenmeden önce bilgisayarın ne kadar süreyle devre dışı olması gerektiğini belirtin.
   - **Ekran kilitlenmeden önce geçen işlem yapılmayan dakika sayısı**: ekran kilitlenmeden önce bilgisayarın boşta olması gereken sürenin uzunluğunu belirtin.
-  - **Parola kullanım süresi (gün)**: kullanıcının parolayı değiştirmesi gereken gün sayısını belirtin (**1** ile **255** gün arasında).
+  - **Parola kullanım süresi (gün)** : kullanıcının parolayı değiştirmesi gereken gün sayısını belirtin (**1** ile **255** gün arasında).
   - **Önceki parolaların yeniden kullanılmasını engelle**: daha önce kullanılan parolaların sayısını **1** ile **24**arasında girin.
 
 - **Kullanıcının geçiş kodunu değiştirmesini engelle**: geçiş kodunun değiştirilmesini, eklenmesini veya kaldırılmasını durdurmak için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan) ayarı, geçiş kodu ekleme, değiştirme veya kaldırma işlemlerine izin verir.
@@ -163,7 +163,7 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
 - **ICloud yer Işareti yedeklemesini engelle**: **blok** , ICloud 'ın cihaz yer imlerini eşitlemesini önler. **Yapılandırılmadı** (varsayılan) ayarı, iCloud ile Yer İşareti eşitlemesine izin verir.
 - **ICloud notları yedeklemesini engelle**: **blok** , iCloud 'ın cihaz notlarını eşitlemesini önler. **Yapılandırılmadı** (varsayılan) ayarı, iCloud ile not eşitlemesine izin verir.
 - **ICloud Fotoğraf kitaplığını engelle**: **blok** iCloud Fotoğraf kitaplığını devre dışı bırakır ve iCloud 'ın cihaz fotoğraflarını eşitlemesini önler. İCloud fotoğraf kitaplığından tamamen indirilmeyen tüm fotoğraflar cihazdaki yerel depolama alanından kaldırılır. **Yapılandırılmadı** (varsayılan), cihaz Ile ICloud Fotoğraf Kitaplığı arasında fotoğrafların eşitlenmesine izin verir.
-- **İletim**: **Yapılandırılmadı** (varsayılan), kullanıcıların bir MacOS cihazında iş başlatmasını sağlar ve sonra başka bir iOS veya MacOS cihazında başlattıkları çalışmaya devam eder. **Blok** , cihazdaki iletim özelliğini engeller. 
+- **İletim**: **Yapılandırılmadı** (varsayılan), kullanıcıların bir MacOS cihazında iş başlatmasını sağlar ve sonra başka bir iOS/ıpados veya MacOS cihazında başlattıkları çalışmaya devam eder. **Blok** , cihazdaki iletim özelliğini engeller. 
 
   Bu özellik şu platformlarda geçerlidir:  
   - macOS 10,15 ve üzeri
@@ -178,4 +178,4 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
 
 [Profili atama](../device-profile-assign.md) ve [durumunu izleme](../device-profile-monitor.md).
 
-[iOS](../device-restrictions-ios.md) cihazlardaki özellikleri ve ayarları da kısıtlayabilirsiniz.
+Ayrıca, [iOS/ıpados](../device-restrictions-ios.md) cihazlarında cihaz özelliklerini ve ayarlarını kısıtlayabilirsiniz.

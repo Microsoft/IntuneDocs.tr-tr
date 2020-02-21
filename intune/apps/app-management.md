@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414694"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513954"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -85,27 +85,27 @@ Uygulamalarla ilgili birçok bilgiyi **uygulamalar** iş yükünde bulabilirsini
 
 Sonraki dört bölüm, **uygulamalar** bölmesinde bulunan seçenekleri anlatmaktadır.
 
-### <a name="manage"></a>Yönet
+### <a name="manage"></a>Manage
 - **Uygulamalar**: İş gücünüz tarafından kullanılan uygulamaları eklemek, görüntülemek, atamak ve izlemek için bu seçeneği belirleyin. Daha fazla bilgi için bkz.:
   - [Uygulama ekleme](apps-add.md).
   - [Uygulama atama](apps-deploy.md).
   - [Uygulama izleme](apps-monitor.md).
 - **Uygulama yapılandırma ilkeleri**: Kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamak için bu ayarı kullanın. Daha fazla bilgi için bkz.:
   - [Intune için uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md).
-    - [iOS uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md).
+    - [iOS/ıpados uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md).
     - [Android uygulama yapılandırma ilkeleri](app-configuration-policies-use-android.md).
 - **Uygulama koruma ilkeleri**: Ayarları uygulamayla ilişkilendirmek ve kullandığı şirket verilerini korumaya yardımcı olmak için bu seçeneği seçin. Örneğin, bir uygulamanın diğer uygulamalarla iletişim kurma özelliklerini kısıtlayabilir veya kullanıcının şirket uygulamasına erişmek için PIN girmesini isteyebilirsiniz. Daha fazla bilgi için bkz.:
   - [Uygulama koruma ilkeleri](app-protection-policies.md).
 - **Uygulama seçmeli silme**: Seçili bir kullanıcının cihazından yalnızca şirket verilerini kaldırmak için bu seçeneği kullanın. Daha fazla bilgi için bkz.:
   - [Uygulama seçmeli silme](apps-selective-wipe.md).
 - **iOS uygulama sağlama profilleri**: IOS/ıpados uygulamaları, bir sağlama profili ve bir sertifika tarafından imzalanmış kod içerir. Sertifikanın süresi dolduğunda, uygulama artık çalıştırılamaz. Intune size süresi dolmak üzere olan uygulamaların bulunduğu cihazlara yeni sağlama profili ilkesini önceden atamak için araçlar verir. Daha fazla bilgi için bkz.:
-  - [iOS uygulama sağlama profilleri](app-provisioning-profile-ios.md).
+  - [iOS/ıpados uygulama sağlama profilleri](app-provisioning-profile-ios.md).
 
 Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama yönetme](app-management.md).
 
 ### <a name="monitor"></a>İzle
 - **Uygulama lisansları**: Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, atayın ve izleyin. Daha fazla bilgi için bkz.:
-  - [iOS Volume-Purchased Program (VPP) uygulamaları](vpp-apps-ios.md).
+  - [iOS/ıpados toplu satın alma programı (VPP) uygulamaları](vpp-apps-ios.md).
   - [İş İçin Microsoft Store’dan toplu satın alınan uygulamalar](windows-store-for-business.md).
 - **Bulunan Uygulamalar**: Intune tarafından atanan veya bir cihaza yüklenen uygulamaları görüntüleyin. Daha fazla bilgi için bkz. [Intune bulunan uygulamalar](app-discovered-apps.md).
 - **Uygulama Yükleme Durumu** - Oluşturduğunuz uygulama atamasının durumunu gösterir. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md#device-and-user-status-graphs).
@@ -116,7 +116,7 @@ Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama izleme](apps-monitor.
 
 ### <a name="set-up"></a>Ayarlama
 - **IOS VPP belirteçleri**: IOS/ıpados toplu satın alma programı (VPP) lisanslarınızı uygulayın ve görüntüleyin. Daha fazla bilgi için bkz.:
-  - [Toplu satın alınan iOS uygulamaları](vpp-apps-ios.md)
+  - [iOS/ıpados toplu satın alınan uygulamalar](vpp-apps-ios.md)
 - **Windows Enterprise sertifikası**: Yönetilen Windows cihazlarınıza iş kolu uygulamalarını dağıtmak için kullanılan kod imzalama sertifikasını uygulayın veya durumunu görüntüleyin.
 - **Windows Symantec sertifikası**: Windows 10 Mobile cihazlarına XAP ve WP8.x appx dosyalarını dağıtmak için gereken kod imzalama sertifikasını uygulayın veya durumunu görüntüleyin.
 - **İş İçin Microsoft Mağazası**: İş İçin Microsoft Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz. Daha fazla bilgi için bkz.:

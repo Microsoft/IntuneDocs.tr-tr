@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: d90e3757ced90bea21e4033b6baa93bfa201b1f2
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207477"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514226"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Wandera Mobile Threat Protection 'ı Intune ile tümleştirme  
 
@@ -91,7 +91,7 @@ Aşağıdaki bölümler ve yordamlar, bu süreç boyunca size yol gösterecektir
 Bu işlem hakkında Wandera ile ilgili daha fazla bilgi için, Wandera [radar](https://radar.wandera.com/login)' de oturum açın. **Ayarlar** > **EMM tümleştirmesi**' ne gidin, **uygulama gönderme** sekmesini seçin ve **Microsoft Intune**' ı seçin. Uygulama gönderme sekmesi, Intune 'a özgü yönergelerden güncellenir.  
 
 ### <a name="add-the-wandera-apps"></a>Wandera uygulamalarını ekleme  
-Android ve iOS cihazlarına Wandera uygulamasını dağıtmak için Intune 'da istemci uygulamaları oluşturun. Yordamlar ve Wandera uygulamalarına özgü özel ayrıntılar için bkz. [MTD uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md) .  
+Android ve iOS/ıpados cihazlarına Wandera uygulamasını dağıtmak için Intune 'da istemci uygulamaları oluşturun. Yordamlar ve Wandera uygulamalarına özgü özel ayrıntılar için bkz. [MTD uygulamaları ekleme](mtd-apps-ios-app-configuration-policy-add-assign.md) .  
 
 Uygulamaları oluşturduktan sonra eşitleme grubunu oluşturmak ve uygulamaları atamak için buraya dönün.
 
@@ -105,14 +105,14 @@ Uygulamaları oluşturduktan sonra eşitleme grubunu oluşturmak ve uygulamalar�
 
    ![Eşitleme grubunu yapılandırma](./media/wandera-mtd-connector-integration/configure-sync-group.png)
 
-3. Tüm **Üyeler** ' i seçin ve Wandera ile kullanmak istediğiniz Android ve iOS cihazlarını içeren grupları atayın.
+3. Tüm **Üyeler** ' i seçin ve Wandera ile kullanmak istediğiniz Android ve IOS/ıpados cihazlarını içeren grupları atayın.
 
 4. Grubu kaydetmek için **Oluştur** ' u seçin.
 
 Daha fazla bilgi için bkz. [uygulamaları dağıtma](../apps/apps-deploy.md)
 
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>Wandera uygulamalarını eşitleme grubuna atama  
-İOS ve Android için oluşturduğunuz Wandera uygulaması için aşağıdaki yordamı tekrarlayın.
+İOS/ıpados ve Android için oluşturduğunuz Wandera uygulaması için aşağıdaki yordamı tekrarlayın.
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** > **uygulamalar** ' ı seçin ve wandera uygulamasını seçin.

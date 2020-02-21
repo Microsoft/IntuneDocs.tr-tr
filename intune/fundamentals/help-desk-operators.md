@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510262"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514600"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Şirketinizdeki kullanıcılara yardımcı olmak için sorun giderme portalını kullanma
 
@@ -61,12 +61,12 @@ Kullanıcı bilgilerini gözden geçirmek için **Sorun Giderme** bölmesini kul
 
 ![Aşağıdaki tabloda açıklanan numaralandırılmış alanlarla sorun giderme panosu](./media/help-desk-operators/troubleshooting-dash.png)
 
-| Alan | Ad | Description |
+| Alan | Ad | Açıklama |
 | ---  | ---  | ---         |
 | 1.   | Hesap durumu  | Geçerli Intune kiracısının durumunu **Etkin** veya **Etkin Değil** olarak gösterir.       |
 | 2.   | Kullanıcı seçimi  | Seçili kullanıcının adı. Yeni bir kullanıcı seçmek için **Kullanıcı değiştir**’e tıklayın.       |
 | 3.   | Kullanıcı durumu  | Kullanıcının Intune lisansı, cihaz sayısı, cihazların uyumluluk durumu, uygulama sayısı ve uygulamaların uyumluluk durumunu görüntüler.       |
-| 4.   | Kullanıcı bilgileri  | Bölmede gözden geçirmek istediğiniz ayrıntıları seçmek için listeyi kullanın. <br>Şunları seçebilirsiniz: <ul><li>İstemci uygulamaları<li>Uyumluluk ilkeleri<li> Yapılandırma ilkeleri<li>Uygulama koruma ilkeleri <li>Kayıt kısıtlamaları</ul>      |
+| 4.   | Kullanıcı bilgileri  | Bölmede gözden geçirmek istediğiniz ayrıntıları seçmek için listeyi kullanın. <br>Şunları seçebilirsiniz: <ul><li>İstemci uygulamaları<li>Compliance ilkeleri<li> Yapılandırma ilkeleri<li>Uygulama koruma ilkeleri <li>Kayıt kısıtlamaları</ul>      |
 | 5.   | Grup üyeliği  | Seçili kullanıcının üyesi olduğu geçerli grupları gösterir.       |
 
 <!-- this section needs to be updated
@@ -248,18 +248,18 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 Kayıt Hataları tablosu, başarısız olan kayıt denemelerini listeler. Aşağıdaki tabloda listelenen bir cihaz, daha sonra başka bir denemede başarılı olarak kaydolmuş olabilir. Bazı başarısız denemeler listelenmemiş olabilir. Hataların tümünde geçiş bilgileri bulunmaz.
 
-| Tablo sütunu | Description |
+| Tablo sütunu | Açıklama |
 |-------------|----------|
 | Kayıt başlangıç | Kullanıcının kaydı ilk kez başlattığı saat. |
 | İşletim sistemi | Cihazın işletim sistemi. |
 | İşletim sistemi sürümü | Cihazın işletim sistemi sürümü. |
-| Başarısız | Hatanın nedeni. |
+| Hata | Hatanın nedeni. |
 
 ### <a name="failure-details"></a>Hata ayrıntıları
 
 Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 
-| `Section` | Description |
+| Bölüm | Açıklama |
 |-------------|----------|
 | Hata ayrıntıları | Hatanın daha ayrıntılı bir açıklaması. |
 | Toplam düzeltme sayısı | Hatayı gidermek için önerilen adımlar. Bazı hataların düzeltmeleri olmayabilir. |
@@ -269,7 +269,7 @@ Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 
 | Hata | Details |
 |-------------|----------|
-| iOS Zaman Aşımı veya Hatası | Cihaz ve Intune arasında, kullanıcının kayıt için çok fazla süre harcaması nedeniyle oluşan zaman aşımı. |
+| iOS/ıpados zaman aşımı veya hata | Cihaz ve Intune arasında, kullanıcının kayıt için çok fazla süre harcaması nedeniyle oluşan zaman aşımı. |
 | Kullanıcı bulunamadı veya lisanslı değil | Kullanıcının bir lisansı eksik veya kullanıcı hizmetten kaldırılmış. |
 | Cihaz zaten kayıtlı | Birisi, başka bir kullanıcı için kayıtlı olan bir cihazı Şirket Portalı'nı kullanarak kaydetmeye çalıştı. |
 | Intune'a eklenmedi | Intune mobil cihaz yönetimi (MDM) yetkilisi henüz yapılandırılmamışken bir kayıt girişiminde bulunuldu. |
@@ -286,14 +286,14 @@ Bir hata satırını seçtiğinizde daha fazla ayrıntı sağlanır.
 | Beklenmeyen Autopilot kayıt yöntemi | Cihaz, izin verilmeyen bir yöntemi kullanarak kaydolmaya çalıştı. |
 | Autopilot cihazı kaldırıldı | Kaydedilmeye çalışan cihaz, bu hesap için Autopilot sisteminden kaldırıldı. |
 | Cihaz sınırına ulaşıldı | Bu kayıt, yönetici tarafından yapılandırılmış bir cihaz sınırı nedeniyle engellendi. |
-| Apple ekleme işlemi | Intune bir Apple MDM anında iletme sertifikası eksik olduğu veya sertifikanın süresi dolduğu için tüm iOS cihazlarının kaydı dönemde engellendi. |
+| Apple ekleme işlemi | Intune 'da eksik veya süresi dolan bir Apple MDM anında iletme sertifikası nedeniyle tüm iOS/ıpados cihazlarının kaydı Şu anda engelleniyor. |
 | Cihaz önceden kayıtlı değil | Kurumsal önceden şirkete ait olarak kaydedilmediğinden tüm kişisel kayıtlar bir yönetici tarafından engellendi. |
 | Özellik desteklenmiyor | Kullanıcı büyük olasılıkla Intune yapılandırmanız ile uyumlu olmayan bir yöntem aracılığıyla kaydolmaya çalışıyordu. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Mobil cihazdan kullanılabilir verileri toplama
 
 Kullanıcının cihaz sorunlarını giderirken cihaz verilerini toplamaya yardımcı olması için aşağıdaki kaynakları kullanın:
-- [iOS kayıt hatalarını BT yöneticinize gönderme](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [BT yöneticinize iOS/ıpados kayıt hataları gönderme](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [Ayrıntılı günlük kaydı ile şirketinizin destek birimine cihaz sorunlarını çözmede yardımcı olma](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [USB kablosu kullanarak Android günlüklerini şirketinizin destek birimine gönderme](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [Android tanılama veri günlüklerini e-posta kullanarak BT yöneticinize gönderme](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

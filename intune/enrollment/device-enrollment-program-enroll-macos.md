@@ -1,7 +1,7 @@
 ---
-title: macOS cihazları kaydetme - Aygıt Kayıt Programı veya Apple School Manager
+title: MacOS cihazlarını kaydetme-Apple Business Manager veya Apple Okul Yöneticisi
 titleSuffix: ''
-description: Şirkete ait macOS cihazlarını Aygıt Kayıt Programı’nı kullanarak kaydetmeyi öğrenin.
+description: Şirkete ait macOS cihazlarını nasıl kaydedeceğinizi öğrenin.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414503"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514345"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Aygıt Kayıt Programı veya Apple School Manager ile macOS cihazları otomatik olarak kaydedin
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>MacOS cihazlarını Apple Business Manager veya Apple Okul Yöneticisi ile otomatik olarak kaydetme
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple [Aygıt Kayıt Programı (DEP)](https://deploy.apple.com) veya [Apple School Manager](https://school.apple.com/) ile yoluyla satın alınan macOS cihazlar için Intune kaydını ayarlayabilirsiniz. Bu kayıtlardan birini kullanarak cihazlara hiç dokunmadan çok sayıda cihazı ayarlayabilirsiniz. macOS cihazlarını doğrudan kullanıcılara gönderebilirsiniz. Kullanıcı cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz Intune yönetimine kaydedilir.
+Apple [Apple Business Manager](https://business.apple.com/) veya [Apple Okul Yöneticisi](https://school.apple.com/)aracılığıyla satın alınan MacOS cihazları için Intune kaydını ayarlayabilirsiniz. Bu kayıtlardan birini kullanarak cihazlara hiç dokunmadan çok sayıda cihazı ayarlayabilirsiniz. macOS cihazlarını doğrudan kullanıcılara gönderebilirsiniz. Kullanıcı cihazı açtığında, önceden yapılandırılmış ayarları ile Kurulum Yardımcısı çalıştırılır ve cihaz Intune yönetimine kaydedilir.
 
-Kaydı ayarlamak için Intune ve Apple DEP portallarını birlikte kullanmanız gerekir. Kayıt sırasında cihazlara uygulanan ayarları içeren kayıt profilleri oluşturun.
+Kaydı ayarlamak için hem Intune hem de Apple portallarını kullanırsınız. Kayıt sırasında cihazlara uygulanan ayarları içeren kayıt profilleri oluşturun.
 
-DEP kaydı ve Apple School Manager, [cihaz kayıt yöneticisi](device-enrollment-manager-enroll.md) ile birlikte çalışmaz.
+Apple Business Manager kaydı veya Apple Okul Yöneticisi, [cihaz kayıt yöneticisiyle](device-enrollment-manager-enroll.md)birlikte çalışır.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -90,7 +90,7 @@ Belirteci oluşturmak için Apple portalını kullanabilirsiniz. Cihazları yön
 
 8. **Eylem Seç** işlemi için **Sunucuya Ata**’yı ve Microsoft Intune için belirtilen &lt;ServerName&gt; öğesini belirleyip **Tamam**'ı seçin. Apple portalı, belirtilen cihazları Intune sunucusunda yönetilmek üzere bu sunucuya atar ve **Atama Tamamlandı** ifadesini görüntüler.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Adım 3: Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>3\. Adım Bu belirteci oluşturmak için kullanılan Apple kimliğini kaydedin
 
 [Microsoft Uç Nokta Yöneticisi Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431), daha sonra başvurmak üzere Apple kimliğini sağlayın.
 

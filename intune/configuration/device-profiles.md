@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206627"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513087"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune'daki cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama
 
 
 
-Microsoft Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve özellikler "yapılandırma profillerine" eklenir. iOS, Android ve Windows dahil olmak üzere farklı cihazlar ve platformlar için profil oluşturabilirsiniz. Ardından Intune'u kullanarak bu profilleri cihazlara "atayabilirsiniz".
+Microsoft Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarları ve özellikleri içerir. Bu ayarlar ve özellikler "yapılandırma profillerine" eklenir. Farklı cihazlar ve iOS/ıpados, Android ve Windows dahil farklı platformlar için profiller oluşturabilirsiniz. Ardından Intune'u kullanarak bu profilleri cihazlara "atayabilirsiniz".
 
 Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak bu yapılandırma profillerini kullanarak farklı görevler gerçekleştirebilirsiniz. Bazı profil örnekleri şunlardır:
 
 - Windows 10 cihazlarda Internet Explorer'daki ActiveX denetimlerini engelleyen bir profil şablonu kullanabilirsiniz.
-- iOS ve macOS cihazlarda kullanıcıların kuruluşunuzdaki AirPrint özellikli yazıcıları kullanmasını sağlayabilirsiniz.
+- İOS/ıpados ve macOS cihazlarında, kullanıcıların kuruluşunuzda AirPrint yazıcıları kullanmasına izin verin.
 - Cihazların Bluetooth özelliğine erişim verebilir veya engelleyebilirsiniz.
 - Kurumsal ağınıza farklı cihaz erişimi veren bir WiFi veya VPN profili oluşturabilirsiniz.
 - Yazılım güncelleştirmelerini ve yükleme zamanlarını yönetebilirsiniz.
@@ -67,7 +67,7 @@ Bu özellik şunları destekler:
 
 ## <a name="custom-profile"></a>Özel profil
 
-[Özel ayarlar](custom-settings-configure.md), yöneticilerin Intune'da yerleşik olarak sağlanmayan cihaz ayarlarını atamasına olanak tanır. Android cihazlarda, OMA-URI değerleri girebilirsiniz. iOS cihazları için, Apple Configurator’da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz.
+[Özel ayarlar](custom-settings-configure.md), yöneticilerin Intune'da yerleşik olarak sağlanmayan cihaz ayarlarını atamasına olanak tanır. Android cihazlarda, OMA-URI değerleri girebilirsiniz. İOS/ıpados cihazlarında, Apple Configurator 'da oluşturduğunuz bir yapılandırma dosyasını içeri aktarabilirsiniz.
 
 Bu özellik şunları destekler:
 
@@ -89,7 +89,7 @@ Bu özellik şunları destekler:
 
 ## <a name="device-features"></a>Cihaz özellikleri
 
-[Cihaz özellikleri](device-features-configure.md), iOS ve macOS cihazlarda AirPrint, bildirimler ve kilit ekranı iletileri gibi özellikleri denetler.
+[Cihaz özellikleri](device-features-configure.md) , IOS/ıpados ve MacOS cihazlarındaki AirPrint, Notifications ve Lock Screen iletileri gibi özellikleri denetler.
 
 Bu özellik şunları destekler:
 
@@ -106,7 +106,7 @@ Bu özellik şunları destekler:
 
 ## <a name="device-restrictions"></a>Cihaz kısıtlamaları
 
-[Cihaz kısıtlamaları](device-restrictions-configure.md) cihazlarda güvenlik, donanım, veri paylaşımı ve daha fazla ayarı denetler. Örneğin, iOS cihaz kullanıcılarının cihazın kamerasını kullanmasını engelleyen bir cihaz kısıtlama profili oluşturun. 
+[Cihaz kısıtlamaları](device-restrictions-configure.md) cihazlarda güvenlik, donanım, veri paylaşımı ve daha fazla ayarı denetler. Örneğin, iOS/ıpados cihaz kullanıcılarının cihaz kamerasını kullanmasını engelleyen bir cihaz kısıtlama profili oluşturun. 
 
 Bu özellik şunları destekler:
 
@@ -115,7 +115,7 @@ Bu özellik şunları destekler:
 - iOS/ıpados
 - Mac OS
 - Windows 10 ve üzeri
-- Windows 10 ekibi
+- Windows 10 Team
 
 ## <a name="edition-upgrade"></a>Sürüm yükseltme
 
@@ -129,7 +129,7 @@ Bu özellik şunları destekler:
 
 [Eğitim ayarları - Windows 10](education-settings-configure.md), [Windows Sınav Zamanı uygulamasının](https://education.microsoft.com/gettrained/win10takeatest) seçeneklerini yapılandırır. Bu seçenekleri yapılandırdığınızda, sınav tamamlanana kadar cihazda başka uygulama çalıştırılamaz.
 
-[Eğitim ayarları - iOS](../fundamentals/education-settings-configure-ios-shared.md) sınıfta öğrenimi yönlendirmek ve öğrenci cihazlarını denetlemek için iOS Classroom uygulamasını kullanır. iPad cihazlarını, çok sayıda öğrencinin aynı cihazı paylaşmasını sağlamak için yapılandırabilirsiniz.
+[Eğitim ayarları-iOS/ıpados](../fundamentals/education-settings-configure-ios-shared.md) , ders içindeki öğrenci cihazlarını öğrenmeye ve denetlemeye kılavuzluk etmek için IOS/ıpados derslik uygulamasını kullanır. iPad cihazlarını, çok sayıda öğrencinin aynı cihazı paylaşmasını sağlamak için yapılandırabilirsiniz.
 
 ## <a name="email"></a>E-posta
 
@@ -186,7 +186,7 @@ Bu özellik şunları destekler:
 
 - Windows 10 ve üzeri
 
-Bilgi noktası ayarları [Android](device-restrictions-android.md#kiosk), [Android Kurumsal](device-restrictions-android-for-work.md#dedicated-device-settings) ve [ios](device-restrictions-ios.md#kiosk) için cihaz kısıtlaması olarak da kullanılabilir.
+Bilgi noktası ayarları, [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)ve [iOS/ıpados](device-restrictions-ios.md#kiosk)için cihaz kısıtlamaları olarak da kullanılabilir.
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -196,7 +196,7 @@ Bu özellik şunları destekler:
 
 - Android Kurumsal (OEMConfig)
 
-## <a name="powershell-scripts"></a>PowerShell betikleri
+## <a name="powershell-scripts"></a>PowerShell komut dosyaları
 
 [Windows 10 cihazlarında PowerShell betikleri](../apps/intune-management-extension.md) , Intune 'da PowerShell betiklerinizi karşıya yüklemek Için Intune yönetim uzantısını kullanır ve ardından bu betikleri cihazlarınızda çalıştırır. Ayrıca, uzantıyı kullanmak için gerekenleri, Intune 'a nasıl ekleneceğini ve diğer önemli bilgileri görün.
 
@@ -219,7 +219,7 @@ Bu özellik şunları destekler:
 
 ## <a name="update-policies"></a>Güncelleştirme ilkeleri
 
-[iOS güncelleştirme ilkeleri](../protect/software-updates-ios.md), iOS cihazlarınıza yazılım güncelleştirmelerini yüklemek için iOS ilkelerini nasıl oluşturacağınızı ve atayacağınızı gösterir. Ayrıca yükleme durumunu da gözden geçirebilirsiniz.
+IOS/ıpados [güncelleştirme ilkeleri](../protect/software-updates-ios.md) , IOS/ıpados cihazlarınıza yazılım güncelleştirmelerini yüklemek için IOS/ıpados ilkeleri oluşturmayı ve atamayı gösterir. Ayrıca yükleme durumunu da gözden geçirebilirsiniz.
 
 Windows cihazlardaki güncelleştirme ilkeleri hakkında bilgi için bkz. [Teslim iyileştirme](delivery-optimization-windows.md). 
 

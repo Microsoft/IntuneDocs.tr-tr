@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9acb934cdf67aae9c18091a0340f27de635b5399
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059281"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511026"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>İlke ve profillerin ve Intune 'da sorun giderme
 
@@ -77,7 +77,7 @@ Bu makalede bazı yaygın sorun giderme teknikleri listelenmekte ve karşılaşa
 
         - İade etmeye zorlamak için:
             - Android cihazında Şirket Portalı App > **cihazlarını** açın > cihazı listeden seçin > **cihaz ayarlarını denetleyin**.
-            - İOS cihazında, Şirket portalı uygulaması > **cihazları** açın > cihazı listeden seçin > **ayarları denetle**' ye tıklayın.
+            - İOS/ıpados cihazında, Şirket portalı uygulaması > **cihazları** açın > cihazı listeden seçin > **ayarları denetle**' ye tıklayın.
 
         - Bir Windows cihazında **ayarlar** > **hesapları** açın > **iş veya okula erişin** > hesap veya MDM kayıt > **bilgi** > **eşitleme**' yi seçin.
 
@@ -91,7 +91,7 @@ Bu makalede bazı yaygın sorun giderme teknikleri listelenmekte ve karşılaşa
 
         **İlke durumları**:
 
-        - **Uygulanamaz**: Bu ilke bu platformda desteklenmiyor. Örneğin, iOS ilkeleri Android üzerinde çalışmaz. Samsung KNOX ilkeleri Windows cihazlarında çalışmaz.
+        - **Uygulanamaz**: Bu ilke bu platformda desteklenmiyor. Örneğin, iOS/ıpados ilkeleri Android üzerinde çalışmaz. Samsung KNOX ilkeleri Windows cihazlarında çalışmaz.
         - **Çakışma**: cihazda Intune 'un geçersiz kılamadığı bir ayar var. Ya da, farklı değerleri kullanarak aynı ayarla iki ilke dağıttınız.
         - **Bekliyor**: cihaz, ilkeyi almak için Intune 'a iade edilmedi. Ya da cihaz ilkeyi aldı, ancak durumu Intune 'a bildirmemiştir.
         - **Hatalar**: [Şirket kaynağına erişim sorunlarını gidermeye yönelik](../fundamentals/troubleshoot-company-resource-access-problems.md)hataları ve olası çözümleri arama.
@@ -110,7 +110,7 @@ Bu makalede bazı yaygın sorun giderme teknikleri listelenmekte ve karşılaşa
 
     - **Uyumlu**: Cihaz profili ve raporları, ayara uygun olan Intune 'a aldı.
 
-    - **Uygulanamaz**: profil ayarı geçerli değil. Örneğin, iOS cihazları için e-posta ayarları bir Android cihazına uygulanmaz.
+    - **Uygulanamaz**: profil ayarı geçerli değil. Örneğin, iOS/ıpados cihazlarının e-posta ayarları bir Android cihazına uygulanmaz.
 
     - **Bekliyor**: profil cihaza gönderilir, ancak durum Intune 'a bildirilmemiştir. Örneğin Android’de şifreleme, son kullanıcının şifrelemeyi etkinleştirmesi gerektirdiği için beklemede olarak görünebilir.
 
@@ -121,7 +121,7 @@ Bu makalede bazı yaygın sorun giderme teknikleri listelenmekte ve karşılaşa
 
 ## <a name="policy-troubleshooting-resources"></a>İlke sorunlarını giderme kaynakları
 
-- [İOS veya Android Ilkelerinin sorun giderme cihazlara uygulanmıyor](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (başka bir Microsoft sitesi açar)
+- [İOS/ıpados veya Android ilkeleri cihazlara uygulanmıyor](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (başka bir Microsoft sitesi açar) sorun giderme
 - [Windows 10 Intune ilkesi hatalarında sorun giderme](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (bir blog açar)
 - [Windows 10 IÇIN CSP özel ayarları sorunlarını giderme](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (başka bir Microsoft sitesi açar)
 - [Windows 10 Grup İlkesi vs ıNTUNE MDM ilkesi](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (başka bir Microsoft sitesini açar)
@@ -144,7 +144,7 @@ Cihaz platformuna bağlı olarak, ilkeyi daha az güvenli bir değerle değişti
 
 Örneğin, Windows 8.1 Masaüstünde, sağ taraftaki içeri doğru kaydırın ve sonra da **Charms** çubuğunu açın. **Kullanıcı hesapları** > **Denetim Masası** > **Ayarlar** ' ı seçin. Sol taraftaki **Güvenlik İlkelerini Sıfırla**’yı seçin ve **İlkeleri Sıfırla**’ya tıklayın.
 
-Android, iOS ve Windows Phone 8,1 gibi diğer platformların devre dışı bırakılması ve daha az kısıtlayıcı bir ilke uygulamak için yeniden kaydedilmesi gerekebilir.
+Android, iOS/ıpados ve Windows Phone 8,1 gibi diğer platformların devre dışı bırakılması ve daha az kısıtlayıcı bir ilkeyi uygulamak için yeniden kaydedilmesi gerekebilir.
 
 [Cihaz kaydı sorunlarını giderme](../enrollment/troubleshoot-device-enrollment-in-intune.md) iyi bir kaynak olabilir.
 

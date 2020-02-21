@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cef30c31b53c6bfd1873390fb7546cbeab2a53
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 936e4836938ddddc8e795d85de5a449ee77edaa4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510027"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515008"
 ---
 # <a name="special-migration-considerations"></a>Geçiş konusunda dikkat edilmesi gereken önemli noktalar
 
@@ -32,7 +32,7 @@ Geçiş konusunda, mevcut MDM sağlayıcısı ortamınıza bağlı olarak geçer
 
 Apple Aygıt Kayıt Programı (DEP), son kullanıcı tarafından kaldırılamayan cihaz yapılandırmaları uygular. DEP’in gelişmiş yönetim özelliklerini korumak üzere cihazın Intune’a kaydedilebilmesi için silinerek kullanıma hazır (yeni) duruma getirilmesi gerekir.
 
-Intune'da cihaz yönetmede DEP kullanmaya devam etmek için, [Cihaz Kayıt Programı ile iOS cihaz kaydı ayarlarını yapın](../enrollment/device-enrollment-program-enroll-ios.md).
+Intune 'da cihazları yönetmek için DEP kullanmaya devam etmek için [aygıt kayıt programı Ile iOS/ıpados cihaz kaydını ayarlayın](../enrollment/device-enrollment-program-enroll-ios.md).
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

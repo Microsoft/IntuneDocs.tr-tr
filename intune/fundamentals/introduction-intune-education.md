@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ccea34694bde8ea80a779b36ef612fcefb1add
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 97177f91edea1205f6e8349ee1a7194d0f5300e5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510205"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514549"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Eğitim için Intune ile Intune'daki tam cihaz yönetimi deneyimi arasında ne fark vardır?
 
@@ -29,7 +29,7 @@ Eğitim için Intune, okulunuzun verilerini korurken öğretmen ve öğrencileri
 
 ![Eğitim için Intune konsolu ile Intune konsolunun karşılaştırması.](./media/introduction-intune-education/intune-azure-vs-intuneEDU.png)
 
-Eğitim için Intune, Windows 10 ve iOS cihazları Intune'da bulunan tüm MDM özelliklerini kullanarak yönetmenizi sağlar. Tam cihaz yönetim deneyimi sayesinde Windows, iOS ve Android cihazlarını yönetebilirsiniz.  
+Eğitim için Intune, Intune 'da bulunan tam MDM yeteneklerini kullanarak Windows 10 ve iOS/ıpados cihazlarını yönetmenizi sağlar. Tam cihaz yönetimi deneyimi, Windows, iOS/ıpados ve Android cihazlarını yönetmenizi sağlar.  
 
 Eğitim için Intune tek başına veya [Intune’da bulunan tam cihaz yönetimi deneyimi](what-is-intune.md) ile uyumlu bir şekilde kullanılabilir. Ayrıca, Eğitim için Intune’u Microsoft’un sunduğu diğer faydalı eğitim araçlarıyla birlikte kullanmanızı kolaylaştıran [Microsoft Education](https://microsoft.com/education) içinde bulunan diğer araçlarla birlikte kullanılabilir.  
 

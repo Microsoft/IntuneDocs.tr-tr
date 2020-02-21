@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azure’daki iOS cihazı uyumluluk ilkeleri | Microsoft Docs
-description: Microsoft Intune'da iOS cihazlarınızda uyumluluk ayarı yaparken kullanabileceğiniz tüm ayarların bulunduğu listeyi inceleyin. E-postayı zorunlu kılın, jailbreak uygulanmış veya kök erişim izni verilmiş cihazları denetleyin, izin verilene işletim sistemi alt ve üst sınırını ayarlayın, parola uzunluğu ve cihaz boş durma süresi dahil olmak üzere parola kısıtlaması ayarlayın, uygulamaları kısıtlayın ve daha fazlasını yapın.
+title: iOS/ıpados cihaz uyumluluk ayarları Microsoft Intune-Azure | Microsoft Docs
+description: Microsoft Intune ' de iOS/ıpados cihazlarınız için uyumluluk ayarlarken kullanabileceğiniz tüm ayarların listesini görüntüleyin. E-postayı zorunlu kılın, jailbreak uygulanmış veya kök erişim izni verilmiş cihazları denetleyin, izin verilene işletim sistemi alt ve üst sınırını ayarlayın, parola uzunluğu ve cihaz boş durma süresi dahil olmak üzere parola kısıtlaması ayarlayın, uygulamaları kısıtlayın ve daha fazlasını yapın.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074640"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514039"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz iOS ayarları
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune kullanarak cihazları uyumlu veya uyumsuz olarak işaretlemek için iOS/ıpados ayarları
 
-Bu makalede Intune'daki iOS cihazları için yapılandırabileceğiniz farklı uyumluluk ayarları listelenmekte ve anlatılmaktadır. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak bu ayarları kullanabilir ve bu sayede e-posta kullanılmasını zorunlu kılabilir, kök erişim izni verilmiş (jailbreak uygulanmış) cihazları uyumlu değil olarak işaretleyebilir, izin verilen tehdit düzeyi belirleyebilir, parolaların kullanım süresini kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
+Bu makalede, Intune 'da iOS/ıpados cihazlarında yapılandırabileceğiniz farklı uyumluluk ayarları listelenir ve açıklanmaktadır. Mobil cihaz yönetimi (MDM) çözümünüzün bir parçası olarak bu ayarları kullanabilir ve bu sayede e-posta kullanılmasını zorunlu kılabilir, kök erişim izni verilmiş (jailbreak uygulanmış) cihazları uyumlu değil olarak işaretleyebilir, izin verilen tehdit düzeyi belirleyebilir, parolaların kullanım süresini kısıtlayabilir ve çok daha fazlasını yapabilirsiniz.
 
 Bu özellik şu platformlarda geçerlidir:
 
@@ -86,11 +86,11 @@ E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Intune ile e-posta p
 ### <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
 
 > [!NOTE]
-> iOS cihazına uyumluluk veya yapılandırma ilkesi uygulandıktan sonra her 15 dakikada bir kullanıcılardan bir geçiş kodu ayarlamaları istenir. Geçiş kodu ayarlanana kadar kullanıcılara sürekli bu istem gönderilir. İOS cihazı için bir geçiş kodu ayarlandığında, şifreleme işlemi otomatik olarak başlatılır. Geçiş kodu devre dışı bırakılıncaya kadar cihaz şifreli olarak kalır.
+> Bir iOS/ıpados cihazına uyumluluk veya yapılandırma ilkesi uygulandıktan sonra, kullanıcılardan 15 dakikada bir geçiş kodu ayarlaması istenir. Geçiş kodu ayarlanana kadar kullanıcılara sürekli bu istem gönderilir. İOS/ıpados cihazı için bir geçiş kodu ayarlandığında, şifreleme işlemi otomatik olarak başlatılır. Geçiş kodu devre dışı bırakılıncaya kadar cihaz şifreli olarak kalır.
 
 - **Mobil cihazların kilidini açmak için parola gerektir**:  
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.  
-  - **Gerektir** -kullanıcıların cihazına erişebilmeleri için önce bir parola girmesi gerekir. Parola kullanılan iOS cihazları şifrelenir.
+  - **Gerektir** -kullanıcıların cihazına erişebilmeleri için önce bir parola girmesi gerekir. parola kullanan iOS/ıpados cihazları şifrelenir.
 
 - **Basit parolalar**:  
   - **Yapılandırılmadı** (*varsayılan*)-kullanıcılar, **1234** veya **1111**gibi basit parolalar oluşturabilir.
@@ -125,7 +125,7 @@ E-posta profilleri hakkında ayrıntılı bilgi için bkz. [Intune ile e-posta p
   Uygulamaların paket kimliklerini ilkeye ekleyerek bunları kısıtlayabilirsiniz. Cihazda bu uygulama yüklüyse cihaz uyumsuz olarak işaretlenir.
 
   - **Uygulama adı** -paket kimliğini belirlemenize yardımcı olması için Kullanıcı dostu bir ad girin.
-  - **Uygulama PAKETI kimliği** -uygulama sağlayıcısı tarafından atanan benzersiz paket kimliğini girin. Paket Kimliğini bulmak için bkz. [iOS uygulamalarının paket kimliğini bulma](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (başka bir Microsoft web sitesini açar).  
+  - **Uygulama PAKETI kimliği** -uygulama sağlayıcısı tarafından atanan benzersiz paket kimliğini girin. Paket KIMLIĞINI bulmak için bkz. [iOS/ıpados uygulamasının paket kimliğini bulma](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (başka bir Microsoft Web sitesini açar).  
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

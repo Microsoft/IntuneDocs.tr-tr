@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2bd5b26073611d9ff974d4a53f7794919e8672c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563712"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513546"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme
 
@@ -50,7 +50,7 @@ Uygulama bölmesinde, ortamınızdaki bir uygulamanın durumu hakkındaki ayrın
  | **Uygulama ayrıntıları**            | **Açıklama**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Yayımcı**          | Uygulamanın yayımcısı.                                            |
-| **İşletim sistemi**   | Uygulamanın işletim sistemi (Windows, iOS, Android, vb.). |
+| **İşletim sistemi**   | Uygulamanın işletim sistemi (Windows, iOS/ıpados, Android, vb.). |
 | **Oluşturma Tarihi**             | Düzeltmenin oluşturulduğu tarih ve saat. <b>**Note**: Bu tarih değeri, bir BT Yöneticisi uygulama meta verilerini değiştirdiğinde (uygulama kategorisi veya uygulama açıklaması gibi) güncelleştirilir.                        |
 | **Atanan**           | Uygulamanın atanıp atanmadığı (**Evet** veya **Hayır**).                  |
 
@@ -76,7 +76,7 @@ Menünün **İzleme** bölümünde **Cihaz yükleme durumu**’nu seçtiğinizde
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cihaz adı**      | Cihazı adlandırmaya izin veren platformlarda cihazın adı. Buna izin vermeyen platformlarda ise Intune, diğer özelliklerden bir ad oluşturur. Bu öznitelik başka hiçbir cihazda kullanılamaz.                                                                       |
 | **Kullanıcı adı**        | Kullanıcının adı.                                                                                                                                                                                                                                      |
-| **Platform**         | Cihazın işletim sistemi (Windows, iOS, Android, vb.).                                                                                                                                                                                           |
+| **Platform**         | Cihazın işletim sistemi (Windows, iOS/ıpados, Android, vb.).                                                                                                                                                                                           |
 | **Sürüm**          | Uygulamanın sürüm numarası. İş kolu (LOB) uygulamaları ve İş İçin Microsoft Store uygulamaları için, uygulamanın tam sürüm numarası gösterilir. Tam sürüm numarası uygulamanın belirli bir yayınını tanımlar. Numara _Sürüm_(_Derleme_) olarak görünür. Örneğin, 2.2(2.2.17560800). Standart Store uygulamaları için sürüm bilgisi gösterilmez. |
 | **Durum**           | Uygulamanın durumu.                                                                                                                                                                                                                                     |
 | **Durum ayrıntıları**   | Durumun ayrıntıları.                                                                                                                                                                                                                                     |
