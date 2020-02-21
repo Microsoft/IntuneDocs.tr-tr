@@ -23,7 +23,7 @@
           href: administrative-templates-windows.md
         - name: Yönetim şablonlarını kullanarak Office’i güncelleştirme
           href: administrative-templates-update-office.md
-    - name: iOS ve macOS üzerinde cihaz özellikleri
+    - name: iOS/iPadOS ve macOS üzerinde cihaz özellikleri
       href: device-features-configure.md
     - name: Cihaz ayarlarını ve özelliklerini kısıtlama
       href: device-restrictions-configure.md
@@ -47,7 +47,7 @@
       items:
         - name: Android için uygulama başına VPN
           href: android-pulse-secure-per-app-vpn.md
-        - name: iOS için Uygulama Başına VPN
+        - name: iOS/iPadOS için Uygulama Başına VPN
           href: vpn-setting-configure-per-app.md
     - name: Wi-Fi ağı
       href: wi-fi-settings-configure.md
@@ -117,7 +117,7 @@
               href: wi-fi-settings-android-enterprise.md
             - name: Özel
               href: custom-settings-android-for-work.md
-        - name: iOS
+        - name: iOS/iPadOS
           items:
             - name: Cihaz özellikleri
               href: ios-device-features-settings.md

@@ -100,7 +100,7 @@
     - name: macOS kaydını ayarlama
       href: macos-enroll.md
       items:
-        - name: Aygıt Kayıt Programı veya Apple School Manager
+        - name: Otomatik Cihaz Kaydı
           href: device-enrollment-program-enroll-macos.md
     - name: Eksik kayıt raporu
       href: enrollment-report-company-portal-abandon.md

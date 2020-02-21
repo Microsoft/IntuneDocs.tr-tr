@@ -18,7 +18,7 @@
           href: in-development.md
         - name: Önemli bildirimler
           href: 'whats-new.md#notices'
-- name: Hızlı girişler
+- name: Hızlı başlangıçlar
   items:
     - name: Intune'u ücretsiz olarak deneyin
       href: free-trial-sign-up.md
@@ -82,7 +82,7 @@
               href: planning-guide-communication-plan.md
             - name: Bir destek planı geliştirme
               href: planning-guide-support-plan.md
-            - name: Tasarım
+            - name: Tasarlama
               href: planning-guide-design.md
             - name: Uygulama
               href: planning-guide-onboarding.md
@@ -102,7 +102,7 @@
                   href: migration-guide-configure-policies.md
                 - name: Uygulama koruma ilkelerini yapılandırma
                   href: migration-guide-app-protection-policies.md
-                - name: Geçiş konuları
+                - name: Geçiş fikirleri
                   href: migration-guide-considerations.md
             - name: Geçiş kampanyası
               href: migration-guide-campaign.md
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: Android uygulamalarını edinme
               href: end-user-apps-android.md
-            - name: iOS uygulamalarını edinme
+            - name: iOS/iPadOS uygulamalarını edinme
               href: end-user-apps-ios.md
             - name: Windows uygulamalarını edinme
               href: end-user-apps-windows.md
@@ -201,18 +201,18 @@
           href: tenant-status.md
         - name: Kullanıcıların sorunları gidermesine yardımcı olma
           href: help-desk-operators.md
-        - name: Intune etkinlikleri için denetleme günlükleri
-          href: monitor-audit-logs.md
-        - name: Azure İzleyici ile günlükleri gözden geçirme
-          href: review-logs-using-azure-monitor.md
         - name: Intune belgelerini kullanma
           href: use-docs.md
         - name: Destek alma
           href: get-support.md
-    - name: Reports
+    - name: Raporlar
       items:
         - name: Intune raporları
           href: reports.md
+        - name: Intune etkinlikleri için denetleme günlükleri
+          href: monitor-audit-logs.md
+        - name: Azure İzleyici ile günlükleri gözden geçirme
+          href: review-logs-using-azure-monitor.md
 - name: Başvuru
   items:
     - name: Hata kodları ve açıklamaları
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Intune klasik grupları
           href: groups-get-started.md
-        - name: iOS eğitim ayarları
+        - name: iOS/iPadOS eğitim ayarları
           items:
             - name: iPad
               href: education-settings-configure-ios.md
