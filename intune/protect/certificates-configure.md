@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62031fd42a0067b206d6804fd0c3939db3fd8e3b
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514124"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576531"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune kimlik doğrulaması için sertifikaları kullanma
 
@@ -30,7 +30,7 @@ VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılarınızın uygu
 
 ## <a name="intune-supported-certificates-and-usage"></a>Intune tarafından desteklenen sertifikalar ve kullanım
 
-| Tür              | Kimlik doğrulama | S/MIME Imzalama | S/MIME şifrelemesi  |
+| Tür              | Kimlik Doğrulama | S/MIME Imzalama | S/MIME şifrelemesi  |
 |--|--|--|--|
 | Ortak anahtar şifreleme standartları (PKCS) içeri aktarılan sertifika |  | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png)|
 | PKCS#12 (veya PFX)    | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |  |
@@ -38,7 +38,7 @@ VPN, Wi-Fi veya e-posta profilleri aracılığıyla kullanıcılarınızın uygu
 
 Bu sertifikaları dağıtmak için cihazlara sertifika profilleri oluşturup atayacaksınız.
 
-Oluşturduğunuz her ayrı sertifika profili tek bir platformu destekler. Örneğin, PKCS sertifikaları kullanıyorsanız, Android için PKCS sertifika profili ve iOS için ayrı bir PKCS sertifika profili oluşturacaksınız. Bu iki platform için SCEP sertifikaları da kullanıyorsanız, Android için bir SCEP sertifika profili ve iOS için başka bir tane oluşturun.
+Oluşturduğunuz her ayrı sertifika profili tek bir platformu destekler. Örneğin, PKCS sertifikaları kullanıyorsanız, Android için PKCS sertifika profili ve iOS/ıpados için ayrı bir PKCS sertifika profili oluşturacaksınız. Bu iki platform için SCEP sertifikaları da kullanıyorsanız, Android için bir SCEP sertifika profili ve iOS/ıpados için bir tane oluşturun.
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Bir Microsoft sertifika yetkilisi kullanırken Genel hususlar
 
@@ -83,9 +83,9 @@ Bir Microsoft sertifika yetkilisi (CA) kullandığınızda:
 | Android Kurumsal <br> -Tam olarak yönetilen (cihaz sahibi)   | ![Desteklenir](./media/certificates-configure/green-check.png) |   | ![Desteklenir](./media/certificates-configure/green-check.png) |   |
 | Android Kurumsal <br> -Adanmış (cihaz sahibi)   | ![Desteklenir](./media/certificates-configure/green-check.png)  |   | ![Desteklenir](./media/certificates-configure/green-check.png)  |   |
 | Android Kurumsal <br> -İş profili    | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |
-| iOS/ıpados                   | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |
 | Mac OS                 | ![Desteklenir](./media/certificates-configure/green-check.png) |  ![Desteklenir](./media/certificates-configure/green-check.png) |![Desteklenir](./media/certificates-configure/green-check.png)|![Desteklenir](./media/certificates-configure/green-check.png)|
-| WVPN profillerinidows Phone 8.1     |![Desteklenir](./media/certificates-configure/green-check.png)  |  | ![Desteklenir](./media/certificates-configure/green-check.png)| ![Desteklenir](./media/certificates-configure/green-check.png) |
+| Windows Phone 8.1     |![Desteklenir](./media/certificates-configure/green-check.png)  |  | ![Desteklenir](./media/certificates-configure/green-check.png)| ![Desteklenir](./media/certificates-configure/green-check.png) |
 | Windows 8.1 ve üzeri |![Desteklenir](./media/certificates-configure/green-check.png)  |  |![Desteklenir](./media/certificates-configure/green-check.png) |   |
 | Windows 10 ve üzeri  | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) | ![Desteklenir](./media/certificates-configure/green-check.png) |
 

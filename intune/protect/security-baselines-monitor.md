@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556411"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569294"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'de güvenlik taban çizgisini ve profillerini izleme
 
@@ -106,6 +106,18 @@ Profili izlemek, cihazlarınızın dağıtım durumu hakkında fikir verir, anca
 
    ![Güvenlik temelleri profili için farklı izleyici seçeneklerine bakın](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>Cihaz başına uç nokta güvenlik yapılandırmasını görüntüle
+
+Tek bir cihaza uygulanan güvenlik yapılandırmalarının ayrıntılarını görüntüleyin ve bu, yanlış yapılandırılmış ayarları yalıtmanıza yardımcı olabilir.
+
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+
+2. **Tüm cihazlar** > **cihazlar** ' a gidin ve görüntülemek istediğiniz cihazı seçin.
+
+3. *İzleyici* kategorisinde, bu cihaza uygulanan güvenlik yapılandırmalarının listesini görüntülemek Için **uç nokta güvenlik yapılandırması** ' nı seçin.
+
+4. Detaya gitmek için bir uç nokta güvenlik yapılandırması seçebilir ve cihazdaki bu güvenlik yapılandırmasının değerlendirmesiyle ilgili ek ayrıntıları görüntüleyebilirsiniz.
+
 ## <a name="troubleshoot-using-per-setting-status"></a>Ayar başına durumu kullanarak sorun giderme
 
 Bir güvenlik temeli dağıttıysanız, ancak dağıtım durumu bir hata gösterir. Aşağıdaki adımlar, hatayı gidermeye yönelik bazı yönergeler sağlar.
@@ -135,6 +147,7 @@ Windows 10 cihazlarında, yerleşik bir MDM tanılama bilgileri raporu vardır. 
 [Windows 10 ' da MDM başarısızlıklarını tanılama](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) bu yerleşik rapor hakkında daha fazla bilgi sağlar.
 
 > [!TIP]
+>
 > - Bazı ayarlar GUID 'YI de listeler. Herhangi bir küme değeri için yerel kayıt defterinde (regedit) Bu GUID için arama yapabilirsiniz.
 > - Olay Görüntüleyicisi Günlükler, sorunlu ayara (**olay görüntüleyicisi** > **uygulama ve hizmet günlükleri** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **admin**) bazı hata bilgilerini de içerebilir.
 

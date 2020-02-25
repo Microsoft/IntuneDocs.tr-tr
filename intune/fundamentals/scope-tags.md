@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: dfb9ec9d28b00e454884bbf0bf296cd72cba4b6f
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548132"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569226"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış BT için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanma
 
@@ -43,37 +43,28 @@ Varsayılan kapsam etiketi özelliği, Microsoft uç noktası Configuration Mana
 
 ## <a name="to-create-a-scope-tag"></a>Kapsam etiketi oluşturmak için
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **kiracı yönetimi** > **Roller** > **kapsam (Etiketler)**  > **Oluştur**' u seçin.
-
-    ![Kapsam etiketi oluşturma ekranının ekran görüntüsü.](./media/scope-tags/create-scope-tag.png)
-
-2. Bir **ad** ve isteğe bağlı bir **Açıklama**girin.
-3. Belirli gruplardaki tüm cihazları istiyorsanız, **seçili gruplardaki tüm cihazlara kapsam etiketi ata**' yı seçin.
-    1. **Dahil edilecek grupları seçin** sayfasında, bu kapsam etiketini atamak istediğiniz cihazları içeren grupları seçin.
-    2. **Seçin** öğesini belirleyin.
-4. **Oluştur**’u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **kiracı yönetimi** > **Roller** > **kapsam (Etiketler)** > **Oluştur**' u seçin.
+2. **Temel bilgiler** sayfasında, bir **ad** ve isteğe bağlı bir **Açıklama**girin. **İleri**’yi seçin.
+3. **Atamalar** sayfasında, bu kapsam etiketini atamak istediğiniz cihazları içeren grupları seçin. **İleri**’yi seçin.
+4. **Gözden geçir + oluştur** sayfasında **Oluştur**' u seçin.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Kapsam etiketini bir role atamak için
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **tüm roller** >  > **Roller** ' i seçin > bir rol > **atamaları** seçin > **ata**' **yı seçin.**
-2. **Atama adı** ve **açıklaması**sağlayın.
-3. **Eklemek** > **Üyeler (gruplar)** seçin > Bu atamanın bir parçası olarak istediğiniz grupları seçin > > **Tamam ' ı** **seçin** . Bu gruptaki kullanıcıların, kapsamdaki kullanıcıları/cihazları yönetme izinleri olacaktır (gruplar).
+2. **Temel bilgiler** sayfasında, bir **atama adı** ve **Açıklama**belirtin. **İleri**’yi seçin.
+3. **Yönetici grupları** sayfasında, **dahil edilecek grupları seç**' i seçin ve bu atamanın bir parçası olarak istediğiniz grupları seçin. Bu gruptaki kullanıcıların, kapsamdaki kullanıcıları/cihazları yönetme izinleri olacaktır (gruplar). **İleri**’yi seçin.
 
     ![Üye gruplarının Seç ekran görüntüsü.](./media/scope-tags/select-member-groups.png)
 
-4. Belirli bir grup kümesindeki kullanıcıları/cihazları yönetmek istiyorsanız **kapsam (gruplar)**  > **Seçili gruplar** > ' ı seçin.**dahil edilecek grupları seçin** > grupları seçin  >  **Tamam ' ı** **seçin**. Bu gruptaki tüm kullanıcılar/cihazlar, Üyeler (Grup) içindeki Yöneticiler tarafından yönetilecektir.
+4. **Kapsam grupları** sayfasında, **ata** için aşağıdaki seçeneklerden birini belirleyin
+    - **Seçili gruplar**: yönetmek istediğiniz kullanıcıları/Deivleri içeren grupları seçin. Seçili gruplardaki tüm kullanıcılar/cihazlar Yönetici gruplarındaki kullanıcılar tarafından yönetilir.
+    - **Tüm kullanıcılar**: tüm kullanıcılar Yönetici gruplarındaki kullanıcılar tarafından yönetilebilir.
+    - **Tüm cihazlar**: tüm cihazlar Yönetici gruplarındaki kullanıcılar tarafından yönetilebilir.
+    - **Tüm kullanıcılar ve tüm cihazlar**: tüm kullanıcılar ve cihazlar Yönetici gruplarındaki kullanıcılar tarafından yönetilebilir.
 
-    ![Kapsam gruplarının Seç ekran görüntüsü.](./media/scope-tags/select-scope-groups.png)
-
-    Alternatif olarak, **tüm cihazlar,** **tüm kullanıcılar**veya tüm **Kullanıcılar &** tüm cihazlar ' ı seçebilirsiniz.
-
-    ![Seçim kapsam grupları için diğer seçeneklerin ekran görüntüsü.](./media/scope-tags/scope-group-other-options.png)
-    
-5. **Kapsam (Etiketler)** seçin > **Ekle** > Bu role eklemek istediğiniz etiketleri seçin > > **Tamam ' ı** **seçin** . Üyeler (gruplar) içindeki kullanıcılar aynı kapsam etiketine sahip olan Intune nesnelerine de erişebilir.
-
-    ![Seçim kapsamı etiketlerinin ekran görüntüsü.](./media/scope-tags/select-scope-tags.png)
-
-6. **Tamam**’ı seçin. 
+5. **İleri**’yi seçin.
+6. **Kapsam etiketleri** sayfasında, bu role eklemek istediğiniz etiketleri seçin. Yönetici gruplarındaki kullanıcılar aynı kapsam etiketine sahip olan Intune nesnelerine de erişebilir.
+7. **İleri** ' yi seçerek **gözden geçir + oluştur** sayfasına gidin ve **Oluştur**' u seçin.
 
 ## <a name="assign-scope-tags-to-other-objects"></a>Diğer nesnelere kapsam etiketleri atama
 
@@ -81,13 +72,8 @@ Kapsam etiketlerini destekleyen nesneler için, kapsam etiketleri genellikle **�
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **yapılandırma profilleri** ' ni seçin > bir profil seçin.
 
-2. **Ekle** > **kapsam (Etiketler)**  > **Özellikler** ' i seçin.
-
-    ![Kapsam etiketleri Ekle ekran görüntüsü.](./media/scope-tags/add-scope-tags.png)
-
-3. **Etiket Seç**' in altında, Profile eklemek istediğiniz etiketleri seçin.
-4.  > Tamam ' **ı** seçin > **Kaydet**' **i** seçin.
-
+2. **Özellikler** > **kapsam (Etiketler)** > **düzenle** > **kapsam etiketlerini seçin** > Profile eklemek istediğiniz etiketleri seçin.
+4. Seç > **gözden geçir + kaydet**' **i** seçin.
 
 ## <a name="scope-tag-details"></a>Kapsam etiketi ayrıntıları
 Kapsam etiketleriyle çalışırken bu ayrıntıları unutmayın: 
@@ -114,3 +100,5 @@ Kapsam etiketleriyle çalışırken bu ayrıntıları unutmayın:
 
 [Birden çok rol ataması](role-based-access-control.md#multiple-role-assignments)olduğunda kapsam etiketlerinin nasıl davranacağını öğrenin.
 [Rollerinizi](role-based-access-control.md) ve [profillerinizi](../configuration/device-profile-assign.md) yönetin.
+
+

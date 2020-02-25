@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: f4a1d0575ce4c46c56fd1b3d2a7526a18a076fcf
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514209"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576112"
 ---
 # <a name="troubleshoot-conditional-access"></a>Koşullu erişim sorunlarını giderme
 Bu makalede, kullanıcılarınız koşullu erişimle korunan kaynaklara erişim izni alamazsanız veya kullanıcılar korumalı kaynaklara erişebiliyorsa ve engellenmesi gereken durumlarda ne yapılacağını açıklar.
@@ -44,7 +44,7 @@ Koşullu erişimin çalışması için aşağıdaki gereksinimlerin karşılanma
 
 - Kullanıcıya varsayılan olarak bir cihaz uyumluluk ilkesi atanmış olmalıdır. Bu, Intune yönetim portalında **cihaz uyumluluğu** > **Uyumluluk ilkesi ayarları** ' nın altında olan **Uyumluluk ilkesi atanmamış ayar işareti cihazlarının** yapılandırmasına bağlıdır.
 
-- Kullanıcı Outlook yerine cihazın yerel posta istemcisini kullanıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir. Bu, iOS, Windows Phone ve Android Knox cihazları için otomatik olarak gerçekleşir.
+- Kullanıcı Outlook yerine cihazın yerel posta istemcisini kullanıyorsa, cihazda Exchange ActiveSync etkinleştirilmelidir. Bu, iOS/ıpados, Windows Phone ve Android Knox cihazları için otomatik olarak gerçekleşir.
 
 - Şirket içi Exchange için Intune Exchange bağlayıcınızın doğru şekilde yapılandırılması gerekir. Daha fazla bilgi için bkz. [Microsoft Intune Exchange Connector 'Da sorun giderme](troubleshoot-exchange-connector.md).
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 7f7a6203fcf641c41192eec8aaa0835939376d54
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514447"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575925"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune kullanarak yönetilmeyen cihazlarda veri sızıntılarını önleme
 
@@ -31,7 +31,7 @@ Office 365 tarafından barındırılan şirket verilerine erişim izni verirseni
 
 Intune ile ayarlanan uygulama koruma ilkeleri, Microsoft olmayan bir cihaz yönetim çözümü ile yönetilen cihazlarda da çalışır. BT departmanı cihazlardaki kişisel verilere dokunmaz; yalnızca şirket verilerini yönetir. 
 
-Windows, iOS veya Android çalıştıran cihazlarda şirket verilerini korumak için Office mobil uygulamalarına yönelik uygulama koruma ilkeleri ayarlayabilirsiniz. Bu ilkeler uygulama tabanlı PIN veya şirket veri şifrelemesi gibi ilkeler belirlemenize veya kullanıcıların yönetilen ve yönetilmeyen uygulamalar arasında kesme, kopyalama ve yapıştırma özelliklerini kullanmasını sınırlamak için daha gelişmiş ayarlar yapmanıza izin verir. Ayrıca, kullanıcıların cihazlarını kaydetmesi gerekmeden şirket verilerini uzaktan silebilirsiniz.
+Şirket verilerini korumak için Windows, iOS/ıpados veya Android çalıştıran cihazlarda Office mobil uygulamaları için uygulama koruma ilkeleri ayarlayabilirsiniz. Bu ilkeler uygulama tabanlı PIN veya şirket veri şifrelemesi gibi ilkeler belirlemenize veya kullanıcıların yönetilen ve yönetilmeyen uygulamalar arasında kesme, kopyalama ve yapıştırma özelliklerini kullanmasını sınırlamak için daha gelişmiş ayarlar yapmanıza izin verir. Ayrıca, kullanıcıların cihazlarını kaydetmesi gerekmeden şirket verilerini uzaktan silebilirsiniz.
 
 Intune uygulama koruma ilkeleri, cihaz yönetiminden bağımsızdır. Uygulama koruma ilkeleri, Office mobil uygulamalarını gerek yönetilmeyen gerekse Intune tarafından yönetilen cihazların yanı sıra Microsoft olmayan MDM çözümleriyle yönetilen cihazlarda yönetmenize izin verir.
 
@@ -42,7 +42,7 @@ Aşağıdaki koşulları yerine getirdiğinizde aşağıdaki eylem planı kullan
 * Şirketiniz buluta güvenli bir şekilde geçiş yapmaya hazırdır.
 * Şirketiniz Office 365 Exchange Online, SharePoint Online, OneDrive İş veya Yammer kullanmaktadır.
 * Şirketinizin Microsoft 365, Enterprise Mobility + Security (EMS) veya Azure Information Protection lisansları vardır.
-* Şirketiniz, kullanıcıların şirkete ait veya kişisel Windows, iOS veya Android cihazlardan şirket verilerine erişmesine izin veriyordur.
+* Şirketiniz, kullanıcıların şirkete ait veya kişisel Windows, iOS/ıpados veya Android cihazlarından şirket verilerine erişmesini sağlar.
 * Şirketiniz, kişisel cihazların bir cihaz yönetim hizmetine kaydedilmesini zorunlu kılmak istemiyordur.
 
 ## <a name="action-plan"></a>Eylem planı

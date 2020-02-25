@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c016dd8a1d8a21e3ac96ab8637e26a029b18dbc
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 4c938aba7fde84536af2452f13f6ed030fa1d823
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77511812"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576423"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -37,7 +37,7 @@ Microsoft Intune şirket portalı, kullanıcıların şirket verilerine erişti�
 > [!Tip]
 > Şirket Portalı’nı özelleştirdiğinizde, yapılandırmalar hem Şirket Portalı web sitesi hem de Şirket Portalı uygulamaları için geçerli olur. Şirket Portalı'na erişmek isteyen kullanıcılara Intune lisansı atanmış olmalıdır.
 
-Şirket Portalı’nı özelleştirerek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlanmasına yardımcı olabilirsiniz. Bunu yapmak için, Intune portalında **uygulamalar** > **marka ve özelleştirme**' yı seçin ve gerekli ayarları yapılandırın.
+Şirket Portalı’nı özelleştirerek, son kullanıcılarınız için tanıdık ve yararlı bir deneyim sağlanmasına yardımcı olabilirsiniz. Bunu yapmak için [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)' ne gidin, **Kiracı Yönetimi** > **marka ve özelleştirme**' yı seçin ve gerekli ayarları yapılandırın.
 
 Bir Kullanıcı Şirket Portalı bir iOS/ıpados uygulaması yüklerken bir istem alır. Bu durum, iOS/ıpados uygulamasının bir toplu satın alma programı (VPP) ile bağlantılı veya iş kolu (LOB) uygulamasına bağlı olan App Store 'a bağlanması durumunda meydana gelir. İstem, kullanıcıların eylemi kabul etmesine veya uygulamanın yönetimine izin veriyor. İstem şirketinizin adını gösterir veya şirketinizin adı kullanılamadığında **Şirket portalı** görüntülenir. 
 
@@ -149,17 +149,17 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 
 | Alan | Açıklama | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
-| Gezinti menüsü | Gezinti | Alt + a |
-|  | Giriş | Alt + H |
+| Gezinti menüsü | Gezinme | Alt + a |
+|  | Ana Sayfası | Alt + H |
 |  | Tüm uygulamalar | Alt + A |
 |  | Yüklenen uygulamalar | Alt+I |
 |  | Geri bildirim gönder | Alt + F |
 |  | Profilim | Alt + U |
 |  | Ayarlar | Alt + T |
-| Giriş - Cihaz kutucuğu | Yeniden Adlandır | F2 |
+| Giriş - Cihaz kutucuğu | Yeniden adlandır | F2 |
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
-| Cihaz ayrıntıları | Yeniden Adlandır | F2 |
+| Cihaz ayrıntıları | Yeniden adlandır | F2 |
 |  | Kaldır | Ctrl+D veya Delete |
 |  | Erişimi denetle | Ctrl+M veya F9 |
 | Uygulama ayrıntıları | Yükle | Ctrl+I |
@@ -186,7 +186,7 @@ Bazı platformlar ve Konfigürasyonlar self servis cihaz eylemlerine izin vermez
 
 |  | Windows 10<sup>(3)</sup> | iOS/ıpados<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Devre dışı bırakma | Kullanılabilir<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
+| Devre Dışı Bırak | Kullanılabilir<sup>(1)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir<sup>(7)</sup> |
 | Silme | Kullanılabilir | Kullanılabilir<sup>(5)</sup> | Yok | Kullanılabilir<sup>(7)</sup> |
 | Yeniden Adlandır<sup>(4)</sup> | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |
 | Eşitle | Kullanılabilir | Kullanılabilir | Kullanılabilir | Kullanılabilir |

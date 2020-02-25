@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413685"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569464"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune cihazının birincil kullanıcısını bulma
 
 Kullanıcı cihaz benzeşimi olarak da bilinen birincil Kullanıcı, her bir Intune cihazının bir özelliğidir. Bir Intune cihazında sıfır veya bir birincil kullanıcı atanmış olabilir. Hiç birincil Kullanıcı atanmamışsa, cihaza "paylaşılan cihaz" adı verilir.
 
-## <a name="how-to-find-a-devices-primary-user"></a>Bir cihazın birincil kullanıcısını bulma
+## <a name="find-a-devices-primary-user"></a>Bir cihazın birincil kullanıcısını bulma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. Cihaz seçin > **cihazları** seçin.
@@ -38,7 +38,7 @@ Kullanıcı cihaz benzeşimi olarak da bilinen birincil Kullanıcı, her bir Int
 Birincil Kullanıcı özelliği, lisanslı bir Intune kullanıcısını içindeki cihazlarıyla eşlemek için kullanılır:
 - Şirket Portalı uygulaması
 - Son Kullanıcı Web sitesi
-- Azure portal sayfa sorunlarını giderme gibi BT uzmanı deneyimleri. Bu sayfalar, birincil Kullanıcı kullanılarak kullanıcı hesaplarını cihazlara eşler.    
+- Azure portal sayfa sorunlarını giderme gibi BT uzmanı deneyimleri. Bu sayfalar, birincil Kullanıcı kullanılarak kullanıcı hesaplarını cihazlara eşler. 
 
 ### <a name="company-portal-app"></a>Şirket Portalı uygulaması
 Şirket Portalı uygulaması, Şirket Portalı oturum açan kullanıcı hesabının o cihazın birincil kullanıcısı olmasını bekler. Birincil kullanıcı olarak başka bir Kullanıcı atanırsa, Şirket Portalı bir uyarı gösterir:
@@ -63,13 +63,13 @@ Intune, kayıt sırasında veya hemen sonrasında cihazlara birincil kullanıcı
 | Windows | Yalnızca MDM 'ye kaydolma | Kullanıcı kaydediliyor | Kayıt sırasında | 
 | Windows | Karma ASıFATı + otomatik kayıt GPO 'SU | Windows 'da oturum açmak için ilk Kullanıcı | İlk Kullanıcı Windows 'da oturum açtığında| 
 | Windows | Ortak yönetim | Windows 'da oturum açmak için ilk Kullanıcı | İlk Kullanıcı Windows 'da oturum açtığında | 
-| Windows | Azure AD birleşimi (toplu kayıt belirteci) | Yok. | Geçerli değil | 
-| Windows | Azure AD katılımı (Autopilot kendi kendine dağıtım modu) | Yok. | Geçerli değil | 
+| Windows | Azure AD birleşimi (toplu kayıt belirteci) | Yok. | Uygulanamaz | 
+| Windows | Azure AD katılımı (Autopilot kendi kendine dağıtım modu) | Yok. | Uygulanamaz | 
 | Platformlar arası | Şirket Portalı uygulamayla Kullanıcı odaklı kayıt | Kullanıcı kaydediliyor | Kayıt sırasında |
 | Platformlar arası | Cihaz Kayıt Yöneticisi (DEM) | DEM kullanıcısı kaydediliyor | Kayıt sırasında |
 | iOS/ıpados, macOS | Apple otomatik cihaz kaydı (Kullanıcı benzeşimi ile DEP | Kullanıcı kaydediliyor | Kayıt sırasında |
-| iOS/ıpados, macOS | Apple otomatik cihaz kaydı (Kullanıcı benzeşimi olmadan DEP) | Yok. | Geçerli değil |
-| Android | Android şirkete ait, adanmış cihazlar | Yok. | Geçerli değil |
+| iOS/ıpados, macOS | Apple otomatik cihaz kaydı (Kullanıcı benzeşimi olmadan DEP) | Yok. | Uygulanamaz |
+| Android | Android şirkete ait, adanmış cihazlar | Yok. | Uygulanamaz |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>Birincil Kullanıcı ve Azure AD cihaz sahibi
 Bazı durumlarda, Intune birincil Kullanıcı Azure AD cihazının **Owner** özelliğinden farklı olabilir ( **azure ad cihazlarında** > **cihazlarda** görüntülenebilir). Azure AD cihaz sahibi, cihazın kaydı sırasında Azure Active Directory eklenir.

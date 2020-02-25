@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/07/2020
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c130ced8359311751c5ad68ac9789b11329595e0
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: c485d3c0cfc707324dd6be681b6341650acb8750
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529354"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576466"
 ---
-# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
+# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune yenilikler nelerdir?
 
 Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildirimler](#notices), [Geçmiş yayınlar](whats-new-archive.md)ve [Intune hizmet güncelleştirmelerinin nasıl yayımlandığına](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)ilişkin bilgileri de bulabilirsiniz. 
 
@@ -53,6 +53,105 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+<!-- ########################## -->
+## <a name="week-of-february-24-2020"></a>24 Şubat 2020 haftası
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>macOS Şirket Portalı Kullanıcı deneyimi geliştirmeleri<!-- 5568987 -->
+MacOS cihaz kayıt deneyimlerine ve Mac için Şirket Portalı uygulamasına yönelik iyileştirmeler yaptık. Şunları göreceksiniz:
+- Kayıt sırasında, kullanıcılarınızın Şirket Portalı en son sürümüne sahip olmasını sağlayacak daha iyi bir Microsoft **Otomatik güncelleştirme** deneyimi.
+- Kayıt sırasında gelişmiş bir uyumluluk denetimi adımı.
+- Kopyalanmış olay kimlikleri için destek, kullanıcılarınız cihazlarından Şirket destek ekibine daha hızlı bir şekilde hata gönderebilir.
+
+Mac için kayıt ve Şirket Portalı uygulaması hakkında daha fazla bilgi için bkz. [Şirket Portalı uygulamasını kullanarak macOS cihazınızı kaydetme](/intune-user-help/enroll-your-device-in-intune-macos-cp). 
+
+<!-- ########################## -->
+## <a name="week-of-february-17-2020-2002-service-release"></a>17 Şubat 2020 (2002 hizmet sürümü) haftası
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Uygulama yönetimi
+
+#### <a name="microsoft-defender-advanced-threat-protection-atp-app-for-macos---5424618---"></a>MacOS için Microsoft Defender Gelişmiş tehdit koruması (ATP) uygulaması<!-- 5424618 -->
+Intune, macOS için Microsoft Defender Gelişmiş tehdit koruması (ATP) uygulamasını yönetilen Mac cihazlarına dağıtmanın kolay bir yolunu sunar. Daha fazla bilgi için bkz. [Mac için Microsoft Intune ve Microsoft Defender Gelişmiş tehdit koruması](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac) [kullanarak MacOS CIHAZLARıNA Microsoft Defender ATP ekleme](~/apps/apps-advanced-threat-protection-macos.md) .  
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>Cihaz yapılandırması
+
+#### <a name="enable-network-access-control-nac-with-cisco-anyconnect-vpn-on-ios-devices---4860111----"></a>İOS cihazlarında Cisco AnyConnect VPN ile ağ erişim denetimi 'ni (NAC) etkinleştirme<!-- 4860111  -->
+İOS cihazlarında, bir VPN profili oluşturabilir ve Cisco AnyConnect (**cihaz yapılandırma** > **profilleri** >  > farklı bağlantı türleri kullanabilirsiniz. Örneğin, bağlantı türü için **Cisco AnyConnect** **> profil** türü için **iOS** > **VPN** platformu. 
+
+Cisco AnyConnect ile ağ erişim denetimi 'ni (NAC) etkinleştirebilirsiniz. Bu özelliği kullanmak için:
+
+1. [Cisco kimlik hizmetleri altyapısı yönetici kılavuzunda](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html), Azure 'Da Cisco Identity Services altyapısını (ISE) YAPıLANDıRMAK Için **MDM sunucusu olarak Microsoft Intune yapılandırma** bölümündeki adımları kullanın.
+2. Intune cihaz yapılandırma profilinde **ağ Access Control etkinleştir (NAC)** ayarını seçin.
+
+Tüm kullanılabilir VPN ayarlarını görmek için [iOS CIHAZLARıNDA VPN ayarlarını yapılandırma](../configuration/vpn-settings-ios.md)bölümüne gidin.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>Cihaz kaydı
+
+#### <a name="serial-number-on-the-apple-mdm-push-certificate-page--5947765----"></a>Apple MDM anında Iletme sertifikası sayfasındaki seri numarası<!--5947765  -->
+Apple MDM anında Iletme sertifikası sayfasında artık seri numarası görüntülenir. Sertifikayı oluşturan Apple KIMLIĞINE erişim kaybolursa, Apple MDM anında Iletme sertifikasına erişimi yeniden kazanmak için seri numarası gereklidir. Seri numarasını görmek için **cihazlar** > **iOS** > **IOS kaydı** > **Apple MDM anında iletme sertifikası**' na gidin.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="new-update-schedule-options-for-pushing-os-updates-to-enrolled-iosipados-devices--5879689----"></a>Kayıtlı iOS/ıpados cihazlarına işletim sistemi güncelleştirmelerini göndermek için yeni güncelleştirme zamanlaması seçenekleri<!--5879689  -->
+İOS/ıpados cihazları için işletim sistemi güncelleştirmelerini zamanlarken aşağıdaki seçenekler arasından seçim yapabilirsiniz. Bu, Apple Business Manager veya Apple Okul Yöneticisi kayıt türlerini kullanan cihazlar için geçerlidir.
+- Sonraki iadede Güncelleştir
+- Zamanlanan süre içinde güncelleştirme
+- Zamanlanan sürenin dışında güncelleştirme
+
+İkinci iki seçenek için birden çok zaman penceresi oluşturabilirsiniz.
+
+Yeni seçenekleri görmek **için > iOS** **/ıpados** > **Profil oluştur** > **iOS** > güncelleştirme ilkeleri ' ne gidin.
+
+#### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689----"></a>Kayıtlı cihazlara hangi iOS/ıpados güncelleştirmelerinin göndermek istediğinizi seçin<!--5879689  -->
+Apple Business Manager veya Apple Okul Yöneticisi kullanılarak kaydedilmiş cihazlara gönderim yapmak için belirli bir iOS/ıpados Güncelleştirmesi (en son güncelleştirme dışında) seçebilirsiniz. Bu tür cihazlarda, yazılım güncelleştirme görünürlüğünü birkaç gün boyunca geciktirmek için bir cihaz yapılandırma ilkesi ayarlanmış olmalıdır. Bu özelliği görmek **için > iOS** **/ıpados** > **Profil oluştur** > **iOS** > güncelleştirme ilkeleri ' ne gidin.
+
+### <a name="all-devices-list-improved-search-sort-and-filter--6179023--"></a>Tüm cihazlar için geliştirilmiş arama, sıralama ve filtreleme listeleri<!--6179023-->
+Tüm cihazlar listesi, daha iyi performans, arama, sıralama ve filtreleme için geliştirilmiştir.
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>Cihaz güvenliği
+
+#### <a name="improved-intune-reporting-experience---3791418-----"></a>İyileştirilmiş Intune raporlama deneyimi<!-- 3791418   -->
+Intune artık yeni rapor türleri, daha iyi rapor organizasyonu, daha odaklanmış görünümler, geliştirilmiş rapor işlevselliği ve daha tutarlı ve zamanında veriler de dahil olmak üzere gelişmiş bir raporlama deneyimi sunmaktadır. Raporlama deneyimi, genel önizlemeden GA 'ye (genel kullanılabilirlik) geçmeyecektir. Ayrıca, GA sürümü, [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'ndeki kutucuklar üzerinde yerelleştirme desteği, hata düzeltmeleri, tasarım iyileştirmeleri ve cihaz uyumluluk verileri toplama sağlar. 
+
+Yeni rapor türleri aşağıdakilere odaklanılmıştır:
+- **İşletimsel** -negatif bir sistem durumu odaklı yeni kayıtlar sağlar. 
+- **Kuruluş** -genel durumun daha geniş bir özetini sağlar.
+- **Geçmiş** -bir süre boyunca desenler ve eğilimler sağlar.
+- **Uzman** -kendi özel raporlarınızı oluşturmak için ham verileri kullanmanıza olanak sağlar.
+
+Yeni raporların ilk kümesi cihaz uyumluluğuna odaklanır. Daha fazla bilgi için bkz. [blog-Microsoft Intune raporlama çerçevesi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) ve [Intune raporları](~/fundamentals/reports.md).
+
+#### <a name="consolidated-the-location-of-security-baselines-in-the-ui---6177074-----"></a>Kullanıcı arabirimindeki güvenlik temellerinin konumu birleştirildi<!-- 6177074   -->
+Çeşitli kullanıcı arabirimi konumlarından *güvenlik temellerini* kaldırarak Microsoft Endpoint Manager Yönetim merkezinde [güvenlik temellerini](../protect/security-baselines.md) bulmak için yolları birleştiriyoruz. Güvenlik temellerini bulmak için artık şu yolu kullanacaksınız: **Endpoint security** > **Security temelleri**.
+
+#### <a name="expanded-support-for-imported-pkcs-certificates---6044197-wnready---"></a>İçeri aktarılan PKCS sertifikaları için genişletilmiş destek<!-- 6044197 WNReady -->
+*Android kurumsal tam olarak yönetilen cihazları*desteklemek için [içeri aktarılan PKCS sertifikalarını](../protect/certificates-imported-pfx-configure.md#supported-platforms) kullanma desteğini genişlettik. Genellikle, PFX sertifikalarını içeri aktarma işlemi, e-posta şifrenin gerçekleşebilmesi için bir kullanıcının tüm cihazlarında gerekli olduğu S/MIME şifreleme senaryolarında kullanılır.
+
+Aşağıdaki platformlar PFX sertifikalarının içeri aktarımını destekler:
+- Android-Cihaz Yöneticisi
+- Android kurumsal-tam yönetilen
+- Android kurumsal Iş profili
+- iOS
+- Mac
+- Windows 10
+
+#### <a name="view-the-endpoint-security-configuration-for-devices---6206460----"></a>Cihazlar için uç nokta güvenlik yapılandırmasını görüntüleme<!-- 6206460  -->
+[Belirli bir cihaza uygulanan Endpoint Security yapılandırmalarının](../protect/security-baselines-monitor.md#view-endpoint-security-configurations-per-device)görüntülenmesi Için Microsoft Endpoint Manager Yönetim Merkezi ' nde seçeneğin adını güncelleştirdik. Bu seçenek, uygun güvenlik temellerini ve güvenlik temelleri dışında oluşturulan ek ilkeleri gösterdiği için **uç nokta güvenlik yapılandırması** olarak yeniden adlandırılır. Daha önce Bu seçenek *güvenlik temelleri*olarak adlandırılmıştı. 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
+
+#### <a name="intune-roles-user-interface-changes-coming--5801612-----"></a>Intune rolleri Kullanıcı arabirimi değişiklikleri geliyor<!--5801612   -->
+[Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) > **Kiracı Yönetimi** > **rolleri** için Kullanıcı arabirimi, daha kolay ve sezgisel bir tasarıma geliştirilmiştir. Bu deneyim, şimdi kullandığınız ayarların ve ayrıntıların aynısını sağlar, ancak yeni deneyim sihirbaz benzeri bir işlem kullanır.
 
 <!-- ########################## -->
 ## <a name="week-of-february-17-2020"></a>17 Şubat 2020 haftası
@@ -126,7 +225,7 @@ Artık kuruluş türünü seçtiğinizde, `proxy.contoso.com`gibi bir proxy sunu
 
 Yapılandırabileceğiniz geçerli Wi-Fi ayarlarını görmek için [Microsoft Intune ' de Android Enterprise ve Android bilgi noktası çalıştıran cihazlar Için Wi-Fi ayarları ekle](../configuration/wi-fi-settings-android-enterprise.md)' ye gidin.
 
-Uygulama hedefi:
+Uygulama alanı:
 - Android kurumsal iş profili
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -147,7 +246,6 @@ Aşağıdaki bilgiler artık cihazlar için **genel bakış** sayfasıdır:
 - Depolama kapasitesi (cihazdaki fiziksel depolama miktarı) 
 - CPU mimarisi
 
-
 #### <a name="ios-bypass-activation-lock-remote-action-renamed-to-disable-activation-lock---5904591----"></a>iOS bypass Etkinleştirme Kilidi uzak eylem devre dışı olarak yeniden adlandırıldı Etkinleştirme Kilidi <!--5904591  -->
 Uzak eylem **atlama Etkinleştirme Kilidi** , **Etkinleştirme Kilidi devre dışı bırakılacak**şekilde yeniden adlandırıldı. Daha fazla bilgi için bkz. [Intune Ile iOS etkinleştirme kilidi devre dışı bırakma](../remote-actions/device-activation-lock-bypass.md).
 
@@ -155,7 +253,6 @@ Uzak eylem **atlama Etkinleştirme Kilidi** , **Etkinleştirme Kilidi devre dı�
 Intune artık [Windows 10 özellik güncelleştirme dağıtımlarını](../protect/windows-update-for-business-configure.md#windows-10-feature-updates)kullanarak Autopilot kayıtlı cihazların hedeflenmesini desteklemektedir.
 
 Windows 10 özellik güncelleştirme ilkeleri, Autopilot Out deneyimi (OOBE) sırasında uygulanamıyor ve yalnızca bir cihazın sağlama işlemini tamamladıktan (genellikle bir gün) sonra ilk Windows Update taramaya uygulanır.
-
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="monitor-and-troubleshoot"></a>İzleme ve sorun giderme
@@ -223,7 +320,7 @@ Microsoft Edge, Office ve Windows ayarlarını denetlemek ve yönetmek için Mic
 
 Intune 'da ADMX şablonları hakkında daha fazla bilgi için, bkz. [Microsoft Intune Grup İlkesi ayarlarını yapılandırmak Için Windows 10 şablonlarını kullanma](../configuration/administrative-templates-windows.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - Windows 10 ve üzeri
 
@@ -261,9 +358,9 @@ Bu yeni ayarlar, SSO uygulama uzantıları ve Apple 'ın yerleşik Kerberos uzan
 
 Yapılandırabileceğiniz SSO uygulama uzantısı ayarlarının tam aralığını görmek için, [macOS 'Ta](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)IOS ve SSO ['daki SSO](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) ' ya gidin.
 
-Uygulama hedefi:
+Uygulama alanı:
 
-- iOS/ıpados
+- iOS/iPadOS
 - Mac OS
 
 #### <a name="we-have-updated-two-device-restriction-settings-for-ios-and-ipados-devices-to-correct-their-behavior---5701352------"></a>İOS ve ıpados cihazları için davranışlarını düzeltmek üzere iki cihaz kısıtlama ayarını güncelleştirdik<!-- 5701352    -->
@@ -305,13 +402,12 @@ Artık cihaz ayrıntıları sayfasında bir cihazın Ethernet MAC adresini göre
 - [Intune cihaz uyumluluğuna genel bakış](../protect/device-compliance-get-started.md)
 
 #### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>Sertifikalar ile cihaz sağlamak için PKCS sertifika profillerini kullanma<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
-Artık, Wi-Fi ve VPN için olanlar gibi profillerle ilişkilendirildiğinde, Android for Work, iOS ve Windows çalıştıran *cihazlara* sertifika vermek için PKCS sertifika profillerini kullanabilirsiniz. Daha önce bu üç platform yalnızca Kullanıcı tabanlı sertifikaları desteklemekte ve cihaz tabanlı destek, macOS ile sınırlandırılmıştır.
+Artık, Wi-Fi ve VPN için olanlar gibi profillerle ilişkilendirildiğinde Android for Work, iOS/ıpados ve Windows çalıştıran *cihazlara* sertifika vermek için PKCS sertifika profillerini kullanabilirsiniz. Daha önce bu üç platform yalnızca Kullanıcı tabanlı sertifikaları desteklemekte ve cihaz tabanlı destek, macOS ile sınırlandırılmıştır.
 
 > [!NOTE]
 > PKCS sertifika profilleri, Wi-Fi profilleriyle desteklenmez. Bunun yerine, bir [EAP türü](../configuration/wi-fi-settings-windows.md#enterprise-profile)kullandığınızda SCEP sertifika profillerini kullanın.
 
 Cihaz tabanlı bir sertifika kullanmak için, desteklenen platformlar için [PKCS sertifika profili oluştururken](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile) **Ayarlar**' ı seçin. Artık, cihaz veya Kullanıcı seçeneklerini destekleyen **sertifika türü**ayarını görürsünüz.
-
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -323,7 +419,6 @@ Yeni bir merkezi denetim günlüğü deneyimi artık tüm kategoriler için Dene
 #### <a name="scope-tag-information-included-in-audit-log-activity-details--5763534---"></a>Denetim günlüğü etkinlik ayrıntılarına dahil edilen kapsam etiketi bilgileri<!--5763534 -->
 Denetim günlüğü etkinlik ayrıntıları artık kapsam etiketi bilgilerini içerir (kapsam etiketlerini destekleyen Intune nesneleri için). Denetim günlükleri hakkında daha fazla bilgi için bkz. [olayları izlemek ve izlemek için Denetim günlüklerini kullanma](monitor-audit-logs.md).
 
-
 <!-- ########################## -->
 ## <a name="week-of-december-2-2019"></a>2 Aralık 2019 haftası
 
@@ -334,7 +429,6 @@ Yazılım Güvencesi kapsamındaki Configuration Manager müşteriler, ortak yö
 - Diğer platformlardaki cihazlarda hala tam Intune lisansları gerekir.
 
 Daha fazla bilgi için bkz. [Lisans koşulları](https://www.microsoft.com/en-us/Licensing/product-licensing/products).
-
 
 <!-- ########################## -->
 ## <a name="week-of-november-18-2019-1911-service-release"></a>18 Kasım 2019 (1911 hizmet sürümü) haftası
@@ -370,7 +464,7 @@ Aşağıdakiler dahil olmak üzere kullanılabilir yeni Exchange ActiveSync ayar
 
 Bu ayar hakkında daha fazla bilgi için, [Intune 'Da iOS cihazları Için e-posta profili ayarları](../configuration/email-settings-ios.md)' na gidin. 
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -380,7 +474,7 @@ Android kurumsal tam yönetilen ve adanmış cihazlarda, kullanıcıların kişi
 
 Yapılandırabileceğiniz ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - Android kurumsal tam yönetilen cihazlar
 - Android kurumsal adanmış cihazlar
@@ -392,9 +486,9 @@ Bu ayarın cihazlar üzerinde hiçbir etkisi yoktur. Bu ayarı mevcut profillerd
 
 Yapılandırabileceğiniz tüm ayarları görmek için [iOS ve ıpados cihaz ayarları ' na bakın ve Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 
-- iOS/ıpados
+- iOS/iPadOS
 
 #### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 özellik güncelleştirmeleri (Genel Önizleme)<!-- 2384877 -->
 Windows 10 [özellik güncelleştirmelerini](../protect/windows-update-for-business-configure.md#windows-10-feature-updates) artık Windows 10 cihazlara dağıtabilirsiniz. Windows 10 özellik güncelleştirmeleri, cihazların yüklenmesini ve devam etmek istediğiniz Windows 10 sürümünü ayarlayan yeni bir yazılım güncelleştirme ilkesidir. Bu yeni ilke türünü, mevcut Windows 10 güncelleştirme halkalarınızla birlikte kullanabilirsiniz.
@@ -410,7 +504,7 @@ Yalnızca bazı uygulamalar yönetilen tercihleri destekler ve bu uygulamalar t�
 
 Bu özellik hakkında daha fazla bilgi için, bkz. [Microsoft Intune kullanarak macOS cihazlarına özellik listesi dosyası ekleme](../configuration/preference-file-settings-macos.md).
 
-Uygulama hedefi:
+Uygulama alanı:
 
 - 10,7 ve daha yeni çalıştıran macOS cihazları
 
@@ -462,7 +556,6 @@ Intune artık, Wi-Fi profillerine sertifika tabanlı erişim için Android kurum
 #### <a name="intune-audit-logs-for-business-to-business-collaboration--5670211---"></a>İşletmeden işletmeye işbirliği için Intune denetim günlükleri<!--5670211 -->
 İşletmeden işletmeye (B2B) işbirliği, şirketinizin uygulamalarını ve hizmetlerini başka bir kuruluştan Konuk kullanıcılarla güvenli bir şekilde paylaşmanızı sağlarken kendi şirket verileriniz üzerinde denetim sağlar. Intune artık B2B Konuk kullanıcıları için Denetim günlüklerini desteklemektedir. Örneğin, Konuk kullanıcılar değişiklik yaparken, Intune bu verileri denetim günlükleri aracılığıyla yakalayabilir. Daha fazla bilgi için bkz. [Azure ACTIVE DIRECTORY B2B 'de Konuk Kullanıcı erişimi nedir?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
-
 <!-- ########################## -->
 ## <a name="week-of-november-11-2019"></a>11 Kasım 2019 haftası  
 
@@ -479,7 +572,6 @@ MacOS kayıt deneyiminin Şirket Portalı, iOS kayıt deneyimi için Şirket Por
 
 #### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Windows Şirket Portalı uygulamasından başlatılan web uygulamaları<!-- 5030972 -->
 Son kullanıcılar artık doğrudan Windows Şirket Portalı uygulamasından Web uygulamaları başlatabilir. Son kullanıcılar Web uygulamasını seçip **tarayıcıda aç**seçeneğini belirleyebilir. Yayınlanan Web URL 'SI doğrudan bir Web tarayıcısında açılır. Bu işlevsellik bir sonraki hafta boyunca alınacaktır. Web Apps hakkında daha fazla bilgi için bkz. [Microsoft Intune Web Apps ekleme](~/apps/web-app.md).  
-
 
 #### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950----"></a>Windows 10 için Şirket Portalı yeni atama türü sütunu <!-- 5459950  -->
 Şirket Portalı > **yüklü uygulamalar** > **atama türü** sütunu, **kuruluşunuzun gerektirdiği**şekilde yeniden adlandırıldı.  Bu sütunda, kullanıcılar bir uygulamanın gerekli olduğunu ya da kuruluşlarına göre isteğe bağlı olduğunu göstermek için **Evet** veya **Hayır** değeri görür. Cihaz kullanıcıları kullanılabilir uygulamalar kavramı hakkında karışdığı için bu değişiklikler yapılmıştır. Kullanıcılarınız, [cihazınızdaki uygulamaları yükleme ve paylaşma](/intune-user-help/install-apps-cpapp-windows)konusundaki Şirket portalı uygulamaları yükleme hakkında daha fazla bilgi bulabilir. Kullanıcılarınız için Şirket Portalı uygulamasını yapılandırma hakkında daha fazla bilgi için bkz. [Microsoft Intune şirket portalı uygulamasını yapılandırma](~/apps/company-portal-app.md).  
@@ -500,3 +592,5 @@ Son kullanıcılar artık doğrudan Windows Şirket Portalı uygulamasından Web
 ## <a name="notices"></a>Bildirimler
 
 [!INCLUDE [Intune notices](../includes/intune-notices.md)]
+
+

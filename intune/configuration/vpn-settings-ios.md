@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01c6ae06459590fa9bb9842e90ad53e6c522d6a6
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 2964893102bc1b6f9967b1a37261b860d8ea0104
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77512492"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569396"
 ---
 # <a name="add-vpn-settings-on-ios-and-ipados-devices-in-microsoft-intune"></a>Microsoft Intune 'de iOS ve ıpados cihazlarına VPN ayarları ekleme
 
@@ -43,7 +43,7 @@ Aşağıdaki satıcı listesinden VPN bağlantı türünü seçin:
 - **SonicWall Mobile Connect**
 - **F5 Access Eski**: F5 Access uygulama sürümü 2.1 ve öncesi için geçerlidir.
 - **F5 Access**: F5 Access uygulama sürümü 3.0 ve sonrası için geçerlidir.
-- **Palo Alto Networks GlobalProtect (Eski)** : Palo Alto Networks GlobalProtect uygulama sürümü 4.1 ve öncesi için geçerlidir.
+- **Palo Alto Networks GlobalProtect (Eski)**: Palo Alto Networks GlobalProtect uygulama sürümü 4.1 ve öncesi için geçerlidir.
 - **Palo Alto Networks GlobalProtect**: Palo Alto Networks GlobalProtect uygulama sürümü 5.0 ve sonrası için geçerlidir.
 - **Pulse Secure**
 - **Cisco (IPSec)**
@@ -78,15 +78,14 @@ Aşağıdaki listede gösterilen ayarlar, seçtiğiniz VPN bağlantı türüne g
 - **Bölünmüş tünel**: Trafiğe bağlı olarak hangi bağlantının kullanılacağına cihazların karar vermesini sağlamak için bu seçeneği **Etkinleştirin** veya **Devre Dışı Bırakın**. Örneğin, oteldeki bir kullanıcı çalışma dosyalarına erişmek için VPN bağlantısını, web’e göz atmak için ise otelin standart ağını kullanır.
 
 - **VPN tanımlayıcısı** (özel VPN, Zscaler ve Citrix): kullanmakta olduğunuz VPN uygulaması için bir tanımlayıcı ve VPN sağlayıcınız tarafından sağlanır.
-  - **Kuruluşunuzun özel VPN öznitelikleri için anahtar/değer çiftlerini girin**: VPN bağlantınızı özelleştiren **Anahtarlar** ve **Değerler**’i ekleyin veya içeri aktarın. Bu değerlerin genelde VPN sağlayıcınız tarafından verildiğini unutmayın.
+- Kuruluşunuzun özel VPN öznitelikleri (özel VPN, Zscaler ve Citrix) **için anahtar/değer çiftleri girin** : VPN bağlantınızı özelleştiren **anahtar** ve **değer** ekleme veya içeri aktarma. Bu değerlerin genelde VPN sağlayıcınız tarafından verildiğini unutmayın.
 
-- **Ağ erişim denetimini etkinleştir (NAC)** (Citrix SSO, F5 Access): **kabul ediyorum**' u SEÇTIĞINIZDE, cihaz kimliği VPN profiline dahildir. Bu KIMLIK, ağ erişimine izin vermek veya erişimi engellemek için VPN kimlik doğrulaması için kullanılabilir.
+- **Ağ erişim denetimini etkinleştir (NAC)** (Cisco AnyConnect, Citrix SSO, F5 Access): **kabul ediyorum**' u SEÇTIĞINIZDE, cihaz kimliği VPN profiline dahildir. Bu KIMLIK, ağ erişimine izin vermek veya erişimi engellemek için VPN kimlik doğrulaması için kullanılabilir.
 
-  **F5 erişimini kullanırken**şunları yaptığınızdan emin olun:
+    **Ise Ile Cisco AnyConnect kullanırken**şunları yaptığınızdan emin olun:
 
-  - F5 BIG-IP 13.1.1.5 kullandığınızı onaylayın. BÜYÜK IP 14 desteklenmez.
-  - NAC için büyük IP 'yi Intune ile tümleştirin. Bkz. [genel bakış: uç nokta yönetim sistemleri ile cihaz gönderme denetimleri IÇIN APM yapılandırma](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Kılavuzu.
-  - VPN profilinde NAC 'yi etkinleştirin.
+    - Daha önce yapmadıysanız, [Cisco kimlik hizmetleri altyapısı yönetici KıLAVUZUNDA](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html) **MDM sunucusu olarak Microsoft Intune yapılandırma** altında açıklandığı gibi NAC Için Ise 'yi Intune ile tümleştirin.
+    - VPN profilinde NAC 'yi etkinleştirin.
 
   **CITRIX SSO 'Yu ağ geçidiyle kullanırken**şunları yaptığınızdan emin olun:
 
@@ -95,10 +94,11 @@ Aşağıdaki listede gösterilen ayarlar, seçtiğiniz VPN bağlantı türüne g
   - NAC için Citrix Gateway 'i Intune ile tümleştirin. Bkz. [Microsoft Intune/Enterprise Mobility Suite 'ı NetScaler (LDAP + OTP senaryosu)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix dağıtım kılavuzu ile tümleştirme.
   - VPN profilinde NAC 'yi etkinleştirin.
 
-  **Önemli ayrıntılar**:  
+  **F5 erişimini kullanırken**şunları yaptığınızdan emin olun:
 
-  - NAC etkinleştirildiğinde, VPN her 24 saatte bir kesilir. VPN hemen yeniden bağlanabilir.
-  - Cihaz KIMLIĞI profilin bir parçasıdır, ancak Intune 'da gösterilmez. Bu kimlik Microsoft tarafından herhangi bir yerde depolanmaz ve paylaşılmaz.
+  - F5'e büyük IP 13.1.1.5 veya üstünü kullandığınızı onaylayın. 
+  - NAC için büyük IP 'yi Intune ile tümleştirin. Bkz. [genel bakış: uç nokta yönetim sistemleri ile cihaz gönderme denetimleri IÇIN APM yapılandırma](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Kılavuzu.
+  - VPN profilinde NAC 'yi etkinleştirin.
 
   Cihaz KIMLIĞINI destekleyen VPN ortakları için, Citrix SSO gibi VPN istemcisi KIMLIĞI alabilir. Daha sonra, cihazın kaydedildiğini ve VPN profilinin uyumlu veya uyumlu olmadığını doğrulamak için Intune 'U sorgulayabilir.
 
@@ -199,7 +199,7 @@ Bu ayarlar, > **Ikev2** **bağlantı türünü** seçtiğinizde geçerlidir.
     - Gerekirse bağlan
     - Hiçbir zaman bağlanma
   - **Eylem**: Aşağıdaki öğelerden birini seçin:
-    - Bağlanma
+    - Bağlan
     - Bağlantıyı değerlendir
     - Yoksayma
     - Bağlantıyı Kes

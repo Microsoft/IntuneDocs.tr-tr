@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f468518130b1a3a98fd31fb235679ece574c3029
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 43e104d9f32f6b6204ffc3bd461bb06764543e3c
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514294"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569277"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune 'da Windows 10 cihazlarını yapılandırmak için güvenlik temellerini kullanma
 
@@ -75,7 +75,7 @@ Aşağıdaki güvenlik temeli örnekleri Intune ile kullanılabilir. Her bir tab
   - [Önizleme: 2018 Ekim için MDM güvenlik temeli](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Microsoft Defender ATP taban çizgisi**
-   *(Bu temeli kullanmak Için ortamınız [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)'nı kullanmaya yönelik önkoşulları karşılamalıdır)* .
+   *(Bu temeli kullanmak Için ortamınız [Microsoft Defender Gelişmiş tehdit koruması](advanced-threat-protection.md#prerequisites)'nı kullanmaya yönelik önkoşulları karşılamalıdır)*.
   - [Microsoft Defender ATP temeli](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
@@ -142,7 +142,7 @@ Güvenlik temellerinde çalışırken ortak görevler şunları içerir:
 
    ![Taban çizgisini gözden geçirme](./media/security-baselines/review.png)
 
-9. Bir profil oluşturduktan sonra **cihaz güvenliği** > **güvenlik temelleri**' ne giderek düzenleyin, yapılandırdığınız taban çizgisi türünü seçin ve ardından **profiller**' i seçin. Kullanılabilir profiller listesinden profili seçin ve ardından **Özellikler**' i seçin. Tüm kullanılabilir yapılandırma sekmelerinden ayarları düzenleyebilir ve değişikliklerinizi uygulamak için **gözden geçir + kaydet** ' i seçebilirsiniz.
+9. Bir profil oluşturduktan sonra, **uç nokta güvenliği** > **güvenlik temelleri**' ne giderek düzenleyin, yapılandırdığınız taban çizgisi türünü seçin ve ardından **profiller**' i seçin. Kullanılabilir profiller listesinden profili seçin ve ardından **Özellikler**' i seçin. Tüm kullanılabilir yapılandırma sekmelerinden ayarları düzenleyebilir ve değişikliklerinizi uygulamak için **gözden geçir + kaydet** ' i seçebilirsiniz.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>Bir profilin temel sürümünü değiştirme
 

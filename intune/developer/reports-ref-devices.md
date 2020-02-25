@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 19ecbc632b924dda297b3692cabf5345b4724b30
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654082"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575778"
 ---
 # <a name="reference-for-devices-entities"></a>Cihaz varlıkları için başvuru
 
 **Cihazlar** kategorisi, mobil cihazlar için şu gibi bilgileri izleyen varlıklar içerir:
 
-- Cihaz Türü
+- Cihaz türü
 - Cihaz kaydı ve kayıt durumu
 - Cihaz sahipliği
 - Cihaz yönetim durumu
@@ -42,18 +42,18 @@ ms.locfileid: "75654082"
 
 **DeviceType** varlığı, diğer veri ambarı varlıkları tarafından başvurulan cihaz türünü temsil eder. Cihaz türü genellikle cihaz modelini, üreticisini veya her ikisini de belirtir.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | deviceTypeID |Cihaz türünün benzersiz tanımlayıcısı |
 | deviceTypeKey |Veri ambarındaki cihaz türünün benzersiz tanımlayıcısı - vekil anahtar |
-| deviceTypeName |Cihaz Türü |
+| deviceTypeName |Cihaz türü |
 
 ### <a name="example"></a>Örnek
 
-| deviceTypeID  | Name | Description |
+| deviceTypeID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Masaüstü |Windows Masaüstü cihaz |
-| 1\. |WindowsRT |WindowsRT cihaz |
+| 1 |WindowsRT |WindowsRT cihaz |
 | 2 |WinMO6 |Windows Mobile 6.0 cihaz |
 | 3 |Nokia |Nokia cihaz |
 | 4 |WindowsPhone |Windows Phone cihaz |
@@ -76,7 +76,7 @@ ms.locfileid: "75654082"
 ## <a name="enrollmentactivities"></a>Kayıt \ tüm 
 KayıtSayısı **varlığı,** bir cihaz kaydının etkinliğini gösterir.
 
-| Özellik                      | Description                                                               |
+| Özellik                      | Açıklama                                                               |
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | Bu kayıt etkinliğinin kaydedildiği tarih anahtarı.               |
 | deviceEnrollmentTypeKey       | Kayıt türünün anahtarı.                                        |
@@ -85,19 +85,19 @@ KayıtSayısı **varlığı,** bir cihaz kaydının etkinliğini gösterir.
 | Kayıt%0 kategori anahtarı  | Kayıt hatası kategorisinin anahtarı (kayıt başarısız olduysa).        |
 | Kayıtefailurereasonkey    | Kayıt hatası nedeninin anahtarı (kayıt başarısız olursa).          |
 | osVersion                     | Cihazın işletim sistemi sürümü.                               |
-| count                         | Yukarıdaki sınıflandırmalarla eşleşen kayıt etkinliklerinin toplam sayısı.  |
+| {1&gt;count&lt;1}                         | Yukarıdaki sınıflandırmalarla eşleşen kayıt etkinliklerinin toplam sayısı.  |
 
 ## <a name="enrollmenteventstatuses"></a>kayıt \ Menteventdurumlar 
 KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
 
-| Özellik                   | Description                                                                       |
+| Özellik                   | Açıklama                                                                       |
 |----------------------------|-----------------------------------------------------------------------------------|
 | Kayıtanahtarı   | Veri ambarındaki (vekil anahtar) kayıt durumunun benzersiz tanımlayıcısı  |
 | KayıtAdı Menteventstatusname  | Kayıt durumunun adı. Aşağıdaki örneklere bakın.                            |
 
 ### <a name="example"></a>Örnek
 
-| KayıtAdı Menteventstatusname  | Description                            |
+| KayıtAdı Menteventstatusname  | Açıklama                            |
 |----------------------------|----------------------------------------|
 | Başarılı                    | Başarılı bir cihaz kaydı         |
 | Başarısız                     | Hatalı bir cihaz kaydı             |
@@ -106,19 +106,19 @@ KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
 ## <a name="enrollmentfailurecategories"></a>kayıtkonumunda Mentfailurecategories 
 **Kayıt%0 kategori** varlığı, cihaz kaydının neden başarısız olduğunu gösterir. 
 
-| Özellik                       | Description                                                                                 |
+| Özellik                       | Açıklama                                                                                 |
 |--------------------------------|---------------------------------------------------------------------------------------------|
 | Kayıt%0 kategori anahtarı   | Veri ambarındaki (vekil anahtar) kayıt hatası kategorisinin benzersiz tanıtıcısı  |
 | kayıtkonumunda Mentfailurecategoryname  | Kayıt hatası kategorisinin adı. Aşağıdaki örneklere bakın.                            |
 
 ### <a name="example"></a>Örnek
 
-| kayıtkonumunda Mentfailurecategoryname   | Description                                                                                                   |
+| kayıtkonumunda Mentfailurecategoryname   | Açıklama                                                                                                   |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Uygulanamaz                  | Kayıt hatası kategorisi geçerli değil.                                                            |
 | Kullanılamıyor                   | Kayıt hatası kategorisi kullanılamıyor.                                                             |
 | Bilinmiyor                         | Bilinmeyen hata.                                                                                                |
-| Kimlik doğrulama                  | Kimlik doğrulaması gerçekleştirilemedi.                                                                                        |
+| Kimlik Doğrulama                  | Kimlik doğrulama başarısız oldu.                                                                                        |
 | Yetkilendirme                   | Çağrının kimliği doğrulandı, ancak kaydolma yetkisi yok.                                                         |
 | AccountValidation               | Kayıt için Hesap doğrulanamadı. (Hesap engellendi, kayıt etkin değil)                      |
 | Kullanıcı doğrulaması                  | Kullanıcı doğrulanamadı. (Kullanıcı yok, Lisans eksik)                                           |
@@ -133,14 +133,14 @@ KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
 ## <a name="enrollmentfailurereasons"></a>kayıtkullanım Failurereadönemleri  
 **Kayıtlımafailurereason** varlığı, belirli bir hata kategorisindeki cihaz kaydı hatasının daha ayrıntılı bir nedenini gösterir.  
 
-| Özellik                     | Description                                                                               |
+| Özellik                     | Açıklama                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Kayıtefailurereasonkey   | Veri ambarındaki (vekil anahtar) kayıt hatası nedeninin benzersiz tanıtıcısı  |
 | Kayıtefailurereasonname  | Kayıt hatası nedeninin adı. Aşağıdaki örneklere bakın.                            |
 
 ### <a name="example"></a>Örnek
 
-| Kayıtefailurereasonname      | Description                                                                                                                                                                                            |
+| Kayıtefailurereasonname      | Açıklama                                                                                                                                                                                            |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Uygulanamaz                   | Kayıt hatası nedeni geçerli değil.                                                                                                                                                       |
 | Kullanılamıyor                    | Kayıt hatası nedeni kullanılamıyor.                                                                                                                                                        |
@@ -163,7 +163,7 @@ KayıtSayısı **varlığı,** bir cihaz kaydının sonucunu gösterir.
 
 Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinmeyen olduğunu gösterir.
 
-| Özellik  | Description | Örnek |
+| Özellik  | Açıklama | Örnek |
 |---------|------------|--------|
 | ownerTypeID |Sahip türünün benzersiz tanımlayıcısı. | |
 | ownerTypeKey |Veri ambarındaki sahip türünün benzersiz tanımlayıcısı - vekil anahtar. | |
@@ -176,7 +176,7 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 
 **Managementstates** varlığı, cihazın durumu hakkında ayrıntılar sağlar. Ayrıntılar; uzak eylemlerin uygulandığı, cihaza jailbreak uygulandığı veya cihazın kökünün belirtildiği durumlarda faydalı olabilir.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | managementStateID | Yönetim durumunun benzersiz tanımlayıcısı. |
 | managementStateKey | Veri ambarındaki yönetim durumunun benzersiz tanımlayıcısı - vekil anahtar. |
@@ -184,10 +184,10 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 
 ### <a name="example"></a>Örnek
 
-| managementStateID  | Name | Description |
+| managementStateID  | Ad | Açıklama |
 |---------|------------|--------|
 | 0 |Yönetilen | Hiçbir bekleyen uzak eylem olmadan yönetilir. |
-| 1\. |RetirePending | Cihaz için bekleyen bir devre dışı bırakma komutu vardır. |
+| 1 |RetirePending | Cihaz için bekleyen bir devre dışı bırakma komutu vardır. |
 | 2 |RetireFailed | Devre dışı bırakma komutu cihazda başarısız oldu. |
 | 3 |WipePending | Cihaz için bekleyen bir silme komutu vardır. |
 | 4 |WipeFailed | Silme komutu cihazda başarısız oldu. |
@@ -203,7 +203,7 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 
 **Managementagenttype** varlığı, bir cihazı yönetmek için kullanılan aracıları temsil eder.
 
-| Özellik  | Description |
+| Özellik  | Açıklama |
 |---------|------------|
 | Managementagenttypeıd | Yönetim aracısı türünün benzersiz tanımlayıcısı. |
 | managementAgentTypeKey | Veri ambarındaki yönetim aracısı türünün benzersiz tanımlayıcısı - vekil anahtar. |
@@ -211,9 +211,9 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 
 ### <a name="example"></a>Örnek
 
-| ManagementAgentTypeID  | Name | Description |
+| ManagementAgentTypeID  | Ad | Açıklama |
 |---------|------------|--------|
-| 1\. |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
+| 1 |EAS | Cihaz, Exchange Active Sync yoluyla yönetiliyor |
 | 2 |MDM | Cihaz bir MDM aracısı kullanılarak yönetiliyor |
 | 3 |EasMdm | Cihaz, Exchange Active Sync ve bir MDM aracısıyla yönetiliyor |
 | 4 |IntuneClient | Cihaz, Intune bilgisayar aracısı tarafından yönetilir |
@@ -225,7 +225,7 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 
 **Cihazlar** varlığı, yönetim altındaki tüm kayıtlı cihazları ve bunlara karşılık gelen özellikleri listeler.
 
-|          Özellik          |                                                                                       Description                                                                                      |
+|          Özellik          |                                                                                       Açıklama                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | deviceKey                  | Veri ambarındaki cihazın benzersiz tanımlayıcısı - vekil anahtar.                                                                                                               |
 | deviceId                   | Cihazın benzersiz tanımlayıcısı.                                                                                                                                                     |
@@ -245,11 +245,11 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 | osVersion                  | Cihazın işletim sistemi sürümü.                                                                                                                                                |
 | Easdeviceıd                | Cihazın Exchange ActiveSync KIMLIĞI.                                                                                                                                                  |
 | serialNumber               | SerialNumber                                                                                                                                                                           |
-| userId                     | Cihazla ilişkili kullanıcının Benzersiz Tanımlayıcısı.                                                                                                                           |
+| UserID                     | Cihazla ilişkili kullanıcının Benzersiz Tanımlayıcısı.                                                                                                                           |
 | rowLastModifiedDateTimeUTC | Bu cihazın veri ambarında son değiştirilme tarihi ve saati (UTC).                                                                                                       |
 | üretici               | Cihazın üreticisi                                                                                                                                                             |
-| model                      | Cihazın modeli                                                                                                                                                                    |
-| operatingSystem            | Cihazın işletim sistemi. Windows, iOS vb.                                                                                                                                   |
+| {1&gt;model&lt;1}                      | Cihazın modeli                                                                                                                                                                    |
+| operatingSystem            | Cihazın işletim sistemi. Windows, iOS/ıpados, vb.                                                                                                                                   |
 | isDeleted                  | Bu cihazın silinip silinmediğini gösteren ikili dosya.                                                                                                                                 |
 | androidSecurityPatchLevel  | Android güvenlik düzeltme eki düzeyi                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
@@ -268,7 +268,7 @@ Kayıtsahibi **türü** varlığı, bir cihazın kurumsal, kişisel veya bilinme
 
 **Devicepropertyhistory** varlığı, cihazlar tablosuyla aynı özelliklere ve son 90 gün boyunca her bir cihaz kaydının günlük anlık görüntülerine sahiptir. DateKey sütunu, her satır için günü gösterir.
 
-|          Özellik          |                                                                                      Description                                                                                     |
+|          Özellik          |                                                                                      Açıklama                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | dateKey                    | Günü gösteren tarih tablosuna başvuru.                                                                                                                                          |
 | deviceKey                  | Veri ambarındaki cihazın benzersiz tanımlayıcısı-vekil anahtar. Bu, Intune cihaz kimliğini barındıran Cihaz tablosuna bir başvurudur.                               |

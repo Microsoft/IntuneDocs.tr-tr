@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: bfa2758546595d1e6237d88e128958c50759eb04
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207426"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569192"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Intune 'da özel bir rol oluşturma
 
@@ -34,31 +34,30 @@ Rolleri oluşturmak, düzenlemek ve atamak için, hesabınızın Azure AD’de a
 
 ## <a name="to-create-a-custom-role"></a>Özel bir rol oluşturmak için
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Ekle** > **tüm roller** > **Roller** ' i seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **Oluştur** > **tüm roller** > **Kiracı Yönetimi** > **Roller** ' i seçin.
 
-2. **Özel Rol Ekle** dikey penceresinde yeni rol için ad ve açıklama girin, ardından **İzinler**'e tıklayın.
+2. **Temel bilgiler** sayfasında, yeni rol için bir ad ve açıklama girin ve ardından **İleri**' yi seçin.
 
-3. **İzinler** dikey penceresinde, bu rolle birlikte kullanmak istediğiniz izinleri seçin.
+3. **İzinler** sayfasında, bu rolle birlikte kullanmak istediğiniz izinleri seçin.
 
-4. **Kapsam (Etiketler)** dikey penceresinde bu rolün etiketlerini seçin. Bu rol, bu etiketlerin de bulunduğu kaynaklara erişebilir.
+4. **Kapsam (Etiketler)** sayfasında bu rolün etiketlerini seçin. Bu rol, bu etiketlerin de bulunduğu kaynaklara erişebilir. **İleri**’yi seçin.
 
-5. İşiniz bittiğinde **Tamam**’ı seçin.
-
-6. **Özel Rol Ekle** dikey penceresinde **Oluştur**’a tıklayın. Yeni rol, **Intune rolleri-tüm roller** dikey penceresinde listede görüntülenir.
-
+5. **Gözden geçir + oluştur** sayfasında, Işiniz bittiğinde **Oluştur**' u seçin. Yeni rol, **Intune rolleri-tüm roller** dikey penceresinde listede görüntülenir.
 
 ## <a name="copy-a-role"></a>Rolü kopyalama
 
 Ayrıca, varolan bir rolü de kopyalayabilirsiniz.
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **tüm roller** > **Roller** ' i seçin > listede bir rol seçin > **Yinele**' ye tıklayın.
+1. [Microsoft Uç Nokta Yöneticisi Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **tüm roller** > **Kiracı Yönetimi** > **rolleri** ' ni seçin > listedeki bir rolün onay kutusunu seçin > **yineleniyor**.
 
-2. **Yinelenen rol**altında bir ad girin. Benzersiz bir ad kullandığınızdan emin olun.
+2. **Temel bilgiler** sayfasında, bir ad girin. Benzersiz bir ad kullandığınızdan emin olun.
 
 3. Özgün rolün tüm izinleri ve kapsam etiketleri zaten seçilmeyecektir. Daha sonra yinelenen rolün **adını**, **açıklamasını**, **izinlerini**ve **kapsamını (etiketleri)** değiştirebilirsiniz.
 
-4. **Oluştur**’u seçin. 
+4. İstediğiniz tüm değişiklikleri yaptıktan sonra, **gözden geçir + oluştur** sayfasına ulaşmak için **İleri** ' yi seçin. **Oluştur**’u seçin. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - [Bir kullanıcıya rol atama](assign-role.md)
 - [Intune 'da rol tabanlı erişim denetimi hakkında daha fazla bilgi edinin](role-based-access-control.md)
+
+

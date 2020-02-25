@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: baeece091358a7cd05f0d1f8db7c0032870fc262
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 472b23581cddad16a1b7eaf37ddf99e7e37e70f5
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207103"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569243"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Ağ erişim denetimini (NAC) Intune ile tümleştirme
 
@@ -67,31 +67,34 @@ Aşağıdaki listede, Intune ile tümleştirildiğinde NAC tümleştirmesinin na
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>İOS cihazlarınızda VPN için NAC kullanma  
 
-- NAC, VPN profilinde NAC 'yi etkinleştirmeden aşağıdaki VPN 'lerde kullanılabilir:
+NAC, VPN profilinde NAC 'yi etkinleştirmeden aşağıdaki VPN 'lerde kullanılabilir:
 
   - Cisco eski AnyConnect için NAC
   - F5 erişimi eski
   - Citrix VPN
 
-- NAC, Citrix SSO ve F5 erişimi için de kullanılabilir. Citrix SSO için NAC 'yı etkinleştirmek için:
+NAC, Cisco AnyConnect, Citrix SSO ve F5 erişimi için de desteklenir. 
+
+### <a name="to-enable-nac-for-cisco-anyconnect-for-ios"></a>İOS için Cisco AnyConnect için NAC 'yı etkinleştirmek üzere:
+
+  - Aşağıdaki bağlantıda açıklandığı gibi NAC için ıSE 'yi Intune ile tümleştirin.
+  - VPN profilindeki **ağ Access Control etkinleştir (NAC)** ayarını **Evet**olarak ayarlayın.
+
+### <a name="to-enable-nac-for-citrix-sso"></a>Citrix SSO için NAC 'yı etkinleştirmek için:
 
   - Citrix Gateway 12.0.59 veya üstünü kullanın.  
   - Kullanıcıların Citrix SSO 1.1.6 veya sonraki bir sürümü yüklü olmalıdır.
   - Citrix ürün belgelerinde açıklandığı gibi [, NetScaler 'ı NAC Için Intune Ile tümleştirin](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) .
   - VPN profilinde, **temel ayarlar** ' ı seçin > **ağ Access Control (NAC) etkinleştir** > **kabul**ediyorum ' u seçin.
 
-  Güvenlik nedenleriyle VPN bağlantısının her 24 saatte bir bağlantısı kesilir. VPN hemen yeniden bağlanabilir.
 
-- F5 'e erişim için NAC 'yı etkinleştirmek için:
+### <a name="to-enable-nac-for-f5-access"></a>F5 'e erişim için NAC 'yı etkinleştirmek için:
 
   - F5 BIG-IP 13.1.1.5 kullanın. BÜYÜK IP 14 desteklenmez.
   - NAC için büyük IP 'yi Intune ile tümleştirin. [Genel bakış: Endpoint Management sistemleri ile cihaz gönderme denetimleri IÇIN APM yapılandırma](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Guide adımları listeler.
   - VPN profilinde, **temel ayarlar** ' ı seçin > **ağ Access Control (NAC) etkinleştir** > **kabul**ediyorum ' u seçin.
 
   Güvenlik nedenleriyle VPN bağlantısının her 24 saatte bir bağlantısı kesilir. VPN hemen yeniden bağlanabilir.
-
-- İOS üzerinde aşağıdaki VPN istemcisi için ağ erişim denetimi desteklenmez:
-  - Cisco AnyConnect
 
 Bu yeni istemciler için bir NAC çözümü yayınlamak üzere iş ortaklarımız ile çalışıyoruz. Çözümler hazırlandığınızda, bu makale ek bilgilerle güncelleştirilecektir.
 

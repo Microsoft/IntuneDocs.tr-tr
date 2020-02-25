@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04a18befe73ce63f5619c3efc6def4189db9c8df
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: efdb1912fdbb2f28c6859fae4407116173daa99d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188476"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576296"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune ile Mobile Threat Defense (MTD) uygulamaları ekleme ve atama
 
@@ -64,10 +64,10 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work uygulamalarını yapılandırma
 
-- **Outlook Web Access (OWA)**
+- **Android**
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **AppStore URL 'si**Için bu [Gevbir iş Google App Store URL 'si](https://play.google.com/store/apps/details?id=com.lookout.enterprise) kullanın.
 
-- **Android**
+- **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **AppStore URL 'si**için bu [Lookout for Work IOS uygulama mağazası URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) 'sini kullanın.
 
 - **Apple mağazası dışında Lookout for Work uygulaması**
@@ -78,11 +78,11 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
     1. [Azure portalı](https://portal.azure.com)'na gidin, kimlik bilgilerinizle oturum açın, sonra uygulama sayfasına gidin.
 
-    2. **Lookout for Work iOS uygulamasını yerel istemci uygulaması** olarak ekleyin.
+    2. **Lookout for Work iOS uygulamasını****yerel istemci uygulaması** olarak ekleyin.
 
     3. IPA’yı imzaladığınızda seçtiğiniz müşteri paketi kimliğini **com.lookout.enterprise.yourcompanyname** ile değiştirin.
 
-    4. Özgün yeniden yönlendirme URI’nizin URL ile şifrelenmiş halini takip eden ek bir yeniden yönlendirme URI’si ekleyin: **&lt;companyportal://code/ >** .
+    4. Özgün yeniden yönlendirme URI’nizin URL ile şifrelenmiş halini takip eden ek bir yeniden yönlendirme URI’si ekleyin: **&lt;companyportal://code/ >**.
 
     5. Uygulamanıza **Temsilci İzinleri** ekleyin.
 
@@ -95,58 +95,58 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
 ### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>Symantec Endpoint Protection Mobile uygulamalarını yapılandırma
 
-- **Outlook Web Access (OWA)**
+- **Android**
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **AppStore URL 'si**Için bu [Sep mobil uygulama mağazası URL 'sini](https://play.google.com/store/apps/details?id=com.skycure.skycure) kullanın.  **En düşük işletim sistemi** için **Android 4.0 (Ice Cream Sandwich)** öğesini seçin.
 
-- **Android**
+- **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **AppStore URL 'si**Için bu [Sep mobil uygulama mağazası URL 'sini](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) kullanın.
 
 ### <a name="configure-check-point-sandblast-mobile-apps"></a>Check Point SandBlast Mobile uygulamalarını yapılandırma
 
-- **Outlook Web Access (OWA)**  
+- **Android**  
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **AppStore URL 'si**Için bu [Check Point sandblast MOBIL uygulama mağazası URL](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) 'sini kullanın.
 
-- **Android**
+- **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **AppStore URL 'si**Için bu [Check Point sandblast MOBIL uygulama mağazası URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) 'sini kullanın.  
 
 ### <a name="configure-zimperium-apps"></a>Zimperium uygulamalarını yapılandırma
 
-- **Outlook Web Access (OWA)**
+- **Android**
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **AppStore URL 'si**Için bu [zkusurum uygulama mağazası URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) 'sini kullanın.
 
-- **Android**
+- **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **AppStore URL 'si**Için bu [zkusurum uygulama mağazası URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) 'sini kullanın.  
  
 ### <a name="configure-pradeo-apps"></a>Pradeo uygulamalarını yapılandırma
 
-- **Outlook Web Access (OWA)**
+- **Android**
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **AppStore URL 'si**Için bu [pradeo uygulama mağazası URL 'sini](https://play.google.com/store/apps/details?id=net.pradeo.service&hl=en_US) kullanın.
 
-- **Android**
+- **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **AppStore URL 'si**Için bu [pradeo uygulama mağazası URL 'sini](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) kullanın.
 
 ### <a name="configure-better-mobile-apps"></a>Better Mobile uygulamalarını yapılandırma
 
-- **Outlook Web Access (OWA)**
+- **Android**
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **AppStore URL 'si**Için bu [etkin kalkan uygulama mağazası URL 'sini](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise) kullanın.
 
-- **Android**
+- **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **AppStore URL 'si**Için bu [ActiveShield App Store URL 'sini](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) kullanın.
 
 ### <a name="configure-sophos-apps"></a>Sophos uygulamalarını yapılandırma
 
-- **Outlook Web Access (OWA)**
+- **Android**
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **AppStore URL 'si**Için bu [Sophos App Store URL](https://play.google.com/store/apps/details?id=com.sophos.smsec) 'sini kullanın.
 
-- **Android**
+- **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **AppStore URL 'si**Için bu [ActiveShield App Store URL 'sini](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) kullanın.
 
 ### <a name="configure-wandera-apps"></a>Wandera uygulamalarını yapılandırma
 
-- **Outlook Web Access (OWA)**
+- **Android**
   - Yönergeler için bkz. [Microsoft Intune'a Android mağazası uygulamaları ekleme](../apps/store-apps-android.md). **AppStore URL 'si**Için bu [Wandera mobil uygulama mağazası URL 'sini](https://play.google.com/store/apps/details?id=com.wandera.android) kullanın. **En düşük işletim sistemi**için **Android 5,0**' i seçin.
 
-- **Android**
+- **iOS**
   - Yönergeler için bkz. [Microsoft Intune'a iOS mağazası uygulamaları ekleme](../apps/store-apps-ios.md). **AppStore URL 'si**Için bu [Wandera mobil uygulama mağazası URL 'sini](https://itunes.apple.com/app/wandera/id605469330) kullanın.
 
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD uygulamalarınızı bir iOS uygulama yapılandırma ilkesiyle yapılandırma
@@ -164,11 +164,11 @@ MTD sağlayıcınızı kapsayan bölümü seçin:
 
   - **Ayarlar**'a gidin ve **Tümleştirmeler**'in altında **Intune**'u seçin. **EMM Tümleştirme Seçimi**'ni seçin. **Microsoft**'u seçin ve ardından seçiminizi kaydedin.
 
-  - **Tümleştirme kurulum dosyaları** bağlantısına tıklayın ve oluşturulan \*.zip dosyasını kaydedin. Bu .zip dosyası, Intune’da iOS uygulama yapılandırma ilkesini oluşturmak için kullanılacak olan * **.plist** dosyasını içerir.
+  - **Tümleştirme kurulum dosyaları** bağlantısına tıklayın ve oluşturulan \*.zip dosyasını kaydedin. Bu .zip dosyası, Intune’da iOS uygulama yapılandırma ilkesini oluşturmak için kullanılacak olan ***.plist** dosyasını içerir.
 
   - SEP Mobile iOS uygulama yapılandırma ilkesini eklemek için [iOS için Microsoft Intune uygulama yapılandırma ilkeleri kullanma](../apps/app-configuration-policies-use-ios.md) yönergelerine bakın.
 
-    - **Yapılandırma ayarları biçimi**IÇIN, **XML verisi gir**' i seçin, içeriği * **. plist** dosyasından kopyalayın ve içeriğini yapılandırma ilkesi gövdesine yapıştırın.
+    - **Yapılandırma ayarları biçimi**IÇIN, **XML verisi gir**' i seçin, içeriği ***. plist** dosyasından kopyalayın ve içeriğini yapılandırma ilkesi gövdesine yapıştırın.
 
 > [!NOTE]
 > Dosyaları alamıyorsanız, [Symantec Endpoint Protection Mobile Enterprise Desteği](https://support.symantec.com/en_US/contact-support.html)'ne başvurun.
@@ -203,7 +203,7 @@ Zimperium iOS uygulama yapılandırma ilkesini eklemek için [iOS için Microsof
 
 ### <a name="pradeo-app-configuration-policy"></a>Pradeo uygulama yapılandırma ilkesi
 
-Pradeo, iOS üzerinde uygulama yapılandırma ilkesini desteklemez.  Bunun yerine, yapılandırılmış bir uygulama almak için, tercih ettiğiniz ayarlarla önceden yapılandırılmış özel IPA veya APK dosyalarını uygulamak üzere Pradeo ile birlikte çalışın.
+Pradeo, iOS/ıpados üzerinde uygulama yapılandırma ilkesini desteklemez.  Bunun yerine, yapılandırılmış bir uygulama almak için, tercih ettiğiniz ayarlarla önceden yapılandırılmış özel IPA veya APK dosyalarını uygulamak üzere Pradeo ile birlikte çalışın.
 
 ### <a name="better-mobile-app-configuration-policy"></a>Better Mobile uygulama yapılandırma ilkesi
 

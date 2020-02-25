@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886790"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556508"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Microsoft Intune 'de BitLocker ilkeleri sorunlarını giderme
 
@@ -39,13 +39,15 @@ Microsoft Intune, Windows 10 cihazlarda BitLocker 'ı yönetmek için aşağıda
 
 - **Güvenlik temelleri - güvenlik** [temelleri,](security-baselines.md) Windows cihazlarının güvenli hale getirilmesine yardımcı olmak için ilgili güvenlik ekibinin önerdiği bilinen ayar grupları ve varsayılan değerlerdir. *MDM güvenlik temeli* veya *Microsoft Defender ATP temeli* gibi farklı temel kaynaklar aynı ayarları ve birbirinden farklı ayarları yönetebilir. Ayrıca, cihaz yapılandırma ilkeleriyle yönettiğiniz ayarların aynısını yönetebilirler. 
 
-Intune 'a ek olarak, BitLocker ayarlarının grup ilkesi gibi başka yollarla yönetilmesi veya bir cihaz kullanıcısı tarafından el ile ayarlanması mümkündür.
+Intune 'a ek olarak, modern bekleme ve HSTı ile uyumlu donanımlar için, bu özelliklerden birini kullanırken, Kullanıcı bir cihaza Azure AD 'ye katıldığında BitLocker cihaz şifrelemesi otomatik olarak açılır. Azure AD, kurtarma anahtarlarının da yedeklendiği bir portal sağlar. bu sayede kullanıcılar, gerekirse self servis için kendi kurtarma anahtarlarını alabilir.
+
+Ayrıca, BitLocker ayarları grup ilkesi gibi diğer yollarla veya bir cihaz kullanıcısı tarafından el ile ayarlanmış olabilir.
 
 Ayarların cihaza uygulanma biçimi ne olduğuna bakılmaksızın, BitLocker ilkeleri cihazda şifrelemeyi yapılandırmak için [BITLOCKER CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) 'yi kullanır. BitLocker CSP, Windows 'da yerleşiktir ve Intune atanan bir cihaza bir BitLocker ilkesi dağıttığında, ilkeden gelen ayarların etkili olabilmesi için Windows kayıt defterine uygun değerleri yazan cihazdaki BitLocker CSP 'dir.
 
 BitLocker hakkında daha fazla bilgi edinmek istiyorsanız, aşağıdaki kaynaklara bakın:
 
-- [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+- [Kurulumu](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
 - [BitLocker genel bakış ve gereksinimler SSS](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
 
 Bu ilkelerin ne yaptığını ve bunların nasıl çalıştığını genel olarak anlayadığınıza göre, BitLocker ayarlarının bir Windows istemcisine başarıyla uygulandığını nasıl doğrulayabileceğinize göz atın.
@@ -164,6 +166,15 @@ Intune ilkeniz herhangi bir kapasitede mevcut olmadığında **, ilke cihaza ula
 
   2. **BitLocker tüm donanımlar üzerinde desteklenmez**.
      Windows 'un doğru sürümüne sahip olsanız bile, temeldeki cihaz donanımının BitLocker şifrelemesi gereksinimlerini karşılamamanız mümkündür. Windows belgelerindeki [BitLocker için sistem gereksinimlerini](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) bulabilirsiniz, ancak denetlenecek ana şey, cihazın uyumlu bir TPM yongasına (1,2 veya üzeri) ve Trusted COMPUTING Group (TCG) uyumlu bir BIOS veya UEFI bellenimine sahip olması olabilir.
+     
+**BitLocker şifrelemesi sessizce gerçekleştirilmez** -"diğer disk şifrelemesi için uyarı" ayarı engellenmeye ayarlanmış bir Endpoint Protection ilkesi yapılandırdınız ve şifreleme Sihirbazı hala görünür:
+
+- **Windows sürümünün sessiz şifrelemeyi desteklediğini onaylayın** Bu, en az sürüm 1803 gerektirir. Kullanıcı cihazda bir yöneticici değilse, en düşük 1809 sürümünü gerektirir. Ayrıca 1809, modern beklemeyi desteklemeyen cihazlar için eklenmiştir
+
+**BitLocker şifreli cihaz, Intune uyumluluk ilkeleri Için uyumsuz olarak gösterilir** -bu sorun, BitLocker şifrelemesi bitmediğinde oluşur. Disk boyutu, dosya sayısı ve BitLocker ayarları gibi etkenlere bağlı olarak BitLocker şifrelemesi uzun sürebilir. Şifreleme tamamlandıktan sonra cihaz uyumlu olarak gösterilir. Cihazlar son zamanlarda WIndows güncelleştirmelerinin yüklenmesinin ardından geçici olarak uyumsuz hale gelebilir.
+
+256 ilkeler, varsayılan olarak, Windows 10, XTS-AES 128-bit şifrelemeli bir sürücüyü şifreleyerek **128 bit algorithim kullanılarak şifrelenir** . [Autopilot sırasında BitLocker için 256 bit şifrelemeyi ayarlamaya](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#)yönelik bu kılavuza bakın.
+
 
 **Örnek araştırma**
 

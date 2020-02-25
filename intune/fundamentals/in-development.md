@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7113552e09a7c7fa145a452e56575bfaf5297c3e
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 1b590e8564f14ce9958c5a1c126edf5dd6740cd1
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514582"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576392"
 ---
 # <a name="in-development-for-microsoft-intune---february-2020"></a>Microsoft Intune için geliştirme sırasında-Şubat 2020
 
@@ -68,20 +68,6 @@ Windows cihazlarındaki Şirket Portalı uygulamasını, uygulama kapatıldığ�
 ### <a name="retarget-web-clips-to-microsoft-edge-on-iosipados-devices---5455276---"></a>Web kliplerini iOS/ıpados cihazlarında Microsoft Edge 'e yeniden hedefle<!-- 5455276 -->
 İOS/ıpados cihazlarında sabitlenmiş Web uygulamaları olarak davranan web klipleri güncelleştirilmeleri gerekecektir. Yeni dağıtılan web klipleri, korumalı bir tarayıcıda açmak gerekirse Intune Managed Browser yerine Microsoft Edge 'de açılır. Managed Browser yerine Microsoft Edge 'de açıldıklarından emin olmak için önceden mevcut web kliplerini yeniden hedeflemeniz gerekir.
 
-### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>macOS Şirket Portalı Kullanıcı deneyimi geliştirmeleri<!-- 5568987 -->
-MacOS cihaz kayıt deneyimlerine ve Mac için Şirket Portalı uygulamasına yönelik geliştirmeler yapıyoruz. Şunları belirtebilirsiniz:
-- Kayıt sırasında, kullanıcılarınızın Şirket Portalı en son sürümüne sahip olmasını sağlayacak daha iyi bir Microsoft **Otomatik güncelleştirme** deneyimi.
-- Kayıt sırasında gelişmiş bir uyumluluk denetimi adımı.
-- Kopyalanmış olay kimlikleri için destek, kullanıcılarınız cihazlarından Şirket destek ekibine daha hızlı bir şekilde hata gönderebilir.
-
-Mac için kayıt ve Şirket Portalı uygulaması hakkında daha fazla bilgi için bkz. Şirket Portalı uygulamasını kullanarak macOS cihazınızı kaydetme (https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp). 
-
-
-### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Şirket Portalı, Android iş profili kaydından kaldırılan ekran<!--6103987 -->
-**Sıradaki nedir?** ekranı, Kullanıcı deneyimini kolaylaştırmak Için Şirket portalı Android iş profili kayıt akışından kaldırılacak. Geçerli Android iş profili kayıt akışını görmek için [Android iş profiline kaydol]( https://docs.microsoft.com/intune-user-help/enroll-device-android-work-profile) ' a gidin.
-
-### <a name="microsoft-defender-advanced-threat-protection-atp-app-for-macos---5424518-idready---"></a>MacOS için Microsoft Defender Gelişmiş tehdit koruması (ATP) uygulaması<!-- 5424518 idready -->
-Intune, macOS için Microsoft Defender Gelişmiş tehdit koruması (ATP) uygulamasını yönetilen Mac cihazlarına dağıtmanın kolay bir yolunu sağlar. Daha fazla bilgi için bkz. [Mac Için Microsoft Defender Gelişmiş tehdit koruması](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac). 
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Cihaz yapılandırması
@@ -89,7 +75,7 @@ Intune, macOS için Microsoft Defender Gelişmiş tehdit koruması (ATP) uygulam
 ### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>MacOS cihazları için kablolu ağ cihaz yapılandırma profilleri<!-- 3508686  -->
 Kablolu ağları yapılandıran yeni bir macOS cihaz yapılandırma profili kullanılabilir (**cihaz yapılandırma** > **profilleri** ** > ,** > Platform için **MacOS** > profil türü için **kablolu ağ** ). Kablolu ağları yönetmek için 802.1 x profilleri oluşturmak ve bu kablolu ağları macOS cihazlarınıza dağıtmak için bu özelliği kullanın.
 
-Uygulama hedefi:
+Uygulama alanı:
 - Mac OS
 
 ### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-iosipados-devices----1947932-idready---"></a>IKEv2 VPN bağlantılarına sahip VPN profilleri, her zaman iOS/ıpados cihazlarıyla birlikte kullanılabilir <!-- 1947932 idready -->
@@ -99,7 +85,7 @@ Uygulama hedefi:
 
 Yapılandırabileceğiniz geçerli Ikev2 ayarlarını görmek için [Microsoft Intune ' deki iOS/ıpados CIHAZLARıNDA VPN ayarları ekle](../configuration/vpn-settings-ios.md#ikev2-settings)' ye gidin.
 
-Uygulama hedefi:
+Uygulama alanı:
 - iOS
 
 ### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-iosipados-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>İOS/ıpados ve macOS cihazlarında yapılandırma profilleri oluştururken Geliştirilmiş kullanıcı arabirimi deneyimi<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
@@ -129,48 +115,20 @@ Bu özellik şu platformlarda geçerlidir:
 ### <a name="change-primary-user-for-windows-devices----3794742---"></a>Windows cihazları için birincil kullanıcıyı değiştirme <!-- 3794742 -->
 Windows karma ve Azure AD 'ye katılmış cihazlar için birincil kullanıcıyı değiştirebileceksiniz. Bunu yapmak için **ıntune** > **cihazlar** > **tüm cihazlar** ' a gidin > bir cihaz > **özellikleri** > **birincil Kullanıcı**seçin. 
 
-### <a name="serial-number-on-the-apple-mdm-push-certificate-page--5947765---"></a>Apple MDM anında Iletme sertifikası sayfasındaki seri numarası<!--5947765 -->
-Apple MDM anında Iletme sertifikası sayfasında seri numarası görüntülenir. Sertifikayı oluşturan Apple KIMLIĞINE erişim kaybolursa, Apple MDM anında Iletme sertifikasına erişimi yeniden kazanmak için seri numarası gereklidir. Seri numarasını görmek için **cihazlar** > **iOS** > **IOS kaydı** > **Apple MDM anında iletme sertifikası**' na gidin.
-
-### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689---"></a>Kayıtlı cihazlara hangi iOS/ıpados güncelleştirmelerinin göndermek istediğinizi seçin<!--5879689 -->
-Apple Business Manager veya Apple Okul Yöneticisi kullanılarak kaydedilmiş cihazlara gönderim yapmak için belirli bir iOS/ıpados güncelleştirmesi seçebileceksiniz. Bu tür cihazlarda, yazılım güncelleştirme görünürlüğünü birkaç gün boyunca geciktirmek için bir cihaz yapılandırma ilkesi ayarlanmış olmalıdır. Bu özelliği görmek **için > iOS** **/ıpados** > **Profil oluştur** > **iOS** > güncelleştirme ilkeleri ' ne gidin.
-
-### <a name="new-update-schedule-options-for-pushing-os-updates-to-enrolled-iosipados-devices--5879689--"></a>Kayıtlı iOS/ıpados cihazlarına işletim sistemi güncelleştirmelerini göndermek için yeni güncelleştirme zamanlaması seçenekleri<!--5879689-->
-İOS/ıpados cihazları için işletim sistemi güncelleştirmelerini zamanlarken aşağıdaki seçeneklerden kullanabileceksiniz. Bu, Apple Business Manager veya Apple Okul Yöneticisi kayıt türlerini kullanan cihazlar için geçerlidir.
-- Sonraki iadede Güncelleştir
-- Zamanlanan süre içinde güncelleştirme
-- Zamanlanan sürenin dışında güncelleştirme
-
-İkinci iki seçenek için birden çok zaman penceresi oluşturabilirsiniz.
-
-Yeni seçenekleri görmek **için > iOS** **/ıpados** > **Profil oluştur** > **iOS** > güncelleştirme ilkeleri ' ne gidin.
-
 
 <!-- ***********************************************-->
 <!--## Intune apps-->
  
 
 <!-- ***********************************************-->
-## <a name="monitoring-and-troubleshooting"></a>İzleme ve sorun giderme
-
-### <a name="improved-intune-reporting-experience---3791418-idready---"></a>İyileştirilmiş Intune raporlama deneyimi<!-- 3791418 idready -->
-Intune artık yeni rapor türleri, daha iyi rapor organizasyonu, daha odaklanmış görünümler, geliştirilmiş rapor işlevselliği ve daha tutarlı ve zamanında veriler de dahil olmak üzere gelişmiş bir raporlama deneyimi sunmaktadır. Raporlama deneyimi, genel önizlemeden GA 'ye (genel kullanılabilirlik) geçmeyecektir. Ayrıca, GA sürümü, [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'ndeki kutucuklar üzerinde yerelleştirme desteği, hata düzeltmeleri, tasarım iyileştirmeleri ve cihaz uyumluluk verileri toplama sağlar.
-
-Yeni rapor türleri aşağıdakilere odaklanılmıştır:
-- **İşletimsel** -negatif bir sistem durumu odaklı yeni kayıtlar sağlar. 
-- **Kuruluş** -genel durumun daha geniş bir özetini sağlar.
-- **Geçmiş** -bir süre boyunca desenler ve eğilimler sağlar.
-- **Uzman** -kendi özel raporlarınızı oluşturmak için ham verileri kullanmanıza olanak sağlar.
-
-Yeni raporların ilk kümesi cihaz uyumluluğuna odaklanır. Daha fazla bilgi için bkz. [blog-Microsoft Intune raporlama çerçevesi](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) ve [Intune raporları](~/fundamentals/reports.md).
-
-
+<!--
+## Monitoring and troubleshooting
+-->
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
-
-### <a name="intune-roles-user-interface-changes-coming--5801612-idready--"></a>Intune rolleri Kullanıcı arabirimi değişiklikleri geliyor<!--5801612 idready-->
-[Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) > **Kiracı Yönetimi** > **rolleri** için Kullanıcı arabirimi, daha kolay ve sezgisel bir tasarıma göre değişecek. Bu deneyim, şimdi kullandığınız ayarların ve ayrıntıların aynısını sağlar, ancak yeni deneyim sihirbaz benzeri bir işlem kullanır.
+<!--
+## Role-based access control
+-->
 
 
 <!-- ***********************************************-->

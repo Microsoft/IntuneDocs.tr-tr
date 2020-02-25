@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9c2083d6f259b62b2856e08fec5ebcb696cbc0df
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755043"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576437"
 ---
-# <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını el ile ekleme
+# <a name="add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 Şirket Portalı uygulamasını ekleme
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Kullanıcılarınız, cihaz yönetmek ve uygulama yüklemek için Intune Şirket Portalı uygulamasını Microsoft Mağazası’ndan kendileri yükleyebilirler. Şirketiniz, Şirket Portalı uygulamasını kullanıcılara sizin atamanızı gerektiriyorsa Windows 10 Şirket Portalı uygulamasını doğrudan Intune’dan el ile atayabilirsiniz. Intune ile İş İçin Microsoft Store’u tümleştirmediyseniz bile bunu yapabilirsiniz.
+Kullanıcılarınız, cihaz yönetmek ve uygulama yüklemek için Intune Şirket Portalı uygulamasını Microsoft Mağazası’ndan kendileri yükleyebilirler. İşletmenizin ihtiyacı varsa Şirket Portalı uygulamayı bunlara atamanız gerekir, ancak Windows 10 Şirket Portalı uygulamasını doğrudan Intune 'dan atayabilirsiniz. Intune ile İş İçin Microsoft Store’u tümleştirmediyseniz bile bunu yapabilirsiniz.
 
- > [!NOTE]
- > Bu makalede açıklanan seçenek, bir uygulama güncelleştirmesi yayımlandığında bunları her seferinde el ile atamanızı gerektirir.
+ > [!IMPORTANT]
+ > Şirket Portalı uygulamasını indirdiğinizde, bu makalede açıklanan seçenek, her bir uygulama güncelleştirmesi yayınlandığında el ile güncelleştirmeler atamanızı gerektirir. Windows 10 Autopilot tarafından sağlanan cihazlara yönelik Şirket Portalı uygulamasını dağıtmak için bkz. [Windows 10 Şirket portalı App Autopilot cihazları ekleme](~/apps/store-apps-company-portal-autopilot.md).
 
 ## <a name="configure-settings-to-show-offline-apps"></a>Çevrimdışı uygulamaları göstermek için ayarları yapılandırma
 1. [İş için Microsoft Store](https://www.microsoft.com/business-store)’da yönetici hesabınızla oturum açın.
@@ -95,7 +95,7 @@ Uygulamanın bu şekilde nasıl imzalanıp atanacağı aşağıda açıklanmakta
 3. Windows 10 Şirket Portalı uygulamasını imzalamak için aşağıda gösterildiği şekilde betik üst bilgisinde açıklanan giriş parametrelerini kullanıp betiği çalıştırın.  
     Bağımlılıkların betiğe geçirilmesi gerekmez. Bunlar, yalnızca uygulama Intune Yönetici Konsolu’na yüklenirken gereklidir.
 
-| Parametre |  Description  |
+| Parametre |  Açıklama  |
 |---|---|
 | InputWin10AppxBundle  |  Kaynak appxbundle dosyasının yolu. |
 | OutputWin10AppxBundle | İmzalı appxbundle dosyası için çıkış yolu. 

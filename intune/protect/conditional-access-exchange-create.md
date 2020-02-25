@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acc8241bf5b9ea05fcb23772586d459ca9e5e143
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515110"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576061"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online ayrılmış için koşullu erişim ilkesi oluşturma
 
@@ -63,9 +63,9 @@ Koşullu erişimi yapılandırmadan önce, aşağıdaki yapılandırmaların mev
 ### <a name="support-for-mobile-devices"></a>Mobil cihaz desteği
 
 - Windows Phone 8.1 ve üzeri
-- iOS’ta yerel e-posta uygulaması.
+- İOS/ıpados üzerinde yerel e-posta uygulaması.
 - Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri.
-- EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **iş profilindeki** **Gmail** ve **Android Enterprise için Nine Work** desteklenir. Android iş profilleriyle çalışmak üzere koşullu erişim için, Android Enterprise uygulaması için Gmail veya dokuz Iş için bir e-posta profili dağıtmanız ve ayrıca bu uygulamaları gerekli bir yükleme olarak dağıtmanız gerekir.
+- EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **iş profilindeki****Gmail** ve **Android Enterprise için Nine Work** desteklenir. Android iş profilleriyle çalışmak üzere koşullu erişim için, Android Enterprise uygulaması için Gmail veya dokuz Iş için bir e-posta profili dağıtmanız ve ayrıca bu uygulamaları gerekli bir yükleme olarak dağıtmanız gerekir.
 
 > [!NOTE]
 > Android ve iOS için Microsoft Outlook/ıpados, şirket içi Exchange Bağlayıcısı aracılığıyla desteklenmez. Şirket içi posta kutularınız için iOS/ıpados ve Android için Outlook ile koşullu erişim ilkeleri ve Intune Uygulama Koruması Ilkeleri Azure Active Directory yararlanmak istiyorsanız lütfen bkz. [iOS Için Outlook ile karma modern kimlik doğrulamasını kullanma/ıpados ve Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).

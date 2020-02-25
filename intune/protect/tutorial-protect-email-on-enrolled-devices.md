@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74409907"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576279"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Öğretici: Yönetilen cihazlarda Exchange Online e-postalarını koruma
 
@@ -45,7 +45,7 @@ Bu öğretici için aşağıdaki abonelik sahip bir test kiracısına ihtiyacın
 
 - Exchange içeren Office 365 Business aboneliği ([ücretsiz deneme](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
-Başlamadan önce [Hızlı Başlangıç: iOS için bir e-posta cihaz profili oluşturma](../configuration/quickstart-email-profile.md) bölümündeki adımları izleyerek bir test cihaz profili oluşturun.
+Başlamadan önce, [hızlı başlangıç: iOS için bir e-posta cihaz profili oluşturma/ıpados](../configuration/quickstart-email-profile.md)' daki adımları izleyerek iOS cihazları için bir test cihaz profili oluşturun.
 
 ## <a name="sign-in-to-intune"></a>Intune'da oturum açma
 
@@ -152,7 +152,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 
    5. **Seçin** öğesini belirleyin.
 
-   ![Conrols seçin](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+   ![Denetimleri Seç](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. **İlkeyi etkinleştir** altında **Açık**’ı seçin.
 
@@ -162,7 +162,7 @@ Bir cihazın uyumlu sayılması için karşılaması gereken şartları ayarlama
 
 ## <a name="try-it-out"></a>Deneme
 
-Oluşturduğunuz ilkelerle, Office 365’te oturum açmaya çalışan herhangi bir iOS cihazın Intune’a kaydolması ve iOS için Outlook mobil uygulamasını kullanması gerekecektir. Bu senaryoyu bir iOS cihazda test etmek için test kiracınızdaki kullanıcılardan birine ait kimlik bilgilerini kullanarak Exchange Online’da oturum açmayı deneyin. Cihazı kaydetmeniz ve Outlook mobil uygulamasını yüklemeniz istenecektir.
+Oluşturduğunuz ilkelerle, Office 365 e-postasına oturum açmayı deneyen tüm iOS cihazlarının Intune 'a kaydolması ve iOS için Outlook Mobile App/ıpados kullanması gerekir. Bu senaryoyu bir iOS cihazda test etmek için test kiracınızdaki kullanıcılardan birine ait kimlik bilgilerini kullanarak Exchange Online’da oturum açmayı deneyin. Cihazı kaydetmeniz ve Outlook mobil uygulamasını yüklemeniz istenecektir.
 
 1. Bu testi bir iPhone’da yapmak için **Ayarlar** > **Parolalar ve Hesaplar** > **Hesap Ekle** > **Exchange**’i seçin.
 
@@ -181,11 +181,11 @@ Test ilkelerine artık ihtiyacınız kalmadığında bunları kaldırabilirsiniz
 
 2. **Uyumluluk ilkeleri** > **cihazları** seçin.
 
-3. **İlke Adı** listesinde test ilkenizin açılır menüsünü ( **...** ) seçin ve daha sonra **Sil**’e tıklayın. Onaylamak için **Tamam**’ı seçin.
+3. **İlke Adı** listesinde test ilkenizin açılır menüsünü (**...**) seçin ve daha sonra **Sil**’e tıklayın. Onaylamak için **Tamam**’ı seçin.
 
 4. **Uç nokta güvenliği** > **koşullu erişim**' i seçin.
 
-5. **İlke Adı** listesinde test ilkenizin açılır menüsünü ( **...** ) seçin ve daha sonra **Sil**’e tıklayın. Onaylamak için **Evet**’i seçin.
+5. **İlke Adı** listesinde test ilkenizin açılır menüsünü (**...**) seçin ve daha sonra **Sil**’e tıklayın. Onaylamak için **Evet**'i seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

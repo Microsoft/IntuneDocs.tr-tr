@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 11e757d22274a0e1cc327d9037a74e4ffac024dd
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653674"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576333"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune Uygulama Sarmalama Aracı ile iOS uygulamalarını uygulama koruma ilkelerine hazırlama
 
@@ -81,7 +81,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
 5. **Varlık Türü**’nüzü seçin ve **Devam**’a tıklayın.
 
-6. Kuruluşunuzun bilgilerini girerek formu doldurun. **Devam'a** tıklayın. Bu noktada Apple, kuruluşunuzu kaydetme yetkiniz olup olmadığını doğrulamak için sizinle irtibat kurar.
+6. Kuruluşunuzun bilgilerini girerek formu doldurun. **Devam**'a tıklayın. Bu noktada Apple, kuruluşunuzu kaydetme yetkiniz olup olmadığını doğrulamak için sizinle irtibat kurar.
 
 7. Doğrulamadan sonra **Lisansı Kabul Et**'e tıklayın.
 
@@ -126,7 +126,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
     ![İstediğiniz sertifikayla ilgili bilgileri girin](./media/app-wrapper-prepare-ios/iOS-signing-cert-6.png)
 
-12. Apple Geliştirici sitesine dönün. **Devam'a** tıklayın. Ardından CSR dosyasını karşıya yükleyin.
+12. Apple Geliştirici sitesine dönün. **Devam**'a tıklayın. Ardından CSR dosyasını karşıya yükleyin.
 
 13. Apple imzalama sertifikanızı oluşturur. Bunu indirin ve Mac OS bilgisayarınızda hatırlayacağınız bir konuma kaydedin.
 
@@ -154,7 +154,7 @@ Intune tarafından sarmalanan uygulamaları dağıtmak için aşağıdakiler ger
 
    ![Şirket içi sağlama profilini seçin](./media/app-wrapper-prepare-ios/iOS-provisioning-profile-1.png)
 
-5. **Devam'a** tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
+5. **Devam**'a tıklayın. Önceden oluşturulan imzalama sertifikasını sağlama profiline bağladığınızdan emin olun.
 
 6. Profilinizi (.mobileprovision uzantısı ile) Mac OS bilgisayarınıza yükleme adımlarını izleyin.
 
@@ -226,7 +226,7 @@ IntuneMAMPackager/Contents/MacOS klasöründe, `Parameters.plist` öğesini (bo�
 | ADAL yanıt URI 'SI |Dize|boş| -AR ile aynı|
 | Ayrıntılı Mod Etkin |Boole değeri|yanlış| -v ile aynı|
 | Eksik Yetkilendirmeleri Kaldır |Boole değeri|yanlış| -c ile aynı|
-| Varsayılan derleme güncelleştirmesini engelle |Boolen|yanlış| Bağımsız değişkenler olmadan -b kullanma ile eşdeğerdir|
+| Varsayılan derleme güncelleştirmesini engelle |Boole değeri|yanlış| Bağımsız değişkenler olmadan -b kullanma ile eşdeğerdir|
 | Dize Geçersiz Kılmayı Derle |Dize|boş| Sarmalanan çıkış uygulaması için özel CFBundleVersion|
 | Citrix XenMobile App SDK (yalnızca ağ varyantı) dahil et|Boole değeri|yanlış| -Citrix ile aynı|
 | Uzantı Sağlayan Profil Yolları |Dize Dizisi|boş| Uygulamanın uzantı sağlama profillerinin bir dizisi.
@@ -255,7 +255,7 @@ Uygulamalarınızı yeniden sarmalamanız gereken ana senaryolar aşağıdaki gi
 * Uygulamanın yeni bir sürümünü yayınlandı. Uygulamanın önceki sürümü sarmalandı ve Intune konsoluna yüklendi.
 * iOS için Intune Uygulama Sarmalama Aracı uygulamasının hata düzeltmeleri veya yeni, belirli Intune uygulama koruma ilkesi özellikleri içeren yeni bir sürümü yayınlandı. Bu, [iOS için Microsoft Intune Uygulama Sarmalama Aracı](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) için 6-8 hafta sonra bir GitHub deposundan gerçekleşir.
 
-iOS için, uygulamayı imzalamak için kullanılan asıl sertifika/sağlama profilinden farklı bir tanesi ile sarmalamak mümkün olsa da, uygulamada belirtilen yetkilendirmeler yeni sağlama profilinde mevcut değilse sarmalama başarısız olacaktır. Uygulamadaki eksik yetkilendirmeleri kaldıran “-e” komut satırı seçeneği kullanılarak sarmalama işleminin başarısız olmamaya zorlanması, uygulamada bozuk işlevselliğe yol açabilir.
+İOS/ıpados için, uygulamayı imzalamak için kullanılan orijinalden farklı bir sertifika/sağlama profiliyle sarmalanması mümkün olsa da, uygulamada belirtilen yetkilendirmeler yeni sağlama profilinde yer alıyorsa, kaydırma başarısız olur. Uygulamadaki eksik yetkilendirmeleri kaldıran “-e” komut satırı seçeneği kullanılarak sarmalama işleminin başarısız olmamaya zorlanması, uygulamada bozuk işlevselliğe yol açabilir.
 
 Yeniden sarmalama için bazı en iyi uygulamalar şunlardır:
 
@@ -315,11 +315,11 @@ Sarmalanan uygulamalar, mevcut kullanıcılara da uygulama kilitlendikten sonra 
 
 Tam işlevsellik garantisi için iOS için Uygulama Sarmalama Aracında karşılanması gereken bazı gereksinimler vardır.
 
-|Gereksinim|Details|
+|Gereksinim|Ayrıntılar|
 |---------------|-----------|
 |iOS sağlama profili|Sağlama profilini dahil etmeden önce, geçerli olduğundan emin olun. Uygulama Sarmalama Aracı, bir iOS uygulamasını işlerken sağlama profilinin geçerlilik süresinin dolup dolmadığını denetlemez. Süresi dolmuş bir sağlama profili belirtilirse, uygulama sarmalama aracı süresi dolmuş sağlama profilini içerir ve uygulamanın bir iOS cihazına yüklenemediğini fark edene kadar bir sorun olduğunu anlayamazsınız.|
 |iOS imzalama sertifikası|İmzalama sertifikasını belirtmeden önce, geçerli olduğundan emin olun. Araç, iOS uygulamalarını işlerken bir sertifikanın süresinin dolup dolmadığını denetlemez. Süresi dolmuş bir sertifika için karma sağlanırsa, araç uygulamayı işler ve imzalar, ancak uygulama cihazlara yüklenemez.<br /><br />Sarmalanan uygulamayı imzalamak için sağlanan sertifikanın, sağlama profilinde bir eşleşmeye sahip olduğundan emin olun. Araç, sağlama profilinin sarmalanan uygulamayı imzalamak için sağlanan sertifikaya yönelik bir eşleşme içerip içermediğini doğrulamaz.|
-|Kimlik doğrulama|Şifrelemenin çalışması için cihazın PIN’e sahip olması gerekir. Sarmalanan uygulama dağıtılan cihazlarda durum çubuğuna dokunma, kullanıcının iş veya okul hesabıyla yeniden oturum açmasını gerektirir. Sarmalanan bir uygulamada varsayılan ilke, *yeniden başlatma sırasında kimlik doğrulaması* şeklindedir. iOS tüm dış bildirimleri (bir telefon araması gibi) uygulamadan çıkıp uygulamayı yeniden başlatarak işler.
+|Kimlik Doğrulama|Şifrelemenin çalışması için cihazın PIN’e sahip olması gerekir. Sarmalanan uygulama dağıtılan cihazlarda durum çubuğuna dokunma, kullanıcının iş veya okul hesabıyla yeniden oturum açmasını gerektirir. Sarmalanan bir uygulamada varsayılan ilke, *yeniden başlatma sırasında kimlik doğrulaması* şeklindedir. iOS tüm dış bildirimleri (bir telefon araması gibi) uygulamadan çıkıp uygulamayı yeniden başlatarak işler.
 
 ## <a name="setting-app-entitlements"></a>Uygulama yetkilendirmelerini ayarlama
 
@@ -327,7 +327,7 @@ Uygulamanızı sarmalamadan önce, uygulamaya normalde yapabildiklerini aşan ek
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>iOS için Uygulama Sarmalama Aracı’nda desteklenen yetenekler
 
-|Özellik|Description|Önerilen yönerge|
+|Özellik|Açıklama|Önerilen yönerge|
 |--------------|---------------|------------------------|
 |Uygulama grupları|Birden çok uygulamanın paylaşılan kapsayıcılara erişimine ve uygulamalar arasında işlemler arası ek iletişime olanak tanımak için uygulama gruplarını kullanın.<br /><br />Uygulama gruplarını etkinleştirmek için, **Yetenekler** bölmesini açın ve **Uygulama Grupları** bölümünde **AÇIK**’a tıklayın. Uygulama grupları ekleyebilir veya var olanları seçebilirsiniz.|Uygulama Grupları’nı kullanırken, ters DNS gösterimini kullanın:<br /><br />*grup.com.şirketAdı.UygulamaGrubu*|
 |Arka plan modları|Arka plan modlarının etkinleştirilmesi, iOS uygulamanızın arka planda çalışmaya devam etmesine olanak tanır.||
@@ -419,7 +419,7 @@ Uygulama Sarmalama Aracını kullanırken, güvenlik ve gizlilik açısından a�
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Citrix MDX mVPN ile iOS için Intune Uygulama Sarmalama Aracı
 
-Bu özellik, iOS için Citrix MDX uygulama sarmalayıcıyla bir tümleştirmedir. Tümleştirme, gelen Intune Uygulama Sarmalama Araçları'na yönelik ek, isteğe bağlı bir komut satırı bayrağıdır (`-citrix`).
+Bu özellik, iOS/ıpados için Citrix MDX uygulama sarmalayıcısına sahip bir tümleştirmedir. Tümleştirme, gelen Intune Uygulama Sarmalama Araçları'na yönelik ek, isteğe bağlı bir komut satırı bayrağıdır (`-citrix`).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -444,7 +444,7 @@ Yalnızca genel uygulama sarmalama komutunu sonuna `-citrix` bayrağı eklenmiş
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Microsoft Intune ile uygulamaların mobil uygulama yönetimi için nasıl hazırlanacağına karar verme](apps-prepare-mobile-application-management.md)
 - [Cihaz ilkeleri ve profillerle ilgili yaygın sorular, sorunlar ve çözümler](../configuration/device-profile-troubleshoot.md)

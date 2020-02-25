@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c550fba45e5e6b16e49e7103fde40de1e08ba55
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502434"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576484"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune’un Apple’a gönderdiği veriler
 
@@ -53,13 +53,13 @@ Aşağıdaki tabloda Microsoft Intune'un bir cihazdan etkinleştirilmiş Apple h
 | ASM/DEP | org_address | Kuruluşun adresi. |
 | ASM/DEP | org_id | DEP müşteri kimliği. Bu anahtar sadece protokol sürümü 3 ve sonrası için kullanılabilir. |
 | ASM/DEP | serial_number | Cihazın seri numarası (dize). |
-| ASM/DEP | model | Model adı (dize). |
+| ASM/DEP | {1&gt;model&lt;1} | Model adı (dize). |
 | ASM/DEP | açıklama | Cihazın açıklaması (dize). |
 | ASM/DEP | asset_tag | Cihazın varlık etiketi (dize). |
 | ASM/DEP | profile_status | Profili yükleme durumu. Olası değerler: **Boş**, **atandı**, **gönderildi** veya **kaldırıldı**. |
 | ASM/DEP | profile_uuid | Atanan profilin benzersiz kimliği. |
 | ASM/DEP | device_assigned_by | Cihazı atayan kişinin e-postası. |
-| ASM/DEP | os | Cihazın işletim sistemi: iOS, OSX veya tvOS. Bu anahtar, X-Server-Protokol-Sürüm 2 ve sonrası için geçerlidir. |
+| ASM/DEP | os | Cihazın işletim sistemi: iOS/ıpados, OSX veya tvOS. Bu anahtar, X-Server-Protokol-Sürüm 2 ve sonrası için geçerlidir. |
 | ASM/DEP | device_family | Cihazın Apple ürün ailesi: iPad, iPhone, iPod, Mac veya AppleTV. Bu anahtar, X-Server-Protokol-Sürüm 2 ve sonrası için geçerlidir. |
 | ASM/DEP | profile_name | Dize. Profil için okunabilir bir ad. |
 | ASM/DEP | support_phone_number | İsteğe bağlı. Dize. Kuruluş için bir destek telefon numarası. |

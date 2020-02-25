@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/20/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b615adf6435ecafb0dd6ca31be9ae96e4b98dde
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529320"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569532"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune ile içeri aktarılan PKCS sertifikalarını yapılandırma ve kullanma
 
@@ -31,6 +31,17 @@ Microsoft Intune, genellikle e-posta profilleriyle S/MIME şifrelemesi için kul
 E-posta belirli bir sertifikayla şifrelendiğinden, S/MIME şifrelemesi zordur. Şifresinin çözülmesi için e-postayı okuduğunuz cihazda e-postayı şifreleyen sertifikanın özel anahtarına sahip olmanız gerekir. Şifreleme sertifikaları düzenli olarak yenilenir, yani eski e-postayı okuyabilmeniz için tüm cihazlarınızda şifreleme geçmişinize ihtiyacınız olabilir.  Aynı sertifikanın cihazlarda kullanılması gerektiğinden, bu sertifika teslim mekanizmaları cihaz başına benzersiz sertifikalar sunduğundan bu amaçla [SCEP](certificates-scep-configure.md) veya [PKCS](certficates-pfx-configure.md) sertifika profillerini kullanmak mümkün değildir.
 
 Intune ile S/MIME kullanma hakkında daha fazla bilgi için, [e-postayı şifrelemek üzere s/MIME kullanın](certificates-s-mime-encryption-sign.md).
+
+## <a name="supported-platforms"></a>Desteklenen platformlar
+
+Intune, aşağıdaki platformlar için PFX sertifikalarının içeri aktarımını destekler:
+
+- Android-Cihaz Yöneticisi
+- Android kurumsal-tam yönetilen
+- Android kurumsal Iş profili
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -209,7 +220,7 @@ Sertifikaları Intune’da içeri aktardıktan sonra bir **PKCS içeri aktarılm
 
    - **Amaçlanan amaç**: Bu profil için içeri aktarılan sertifikaların amaçlanan amacını belirtin. Yöneticiler, sertifikaları farklı amaçlanan amaçlarla (S/MIME imzalama veya S/MIME Şifrelemesi gibi) içeri aktarabilir. Sertifika profilinde seçilen kullanım amacı, sertifika profilini doğru içeri aktarılmış sertifikalarla eşleştirir. Amaçlanan amaç, içeri aktarılan sertifikaları gruplamak için bir etikettir ve bu etiketle içeri aktarılan sertifikaların amaçlanan amacı karşıladığını garanti etmez.  
    - **Sertifika geçerlilik süresi**: geçerlilik süresi sertifika şablonunda değiştirilmediği takdirde, bu seçenek varsayılan olarak bir yıl olur.
-   - **Anahtar depolama sağlayıcısı (KSP)** : Windows için, cihazdaki anahtarları nereye depolayacağınızı seçin.
+   - **Anahtar depolama sağlayıcısı (KSP)**: Windows için, cihazdaki anahtarları nereye depolayacağınızı seçin.
 
 5. Profilinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
 

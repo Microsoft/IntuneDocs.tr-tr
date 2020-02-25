@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7fbbffb187fc9e9537bf647bc33e3d98879369c3
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784281"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576051"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>OData akışından Power BI ile bir Intune raporu oluşturma
 
-Bu makalede, kullanıcıların etkileşimli bir filtre Power BI Desktop kullanarak Intune verilerinizin ağaç Haritası görselleştirmesinin nasıl oluşturulacağı açıklanmaktadır. Örneğin, CFO, cihazların genel dağıtımının şirkete ait cihazlar ve kişisel cihazlar arasında nasıl Karşılaştırıldığı hakkında bilgi alabilir. Bu ağaç harita, toplam cihaz türü sayısı hakkında bilgi sağlar. Kaç tane iOS, Android ve Windows cihazın şirkete ait veya kişisel cihaz olduğunu gözden geçirebilirsiniz.
+Bu makalede, kullanıcıların etkileşimli bir filtre Power BI Desktop kullanarak Intune verilerinizin ağaç Haritası görselleştirmesinin nasıl oluşturulacağı açıklanmaktadır. Örneğin, CFO, cihazların genel dağıtımının şirkete ait cihazlar ve kişisel cihazlar arasında nasıl Karşılaştırıldığı hakkında bilgi alabilir. Bu ağaç harita, toplam cihaz türü sayısı hakkında bilgi sağlar. Şirkete ait veya kişisel olarak sahip olunan iOS/ıpados, Android ve Windows cihazlarının sayısını gözden geçirebilirsiniz.
 
 ## <a name="overview-of-creating-the-chart"></a>Grafiği oluşturmaya genel bakış
 
@@ -56,7 +56,7 @@ En yeni Power BI Desktop sürümünü yükleyin. Power BI Desktop’ı şu adres
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)'da oturum açın.
 2. **Microsoft Intune-genel bakış** dikey penceresinin sağ tarafındaki **diğer görevler** altında bulunan veri ambarı bağlantısını seçerek **Intune veri ambarı** bölmesini açın.
-3. Özel akış URL’sini kopyalayın. Örneğin: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+3. Özel akış URL’sini kopyalayın. Örneğin: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`.
 4. Power BI Desktop’ı açın.
 5. Menü çubuğundan **dosya** > **veri al** > **OData akışı**' nı seçin.
 6. Önceki adımdan kopyaladığınız özel akış URL 'sini **OData akış** penceresindeki URL kutusuna yapıştırın.

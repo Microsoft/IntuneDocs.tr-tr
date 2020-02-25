@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcb3a9f817b0e765fee79342bcd212f33509209a
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 8d47d91388fffd0e5716d20be640c4afbad2862e
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653555"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576325"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune Uygulama SDK’sına genel bakış
 Hem iOS hem de Android için kullanılabilen Intune uygulama SDK 'Sı, uygulamanızın Intune [Uygulama koruma ilkelerini](../apps/app-protection-policy.md)desteklemesini sağlar. Uygulamanıza uygulama koruma ilkeleri uygulandığında, Intune tarafından yönetilebilir ve Intune tarafından yönetilen bir uygulama olarak tanınabilirler. SDK, uygulama geliştiricisinden gereken kod değişikliği miktarını en aza indirir. Uygulamanızın davranışını değiştirmeden SDK’nın özelliklerinin birçoğunu etkinleştirebileceğinizi göreceksiniz. Gelişmiş Son Kullanıcı ve BT Yöneticisi deneyimi için, uygulamanızın davranışını, uygulama katılımınızı gerektiren özellikleri destekleyecek şekilde özelleştirmek için SDK 'nın API 'Lerini kullanabilirsiniz.
@@ -53,10 +53,10 @@ BT yöneticileri, uygulamadaki web bağlantılarının [Intune Managed Browser u
 BT yöneticileri, son kullanıcının uygulamadaki kurumsal verilere erişmeden önce bir PIN girmesini zorunlu kılabilir. Bu, uygulamayı kullanan kişinin başlangıçta iş veya okul hesabıyla oturum açan kişi olmasını sağlar. Son kullanıcılar PIN kodlarını yapılandırdığında, Intune Uygulama SDK'sı Azure Active Directory kullanarak son kullanıcıların kimlik bilgilerini kayıtlı Intune hesabıyla karşılaştırarak doğrular.
 
 ### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>Kullanıcıların uygulama erişimi için bir iş veya okul hesabıyla oturum açmasını gerektir
-BT yöneticileri, kullanıcıların uygulamaya erişmek için iş veya okul hesaplarıyla oturum açmasını zorunlu kılabilir. Intune Uygulama SDK'sı, girilen kimlik bilgilerinin sonraki oturumlar için yeniden kullanıldığı çoklu oturum açma deneyimini sağlamak üzere Azure Active Directory’i kullanır. Ayrıca Azure Active Directory ile federasyon uygulanmış kimlik yönetimi çözümlerinin kimlik doğrulaması da desteklenir.
+BT yöneticileri, kullanıcıların uygulamaya erişmek için iş veya okul hesaplarıyla oturum açmasını zorunlu kılabilir. Intune Uygulama SDK'sı, girilen kimlik bilgilerinin sonraki oturumlar için yeniden kullanıldığı çoklu oturum açma deneyimini sağlamak üzere Azure Active Directory’i kullanır. Ayrıca Azure Active Directory ile birleştirilen kimlik yönetimi çözümlerinin kimlik doğrulama yöntemleri desteklenir.
 
 ### <a name="check-device-health-and-compliance"></a>Cihaz durumunu ve uyumluluğunu denetleme
-BT yöneticileri, son kullanıcıların uygulamaya erişmesinden önce cihazın durumunu ve Intune ilkeleriyle uyumluluğunu denetleyebilir. iOS’ta bu ilke, cihaza jailbreak uygulanıp uygulanmadığını denetler. Android’de bu ilke, cihaza kök erişim izni verilip verilmediğini denetler.
+BT yöneticileri, son kullanıcıların uygulamaya erişmesinden önce cihazın durumunu ve Intune ilkeleriyle uyumluluğunu denetleyebilir. İOS/ıpados 'da Bu ilke, cihazın jailbreak uygulanmış olup olmadığını denetler. Android’de bu ilke, cihaza kök erişim izni verilip verilmediğini denetler.
 
 ### <a name="support-multi-identity"></a>Çoklu kimlik desteği
 Çoklu kimlik desteği, ilkeyle yönetilen (şirket) ve yönetilmeyen (kişisel) hesapların tek bir uygulamada birlikte bulunmasını sağlayan bir SDK özelliğidir.

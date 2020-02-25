@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438064"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576017"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Denetimli iOS/ıpados cihazlarında Intune ile Etkinleştirme Kilidi devre dışı bırakma
 
@@ -63,7 +63,7 @@ Intune, iOS/ıpados 8,0 ve üstünü çalıştıran denetimli cihazların Etkinl
 Cihazlarda Etkinleştirme Kilidi devre dışı bırakabilmeniz için bu yönergeleri izleyerek etkinleştirmeniz gerekir:
 
 1. [Cihaz kısıtlama ayarlarını yapılandırma](/intune-azure/configure-devices/how-to-configure-device-restrictions)bölümündeki bilgileri kullanarak IOS/ıpados Için bir Intune cihaz kısıtlama profili yapılandırın.
-2. [iOS için cihaz kısıtlama ayarları](../configuration/device-restrictions-ios.md) kısmında, **Genel** ayarların altında **Etkinleştirme Kilidi** seçeneğini etkinleştirin.
+2. [İOS/ıpados için cihaz kısıtlama ayarları](../configuration/device-restrictions-ios.md)' nda, **genel** ayarlar altında, **Etkinleştirme Kilidi**seçeneğini etkinleştirin.
 3. Profili kaydedin ve ardından devre dışı bırak Etkinleştirme Kilidi yönetmek istediğiniz cihazlara [atayın](../configuration/device-profile-assign.md) .
 
 

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206066"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575987"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP kullanarak Intune'da iş ortağı sertifika yetkilisi ekleme
 
-Intune ile üçüncü taraf sertifika yetkilileri (CA) kullanın. Üçüncü taraf CA 'Lar, Basit Sertifika Kayıt Protokolü (SCEP) kullanarak yeni veya yenilenen sertifikalarla mobil aygıtlar sağlayabilir ve Windows, iOS, Android ve macOS cihazlarını destekleyebilir.
+Intune ile üçüncü taraf sertifika yetkilileri (CA) kullanın. Üçüncü taraf CA 'Lar Basit Sertifika Kayıt Protokolü (SCEP) kullanarak yeni veya yenilenen sertifikalarla mobil aygıtlar sağlayabilir ve Windows, iOS/ıpados, Android ve macOS cihazlarını destekleyebilir.
 
 Bu özelliğin kullanımı iki bölümden oluşur: açık kaynak API'si ve Intune yönetici görevleri.
 
@@ -41,7 +41,7 @@ Azure Active Directory (Azure AD) uygulamasını kullanarak, cihazlardan gelen S
 
 Bu makalede Azure AD uygulaması oluşturma da dahil olmak üzere Yönetici perspektifinden bu özelliğe bir genel bakış sağlanır.
 
-## <a name="overview"></a>İlke
+## <a name="overview"></a>Genel Bakış
 
 Aşağıdaki adımlarda, Intune 'da sertifikalar için SCEP kullanılmasına genel bir bakış sağlanmaktadır:
 
@@ -134,7 +134,7 @@ Aşağıdaki üçüncü taraf sertifika yetkilileri Intune'u destekler:
 - [Intune SCEP API'si GitHub deposu](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [Üçüncü taraf CA'lar için Intune SCEP API'si kılavuzu](scep-libraries-apis.md)
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Sertifika profillerini yapılandırma](certificates-scep-configure.md)
 - [Intune SCEP API'si GitHub deposu](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)

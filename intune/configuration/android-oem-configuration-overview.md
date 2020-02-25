@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cc568cbadb683f632ffd2365ab7023cd796f231
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: 282464ebb616f5c8dec928b93f4852603bb20e10
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886701"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569447"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune 'de OEMConfig ile Android kurumsal cihazlarını kullanma ve yönetme
 
@@ -34,7 +34,7 @@ Bu özellik şu platformlarda geçerlidir:
 
 Bu makalede, OEMConfig açıklanmakta, önkoşulları listelemektedir, bir yapılandırma profili oluşturma ve Intune 'da desteklenen OEMConfig uygulamalarının nasıl listelendiği gösterilmektedir.
 
-## <a name="overview"></a>İlke
+## <a name="overview"></a>Genel Bakış
 
 OEMConfig ilkeleri, [uygulama yapılandırma ilkesine](../apps/app-configuration-policies-overview.md)benzer şekilde özel bir cihaz yapılandırma ilkesi türüdür. OEMConfig, Android tarafından, OEM 'Ler tarafından yazılan uygulamalara cihaz ayarları göndermek için Android 'de uygulama yapılandırması kullanan bir standart standarttır (özgün ekipman üreticileri). Bu standart, OEM 'Lerin ve EMMs 'nin (Enterprise Mobility Management), OEM 'e özgü özellikleri standartlaştırılmış bir şekilde oluşturmasına ve desteklemeye izin verir. [OEMConfig hakkında daha fazla bilgi edinin](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
 
@@ -58,7 +58,7 @@ OEMConfig kullanırken aşağıdaki bilgileri unutmayın:
 - Herhangi bir zamanda, OEM 'Ler desteklenen özellikleri ve şemaları güncelleştirebilir ve yeni bir uygulamayı Google Play karşıya yükleyebilir. Intune, Google Play 'ten her zaman OEMConfig uygulamasının en son sürümünü eşitler. Intune, şemanın veya uygulamanın eski sürümlerini korumaz. Sürüm çakışmaları ' nı çalıştırırsanız daha fazla bilgi için OEM 'ye başvurmanızı öneririz.
 - Bir cihaza bir OEMConfig profili atayın. Aynı cihaza birden çok profil atanmışsa, tutarsız bir davranış görebilirsiniz. OEMConfig modeli cihaz başına yalnızca tek bir ilkeyi destekler.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Cihazlarınızda OEMConfig kullanmak için aşağıdaki gereksinimlere sahip olduğunuzdan emin olun:
 
@@ -161,7 +161,7 @@ OEMConfig Apps, standart uygulamalarla karşılaştırıldığında, Google tara
 | Spectralink-cihaz | com. Spectralink. slnkdevicesettings  |  |
 | Spectralink-günlüğe kaydetme | com. Spectralink. slnklogger |  |
 | Spectralink-VQO | com. Spectralink. slnkvqo |  |
-| HMD küresel | com. hmdglobal. app. oemconfig. ironman |  |
+| Seuic | com. seuic. seuicoemconfig | |
 
 -----------------
 
