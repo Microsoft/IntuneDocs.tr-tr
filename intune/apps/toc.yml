@@ -82,12 +82,16 @@
               href: apps-win32-s-mode.md
         - name: Belirli uygulamalar ekleme
           items:
-            - name: Şirket Portalı uygulaması
+            - name: Şirket Portalı uygulaması - Otomatik Pilot
+              href: store-apps-company-portal-autopilot.md
+            - name: Şirket Portalı uygulaması - İndirme
               href: store-apps-company-portal-app.md
             - name: Windows 10 için Microsoft Edge
               href: apps-windows-edge.md
             - name: macOS için Microsoft Edge
               href: apps-edge-macos.md
+            - name: macOS için Microsoft Defender ATP
+              href: apps-advanced-threat-protection-macos.md
         - name: PowerShell komut dosyaları
           href: intune-management-extension.md
     - name: Uygulamaları atama
