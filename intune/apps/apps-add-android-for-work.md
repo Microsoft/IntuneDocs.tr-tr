@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aaed7ec6ba1daa28949b2c1f0997b76135b7e88f
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513614"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609191"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune ile Yönetilen Google Play uygulamalarını Android Kurumsal cihazlarına ekleme
 
@@ -122,7 +122,7 @@ Yönetilen Google Play LOB uygulamaları eklemenin iki yolu vardır:
 5. Google Play penceresinde **özel uygulamalar** ( *kilit* simgesinin yanında) seçeneğini belirleyin. 
 6. Yeni bir uygulama eklemek için sağ alt köşedeki **"+"** düğmesine tıklayın.
 7. Bir uygulama **başlığı** ekleyin ve APK uygulama paketini Ekle **' ye tıklayın** .
-8. **Oluştur**'a tıklayın.
+8. **Oluştur**'u tıklatın.
 9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın.
 10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. 
 
@@ -166,7 +166,7 @@ Web bağlantıları, Microsoft Edge veya dağıtmayı seçtiğiniz başka bir ta
 5. Google Play penceresinde **Web Apps** ( *Dünya* simgesinin yanında) seçeneğini belirleyin.
 6. Yeni bir uygulama eklemek için sağ alt köşedeki **"+"** düğmesine tıklayın.
 7. Uygulama **başlığı**, Web uygulaması **URL 'si**ekleyin, uygulamanın nasıl görüntüleneceğini seçin ve bir uygulama simgesi seçin.
-8. **Oluştur**'a tıklayın.
+8. **Oluştur**'u tıklatın.
 9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın.
 10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. 
 
@@ -224,6 +224,9 @@ Android kurumsal iş profili cihazlarına dağıtılan yönetilen Google Play uy
 
 ## <a name="delete-managed-google-play-apps"></a>Yönetilen Google Play uygulamalarını silme
 Gerektiğinde, yönetilen Google Play uygulamalarını Microsoft Intune'dan silebilirsiniz. Yönetilen bir Google Play uygulamasını silmek için, Azure portal Microsoft Intune açın ve **tüm uygulamalar** > **uygulamalar** ' ı seçin. Uygulama listesinden, yönetilen Google Play uygulamasının sağ tarafındaki üç noktayı (...) seçin ve görüntülenen listeden **Sil**'i seçin. Uygulama listesinden yönetilen Google Play uygulamasını sildikten sonra, yönetilen Google Play uygulamasının onayı otomatik olarak kaldırılır.
+
+> [!NOTE]
+> Bir uygulama onaylanmamış veya yönetilen Google Play deposundan silinirse, Intune istemci uygulamalar listesinden kaldırılmaz. Bu, uygulama onaylanmamış olsa bile bir kaldırma ilkesini kullanıcılara hedeflemesini sağlar.
 
 ## <a name="android-enterprise-system-apps"></a>Android Kurumsal sistem uygulamaları
 

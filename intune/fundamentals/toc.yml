@@ -39,6 +39,8 @@
   items:
     - name: Eğitim için Intune nedir?
       href: introduction-intune-education.md
+    - name: US Government için Intune nedir?
+      href: introduction-intune-government.md
     - name: Üst düzey mimari
       href: high-level-architecture.md
     - name: Cihaz yaşam döngüsü

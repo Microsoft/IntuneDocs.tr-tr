@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755196"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609166"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Microsoft Intune’a bir iOS iş kolu uygulaması ekleme
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755196"
 
 Bir iOS iş kolu uygulamasını Microsoft Intune’a eklemek için bu makaledeki bilgileri kullanın. İş kolu (LOB) uygulaması, bir IPA uygulama yükleme dosyasından Intune 'a eklediğiniz bir uygulamadır. Bu tür bir uygulama genellikle şirket içinde yazılmıştır. Önce iOS Geliştirici kurumsal programı 'na katılmanız gerekir. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Apple Web sitesi](https://developer.apple.com/programs/ios/enterprise/).
 
->[!NOTE]
->iOS kullanıcıları, Stocks ve Harita gibi bazı yerleşik iOS uygulamalarını kaldırabilir. Ancak siz bu uygulamaları yeniden dağıtmak için Intune’u kullanamazsınız. Kullanıcılar bu uygulamaları silerse uygulama mağazasına gidip el ile yeniden indirmeleri gerekir.
+> [!NOTE]
+> iOS kullanıcıları, Stocks ve Harita gibi bazı yerleşik iOS uygulamalarını kaldırabilir. Ancak siz bu uygulamaları yeniden dağıtmak için Intune’u kullanamazsınız. Kullanıcılar bu uygulamaları silerse uygulama mağazasına gidip el ile yeniden indirmeleri gerekir.
 >
->iOS LOB uygulamaları, uygulama başına 4 GB üst sınıra sahiptir.
+> iOS LOB uygulamaları, uygulama başına 4 GB üst sınıra sahiptir.
+
+> [!NOTE]
+> Paket tanımlayıcıları (örneğin, *com. contoso. app*), bir uygulamanın benzersiz tanımlayıcıları olacak şekilde tasarlanmıştır. Örneğin, test amacıyla üretim sürümünün yanına bir LOB uygulamasının beta sürümünü yüklemek için beta sürümü farklı bir benzersiz tanımlayıcıya sahip olmalıdır (örneğin, *com. contoso. app-Beta*). Aksi halde beta sürümü üretimle örtüşüyor ve yükseltme olarak değerlendirilir. . İpa dosyasının yeniden adlandırılması bu davranışı etkilemez.
 
 ## <a name="select-the-app-type"></a>Uygulama türünü seçin
 
@@ -56,14 +59,14 @@ Bir iOS iş kolu uygulamasını Microsoft Intune’a eklemek için bu makaledeki
 
 1. **Uygulama bilgileri** sayfasında uygulamanızın ayrıntılarını ekleyin. Seçtiğiniz uygulamaya bağlı olarak bu bölmedeki değerlerden bazıları otomatik olarak doldurulabilir.
     - **Ad**: Uygulamanın Şirket Portalı’nda görünen adını girin. Kullandığınız tüm uygulama adlarının benzersiz olduğundan emin olun. Aynı uygulama adı iki kez kullanılmışsa uygulamalardan yalnızca biri Şirket Portalı’nda kullanıcılara görüntülenir.
-    - **Açıklama**: Uygulama açıklamasını girin. Açıklama, Şirket Portalı’nda görünür.
-    - **Yayımcı**: Uygulama yayımcısının adını girin.
+    - **Açıklama**: Uygulama açıklamasını girin. Açıklama Şirket Portalı’nda görünür.
+    - **Yayımcı**: Uygulama yayıncısının adını girin.
     - **En Düşük İşletim Sistemi**: Listeden uygulamanın yüklenebileceği en düşük işletim sistemi sürümünü seçin. Uygulamayı daha önceki bir işletim sistemini çalıştıran cihazlara atarsanız, uygulama yüklenmez.
     - **Kategori**: Yerleşik uygulama kategorilerinden birini veya kendi oluşturduğunuz bir kategoriyi seçin. Kategoriler, kullanıcıların Şirket Portalı’na göz atarken uygulamayı daha kolay bulabilmesini sağlar.
     - **Bunu şirket portalı öne çıkan uygulama olarak göster**: kullanıcılar uygulamalara gözatarken, uygulamayı şirket portalının ana sayfasında göze çarpacak şekilde görüntüleyin.
-    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL Şirket Portalı’nda görünür.
-    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL Şirket Portalı’nda görünür.
-    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricisinin adını girin.
+    - **Bilgi URL’si**: İsteğe bağlı olarak, bu uygulama hakkında bilgi içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
+    - **Gizlilik URL’si**: İsteğe bağlı olarak, bu uygulamayla ilgili gizlilik bilgilerini içeren bir web sitesinin URL’sini girin. URL, Şirket Portalı’nda görünür.
+    - **Geliştirici**: İsteğe bağlı olarak, uygulama geliştiricinin adını girin.
     - **Sahip**: İsteğe bağlı olarak uygulama sahibinin adını girin. Örneğin **İK departmanı**.
     - **Notlar**: Bu uygulamayla ilişkilendirmek istediğiniz notları girin.
     - **Logo**: Uygulamayla ilişkilendirilen bir simgeyi karşıya yükleyin. Bu simge, kullanıcılar Şirket Portalı’na göz atarken uygulamayla birlikte görüntülenir.

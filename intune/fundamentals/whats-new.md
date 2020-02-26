@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c485d3c0cfc707324dd6be681b6341650acb8750
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: d2f984392983d81bc64edb7206469babdb806d63
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576466"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609287"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune yenilikler nelerdir?
 
@@ -167,7 +167,7 @@ Daha fazla bilgi için bkz. [Office mobil önizleme uygulamasıyla Intune uygula
 <!-- ########################## -->
 ## <a name="week-of-february-10-2020"></a>10 Şubat 2020 haftası
 
-### <a name="windows-7-ends-extended-support---3042987--"></a>Windows 7 genişletilmiş desteği sonlandırır <!--3042987-->
+### <a name="windows-7-ends-extended-support--3042987---"></a>Windows 7 genişletilmiş desteği sonlandırır<!--3042987 -->
 Windows 7, 14 Ocak 2020 ' de Genişletilmiş desteğin sonuna ulaştı. Intune, Windows 7 çalıştıran cihazlar için aynı anda kullanım dışı desteği. BILGISAYARıNıZı korumaya yardımcı olan teknik yardım ve otomatik güncelleştirmeler artık kullanılamaz. Windows 10 ' a yükseltmeniz gerekir. Daha fazla bilgi için bkz. [değişiklik için blog gönderisi planı](https://aka.ms/Windows7_Intune).
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->

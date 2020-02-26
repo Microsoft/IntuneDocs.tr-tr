@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6808a76ca95bfa1d694907732d9e4fff3dd5e69c
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: c7709d4162b065952d2f2f7acc778739ccb34eb7
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529405"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609331"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune korumalı uygulamalar  
 
@@ -57,7 +57,7 @@ Aşağıdaki tablolar, Microsoft Intune ile yaygın olarak kullanılan desteklen
 | **Microsoft faturalandırma**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft faturalandırma, küçük işletmelerin profesyonel görünümlü tahminler ve faturalar oluşturmalarına, hızlı bir şekilde ücretli ve zamandan tasarruf etmelerini kolaylaştırır. Faturanız veya bir hareket durumunda olun, faturalandırma, faturaları hızlı bir şekilde oluşturup göndermenizi, ödemeleri çevrimiçi olarak almanızı ve paradan daha az zaman harcamanızı sağlar. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira),<br>[Uygulama Mağazası bağlantısı (iOS)](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala, büyük grup iletişimleri ve iş yönetimi için tasarlanan bir mobil uygulama ve hizmettir. Kaizala, iş çalışanları, satıcılar, iş ortakları ve müşteriler nerede olursa olsun dahil olmak üzere tüm değer Zincirinizden çalışmayı kolay bir şekilde bağlamayı ve koordine etmelerini kolaylaştırır. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer),<br>[Uygulama Mağazası bağlantısı (iOS)](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft başlatıcısı**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Microsoft Başlatıcısı (eski adıyla ok Başlatıcısı), Android cihazınızı duvar kağıtları, tema renkleri, simge paketleri ve daha fazlasını içeren stilinize uyacak şekilde kişiselleştirebilirler. Microsoft hesabı veya iş/okul hesabıyla, kişiselleştirilmiş akışınızdaki takvim, belgeleriniz ve son etkinliklerinize erişebilirsiniz. Tüm cihazlarınızda üretken olmak için Windows BILGISAYARıNıZDA fotoğraf, belge ve Web sayfaları bile açabilirsiniz. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  
-| **Microsoft Office**<p><img alt="Microsoft app - Microsoft Office icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-office.png" width="100"> | Microsoft Office uygulaması, kullanıcıların tek bir uygulama içinde Word, Excel ve PowerPoint 'te çalışabilecekleri birleştirilmiş bir deneyimdir. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow),<br>[Uygulama Mağazası bağlantısı (iOS)](https://apps.apple.com/app/microsoft-office/id541164041) |  
+| **Microsoft Office**<p><img alt="Microsoft app - Microsoft Office icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-office.png" width="100"> | Microsoft Office uygulaması, bildiğiniz Word, Excel ve PowerPoint uygulamalarını birleştirir ve go üzerinde daha basit ve ancak daha güçlü bir Office deneyimi oluşturan yeni özelliklerle birlikte kullanır. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow),<br>[Uygulama Mağazası bağlantısı (iOS)](https://apps.apple.com/app/microsoft-office/id541164041) |  
 | **Microsoft OneDrive**<p><img alt="Microsoft app - Microsoft OneDrive for Business icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-onedrive-for-business.png" width="100"> | İş dosyalarınızın iş veya okulunuzdaki diğer kişilerle paylaşılması ve bunlarla işbirliği yapması için çevrimiçi depolama alanı sağlayın. Ayrıca, hareket halindeyken kişisel ve iş dosyalarınıza kolayca erişin.<p><p>Bu uygulama, Android ve iOS/ıpados için çok kimlikli bir uygulama olarak kullanılabilir. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.skydrive),<br>[Uygulama Mağazası bağlantısı (iOS)](https://itunes.apple.com/us/app/onedrive-cloud-storage-for/id477537958?mt=8) |  
 | **Microsoft OneNote**<p><img alt="Microsoft app - Microsoft OneNote icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-onenote.png" width="100"> | Çok kendi dijital not defteriniz olan OneNote ile düşüncelerinizi, bulmaları ve fikirlerinizi yakalayın. İlham alma, sınıf notlarını alma veya unutmamak için çok önemli olan errands listesini izleme. Evinizde, ofiste veya hareket halindeyken yaptığınız gibi, notlarınız tüm cihazlarınızda sizin için kullanılabilir.<p><p>Bu uygulama, Android ve iOS/ıpados için çok kimlikli bir uygulama olarak kullanılabilir. | [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.onenote),<br>[Uygulama Mağazası bağlantısı (iOS)](https://itunes.apple.com/us/app/microsoft-onenote-for-iphone/id410395246?mt=8) |  
 | **Microsoft Outlook**<p><img alt="Microsoft app - Microsoft Outlook icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-outlook.png" width="100"> | Bu ücretsiz e-posta uygulamasını kullanarak e-postalarınızın, takviminizin, kişilerinizin ve eklerin birleştirilmiş bir görünümü ile her yerden daha fazla işlem yapın. Tüm e-posta hesaplarınızın tamamında en önemli iletilerinizi otomatik olarak ayıklayın. Yalnızca birkaç dokunmasıyla takviminizi kolayca görüntüleyin, kullanılabilir zamanları paylaşabilir, toplantılar zamanlayın ve e-posta, OneDrive veya Dropbox 'tan dosya ekleyin.<p><p>Bu uygulama, Android ve iOS/ıpados için çok kimlikli bir uygulama olarak kullanılabilir.| [Google Play bağlantısı (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook),<br>[Uygulama Mağazası bağlantısı (iOS)](https://itunes.apple.com/us/app/microsoft-outlook/id951937596?mt=8) |  

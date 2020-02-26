@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912577"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609232"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulama dağıtımı 
 
@@ -44,18 +44,19 @@ Windows 10 cihazlarında desteklenen uygulama türleri İş kolu (LOB) uygulamal
 
 Belirli uygulama türleri, kullanıcılarınızın çalıştırdığı Windows 10 sürümüne göre desteklenir. Aşağıdaki tabloda, uygulama türü ve Windows 10 Supportability sağlanmaktadır.
 
-| Uygulama türü | Ana Sayfası | Pro | Business | Enterprise | Eğitim | S modu | Holomers | SurfaceHub | WCOS | Cep Telefonu |
+| Uygulama türü | Ana Sayfası | Pro | İş | Enterprise | Eğitim | S modu | HoloLens<sup>1 | Surface Hub | WCOS | Cep Telefonu |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  . DEFTERI | Hayır | Evet | Evet | Evet | Evet | Hayır | Hayır | Hayır | Hayır | Hayır |
 | . Intunewin | Hayır | Evet | Evet | Evet | Evet | 19H2 + | Hayır | Hayır | Hayır | Hayır |
-| Office C2R 'NDA | Hayır | Evet | Evet | Evet | Evet | Hayır | Hayır | Hayır | Hayır | Hayır |
+| Office C2R 'NDA | Hayır | Evet | Evet | Evet | Evet | RS4 + | Hayır | Hayır | Hayır | Hayır |
 | LOB: APPX/MALTı | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet |
 | MSFB çevrimdışı | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet |
-| MSFB çevrimiçi | Evet | Evet | Evet | Evet | Evet | Evet | RS4 + | Evet | Evet | Evet |
-| Web Uygulamaları | Evet | Evet | Evet | Evet | Evet | Evet | Evet<sup>1 | Evet<sup>1 | Evet | Evet |
+| MSFB çevrimiçi | Evet | Evet | Evet | Evet | Evet | Evet | RS4 + | Hayır | Evet | Evet |
+| Web Apps | Evet | Evet | Evet | Evet | Evet | Evet | Evet<sup>2 | Evet<sup>2 | Evet | Evet<sup>2 |
 | Mağaza bağlantısı | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet |
 
-yalnızca şirket portalından <sup>1</sup> başlatma.
+<sup>1</sup> uygulama yönetiminin kilidini açmak Için, Hololens cihazınızı [holographic for Business](../fundamentals/windows-holographic-for-business.md)'a yükseltin.<br />
+yalnızca Şirket Portalı <sup>2</sup> ' den başlatın.
 
 > [!NOTE]
 > Tüm Windows uygulama türleri kayıt gerektirir.
@@ -64,7 +65,7 @@ yalnızca şirket portalından <sup>1</sup> başlatma.
 
 Windows 10 LOB uygulamalarını imzalayabilir ve Intune yönetim konsoluna yükleyebilirsiniz. Bunlar, Evrensel Windows Platformu (UWP) uygulamaları ve Windows uygulama paketleri (AppX) gibi modern uygulamaların yanı sıra basit Microsoft yükleyicisi paket dosyaları (MSI) gibi Win 32 uygulamaları da içerebilir. Yöneticinin LOB uygulamalarının güncelleştirmelerini el ile yüklemesi ve dağıtması gerekir. Bu güncelleştirmeler, uygulamayı yüklemiş olan Kullanıcı cihazlarına otomatik olarak yüklenir. Kullanıcı müdahalesi gerekli değildir ve kullanıcının güncelleştirmeler üzerinde denetimi yoktur. 
 
-## <a name="microsoft-store-for-business-apps"></a>İş uygulamaları için Microsoft Mağazası
+## <a name="microsoft-store-for-business-apps"></a>İş İçin Microsoft Mağazası uygulamaları
 
 Iş uygulamaları için Microsoft Store, Microsoft Store for Business yönetici portalından satın alınan modern uygulamalardır. Daha sonra yönetim için Microsoft Intune için eşitlenir. Uygulamalar çevrimiçi lisanslanmış ya da çevrimdışı lisanslanabilir. Microsoft Store, yönetici tarafından hiçbir ek eylem gerekmeden güncelleştirmeleri doğrudan yönetir. Ayrıca, özel bir Tekdüzen Kaynak tanımlayıcısı (URI) kullanarak belirli uygulamalara yönelik güncelleştirmeleri engelleyebilirsiniz. Daha fazla bilgi için bkz. [Kurumsal uygulama yönetimi - Uygulamaların otomatik güncelleştirmeleri almasını engelleme](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). Kullanıcı aynı zamanda cihazdaki tüm Iş uygulamaları için Microsoft Store güncelleştirmelerini devre dışı bırakabilir. 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756012"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609306"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini kullanma
 
@@ -39,17 +39,30 @@ Intune Ayrıca, tüm yönetilen cihazlarınızda cihazların şifreleme durumu h
 
 MacOS çalıştıran cihazlarda Filekasadisk şifrelemesini yapılandırmak için Intune 'U kullanın. Daha sonra, bu cihazların şifreleme ayrıntılarını görüntülemek ve Filekasasına şifrelenmiş cihazların kurtarma anahtarlarını yönetmek için Intune şifreleme raporunu kullanın.
 
-Lütfen dosya kasasının cihazda çalışması için Kullanıcı onaylı cihaz kaydı gereklidir. Kullanıcının, kayıt için Kullanıcı onaylı olarak kabul edilmesi için sistem tercihlerine ait yönetim profilini el ile onaylaması gerekir. 
+Dosya kasasının cihazda çalışması için Kullanıcı tarafından onaylanan cihaz kaydı gereklidir. Kullanıcının kaydın Kullanıcı tarafından onaylanabilmesi için sistem tercihlerinden yönetim profilini el ile onaylaması gerekir.
 
 Filekasası, macOS ile birlikte gelen bir tam disk şifreleme programıdır. **MacOS 10,13 veya üstünü**çalıştıran cihazlarda dosya kasasını yapılandırmak Için Intune 'u kullanabilirsiniz.
 
 Filekasasını yapılandırmak için, macOS platformu için Endpoint Protection için bir [cihaz yapılandırma profili](../configuration/device-profile-create.md) oluşturun. Filekasası ayarları, macOS Endpoint Protection için kullanılabilir ayar kategorilerinden biridir.
 
-Cihazları dosya kasası ile şifrelemek için bir ilke oluşturduktan sonra, ilke iki aşamada cihazlara uygulanır. İlk olarak cihaz, Intune 'un kurtarma anahtarını alıp yedeklemesini sağlamak için hazır hale getirilir. Bu, Emanet olarak adlandırılır. Anahtar alındıktan sonra, disk şifrelemesi başlayabilir.
+Cihazları dosya kasası ile şifrelemek için bir ilke oluşturduktan sonra, ilke iki aşamada cihazlara uygulanır. İlk olarak cihaz, Intune 'un kurtarma anahtarını alıp yedeklemesini sağlamak için hazır hale getirilir. Bu eyleme Emanet denir. Anahtar alındıktan sonra, disk şifrelemesi başlayabilir.
 
 ![Dosya Kasası ayarları](./media/encrypt-devices/filevault-settings.png)
 
 Intune ile yönetebileceğiniz Filekasası ayarı hakkında ayrıntılı bilgi için bkz. macOS Endpoint Protection ayarları için Intune makalesindeki [filekasası](endpoint-protection-macos.md#filevault) .
+
+### <a name="permissions-to-manage-filevault"></a>Dosya kasasını yönetme izinleri
+
+Intune 'da Filekasasını yönetmek için hesabınızın ilgili Intune [rol tabanlı erişim denetimi](../fundamentals/role-based-access-control.md) (RBAC) izinlerine sahip olması gerekir.
+
+Aşağıda, **uzak görevler** kategorisinin bir parçası olan ve izin veren yerleşik RBAC rollerinin yer aldığı dosya Kasası izinleri verilmiştir:
+ 
+- **Dosya Kasası anahtarını al**:
+  - Yardım Masası Işleci
+  - Uç nokta güvenlik yöneticisi
+
+- **Filekasa anahtarını döndür**
+  - Yardım Masası Işleci
 
 ### <a name="how-to-configure-macos-filevault"></a>MacOS Filekasasını yapılandırma
 
@@ -84,7 +97,7 @@ Intune bir macOS cihazını Filekasasıyla şifreledikten sonra, bu cihazın ki�
 
 ### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>MEM şifreli macOS cihazlarından kişisel kurtarma anahtarını alma
 
-Son kullanıcılar, iOS Şirket Portalı uygulamasını kullanarak kişisel kurtarma anahtarını (Filekasası anahtarı) alabilecektir. Kişisel kurtarma anahtarına sahip olan cihaz Intune 'a kaydolmalıdır ve Intune aracılığıyla Filekasasıyla şifrelenir. İOS Şirket Portalı uygulamasını kullanarak Son Kullanıcı, Filekasakişisel kurtarma anahtarını içeren bir Web sayfası açabilir. Kurtarma anahtarını, *şifreli ve kayıtlı macOS cihazı* ** >  > ** **Kurtarma anahtarı al**' a seçerek de Intune 'dan alabilirsiniz. 
+Son kullanıcılar iOS Şirket Portalı uygulamasını kullanarak kişisel kurtarma anahtarını (Filekasası anahtarı) alır. Kişisel kurtarma anahtarına sahip olan cihaz Intune 'a kaydolmalıdır ve Intune aracılığıyla Filekasasıyla şifrelenir. İOS Şirket Portalı uygulamasını kullanarak Son Kullanıcı, Filekasakişisel kurtarma anahtarını içeren bir Web sayfası açabilir. Kurtarma anahtarını, *şifreli ve kayıtlı macOS cihazı* ** >  > ** **Kurtarma anahtarı al**' a seçerek de Intune 'dan alabilirsiniz. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>Windows 10 için BitLocker şifrelemesi
 
@@ -113,7 +126,7 @@ Windows 10 veya sonraki bir platformda Endpoint Protection için bir [cihaz yap�
 
 6. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.
 
-### <a name="manage-bitlocker"></a>seçin,
+### <a name="manage-bitlocker"></a>BitLocker 'ı yönetme
 
 Intune bir Windows 10 cihazını BitLocker ile şifreledikten sonra, Intune [şifreleme raporunu](encryption-monitor.md)görüntülerken BitLocker kurtarma anahtarlarını görüntüleyebilir ve alabilirsiniz.
 
@@ -121,7 +134,7 @@ Intune bir Windows 10 cihazını BitLocker ile şifreledikten sonra, Intune [şi
 
 Windows 10 sürüm 1909 veya üstünü çalıştıran bir cihazın BitLocker kurtarma anahtarını uzaktan döndürmek için bir Intune cihaz eylemini kullanabilirsiniz.
 
-#### <a name="prerequisites"></a>Prerequisites
+#### <a name="prerequisites"></a>Önkoşullar
 
 Cihazların BitLocker kurtarma anahtarının döndürmesini desteklemek için aşağıdaki önkoşulları karşılaması gerekir:
 
@@ -152,5 +165,5 @@ Yönetmek için şifreleme raporunu kullanın:
 
 Intune ile yapılandırabileceğiniz şifreleme ayarlarını inceleyerek şunları yapabilirsiniz:
 
-- [BitLocker](endpoint-protection-windows-10.md#windows-encryption)
+- [Kurulumu](endpoint-protection-windows-10.md#windows-encryption)
 - [FileVault](endpoint-protection-macos.md#filevault)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7264f5152f1b2b3beb58fc873fb7775d63bdccba
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 48d2e88fbe35729a5b8496d4ac1a4c444df3d89f
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576363"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609135"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -531,21 +531,30 @@ Sürüm 8.0.2'den başlayarak, yalnızca Intune tarafından yönetilen paylaşı
 
 `UIActivityViewController` ve `UIDocumentInteractionController` yoluyla belge paylaşırken, iOS bu belgeyi açmayı destekleyen tüm uygulamalar için “Şuraya kopyala” eylemleri görüntüler. Uygulamalar, Info.plist dosyalarındaki `CFBundleDocumentTypes` ayarı yoluyla destekledikleri belge türlerini bildirir. İlke yönetilmeyen uygulamalara paylaşımı yasaklarsa, bu paylaşım türü artık kullanılabilir olmaz. Bunun yerine kullanıcı, kullanıcı arabirimi olmayan Eylem uzantısını ekleyip bunu Intune Uygulama SDK’sına bağlamak zorunda kalır. Eylem uzantısı, yalnızca bir saplamadır. SDK, dosya paylaşım davranışını uygular. Aşağıdaki adımları izleyin:
 
-1. Uygulamanızın Info.plist `CFBundleURLTypes` ayarı altında en az bir schemeURL tanımlanmış olmalıdır.
+1. Uygulamanız, kendi Info. plist `CFBundleURLTypes` kapsamında tanımlanmış en az bir ıgnmeurl 'Si olmalıdır `-intunemam` karşılığı. Örneğin:
+    ```objc
+    <key>CFBundleURLSchemes</key>
+    <array>
+        <string>launch-com.contoso.myapp</string>
+        <string>launch-com.contoso.myapp-intunemam</string>
+    </array>
+    ```
 
-2. Uygulamanız ve eylem uzantınız en az bir Uygulama Grubu paylaşmalıdır ve bu Uygulama Grubu IntuneMAMSettings sözlüklerindeki uygulamanın ve uzantısının altındaki `AppGroupIdentifiers` dizisi altında listelenmelidir.
+2. Uygulamanızın ve eylem uzantınızın her ikisi de en az bir uygulama grubunu paylaşmalıdır ve uygulama grubu, uygulamanın ve uzantısının ıntunemamsettings sözlüklerinin altındaki `AppGroupIdentifiers` dizisinin altında listelenmelidir.
 
-3. Uygulama adından önce gelen “Şurada aç” eylem uzantısını adlandırın. Info.plist dosyasını ihtiyaca göre yerelleştirin.
+3. Hem uygulama hem de eylem uzantınız, Anahtarlık paylaşım özelliğine sahip olmalı ve `com.microsoft.intune.mam` Anahtarlık grubunu paylaşmalıdır.
 
-4. [Apple’ın geliştirici belgelerinde](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/) açıklandığı gibi uzantısı için bir şablon sağlayın. Alternatif olarak, bu görüntüleri uygulamanın .app dizininden oluşturmak için IntuneMAMConfigurator aracı kullanılabilir. Bunu yapmak için şunu çalıştırın:
+4. Uygulama adından önce gelen “Şurada aç” eylem uzantısını adlandırın. Info.plist dosyasını ihtiyaca göre yerelleştirin.
+
+5. [Apple’ın geliştirici belgelerinde](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/) açıklandığı gibi uzantısı için bir şablon sağlayın. Alternatif olarak, bu görüntüleri uygulamanın .app dizininden oluşturmak için IntuneMAMConfigurator aracı kullanılabilir. Bunu yapmak için şunu çalıştırın:
 
     ```bash
     IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory
     ```
 
-5. Uzantının Info.plist dosyasındaki IntuneMAMSettings ayarında EVET değerine sahip bir `OpenInActionExtension` Boole ayarı ekleyin.
+6. Uzantının Info.plist dosyasındaki IntuneMAMSettings ayarında EVET değerine sahip bir `OpenInActionExtension` Boole ayarı ekleyin.
 
-6. `NSExtensionActivationRule` kuralını, tek dosyayı ve uygulamanın `CFBundleDocumentTypes` ön ekli `com.microsoft.intune.mam` listesindeki tüm türleri destekleyecek şekilde yapılandırın. Örneğin uygulama public.text ve public.image destekliyorsa, etkinleştirme kuralı şu şekilde olur:
+7. `NSExtensionActivationRule` kuralını, tek dosyayı ve uygulamanın `CFBundleDocumentTypes` ön ekli `com.microsoft.intune.mam` listesindeki tüm türleri destekleyecek şekilde yapılandırın. Örneğin uygulama public.text ve public.image destekliyorsa, etkinleştirme kuralı şu şekilde olur:
 
     ```objc
     SUBQUERY (

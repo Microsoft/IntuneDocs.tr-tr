@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a3436b9590204691201f8341d1e2f896e9ffff6
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 9622eb33cb4e7732b573e8caf56acf4e3966badb
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576383"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609131"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -159,12 +159,12 @@ Azure AD Uygulama Ara Sunucusu Etkinleştirme senaryolarına bazı örnekler aş
 > [!NOTE]
 > Güncelleştirilmiş Uygulama Ara Sunucusu’nun yeniden yönlendirme verilerinin Managed Browser’da veya Microsoft Edge'de etkinleşmesi 24 saati bulabilir.
 
-#### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>1. Adım: otomatik yeniden yönlendirmeyi Outlook 'tan Microsoft Edge 'e etkinleştirme
+#### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>1\. Adım: otomatik yeniden yönlendirmeyi Outlook 'tan Microsoft Edge 'e etkinleştirme
 Outlook 'U **ilke ile yönetilen tarayıcılarla Web Içeriği paylaşma**ayarını sağlayan bir uygulama koruma ilkesiyle yapılandırın.
 
 ![Uygulama koruma ilkesinin ekran görüntüsü-ilke ile yönetilen tarayıcılarla Web içeriğini paylaşma](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
-#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>2. Adım: uygulama proxy 'sini etkinleştirmek için uygulama yapılandırma ayarını ayarlama
+#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>2\. Adım: uygulama proxy 'sini etkinleştirmek için uygulama yapılandırma ayarını ayarlama
 Microsoft Edge için uygulama ara sunucusunu etkinleştirmek üzere aşağıdaki anahtar/değer çiftine sahip Microsoft Edge 'i hedefleyin:
 
 |    Anahtar    |    Değer    |
@@ -181,7 +181,7 @@ Bir giriş sayfası kısayolunu yapılandırmak için aşağıdaki anahtar/değe
 
 |    Anahtar    |    Değer    |
 |-------------------------------------------------------------------|-------------|
-|    com. Microsoft. Intune. mam. managedbrowser. giriþ   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örnek:** <`https://www.bing.com`>
+|    com. Microsoft. Intune. mam. managedbrowser. giriþ   |    Geçerli bir URL belirtin. Hatalı URL’ler güvenlik önlemi olarak engellenir.<br>**Örnek:**  <`https://www.bing.com`>
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Microsoft Edge 'de yeni sekme sayfaları için kuruluşunuzun logosunu ve marka rengini yapılandırın
 
@@ -297,6 +297,22 @@ Sınırlı bağlantıların, kullanıcılara daha sorunsuz bir gözatma deneyimi
 
 ## <a name="disable-microsoft-edge-features-to-customize-the-end-user-experience-for-your-organizations-needs"></a>Kuruluşunuzun ihtiyaçlarına göre son kullanıcı deneyimini özelleştirmek için Microsoft Edge özelliklerini devre dışı bırakın
 
+### <a name="disable-prompts-to-share-usage-data-for-personalization"></a>Kullanım verilerini kişiselleştirme için paylaşmak üzere istemleri devre dışı bırak 
+
+Varsayılan olarak, Microsoft Edge, kullanıcılara, kullanım verileri toplama 'nın gözatma deneyimini kişiselleştirmesini ister. Bu istemin son kullanıcılara görüntülenmesini engellemek için bu verilerin paylaşımını devre dışı bırakabileceksiniz. 
+
+|    Anahtar    |    Değer    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.disableShareUsageData`    |     **true** , bu istemi son kullanıcılara görüntülemesini devre dışı bırakır.    |
+
+### <a name="disable-prompts-to-share-browsing-history"></a>Gözatma geçmişini paylaşmak için istemleri devre dışı bırak 
+
+Varsayılan olarak, Microsoft Edge, kullanıcıların gözatma deneyimini kişiselleştirmesini sağlayan geçmiş veri toplamayı gözden geçirme konusunda uyarır. Bu istemin son kullanıcılara görüntülenmesini engellemek için bu verilerin paylaşımını devre dışı bırakabileceksiniz.
+
+|    Anahtar    |    Değer    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     `com.microsoft.intune.man.managedbrowser.disableShareBrowsingHistory`    |     **true** , bu istemi son kullanıcılara görüntülemesini devre dışı bırakır.     |
+
 ### <a name="disable-prompts-that-offer-to-save-passwords"></a>Parolaları kaydetmek için teklif eden istemleri devre dışı bırak
 Varsayılan olarak, iOS 'ta Microsoft Edge, kullanıcılarınızın parolalarını anahtarlığa kaydetmenizi sağlar. Kuruluşunuz için bu istemi devre dışı bırakmak isterseniz, aşağıdaki ayarı yapılandırın:
 
@@ -319,6 +335,7 @@ InPrivate ve MSA taramayı engellemeye ek olarak, yalnızca Kullanıcı AAD hesa
 - [Android ayarı](~/apps/app-configuration-policies-use-android.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
 - [iOS ayarı](~/apps/app-configuration-policies-use-ios.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
 
+
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>İOS üzerinde Microsoft Edge kullanarak yönetilen uygulama günlüklerine erişin 
 
 İOS cihazlarında Microsoft Edge yüklü olan kullanıcılar, Microsoft tarafından yayımlanan tüm uygulamaların yönetim durumunu görüntüleyebilir. Yönetilen iOS uygulamalarında sorun gidermek için günlükleri gönderebilirler. Şöyle yapılır:
@@ -334,10 +351,10 @@ Android cihazlarda günlükleri görüntüleme hakkında bilgi için bkz. [e-pos
 
 Microsoft Edge için ek güvenlik ve gizlilik konuları aşağıda verilmiştir:
 
-- Microsoft Edge, kullanıcıların cihazlarındahttps://docs.microsoft.com/en-us/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-multi-identity-apps yerel tarayıcı için ayarlandığı ayarları tüketmez çünkü Microsoft Edge bu ayarlara erişemez.
+- Microsoft Edge, kullanıcıların cihazlarında https://docs.microsoft.com/en-us/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-multi-identity-apps yerel tarayıcı için ayarlandığı ayarları tüketmez çünkü Microsoft Edge bu ayarlara erişemez.
 - Microsoft Edge ile ilişkili bir uygulama koruma ilkesinde erişim için **basıt PIN gerektir** veya erişim **için şirket kimlik bilgilerini gerektir** seçeneğini yapılandırabilirsiniz. Bir kullanıcı kimlik doğrulama sayfasındaki yardım bağlantısını seçerse, ilkede engellenen bir listeye eklenmediğine bakılmaksızın herhangi bir internet sitesine göz atabilir.
 - Microsoft Edge, sitelere yalnızca doğrudan erişildiğinde erişimi engelleyebilir. Kullanıcılar, siteye erişmek için ara hizmetler (örneğin bir çeviri hizmeti) kullandıklarında erişimi engellemez.
-- Kimlik doğrulamasına izin vermek ve Intune belgelerine erişmek için ***. Microsoft.com** , izin verilenler veya engellenenler listesi ayarlarından muaf tutulur. Her zaman izin verilir.
+- Kimlik doğrulamasına izin vermek ve Intune belgelerine erişmek için * **. Microsoft.com** , izin verilenler veya engellenenler listesi ayarlarından muaf tutulur. Her zaman izin verilir.
 - Kullanıcılar, veri toplamayı kapatabilir. Microsoft, ürün ve hizmetlerini geliştirmek için Managed Browser’ın performansı ve kullanımı hakkında otomatik olarak anonim bilgiler toplar. Kullanıcılar cihazlarındaki **Kullanım Verileri** ayarını kullanarak veri toplamayı kapatabilir. Bu verilerin toplanması üzerinde denetiminiz yoktur. İOS cihazlarda, kullanıcıların ziyaret ettiği veya güvenilmeyen bir sertifikaya sahip olan Web siteleri açılamaz.
 
 ## <a name="next-steps"></a>Sonraki adımlar

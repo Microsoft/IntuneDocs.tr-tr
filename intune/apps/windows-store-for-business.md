@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74562504"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609149"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Toplu satın alınan uygulamaları Microsoft Store Iş için Microsoft Intune ile yönetme
 
@@ -48,7 +48,7 @@ ms.locfileid: "74562504"
 - İş İçin Microsoft Store'dan satın aldığınız hem çevrimiçi hem de çevrimdışı lisanslı uygulamalar Intune portalına eşitlenir. Daha sonra bu uygulamaları cihaz gruplarına veya kullanıcı gruplarına dağıtabilirsiniz. 
 - Çevrimiçi uygulama yüklemeleri mağaza tarafından yönetilir.
 - Ücretsiz çevrimdışı uygulamalar da Intune ile eşitlenebilir. Bu uygulamalar, mağaza tarafından değil Intune tarafından yüklenir.
-- Bu özelliğin kullanılabilmesi için cihazların Active Directory Etki Alanı Hizmetleri'ne veya çalışma alanına katılmış olması gerekir.
+- Bu özelliği kullanmak için cihazların Active Directory Domain Services, Azure AD 'ye katılmış veya çalışma alanına katılmış olması gerekir.
 - Kaydedilen cihazlar Windows 10’un 1511 sürümünü veya sonraki bir sürümü kullanıyor olmalıdır.
 
 Ayrıca, İş İçin Microsoft Store'dan eşitlenen ilgili kümeler ve Çevrimdışı Lisanslı uygulamalar artık kullanıcı arabiriminde tek bir uygulama girişinde birleştirilecektir. Tek paketlerden alınan tüm dağıtım ayrıntıları, tek girişe geçirilecektir. Azure portal ilgili kümeleri görüntülemek için **uygulamalar** bölmesinden **uygulama lisansları** ' nı seçin.
