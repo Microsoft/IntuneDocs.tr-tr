@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2f984392983d81bc64edb7206469babdb806d63
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 17bb4ca225fa93352428cbe208c2fc1a53812f2c
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609287"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652310"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune yenilikler nelerdir?
 
@@ -223,7 +223,7 @@ Android kurumsal Iş profili cihazlarında Wi-Fi profilleri oluşturabilirsiniz.
 
 Artık kuruluş türünü seçtiğinizde, `proxy.contoso.com`gibi bir proxy sunucu URL 'SI de dahil olmak üzere otomatik proxy ayarlarını da girebilirsiniz.
 
-Yapılandırabileceğiniz geçerli Wi-Fi ayarlarını görmek için [Microsoft Intune ' de Android Enterprise ve Android bilgi noktası çalıştıran cihazlar Için Wi-Fi ayarları ekle](../configuration/wi-fi-settings-android-enterprise.md)' ye gidin.
+Yapılandırabileceğiniz geçerli Wi-Fi ayarlarını görmek için [Microsoft Intune ' de Android Enterprise ve Android bilgi noktası çalıştıran cihazlar Için Wi-Fi ayarları ekle](../configuration/wi-fi-settings-android-enterprise.md#work-profile-only)' ye gidin.
 
 Uygulama alanı:
 - Android kurumsal iş profili

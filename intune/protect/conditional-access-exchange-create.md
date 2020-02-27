@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 29ddc53af79121965698d67f0d4510ac34bbabca
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576061"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652462"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online ayrılmış için koşullu erişim ilkesi oluşturma
 
@@ -65,7 +65,25 @@ Koşullu erişimi yapılandırmadan önce, aşağıdaki yapılandırmaların mev
 - Windows Phone 8.1 ve üzeri
 - İOS/ıpados üzerinde yerel e-posta uygulaması.
 - Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri.
-- EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **iş profilindeki****Gmail** ve **Android Enterprise için Nine Work** desteklenir. Android iş profilleriyle çalışmak üzere koşullu erişim için, Android Enterprise uygulaması için Gmail veya dokuz Iş için bir e-posta profili dağıtmanız ve ayrıca bu uygulamaları gerekli bir yükleme olarak dağıtmanız gerekir.
+- EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **iş profilindeki** **Gmail** ve **Android Enterprise için Nine Work** desteklenir. Android iş profilleriyle çalışmak üzere koşullu erişim için, Android Enterprise uygulaması için Gmail veya dokuz Iş için bir e-posta profili dağıtmanız ve ayrıca bu uygulamaları gerekli bir yükleme olarak dağıtmanız gerekir.
+
+  Android iş profili cihazlarına koşullu erişim ayarlamak için:
+
+  1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+  
+  2. Gmail veya dokuz Iş uygulamasını **gerektiği**şekilde dağıtın.
+
+  3. **Cihaz** > **yapılandırma profilleri** > **Profil oluştur**' u seçin, profil için **ad** ve **Açıklama** girin.
+
+  4. Platformda **Android Enterprise** 'u seçin, **profil türünde** **e-posta** ' yı seçin.
+
+  5. [E-posta profili ayarlarını](https://docs.microsoft.com/intune/configuration/email-settings-android-enterprise#android-enterprise)yapılandırın.
+
+  6. İşiniz bittiğinde **Tamam** > **Oluştur**’u seçerek değişikliklerinizi kaydedin.
+
+  7. E-posta profilini oluşturduktan sonra [gruplara atayın](https://docs.microsoft.com/intune/device-profile-assign).
+
+  8. [Cihaz tabanlı koşullu erişimi](https://docs.microsoft.com/intune/protect/conditional-access-intune-common-ways-use#device-based-conditional-access)ayarlayın.
 
 > [!NOTE]
 > Android ve iOS için Microsoft Outlook/ıpados, şirket içi Exchange Bağlayıcısı aracılığıyla desteklenmez. Şirket içi posta kutularınız için iOS/ıpados ve Android için Outlook ile koşullu erişim ilkeleri ve Intune Uygulama Koruması Ilkeleri Azure Active Directory yararlanmak istiyorsanız lütfen bkz. [iOS Için Outlook ile karma modern kimlik doğrulamasını kullanma/ıpados ve Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).

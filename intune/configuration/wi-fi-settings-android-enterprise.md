@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/18/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef1747fdbb3118db82f6e99c2838632c8a9d369
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 6b6d5d51bedcd3f8251dd4ac307b58a08ba7cdc6
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77512458"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652445"
 ---
 # <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Microsoft Intune 'de Android kurumsal adanmış ve tam olarak yönetilen cihazlar için Wi-Fi ayarları ekleme
 
@@ -152,6 +152,19 @@ Android kurumsal adanmış veya tam olarak yönetilen bir cihaza dağıtım yap�
       - **Sertifikalar**: Cihaza da dağıtılmış olan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
 
       - **Kimlik gizliliği (dış kimlik)** : EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
+
+- **Proxy ayarları**: kuruluşunuz tarafından kullanılan ara sunucu yapılandırmasını belirtin. Seçenekleriniz şunlardır:
+
+  - **Hiçbiri** -proxy sunucusu kullanmazsınız.
+  - **Otomatik** – ara *sunucu URL 'si* ayarını kullanılabilir hale getirmek için bu seçeneği belirleyin. proxy sunucusu veya proxy sunucularınızın bir listesini Içeren bir proxy otomatik yapılandırma (PAC) dosyası belirtin.
+
+- **Proxy sunucusu URL 'si**: Bu ayar, *Ara sunucu ayarlarını* *Otomatik*olarak belirlediğinizde kullanılabilir. Cihazları proxy sunucunuza yönlendirmek için aşağıdaki seçeneklerden birini belirtin:
+
+  - IP adresi. Örneğin, `10.0.0.11`
+  - BIR URL. Örneğin, `http://proxyserver.contoso.com`.
+  - Bir proxy otomatik yapılandırma (PAC) dosyasının URL 'SI. Örneğin: `http://proxy.contoso.com/proxy.pac`.
+
+  PAC dosyaları hakkında daha fazla bilgi için bkz. [proxy otomatik yapılandırma (PAC) dosyası](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (Microsoft dışı bir site açar).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

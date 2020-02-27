@@ -1,12 +1,12 @@
 ---
 title: Microsoft Intune’da Android cihazları için Wi-Fi ayarlarını yapılandırma - Azure | Microsoft Docs
 titleSuffix: ''
-description: Android için bir Wi-Fi cihaz yapılandırma profili oluşturun veya ekleyin. Microsoft Intune’da sertifika ekleme, EAP türü seçme ve bir kimlik doğrulama yöntemi seçme gibi farklı ayarları görün.
+description: Android için bir Wi-Fi cihaz yapılandırma profili oluşturun veya ekleyin. Microsoft Intune’da sertifika ekleme, EAP türü seçme ve bir kimlik doğrulama yöntemi seçme gibi farklı ayarları inceleyin.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 955d9931779752e8736435555db7f7aba777b430
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754567"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652411"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune’da Android çalıştıran cihazlar için Wi-Fi ayarları ekleme
 
@@ -57,19 +57,6 @@ Bu makalede bu ayarlar açıklanır.
 
     - **Kimlik gizliliği (dış kimlik)** : EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
 
-    - **Proxy ayarları**: kuruluşunuz tarafından kullanılan ara sunucu yapılandırmasını belirtin. Seçenekleriniz şunlardır:
-
-      - **Hiçbiri** -proxy sunucusu kullanmazsınız.
-      - **Otomatik** – ara *sunucu URL 'si* ayarını kullanılabilir hale getirmek için bu seçeneği belirleyin. proxy sunucusu veya proxy sunucularınızın bir listesini Içeren bir proxy otomatik yapılandırma (PAC) dosyası belirtin.
-
-    - **Proxy sunucusu URL 'si**: Bu ayar, *Ara sunucu ayarlarını* *Otomatik*olarak belirlediğinizde kullanılabilir. Cihazları proxy sunucunuza yönlendirmek için aşağıdaki seçeneklerden birini belirtin:
-
-      - IP adresi. Örneğin, `10.0.0.11`
-      - BIR URL. Örneğin, `http://proxyserver.contoso.com`.
-      - Bir proxy otomatik yapılandırma (PAC) dosyasının URL 'SI. Örneğin: `http://proxy.contoso.com/proxy.pac`.
-
-      PAC dosyaları hakkında daha fazla bilgi için bkz. [proxy otomatik yapılandırma (PAC) dosyası](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (Microsoft dışı bir site açar).
-
   - **EAP-TTLS**: Ayrıca şunları girin:
 
     - **Sunucu Güveni** - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. İstemci ağa bağlanırken bu sertifika sunucuya sunulur. Bağlantının kimliğini doğrular.
@@ -88,19 +75,6 @@ Bu makalede bu ayarlar açıklanır.
 
       - **Kimlik gizliliği (dış kimlik)** : EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
 
-    - **Proxy ayarları**: kuruluşunuz tarafından kullanılan ara sunucu yapılandırmasını belirtin. Seçenekleriniz şunlardır:
-
-      - **Hiçbiri** -proxy sunucusu kullanmazsınız.
-      - **Otomatik** – ara *sunucu URL 'si* ayarını kullanılabilir hale getirmek için bu seçeneği belirleyin. proxy sunucusu veya proxy sunucularınızın bir listesini Içeren bir proxy otomatik yapılandırma (PAC) dosyası belirtin.
-
-    - **Proxy sunucusu URL 'si**: Bu ayar, *Ara sunucu ayarlarını* *Otomatik*olarak belirlediğinizde kullanılabilir. Cihazları proxy sunucunuza yönlendirmek için aşağıdaki seçeneklerden birini belirtin:
-
-      - IP adresi. Örneğin, `10.0.0.11`
-      - BIR URL. Örneğin, `http://proxyserver.contoso.com`.
-      - Bir proxy otomatik yapılandırma (PAC) dosyasının URL 'SI. Örneğin: `http://proxy.contoso.com/proxy.pac`.
-
-      PAC dosyaları hakkında daha fazla bilgi için bkz. [proxy otomatik yapılandırma (PAC) dosyası](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (Microsoft dışı bir site açar).
-
   - **PEAP**: Ayrıca şunları girin:
 
     - **Sunucu Güveni** - **Sunucu doğrulaması için kök sertifika**: Mevcut bir güvenilen kök sertifika profilini seçin. İstemci ağa bağlanırken bu sertifika sunucuya sunulur. Bağlantının kimliğini doğrular.
@@ -116,19 +90,6 @@ Bu makalede bu ayarlar açıklanır.
       - **Sertifikalar**: Cihaza da dağıtılmış olan SCEP veya PKCS istemci sertifikası profilini seçin. Bu sertifika, bağlantının kimliğini doğrulamak için cihaz tarafından sunucuya sunulan kimliktir.
 
       - **Kimlik gizliliği (dış kimlik)** : EAP kimlik isteğine yanıt olarak gönderilen metni girin. Bu metin herhangi bir değer olabilir, örneğin `anonymous`. Kimlik doğrulaması sırasında başlangıçta bu anonim kimlik gönderilir ve ardından güvenli bir tünelde gerçek kimlik gönderilir.
-
-      - **Proxy ayarları**: kuruluşunuz tarafından kullanılan ara sunucu yapılandırmasını belirtin. Seçenekleriniz şunlardır:
-
-        - **Hiçbiri** -proxy sunucusu kullanmazsınız.
-        - **Otomatik** – ara *sunucu URL 'si* ayarını kullanılabilir hale getirmek için bu seçeneği belirleyin. proxy sunucusu veya proxy sunucularınızın bir listesini Içeren bir proxy otomatik yapılandırma (PAC) dosyası belirtin.
-
-      - **Proxy sunucusu URL 'si**: Bu ayar, *Ara sunucu ayarlarını* *Otomatik*olarak belirlediğinizde kullanılabilir. Cihazları proxy sunucunuza yönlendirmek için aşağıdaki seçeneklerden birini belirtin:
-
-        - IP adresi. Örneğin, `10.0.0.11`
-        - BIR URL. Örneğin, `http://proxyserver.contoso.com`.
-        - Bir proxy otomatik yapılandırma (PAC) dosyasının URL 'SI. Örneğin: `http://proxy.contoso.com/proxy.pac`.
-
-        PAC dosyaları hakkında daha fazla bilgi için bkz. [proxy otomatik yapılandırma (PAC) dosyası](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (Microsoft dışı bir site açar).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

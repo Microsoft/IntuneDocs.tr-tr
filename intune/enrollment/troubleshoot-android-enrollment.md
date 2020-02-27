@@ -16,18 +16,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312f8ee3acb6b8be767d6349b29932ab65ae75d8
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 04c726c1dc6af7e92b75335d105de605ef00e712
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77611031"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652377"
 ---
-# <a name="troubleshoot-android-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune Android cihaz kaydı sorunlarını giderme
+# <a name="troubleshoot-android-enterprise-device-problems-in-microsoft-intune"></a>Microsoft Intune 'de Android kurumsal cihaz sorunlarını giderme
 
-Bu makale, Intune yöneticilerinin Android cihazlarını Intune 'A kaydetme sırasında sorunları anlamalarına ve sorunlarını gidermenize yardımcı olur.
+Bu makale Intune yöneticilerinin Intune 'daki Android Kurumsal cihazları ile ilgili sorunları anlamalarına ve sorunlarını gidermelerine yardımcı olur.
 
-## <a name="apps-on-android-devices"></a>Android cihazlarda uygulamalar
+## <a name="apps-on-android-enterprise-devices"></a>Android kurumsal cihazlarda uygulamalar
 
 ### <a name="managed-google-play-apps-that-arent-deployed-through-intune-are-displayed-in-the-work-profile"></a>Intune aracılığıyla dağıtılmamış yönetilen Google Play uygulamaları iş profilinde görüntülenir
 Sistem uygulamaları, iş profili oluşturulduğu sırada cihaz OEM tarafından iş profilinde etkinleştirilebilir. Bu, MDM sağlayıcısı tarafından denetlenmez.
@@ -42,14 +42,14 @@ Sorunu gidermek için şu adımları izleyin:
   6. İş profilinde görünen uygulamaları gözden geçirin. 
   7. Test DPC uygulamasında aynı uygulamalar gösteriliyorsa, uygulamalar bu cihaz için OEM tarafından beklenir.
 
-### <a name="unapproved-google-play-for-work-store-apps-arent-being-removed-from-the-mobile-apps-page-in-intune"></a>Iş Mağazası uygulamaları için onaylanmamış Google Play, Intune 'daki Mobile Apps sayfasından kaldırılmaz
+### <a name="unapproved-managed-google-play-for-work-store-apps-arent-being-removed-from-the-client-apps-page-in-intune"></a>Iş Mağazası uygulamaları için onaylanmamış yönetilen Google Play, Intune 'daki Istemci uygulamaları sayfasından kaldırılmaz
 Bu beklenen bir davranıştır.
 
 ### <a name="managed-google-play-apps-arent-being-reported-under-the-discovered-apps-blade-in-the-intune-portal"></a>Yönetilen Google Play uygulamalar, Intune portalındaki bulunan uygulamalar dikey penceresinde bildirilmiyor
-Bu beklenen bir davranıştır.
+Bu beklenen bir davranıştır. Yalnızca Iş profilinde yüklü olan sistem uygulamaları, bulunan uygulamalar dikey penceresinde envantere kaydedilir. Yüklü yönetilen Google Play uygulamalarını görmek için **yönetilen uygulamalar** dikey penceresini kullanın.
 
 ### <a name="are-web-applications-supported-for-work-profile-enrolled-devices"></a>İş profili kayıtlı cihazlar için desteklenen Web uygulamaları var mı?
-Şu anda değil.
+Evet. Daha fazla bilgi için bkz. [yönetilen Google Play web bağlantıları](../apps/apps-add-android-for-work.md#managed-google-play-web-links)
 
 ## <a name="device-management"></a>Cihaz yönetimi
 
@@ -66,11 +66,8 @@ Bu beklenen bir davranıştır.
 ### <a name="managed-google-play-last-sync-time--hasnt-been-updated-in-days"></a>Yönetilen Google Play son eşitleme saati, gün cinsinden güncelleştirilmedi
 Bu beklenen bir davranıştır. Eşitleme yalnızca el ile yaptığınız zaman tetiklenir.
 
-### <a name="is-system-center-configuration-manager-hybrid-supported"></a>System Center Configuration Manager karma destekleniyor mu?
-Bu, iş profili yönetimi için Configuration Manager 1702 ve sonraki sürümlerde desteklenir. Adanmış cihazlar (COSU) karma bir senaryoda desteklenmez.
-
 ### <a name="encryption-is-required-when-a-device-is-enrolled-can-it-be-turned-off"></a>Bir cihaz kaydolduğunda şifreleme gereklidir. Kapatılabilir mi?
-Hayır, iş profili için Google 'dan şifreleme gerekir. 
+Hayır, Google, cihazın bir iş profili oluşturmak için şifrelenmesini gerektirir. 
 
 ### <a name="samsung-devices-are-blocking-the-use-of-third-party-keyboards-like-swiftkey"></a>Samsung cihazlar, SwiftKey gibi üçüncü taraf klavyeleri kullanmayı engelliyor
 Samsung, Android 8.0 + cihazlarında bu kısıtlamayı zorlamaya başladı. Microsoft şu anda bu sorun üzerinde Samsung ile çalışmaktadır ve kullanılabilir olduğunda yeni bilgiler göndermeyecektir.
@@ -85,7 +82,7 @@ Bu beklenen bir davranıştır. İş profili senaryosunda, MDM sağlayıcısı c
 - iş profili geçiş kodu yönetiliyor
 - Son Kullanıcı onu sıfırlamanıza izin verildi.
 
-Adanmış cihazlar (COSU) için cihaz geçiş kodu sıfırlaması desteklenir.
+Adanmış cihazlar (COSU) ve tam olarak yönetilen cihaz geçiş kodu sıfırlaması desteklenir.
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
