@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 03bfdfb87c969381b582481367ab0457f6b50049
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413783"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781886"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
@@ -39,7 +39,7 @@ BT yöneticisi olarak, kullanıcılarınızın işlerini yapması için gereken 
    - **Genel bakış** , kayıtlı cihazların görsel anlık görüntüsünü gösterir ve ayrıca Android, IOS/ıpados gibi farklı platformları kaç cihazın kullandığını gösterir.
    - **Tüm cihazlar**, yönettiğiniz kayıtlı cihazların listesini gösterir.
 
-     **Dışarı Aktar** özelliğini kullanarak tüm cihazların .csv listesini oluşturabilirsiniz. Listenin sınırları 10.000 (Internet Explorer) ve 30.000’dir (Microsoft Edge, Chrome).
+     10.000 (Internet Explorer) veya 30.000 (Microsoft Edge, Chrome) artışlarla tüm cihazların bir. zip listesini oluşturmak için **dışarı aktarma** özelliğini kullanın.
 
      Donanım ayrıntıları, yüklü uygulamalar, uyumluluk ilkesi durumu ve daha fazlası dahil olmak üzere [Bu cihazla ilgili ek ayrıntıları görüntülemek](device-inventory.md)için herhangi bir cihaz seçin.
 

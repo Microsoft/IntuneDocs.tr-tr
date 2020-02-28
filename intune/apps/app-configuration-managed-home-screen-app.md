@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4a9372a67dc0f45e256c3eba9b816db866e23998
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564219"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781796"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise için Microsoft tarafından yönetilen giriş ekranı uygulamasını yapılandırma
 
@@ -57,27 +57,27 @@ Yapılandırma Tasarımcısı, önceden doldurulmuş ayarları ve bunlarla iliş
 
 Aşağıdaki tablo, yönetilen giriş ekranı kullanılabilir yapılandırma anahtarlarını, değer türlerini, varsayılan değerleri ve açıklamaları listeler. Açıklama, seçilen değerlere göre beklenen cihaz davranışını sağlar. Yapılandırma tasarımcısında devre dışı bırakılan yapılandırma anahtarları tabloda listelenmez.
 
-| Yapılandırma anahtarı | Değer Türü | Varsayılan Değer | Description |
+| Yapılandırma anahtarı | Değer Türü | Varsayılan Değer | Açıklama |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Izgara boyutunu ayarla | dize | Otomatik | Yönetilen giriş ekranında, uygulamaların kılavuz boyutunu ayarlamanızı sağlar. Izgara boyutunu tanımlamak için uygulama satır ve sütun sayısını aşağıdaki biçimde ayarlayabilirsiniz `columns;rows`. Kılavuz boyutunu tanımlarsanız, giriş ekranındaki bir satırda gösterilecek en fazla uygulama sayısı, ayarladığınız satır sayısı ve giriş ekranındaki bir sütunda gösterilecek en fazla uygulama sayısı, ayarladığınız sütun sayısı olacak şekilde değişir. |
+| Izgara boyutunu ayarla | string | Otomatik | Yönetilen giriş ekranında, uygulamaların kılavuz boyutunu ayarlamanızı sağlar. Izgara boyutunu tanımlamak için uygulama satır ve sütun sayısını aşağıdaki biçimde ayarlayabilirsiniz `columns;rows`. Kılavuz boyutunu tanımlarsanız, giriş ekranındaki bir satırda gösterilecek en fazla uygulama sayısı, ayarladığınız satır sayısı ve giriş ekranındaki bir sütunda gösterilecek en fazla uygulama sayısı, ayarladığınız sütun sayısı olacak şekilde değişir. |
 | Bildirimleri etkinleştir rozet | bool | Yanlış | Uygulamadaki yeni bildirimlerin sayısını gösteren uygulama simgeleri için bildirim rozetini sunar. Bu ayarı etkinleştirirseniz, son kullanıcılar okunmamış bildirimlere sahip uygulamalarda bildirim rozetlerini görür. Bu yapılandırma anahtarını devre dışı tutarsanız, Son Kullanıcı okunmamış bildirimlere sahip olabilecek uygulamalar için herhangi bir bildirim görmeyecektir. |
 | Giriş ekranını kilitle | bool | TRUE | Son kullanıcının, ana ekranda uygulama simgeleri etrafında hareket etme yeteneğini kaldırır. Bu yapılandırma anahtarını etkinleştirirseniz, giriş ekranındaki uygulama simgeleri kilitlenir ve Son Kullanıcı, ana ekranın farklı kılavuz konumlarına sürükleyip bırakamaz. `false`açıldıysa, son kullanıcılar yönetilen giriş ekranındaki uygulama ve Web bağlantısı simgeleri etrafında hareket edebilir.  |
-| Cihaz duvar kağıdını ayarla | dize | Varsayılan | Duvar kağıdı olarak ayarlamak istediğiniz görüntünün URL 'sini girerek tercih ettiğiniz bir duvar kağıdını ayarlamanıza olanak sağlar. |
+| Cihaz duvar kağıdını ayarla | string | Varsayılan | Duvar kağıdı olarak ayarlamak istediğiniz görüntünün URL 'sini girerek tercih ettiğiniz bir duvar kağıdını ayarlamanıza olanak sağlar. |
 | Uygulama simge boyutunu ayarla | integer | 2 | Ana ekranda görüntülenecek uygulamalar için simge boyutunu ayarlamanıza olanak sağlar. Bu yapılandırmada, farklı boyutlar (en küçük), 1 (küçük), 2 (normal), 3 (büyük) ve 4 (en büyük) için aşağıdaki değerleri seçebilirsiniz. |
 | Uygulama klasörü simgesini ayarla | integer | 0 | Ana ekranda uygulama klasörlerinin görünümünü tanımlamanızı sağlar. Şu değerlerden görünümü seçebilirsiniz: koyu kare (0);   Koyu Daire (1); Açık kare (2); Açık daire (3). |
-| Ekran yönünü ayarla | integer | 1 | Giriş ekranının yönünü dikey moda, yatay moda ayarlamanıza veya otomatik olarak döndürmeye izin verir. Yönü 1 (dikey mod için), 2 (Yatay mod için), 3 (Oto döndürme için) değerini girerek ayarlayabilirsiniz. |
+| Ekran yönünü ayarla | integer | 1\. | Giriş ekranının yönünü dikey moda, yatay moda ayarlamanıza veya otomatik olarak döndürmeye izin verir. Yönü 1 (dikey mod için), 2 (Yatay mod için), 3 (Oto döndürme için) değerini girerek ayarlayabilirsiniz. |
 | Cihaz telemetrisini etkinleştir | bool | Yanlış | Yönetilen giriş ekranı için yakalanan tüm Telemetriyi sunar. Bu ayarı etkinleştirirseniz, Microsoft, belirli bir uygulamanın bu cihazda başlatılma sayısı gibi cihaz kullanımı telemetrisini yakalayabilir. |
 | İzin verilen uygulamaları ayarla | Paketleme Learray | Yanlış | , Cihazda yüklü uygulamalar arasından giriş ekranında görünür olan uygulama kümesini tanımlamanızı sağlar. Uygulamaları, görünür hale getirmek istediğiniz uygulamaların uygulama paketi adını girerek tanımlayabilirsiniz, örneğin com. Microsoft. emmx, ayarları giriş ekranında erişilebilir hale getirir. Bu bölümde izin verilen uygulamaların, ana ekranda görünür olması için cihazda zaten yüklü olması gerekir. |
 | Sabitlenmiş Web bağlantıları ayarla | Paketleme Learray | Yanlış | Web sitelerini giriş ekranında hızlı başlatma simgeleri olarak sabitetmenize olanak tanır. Bu yapılandırmayla, URL 'YI tanımlayabilir ve son kullanıcının tarayıcıda tek bir dokunmayla başlatması için giriş ekranına ekleyebilirsiniz. |
 | Ekran koruyucuyu etkinleştir | bool | Yanlış | Ekran koruyucu modunu etkinleştirmek için. True olarak ayarlanırsa, **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**ve **media_detect_screen_saver**yapılandırabilirsiniz. |
-| Ekran koruyucu görüntüsü | dize |   | Ekran koruyucu görüntüsünün URL 'sini ayarlayın. Hiçbir URL ayarlanmamışsa, ekran koruyucusu etkinleştirildiğinde cihazlar varsayılan ekran koruyucu görüntüsünü gösterir. Varsayılan görüntüde, yönetilen giriş ekranı uygulaması simgesi gösterilir.  |
+| Ekran koruyucu görüntüsü | string |   | Ekran koruyucu görüntüsünün URL 'sini ayarlayın. Hiçbir URL ayarlanmamışsa, ekran koruyucusu etkinleştirildiğinde cihazlar varsayılan ekran koruyucu görüntüsünü gösterir. Varsayılan görüntüde, yönetilen giriş ekranı uygulaması simgesi gösterilir.  |
 | Ekran koruyucunun zamanı gösterme | integer | 0 | Cihazın ekran koruyucu modu sırasında ekran koruyucuyu görüntüleyeceği süre miktarını saniye cinsinden ayarlama seçeneği sunar. 0 olarak ayarlanırsa, ekran koruyucusu cihaz etkin hale gelene kadar ekran koruyucu modunda süresiz olarak görünür.  |
 | Ekran koruyucuyu etkinleştirmek için etkin olmayan süre | integer | 30 | Ekran koruyucusunu tetiklemeden önce cihazın etkin olmayan saniye sayısı. 0 olarak ayarlanırsa cihaz, ekran koruyucu moduna hiçbir şekilde gitmeyecektir. |
 | Ekran koruyucuyu göstermeden önce Medya Algılama | bool | TRUE | Cihazda ses/video oynatılırken cihaz ekranının ekran koruyucuyu gösterip göstermeyeceğini seçin. True olarak ayarlanırsa cihaz, **inactive_time_to_show_scree_saver**değerden bağımsız olarak ses/video oynamaz. False olarak ayarlanırsa, cihaz ekranı, **inactive_time_to_show_screen_saver**ayarlanan değere göre ekran koruyucuyu gösterir.   |
 | Sanal giriş düğmesini etkinleştir | bool | Yanlış | Son kullanıcının, kullanıcının içinde bulundukları geçerli görevden yönetilen giriş ekranına geri döndürdüğü bir yönetilen giriş ekranı giriş düğmesine erişmesine izin vermek için bu ayarı `True` olarak etkinleştirin.  |
-| Sanal giriş düğmesi türü | dize | swipe_up | Giriş düğmesine bir çekme hareketi ile erişmek için **swipe_up** kullanın. Son Kullanıcı tarafından ekran etrafında taşınabilecek yapışkan ve kalıcı bir giriş düğmesine erişmek için **float** kullanın. |
-| Pil ve sinyal gücü gösterge çubuğu | bool | True  | Bu ayarı `True` açmak, pil ve sinyal gücü gösterge çubuğunu gösterir. |
-| Kilit görev modu parolasıyla çık | dize |   | Sorun giderme için kilit görevi modunun geçici olarak devre dışı bırakması için kullanılacak 4-6 basamaklı bir kod girin. |
+| Sanal giriş düğmesi türü | string | swipe_up | Giriş düğmesine bir çekme hareketi ile erişmek için **swipe_up** kullanın. Son Kullanıcı tarafından ekran etrafında taşınabilecek yapışkan ve kalıcı bir giriş düğmesine erişmek için **float** kullanın. |
+| Pil ve sinyal gücü gösterge çubuğu | bool | Doğru  | Bu ayarı `True` açmak, pil ve sinyal gücü gösterge çubuğunu gösterir. |
+| Kilit görev modu parolasıyla çık | string |   | Sorun giderme için kilit görevi modunun geçici olarak devre dışı bırakması için kullanılacak 4-6 basamaklı bir kod girin. |
 | Wi-Fi ayarını göster | bool | Yanlış | `True` için bu ayarı etkinleştirmek, son kullanıcının Wi-Fi açmasına veya devre dışı olmasına ya da farklı Wi-Fi ağlarına bağlanmasına izin verir.  |
 | Bluetooth ayarını göster | bool | Yanlış | `True` için bu ayarı etkinleştirmek, son kullanıcının Bluetooth 'u açmasına ve kapatmasına ve farklı Bluetooth özellikli cihazlara bağlanmasına izin verir.   |
 | Klasördeki uygulamalar ada göre sıralanır | bool | TRUE | Bu ayarı `False` açmak bir klasördeki öğelerin belirtildikleri sırada görünmesine izin verir. Aksi takdirde, bu, klasörde alfabetik olarak görünürler.   |
@@ -92,7 +92,7 @@ Yönetilen giriş ekranının tüm kullanılabilir ayarlarını ve **yapılandı
 
 **Yapılandırma Tasarımcısı** tablosunda (yukarıda) listelenen yapılandırılabilir ayarların listesine ek olarak, aşağıdaki tablo yalnızca JSON verileri aracılığıyla yapılandırabileceğiniz yapılandırma anahtarlarını sağlar.
 
-|    Yapılandırma anahtarı    |    Değer türü    |    Varsayılan değer    |    Description    |
+|    Yapılandırma anahtarı    |    Değer türü    |    Varsayılan değer    |    Açıklama    |
 |-------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    İzin verilen uygulamaları ayarla    |    Paketleme Learray    | <img alt="JSON - Example 1" src="./media/app-configuration-managed-home-screen-app/defaultvaluejson01.png" width="300"> |    , Cihazda yüklü uygulamalar arasından giriş ekranında görünür olan uygulama kümesini tanımlamanızı sağlar. Uygulamaları, görünür hale getirmek istediğiniz uygulamaların uygulama paketi adını (örneğin, com. Android) girerek tanımlayabilir. ayarlar, ayarları giriş ekranında erişilebilir hale getirir. Bu bölümde izin verilen uygulamaların, ana ekranda görünür olması için cihazda zaten yüklü olması gerekir.    |
 |    Sabitlenmiş Web bağlantıları ayarla    |    Paketleme Learray    | <img alt="JSON - Example 2" src="./media/app-configuration-managed-home-screen-app/defaultvaluejson02.png" width="300"> |    Web sitelerini giriş ekranında hızlı başlatma simgeleri olarak sabitetmenize olanak tanır. Bu yapılandırmayla, URL 'YI tanımlayabilir ve son kullanıcının tarayıcıda tek bir dokunmayla başlatması için giriş ekranına ekleyebilirsiniz.    |

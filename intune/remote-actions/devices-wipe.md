@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 2/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 931a1255a0b7aef6f776e8e0bf259e1ea0dd8d65
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609384"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781845"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -47,8 +47,6 @@ ms.locfileid: "77609384"
 
 **Kayıt durumu ve kullanıcı hesabını koru** seçeneği yalnızca Windows 10 sürüm 1709 veya sonraki sürümlerde kullanılabilir.
 
-**Korumalı silme gerçekleştir** seçeneği, cihazı kapatarak Temizleme eyleminin atlalanamadığından emin olur. Korumalı silme işlemi başarılı olana kadar cihazı sıfırlamaya çalışmaya devam edecektir. Bazı yapılandırmalarda bu eylem cihazın [yeniden başlatılamamasından](troubleshoot-device-actions.md#wipe-action)çıkamayabilir.
-
 MDM ilkeleri, cihazın Intune’a bir sonraki bağlanışında yeniden uygulanır.
 
 Silme, cihazı yeni bir kullanıcıya vermeden önce veya cihaz kaybolduğunda/çalındığında kullanışlıdır. **Silme** eylemini seçerken dikkatli olun. Cihazdaki veriler kurtarılamaz.
@@ -71,12 +69,12 @@ Silme, cihazı yeni bir kullanıcıya vermeden önce veya cihaz kaybolduğunda/�
     |Kullanıcı profili dışındaki kullanıcı verileri||
     |Kullanıcı otomatik oturum açma|| 
     
-         
-7. Silmeyi onaylamak için **Evet**’i seçin.
+7. Cihazı **silme ve cihaz güç kaybediyor olsa bile temizlemeye devam et.** seçenek, cihazı kapatarak silme eyleminin atlalanmasına neden olur. Bu seçenek, başarılı olana kadar cihazı sıfırlamaya çalışmaya devam edecektir. Bazı yapılandırmalarda bu eylem cihazın [yeniden başlatılamamasından](troubleshoot-device-actions.md#wipe-action)çıkamayabilir.        
+8. Silmeyi onaylamak için **Evet**’i seçin.
 
 Cihaz açık ve bağlı olduğu sürece, **Silme** eylemi 15 dakikadan kısa süre içinde tüm cihaz türlerine yayılır.
 
-## <a name="retire"></a>Devre Dışı Bırak
+## <a name="retire"></a>Devre dışı bırakma
 
 **Kullanımdan kaldırma** eylemi; yönetilen uygulama verilerini (varsa), ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Cihaz Intune yönetiminden kaldırılır. Bu durum cihaz iade etme işlemi gerçekleştirdiğinde ve **Kullanımdan kaldırma** uzak eylemini aldığında ortaya çıkar. Cihaz, cihaz iade edilene kadar Intune 'da görünmeye devam eder. Eski cihazları hemen kaldırmak istiyorsanız, bunun yerine [silme eylemini](devices-wipe.md#delete-devices-from-the-intune-portal) kullanın.
 
@@ -146,7 +144,7 @@ Yalnızca bilgi noktası cihazlarını silebilirsiniz. Android bilgi noktası ci
 > [!NOTE]
 > İlk kurulum (OOBE) sırasında Azure AD 'ye eklenen Windows 10 cihazlarında, devre dışı bırakma komutu cihazdan tüm Azure AD hesaplarını kaldırır. Yerel yönetici olarak oturum açmak ve kullanıcının yerel verilerine yeniden erişim kazanmak için [Bilgisayarınızı güvenli modda başlatma bölümündeki](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) adımları izleyin. 
 
-### <a name="retire"></a>Devre Dışı Bırak
+### <a name="retire"></a>Devre dışı bırakma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.

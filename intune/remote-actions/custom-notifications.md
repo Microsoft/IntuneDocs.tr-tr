@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/25/2020
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5195ee83efb68cea061e69f5cad49e9d43458450
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: afcb49447aa044b730d2271603d4966466318193
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609363"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782030"
 ---
-# <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme  
+# <a name="send-custom-notifications-in-intune"></a>Intune 'da özel bildirimler gönderme
 
-Yönetilen iOS/ıpados ve Android cihazlarındaki kullanıcılara özel bildirimler göndermek için Microsoft Intune kullanın. Bu iletiler, Şirket Portalı uygulamadan ve bir kullanıcının aygıtındaki Microsoft Intune uygulamadan standart anında iletme bildirimleri olarak görünür, böylece cihazdaki diğer uygulamalardan gelen bildirimler görüntülenir. Intune özel bildirimleri macOS ve Windows cihazları tarafından desteklenmez.   
+Yönetilen iOS/ıpados ve Android cihazlarındaki kullanıcılara özel bildirimler göndermek için Microsoft Intune kullanın. Bu iletiler, Şirket Portalı uygulamadan ve bir kullanıcının aygıtındaki Microsoft Intune uygulamadan standart anında iletme bildirimleri olarak görünür, böylece cihazdaki diğer uygulamalardan gelen bildirimler görüntülenir. Intune özel bildirimleri macOS ve Windows cihazları tarafından desteklenmez.
 
 Özel bildirim iletileri, kısa bir başlık ve 500 karakter veya daha kısa bir ileti gövdesi içerir. Bu iletiler, herhangi bir genel iletişim amacı için özelleştirilebilir.
 
@@ -76,14 +76,14 @@ Android cihazda Şirket Portalı uygulaması açıksa, bildirim aşağıdaki ekr
 - Yalnızca Grup için saat başına en fazla 25 ileti gönderebilirsiniz. Bu kısıtlama kiracı düzeyindedir. Bu sınırlama, ayrı cihazlara bildirim gönderilirken uygulanmaz.
 - Yalnızca Grup için saat başına en fazla 25 ileti gönderebilirsiniz. Bu kısıtlama kiracı düzeyindedir. Bu sınırlama, kişilere bildirim gönderilirken uygulanmaz.
 - Ayrı cihazlara ileti gönderirken aynı cihaza yalnızca saat başına en fazla 10 ileti gönderebilirsiniz.
-- Kullanıcılara, gruplar halinde bildirim gönderebilirsiniz. Gruplara bildirim gönderilirken, her bildirim doğrudan 25 gruba kadar hedefleyebilir. İç içe gruplar bu toplama göre sayılmaz. Bir gruba bildirim gönderilirken iletiler yalnızca gruptaki kullanıcıları hedefleyebilir ve kullanıcının kaydol, her iOS veya Android cihazına gönderilir. Bildirim hedeflenirken gruptaki cihazlar göz ardı edilir.
-- Tek bir cihaza bildirim gönderebilirsiniz. Grupları kullanmak yerine bir cihaz seçin ve ardından özel bildirimi göndermek için bir uzak [cihaz eylemi](device-management.md#available-device-actions) kullanın.  
+- Kullanıcılara, gruplar halinde bildirim gönderebilirsiniz. Gruplara bildirim gönderilirken, her bildirim doğrudan 25 gruba kadar hedefleyebilir. İç içe gruplar bu toplama göre sayılmaz. Bir gruba bildirim gönderilirken iletiler yalnızca gruptaki kullanıcıları hedefleyebilir ve kullanıcının kaydol, her iOS/ıpados veya Android cihazına gönderilir. Bildirim hedeflenirken gruptaki cihazlar göz ardı edilir.
+- Tek bir cihaza bildirim gönderebilirsiniz. Grupları kullanmak yerine bir cihaz seçin ve ardından özel bildirimi göndermek için bir uzak [cihaz eylemi](device-management.md#available-device-actions) kullanın.
 
 **Teslim**:
 
 - Intune, kullanıcıların Şirket Portalı uygulamasına veya Microsoft Intune uygulamasına iletiler göndererek anında iletme bildirimi oluşturur. Bildirimin cihaza itilmesi için kullanıcıların uygulamada oturum açmış olması gerekmez, ancak cihazın hedeflenen kullanıcı tarafından kaydedilmiş olması gerekir.
-- Intune, Şirket Portalı uygulaması ve Microsoft Intune uygulaması, özel bir bildirimin teslimini garanti edemez. Özel bildirimler, her biri bir süre sonra, acil iletilerde kullanılmamalıdır.  
-- Intune 'dan gelen özel bildirim iletileri cihazlarda standart anında iletme bildirimleri olarak görünür. Şirket Portalı uygulaması bildirimi aldığında bir iOS cihazında açıksa bildirim, sistem anında iletme bildirimi yerine uygulamada görüntülenir.  
+- Intune, Şirket Portalı uygulaması ve Microsoft Intune uygulaması, özel bir bildirimin teslimini garanti edemez. Özel bildirimler, her biri bir süre sonra, acil iletilerde kullanılmamalıdır.
+- Intune 'dan gelen özel bildirim iletileri cihazlarda standart anında iletme bildirimleri olarak görünür. Şirket Portalı uygulaması bildirimi aldığında bir iOS/ıpados cihazında açıksa bildirim, sistem anında iletme bildirimi yerine uygulamada görüntülenir.  
 - Özel bildirimler, cihaz ayarlarına bağlı olarak hem iOS/ıpados hem de Android cihazlarda kilit ekranlarında görülebilir.  
 - Android cihazlarda, diğer uygulamaların özel Bildiriminizdeki verilere erişimi olabilir. Bunları hassas iletişimler için kullanmayın.  
 - Son kaydedilmemiş veya bir gruptan kaldırılmış olan kullanıcıların bir cihaz kullanıcıları daha sonra bu gruba gönderilen özel bir bildirim alabilir.  Benzer şekilde, gruba özel bir bildirim gönderildikten sonra bir Kullanıcı eklerseniz, yeni eklenen kullanım için daha önce gönderilen bildirim iletisini almak mümkündür.  
@@ -98,7 +98,7 @@ Android cihazda Şirket Portalı uygulaması açıksa, bildirim aşağıdaki ekr
 
    ![Özel bildirim oluşturma](./media/custom-notifications/custom-notifications.png)  
 
-3. **Atamalar** sekmesinde, bu özel bildirimi göndermek istediğiniz grupları seçin ve ardından devam etmek için ileri ' yi seçin. Bir gruba bildirim gönderildiğinde yalnızca o grubun kullanıcıları hedeflenecek. bildirim, bu kullanıcı tarafından kaydedilen tüm iOS ve Android cihazlarına gider.
+3. **Atamalar** sekmesinde, bu özel bildirimi göndermek istediğiniz grupları seçin ve ardından devam etmek için ileri ' yi seçin. Bir gruba bildirim gönderildiğinde yalnızca o grubun kullanıcıları hedeflenecek. bildirim, bu kullanıcı tarafından kaydedilen tüm iOS/ıpados ve Android cihazlarına gider.
 
 4. **Gözden geçir + oluştur** sekmesinde, bilgileri gözden geçirin ve bildirimi göndermeye hazırsanız **Oluştur**' u seçin.  
 

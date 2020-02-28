@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d17749353bc3904a3d99210a5d56531d9af9c28
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 816968d512b73a8592c7a86b39c41057aa99e827
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514821"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782061"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Intune ile Sophos Mobile Threat Defense Bağlayıcısı
 Microsoft Intune ile tümleştirilen bir Mobile Threat Defense (MTD) çözümü olan Sophos Mobile tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Sophos mobil uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Sophos Mobile risk değerlendirmesini temel alan koşullu erişim ilkelerini, algılanan tehditlere dayalı olarak uyumlu olmayan cihazların şirket kaynaklarına erişmesine izin vermek veya erişimi engellemek için kullanabileceğiniz şekilde yapılandırabilirsiniz.
+
+> [!NOTE]
+> Bu mobil tehdit savunma satıcısı, kayıtlı olmayan cihazlar için desteklenmez.
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>Intune ve Sophos Mobile, şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 Android ve iOS/ıpados için Sophos Mobile uygulaması dosya sistemi, ağ yığını, cihaz ve kullanılabilir olduğunda uygulama telemetrisini yakalar ve ardından telemetri verilerini, cihazın mobil tehditlere karşı riskini değerlendirmek için Sophos mobil bulut hizmetine gönderir.

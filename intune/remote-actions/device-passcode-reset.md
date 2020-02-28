@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/18/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 9481e25a3d9aa48e21c4e01194dfa7ee1ad1bd38
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415556"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782154"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune’da bir cihazın geçiş kodunu sıfırlama veya kaldırma
 
@@ -59,7 +59,7 @@ Yeni bir iş profili geçiş kodu oluşturmak için Geçiş Kodunu Sıfırla eyl
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) şu rollerden herhangi biriyle oturum açın: Azure Active Directory genel yönetici, Azure Active Directory Intune Hizmet Yöneticisi, yardım masası Işleci veya rol yöneticisi.
 2. **Cihazlar**’ı ve ardından **Tüm cihazlar**’ı seçin.
-3. Yönettiğiniz cihazların listesinden bir cihaz seçin ve sonra da **...Diğer** öğesini seçin. Ardından **Geçiş kodunu kaldır** cihaz uzak eylemini seçin.
+3. Yönettiğiniz cihazların listesinden bir cihaz seçin ve **geçiş kodunu kaldır**' ı seçin.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Android iş profili geçiş kodlarını sıfırlama
 

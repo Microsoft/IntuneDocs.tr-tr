@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: c22fafce6583dd1e58d61e3fa8e6077b70998588
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513954"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781793"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -51,7 +51,7 @@ Intune MAM iki yapılandırmayı destekler:
 
 Intune, ihtiyacınız olan uygulamaları çalıştırmak istediğiniz cihazlara almanıza yardımcı olacak çeşitli özellikler sunar. Aşağıdaki tablo, uygulama yönetimi özelliklerinin bir özetini sağlar.
 
-|  | Android/Android Kurumsal | iOS/ıpados | Mac OS | Windows 10 | WVPN profillerinidows Phone 8.1 |
+|  | Android/Android Kurumsal | iOS/iPadOS | Mac OS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Cihazlara ve kullanıcılara uygulamaları ekleme ve atama | Evet | Evet | Evet | Evet | Evet |
 | Intune’a kayıtlı olmayan cihazlara uygulamaları atama | Evet | Evet | Hayır | Hayır | Hayır |
@@ -85,7 +85,7 @@ Uygulamalarla ilgili birçok bilgiyi **uygulamalar** iş yükünde bulabilirsini
 
 Sonraki dört bölüm, **uygulamalar** bölmesinde bulunan seçenekleri anlatmaktadır.
 
-### <a name="manage"></a>Manage
+### <a name="manage"></a>Yönet
 - **Uygulamalar**: İş gücünüz tarafından kullanılan uygulamaları eklemek, görüntülemek, atamak ve izlemek için bu seçeneği belirleyin. Daha fazla bilgi için bkz.:
   - [Uygulama ekleme](apps-add.md).
   - [Uygulama atama](apps-deploy.md).

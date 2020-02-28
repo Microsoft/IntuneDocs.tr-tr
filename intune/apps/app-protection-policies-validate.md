@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ae6bfd71cb6730c9e71075df5ea2f45aa514178a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563730"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781703"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Microsoft Intune'da uygulama koruma ilkesi kurulumunuzu doğrulama
 
@@ -56,7 +56,7 @@ Kullanıcı durumuna göre gerçekleştirilecek eylemler şunlardır:
 - Kullanıcının lisansı **İade edilmedi** olarak listeleniyorsa bu uygulama için doğru biçimde bir [uygulama koruma ilkesi](app-protection-policies-validate.md) yapılandırıp yapılandırmadığınıza bakın.
 - Bu koşulların, [uygulama koruma ilkelerinin](app-protection-policies-monitor.md) geçerli olmasını istediğiniz tüm kullanıcılara uygulandığından emin olun.
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Intune uygulama koruma ilkesi nedir?](app-protection-policies.md)
 - [Intune içeren lisanslar](../fundamentals/licenses.md)

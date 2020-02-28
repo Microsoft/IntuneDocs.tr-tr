@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/11/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0123647fb1e8a1d52506ad0753906f974103aad
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 628aa93af912d6c50a6897dbf871702e46b4893e
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502218"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782136"
 ---
 # <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Intune ile mobil uç nokta güvenlik bağlayıcısını gevle
 
@@ -32,7 +32,7 @@ Microsoft Intune ile tümleşik bir Mobile Threat Defense çözümü olan Lookou
 - Yüklenen kötü amaçlı uygulamalar
 - Kötü amaçlı ağ profilleri
 
-Koşullu erişim ilkelerini, Intune uyumluluk ilkeleri aracılığıyla etkinleştirilen risk değerlendirmesine göre yapılandırabilirsiniz. Ayarlar, algılanan tehditlere dayalı olarak uyumsuz cihazlara izin vermenize veya bunları engellemenize olanak tanır.
+Kayıtlı cihazlar için Intune uyumluluk ilkeleri aracılığıyla etkinleştirilen koşullu erişim ilkelerini, algılanan tehditlere dayalı olarak uyumlu olmayan cihazların şirket kaynaklarına erişmesine izin vermek veya erişimi engellemek için kullanabileceğiniz bir şekilde yapılandırabilirsiniz. Kayıtlı olmayan cihazlar için, algılanan tehditlere dayalı olarak bir blok veya seçmeli Temizleme zorlamak için uygulama koruma ilkelerini kullanabilirsiniz.
 
 ## <a name="how-do-intune-and-lookout-mobile-endpoint-security-help-protect-company-resources"></a>Mobil uç nokta güvenliğini Intune ve Gevþme etme şirket kaynaklarını korumaya nasıl yardımcı olur?
 Lookout’un mobil uygulaması **Lookout for Work**, mobil cihazlara yüklenir ve mobil cihazlarda çalışır. Bu uygulama varsa dosya sistemi, ağ yığını, cihaz ve uygulama telemetrisini yakalar ve mobil tehditlere karşı cihazın riskini değerlendirmek için bunları Lookout bulut hizmetine gönderir. Lookout konsolundaki tehditlere yönelik risk düzeyi sınıflandırmalarını gereksinimlerinize uyacak şekilde değiştirebilirsiniz.  
@@ -99,7 +99,9 @@ Bağlantıyı izinsiz izleme saldırıları gibi ağınıza yönelik tehditleri 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Bu çözümü uygulamak için yapılması gereken ana adımlar şunlardır:
-1. [Lookout tümleştirmenizi ayarlama](lookout-mtd-connector-integration.md)
-2. [Intune 'da mobil uç nokta güvenliğini etkinleştirme](mtd-connector-enable.md)
-3. [Lookout for Work uygulamasını ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4. [Lookout cihaz uyumluluğu ilkesini yapılandırma](mtd-device-compliance-policy-create.md)
+- [Lookout tümleştirmenizi ayarlama](lookout-mtd-connector-integration.md)
+- [Intune 'da mobil uç nokta güvenliğini etkinleştirme](mtd-connector-enable.md)
+- [Lookout for Work uygulamasını ekleme ve atama](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Lookout cihaz uyumluluğu ilkesini yapılandırma](mtd-device-compliance-policy-create.md)
+- [MTD uygulama koruma ilkesi oluşturma](mtd-app-protection-policy.md)
+

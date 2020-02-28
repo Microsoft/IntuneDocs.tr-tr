@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,18 +15,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a52636a140778f6e78bfe081cda40b36ef2354f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbab3aae2e38e1ce7d3c8c526b706d70e0cf2b2a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509642"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781215"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Intune ile Better Mobile Threat Defense bağlayıcısı
 
 Microsoft Intune ile tümleştirilen Mobile Threat Defense (MTD) çözümü daha Iyi mobil tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Better Mobile uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-Koşullu erişim ilkelerini, Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen daha Iyi mobil risk değerlendirmesine göre yapılandırabilirsiniz. Bu, uyumsuz cihazların algılanan tehditler temelinde şirket kaynaklarına erişmesine izin vermek veya erişimi engellemek için kullanabilirsiniz.
+Kayıtlı cihazlar için Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen daha Iyi mobil risk değerlendirmesine göre koşullu erişim ilkelerini yapılandırabilirsiniz. bu sayede, uyumsuz cihazların algılanan şirket kaynaklarına erişmesine izin vermek veya erişimi engellemek için kullanabilirsiniz tehditleri. Kayıtlı olmayan cihazlar için, algılanan tehditlere dayalı olarak bir blok veya seçmeli Temizleme zorlamak için uygulama koruma ilkelerini kullanabilirsiniz.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Intune ve Better Mobile şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
@@ -105,3 +105,5 @@ Cihazlarda kötü amaçlı yazılım gibi kötü amaçlı uygulamalar algıland�
 - [Better Mobile cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)
 
 - [Better Mobile MTD bağlayıcısını etkinleştirme](mtd-connector-enable.md)
+
+- [MTD uygulama koruma ilkesi oluşturma](mtd-app-protection-policy.md) 

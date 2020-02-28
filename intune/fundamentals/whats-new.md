@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17bb4ca225fa93352428cbe208c2fc1a53812f2c
-ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.openlocfilehash: af8b46605d099a920ee512bce3ba94708b4a9eac
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652310"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781181"
 ---
-# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune yenilikler nelerdir?
+# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
 Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildirimler](#notices), [Geçmiş yayınlar](whats-new-archive.md)ve [Intune hizmet güncelleştirmelerinin nasıl yayımlandığına](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)ilişkin bilgileri de bulabilirsiniz. 
 
@@ -67,6 +67,17 @@ MacOS cihaz kayıt deneyimlerine ve Mac için Şirket Portalı uygulamasına yö
 - Kopyalanmış olay kimlikleri için destek, kullanıcılarınız cihazlarından Şirket destek ekibine daha hızlı bir şekilde hata gönderebilir.
 
 Mac için kayıt ve Şirket Portalı uygulaması hakkında daha fazla bilgi için bkz. [Şirket Portalı uygulamasını kullanarak macOS cihazınızı kaydetme](/intune-user-help/enroll-your-device-in-intune-macos-cp). 
+
+#### <a name="app-protection-policies-for-better-mobile-now-supports-ios-and-ipados---6224512----"></a>Daha Iyi mobil için uygulama koruma ilkeleri artık iOS ve ıpados 'yi destekliyor<!-- 6224512  -->
+
+Ekim 2019 ' de Intune uygulama koruma ilkesi, Microsoft tehdit savunma iş ortaklarımızın verilerini kullanma özelliğini ekledi. Bu güncelleştirmeyle, artık iOS ve ıpados üzerinde daha Iyi bir mobil uygulama kullanarak kullanıcıların şirket verilerini engellemek veya seçmeli olarak silmek için bir uygulama koruma İlkesi kullanabilirsiniz.  Daha fazla bilgi için bkz. [Intune Ile mobil tehdit savunma uygulama koruma Ilkesi oluşturma](../protect/mtd-app-protection-policy.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Cihaz yönetimi
+
+#### <a name="exports-from-the-all-devices-list--now-in-zipped-csv-format--6343117--"></a>Tüm cihazlar listesinden Şimdi daraltılmış CSV biçiminde dışarı aktarır<!--6343117-->
+**Cihazların** > **tüm cihazlar** sayfası artık daraltılmış CSV biçiminde dışarı aktarır.
+
 
 <!-- ########################## -->
 ## <a name="week-of-february-17-2020-2002-service-release"></a>17 Şubat 2020 (2002 hizmet sürümü) haftası
@@ -164,7 +175,9 @@ Microsoft 'un yeni Office uygulaması artık indirme ve kullanım için genel ku
 
 Daha fazla bilgi için bkz. [Office mobil önizleme uygulamasıyla Intune uygulama koruma ilkelerini etkinleştirme](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-how-to-enable-intune-app-protection-policies-with/ba-p/1045493).
 
+
 <!-- ########################## -->
+
 ## <a name="week-of-february-10-2020"></a>10 Şubat 2020 haftası
 
 ### <a name="windows-7-ends-extended-support--3042987---"></a>Windows 7 genişletilmiş desteği sonlandırır<!--3042987 -->
@@ -225,7 +238,7 @@ Artık kuruluş türünü seçtiğinizde, `proxy.contoso.com`gibi bir proxy sunu
 
 Yapılandırabileceğiniz geçerli Wi-Fi ayarlarını görmek için [Microsoft Intune ' de Android Enterprise ve Android bilgi noktası çalıştıran cihazlar Için Wi-Fi ayarları ekle](../configuration/wi-fi-settings-android-enterprise.md#work-profile-only)' ye gidin.
 
-Uygulama alanı:
+Uygulama hedefi:
 - Android kurumsal iş profili
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -320,7 +333,7 @@ Microsoft Edge, Office ve Windows ayarlarını denetlemek ve yönetmek için Mic
 
 Intune 'da ADMX şablonları hakkında daha fazla bilgi için, bkz. [Microsoft Intune Grup İlkesi ayarlarını yapılandırmak Için Windows 10 şablonlarını kullanma](../configuration/administrative-templates-windows.md).
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - Windows 10 ve üzeri
 
@@ -358,7 +371,7 @@ Bu yeni ayarlar, SSO uygulama uzantıları ve Apple 'ın yerleşik Kerberos uzan
 
 Yapılandırabileceğiniz SSO uygulama uzantısı ayarlarının tam aralığını görmek için, [macOS 'Ta](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)IOS ve SSO ['daki SSO](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) ' ya gidin.
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - iOS/iPadOS
 - Mac OS
@@ -464,7 +477,7 @@ Aşağıdakiler dahil olmak üzere kullanılabilir yeni Exchange ActiveSync ayar
 
 Bu ayar hakkında daha fazla bilgi için, [Intune 'Da iOS cihazları Için e-posta profili ayarları](../configuration/email-settings-ios.md)' na gidin. 
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -474,7 +487,7 @@ Android kurumsal tam yönetilen ve adanmış cihazlarda, kullanıcıların kişi
 
 Yapılandırabileceğiniz ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - Android kurumsal tam yönetilen cihazlar
 - Android kurumsal adanmış cihazlar
@@ -486,7 +499,7 @@ Bu ayarın cihazlar üzerinde hiçbir etkisi yoktur. Bu ayarı mevcut profillerd
 
 Yapılandırabileceğiniz tüm ayarları görmek için [iOS ve ıpados cihaz ayarları ' na bakın ve Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - iOS/iPadOS
 
@@ -504,7 +517,7 @@ Yalnızca bazı uygulamalar yönetilen tercihleri destekler ve bu uygulamalar t�
 
 Bu özellik hakkında daha fazla bilgi için, bkz. [Microsoft Intune kullanarak macOS cihazlarına özellik listesi dosyası ekleme](../configuration/preference-file-settings-macos.md).
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - 10,7 ve daha yeni çalıştıran macOS cihazları
 

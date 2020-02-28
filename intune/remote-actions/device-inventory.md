@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: df814abf9cdff3eb4d9fbac8183618461b590adb
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413752"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781923"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -39,11 +39,16 @@ Bu makalede, tüm cihazlarınızı ve özelliklerini Azure portalında nasıl g�
    - **Genel bakış** , cihaz adını gösterir ve kendi cihazını getir (KCG) cihazı, zaman içinde çek ve daha fazlasını belirtir. Cihazda şunları yapabilirsiniz:
       - [Devre Dışı Bırak](devices-wipe.md#retire)
       - [Silme](devices-wipe.md#wipe)
+      - [Sil](devices-wipe.md#delete-devices-from-the-intune-portal)
       - [Uzaktan kilitleme](device-remote-lock.md)
-      - [Cihazı eşitleme](device-sync.md)
+      - [Tablosunun](device-sync.md)
       - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
       - [Yeniden başlatma](device-restart.md) (yalnızca Windows)
       - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
+      - [Autopilot sıfırlaması]() (yalnızca Windows)
+      - [Hızlı tarama](../configuration/device-restrictions-windows-10.md) (yalnızca Windows 10)
+      - [Tam tarama](../configuration/device-restrictions-windows-10.md) (yalnızca Windows 10)
+       - [Cihazı yeniden adlandırma](device-rename.md)
       - Uzaktan yardım oturumu başlatma
    - **Özellikler**’i kullanarak [oluşturduğunuz bir cihaz kategorisini](../enrollment/device-group-mapping.md) atayabilir ve cihazın sahipliğini kişisel veya şirket olarak değiştirebilirsiniz.
    - **Donanım** cihaz kimliği, işletim sistemi ve sürümü, depolama alanı ve daha fazla ayrıntı gibi cihazla ilgili birçok ayrıntıyı içerir.

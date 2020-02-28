@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 45bcabf8c7dc932c9415fbd309bf09f53499fbcc
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515178"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781945"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Intune'u kullanarak kuruluşunuzdaki kaynaklara erişim izni verme amacıyla cihazlarda kural oluşturun
 
@@ -93,16 +93,13 @@ Intune ayrıca bir dizi yerleşik uyumluluk ilkesi ayarına da sahiptir. Aşağ�
 
   Bir cihaza bir uyumluluk ilkesi atanmamışsa, bu cihaz varsayılan olarak uyumlu olarak değerlendirilir. Uyumluluk ilkeleriyle koşullu erişim kullanıyorsanız, varsayılan ayarı **uyumlu değil**olarak değiştirmeniz önerilir. Bir ilke atanmadığı için son kullanıcı uyumsuzsa, [Şirket Portalı](../apps/company-portal-app.md)`No compliance policies have been assigned` ifadesine yer verir.
 
-
-> [!NOTE]
-> İOS/ıpados cihazları için geliştirilmiş jailbreak algılama, Intune 'da geçici olarak devre dışı bırakılmıştır.
-
-- **Gelişmiş jailbreak algılama**: etkinleştirildiğinde, bu ayar IOS/ıpados cihazlarının Intune 'a daha sık iade edilmesine neden olur. Bu özellik etkinleştirildiğinde cihazın konum hizmetleri kullanılır ve pil kullanımı bundan etkilenir. Kullanıcı konum verileri, Intune tarafından depolanmaz.
+- **Gelişmiş jailbreak algılama**: etkinleştirildiğinde, bu ayar jailbreak uygulanmış cihaz durumunun IOS/ıpados cihazlarında daha sık oluşmasına neden olur. Bu ayar yalnızca jailbreak uygulanmış cihazlarını engelleyen bir uyumluluk ilkesiyle hedeflenen cihazları etkiler. Bu özelliği etkinleştirmek, cihazın konum hizmetlerini kullanır ve pil kullanımını etkileyebilir. Kullanıcı konumu verileri Intune tarafından depolanmaz ve yalnızca arka planda jailbreak algılamayı daha sık tetiklemek için kullanılır. 
 
   Bu ayarın etkinleştirilmesi, cihazlarda şunları gerektirir:
   - Konum hizmetlerinin işletim sistemi düzeyinde etkinleştirilmesi.
-  - Şirket Portalı’nın konum hizmetlerini kullanmasına izin verilmesi.
-  - Cihazın jailbreak durumunun en az 72 saatte bir değerlendirilip Intune’a rapor edilmesi. Aksi takdirde cihaz uyumsuz olarak işaretlenir. Değerlendirme, Şirket Portalı uygulaması açıldığında veya cihaz fiziksel olarak 500 metre veya daha uzağa taşındığında tetiklenir. Cihazın 72 saat içinde 500 metre hareket etmemesi durumunda gelişmiş jailbreak değerlendirmesi yapılabilmesi için kullanıcının Şirket Portalı uygulamasını açması gerekir.
+  - Şirket Portalı konum hizmetlerini kullanmasına her zaman izin verin.
+
+  Değerlendirme, Şirket Portalı uygulaması açılarak veya cihazı fiziksel olarak yaklaşık 500 ölçüm veya daha fazla mesafeden bir uzaklığa göre hareket ettirilerek tetiklenir. İOS 13 ve üzerinde, bu özellik, cihazın arka planda konumunu kullanmasına izin Şirket Portalı vermeye devam etmek için kullanıcıların her zaman Izin ver ' i seçmesini ister. Kullanıcılar her zaman konum erişimine izin vermediğinde ve bu ayarı yapılandırılmış bir ilkeye sahip değilse, cihazları uyumsuz olarak işaretlenir. Intune 'un, her önemli konum değişikliğinin, bir cihazın ağ bağlantısına bağlı olarak bir jailbreak algılama denetimini güvence altına aldığından emin olamayacağını unutmayın.
 
 - **Uyumluluk durumu geçerlilik süresi (gün)** : Alınan tüm uyumluluk ilkeleri için cihazların durum rapor etme süresini girin. Bu süre içinde durum döndürmeyen cihazlar uyumsuz olarak kabul edilir. Varsayılan değer 30 gündür. En küçük değer 1 gündür.
 

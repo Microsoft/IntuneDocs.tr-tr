@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9622eb33cb4e7732b573e8caf56acf4e3966badb
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 6bcec352121781162f5f03a14717fdea62515db2
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609131"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781198"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Intune ile Microsoft Edge kullanarak Web erişimini yönetme
 
@@ -36,7 +36,7 @@ Intune uygulama koruma ilkelerinin Microsoft Edge ile kullanılması, kurumsal w
 
 Microsoft Edge için Microsoft Intune koruma ilkeleri, kuruluşunuzun verilerini ve kaynaklarını korumanıza yardımcı olur. Bu ilkelerin Microsoft Edge ile kullanılması, şirketinizin kaynaklarının yalnızca yerel olarak yüklü uygulamalar içinde değil, ayrıca Web tarayıcısından erişilen şekilde korunmasını sağlar.
 
-## <a name="getting-started"></a>Başlarken
+## <a name="getting-started"></a>Kullanmaya başlama
 
 Siz ve son kullanıcılarınız, kuruluşunuzda kullanılmak üzere genel uygulama mağazalarından Microsoft Edge 'i indirebilir. Tarayıcı ilkeleri için işletim sistemi gereksinimleri aşağıdakilerden biri olabilir:
 - Android 4 ve üzeri
@@ -171,7 +171,7 @@ Microsoft Edge için uygulama ara sunucusunu etkinleştirmek üzere aşağıdaki
 |-------------------------------------------------------------------|-------------|
 |    com. Microsoft. Intune. mam. managedbrowser. AppProxyRedirection    |    true    |
 
-Şirket içi Web uygulamalarına sorunsuz (ve korumalı) erişim için Microsoft Edge ve Azure AD Uygulama Ara Sunucusu kullanma hakkında daha fazla bilgi için bkz. [daha iyisi: Intune ve Azure Active Directory ekibi, Kullanıcı erişimini geliştirmek için](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access). Bu blog gönderisi Intune Managed Browser başvuruyor, ancak içerik Microsoft Edge 'e de uygulanır.
+Şirket içi Web uygulamalarına sorunsuz (ve korumalı) erişim için Microsoft Edge ve Azure AD Uygulama Ara Sunucusu kullanma hakkında daha fazla bilgi için bkz. [daha iyisi: Intune ve Azure Active Directory ekibi, Kullanıcı erişimini geliştirmek için](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/better-together-intune-and-azure-active-directory-team-up-to/ba-p/250254). Bu blog gönderisi Intune Managed Browser başvuruyor, ancak içerik Microsoft Edge 'e de uygulanır.
 
 ## <a name="configure-a-homepage-shortcut-for-microsoft-edge"></a>Microsoft Edge için bir giriş sayfası kısayolu yapılandırma
 
@@ -252,7 +252,7 @@ Microsoft Edge için izin verilen veya engellenen bir site listesini yapılandı
   - https için bağlantı noktası 443
 - Bağlantı noktası numarası için joker karakter kullanılması **desteklenmez.** Örneğin `http://www.contoso.com:*` ve `http://www.contoso.com:*/` desteklenmez. 
 
-    |    {1&gt;URL&lt;1}    |    Ayrıntılar    |    Eşleşir    |    Eşleşmez    |
+    |    URL    |    Ayrıntılar    |    Eşleşir    |    Eşleşmez    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    Tek bir sayfayla eşleşir    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Tek bir sayfayla eşleşir    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |

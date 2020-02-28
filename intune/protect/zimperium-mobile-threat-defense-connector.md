@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 32ace832e44f1cb6d334f69a0c1f03cb41515b2f
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515246"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782038"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Intune ile Zimperium Mobile Threat Defense bağlayıcısı
 
 Microsoft Intune ile tümleştirilen bir Mobile Threat Defense (MTD) çözümü olan Zemium tarafından gerçekleştirilen risk değerlendirmesine dayalı koşullu erişimi kullanarak mobil cihaz erişimini kontrol edebilirsiniz. Risk, Zimperium uygulamasını çalıştıran cihazlardan toplanan telemetriye göre değerlendirilir.
 
-Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen Zkusurlu risk değerlendirmesi temelinde koşullu erişim ilkelerini yapılandırabilirsiniz. Risk değerlendirmesi ilkesi, algılanan tehditlere dayalı olarak uyumlu olmayan cihazların şirket kaynaklarına erişmesine izin verebilir veya erişimi engelleyebilir.
+Kayıtlı cihazlar için Intune cihaz uyumluluk ilkeleri aracılığıyla etkinleştirilen en yüksek riskli risk değerlendirmesine dayalı koşullu erişim ilkelerini yapılandırabilirsiniz ve bu sayede uyumsuz cihazların algılanan şirket kaynaklarına erişmesine izin vermek veya erişimi engellemek için kullanabilirsiniz tehditleri. Kayıtlı olmayan cihazlar için, algılanan tehditlere dayalı olarak bir blok veya seçmeli Temizleme zorlamak için uygulama koruma ilkelerini kullanabilirsiniz.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune ve Zimperium şirket kaynaklarınızın korunmasına nasıl yardımcı olur?
 
@@ -108,3 +108,5 @@ Ağda **Bağlantıyı izinsiz izleme** gibi tehditleri algılar ve cihaz riskine
 - [Zimperium cihaz uyumluluk ilkesi oluşturma](mtd-device-compliance-policy-create.md)
 
 - [Zimperium MTD bağlayıcısını etkinleştirme](mtd-connector-enable.md)
+
+- [MTD uygulama koruma ilkesi oluşturma](../protect/mtd-app-protection-policy.md)
