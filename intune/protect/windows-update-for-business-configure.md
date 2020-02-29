@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886806"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181730"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Intune 'da Windows 10 yazılım güncelleştirmelerini yönetme
 
@@ -40,7 +40,7 @@ Cihaz gruplarına Windows 10 güncelleştirme halkaları ve Windows 10 özellik 
 
 Daha fazla bilgi için bkz. [İşletmeler için Windows Update'i kullanarak güncelleştirmeleri yönetme](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Intune 'da Windows 10 cihazları için Windows güncelleştirmelerini kullanmak üzere aşağıdaki önkoşulların karşılanması gerekir.
 
@@ -77,14 +77,14 @@ Windows 10 güncelleştirme halkaları [kapsam etiketlerini](../fundamentals/sco
 
 ### <a name="create-and-assign-update-rings"></a>Güncelleştirme halkaları oluşturma ve atama
 
-1. [Microsoft Endpoint Manager Yönetim merkezinde]( https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
+1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 
 2. **Windows > Windows** **10 güncelleştirme halkalarını** > **cihazları** seçin > **Oluştur**.
 
 3. *Temel bilgiler*altında bir ad, açıklama (isteğe bağlı) belirtin ve ardından **İleri**' yi seçin.
-  ![bir güncelleştirme halkası oluşturun]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. **Güncelleştirme halkası ayarları**altında, iş gereksinimlerinize göre ayarları yapılandırın. Kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. Windows Update ayarları. *Güncelleştirme ve Kullanıcı deneyimi* ayarlarını yapılandırdıktan sonra **İleri**' yi seçin.
+  ![bir güncelleştirme halkası oluşturun](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. **Güncelleştirme halkası ayarları**altında, iş gereksinimlerinize göre ayarları yapılandırın. Kullanılabilir ayarlar hakkında daha fazla bilgi için bkz. [Windows Update ayarları](../protect/windows-update-settings.md). *Güncelleştirme ve Kullanıcı deneyimi* ayarlarını yapılandırdıktan sonra **İleri**' yi seçin.
 
 5. **Kapsam etiketleri**altında **+ kapsam etiketlerini Seç** ' i seçerek bunları güncelleştirme halkalarına uygulamak istiyorsanız *etiketleri Seç* bölmesini açın. Bir veya daha fazla etiket seçin ve ardından **Seç** ' e tıklayarak güncelleştirme halkasını ekleyin ve *kapsam etiketi*s sayfasına dönün.
 

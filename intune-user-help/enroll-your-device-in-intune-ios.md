@@ -19,12 +19,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: bd9fd38fdc244bc48333496c2f266ff039e55585
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 92d1ca850d8bb542f0b7fe027ab7af8c12089ef8
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855572"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181764"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Şirket kaynaklarınıza iOS cihaz erişimi ayarlayın  
 
@@ -48,7 +48,7 @@ Cihazınızdaki iş veya okul bilgilerine erişimi sürdürmek için cihazınız
 ### <a name="security"></a>Güvenlik  
 İlk kurulum sırasında uygulama, kuruluşunuzda kimlik doğrulamanızı gerektirir. Daha sonra güncelleştirmeniz gereken bazı cihaz ayarları varsa bunları size gösterir. Örneğin kuruluşlar genellikle uymanız gereken en düşük veya en yüksek karakterli parola gereksinimleri ayarlar.
 
-### <a name="protection"></a>Protection  
+### <a name="protection"></a>Koruma  
 Cihazınız kaydolduktan sonra Şirket Portalı uygulaması, cihazın koruma altında kalmasını sağlar. Örneğin güvenilmeyen bir kaynaktan uygulama yüklerseniz uygulama sizi uyarır, hatta bazen şirket verilerine erişiminizi iptal edebilir. Bu tür bir ilke kuruluşlarda yaygındır ve genellikle, erişimi yeniden kazanabilmeniz için güvenilmeyen uygulamayı kaldırmanızı gerektirir.  
 
 ### <a name="setting-notifications"></a>Bildirimleri ayarlama  
@@ -71,10 +71,10 @@ Kayıt sırasında birkaç dakikadan uzun bir süre durakladığında uygulaman�
     ![Şirket Portalı, "erişim ayarlama" ekranının örnek ekran görüntüsü.](./media/ios-enrollment-checklist-1909.PNG)  
 
 4. **Cihaz ve kayıt türü seçin** ekranı görünür ve cihaz türü için sorar.  
-    * Cihazınızı kuruluşunuzdan aldıysanız, **Bu cihazın sahibi olan (kuruluş)** seçeneğine dokunun. Daha sonra bu makaledeki [cihazın tamamını güvenli hale](###secure-entire-device) getirmek için atla bölümüne atlayın.  
-    * Evden aldığınız kişisel bir cihaz kullanıyorsanız, **Bu cihaza sahip** olana kadar dokunun. Ardından sonraki adıma geçin.  
+    * Cihazınızı kuruluşunuzdan aldıysanız, **Bu cihazın sahibi olan (kuruluş)** seçeneğine dokunun. Daha sonra bu makaledeki [cihazın tamamını güvenli hale](#secure-entire-device) getirmek için atla bölümüne atlayın.  
+    * Evden aldığınız kişisel bir cihaz kullanıyorsanız, **Bu cihaza sahip** olana kadar dokunun. Sonra bir sonraki adımla devam edin.  
 
-    Bu ekranı görmüyorsanız, kurulumun bitmesini sağlamak için [Tüm cihazın güvenliğini](enroll-your-device-in-intune-ios.md#secure-entire-device) atlayın.  
+    Bu ekranı görmüyorsanız, kurulumun bitmesini sağlamak için [Tüm cihazın güvenliğini](#secure-entire-device) atlayın.  
     
     ![Örnek ekran görüntüsü Şirket Portalı, "cihaz ve kayıt türünü seçin" ekranının, cihaz türü seçeneklerinin bir listesi.](./media/ios-device-type-1909.PNG)  
 
@@ -169,7 +169,7 @@ Kayıt sırasında birkaç dakikadan uzun bir süre durakladığında uygulaman�
 7. Cihaz parolasını girin. Ardından **Install**' a dokunun.  
 
 8. **Oturum açma** ekranında, YÖNETILEN Apple Kimliğiniz için parolayı girin. Çoğu durumda bu kimlik bilgileri, kuruluşunuz sizin için farklı bir kimlik bilgileri kümesi sağladıkça iş veya okul hesabınızda oturum açmak için kullandığınız verilerle aynı olacaktır. 
-9. **Oturum aç**’a dokunun.  
+9. **Oturum aç**' a dokunun.  
 10. Bir başarı iletisi, profil yüklendikten kısa bir süre sonra ekranda görüntülenir. Profilin yüklendiğini doğrulamak için, profil **& cihaz yönetimi** ayarları ' na gidin.  **Mobil cihaz yönetimi** altında listelenen profili görmeniz gerekir.  
 
     ![Ayarlar uygulamasının, yönetim profilini gösteren cihaz yönetimi ayarlarının &, profil ekran görüntüsü örneği.](./media/ios-12-cp-enroll-1904.PNG)  

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc262dc67c967ffd2c6525c4370df8e9fa0e4dff
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 80390c638aa038769bdf972b7355dfa221c6cda2
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77511846"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181798"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune’a uygulama ekleme 
 
@@ -37,7 +37,7 @@ Uygulamaları atama, izleme, yapılandırma veya korumadan önce bunları Micros
 
 Intune, çok çeşitli uygulama türlerini destekler. Her bir uygulama türü için kullanılabilir seçenekler farklılık gösterir. Intune aşağıdaki uygulama türlerini eklemenize ve atamanıza izin verir:
 
-| Uygulama türleri | Yükleme | Updates |
+| Uygulama türleri | Yükleme | Güncelleştirmeler |
 |---|---|---|
 | Mağazadan uygulamalar (mağaza uygulamaları) | Intune uygulamayı cihaza yükler.  | Uygulama güncelleştirmeleri otomatik olarak yapılır. |
 | Şirket içinde yazılan (iş kolu) uygulamalar | Intune uygulamayı cihaza yükler (yükleme dosyasını siz sağlarsınız). | Uygulamayı güncelleştirmeniz gerekir. |

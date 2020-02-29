@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29ddc53af79121965698d67f0d4510ac34bbabca
-ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.openlocfilehash: 6650c091917ea265783044efd78b19a7e032e6a7
+ms.sourcegitcommit: 5511b4f2b8a3383176a7afe2a22ad5a8d42caf7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652462"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169306"
 ---
-# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange şirket içi ve eski Exchange Online ayrılmış için koşullu erişim ilkesi oluşturma
+# <a name="configure-exchange-on-premises-access-for-intune"></a>Intune için Exchange şirket içi erişimini yapılandırma
 
 Bu makalede cihaz uyumluluğuna göre şirket içi Exchange için Koşullu erişimin nasıl yapılandırılacağı gösterilir.
 
@@ -62,12 +62,13 @@ Koşullu erişimi yapılandırmadan önce, aşağıdaki yapılandırmaların mev
 
 ### <a name="support-for-mobile-devices"></a>Mobil cihaz desteği
 
-- Windows Phone 8.1 ve üzeri
-- İOS/ıpados üzerinde yerel e-posta uygulaması.
-- Android 4 veya sonraki sürümlerdeki Gmail gibi EAS posta istemcileri.
-- EAS posta istemcileri **Android iş profili cihazları:** Android iş profili cihazlarında yalnızca **iş profilindeki** **Gmail** ve **Android Enterprise için Nine Work** desteklenir. Android iş profilleriyle çalışmak üzere koşullu erişim için, Android Enterprise uygulaması için Gmail veya dokuz Iş için bir e-posta profili dağıtmanız ve ayrıca bu uygulamaları gerekli bir yükleme olarak dağıtmanız gerekir.
+- **Windows Phone 8,1 ve üzeri** -koşullu erişim ilkesi oluşturmak için bkz. [koşullu erişim ilkeleri oluşturma](../protect/create-conditional-access-intune.md)
+- **İOS/ıpados üzerinde yerel e-posta uygulaması** -koşullu erişim ilkesi oluşturmak için bkz. [koşullu erişim ilkeleri oluşturma](../protect/create-conditional-access-intune.md)
+- **Android 4 veya üzeri sürümlerde Gmail gibi EAS posta istemcileri** -koşullu erişim ilkesi oluşturmak için bkz. [koşullu erişim ilkeleri oluşturma](../protect/create-conditional-access-intune.md)
 
-  Android iş profili cihazlarına koşullu erişim ayarlamak için:
+- **Android iş profili cihazlarda EAS posta istemcileri** -Android iş profili cihazlarında yalnızca *Gmail* ve *dokuz iş için* desteklenir. Android iş profilleriyle çalışmak üzere koşullu erişim için, *Android Enterprise uygulaması Için Gmail veya dokuz iş* için bir e-posta profili dağıtmanız ve ayrıca bu uygulamaları gerekli bir yükleme olarak dağıtmanız gerekir. Uygulamayı dağıttıktan sonra cihaz tabanlı koşullu erişim ayarlayabilirsiniz.
+
+#### <a name="to-set-up-conditional-access-for-android-work-profile-devices"></a>Android iş profili cihazlarına koşullu erişim ayarlamak için
 
   1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
   

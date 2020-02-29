@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d473d29536b4ffdcc221c8cf61c63725bae0fa2
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 699665f93d04801223f2fc6e6536d9b675e75242
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653912"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181951"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-testing-guide"></a>Android için uygulama SDK 'Sı test Kılavuzu Microsoft Intune
 
@@ -58,7 +58,7 @@ Aşağıdaki test çalışmaları yapılandırma ve onay adımları sağlar. Int
     - Herhangi bir istem sunma hatası, yanlış tümleşik `MAMActivity` bir değer olabilir. `MAMActivity`hakkında daha fazla bilgi için bkz. [Android Için uygulama SDK 'sı geliştirici kılavuzu Microsoft Intune](app-sdk-android.md).
 
 > [!NOTE] 
-> Önceki test çalışmıyorsa, aşağıdaki testler de başarısız olur. [SDK](app-sdk-android.md##sdk-integration) ve [adal](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) tümleştirmesini gözden geçirin.
+> Önceki test çalışmıyorsa, aşağıdaki testler de başarısız olur. [SDK](app-sdk-android.md#sdk-integration) ve [adal](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) tümleştirmesini gözden geçirin.
 
 ### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Diğer uygulamalarla veri aktarımını ve almayı kısıtlama
 Kurumsal yönetilen uygulamalar arasında veri aktarımını şu şekilde denetleyebilirsiniz:
