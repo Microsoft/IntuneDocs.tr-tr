@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9ddd59715a0730a52738088700a1f2b9166bfa80
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164574"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216210"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Kılavuzlu senaryo-bulutta yönetilen modern masaüstü
 
@@ -43,7 +43,7 @@ Bulutta yönetilen bir modern masaüstünü kendi kuruluşunuzda değerlendirmek
   - Güvenlik temelleri okuma, oluşturma, silme, atama ve güncelleştirme
   - İlke ayarları okuma, oluşturma, silme, atama ve güncelleştirme
 
-## <a name="step-1---introduction"></a>Adım 1 - Giriş
+## <a name="step-1---introduction"></a>1. adım-giriş
 
 Bu Kılavuzlu senaryoyu kullanarak bir test kullanıcısı ayarlayabilir, bir cihazı Intune 'a kaydedebilir ve Intune tarafından önerilen ayarlarla, ayrıca Windows 10 ve Office ProPlus ile cihazı dağıtabilirsiniz. [Bu korumayı Intune 'da etkinleştirmeyi](~/protect/advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune)seçerseniz cihazınız Microsoft Defender Gelişmiş tehdit koruması için de yapılandırılır. Ayarladığınız Kullanıcı ve Kaydolmakta olduğunuz cihaz yeni bir güvenlik grubuna eklenir ve güvenlik ve üretkenlik için önerilen ayarlarla yapılandırılır. 
 
@@ -55,13 +55,13 @@ Bu Kılavuzlu senaryoda test cihazınızı ve test kullanıcısını sağlamanı
 - Seçim [Test cihazını Windows Autopilot 'ye kaydedin](~/enrollment/enrollment-autopilot.md#add-devices).
 - Seçim [Kuruluşunuzun Azure Active Directory oturum açma sayfasına marka](https://go.microsoft.com/fwlink/?linkid=2102455)özelliğini etkinleştirin.
 
-## <a name="step-2---user"></a>2\. Adım-Kullanıcı
+## <a name="step-2---user"></a>2. Adım-Kullanıcı
 
 Cihazda ayarlanacak bir kullanıcı seçin. Bu kişi, cihazın birincil kullanıcısı olacak.
 
 Bu yapılandırmaya daha fazla Kullanıcı veya cihaz eklemek istiyorsanız, Kullanıcı ve cihazları sihirbaz tarafından oluşturulan AAD güvenlik gruplarına eklemeniz yeterlidir. Diğer Kılavuzlu senaryolardan farklı olarak, yapılandırma özelleştirilemez olduğundan Sihirbazı birden çok kez çalıştırmanız gerekmez. Oluşturulan AAD gruplarına daha fazla Kullanıcı ve cihaz eklemeniz yeterlidir. Sihirbazı tamamladıktan sonra, dağıtılan önerilen ilkeler ile oluşturulan grubu görüntüleyebileceksiniz. 
 
-## <a name="step-3---device"></a>3\. adım-cihaz
+## <a name="step-3---device"></a>3. adım-cihaz
 
 Cihazınızın Windows 10, sürüm 1903 veya sonraki bir sürümü çalıştırdığından emin olun.  Birincil kullanıcının, aldığı sırada cihazı ayarlaması gerekir. Kullanıcının kullanabileceği iki kurulum seçeneği vardır. 
 
@@ -71,7 +71,7 @@ Windows Autopilot, kullanıcıların bunları BT yardımı olmadan kullanıma ha
 ### <a name="option-b--manual-device-enrollment"></a>Seçenek B – El Ile cihaz kaydı
 Kullanıcılar, mobil cihaz yönetiminde yeni cihazlarını el ile ayarlayıp kaydeder. Bu senaryoyu tamamladıktan sonra, cihazı sıfırlayın ve birincil kullanıcıya Windows cihazları için kayıt yönergeleri verin. Daha fazla bilgi için, [ilk çalıştırma deneyimi sırasında Windows 10 cihazını Azure AD 'ye katma](https://docs.microsoft.com/azure/active-directory/devices/azuread-joined-devices-frx#joining-a-device)bölümüne bakın.
 
-## <a name="step-4---review--create"></a>4\. adım-Inceleme ve oluşturma
+## <a name="step-4---review--create"></a>4. adım-Inceleme ve oluşturma
 
 Son adım, yapılandırdığınız ayarların özetini incelemenizi sağlar. Seçimlerinizi inceledikten sonra, Kılavuzlu senaryoyu gerçekleştirmek için **Dağıt** ' a tıklayın. Kılavuzlu senaryo tamamlandıktan sonra bir kaynak tablosu görüntülenir. Bu kaynakları daha sonra düzenleyebilirsiniz, ancak Özet görünümden ayrıldığınızda tablo kaydedilmez.
 

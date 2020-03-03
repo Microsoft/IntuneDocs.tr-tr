@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ed343f652c4afe87273eeaa4a2e35b7669056d
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: d26721ff27f380917fec7f4d23c0c5524737a4a3
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839235"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216165"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Uygulama koruma Ilkesi teslim zamanlamasını anlama
 
@@ -38,6 +38,7 @@ Uygulama koruma ilkesi teslimi, kullanıcılarınız için lisans durumuna ve In
 |    Kiracı eklendi değil    |    Sonraki yeniden deneme aralığı için bekleyin.  Uygulama koruması Kullanıcı için etkin değil.    |    24 saat    |    Intune için kiracınızı kurmayan bir durum oluşur.    |
 |    Kullanıcı lisanslı değil     |    Sonraki yeniden deneme aralığı için bekleyin.  Uygulama koruması Kullanıcı için etkin değil.     |    12 saat, ancak Android cihazlarda bu Aralık, Intune uygulama SDK 'Sı sürüm 5.6.0 veya üstünü gerektirir. Aksi takdirde, Androd cihazları için Aralık 24 saattir.   |    Kullanıcı Intune için lisanslanmadığı zaman gerçekleşir.    |
 |    Kullanıcı, uygulama koruma Ilkeleri atamadı    |    Sonraki yeniden deneme aralığı için bekleyin.  Uygulama koruması Kullanıcı için etkin değil.    |    12 saat        |    Kullanıcıya uygulama ayarları atamadığınızda gerçekleşir.    |
+|    Kullanıcı tarafından atanan uygulama koruma Ilkeleri ancak uygulama koruma Ilkelerinde tanımlı değil   |    Sonraki yeniden deneme aralığı için bekleyin.  Uygulama koruması Kullanıcı için etkin değil.    |    12 saat        |    Uygulamayı uygulamaya eklemediğiniz zaman gerçekleşir.    |
 |    Kullanıcı Intune MAM için başarıyla kaydedildi    |    Uygulama koruması her ilke ayarı için uygulanır.    Güncelleştirmeler, yeniden deneme aralığına göre yapılır    |    Intune hizmeti, Kullanıcı yüküne göre tanımlanır.    Genellikle 30 dakika.     |    Kullanıcı MAM yapılandırması için Intune hizmetine başarıyla kaydolursa oluşur.    |
 
 > [!NOTE]

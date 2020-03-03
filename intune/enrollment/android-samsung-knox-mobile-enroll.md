@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 12/06/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 1ccbba6163bfa0cd7b65bc25d71a0aff9babeda3
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692156"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216187"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Android cihazları Samsung’un Knox Mobil Kayıt özelliğini kullanarak otomatik kaydetme
 
@@ -42,7 +42,7 @@ Samsung KME kullanarak Intune kaydını etkinleştirmek için Intune ve Samsung 
 Cihazların Knox dağıtım programına katılan yetkili satıcıların satın alınması sırasında cihaz tanımlayıcılarının listesi (seri numaraları ve ımesıs) Knox portalına otomatik olarak eklenir.
 
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirketinizi Samsung Knox portalına kaydetmeniz gerekir:
 1. [KME ülke/bölgenizde kullanılabilir olduğundan emin olun](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME 55 ülkede/bölgede kullanılabilir. Dağıtım ülkeniz/bölgenizin desteklendiğinden emin olun.
@@ -63,15 +63,16 @@ KME kullanarak Intune’a kaydolmak için önce şu adımları izleyerek şirket
 
 | MDM Profil Alanları| Gerekli mi? | Değerler | 
 |-------------------|-----------|-------| 
-|MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın. 
-|Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin. 
-|Description        | Hayır        |Profili açıklayan bir metin girin. 
-|MDM Aracı APK’sı      | Evet       |https://aka.ms/intune_kme_deviceowner 
-|Bu uygulamayı Google Cihaz Sahibi olarak etkinleştir | Evet | Android Kurumsal’a kaydolmak için bu seçeneği belirleyin. 
-|Desteklenen MDM      | Evet       |Microsoft Intune 
-|Tüm sistem uygulamalarını etkin bırak | Hayır | Tüm uygulamaların profil için etkin ve kullanılabilir olmasını sağlamak için bu seçeneği belirleyin. Bu seçenek seçilmezse, cihazın uygulamalar tepsisinde yalnızca sınırlı bir sistem uygulamaları kümesi görüntülenir. E-posta gibi uygulamalar gizlenir. 
-|Özel JSON        | Hayır        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Enter Intune enrollment token string"}. [Kayıt profili oluşturma](android-kiosk-enroll.md) hakkında bilgi edinin. 
-| Yasal sözleşmeler ekle | Hayır | Burayı boş bırakın. 
+|MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın.| 
+|Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin. |
+|Açıklama        | Hayır        |Profili açıklayan bir metin girin. |
+|MDM Aracı APK’sı      | Evet       |https://aka.ms/intune_kme_deviceowner| 
+|Özel JSON        | Hayır        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Enter Intune enrollment token string"}. [Kayıt profili oluşturma](android-kiosk-enroll.md) hakkında bilgi edinin. |
+|Kurulum sihirbazını atlama  | Hayır        |Son kullanıcıya yönelik standart cihaz kurulum istemlerini atlamak için bu seçeneği belirleyin.|
+|Son Kullanıcının Kaydı İptal Etmesine İzin Ver | Hayır | Kullanıcıların KME’yi iptal etmesine izin vermek için bunu seçin.|
+| Yasal sözleşmeler ekle | Hayır | Burayı boş bırakın. |
+| Destek iletişim ayrıntıları | Evet | İletişim ayrıntılarını güncelleştirmek için Düzenle ' yi seçin |
+|Bu profil ile bir Knox lisansını ilişkilendir | Hayır | Bunu seçmeyin. KME kullanarak Intune 'a kaydolma Knox lisansı gerektirmez.|
 
 ### <a name="for-android"></a>Android için
 
@@ -79,16 +80,17 @@ Adım adım yönergeler için, [Samsung 'In profil oluşturma](https://docs.sams
 
 | MDM Profil Alanları| Gerekli mi? | Değerler |
 |-------------------|-----------|-------|
-|MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın.
-|Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin.
-|açıklama        | Hayır        |Profili açıklayan bir metin girin.
-|MDM Aracı APK’sı      | Evet       |https://aka.ms/intune_kme
-|Bu uygulamayı Google Cihaz Sahibi olarak etkinleştir | Hayır | Android için bu seçeneği belirtmeyin. Bu seçenek yalnızca Android Enterprise için geçerlidir.
-|Kurulum sihirbazını atlama  | Hayır        |Son kullanıcıya yönelik standart cihaz kurulum istemlerini atlamak için bu seçeneği belirleyin.
-|Son Kullanıcının Kaydı İptal Etmesine İzin Ver | Hayır | Kullanıcıların KME’yi iptal etmesine izin vermek için bunu seçin.
-|Özel JSON        | Hayır        |Burayı boş bırakın.
-| Yasal sözleşmeler ekle | Hayır | Burayı boş bırakın.
-Bu profil ile bir Knox lisansını ilişkilendir | Hayır | Bunu seçmeyin. KME kullanarak Intune 'a kaydolma Knox lisansı gerektirmez.
+|MDM Sunucu URI’si     | Hayır        |Burayı boş bırakın.|
+|Profil Adı       | Evet       |Tercih ettiğiniz bir profil adı girin.|
+|Açıklama        | Hayır        |Profili açıklayan bir metin girin.|
+|MDM 'nizi seçin | Evet | MDMs 'den birini seçin. |
+|MDM Aracı APK’sı      | Evet       |https://aka.ms/intune_kme|
+|Özel JSON verileri        | Hayır        |Burayı boş bırakın.|
+|Çift DAR | Hayır | Burayı boş bırakın.|
+|Kayıt için QR kodu | Hayır | Kayıt hızını hızlandırmak için QR kodu ekleyebilirsiniz.|
+|Sistem uygulamaları | Evet | Listelenen seçeneklerden birini belirleyin. |
+|Yasal anlaşma Ekle | Hayır | Burayı boş bırakın.|
+|Şirket Adı | Evet | Bu ad, cihaz kaydı sırasında görüntülenecektir. |
 
 ## <a name="add-devices"></a>Cihazları ekleme
 
@@ -124,7 +126,7 @@ Bu bilgiler yardımcı olmadı mı? Tüm [KME Kullanıcı kılavuzuna](https://d
 
 - **Cihaz sahibi desteği:** **cihaz sahibi desteğini - :** Intune, adanmış ve tam olarak yönetilen cihazların KME portalını kullanarak kaydedilmesini destekler. Diğer Android Kurumsal cihaz sahibi modları, Intune’da kullanılabilir hale geldikçe desteklenmeye başlayacaktır.
 
-- **İş profili desteği yoktur:** KME Kurumsal cihaz kayıt yöntemi ve Android iş profiline kayıtlı cihazlar emin olun, iş ve kişisel cihazlarda kişisel verileri ayrıdır. Bu nedenle, KME kullanarak iş profiline cihaz kaydı, Intune 'da desteklenen bir senaryo değildir.
+- **İş profili desteği yok:** KME, Android iş profiline kaydedilen bir kurumsal cihaz kayıt yöntemi ve cihazlarıdır. iş ve kişisel verilerin Kişisel cihazlarda ayrı olduğundan emin olun. Bu nedenle, KME kullanarak iş profiline cihaz kaydı, Intune 'da desteklenen bir senaryo değildir.
 
 - **Android Kurumsal’a kaydolmak için fabrika sıfırlaması**: Önceden ayarlanmış cihazları yeniden amaçlandırıyorsanız Android Kurumsal’a kaydolurken bu cihazlarda fabrika sıfırlaması yapılması gerekir.
 

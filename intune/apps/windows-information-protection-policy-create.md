@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d1a8ee3f6d5eb190fb2ee252dfb5f6c23a1cf16
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8ae5e45c521046fb414a1d141c6859c7a4e5d61a
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563765"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216135"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune ile Windows Information Protection (WIP) uygulama koruma ilkesi oluşturma ve dağıtma
 
@@ -88,7 +88,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 4. **Intune uygulama koruması** bölmesinden **korumalı uygulamalar** ' ı seçin. **Korunan uygulamalar** bölmesi, bu uygulama koruma ilkesi için listede zaten bulunan tüm uygulamaları gösteren açılır.
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Bölmenin en üstündeki liste, liste filtresini değiştirmenize izin verir.
 6. Şirket verilerinize erişmesine izin vermek istediğiniz her uygulamayı seçin.
-7. **Tamam**'ı tıklatın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
+7. **Tamam**a tıklayın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
 8. **Kaydet**'e tıklayın.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir Store uygulaması eklemek için
@@ -102,7 +102,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Bölmenin en üstündeki liste, liste filtresini değiştirmenize izin verir.
 6. Listeden **Mağaza uygulamaları**’nı seçin.
 7. **Ad**, **Yayımcı**, **Ürün Adı** ve **Eylem** için değerleri girin. Uygulamanın şirket verilerinize erişebilmesi için **Eylem** değerini **İzin Ver** olarak ayarladığınızdan emin olun.
-9. **Tamam**'ı tıklatın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
+9. **Tamam**a tıklayın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
 10. **Kaydet**'e tıklayın.
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Korunan uygulamalar listenize bir masaüstü uygulaması eklemek için
@@ -115,7 +115,7 @@ Kuruluşunuzda Intune'u kurduktan sonra WIP’ye özel bir ilke oluşturabilirsi
 5. **Uygulama ekle**’yi seçin. **Uygulama ekle** bilgileri uygulamaların filtrelenmiş bir listesini gösterir. Bölmenin en üstündeki liste, liste filtresini değiştirmenize izin verir.
 6. Listeden **Masaüstü uygulamaları**’nı seçin.
 7. **Ad**, **Yayımcı**, **Ürün Adı**, **Dosya**, **En Düşük Sürüm**, **En Yüksek Sürüm** ve **Eylem** için değerler girin. Uygulamanın şirket verilerinize erişebilmesi için **Eylem** değerini **İzin Ver** olarak ayarladığınızdan emin olun.
-9. **Tamam**'ı tıklatın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
+9. **Tamam**a tıklayın. **Korumalı uygulamalar** bölmesi, seçilen tüm uygulamaların gösterildiği güncelleştirilmiş.
 10. **Kaydet**'e tıklayın.
 
 ## <a name="wip-learning"></a>WIP Öğrenme

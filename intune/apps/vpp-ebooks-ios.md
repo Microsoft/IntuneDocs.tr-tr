@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7c2bd0603961b9d618b3f743ecb323fb7fc9823
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ff2ed62695bad781b7b55ac590e9b97490ba2416
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437877"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216071"
 ---
 # <a name="how-to-manage-iosipados-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Microsoft Intune ile toplu satın alma programı aracılığıyla satın aldığınız iOS/ıpados eBook 'larını yönetme
 
@@ -74,7 +74,7 @@ Belirteç, belirteçler listesi bölmesinde görüntülenir.
 ## <a name="to-assign-a-volume-purchased-app"></a>Toplu satın alınmış bir uygulamayı atamak için
 
 1. **Tüm e-kitaplar** > **ebook** 'ları > **uygulamalar** ' ı seçin.
-2. Kitap listesi bölmesinde, atamak istediğiniz kitabı ve daha sonra ‘ **...** ’ > **Grup Ata**’yı seçin.
+2. Kitap listesi bölmesinde, atamak istediğiniz kitabı ve daha sonra ‘**...**’ > **Grup Ata**’yı seçin.
 3. <*kitap adı*> - **Atanan Gruplar** bölmesinde **Yönet** > **Atanan Gruplar**'ı seçin.
 4. **Grupları Ata**'yı, ardından **Grup seç** bölmesinde kitabı atamak istediğiniz Azure AD gruplarını seçin. Cihaz grupları henüz desteklenmemektedir.
 **Kullanılabilir** veya **Gerekli** atama eylemlerinden birini seçin. 

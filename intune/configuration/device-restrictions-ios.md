@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e352ca0c0100ebe1756d621feb725e040521901
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 86bb9edf96911379631068925315959468f65872
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513086"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216023"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune kullanarak özelliklere izin vermek veya erişimi kısıtlamak için iOS ve ıpados cihaz ayarları
 
@@ -134,7 +134,7 @@ Bu ayarlar, Intune 'da bir cihaz yapılandırma profiline eklenir ve sonra iOS/�
     - iOS 11,3 ve üzeri
     - ıpados 13,0 ve üzeri
 
-## <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
+## <a name="password"></a>Parola
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Ayarlar için geçerlidir: tüm kayıt türleri
 
@@ -196,7 +196,7 @@ Bu ayarlar, Intune 'da bir cihaz yapılandırma profiline eklenir ve sonra iOS/�
   > [!NOTE]
   > Bu ayar için Intune kullanıcı arabirimi iOS ve ıpados tarafından desteklenen değerleri birbirinden ayırır. Kullanıcı arabirimi gelecek bir sürümde güncelleştirilmiş olabilir.
 
-- **Parola kullanım süresi (gün)** : cihaz parolasının değiştirilmesi gereken gün sayısını girin.
+- **Parola kullanım süresi (gün)**: cihaz parolasının değiştirilmesi gereken gün sayısını girin.
 - **Önceki parolaların yeniden kullanılmasını engelle**: eski bir parolanın yeniden kullanılabilmesi için kullanılması gereken yeni parola sayısını girin.
 - **Dokunma kimliği ve yüz kimliği kilit açma**: cihazın kilidini açmak için parmak izini veya yüzü kullanmayı engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** , kullanıcının bu yöntemleri kullanarak cihazın kilidini açmasına izin verir.
 
@@ -421,7 +421,7 @@ Bu listelere uygulama eklemek için şunları yapabilirsiniz:
 
   - **Gizli uygulamalar**: kullanıcılardan gizlenen uygulamaların listesini girin. Kullanıcılar bu uygulamaları görüntüleyemez veya açamaz.
   
-    Apple, bazı yerel uygulamaların gizlenmelerini önler. Örneğin, cihazdaki **ayarları** veya **cüzdan** uygulamalarını gizleyemezsiniz. [Yerleşik Apple uygulamalarını silme](https://support.apple.com/HT208094) , gizli olabilecek uygulamaları listeler.
+    Apple, bazı yerel uygulamaların gizlenmelerini önler. Örneğin, cihazdaki **Ayarlar** uygulamasını gizleyemezsiniz. [Yerleşik Apple uygulamalarını silme](https://support.apple.com/HT208094) , gizli olabilecek uygulamaları listeler.
   
   - **Görünür uygulamalar**: kullanıcıların görüntüleyebileceği ve başlatabileceği uygulamaların bir listesini girin. Başka hiçbir uygulama görüntülenemez veya başlatılamaz.
 
@@ -462,7 +462,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
   > [!IMPORTANT]
   > Bu ayar uzak cihaz eylemi olarak değerlendirilir. Bu nedenle, bu ayar cihazdaki yönetim profilinde gösterilmez. Kişisel etkin nokta durumu cihazda her değiştiğinde **Kişisel etkin nokta** , Intune hizmeti tarafından engellenir. Intune 'da, raporlama durumu bir başarı gösteriyorsa, bu ayar cihazdaki yönetim profilinde gösterilmese de, çalıştığını öğrenin.
 
-- **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)** : yönetilen uygulamaların hücresel ağlarda ne zaman kullanabileceği veri türlerini tanımlayın. Seçenekleriniz şunlardır:
+- **Hücresel kullanım kuralları (yalnızca yönetilen uygulamalar)**: yönetilen uygulamaların hücresel ağlarda ne zaman kullanabileceği veri türlerini tanımlayın. Seçenekleriniz şunlardır:
   - **Hücresel veri kullanımını engelleyin**: **tüm yönetilen uygulamalar** için hücresel veri kullanmayı engelleyin veya **belirli uygulamaları seçin**.
   - **Dolaşım sırasında hücresel veri kullanımını engelle**: **tüm yönetilen uygulamalar** için Dolaşımda hücresel veri kullanmayı engelleyin veya **belirli uygulamaları seçin**.
 
@@ -552,7 +552,7 @@ Veri dolaşımı için gereken Not (müşteri karışıklığına yardımcı olm
 - **Şifrelenmiş yedekleme**: **gerekli** olduğundan cihaz yedeklemelerinin şifrelenmesi gerekir.
 - **Yönetilen uygulamalar buluta eşitlenir**: **Yapılandırılmadı** (varsayılan), Intune 'A, uygulamaların kullanıcının iCloud hesabıyla veri eşitlemesine olanak tanır. **Engelle** ayarı iCloud'a bu veri eşitlemesini engeller.
 - **Kurumsal kitap yedeklemesini engelle**: kullanıcıların kurumsal kitaplar yedeklemesini engellemek için **Engelle** ' yi seçin. **Yapılandırılmadı** (varsayılan), kullanıcıların bu kitapları yedeklemesini sağlar.
-- **Kurumsal kitap meta verileri eşitlemesini engelleyin (notlar ve vurgular)** : **blok** , kurumsal kitaplar 'da notların ve vurguların eşitlenmesini önler. **Yapılandırılmadı** (varsayılan) eşitlemeye izin verir.
+- **Kurumsal kitap meta verileri eşitlemesini engelleyin (notlar ve vurgular)**: **blok** , kurumsal kitaplar 'da notların ve vurguların eşitlenmesini önler. **Yapılandırılmadı** (varsayılan) eşitlemeye izin verir.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Ayarlar için geçerlidir: cihaz kaydı, otomatik cihaz kaydı (denetimli)
 
