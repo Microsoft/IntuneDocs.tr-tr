@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
-ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
+ms.openlocfilehash: d30c02e67579e7c4e2d577f8804189fec1c6110d
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76125319"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260257"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune ve Windows Autopilot kullanarak karma Azure AD 'ye katılmış cihazları dağıtma
 Karma Azure Active Directory (Azure AD) ile birleştirilmiş cihazları ayarlamak için Intune ve Windows Autopilot kullanabilirsiniz. Bunu yapmak için bu makaledeki adımları izleyin.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 [Hibrit Azure AD 'ye katılmış cihazlarınız](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)başarıyla yapılandırılır. Get-MsolDevice cmdlet 'ini kullanarak [cihaz kaydınızı doğruladığınızdan](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) emin olun.
 
@@ -39,12 +39,14 @@ Kaydedilecek cihazlar ayrıca:
 - Katılmayı denediğiniz etki alanının etki alanı denetleyicisine ping atabiliyor.
 - Proxy kullanılıyorsa, WPAD proxy ayarları seçeneğinin etkinleştirilmesi ve yapılandırılması gerekir.
 - Kullanıma hazır deneyimin (OOBE) altına gidin.
+- Azure Active Directory OOBE 'de desteklenen bir yetkilendirme türü kullanın.
+
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 otomatik kaydını ayarlama
 
 1. Azure 'da oturum açın, sol bölmede **Azure Active Directory**' yi seçin.
 
-   ![Azure portalı](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
+   ![Azure portal](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
 1. **Mobility (MDM ve MAM)** seçeneğini belirleyin.
 
@@ -111,7 +113,7 @@ Active Directory için Intune Bağlayıcısı, Windows Server 2016 veya üstün�
 2. Bağlayıcıyı indirmek için yönergeleri izleyin.
 3. Bağlayıcıyı yüklemek için, yüklenen bağlayıcı kurulum dosyasını *Odjconnectorbootstrapper. exe*' yi açın.
 4. Kurulumun sonunda **Yapılandır**' ı seçin.
-5. **Oturum aç**'ı seçin.
+5. **Oturum aç '** ı seçin.
 6. Kullanıcı genel yöneticisi veya Intune yönetici rolü kimlik bilgilerini girin.  
    Kullanıcı hesabının atanmış bir Intune lisansı olmalıdır.
 7. Active Directory için **windows > ** **Windows kayıt** > **Intune Bağlayıcısı** > **cihazlar** ' a gidin ve ardından bağlantı durumunun **etkin**olduğunu doğrulayın.

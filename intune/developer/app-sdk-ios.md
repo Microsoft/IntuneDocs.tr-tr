@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48d2e88fbe35729a5b8496d4ac1a4c444df3d89f
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 024f92b35b3b2885f58a7b544144d328c34ab499
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609135"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256484"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS için Microsoft Intune Uygulama SDK’sı geliştirici kılavuzu
 
@@ -148,7 +148,7 @@ Intune Uygulama SDK'sını etkinleştirmek için aşağıdaki adımları izleyin
     
     b. `com.microsoft.intune.mam` paylaşılan anahtarlık grubunu var olan erişim gruplarınıza ekleyin. Intune Uygulama SDK'sı verileri depolamak için bu erişim grubunu kullanır.
     
-    c. `com.microsoft.adalcache` öğesini mevcut erişim gruplarınıza ekleyin.
+    c. `com.microsoft.adalcache` öğesini var olan erişim gruplarınıza ekleyin.
     
       ![Intune Uygulama SDK’sı iOS: Anahtarlık paylaşımı](./media/app-sdk-ios/intune-app-sdk-ios-keychain-sharing.png)
     
@@ -243,7 +243,7 @@ IntuneMAMSettings sözlüğü altında, Intune Uygulama SDK'sını yapılandırm
 
 Bu ayarlardan bazıları önceki bölümlerde ele alınmış olabilir ve bazıları tüm uygulamalar için geçerli değildir.
 
-Ayar  | Tür  | Definition | Gerekli mi?
+Ayar  | Tür  | Tanım | Gerekli mi?
 --       |  --   |   --       |  --
 ADALClientId  | Dize  | Uygulamanın Azure AD istemci tanımlayıcısı. | Intune olmayan bir AAD kaynağına erişen MSAL ve herhangi bir ADAL uygulamasını kullanan tüm uygulamalar için gereklidir. |
 ADALAuthority | Dize | Uygulamanın Azure AD yetkilisi kullanımda. AAD hesaplarının yapılandırıldığı ortamınızı kullanmanız gerekir. | Uygulama, Intune olmayan bir AAD kaynağına erişmek için ADAL veya MSAL kullanıyorsa gereklidir. Bu değer yoksa, Intune varsayılanı kullanılır.|
@@ -264,16 +264,20 @@ SplashDuration | Sayı | Intune başlangıç ekranının uygulama başlatılırk
 BackgroundColor| Dize| Intune SDK 'sının Kullanıcı arabirimi bileşenleri için arka plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.   | İsteğe bağlı. İOS sürümlerinde ve iOS koyu mod ayarına göre değişebilen sistem arka plan rengi varsayılan olarak değişir. |
 ForegroundColor| Dize| Intune SDK 'sının Kullanıcı arabirimi bileşenlerinin metin rengi gibi ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. İOS sürümlerinde ve iOS koyu mod ayarına göre değişebilen sistem etiketi rengine varsayılan olarak izin verebilir. |
 AccentColor | Dize| Intune SDK 'sının Kullanıcı arabirimi bileşenlerinin düğme metin rengi ve PIN kutusu vurgu rengi gibi vurgu rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.| İsteğe bağlı. Varsayılan olarak sistem mavisidir. |
+SecondaryBackgroundColor| Dize| MTD ekranları için ikincil arka plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.   | İsteğe bağlı. Varsayılan olarak beyaz olur. |
+SecondaryForegroundColor| Dize| MTD ekranları için dipnot rengi gibi ikincil ön plan rengini belirtir. #XXXXXX biçiminde bir onaltılık RGB dizesini kabul eder; burada X, 0-9 veya A-F aralığındadır. Diyez işareti atlanabilir.  | İsteğe bağlı. Varsayılan olarak gri olur. |
 SupportsDarkMode| Boole değeri | BackgroundColor/ForegroundColor/AccentColor için açık bir değer ayarlanmamışsa, Intune SDK 'sının Kullanıcı arabirimi renk düzeninin sistem koyu Mod ayarını gözlemeyeceğini belirtir | İsteğe bağlı. Varsayılan değer Evet ' tir. |
 MAMTelemetryDisabled| Boole değeri| SDK’nın arka ucuna herhangi bir telemetri verisi gönderip göndermeyeceğini belirtir.| İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MAMTelemetryUsePPE | Boole değeri | MAM SDK'sının PPE telemetri arka ucuna veri gönderip göndermeyeceğini belirtir. Sınama telemetri verilerinin müşteri verileriyle karışmaması için uygulamalarınızı Intune ilkesiyle sınarken bunu kullanın. | İsteğe bağlı. Varsayılan ayar Hayır’dır. |
 MaxFileProtectionLevel | Dize | İsteğe bağlı. Uygulamanın destekleyebildiği maksimum `NSFileProtectionType` belirtmesine olanak tanır. Düzey uygulamanın destekleyebildiğinden daha yüksekse, bu değer hizmet tarafından gönderilen ilkeyi geçersiz kılar. Olası değerler: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
 OpenInActionExtension | Boole değeri | Şurada aç Eylemi uzantıları için EVET olarak ayarlayın. Daha fazla bilgi için UIActivityViewController yoluyla Veri Paylaşımı bölümüne bakın. |
 WebViewHandledURLSchemes | Dize Dizisi | Uygulamanızın WebView’unun işlediği URL şemalarını belirtir. | Uygulamanız URL'leri bağlantılar ve/veya javascript aracılığıyla işleyen bir WebView kullanıyorsa gereklidir. |
+DocumentBrowserFileCachePath | Dize | Uygulamanız çeşitli dosya sağlayıcılarındaki dosyalara göz atmak için [`UIDocumentBrowserViewController`](https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller?language=objc) kullanıyorsa, bu yolu uygulama korumalı alanındaki ana dizine göre ayarlayabilirsiniz, böylece Intune SDK şifresi çözülmüş yönetilen dosyaları bu klasöre bırakabilir. | İsteğe bağlı. `/Documents/` Directory varsayılan olarak belirlenmiştir. |
+VerboseLoggingEnabled | Boole değeri | Evet olarak ayarlanırsa, Intune ayrıntılı modda günlüğe kaydedilir. | İsteğe bağlı. Varsayılan olarak Hayır |
 
 ## <a name="receive-app-protection-policy"></a>Uygulama koruma ilkesini alma
 
-### <a name="overview"></a>Genel Bakış
+### <a name="overview"></a>Overview
 
 Intune uygulama koruma ilkesini almak için, uygulamaların Intune MAM hizmetiyle bir kayıt isteği başlatmaları gerekir. Uygulamalar, Intune konsolunda cihaz kaydıyla veya cihaz kaydı olmadan uygulama koruma ilkesini almak için yapılandırılabilir. Kayıt olmadan uygulama koruma ilkesi (**APP-WE** veya MAM-WE olarak da bilinir), uygulamaların Intune mobil cihaz yönetimine (MDM) kaydedilmeden Intune tarafından yönetilmesine izin verir. Her iki durumda da, ilkeyi almak için Intune MAM hizmetine kaydolmak gereklidir.
 
@@ -332,7 +336,7 @@ Bu API çağrıldıktan sonra, uygulama normal çalışmasına devam edebilir. K
 
 Intune SDK 'sının, uygulamanızın başlatılması tamamlanmadan önce ADAL/MSAL ve kayıt kullanarak tüm kimlik doğrulamasını işlemesini istiyorsanız ve uygulamanız her zaman uygulama ilkesi gerektirdiğinde, `loginAndEnrollAccount` API kullanmanız gerekmez. Uygulamanın Info.plist dosyasındaki IntuneMAMSettings sözlüğünde aşağıdaki iki ayarı EVET olarak ayarlamanız yeterli olur.
 
-Ayar  | Tür  | Definition |
+Ayar  | Tür  | Tanım |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Boole değeri| Mevcut bir yönetilen kimlik tespit edilirse ve bu kimlik henüz kaydedilmemişse uygulama başlatıldığında otomatik olarak kaydetmeye çalışılıp çalışılmayacağını belirtir. Varsayılan ayar HAYIR’dır. <br><br> Note: yönetilen kimlik bulunamazsa veya ADAL/MSAL önbelleğinde kimlik için geçerli bir belirteç yoksa, uygulama aynı zamanda MAMPolicyRequired Evet olarak ayarlanmadığı takdirde kayıt girişimi kimlik bilgileri istenmeden sessizce başarısız olur. |
 MAMPolicyRequired| Boole değeri| Uygulamanın bir Intune uygulama koruma ilkesine sahip olmadığında başlatılmasının engellenip engellenmeyeceğini belirtir. Varsayılan ayar HAYIR’dır. <br><br> Not: MAMPolicyRequired ayarı EVET olarak belirlenmişse uygulamalar App Store’a gönderilemez. MAMPolicyRequired EVET olarak ayarlandığında AutoEnrollOnLaunch da EVET olarak ayarlanmalıdır. |
@@ -464,6 +468,14 @@ IntuneMAMPolicyManager.h | IntuneMAMPolicyManager sınıfı, uygulamaya dağıt�
 IntuneMAMPolicy.h | IntuneMAMPolicy sınıfı uygulamaya uygulanan bazı MAM ilkesi ayarlarını gösterir. Bu ilke ayarları, uygulamanın kendi kullanıcı arabirimini özelleştirebilmesi için gösterilir. İlke ayarlarının çoğu uygulama değil SDK tarafından zorlanır. Uygulamada kullanılması gereken tek ayar Farklı kaydet denetimidir. Bu sınıf Farklı kaydet'i uygulamak için gereken bazı API'leri gösterir. |
 IntuneMAMFileProtectionManager.h | IntuneMAMFileProtectionManager sınıfı, uygulamanın sağlanan kimlik temelinde açıkça dosyaların ve dizinlerin güvenliğini sağlamak için kullanabileceği API'leri gösterir. Kimlik Inture tarafından yönetilebilir veya yönetilmeyen bir kimlik olabilir ve SDK uygun MAM ilkesini uygular. Bu sınıfın kullanımı isteğe bağlıdır. |
 IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager sınıfı, uygulamanın sağlanan kimlik temelinde veri arabelleklerinin güvenliğini sağlamak için kullanabileceği API'leri gösterir. Kimlik Inture tarafından yönetilebilir veya yönetilmeyen bir kimlik olabilir ve SDK uygun şifrelemeyi uygular. |
+
+## <a name="implement-allowed-accounts"></a>Izin verilen hesapları Uygula
+
+Intune, BT yöneticilerinin Kullanıcı tarafından hangi hesapların oturum açgirebileceği belirtmesini sağlar. Uygulamalar, belirtilen izin verilen hesaplar listesi için Intune uygulama SDK 'sını sorgulayabilir ve sonra yalnızca izin verilen hesapların cihazda imzalandığından emin olabilir.
+
+İzin verilen hesapları sorgulamak için, uygulama `IntuneMAMEnrollmentManager``allowedAccounts` özelliğini denetlemelidir. `allowedAccounts` özelliği, izin verilen hesapları veya el almaz içeren bir dizidir. Özellik Nil ise izin verilen hesaplar belirtilmez.
+
+Uygulamalar, `IntuneMAMAllowedAccountsDidChangeNotification` bildirimini gözlemleyerek `allowedAccounts` özelliğindeki değişikliklere de tepki verebilir. `allowedAccounts` özelliği değeri her değiştiğinde bildirim gönderilir.
 
 ## <a name="implement-save-as-and-open-from-controls"></a>Farklı Kaydet ve açılan denetimleri uygulama
 
@@ -729,6 +741,16 @@ Varsayılan olarak, uygulamalar tek kimlikli olarak değerlendirilir. SDK, kayı
     Uygulama seçmeli silme ile temizlendiğinde, SDK `wipeDataForAccount` içindeki `IntuneMAMPolicyDelegate` yönetimini çağırır. Belirtilen kullanıcı hesabını ve onunla ilişkili tüm verileri kaldırmak uygulamanın sorumluluğudur. SDK, kullanıcının sahip olduğu tüm dosyaları kaldırma özelliğine sahiptir ve uygulamanın `wipeDataForAccount` çağrısından FALSE sonucu getirmesi durumunda bunu uygular.
 
     Bu yöntemin bir arka plan iş parçacığından çağrıldığını unutmayın. Kullanıcıya yönelik tüm veriler kaldırılana kadar uygulama bir değer döndürmemelidir (uygulama FALSE döndürürse dosyalar hariç olmak üzere).
+
+## <a name="siri-intents"></a>Siri amaçları
+Uygulamanız Siri hedefleri ile tümleşiyorsa, lütfen bu senaryoyu destekleme yönergeleri için `IntuneMAMPolicy.h` `areSiriIntentsAllowed` açıklamalarını okuduğunuzdan emin olun. 
+    
+## <a name="notifications"></a>Bildirimler
+Uygulamanız bildirimler alırsa, lütfen bu senaryoyu destekleme yönergeleri için `IntuneMAMPolicy.h` `notificationPolicy` açıklamalarını okuduğunuzdan emin olun.  Uygulamaların `IntuneMAMPolicyManager.h`açıklanan `IntuneMAMPolicyDidChangeNotification` kaydolması ve bu değeri Anahtarlık aracılığıyla `UNNotificationServiceExtension` ile iletişim kurması önerilir.
+## <a name="displaying-web-content-within-application"></a>Uygulama Içinde Web Içeriğini görüntüleme
+Uygulamanızın Web sitesinde Web sitelerini görüntüleyebilme özelliği varsa ve görüntülenen Web sayfaları rasgele sitelere gidebilme özelliğine sahipse, uygulama, yönetilen verilerin Web üzerinden sızabilmesi için geçerli kimliğin ayarlanmasına yönelik olarak responisble görünümü. Bunun örnekleri, bir arama motoruna doğrudan veya dolaylı bağlantıları olan ' bir özellik önerme ' veya ' geri bildirim ' Web sayfalarıdır.
+Çoklu kimlik uygulamaları, web görünümünü görüntülemeden önce boş dizeyi geçirerek ıntunemampolicymanager Setuipolicyıdentity öğesini çağırmalıdır. Web görünümü kapatıldıktan sonra, uygulama geçerli kimliğe geçirerek Setuipolicyıdentity öğesini çağırmalıdır.
+Tek kimlik uygulamaları, web görünümünü görüntülemeden önce boş dizeyi geçirerek ıntunemampolicymanager Setcurrentthreadıdentity çağrısını çağırmalıdır. Web görünümü kapatıldıktan sonra, uygulamanın Nil olarak Setcurrentthreadıdentity çağrısı gerekir.
 
 ## <a name="ios-best-practices"></a>iOS en iyi uygulamalar
 

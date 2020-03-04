@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/25/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: a2b988af00ce1ab5b9fa4e664d09b383403bd002
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609306"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260359"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune ile cihaz şifrelemesini kullanma
 
@@ -125,6 +125,32 @@ Windows 10 veya sonraki bir platformda Endpoint Protection için bir [cihaz yap�
 5. BitLocker ayarlarını iş gereksinimlerinizi karşılayacak şekilde yapılandırın ve ardından **Tamam**' ı seçin.
 
 6. Ek ayarların yapılandırmasını tamamladıktan sonra profili kaydedin.
+
+### <a name="silently-enable-bitlocker-on-devices"></a>Cihazlarda BitLocker 'ı sessizce etkinleştirin
+
+Bir cihazda BitLocker 'ı otomatik olarak ve sessizce etkinleştirmenizi sağlayan bir BitLocker ilkesi yapılandırabilirsiniz. Diğer bir deyişle, bu kullanıcı cihazda yerel yönetici olmasa bile, BitLocker son kullanıcıya herhangi bir kullanıcı ARABIRIMI sunmadan başarıyla etkinleştirilir.
+
+**Cihaz önkoşulları**:
+
+Bir cihazın BitLocker 'ı sessizce etkinleştirmek için uygun olması için aşağıdaki koşullara uyması gerekir:
+
+- Cihazın Windows 10 sürüm 1809 veya üstünü çalıştırması gerekir
+- Cihazın Azure AD 'ye katılmış olması gerekir  
+
+**BitLocker ilke yapılandırması**:
+
+BitLocker [temel ayarları](../protect/endpoint-protection-windows-10.md#bitlocker-base-settings) için aşağıdaki Iki ayar BitLocker ilkesinde yapılandırılmalıdır:
+
+- **Diğer disk şifrelemesi** = *bloğu*uyarısı.
+- **Standart kullanıcıların Azure AD JOIN sırasında şifrelemeyi etkinleştirmesine Izin ver** = *izin* ver
+
+BitLocker ilkesi, bir başlangıç PIN 'ı veya başlangıç anahtarı kullanımını **gerektirmemelidir** . TPM başlangıç PIN 'ı veya başlangıç anahtarı *gerektiğinde*, BitLocker sessizce etkinleştirilemez ve son kullanıcıdan etkileşim gerektirir.  Bu gereksinim, aynı ilkedeki aşağıdaki üç [BitLocker işletim sistemi sürücü ayarı](../protect/endpoint-protection-windows-10.md#bitlocker-os-drive-settings) aracılığıyla karşılanır:
+
+- **Uyumlu TPM başlangıç PIN 'ı** *TPM Ile başlangıç PIN 'i gerektirecek* şekilde ayarlanmamış olmalıdır
+- **Uyumlu TPM başlangıç anahtarı** *TPM Ile başlangıç anahtarı gerektirecek* şekilde ayarlanmamış olmalıdır
+- **Uyumlu TPM başlangıç anahtarı ve PIN 'ı** *TPM ile başlangıç anahtarı ve PIN gerektirecek* şekilde ayarlanmamış olmalıdır
+
+
 
 ### <a name="manage-bitlocker"></a>BitLocker 'ı yönetme
 

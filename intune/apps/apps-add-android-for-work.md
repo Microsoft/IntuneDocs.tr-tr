@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609191"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256467"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune ile Yönetilen Google Play uygulamalarını Android Kurumsal cihazlarına ekleme
 
@@ -122,7 +122,7 @@ Yönetilen Google Play LOB uygulamaları eklemenin iki yolu vardır:
 5. Google Play penceresinde **özel uygulamalar** ( *kilit* simgesinin yanında) seçeneğini belirleyin. 
 6. Yeni bir uygulama eklemek için sağ alt köşedeki **"+"** düğmesine tıklayın.
 7. Bir uygulama **başlığı** ekleyin ve APK uygulama paketini Ekle **' ye tıklayın** .
-8. **Oluştur**'u tıklatın.
+8. **Oluştur**'a tıklayın.
 9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın.
 10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. 
 
@@ -156,9 +156,6 @@ Yönetilen Google Play web bağlantıları, diğer Android uygulamalarıyla ayn�
 
 Web bağlantıları, Microsoft Edge veya dağıtmayı seçtiğiniz başka bir tarayıcı uygulamasıyla açılır. Web bağlantılarının düzgün şekilde açabilmek için en az bir tarayıcı uygulamasını cihazlara dağıttığınızdan emin olun. Ancak, Web bağlantıları için kullanılabilen tüm **görüntüleme** seçenekleri (tam ekran, tek başına ve en az kullanıcı arabirimi) yalnızca Chrome tarayıcısıyla çalışır. 
 
-> [!IMPORTANT]
-> Bu belge yayınlandığı itibariyle, Web bağlantılarının Chrome dışında tarayıcıları olan cihazlarda açılmasını engelleyen bilinen bir Google hatası vardır. Google bu hatayı düzeltmeyi taahhüt etti.  Bu bildirim, Microsoft 'un, Google 'ın düzeltmesini yayımladığını onaylaması durumunda kaldırılır.
-
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Tüm uygulamalar** ** >  > ** **Ekle**' yi seçin.
 3. **Uygulama türünü seçin** bölmesinde, kullanılabilir **Mağaza uygulama** türleri altında, **yönetilen Google Play uygulaması**' nı seçin.
@@ -166,7 +163,7 @@ Web bağlantıları, Microsoft Edge veya dağıtmayı seçtiğiniz başka bir ta
 5. Google Play penceresinde **Web Apps** ( *Dünya* simgesinin yanında) seçeneğini belirleyin.
 6. Yeni bir uygulama eklemek için sağ alt köşedeki **"+"** düğmesine tıklayın.
 7. Uygulama **başlığı**, Web uygulaması **URL 'si**ekleyin, uygulamanın nasıl görüntüleneceğini seçin ve bir uygulama simgesi seçin.
-8. **Oluştur**'u tıklatın.
+8. **Oluştur**'a tıklayın.
 9. Uygulama eklemeyi bitirdiğinizde, yönetilen Google Play bölmesini kapatın.
 10. Yönetilen Google Play hizmetiyle eşitlemek için **Uygulama** bölmesinde **Eşitle**'ye tıklayın. 
 

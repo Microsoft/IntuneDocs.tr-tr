@@ -5,24 +5,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 03/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
-ms.reviewer: karthig
+ms.reviewer: mattsha
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 467e347a84cef1fb7ac302da5a4264f23b4be5a2
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058421"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260342"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune kullanarak cihazları korumak için Windows 10 (ve üzeri) ayarları
 
@@ -67,8 +67,8 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
 
   İzin verilen Pano içeriğini seçin.  
   - **Yapılandırılmadı**  
-  - **Text**  
-  - **Görüntüler**  
+  - **Metinleri**  
+  - **Yansımasını**  
   - **Metin ve görüntüler**  
 
 - **Kurumsal sitelerdeki dış içerik**  
@@ -87,12 +87,12 @@ Application Guard yalnızca Windows 10 (64 bit) cihazlar için kullanılabilir. 
 
   Yazdırmaya *izin* aldığınızda, aşağıdaki ayarı yapılandırabilirsiniz:
   - **Yazdırma türleri** Aşağıdaki seçeneklerden birini veya daha fazlasını seçin:  
-    - PDF  
+    - BELGESINI  
     - XPS  
     - Yerel yazıcılar
     - Ağ yazıcıları  
 
-- **Günlük toplama**  
+- **Günlükleri topla**  
   **Varsayılan**: yapılandırılmadı  
   Application Guard CSP: [Denetim/AuditApplicationGuard](https://go.microsoft.com/fwlink/?linkid=872418)  
 
@@ -390,7 +390,7 @@ Bu kuralın uygulandığı yerel ve uzak adresleri belirtin.
 #### <a name="port-and-protocol-settings"></a>Bağlantı noktası ve protokol ayarları  
 Bu kuralın uygulandığı yerel ve uzak bağlantı noktalarını belirtin.  
 
-- **Protokolü**  
+- **Protokol**  
   **Varsayılan**: any  
   Güvenlik Duvarı CSP: [FirewallRules/*Firewallrulename*/Protocol](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#protocol)  
   Aşağıdakilerden birini seçin ve gerekli tüm konfigürasyonları doldurun:  
@@ -472,6 +472,9 @@ Temel ayarlar, tüm veri sürücüsü türleri için evrensel BitLocker ayarlar�
   - **Engelle** -cihazda başka bir disk şifreleme hizmeti varsa uyarı isteğini devre dışı bırakın.  
   - **Yapılandırılmadı** -diğer disk şifrelemesi için uyarının gösterilmesine izin verin.  
 
+  > [!TIP]  
+  > BitLocker 'ı otomatik olarak ve Azure AD 'ye katılmış bir cihaza sessizce yüklemek ve Windows 1809 veya üzerini çalıştıran bir cihaza sessiz bir şekilde yüklemek için bu ayar *blok*olarak ayarlanmalıdır. Daha fazla bilgi için bkz. [cihazlarda BitLocker 'ı sessizce etkinleştirme](../protect/encrypt-devices.md#silently-enable-bitlocker-on-devices).
+
   *Blok*olarak ayarlandığında, aşağıdaki ayarı yapılandırabilirsiniz:  
 
   - **Standart kullanıcıların Azure AD katılımı sırasında şifrelemeyi etkinleştirmesine izin ver**  
@@ -481,6 +484,9 @@ Temel ayarlar, tüm veri sürücüsü türleri için evrensel BitLocker ayarlar�
 
      - **Izin ver** -standart kullanıcılar (yönetici olmayanlar), oturum açıldığında BitLocker şifrelemesini etkinleştirebilir.  
      - **Yapılandırılmamış** yalnızca Yöneticiler cihazda BitLocker şifrelemesini etkinleştirebilir.  
+
+  > [!TIP]  
+  > BitLocker 'ı otomatik olarak ve Azure AD 'ye katılmış bir cihaza sessizce yüklemek ve Windows 1809 veya üzerini çalıştıran bir cihaza sessiz bir şekilde yüklemek için bu ayarın *Izin ver*olarak ayarlanması gerekir. Daha fazla bilgi için bkz. [cihazlarda BitLocker 'ı sessizce etkinleştirme](../protect/encrypt-devices.md#silently-enable-bitlocker-on-devices).
 
 - **Şifreleme yöntemlerini Yapılandır**  
   **Varsayılan**: yapılandırılmadı  
@@ -555,6 +561,9 @@ Bu ayarlar, belirli işletim sistemi veri sürücüleri için geçerlidir.
     - **TPM ile başlangıç PIN 'e izin verme**  
     - **TPM ile başlangıç PIN 'ı gerektir**
 
+    > [!TIP]
+    > BitLocker 'ı otomatik olarak ve Azure AD 'ye katılmış bir cihaza sessizce yüklemek ve Windows 1809 veya üzerini çalıştıran bir cihaza sessiz bir şekilde yüklemek için bu ayarın *TPM ile başlangıç PIN 'ı gerektirecek*şekilde ayarlanmaması gerekir. Daha fazla bilgi için bkz. [cihazlarda BitLocker 'ı sessizce etkinleştirme](../protect/encrypt-devices.md#silently-enable-bitlocker-on-devices).
+
   - **Uyumlu TPM başlangıç anahtarı**  
     **Varsayılan**: TPM ile başlangıç anahtarına izin ver  
 
@@ -564,6 +573,9 @@ Bu ayarlar, belirli işletim sistemi veri sürücüleri için geçerlidir.
     - **TPM ile başlangıç anahtarına izin verme**  
     - **TPM ile başlangıç anahtarı gerektir**  
 
+    > [!TIP]
+    > BitLocker 'ı otomatik olarak ve Azure AD 'ye katılmış bir cihaza sessizce yüklemek ve Windows 1809 veya üzerini çalıştıran bir cihaza sessiz bir şekilde yüklemek için bu ayarın *TPM ile başlangıç anahtarı gerektirecek*şekilde ayarlanmaması gerekir. Daha fazla bilgi için bkz. [cihazlarda BitLocker 'ı sessizce etkinleştirme](../protect/encrypt-devices.md#silently-enable-bitlocker-on-devices).
+
   - **Uyumlu TPM başlangıç anahtarı ve PIN 'ı**  
     **Varsayılan**: TPM ile başlangıç anahtarına ve PIN 'e izin ver  
 
@@ -571,6 +583,9 @@ Bu ayarlar, belirli işletim sistemi veri sürücüleri için geçerlidir.
     - **TPM ile başlangıç anahtarına ve PIN 'e izin ver**  
     - **TPM ile başlangıç anahtarına ve PIN 'e izin verme**  
     - **TPM ile başlangıç anahtarı ve PIN gerektir**   
+
+    > [!TIP]  
+    > BitLocker 'ı otomatik olarak ve Azure AD 'ye katılmış bir cihaza sessizce yüklemek ve Windows 1809 veya sonraki bir sürümü çalıştıran bir cihaza sessiz bir şekilde yüklemek için, bu ayar *Başlangıç anahtarı ve TPM Ile PIN gerektirecek*şekilde ayarlanmamalıdır Daha fazla bilgi için bkz. [cihazlarda BitLocker 'ı sessizce etkinleştirme](../protect/encrypt-devices.md#silently-enable-bitlocker-on-devices).
 
 - **Minimum PIN uzunluğu**  
     **Varsayılan**: yapılandırılmadı  
@@ -939,7 +954,7 @@ Fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden [değerli 
   Dosya ve klasörleri kötü amaçlı uygulamaların yetkisiz değişikliklerinden korur.  
 
   - **Yapılandırılmadı**  
-  - **Enable**  
+  - **Etkinleştir**  
   - **Yalnızca denetim**  
   - **Disk değişikliğini engelle**  
   - **Disk değişikliğini denetleme**  
@@ -1211,7 +1226,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
    - **Engelle** -yalnızca boş parolalara sahip yerel hesapların cihazın klavyesini kullanarak oturum açmasını sağlar.  
    - **Yapılandırılmadı** -boş parolalara sahip yerel hesapların fiziksel cihaz dışındaki konumlardan oturum açmasını sağlar.  
 
-#### <a name="admin"></a>Yönetim  
+#### <a name="admin"></a>Yönetici  
 
 - **Yerel yönetici hesabı**  
   **Varsayılan**: yapılandırılmadı  
@@ -1596,7 +1611,7 @@ Windows 10 cihazlarında yerel güvenlik ayarlarını yapılandırmak için bu s
   CSP: [TaskScheduler/EnableXboxGameSaveTask](https://go.microsoft.com/fwlink/?linkid=875480)  
    
   Bu ayar, Xbox oyunu kaydet görevinin etkin veya devre dışı olduğunu belirler.  
-  - **Etkin**
+  - **Etkinletir**
   - **Yapılandırılmadı**
 
 - **Xbox donatı yönetim hizmeti**  

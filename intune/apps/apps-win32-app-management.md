@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
+ms.openlocfilehash: 516d5148ac44d72aaacf1d670d2d4f0345823d49
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075833"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260291"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Tek başına Intune-Win32 uygulama yönetimi
 
@@ -342,6 +342,11 @@ Son Kullanıcı, gerekli ve kullanılabilir uygulama yüklemeleri için Windows 
 Aşağıdaki görüntüde, son kullanıcıya cihazda uygulama değişikliklerinin yapıldığını bildirir.
 
 ![Kullanıcıya uygulama değişikliklerinin yapıldığını bildiren ekran görüntüsü](./media/apps-win32-app-management/apps-win32-app-09.png)    
+
+Ayrıca, Şirket Portalı uygulaması son kullanıcılara ek uygulama yükleme durumu iletileri gösterir. Win32 bağımlılık özellikleri için aşağıdaki koşullar geçerlidir:
+- Uygulama yüklenemedi. Yönetici tarafından tanımlanan bağımlılıklar karşılanmadı.
+- Uygulama başarıyla yüklendi, ancak yeniden başlatma gerekiyor.
+- Uygulama yükleme sürecinde, ancak devam etmek için yeniden başlatma gerekiyor.
 
 ## <a name="set-win32-app-availability-and-notifications"></a>Win32 uygulama kullanılabilirliğini ve bildirimlerini ayarlama
 Bir Win32 uygulaması için başlangıç saatini ve son tarih saatini yapılandırabilirsiniz. Başlangıç zamanında, Intune yönetim uzantısı uygulama içeriğini indirmeyi başlatacak ve gerekli amaç için önbelleğe alacak. Uygulama son tarihte yüklenecektir. Kullanılabilir uygulamalar için, uygulama Şirket Portalı görünür olduğunda başlangıç zamanı görüntülenir ve Son Kullanıcı uygulamayı Şirket Portalı istediğinde içerik indirilir. Ayrıca, yeniden başlatma yetkisiz kullanım süresini de etkinleştirebilirsiniz. 

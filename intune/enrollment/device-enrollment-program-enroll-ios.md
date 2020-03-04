@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
-ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
+ms.openlocfilehash: a1eca1f8911e9c6aae3b3725cf15f04d954c5f48
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77473749"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260325"
 ---
-# <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>İOS/ıpados cihazlarını Apple 'ın Aygıt Kayıt Programı otomatik olarak kaydetme
+# <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>iOS/iPadOS cihazlarını Apple’ın Aygıt Kayıt Programı ile otomatik olarak kaydetme
 
 Intune 'u Apple 'ın [aygıt kayıt programı (DEP)](https://deploy.apple.com)aracılığıyla satın alınan IOS/ıpados cihazlarını kaydedecek şekilde ayarlayabilirsiniz. DEP, hiç dokunmadan çok sayıda cihazı kaydetmenizi sağlar. IPhone, iPads ve MacBooks gibi cihazlar doğrudan kullanıcılara sevk edilebilir. Kullanıcı cihazı açtığında, Apple ürünleri için tipik kullanıma hazır deneyimi içeren Kurulum Yardımcısı, önceden yapılandırılmış ayarlarla çalışır ve cihaz yönetime kaydolur.
 
@@ -41,6 +41,8 @@ DEP kayıtları, Şirket Portalı uygulamasının App Store sürümü ile uyumlu
 Kayıt sırasında modern kimlik doğrulamayı etkinleştirmek için, DEP profilinde VPP 'yi (toplu satın alma programı) **yükleme Şirket portalı** kullanarak uygulamayı cihaza gönderin. Daha fazla bilgi için bkz. [Apple aygıt kayıt programı iOS/ıpados cihazlarını otomatik olarak kaydetme](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
 Şirket Portalı otomatik olarak güncelleştirilmesini ve Şirket Portalı uygulamayı DEP ile önceden kaydedilmiş cihazlara sağlamak için, [uygulama yapılandırma ilkesi](../apps/app-configuration-policies-use-ios.md) uygulanmış bir gerekli toplu satın alma programı (VPP) uygulaması olarak ıntune aracılığıyla şirket portalı uygulamasını dağıtın.
+
+Note: otomatik cihaz kaydı sırasında Şirket Portalı tek uygulama modunda çalışırken, tek uygulama modu nedeniyle ' daha fazla bilgi edinin ' bağlantısına tıklanması bir hata mesajı oluşur. Kayıt tamamlandıktan sonra, cihaz artık tek bir uygulama modunda olmadığında CP 'de daha fazla bilgi görüntüleyebilirsiniz. 
 
 ## <a name="what-is-supervised-mode"></a>Denetimli mod nedir?
 
@@ -144,7 +146,7 @@ Belirtecinizi yüklediğinize göre, DEP cihazları için kayıt profili oluştu
 5. **Kullanıcı Benzeşimi** için bu profile sahip cihazların atanan kullanıcıyla mı yoksa atanan kullanıcı olmadan mı kaydedilmesi gerektiğini seçin.
     - **Kullanıcı Benzeşimi ile Kaydet** - Uygulamaları yükleme gibi hizmetler için Şirket Portalı’nı kullanmak isteyen kullanıcılara ait cihazlar için bu seçeneği seçin. ADFS kullanılıyorsa ve kayıt profili, **Kurulum Yardımcısı değil şirket portalı kimlik doğrulaması** içeriyorsa, [WS-Trust 1,3 Kullanıcı adı/karma uç nokta](https://technet.microsoft.com/library/adfs2-help-endpoints) **için** [daha fazla bilgi](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) gereklidir.
 
-    - **Kullanıcı Benzeşimi Olmadan Kaydetme** - Tek bir kullanıcıyla bağlantılı olmayan cihazlar için bu seçeneği seçin. Yerel Kullanıcı verilerine erişolmayan cihazlar için bu seçeneği kullanın. Şirket Portalı uygulaması gibi uygulamalar çalışmaz.
+    - **Kullanıcı Benzeşimi Olmadan Kaydetme** - Tek bir kullanıcıyla bağlantılı olmayan cihazlar için bu seçeneği seçin. Yerel Kullanıcı verilerine erişolmayan cihazlar için bu seçeneği kullanın. Şirket Portalı uygulama gibi uygulamalar çalışmaz.
 
 5. **Kullanıcı Benzeşimi ile Kaydet**’i seçerseniz, kullanıcıların Şirket Portalı yerine Apple Kurulum Yardımcısı ile kimlik doğrulama gerçekleştirmelerini sağlayabilirsiniz.
 
@@ -248,7 +250,7 @@ Artık Intune’a cihazlarınızı yönetme izni verildiğine göre, yönetilen 
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **iOS** > IOS **kaydı** > **kayıt programı belirteçleri** ' ni seçin **> >** **cihazlarda** bir **belirteç seçin >** >. Kayıt programı cihazları düğümünün ve eşitleme bağlantısının ekran görüntüsünü ![.](./media/device-enrollment-program-enroll-ios/image06.png)
 
-   Intune, Apple’ın kabul edilebilir kayıt programı trafiği şartlarına uygun hareket etmek için aşağıdaki kısıtlamaları getirir:
+   Intune 'un kabul edilebilir kayıt programı trafiğine yönelik koşullarını izlemek için aşağıdaki kısıtlamaları uygular:
    - Tam eşitleme en sık yedi günde bir çalıştırılabilir. Tam eşitleme sırasında Intune, Intune’a bağlı Apple MDM sunucusuna atanan seri numaraların tam güncelleştirilmiş bir listesini alır. Intune portalından silinen DEP cihazlarının atamasının DEP portalındaki Apple MDM sunucusundan da kaldırılması gerekir. Atamanın kaldırılmaması durumunda bu cihazlar tam eşitleme çalıştırılana kadar Intune'a yeniden aktarılamaz.   
    - Eşitleme 24 saatte bir otomatik olarak çalıştırılır. **Eşitle** düğmesine basarak da eşitleyebilirsiniz (en fazla 15 dakikada bir kez). Tüm eşitleme isteklerinin tamamlanması için 15 dakika verilir. Eşitleme tamamlanana kadar **Eşitle** düğmesi devre dışı kalır. Bu eşitleme, mevcut aygıt durumunu yeniler ve Apple MDM sunucusuna atanan yeni cihazları içeri aktarır.   
 

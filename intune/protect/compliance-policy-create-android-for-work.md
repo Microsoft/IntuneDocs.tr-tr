@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
-ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
+ms.openlocfilehash: 163f5dd246fb17e7d67a8baffbae9926f2f4bc79
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75722615"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256450"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune'u kullanarak cihazları uyumlu veya uyumlu değil şeklinde işaretlemek için kullanabileceğiniz Android Kurumsal ayarları
 
@@ -43,7 +43,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 ## <a name="device-owner"></a>Cihaz sahibi
 
-### <a name="device-health"></a>Cihaz Sistem Durumu
+### <a name="device-health"></a>Cihaz Durumu
 
 - **Cihazın cihaz tehdit düzeyinde veya bunun altında olmasını gerektir**: [Mobile Threat Defense hizmetiniz](mobile-threat-defense.md)tarafından değerlendirilen izin verilen maksimum cihaz tehdit düzeyini seçin. Bu tehdit düzeyini aşan cihazlar uyumsuz olarak işaretlenir. Bu ayarı kullanmak için izin verilen tehdit düzeyini seçin:
 
@@ -82,12 +82,9 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 ### <a name="system-security"></a>Sistem Güvenliği
 
-- **Mobil cihazların kilidini açmak için bir parola iste**: 
+- **Mobil cihazların kilidini açmak için parola gerektir**: 
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
-  - **Gerektir** -kullanıcıların cihazına erişebilmeleri için önce bir parola girmesi gerekir. 
-
-  Bu ayar cihaz düzeyinde geçerlidir. Yalnızca iş profili düzeyinde parola kullanılmasını istiyorsanız bir yapılandırma ilkesi kullanabilirsiniz. Bkz. [Android için Intune cihaz yapılandırma ayarları](../configuration/device-restrictions-android-for-work.md).
-
+  - **Gerektir** -kullanıcıların cihazına erişebilmeleri için önce bir parola girmesi gerekir.
   - **Gerekli parola türü**: Parolanın yalnızca sayısal karakterlerden mi yoksa sayı ve diğer karakterlerin karışımından mı oluşacağını seçin. Seçenekleriniz şunlardır:
     - **Cihaz varsayılanı** -parola uyumluluğunu değerlendirmek Için, **cihaz varsayılanı**dışında bir parola gücü seçtiğinizden emin olun.  
     - **Parola gerekli, kısıtlama yok**
@@ -133,7 +130,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 ## <a name="work-profile"></a>İş profili
 
-### <a name="device-health"></a>Cihaz Sistem Durumu
+### <a name="device-health"></a>Cihaz Durumu
 
 - **Kök erişim izni verilmiş cihazlar**: 
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
@@ -179,7 +176,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 
 ### <a name="system-security"></a>Sistem güvenliği
 
-- **Mobil cihazların kilidini açmak için bir parola iste**: 
+- **Mobil cihazların kilidini açmak için parola gerektir**: 
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez. 
   - **Gerektir** -kullanıcıların cihazına erişebilmeleri için önce bir parola girmesi gerekir.  
 
