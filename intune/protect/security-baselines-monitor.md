@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/24/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.openlocfilehash: 5d03d6026430c7f9f02cc8504ccc610c3be99902
+ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569294"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78287556"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'de güvenlik taban çizgisini ve profillerini izleme
 
@@ -45,10 +45,10 @@ Taban çizgisi ve cihazlara ilişkin izleme verilerini görüntülemek için [Mi
 Her cihaz aşağıdaki durumlardan biri ile temsil edilir ( *cihaz* görünümünde ve ayrıca *Kategori başına* görünümlerde kullanılır):
 
 - **Taban çizgisi Ile eşleşir** -taban çizgisinin tüm ayarları önerilen ayarlarla eşleşir.
-- **Taban çizgisine uymuyor** -temeldeki en az bir ayar önerilen ayarla eşleşmiyor.
+- **Taban çizgisine uymuyor** -taban çizgisinde bir veya daha fazla ayar, özgün taban çizgisinde varsayılan değerlerinden değiştirildi. Her güvenlik temelindeki varsayılan değerler bu taban çizgisi için önerilen değerlerdir.
 
   > [!NOTE]
-  > Bir temel profil oluşturduğunuzda veya düzenlediğinizde, varsayılan bir değer veya yapılandırma ayarında yapılan herhangi bir değişiklik, "taban çizgisine uymuyor" durumunun oluşmasına neden olur. Değiştirilen ayarları belirleme yardımı için Microsoft Desteği başvurun. 
+  > Bir temel profil oluşturduğunuzda veya düzenlediğinizde, bir varsayılan değer veya yapılandırma ayarında yapılan herhangi bir değişiklik, bir *temelinin temel durumuyla eşleşmez* . Değiştirilen ayarları belirleme yardımı için Microsoft Desteği başvurun. 
 
 - **Yanlış yapılandırılmış** -en az bir ayar doğru yapılandırılmamış. Bu durum, ayarın çakışma, hata veya bekleme durumunda olduğu anlamına gelir.
 - **Uygulanamaz** -en az bir ayar uygulanabilir değildir ve uygulanmaz.

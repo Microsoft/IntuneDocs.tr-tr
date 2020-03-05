@@ -2,7 +2,7 @@
 title: Intune belgelerini kullanma
 titleSuffix: Microsoft Intune
 description: Intune belgelerini aramanın yanı sıra belge geri bildirimi sağlama ve belgelere katkıda bulunma hakkında bilgi edinin.
-ms.date: 09/15/2019
+ms.date: 03/03/2020
 ms.service: microsoft-intune
 ms.subservice: fundamentals
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 607e1136fd3ab5661a2b054410d6fc7fce94994d
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: de30ade4c145a930ed370fd651c35bd57700c76d
+ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155352"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78287555"
 ---
 # <a name="using-the-intune-docs"></a>Intune belgelerini kullanma
 
@@ -114,3 +114,23 @@ Intune belgelerine katkıda bulunmak için aşağıdaki genel yönergeleri izley
 - [GitHub Flow iş akışını](https://guides.github.com/introduction/flow/)izleyin.  
 
 - Web günlüğü ve Tweet (veya herhangi bir) katkılarınız hakkında sıkça!  
+
+## <a name="consolidation-of-documentation-for-microsoft-endpoint-manager"></a>Microsoft Uç Nokta Yöneticisi belgelerinin birleştirilmesi
+
+Intune ve Configuration Manager birleştirilmiş senaryoları daha iyi desteklemek için, bu belge kitaplığı [https://docs.microsoft.com/memdocs/intune](https://docs.microsoft.com/memdocs/intune)'ye taşınıyor. Configuration Manager belge kitaplığı daha sonra [https://docs.microsoft.com/memdocs/configmgr](https://docs.microsoft.com/memdocs/configmgr)taşınacak. Tüm bağlantılar otomatik olarak yönlendirilir, bu nedenle bu içeriği okumak için herhangi bir değişiklik yapmanız gerekmez.
+
+Geribildirim sağlar veya makalelere katkıda bulunun, bazı değişiklikler gereklidir:
+
+- Mevcut GitHub sorunları özgün depoda kalır, [https://github.com/MicrosoftDocs/IntuneDocs/issues](https://github.com/MicrosoftDocs/IntuneDocs/issues).
+
+  - Bu sorunlar, bağlantılı makalenin geri bildirim bölümünde açık veya kapalı sorunlar olarak gösterilmez.
+
+  - İleri giderek bu sorunları çözmeye devam edeceğiz.
+
+  - Bazı örneklerde, zamanında adreslenebileceğimizi düşündüğdiğimiz bir sorunu kapatmaya yönelik zor kararı sağlayabiliriz.
+
+  - Mevcut depoda bir sorununuz varsa ve onunla ilgili bir sorun varsa, memdocs deposundaki geçirilmiş makalede dosya geri bildirimi.
+
+- Geçişten önce tüm açık çekme isteklerini birleştirecağız ve kapalarız.
+
+- Geçişten sonra geri bildirimde bulunmak veya bir makaleyi düzenlediğinizde, sorun veya çekme isteği memdocs deposuna gider.

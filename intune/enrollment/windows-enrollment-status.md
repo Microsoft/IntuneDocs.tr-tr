@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3a470c9a92f7792af2b371acf873807ad344afb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 232d4841d71d738b4f099437fb4845928d887dd5
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74781116"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290319"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Kayıt durumu sayfası ayarlama
  
@@ -134,7 +134,7 @@ Hesap kurulumu için, kayıt durumu sayfası şu anda oturum açmış olan kulla
   - Tüm Kullanıcılar veya cihazı kaydeden kullanıcının üyesi olduğu bir kullanıcı grubuna atanan makine başına LoB MSI uygulamaları.
   - Aşağıdaki nesnelerden birine atanan LoB Mağazası uygulamaları, çevrimiçi mağaza uygulamaları ve çevrimdışı mağaza uygulamaları:
     - Tüm Cihazlar
-    - All Users
+    - Tüm Kullanıcılar
     - Cihazı kaydeden Kullanıcı grubu, yükleme bağlamı Kullanıcı olarak ayarlanan bir üyedir.
   - Win32 uygulamaları (yalnızca Windows 10 sürüm 1903 ve üzeri) 
 - Bağlantı profilleri
@@ -155,6 +155,7 @@ Sorun giderme için sık sorulan sorular.
       - Autopilot
       - Ortak yönetim Configuration Manager
       - ilk kez kayıt durumu sayfası ilkesi uygulanmış olan cihazda Yeni Kullanıcı oturum açtığında
+      - **kullanıma hazır deneyim (OOBE) ayarı tarafından sağlanan cihazlara tek göster sayfası** açık ve ilke ayarlandıysa, yalnızca cihazda oturum açan Ilk Kullanıcı kayıt durumu sayfasını alır
 
 - Cihazda yapılandırılmışsa, kayıt durumu sayfasını nasıl devre dışı bırakabilirim?
   - Kayıt durumu sayfası ilkesi, kayıt sırasında bir cihazda ayarlanır. Kayıt durumu sayfasını devre dışı bırakmak için Kullanıcı ve cihaz kayıt durumu sayfası bölümlerini devre dışı bırakmanız gerekir. Aşağıdaki yapılandırmalara sahip özel OMA-URI ayarları oluşturarak bölümleri devre dışı bırakabilirsiniz.

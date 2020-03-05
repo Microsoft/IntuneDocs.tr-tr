@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/03/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7148db8f3fbfce4862afd12cabf7729645d737bf
-ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
+ms.openlocfilehash: c6a9033b0c4ac241b7fbc8a34db7e757229d82c5
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260206"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290285"
 ---
-# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune yenilikler nelerdir?
+# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
-Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildirimler](#notices), [Geçmiş yayınlar](whats-new-archive.md)ve [Intune hizmet güncelleştirmelerinin nasıl yayımlandığına](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)ilişkin bilgileri de bulabilirsiniz. 
+Microsoft Intune her haftanın yenilikleri hakkında bilgi edinin. Ayrıca, [önemli bildirimler](#notices), [Geçmiş yayınlar](whats-new-archive.md)ve [Intune hizmet güncelleştirmelerinin nasıl yayımlandığına](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)ilişkin bilgileri de bulabilirsiniz. 
 
 > [!Note]
 > Her [aylık güncelleştirmenin](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) piyasaya çıkma üç güne kadar sürebilir ve şu sırada olacaktır:
@@ -60,19 +60,16 @@ Microsoft Intune’daki haftalık yenilikleri öğrenin. Ayrıca, [önemli bildi
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>Cihaz yönetimi
 
-### <a name="bulk-remote-actions--4576882--"></a>Toplu uzak eylemler<!--4576882-->
+#### <a name="microsoft-endpoint-manager-tenant-attach-device-sync-and-device-actions---6317104-cm3555758--"></a>Microsoft Uç Nokta Yöneticisi kiracı iliştirme: cihaz eşitleme ve cihaz eylemleri<!-- 6317104, CM3555758-->
+Microsoft Uç Nokta Yöneticisi tek bir konsolda Configuration Manager ve Intune 'U bir araya getiriyor. Configuration Manager Technical Preview sürüm 2002,2 ' den başlayarak, Configuration Manager cihazlarınızı bulut hizmetine yükleyebilir ve yönetici merkezinde bu işlemler üzerinde işlem yapabilirsiniz. Daha fazla bilgi için [Configuration Manager Technical Preview sürüm 2002,2 ' deki Özellikler](https://docs.microsoft.com/configmgr/core/get-started/2020/technical-preview-2002-2#bkmk_attach)bölümüne bakın.
+
+Bu güncelleştirmeyi yüklemeden önce [Configuration Manager Technical Preview makalesini](https://docs.microsoft.com/configmgr/core/get-started/technical-preview) gözden geçirin. Bu makale, Technical Preview kullanma, sürümler arasında güncelleştirme ve geri bildirim sağlama ile ilgili genel gereksinimleri ve sınırlamaları tamamladığınızda tercihinize.
+
+#### <a name="bulk-remote-actions--4576882--"></a>Toplu uzak eylemler<!--4576882-->
 Artık şu uzak eylemler için toplu komutlar verebilirsiniz: yeniden başlatma, yeniden adlandırma, Autopilot sıfırlama, eşitleme, silme ve silme. Yeni toplu eylemleri görmek için [Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) > **cihazlar** > **tüm cihazlar** **toplu işlemler** > ' ne gidin.
 
-<!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### <a name="app-management"></a>Uygulama yönetimi
-
-#### <a name="company-portal-app-installation-status-messages-for-win32-apps----2514416---"></a>Win32 uygulamaları için uygulama yükleme durum iletilerini Şirket Portalı <!-- 2514416 -->
-Şirket Portalı uygulaması son kullanıcılara ek uygulama yükleme durumu iletileri gösterir. Yeni Win32 bağımlılık özellikleri için aşağıdaki koşullar geçerlidir:
-- Uygulama yüklenemedi. Yönetici tarafından tanımlanan bağımlılıklar karşılanmadı.
-- Uygulama başarıyla yüklendi, ancak yeniden başlatma gerekiyor.
-- Uygulama yükleme sürecinde, ancak devam etmek için yeniden başlatma gerekiyor.
-
-Daha fazla bilgi için bkz. [Win32 uygulama yönetimi](~/apps/apps-win32-app-management.md).
+#### <a name="all-devices-list-improved-search-sort-and-filter--6179023--"></a>Tüm cihazlar için geliştirilmiş arama, sıralama ve filtreleme listeleri<!--6179023-->
+Tüm cihazlar listesi, daha iyi performans, arama, sıralama ve filtreleme için geliştirilmiştir.
 
 <!-- ########################## -->
 ## <a name="week-of-february-24-2020"></a>24 Şubat 2020 haftası
@@ -143,8 +140,6 @@ Yeni seçenekleri görmek **için > iOS** **/ıpados** > **Profil oluştur** > *
 #### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689----"></a>Kayıtlı cihazlara hangi iOS/ıpados güncelleştirmelerinin göndermek istediğinizi seçin<!--5879689  -->
 Apple Business Manager veya Apple Okul Yöneticisi kullanılarak kaydedilmiş cihazlara gönderim yapmak için belirli bir iOS/ıpados Güncelleştirmesi (en son güncelleştirme dışında) seçebilirsiniz. Bu tür cihazlarda, yazılım güncelleştirme görünürlüğünü birkaç gün boyunca geciktirmek için bir cihaz yapılandırma ilkesi ayarlanmış olmalıdır. Bu özelliği görmek **için > iOS** **/ıpados** > **Profil oluştur** > **iOS** > güncelleştirme ilkeleri ' ne gidin.
 
-### <a name="all-devices-list-improved-search-sort-and-filter--6179023--"></a>Tüm cihazlar için geliştirilmiş arama, sıralama ve filtreleme listeleri<!--6179023-->
-Tüm cihazlar listesi, daha iyi performans, arama, sıralama ve filtreleme için geliştirilmiştir.
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -258,7 +253,7 @@ Artık kuruluş türünü seçtiğinizde, `proxy.contoso.com`gibi bir proxy sunu
 
 Yapılandırabileceğiniz geçerli Wi-Fi ayarlarını görmek için [Microsoft Intune ' de Android Enterprise ve Android bilgi noktası çalıştıran cihazlar Için Wi-Fi ayarları ekle](../configuration/wi-fi-settings-android-enterprise.md#work-profile-only)' ye gidin.
 
-Uygulama alanı:
+Uygulama hedefi:
 - Android kurumsal iş profili
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -353,7 +348,7 @@ Microsoft Edge, Office ve Windows ayarlarını denetlemek ve yönetmek için Mic
 
 Intune 'da ADMX şablonları hakkında daha fazla bilgi için, bkz. [Microsoft Intune Grup İlkesi ayarlarını yapılandırmak Için Windows 10 şablonlarını kullanma](../configuration/administrative-templates-windows.md).
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - Windows 10 ve üzeri
 
@@ -391,7 +386,7 @@ Bu yeni ayarlar, SSO uygulama uzantıları ve Apple 'ın yerleşik Kerberos uzan
 
 Yapılandırabileceğiniz SSO uygulama uzantısı ayarlarının tam aralığını görmek için, [macOS 'Ta](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)IOS ve SSO ['daki SSO](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) ' ya gidin.
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - iOS/iPadOS
 - Mac OS
@@ -497,7 +492,7 @@ Aşağıdakiler dahil olmak üzere kullanılabilir yeni Exchange ActiveSync ayar
 
 Bu ayar hakkında daha fazla bilgi için, [Intune 'Da iOS cihazları Için e-posta profili ayarları](../configuration/email-settings-ios.md)' na gidin. 
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - iOS 13,0 ve üzeri
 - ıpados 13,0 ve üzeri
@@ -507,7 +502,7 @@ Android kurumsal tam yönetilen ve adanmış cihazlarda, kullanıcıların kişi
 
 Yapılandırabileceğiniz ayarları görmek için [Android kurumsal cihaz ayarları ' na giderek Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-android-for-work.md).
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - Android kurumsal tam yönetilen cihazlar
 - Android kurumsal adanmış cihazlar
@@ -519,7 +514,7 @@ Bu ayarın cihazlar üzerinde hiçbir etkisi yoktur. Bu ayarı mevcut profillerd
 
 Yapılandırabileceğiniz tüm ayarları görmek için [iOS ve ıpados cihaz ayarları ' na bakın ve Intune kullanarak özelliklere izin verin veya kısıtlayın](../configuration/device-restrictions-ios.md).
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - iOS/iPadOS
 
@@ -537,7 +532,7 @@ Yalnızca bazı uygulamalar yönetilen tercihleri destekler ve bu uygulamalar t�
 
 Bu özellik hakkında daha fazla bilgi için, bkz. [Microsoft Intune kullanarak macOS cihazlarına özellik listesi dosyası ekleme](../configuration/preference-file-settings-macos.md).
 
-Uygulama alanı:
+Uygulama hedefi:
 
 - 10,7 ve daha yeni çalıştıran macOS cihazları
 

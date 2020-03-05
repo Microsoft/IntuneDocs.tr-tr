@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune-Azure 'da içeri aktarılan PFX sertifikalarını kullanma | Microsoft Docs
-description: Sertifikaları içeri aktarma, sertifika şablonunu yapılandırma, Intune Içeri aktarılan PFX Sertifika bağlayıcısının yüklenmesi ve Içeri aktarılan bir PKCS oluşturma dahil olmak üzere Microsoft Intune ile içeri aktarılan ortak anahtar şifreleme standartları (PKCS) sertifikalarını kullanın Sertifika profili.
+description: Microsoft Intune ile içeri aktarılan ortak anahtar şifreleme standartları (PKCS) sertifikalarını kullanın. Sertifikaları içeri aktarın, sertifika şablonlarını yapılandırın, Intune Içeri aktarılmış PFX Sertifika bağlayıcısını yükler ve Içeri aktarılan bir PKCS sertifika profili oluşturun.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/21/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,18 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.openlocfilehash: d31093f4765969d97f3d57f4b41eaa5ef98daaf1
+ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569532"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78287586"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune ile içeri aktarılan PKCS sertifikalarını yapılandırma ve kullanma
 
 Microsoft Intune, genellikle e-posta profilleriyle S/MIME şifrelemesi için kullanılan içeri aktarılan ortak anahtar çifti (PKCS) sertifikalarının kullanımını destekler. Intune 'daki belirli e-posta profilleri, s/MIME imzalama sertifikası ve S/MIME şifreleme sertifikası tanımlayabileceğiniz S/MIME 'yi etkinleştirme seçeneğini destekler.
 
-E-posta belirli bir sertifikayla şifrelendiğinden, S/MIME şifrelemesi zordur. Şifresinin çözülmesi için e-postayı okuduğunuz cihazda e-postayı şifreleyen sertifikanın özel anahtarına sahip olmanız gerekir. Şifreleme sertifikaları düzenli olarak yenilenir, yani eski e-postayı okuyabilmeniz için tüm cihazlarınızda şifreleme geçmişinize ihtiyacınız olabilir.  Aynı sertifikanın cihazlarda kullanılması gerektiğinden, bu sertifika teslim mekanizmaları cihaz başına benzersiz sertifikalar sunduğundan bu amaçla [SCEP](certificates-scep-configure.md) veya [PKCS](certficates-pfx-configure.md) sertifika profillerini kullanmak mümkün değildir.
+E-posta belirli bir sertifika ile şifrelendiğinden, S/MIME şifrelemesi zor olur:
+
+- Şifresinin çözülmesi için e-postayı okuduğunuz cihazda e-postayı şifreleyen sertifikanın özel anahtarına sahip olmanız gerekir.
+- Cihazdaki bir sertifikanın süresi dolmadan önce, cihazların yeni e-postanın şifresini çözmeye devam edebilmesi için yeni bir sertifika içeri aktarmanız gerekir. Bu sertifikaların yenilenmesi desteklenmiyor.
+- Şifreleme sertifikaları düzenli olarak yenilenir, bu da eski e-postaların şifresinin çözülmesi devam edebilmesini sağlamak için cihazlarınızda geçmiş sertifikayı tutmak isteyebileceğiniz anlamına gelir.  
+
+Aynı sertifikanın cihazlarda kullanılması gerektiğinden, bu sertifika teslim mekanizmaları cihaz başına benzersiz sertifikalar sunduğundan, bu amaçla [SCEP](certificates-scep-configure.md) veya [PKCS](certficates-pfx-configure.md) sertifika profillerini kullanmak mümkün değildir.
 
 Intune ile S/MIME kullanma hakkında daha fazla bilgi için, [e-postayı şifrelemek üzere s/MIME kullanın](certificates-s-mime-encryption-sign.md).
 
@@ -186,7 +192,7 @@ Anahtarı oluşturmak için kullandığınız sağlayıcıyla eşleşen anahtar 
    > [!NOTE]
    > Kimlik doğrulaması, grafiğe karşı çalıştırıldığı için, AppID için izinler sağlamalısınız. Bu yardımcı programı ilk kez kullandıysanız, *genel yönetici* gerekir. PowerShell cmdlet 'leri [PowerShell Intune örnekleri](https://github.com/microsoftgraph/powershell-intune-samples)ile birlikte kullanılan AppID 'yi kullanır.
 
-5. İçeri aktardığınız her PFX dosyası için parolayı, `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force`çalıştırarak güvenli bir dizeye dönüştürün.
+5. `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force`çalıştırarak, içeri aktardığınız her PFX dosyası için parolayı bir güvenli dizeye dönüştürün.
 
 6. **Userpfxsertifika** nesnesi oluşturmak için `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>"` çalıştırın
 
@@ -220,9 +226,18 @@ Sertifikaları Intune’da içeri aktardıktan sonra bir **PKCS içeri aktarılm
 
    - **Amaçlanan amaç**: Bu profil için içeri aktarılan sertifikaların amaçlanan amacını belirtin. Yöneticiler, sertifikaları farklı amaçlanan amaçlarla (S/MIME imzalama veya S/MIME Şifrelemesi gibi) içeri aktarabilir. Sertifika profilinde seçilen kullanım amacı, sertifika profilini doğru içeri aktarılmış sertifikalarla eşleştirir. Amaçlanan amaç, içeri aktarılan sertifikaları gruplamak için bir etikettir ve bu etiketle içeri aktarılan sertifikaların amaçlanan amacı karşıladığını garanti etmez.  
    - **Sertifika geçerlilik süresi**: geçerlilik süresi sertifika şablonunda değiştirilmediği takdirde, bu seçenek varsayılan olarak bir yıl olur.
-   - **Anahtar depolama sağlayıcısı (KSP)**: Windows için, cihazdaki anahtarları nereye depolayacağınızı seçin.
+   - **Anahtar depolama sağlayıcısı (KSP)** : Windows için, cihazdaki anahtarları nereye depolayacağınızı seçin.
 
 5. Profilinizi kaydetmek için **Tamam** > **Oluştur**’u seçin.
+
+## <a name="support-for-third-party-partners"></a>Üçüncü taraf iş ortakları için destek
+
+Aşağıdaki iş ortakları, PFX sertifikalarını Intune 'a aktarmak için kullanabileceğiniz desteklenen yöntemleri veya araçları sağlar.
+
+### <a name="digicert"></a>DigiCert
+DigiCert PKI platform hizmetini kullanıyorsanız, PFX sertifikalarını Intune 'a aktarmak için, **Intune S/MIME sertifikaları Için DigiCert Içeri aktarma aracını** kullanabilirsiniz. Bu aracın kullanımı, bu makalenin önceki kısımlarında açıklandığı şekilde [PFX sertifikalarını Intune 'A aktarma](#import-pfx-certificates-to-intune) bölümündeki yönergeleri izlemeye yönelik gereksinimi değiştirir.
+
+Aracı edinme dahil, DigiCert Içeri aktarma aracı hakkında daha fazla bilgi için bkz. DigiCert Bilgi Bankası 'nda https://knowledge.digicert.com/tutorials/microsoft-intune.html.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
