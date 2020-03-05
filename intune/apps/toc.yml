@@ -161,6 +161,8 @@
             - name: Uygulama koruma ilkelerine genel bakış
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: APP kullanan veri koruma çerçevesi
+              href: app-protection-framework.md
             - name: Uygulama koruma ilkeleri oluşturma
               items:
                 - name: Genel ayarlar
