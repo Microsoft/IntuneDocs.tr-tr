@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ca76ffe0c8fa42f1c2cf24fcdefd287140231220
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801636"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78370088"
 ---
 # <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>DigiCert PKI platformu için Intune sertifika bağlayıcısını ayarlama
 
@@ -95,7 +95,7 @@ Bağlayıcıyı yalnızca DigiCert CA 'sı ile kullanacaksanız, bağlayıcıyı
 
    b. Sertifika için bir kolay ad sağlayın.
 
-   c. Seçin **devam**.
+   c. **Devam**' ı seçin.
 
    d. RA sertifikasını yerel bilgisayarınıza indirmek için, belirtilen bağlantıyı kullanın.
 
@@ -291,7 +291,7 @@ Sertifika profili OID 'si, DigiCert CA 'sında bir sertifika profili şablonuyla
 
 4. **PKCS sertifikası** bölmesinde, parametreleri aşağıdaki tablodaki değerlerle yapılandırın. Bu değerler, Intune sertifika Bağlayıcısı aracılığıyla bir DigiCert CA 'dan PKCS sertifikaları vermek için gereklidir.
 
-   |PKCS sertifika parametresi | Değer | Description |
+   |PKCS sertifika parametresi | Değer | Açıklama |
    | --- | --- | --- |
    | Sertifika yetkilisi | pki-ws.symauth.com | Bu değer, eğik çizgiler olmadan DigiCert CA temel hizmet FQDN 'SI olmalıdır. Bu, DigiCert CA aboneliğiniz için doğru temel hizmet FQDN 'si olup olmadığından emin değilseniz, DigiCert müşteri desteği 'ne başvurun. <br><br>*Symantec 'Ten DigiCert değişikliği ile bu URL değişmeden kalır*. <br><br> Bu FQDN yanlışsa, Intune sertifika Bağlayıcısı, DigiCert CA 'dan PKCS sertifikaları yayınmayacaktır.| 
    | Sertifika yetkilisi adı | Symantec | Bu değer bir dize olmalıdır **Symantec**. <br><br> Bu değerde herhangi bir değişiklik varsa, Intune sertifika Bağlayıcısı, DigiCert CA 'dan PKCS sertifikaları yayınmayacaktır.|

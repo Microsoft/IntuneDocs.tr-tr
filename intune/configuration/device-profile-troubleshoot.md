@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77511336"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368386"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'deki cihaz ilkeleri ve profillerle ilgili yaygın sorular, sorunlar ve çözümler
 
@@ -54,7 +54,7 @@ Bir cihaz, ilk bildirimden sonra ilkeyi veya profili almak için iade vermezse, 
 
 | Platfveyam | Döngü süresi|
 | --- | --- |
-| iOS/ıpados | Her 8 saatte bir |
+| iOS/iPadOS | Her 8 saatte bir |
 | Mac OS | Her 8 saatte bir |
 | Android | Her 8 saatte bir |
 | Cihaz olarak kaydedilen Windows 10 bilgisayarlar | Her 8 saatte bir |
@@ -65,7 +65,7 @@ Cihaz son zamanlarda kaydedildiyse, uyumluluk, uyumsuzluk ve yapılandırma iade
 
 | Platfveyam | Sıklık |
 | --- | --- |
-| iOS/ıpados | 1 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir |  
+| iOS/iPadOS | 1 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir |  
 | Mac OS | 1 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
 | Android | 15 dakika boyunca 3 dakikada bir, sonra 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
 | Cihaz olarak kaydedilen Windows 10 bilgisayarlar | 15 dakika boyunca 3 dakikada bir, sonra 2 saat boyunca 15 dakikada bir ve daha sonra 8 saatte bir | 
@@ -122,7 +122,7 @@ Bir profili sildiğinizde veya bir cihazı profilin bulunduğu bir gruptan kald�
     - Basit parolalara izin ver
     - Parola uzunluğu alt sınırı
     - Gerekli parola türü
-    - Parola zaman aşımı (gün sayısı)
+    - Parola geçerlilik süresi (gün)
     - Parola geçmişini anımsa
     - Cihaz temizlenmeden önce izin verilen yinelenen oturum açma hatası sayısı
     - Parola istenmeden önce geçen işlem yapılmayan dakika sayısı

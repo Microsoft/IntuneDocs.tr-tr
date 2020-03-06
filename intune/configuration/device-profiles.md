@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513087"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368998"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune'daki cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama
 
@@ -59,7 +59,7 @@ Bu özellik şunları destekler:
 
 - Android
 - Android Kurumsal
-- iOS/ıpados
+- iOS/iPadOS
 - Mac OS
 - WVPN profillerinidows Phone 8.1
 - Windows 8.1
@@ -73,7 +73,7 @@ Bu özellik şunları destekler:
 
 - Android
 - Android Kurumsal
-- iOS/ıpados
+- iOS/iPadOS
 - Mac OS
 - WVPN profillerinidows Phone 8.1
 
@@ -93,7 +93,7 @@ Bu özellik şunları destekler:
 
 Bu özellik şunları destekler:
 
-- iOS/ıpados
+- iOS/iPadOS
 - Mac OS
 
 ## <a name="device-firmware-configuration-interface"></a>Cihaz üretici yazılımı yapılandırma arabirimi
@@ -112,7 +112,7 @@ Bu özellik şunları destekler:
 
 - Android
 - Android kurumsal
-- iOS/ıpados
+- iOS/iPadOS
 - Mac OS
 - Windows 10 ve üzeri
 - Windows 10 Team
@@ -139,7 +139,7 @@ Bu özellik şunları destekler:
 
 - Android
 - Android Kurumsal
-- iOS/ıpados
+- iOS/iPadOS
 - WVPN profillerinidows Phone 8.1
 - Windows 10 ve üzeri
 
@@ -178,7 +178,7 @@ Bu özellik şunları destekler:
 - Windows 10 ve üzeri
 - Windows 10 Holographic for Business  
 
-## <a name="kiosk"></a>Bilgi noktası
+## <a name="kiosk"></a>Bilgi Noktası
 
 [Bilgi noktası ayarları](kiosk-settings.md) profili, cihazı tek uygulama veya birden çok uygulama çalıştıracak şekilde yapılandırır. Ayrıca bilgi noktanızda başlat menüsü ve web tarayıcısı gibi diğer özellikleri de özelleştirebilirsiniz.
 
@@ -225,7 +225,7 @@ Windows cihazlardaki güncelleştirme ilkeleri hakkında bilgi için bkz. [Tesli
 
 Bu özellik şunları destekler:
 
-- iOS/ıpados
+- iOS/iPadOS
 
 ## <a name="vpn"></a>VPN
 
@@ -237,7 +237,7 @@ Bu özellik şunları destekler:
 
 - Android
 - Android Kurumsal
-- iOS/ıpados
+- iOS/iPadOS
 - Mac OS
 - WVPN profillerinidows Phone 8.1
 - Windows 8.1
@@ -251,7 +251,7 @@ Bu özellik şunları destekler:
 
 - Android
 - Android Kurumsal
-- iOS/ıpados
+- iOS/iPadOS
 - Mac OS
 - Windows 8.1 (yalnızca içeri aktarma)
 - Windows 10 ve üzeri
