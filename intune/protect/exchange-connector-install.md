@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7d00fec5efd9caa54c7f481389e3993e9797699c
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755755"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78370020"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>Şirket içi Intune Exchange bağlayıcısını ayarlama
 
@@ -54,7 +54,7 @@ Aşağıdaki tabloda, Intune Exchange bağlayıcısını yüklediğiniz bilgisay
 
 |  Gereksinim  |   Daha fazla bilgi     |
 |---------------|------------------------|
-|  Operating systems        | Intune, Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 veya Windows Server 2016 'ın herhangi bir sürümünü çalıştıran bir bilgisayarda Intune Exchange bağlayıcısını destekler.<br /><br />Bağlayıcı hiçbir sunucu çekirdeği yüklemesinde desteklenmez.  |
+|  İşletim sistemleri        | Intune, Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 veya Windows Server 2016 'ın herhangi bir sürümünü çalıştıran bir bilgisayarda Intune Exchange bağlayıcısını destekler.<br /><br />Bağlayıcı hiçbir sunucu çekirdeği yüklemesinde desteklenmez.  |
 | Microsoft Exchange          | Şirket içi bağlayıcılar için Microsoft Exchange 2010 SP3 veya üzeri ya da eski Exchange Online Ayrılmış gerekir. Exchange Online Dedicated ortamınızın *yeni* yapılandırmada mı yoksa *eski* yapılandırmada mı olduğunu belirlemek için hesap yöneticinize başvurun. |
 | Mobil cihaz yönetimi yetkilisi           | [Mobil cihaz yönetimi yetkilisi olarak Intune’u ayarlama](../fundamentals/mdm-authority-set.md). |
 | Donanım              | Bağlayıcıyı yüklediğiniz bilgisayar 2 GB RAM ve 10 GB boş disk alanı ile birlikte 1,6 GHz CPU gerektirir. |
