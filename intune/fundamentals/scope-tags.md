@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dfb9ec9d28b00e454884bbf0bf296cd72cba4b6f
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569226"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369795"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Dağıtılmış BT için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketleri kullanma
 
@@ -43,7 +43,7 @@ Varsayılan kapsam etiketi özelliği, Microsoft uç noktası Configuration Mana
 
 ## <a name="to-create-a-scope-tag"></a>Kapsam etiketi oluşturmak için
 
-1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **kiracı yönetimi** > **Roller** > **kapsam (Etiketler)** > **Oluştur**' u seçin.
+1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'Nde, **kiracı yönetimi** > **Roller** > **kapsam (Etiketler)**  > **Oluştur**' u seçin.
 2. **Temel bilgiler** sayfasında, bir **ad** ve isteğe bağlı bir **Açıklama**girin. **İleri**’yi seçin.
 3. **Atamalar** sayfasında, bu kapsam etiketini atamak istediğiniz cihazları içeren grupları seçin. **İleri**’yi seçin.
 4. **Gözden geçir + oluştur** sayfasında **Oluştur**' u seçin.
@@ -72,7 +72,7 @@ Kapsam etiketlerini destekleyen nesneler için, kapsam etiketleri genellikle **�
 
 1. [Microsoft Endpoint Manager Yönetim Merkezi](https://go.microsoft.com/fwlink/?linkid=2109431)'nde **cihazlar** > **yapılandırma profilleri** ' ni seçin > bir profil seçin.
 
-2. **Özellikler** > **kapsam (Etiketler)** > **düzenle** > **kapsam etiketlerini seçin** > Profile eklemek istediğiniz etiketleri seçin.
+2. **Özellikler** > **kapsam (Etiketler)**  > **düzenle** > **kapsam etiketlerini seçin** > Profile eklemek istediğiniz etiketleri seçin.
 4. Seç > **gözden geçir + kaydet**' **i** seçin.
 
 ## <a name="scope-tag-details"></a>Kapsam etiketi ayrıntıları

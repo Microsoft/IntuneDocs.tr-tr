@@ -17,17 +17,17 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
 ms.openlocfilehash: 45cdbfe98bca8f7b0e307ed47ad3f78193e6d04c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164573"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78370105"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune’da Endpoint Protection ayarları ekleme
 
 Intune ile, cihazlarda aşağıdakiler de dahil olmak üzere ortak uç nokta koruma güvenlik özelliklerini yönetmek için cihaz yapılandırma profillerini kullanabilirsiniz:
 
-- Güvenlik duvarı
+- Güvenlik Duvarı
 - BitLocker
 - Uygulamalara izin verme ve bunları engelleme
 - Microsoft Defender ve şifreleme

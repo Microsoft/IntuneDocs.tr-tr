@@ -20,11 +20,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
 ms.openlocfilehash: 86c158f73d820fa2e719fe92b884c77f315fcb94
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75858820"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369084"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune Şirket Portalı Windows cihaz kaydı  
 
