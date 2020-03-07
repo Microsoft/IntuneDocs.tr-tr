@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2dede228aadac2981c38d2842f5da1369933f86
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059884"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369561"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Intune kullanarak adanmış bir bilgi noktası olarak çalışacak Windows 10 ve Windows holographic for Business cihaz ayarları
 
@@ -69,7 +69,7 @@ Profil oluşturulur ve profiller listesinde gösterilir. Sonra, profili [atayın
 [Profili atama](device-profile-assign.md) ve [durumunu izleme](device-profile-monitor.md).
 
 Aşağıdaki platformları çalıştıran cihazlar için bilgi noktası profilleri oluşturabilirsiniz:
-- [Outlook Web Access (OWA)](device-restrictions-android.md#kiosk)
+- [Android](device-restrictions-android.md#kiosk)
 - [Android Kurumsal](device-restrictions-android-for-work.md#dedicated-device-settings)
 - [Windows 10 ve üzeri](kiosk-settings-windows.md)
 - [Windows Holographic for Business](kiosk-settings-holographic.md)
