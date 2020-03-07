@@ -17,11 +17,11 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5d03d6026430c7f9f02cc8504ccc610c3be99902
-ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78287556"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369902"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune 'de güvenlik taban çizgisini ve profillerini izleme
 

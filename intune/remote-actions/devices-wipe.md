@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 931a1255a0b7aef6f776e8e0bf259e1ea0dd8d65
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
-ms.translationtype: MT
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77781845"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368915"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Silme, kullanımdan kaldırma veya el ile kaydını kaldırma yoluyla cihaz kaldırma
 
@@ -74,7 +74,7 @@ Silme, cihazı yeni bir kullanıcıya vermeden önce veya cihaz kaybolduğunda/�
 
 Cihaz açık ve bağlı olduğu sürece, **Silme** eylemi 15 dakikadan kısa süre içinde tüm cihaz türlerine yayılır.
 
-## <a name="retire"></a>Devre dışı bırakma
+## <a name="retire"></a>Devre Dışı Bırak
 
 **Kullanımdan kaldırma** eylemi; yönetilen uygulama verilerini (varsa), ayarlarını ve Intune kullanarak atanmış e-posta profillerini kaldırır. Cihaz Intune yönetiminden kaldırılır. Bu durum cihaz iade etme işlemi gerçekleştirdiğinde ve **Kullanımdan kaldırma** uzak eylemini aldığında ortaya çıkar. Cihaz, cihaz iade edilene kadar Intune 'da görünmeye devam eder. Eski cihazları hemen kaldırmak istiyorsanız, bunun yerine [silme eylemini](devices-wipe.md#delete-devices-from-the-intune-portal) kullanın.
 
@@ -144,7 +144,7 @@ Yalnızca bilgi noktası cihazlarını silebilirsiniz. Android bilgi noktası ci
 > [!NOTE]
 > İlk kurulum (OOBE) sırasında Azure AD 'ye eklenen Windows 10 cihazlarında, devre dışı bırakma komutu cihazdan tüm Azure AD hesaplarını kaldırır. Yerel yönetici olarak oturum açmak ve kullanıcının yerel verilerine yeniden erişim kazanmak için [Bilgisayarınızı güvenli modda başlatma bölümündeki](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) adımları izleyin. 
 
-### <a name="retire"></a>Devre dışı bırakma
+### <a name="retire"></a>Devre Dışı Bırak
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 2. **Cihazlar** bölmesinde **Tüm cihazlar**'ı seçin.

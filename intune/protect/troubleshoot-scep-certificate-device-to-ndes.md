@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7945f1df3ddf1a6ff2c42a537e1071d1b5acff24
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514277"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78370071"
 ---
 # <a name="troubleshoot-device-to-ndes-server-communication-for-scep-certificate-profiles-in-microsoft-intune"></a>Microsoft Intune 'daki SCEP sertifika profilleri için cihazdan NDES sunucu iletişimi sorunlarını giderme
 
@@ -153,7 +153,7 @@ Aşağıdaki örneğe benzeyen bağlantılar, 500 durum koduyla, *bir Istemcinin
 
 4. **Kullanıcı veya Grup Ekle..** . ' ye tıklayın, **Seçilecek nesne adlarını girin kutusuna** **IIS_IURS** girin ve ardından **Tamam**' a tıklayın.
 
-5. **Tamam**'ı tıklatın.
+5. **Tamam**'a tıklayın.
 
 6. Bilgisayarı yeniden başlatın ve ardından cihazdan bağlantıyı yeniden deneyin.
 

@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 494878c78189aed2612883017f4808be72b8f15d
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77511608"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369229"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM ve uygulama koruma hakkında sık kullanılan sorular
 
@@ -210,7 +210,7 @@ Intune uygulama koruma ilkeleri, yalnızca Intune lisanslı kullanıcılara uygu
 Bunun amacı, uygulama içerisindeki kuruluş verilerinizin güvenliğini sağlamak ve verileri uygulama düzeyinde korumaktır. Bu özellik yalnızca iOS/ıpados için kullanılabilir ve iOS/ıpados, sürüm 9.0.1 veya üzeri için Intune uygulama SDK 'sını tümleştiren uygulamaların katılımını gerektirir. Hedeflenen uygulamalarda davranışın zorlanabilmesi için SDK tümleştirmesi gereklidir. Bu tümleştirme, sıralı bir şekilde gerçekleşir ve belirli uygulama ekiplerine bağımlıdır. Katılan uygulamalardan bazıları WXP, Outlook, Managed Browser ve Yammer’dır.
   
 **Veri aktarım ilkesi "yalnızca yönetilen uygulamalar" veya "uygulama yok" olarak ayarlanmış olsa bile, yönetilmeyen uygulamalarda iş veya okul verilerini açmak için iOS Share uzantısını kullanabiliyorum. Bu veri sızıntısı mı?**<br></br>
-Intune uygulama koruma ilkesi cihazı yönetmiyorsa iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_ . Bunu, yönetilen uygulama dışında "kurumsal" dosyayı açmaya çalışarak doğrulayabilirsiniz. Bu dosya yalnızca şifrelenmiş ve yönetilen bir uygulama olarak açılmalıdır.
+Intune uygulama koruma ilkesi cihazı yönetmiyorsa iOS paylaşım uzantısını denetleyemez. Bu nedenle, Intune _**“kurumsal” verileri veriler uygulama dışında paylaşılmadan önce şifreler**_ . Bunu, “kurumsal” dosyayı yönetilen uygulama dışında açmaya çalışarak doğrulayabilirsiniz. Bu dosya yalnızca şifrelenmiş ve yönetilen bir uygulama olarak açılmalıdır.
 
 **Aynı uygulama ve kullanıcı kümesine yapılandırılan birden çok Intune uygulama koruma erişimi ayarları iOS'da nasıl çalışır?**<br></br>
 Son kullanıcı cihazları kendi şirket hesaplarından hedeflenen uygulamaya erişmeyi denediklerinde, erişim için Intune uygulama koruma ilkeleri bu cihazlara belirli bir sırada uygulanır. Genel olarak öncelik temizlemededir; ardından engelleme, sonra da kapatılabilen uyarı gelir. Örneğin, belirli bir Kullanıcı/uygulama için geçerliyse, bir kullanıcıyı iOS/ıpados sürümünü güncelleştirmek üzere uyaran en düşük iOS/ıpados işletim sistemi ayarı, kullanıcının erişimini engelleyen en düşük iOS/ıpados işletim sistemi ayarından sonra uygulanır. Bu nedenle, BT yöneticisinin en düşük iOS/ıpados işletim sistemini 11.0.0.0 ve en düşük iOS/ıpados işletim sistemine (yalnızca uyarı) 11.1.0.0 olarak yapılandıracağından, uygulamaya erişmeye çalışan cihaz iOS/ıpados 10 ' da olduğunda, son kullanıcı engellenen erişime neden olan min iOS/ıpados işletim sistemi sürümü için daha kısıtlayıcı ayara bağlı olarak engellenir.

@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 122f0b0194a96b844e274ab39a73224eb23cc6b3
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051601"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368999"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>İzin vermek veya Intune kullanarak özellikleri kısıtlamak için android Kurumsal cihaz ayarları
 
@@ -219,7 +219,7 @@ Adanmış cihazlarınızda bilgi noktası stili bir deneyim yapılandırmak içi
 - **Bilinmeyen kaynaklardan yüklemeye Izin ver**: kullanıcıların **Bilinmeyen kaynakları**açıp kullanabilmesi için **izin ver** ' i seçin. Bu ayar, uygulamaların Google Play Store dışındaki kaynaklar da dahil olmak üzere bilinmeyen kaynaklardan yüklenmesine izin verir. **Yapılandırılmadı** seçeneği, kullanıcıların **Bilinmeyen kaynakları**açmasını engeller.
 - **Google Play Store 'daki tüm uygulamalara erişime Izin ver**: **izin ver**olarak ayarlandığında, kullanıcılar Google Play deposundaki tüm uygulamalara erişim sağlar. [Istemci uygulamalarında](../apps/apps-add-android-for-work.md)yönetici blokları olan uygulamalara erişim almaz. **Yapılandırılmadı** , kullanıcıları yalnızca yöneticinin kullanılabilir Google Play depolama alanı veya [istemci uygulamalarında](../apps/apps-add-android-for-work.md)gerekli uygulamalar üzerinde yaptığı uygulamalara erişmesine zorlar.
 - **Uygulama otomatik güncelleştirmeleri**: otomatik güncelleştirmelerin ne zaman yükleneceğini seçin. Seçenekleriniz şunlardır:
-  - **Yapılandırılmamış**
+  - **Yapılandırılmadı**
   - **Kullanıcı seçimi**
   - **Hiçbir zaman**
   - **Yalnızca Wi-Fi**

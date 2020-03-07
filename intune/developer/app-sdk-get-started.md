@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3529a21483d0207dbfe55af914badf3ed895af1a
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691864"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78370217"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune Uygulama SDK’sını kullanmaya başlayın
 
@@ -132,7 +132,7 @@ Android ve iOS, uygulamalar için hem sürüm hem de derleme numaralarını kull
 
 Intune’da kullanmak üzere bir iş kolu uygulaması geliştirirken, sürüm ve derleme numarasını birlikte kullanmayı unutmayın. Intune Uygulama yönetimi özellikleri anlamlı bir **CFBundleVersion** (iOS için) ve **PackageVersionCode** (Android için) kullanır. Bu numaralar, uygulama bildirimine eklenir. 
 
-Intune|iOS|Android|Description|
+Intune|iOS|Android|Açıklama|
 |---|---|---|---|
 Sürüm numarası|CFBundleShortVersionString|PackageVersionName |Bu numara, son kullanıcılara yönelik belirli bir uygulama yayınını gösterir.|
 Yapı numarası|CFBundleVersion|PackageVersionCode |Bu numara, uygulama kodunda bir yinelemeyi gösterir.|

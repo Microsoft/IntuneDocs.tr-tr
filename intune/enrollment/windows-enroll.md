@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415129"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368573"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows cihazları için kaydı ayarlama
 
