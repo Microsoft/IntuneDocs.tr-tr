@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6a9033b0c4ac241b7fbc8a34db7e757229d82c5
+ms.openlocfilehash: eb34a67539e1c2ed181189589aa3fc5b0e86fa97
 ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290285"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78892965"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune'daki yenilikler
 
@@ -66,7 +66,7 @@ Microsoft Uç Nokta Yöneticisi tek bir konsolda Configuration Manager ve Intune
 Bu güncelleştirmeyi yüklemeden önce [Configuration Manager Technical Preview makalesini](https://docs.microsoft.com/configmgr/core/get-started/technical-preview) gözden geçirin. Bu makale, Technical Preview kullanma, sürümler arasında güncelleştirme ve geri bildirim sağlama ile ilgili genel gereksinimleri ve sınırlamaları tamamladığınızda tercihinize.
 
 #### <a name="bulk-remote-actions--4576882--"></a>Toplu uzak eylemler<!--4576882-->
-Artık şu uzak eylemler için toplu komutlar verebilirsiniz: yeniden başlatma, yeniden adlandırma, Autopilot sıfırlama, eşitleme, silme ve silme. Yeni toplu eylemleri görmek için [Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) > **cihazlar** > **tüm cihazlar** **toplu işlemler** > ' ne gidin.
+Artık şu uzak eylemler için toplu komutlar verebilirsiniz: yeniden başlatma, yeniden adlandırma, Autopilot sıfırlama, silme ve silme. Yeni toplu eylemleri görmek için [Microsoft Endpoint Manager yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2109431) > **cihazlar** > **tüm cihazlar** **toplu işlemler** > ' ne gidin.
 
 #### <a name="all-devices-list-improved-search-sort-and-filter--6179023--"></a>Tüm cihazlar için geliştirilmiş arama, sıralama ve filtreleme listeleri<!--6179023-->
 Tüm cihazlar listesi, daha iyi performans, arama, sıralama ve filtreleme için geliştirilmiştir.

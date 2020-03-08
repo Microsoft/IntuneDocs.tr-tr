@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4c938aba7fde84536af2452f13f6ed030fa1d823
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576423"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368677"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune Şirket Portalı uygulamasını yapılandırma
 
@@ -150,7 +150,7 @@ Windows Şirket Portalı uygulamasında aşağıdaki kısayollar kullanılabilir
 | Alan | Açıklama | Klavye kısayolu |
 |:------------------:|:--------------:|:-----------------:|
 | Gezinti menüsü | Gezinme | Alt + a |
-|  | Ana Sayfası | Alt + H |
+|  | Giriş | Alt + H |
 |  | Tüm uygulamalar | Alt + A |
 |  | Yüklenen uygulamalar | Alt+I |
 |  | Geri bildirim gönder | Alt + F |

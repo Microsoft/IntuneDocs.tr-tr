@@ -16,11 +16,11 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
 ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77124818"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369952"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune teslim iyileştirme ayarları
 
@@ -70,7 +70,7 @@ Teslim Iyileştirme daha önce yazılım güncelleştirme halkalarının bir par
         - **Platform**: **Windows 10 ve üstünü**seçin.
         - **Profil türü**: **teslim iyileştirmesi**' nı seçin.
         - **Ayarlar**: **teslim iyileştirme indirme modu**için, cihazlarınıza uyguladığınız ayarları değiştirmek istemediğiniz takdirde, var olan yazılım güncelleştirme halkası tarafından kullanılan modu seçin. Seçenekleriniz şunlardır:
-            - **Yapılandırılmamış**
+            - **Yapılandırılmadı**
             - **Yalnızca HTTP, eşleme yok**
             - **Aynı NAT 'nin arkasında eşleme ile HTTP karıştırılmış**
             - **Özel bir Grup genelinde eşleme ile HTTP karıştırılmış**

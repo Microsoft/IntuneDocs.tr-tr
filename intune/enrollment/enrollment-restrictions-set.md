@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415315"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368572"
 ---
 # <a name="set-enrollment-restrictions"></a>Kayıt kısıtlamalarını ayarlama
 
@@ -44,7 +44,7 @@ Birden çok kısıtlama oluşturabilir ve bunları farklı kullanıcı grupları
 - Kaydedilebilecek cihaz platformları:
   - Android Cihaz Yöneticisi
   - Android kurumsal iş profili
-  - iOS/ıpados
+  - iOS/iPadOS
   - Mac OS
   - Windows
   - Windows Mobile
