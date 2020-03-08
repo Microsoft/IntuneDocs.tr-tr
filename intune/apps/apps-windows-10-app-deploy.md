@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 88867e76df3d77aefc96a30c7e198f9d36950c25
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609232"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856077"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Microsoft Intune kullanarak Windows 10 uygulama dağıtımı 
 
@@ -44,7 +44,7 @@ Windows 10 cihazlarında desteklenen uygulama türleri İş kolu (LOB) uygulamal
 
 Belirli uygulama türleri, kullanıcılarınızın çalıştırdığı Windows 10 sürümüne göre desteklenir. Aşağıdaki tabloda, uygulama türü ve Windows 10 Supportability sağlanmaktadır.
 
-| Uygulama türü | Ana Sayfası | Pro | İş | Enterprise | Eğitim | S modu | HoloLens<sup>1 | Surface Hub | WCOS | Cep Telefonu |
+| Uygulama türü | Giriş | Pro | İş | Enterprise | Eğitim | S modu | HoloLens<sup>1 | Surface Hub | WCOS | Mobil |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  . DEFTERI | Hayır | Evet | Evet | Evet | Evet | Hayır | Hayır | Hayır | Hayır | Hayır |
 | . Intunewin | Hayır | Evet | Evet | Evet | Evet | 19H2 + | Hayır | Hayır | Hayır | Hayır |
@@ -54,9 +54,11 @@ Belirli uygulama türleri, kullanıcılarınızın çalıştırdığı Windows 1
 | MSFB çevrimiçi | Evet | Evet | Evet | Evet | Evet | Evet | RS4 + | Hayır | Evet | Evet |
 | Web Apps | Evet | Evet | Evet | Evet | Evet | Evet | Evet<sup>2 | Evet<sup>2 | Evet | Evet<sup>2 |
 | Mağaza bağlantısı | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet | Evet |
+| Microsoft Edge | Hayır | Evet | Evet | Evet | Evet | 19H2 +<sup>3 | Hayır | Hayır | Hayır | Hayır |
 
 <sup>1</sup> uygulama yönetiminin kilidini açmak Için, Hololens cihazınızı [holographic for Business](../fundamentals/windows-holographic-for-business.md)'a yükseltin.<br />
-yalnızca Şirket Portalı <sup>2</sup> ' den başlatın.
+yalnızca Şirket Portalı <sup>2</sup> ' den başlatın.<br />
+<sup>3</sup> Edge uygulamasının başarıyla yüklenmesi Için cihazlara S-Mode ilkesi atanması gerekir.
 
 > [!NOTE]
 > Tüm Windows uygulama türleri kayıt gerektirir.

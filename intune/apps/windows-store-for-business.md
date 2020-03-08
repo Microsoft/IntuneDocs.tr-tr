@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07463f3bcac7d657659ece7fed2c40db53ee2122
-ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.openlocfilehash: aa68716d31b95773c485cb93ef8c39fe9d9fa95e
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78256382"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856205"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Toplu satın alınan uygulamaları Microsoft Store Iş için Microsoft Intune ile yönetme
 
@@ -52,7 +52,7 @@ ms.locfileid: "78256382"
 - Kaydedilen cihazlar Windows 10’un 1511 sürümünü veya sonraki bir sürümü kullanıyor olmalıdır.
 
 > [!NOTE]
-Yönetilen cihazlarda depoyu devre dışı bırakırsanız (el ile, ilke veya grup ilkesi aracılığıyla), çevrimiçi lisanslı uygulamalar yüklenemeyecektir.
+> Yönetilen cihazlarda depoyu devre dışı bırakırsanız (el ile, ilke veya grup ilkesi aracılığıyla), çevrimiçi lisanslı uygulamalar yüklenemeyecektir.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>İş İçin Microsoft Mağazası hesabınızı Intune’la ilişkilendirme
 Intune konsolunda eşitlemeyi etkinleştirmek için, önce mağaza hesabınızı yönetim aracı olarak Intune’u kullanacak şekilde yapılandırmanız gerekir:

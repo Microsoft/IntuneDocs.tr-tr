@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af5bb1c95a15a5c52585278605e2f7a86307cb76
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.openlocfilehash: 7a322788dba092f44af2f0664fe810f8392b9f56
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782223"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855992"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Denetimli iOS/ıpados cihazlarında Intune ile Etkinleştirme Kilidi devre dışı bırakma
 
@@ -62,7 +62,7 @@ Intune, iOS/ıpados 8,0 ve üstünü çalıştıran denetimli cihazların Etkinl
 ## <a name="before-you-start"></a>Başlamadan önce
 Cihazlarda Etkinleştirme Kilidi devre dışı bırakabilmeniz için bu yönergeleri izleyerek etkinleştirmeniz gerekir:
 
-1. [Cihaz kısıtlama ayarlarını yapılandırma](/intune-azure/configure-devices/how-to-configure-device-restrictions)bölümündeki bilgileri kullanarak IOS/ıpados Için bir Intune cihaz kısıtlama profili yapılandırın.
+1. [Cihaz kısıtlama ayarlarını yapılandırma](../configuration/device-restrictions-configure.md)bölümündeki bilgileri kullanarak IOS/ıpados Için bir Intune cihaz kısıtlama profili yapılandırın.
 2. [İOS/ıpados için cihaz kısıtlama ayarları](../configuration/device-restrictions-ios.md)' nda, **genel** ayarlar altında, **Etkinleştirme Kilidi**seçeneğini etkinleştirin.
 3. Profili kaydedin ve ardından devre dışı bırak Etkinleştirme Kilidi yönetmek istediğiniz cihazlara [atayın](../configuration/device-profile-assign.md) .
 
@@ -78,7 +78,7 @@ Intune Etkinleştirme Kilidi uzak cihazı **devre dışı bırak** eylemi, kulla
 3. **Intune** dikey penceresinde **Cihazlar**’ı seçin.
 4. **Cihazlar** dikey penceresinde **Tüm cihazlar**'ı seçin.
 5. Yönettiğiniz cihazların listesinde uzak cihaz **Etkinleştirme Kilidi devre dışı bırak** eylemini seçin.
-6. Cihazın “Donanım” bölümüne gidin ve **Etkinleştirme kilidi atlama kodu** değerini **Koşullu Erişim**’in altına kopyalayın.
+6. Cihazın "donanım" bölümüne gidin ve sonra **koşullu erişim**altında **Etkinleştirme Kilidi atlama kodu** değerini kopyalayın.
 
     >[!NOTE]
     >Cihazı silmeden önce atlama kodunu kopyalayın. Kodu kopyalamadan önce cihaz ayarlarını sıfırlarsanız kod Azure’dan kaldırılır.

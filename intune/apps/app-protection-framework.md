@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc2843073d11e5c9dae989a60f357dcfeb16a5d2
+ms.openlocfilehash: 075f4bdd52bfa72e2eaed051c765d77d7b80e6fd
 ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290810"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856262"
 ---
 # <a name="data-protection-framework-using-app-protection-policies"></a>Uygulama koruma ilkelerini kullanan veri koruma çerçevesi 
 
 Daha fazla kuruluş, iş veya okul verilerine erişmek için mobil cihaz stratejileri uyguladıkça, veri sızıntılarına karşı koruma, Paramount hale gelir. Veri sızıntılarına karşı koruma için Intune 'un mobil uygulama yönetimi çözümü, uygulama koruma Ilkelerdir (uygulama). UYGULAMA, cihazın kayıtlı olup olmamasına bakılmaksızın bir kuruluşun verilerinin güvenli kalmasını veya yönetilen bir uygulamada yer aldığından emin olmanızı sağlayan kurallardır. Daha fazla bilgi için bkz. [Uygulama koruma ilkelerine genel bakış](~/apps/app-protection-policy.md). 
 
-Uygulama koruma Ilkeleri yapılandırılırken çeşitli ayar ve seçenek sayısı, kuruluşların korumayı belirli ihtiyaçlarına göre uyarlamalarını sağlar. Bu esneklik nedeniyle, bir bütün senaryoyu uygulamak için ilke ayarlarının kullanılması gerektiği açık olmayabilir. Kuruluşların sağlamlaştırma endeavors 'e öncelik vermesini sağlamak için, Microsoft, [Windows 10 ' da güvenlik yapılandırmalarına](https://aka.ms/secconframework)yönelik yeni bir taksonomi sunmuştur ve Intune, mobil uygulama YÖNETIMI için uygulama veri koruma çerçevesi için bu taksonomiden yararlanmaktadır.  
+Uygulama koruma Ilkeleri yapılandırılırken çeşitli ayar ve seçenek sayısı, kuruluşların korumayı belirli ihtiyaçlarına göre uyarlamalarını sağlar. Bu esneklik nedeniyle, bir bütün senaryoyu uygulamak için ilke ayarlarının kullanılması gerektiği açık olmayabilir. Kuruluşların, istemci uç noktası sağlamlaştırma endeavors ' i önceliklendirmesine yardımcı olmak için Microsoft, [Windows 10 ' da güvenlik yapılandırmalarına](https://aka.ms/secconframework)yönelik yeni bir taksonomi sunmuştur ve Intune, mobil uygulama YÖNETIMI için uygulama veri koruma çerçevesi için benzer bir taksonomiyi kullanıyordur  
 
 UYGULAMA veri koruma yapılandırma çerçevesi üç ayrı yapılandırma senaryosunda düzenlenmiştir: 
 
@@ -174,7 +174,8 @@ Düzey 3 ' te zorlanan ilke ayarları, düzey 2 ve 1 için önerilen tüm ilke a
 | Veri aktarımı |       Diğer uygulamalardan veri al  |          İlke ile yönetilen uygulamalar  |          iOS/ıpados, Android         |  |
 | Veri aktarımı |       Üçüncü taraf klavyeler  |          Engelle  |          iOS/iPadOS        | İOS 'ta bu, tüm üçüncü taraf klavyelerin uygulama içinde çalışmasını engeller.  |
 | Veri aktarımı |       Onaylanan klavyeler  |          Gerekli  |          Android        | Android ile, dağıtılan Android cihazlarınıza göre kullanılabilmesi için klavyeler seçili olmalıdır.  |
-| Veri aktarımı |       Onaylanacak klavyeleri seçin  |          *istenen klavyeleri seçin*  |          Android        | Android ile, dağıtılan Android cihazlarınıza göre kullanılabilmesi için klavyeler seçili olmalıdır.  |
+| Veri aktarımı |       Onaylanacak klavyeleri seçin  |          *Klavye ekle/kaldır*  |          Android        | Android ile, dağıtılan Android cihazlarınıza göre kullanılabilmesi için klavyeler seçili olmalıdır.  |
+| İşlevi |       Kuruluş verilerini yazdırma  |          Engelle  |          iOS/ıpados, Android         |  |
 
 #### <a name="access-requirements"></a>Erişim gereksinimleri
 
@@ -184,7 +185,6 @@ Düzey 3 ' te zorlanan ilke ayarları, düzey 2 ve 1 için önerilen tüm ilke a
 |       Minimum PIN uzunluğunu seçin  |          6  |          iOS/ıpados, Android  |
 |       Gün sayısından sonra PIN sıfırlama  |          Evet  |          iOS/ıpados, Android  |
 |       Gün sayısı  |          365  |          iOS/ıpados, Android  |
-|       Korunacak önceki PIN değerlerinin sayısını seçin  |          5  |          Android  |
 
 #### <a name="conditional-launch"></a>Koşullu başlatma
 
@@ -195,10 +195,11 @@ Düzey 3 ' te zorlanan ilke ayarları, düzey 2 ve 1 için önerilen tüm ilke a
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma](app-protection-policies.md)
-- [Microsoft Intune ile kullanılabilir Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md)
-- [Microsoft Intune ile kullanılabilir iOS/ıpados uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md)
+Yöneticiler, örnek [Intune uygulama koruması Ilkesi Configuration Framework JSON şablonlarını](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) [Intune 'un PowerShell betikleri](https://github.com/microsoftgraph/powershell-intune-samples)ile içe aktararak test ve üretim kullanımı için, yukarıdaki yapılandırma düzeylerini, test ve üretim kullanımına yönelik olarak birleştirebilirler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Microsoft Intune ile uygulama koruma ilkelerini oluşturma ve dağıtma](app-protection-policies.md)
+- [Microsoft Intune ile kullanılabilir Android uygulama koruma ilkesi ayarları](app-protection-policy-settings-android.md)
+- [Microsoft Intune ile kullanılabilir iOS/ıpados uygulama koruma ilkesi ayarları](app-protection-policy-settings-ios.md)
 - Salesforce mobil uygulaması gibi üçüncü taraf uygulamalar, Intune ile özel şekillerde çalışarak şirket verilerini korur. Doğrudan Salesforce uygulamasının Intune ile nasıl çalıştığını (MDM uygulama yapılandırma ayarları dahil) öğrenmek için bkz. [Salesforce Uygulaması ve Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df814abf9cdff3eb4d9fbac8183618461b590adb
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.openlocfilehash: bef6f8a00b0b5df64dd1c65ad048fe8331911979
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77781923"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856162"
 ---
 # <a name="see-device-details-in-intune"></a>Intune'da cihaz ayrıntılarına bakın
 
@@ -45,7 +45,7 @@ Bu makalede, tüm cihazlarınızı ve özelliklerini Azure portalında nasıl g�
       - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
       - [Yeniden başlatma](device-restart.md) (yalnızca Windows)
       - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
-      - [Autopilot sıfırlaması]() (yalnızca Windows)
+      - [Autopilot sıfırlaması](/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset) (yalnızca Windows)
       - [Hızlı tarama](../configuration/device-restrictions-windows-10.md) (yalnızca Windows 10)
       - [Tam tarama](../configuration/device-restrictions-windows-10.md) (yalnızca Windows 10)
        - [Cihazı yeniden adlandırma](device-rename.md)

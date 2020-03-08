@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e0fb33748c5bd21ca8997e2195ba0b7d71f4f6f9
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547036"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856128"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Cihazları Intune ile uyumlu veya uyumsuz olarak işaretlemek için Windows 10 ve üzeri ayarları
 
@@ -44,7 +44,7 @@ Intune yöneticisi olarak bu uyumluluk ayarlarını kullanarak kuruluşunuzun ka
 ### <a name="windows-health-attestation-service-evaluation-rules"></a>Windows sistem durumu kanıtlama hizmeti değerlendirme kuralları
 
 - **BitLocker gerektir**:  
-   Windows BitLocker Sürücü Şifrelemesi, Windows işletim sistemi birimine depolanan tüm verileri şifreler. BitLocker, Windows işletim sistemini ve Kullanıcı verilerini korumaya yardımcı olmak için Güvenilir Platform Modülü (TPM) kullanır. Ayrıca, sol tarafta bırakılmış, kayıp veya çalınmış olsa bile bir bilgisayarın üzerinde oynanmadığını doğrulamanıza yardımcı olur. Bilgisayarda uyumlu bir TPM varsa, BitLocker verileri koruyan şifreleme anahtarlarını kilitlemek için TPM kullanır. Sonuç olarak, TPM bilgisayarın durumunu doğrulana kadar anahtarlara erişilemez.  
+   Windows BitLocker Sürücü Şifrelemesi, Windows işletim sistemi birimine depolanan tüm verileri şifreler. BitLocker, Windows işletim sistemini ve Kullanıcı verilerini korumaya yardımcı olmak için Güvenilir Platform Modülü (TPM) kullanır. Ayrıca, sol tarafta bırakılmış, kayıp veya çalınmış olsa bile bir bilgisayarın üzerinde oynanmadığını doğrulamanıza yardımcı olur. Bilgisayar TPM ile donatılmışsa, BitLocker TPM’yi verileri koruyan şifreleme anahtarlarını kilitlemek için kullanır. Sonuç olarak, TPM bilgisayarın durumunu doğrulana kadar anahtarlara erişilemez.  
 
    - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
    - **Gerektir** -cihaz, sistem kapalı veya hazırda bekleme durumunda sürücüde depolanan verileri yetkisiz erişimden koruyabilir.  
@@ -106,13 +106,13 @@ Yalnızca Windows 10 ve üzeri çalıştıran ortak yönetilen cihazlar için ge
   - **Yapılandırılmadı** (*varsayılan*)-ıntune, uyumluluk için Configuration Manager ayarlarından herhangi birini denetlemez.
   - **Gerektir** -Configuration Manager için tüm ayarların (yapılandırma öğeleri) uyumlu olmasını gerektir.  
 
-    Örneğin, tüm yazılım güncelleştirmelerinin cihazlarda yüklü olmasını gerektirirsiniz. Configuration Manager’da bu gereksinim, “Yüklü” durumundadır. Cihazdaki herhangi bir program bilinmeyen bir durumdaysa, cihaz Intune 'da uyumlu değildir.
+    Örneğin, tüm yazılım güncelleştirmelerinin cihazlarda yüklü olmasını gerektirirsiniz. Configuration Manager, bu gereksinimin "yüklü" durumu vardır. Cihazdaki herhangi bir program bilinmeyen bir durumdaysa, cihaz Intune 'da uyumlu değildir.
 
 ## <a name="system-security"></a>Sistem Güvenliği
 
-### <a name="password"></a>istemcisiyle yönetilen bir cihaz için)
+### <a name="password"></a>Parola
 
-- **Mobil cihazların kilidini açmak için bir parola iste**:  
+- **Mobil cihazların kilidini açmak için parola gerektir**:  
   - **Yapılandırılmadı** (*varsayılan*)-Bu ayar uyumluluk veya uyumsuzluk için değerlendirilmez.
   - **Gerektir** -kullanıcıların cihazına erişebilmeleri için önce bir parola girmesi gerekir. 
 
@@ -145,7 +145,7 @@ Yalnızca Windows 10 ve üzeri çalıştıran ortak yönetilen cihazlar için ge
 - **Parola istenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı**:  
   Kullanıcı parolasını yeniden girmeden önce boşta geçen süreyi girin.
 
-- **Parola kullanım süresi (gün olarak)** :  
+- **Parola zaman aşımı (gün sayısı)** :  
   Parolanın süresi dolmadan önce geçecek gün sayısını girin ve 1-730 adresinden yeni bir tane oluşturmanız gerekir.
 
 - **Yeniden kullanılması önlenecek önceki parola sayısı**:  
@@ -170,7 +170,7 @@ Yalnızca Windows 10 ve üzeri çalıştıran ortak yönetilen cihazlar için ge
 
 ### <a name="device-security"></a>Cihaz Güvenliği  
 
-- **Güvenlik Duvarı**:  
+- **Güvenlik duvarı**:  
   - **Yapılandırılmadı** (*varsayılan*)-Intune, Microsoft Defender güvenlik duvarını denetlemez ve var olan ayarları değiştirmez.
   - **Gerektir** -Microsoft Defender güvenlik duvarını açın ve kullanıcıların bunu kapatmasını engelleyin.  
 

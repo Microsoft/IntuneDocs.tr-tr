@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b83367bb2f1d3622a1fc4e11eedd88f3f26ee8dd
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 0a8a883987c0b4684d14b07b9b48bc206aaa681d
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77510614"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855975"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Intune 'da önceden paylaşılan anahtarla bir WiFi profili oluşturmak için özel cihaz profili kullanma
 
@@ -33,6 +33,7 @@ ms.locfileid: "77510614"
 Bu özellik şunları destekler:
 
 - Android Cihaz Yöneticisi
+- Android kurumsal Iş profili
 - Windows
 - EAP tabanlı Wi-Fi
 
@@ -229,8 +230,8 @@ Ayrıca, var olan bir Wi-Fi bağlantısından bir XML dosyası da oluşturabilir
 
 1. C:\WiFi. gibi, dışarıya aktarılmış W-Fi profilleri için yerel bir klasör oluşturun
 2. Yönetici olarak bir komut istemi açın ( **yönetici olarak çalıştır** > `cmd`sağ tıklayın).
-3. `netsh wlan show profiles`bağlantısını okuyun. Tüm profillerin adları listelenir.
-4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`bağlantısını okuyun. Bu komut, c:\Wifi. içinde `Wi-Fi-YourProfileName.xml` adlı bir dosya oluşturur
+3. `netsh wlan show profiles`'i çalıştırın. Tüm profillerin adları listelenir.
+4. `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`'i çalıştırın. Bu komut, c:\Wifi. içinde `Wi-Fi-YourProfileName.xml` adlı bir dosya oluşturur
 
     - Önceden paylaşılan anahtar içeren bir Wi-Fi profilini dışarı aktarıyorsanız komuta `key=clear` ekleyin:
   

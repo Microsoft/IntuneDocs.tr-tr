@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8fe72ccf07cb0280a7d0ce929f8f08df7738bfcc
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885991"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856045"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune ile koşullu erişim kullanmanın yaygın yolları nelerdir?
 
@@ -42,7 +42,7 @@ Intune ve Azure Active Directory, yalnızca yönetilen ve uyumlu cihazların e-p
 
 Intune, cihazların uyumluluk durumunu değerlendiren cihaz uyumluluk ilkesi özellikleri sunar. Uyumluluk durumu, Kullanıcı şirket kaynaklarına erişmeye çalıştığında Azure Active Directory oluşturulan koşullu erişim ilkesini zorlamak için onu kullanan Azure Active Directory bildirilir.
 
-Exchange Online ve diğer Office 365 ürünlerine yönelik cihaz tabanlı koşullu erişim ilkeleri [Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)aracılığıyla yapılandırılır.  
+Exchange Online ve diğer Office 365 ürünlerine yönelik cihaz tabanlı koşullu erişim ilkeleri [Azure Portal](../fundamentals/what-is-intune.md)aracılığıyla yapılandırılır.
 
 - [Azure Active Directory 'de koşullu erişim ile yönetilen cihazlar gerektirme](https://docs.microsoft.com/azure/active-directory/conditional-access/require-managed-devices)hakkında daha fazla bilgi edinin.
 
@@ -54,7 +54,7 @@ Exchange Online ve diğer Office 365 ürünlerine yönelik cihaz tabanlı koşul
 > Android cihazlarda, SharePoint Online 'a cihaz tabanlı erişimi veya Exchange Online 'a tarayıcı tabanlı erişim 'i etkinleştirdiğinizde, kullanıcılar kayıtlı cihazda **tarayıcı erişimini etkinleştir** seçeneğini şu şekilde etkinleştirmelidir:
 > 1. **Şirket Portal uygulamasını** başlatın.
 > 2. Üç nokta (...) veya donanım menüsü düğmesinden **Ayarlar** sayfasına gidin.
-> 3. **Tarayıcı Erişimi Etkinleştir** düğmesine basın. 
+> 3. **Tarayıcı Erişimini Etkinleştir** düğmesine basın. 
 > 4. Chrome tarayıcıda, Office 365 oturumunu kapatın ve Chrome’u yeniden başlatın.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Ağ erişim denetimine bağlı koşullu erişim
@@ -79,7 +79,7 @@ Intune ve mobil tehdit savunması tümleştirmesi, cihaz riskine bağlı olarak 
 
 ### <a name="conditional-access-for-windows-pcs"></a>Windows Bilgisayarlar için koşullu erişim
 
-Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetenekler sağlar. Bilgisayarları Intune ile yönetirken koşullu erişimi hangi biçimlerde kullanabileceğinizden söz edelim.
+Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetenekler sağlar. Intune ile bilgisayarları yönetirken koşullu erişimi kullanma yollarınız hakkında konuşalım.
 
 #### <a name="corporate-owned"></a>Şirkete ait olanlar
 
@@ -87,7 +87,7 @@ Bilgisayarlar için koşullu erişim, mobil cihazlarda bulunanlara benzer yetene
 
 - **Azure AD etki alanına katılmış ve Intune yönetimi:** Bu senaryo, bulutu ilk kez yapmak isteyen kuruluşlar içindir (yani, birincil olarak bulut hizmetleri 'ni kullanarak, şirket içi bir altyapının kullanımını azaltmaya yönelik bir hedefle birlikte) veya salt bulut (Şirket içi altyapı olmadan). Azure AD JOIN, karma bir ortamda çalışarak hem buluta hem de şirket içi uygulamalara ve kaynaklara erişimi etkinleştirir. Cihaz Azure AD 'ye katılır ve şirket kaynaklarına erişirken koşullu erişim ölçütü olarak kullanılabilecek Intune 'a kaydedilir.
 
-#### <a name="bring-your-own-device-byod"></a>Kendi Cihazını Getir (KCG)
+#### <a name="bring-your-own-device-byod"></a>Kendi cihazını getir (KCG)
 
 - **Çalışma alanına katılma ve Intune yönetimi:** Burada kullanıcı kişisel cihazlarına ve kurumsal kaynak ve hizmetlere erişebilir. Koşullu erişim ölçütlerini değerlendirmek için başka bir seçenek olan cihaz düzeyinde ilkeler almak üzere çalışma alanına katılma ve cihazları Intune MDM 'ye kaydetme kullanabilirsiniz.
 
@@ -142,11 +142,11 @@ EAS kaydı yenidir ve Intune bunun farkında olmazsa, Intune, Exchange Server '�
 10. Exchange sunucusu, kullanıcının e-postaya erişebilmesi için bildirimi EAS istemcisine gönderir.
 
 
-#### <a name="whats-the-intune-role"></a>Intune'un rolü nedir?
+#### <a name="whats-the-intune-role"></a>Intune rolü nedir?
 
 Intune cihaz durumunu değerlendirir ve yönetir.
 
-#### <a name="whats-the-exchange-server-role"></a>Exchange sunucusunun rolü nedir?
+#### <a name="whats-the-exchange-server-role"></a>Exchange Server rolü nedir?
 
 Exchange Server, cihazları karantinaya almak için API ve altyapı sağlar.
 

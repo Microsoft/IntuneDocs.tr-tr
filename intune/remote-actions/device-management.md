@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f5d11cade1e22ca5d306dd1896e8136f9e7c1ed
-ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.openlocfilehash: bbb6a53158ff713ad3c3ff768b2a5e6b1c75605f
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78256416"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856280"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune cihaz yönetimi nedir?
 
@@ -29,22 +29,22 @@ ms.locfileid: "78256416"
 
 BT yöneticisi olarak, kullanıcılarınızın işlerini yapması için gereken kaynakların yönetilen cihazlar tarafından sağlandığından ve aynı zamanda verilerin risklerden korunduğundan emin olmanız gerekir.
 
-**Cihazlar** iş yükü, yönettiğiniz cihazlarla ilgili bilgi sahibi olmanızı sağlar ve bu cihazlar üzerinde uzak görevler gerçekleştirmenize olanak tanır.
+**Cihazlar** iş yükü, yönettiğiniz cihazlarla ilgili öngörüler sağlar ve bu cihazlarda uzak görevleri etkinleştirmenizi sağlar.
 
 ## <a name="get-to-your-devices"></a>Cihazlarınıza ulaşma
 
 1. [Microsoft Endpoint Manager Yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431)oturum açın.
 3. **Cihazlar**’ı seçin. Burada ayrı ayrı tüm cihazlar hakkında ayrıntılı bilgiler ve bu cihazlarla yapabilecekleriniz görüntülenir. Yapabilecekleriniz şöyledir:
 
-   - **Genel bakış** , kayıtlı cihazların görsel anlık görüntüsünü gösterir ve ayrıca Android, IOS/ıpados gibi farklı platformları kaç cihazın kullandığını gösterir.
+   - **Genel bakış** , kayıtlı cihazların görsel anlık görüntüsünü, farklı platformları kaç cihazın kullandığını ve daha fazlasını gösterir.
    - **Tüm cihazlar**, yönettiğiniz kayıtlı cihazların listesini gösterir.
 
      10.000 (Internet Explorer) veya 30.000 (Microsoft Edge, Chrome) artışlarla tüm cihazların bir. zip listesini oluşturmak için **dışarı aktarma** özelliğini kullanın.
 
-     Donanım ayrıntıları, yüklü uygulamalar, uyumluluk ilkesi durumu ve daha fazlası dahil olmak üzere [Bu cihazla ilgili ek ayrıntıları görüntülemek](device-inventory.md)için herhangi bir cihaz seçin.
+     Donanım ayrıntıları, yüklü uygulamalar, ilkeler ve daha fazlası gibi [Bu cihazla ilgili ek ayrıntıları görüntülemek](device-inventory.md)için herhangi bir cihaz seçin.
 
    - **Azure AD cihazları**, Azure Active Directory (AD) ile kaydedilen veya bu hizmete katılan cihazların listesini gösterir. [Azure AD cihaz yönetimi](https://docs.microsoft.com/azure/active-directory/device-management-introduction) hakkında daha fazla bilgi edinin.
-   - **Cihaz eylemleri**; eylem, eylemin durumu, eylemi kimin başlattığı ve süresi dahil olmak üzere cihazda gerçekleştirilen uzak eylemlerin geçmişini gösterir.
+   - **Cihaz eylemleri** , farklı cihazlarda çalıştırılan ve eylem, durumu, kimin başlattığı ve zaman dahil olmak üzere uzak eylemlerin bir geçmişini içerir.
 
      ![Cihaz eylemlerini izleme ekran görüntüsü](./media/device-management/monitor-device-actions.png)
 
@@ -57,21 +57,26 @@ Kullanılabilir eylemler, cihaz platformuna ve cihazın yapılandırmasına bağ
 
 - [Cihaz envanterini görüntüleme](device-inventory.md)
 - Uzak cihaz eylemlerini çalıştırın:
-  - [Devre Dışı Bırak](devices-wipe.md#retire)
-  - [Silme](devices-wipe.md#wipe)
-  - [Uzaktan kilitleme](device-remote-lock.md)
-  - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
+  - [Autopilot sıfırlaması](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)
+  - [BitLocker anahtar döndürme](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (yalnızca Windows)
+  - [Sil](devices-wipe.md#delete-devices-from-the-intune-portal)
   - [Etkinleştirme Kilidi devre dışı bırak](device-activation-lock-disable.md) (yalnızca iOS)
   - [Yeni Başlangıç](device-fresh-start.md) (yalnızca Windows)
-  - [Kayıp modu](device-lost-mode.md) (yalnızca iOS)
+  - [Tam tarama](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus) (yalnızca Windows 10)
   - [Cihaz bulma](device-locate.md) (yalnızca iOS)
-  - [Yeniden başlatma](device-restart.md) (yalnızca Windows)
-  - [Windows 10 PIN sıfırlama](device-windows-pin-reset.md)
+  - [Kayıp modu](device-lost-mode.md) (yalnızca iOS)
+  - [Hızlı tarama](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus) (yalnızca Windows 10)
   - [Android için uzaktan denetim](teamviewer-support.md)
-  - [Cihazı eşitleme](device-sync.md)
+  - [Uzaktan kilitleme](device-remote-lock.md)
   - [Cihazı yeniden adlandırma](device-rename.md)
+  - [Geçiş Kodunu Sıfırla](device-passcode-reset.md)
+  - [Yeniden başlatma](device-restart.md) (yalnızca Windows)
+  - [Devre Dışı Bırak](devices-wipe.md#retire)
+  - [Windows Defender güvenlik zekası 'nı güncelleştirme](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus)
+  - [Windows 10 PIN sıfırlama](device-windows-pin-reset.md)
+  - [Silme](devices-wipe.md#wipe)
   - [Özel bildirim gönder](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, IOS/ıpados)
-  - [BitLocker anahtar döndürme](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (yalnızca Windows)
+  - [Cihazı eşitleme](device-sync.md)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

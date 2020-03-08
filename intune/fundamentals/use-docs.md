@@ -11,12 +11,12 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de30ade4c145a930ed370fd651c35bd57700c76d
-ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
+ms.openlocfilehash: cb833f54c994779409611d2dcdff48d92336c0c5
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78287555"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856111"
 ---
 # <a name="using-the-intune-docs"></a>Intune belgelerini kullanma
 
@@ -117,7 +117,7 @@ Intune belgelerine katkıda bulunmak için aşağıdaki genel yönergeleri izley
 
 ## <a name="consolidation-of-documentation-for-microsoft-endpoint-manager"></a>Microsoft Uç Nokta Yöneticisi belgelerinin birleştirilmesi
 
-Intune ve Configuration Manager birleştirilmiş senaryoları daha iyi desteklemek için, bu belge kitaplığı [https://docs.microsoft.com/memdocs/intune](https://docs.microsoft.com/memdocs/intune)'ye taşınıyor. Configuration Manager belge kitaplığı daha sonra [https://docs.microsoft.com/memdocs/configmgr](https://docs.microsoft.com/memdocs/configmgr)taşınacak. Tüm bağlantılar otomatik olarak yönlendirilir, bu nedenle bu içeriği okumak için herhangi bir değişiklik yapmanız gerekmez.
+Intune ve Configuration Manager birleştirilmiş senaryoları daha iyi desteklemek için, bu belge kitaplığı https://docs.microsoft.com/mem/intune'ye taşınıyor. Configuration Manager belge kitaplığı daha sonra https://docs.microsoft.com/mem/configmgrtaşınacak. Tüm bağlantılar otomatik olarak yönlendirilir, bu nedenle bu içeriği okumak için herhangi bir değişiklik yapmanız gerekmez.
 
 Geribildirim sağlar veya makalelere katkıda bulunun, bazı değişiklikler gereklidir:
 
