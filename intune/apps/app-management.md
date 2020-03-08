@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2020
+ms.date: 03/05/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c22fafce6583dd1e58d61e3fa8e6077b70998588
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.openlocfilehash: 2c7378540d1ec9e19db57baae21c999c80b4d1d9
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77781793"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856263"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune uygulama yönetimi nedir?
 
@@ -51,7 +51,7 @@ Intune MAM iki yapılandırmayı destekler:
 
 Intune, ihtiyacınız olan uygulamaları çalıştırmak istediğiniz cihazlara almanıza yardımcı olacak çeşitli özellikler sunar. Aşağıdaki tablo, uygulama yönetimi özelliklerinin bir özetini sağlar.
 
-|  | Android/Android Kurumsal | iOS/iPadOS | Mac OS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Kurumsal | iOS/iPadOS | Mac OS | Windows 10 | WVPN profillerinidows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Cihazlara ve kullanıcılara uygulamaları ekleme ve atama | Evet | Evet | Evet | Evet | Evet |
 | Intune’a kayıtlı olmayan cihazlara uygulamaları atama | Evet | Evet | Hayır | Hayır | Hayır |
@@ -83,55 +83,42 @@ Uygulamalarla ilgili birçok bilgiyi **uygulamalar** iş yükünde bulabilirsini
 
     ![Uygulamalar iş yükü bölmesi](./media/app-management/apps-workload.png)
 
-Sonraki dört bölüm, **uygulamalar** bölmesinde bulunan seçenekleri anlatmaktadır.
+Uygulamalar iş yükü, genel uygulama bilgilerine ve işlevlerine erişim için bağlantılar sağlar. 
 
-### <a name="manage"></a>Yönet
-- **Uygulamalar**: İş gücünüz tarafından kullanılan uygulamaları eklemek, görüntülemek, atamak ve izlemek için bu seçeneği belirleyin. Daha fazla bilgi için bkz.:
-  - [Uygulama ekleme](apps-add.md).
-  - [Uygulama atama](apps-deploy.md).
-  - [Uygulama izleme](apps-monitor.md).
-- **Uygulama yapılandırma ilkeleri**: Kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamak için bu ayarı kullanın. Daha fazla bilgi için bkz.:
-  - [Intune için uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md).
-    - [iOS/ıpados uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md).
-    - [Android uygulama yapılandırma ilkeleri](app-configuration-policies-use-android.md).
-- **Uygulama koruma ilkeleri**: Ayarları uygulamayla ilişkilendirmek ve kullandığı şirket verilerini korumaya yardımcı olmak için bu seçeneği seçin. Örneğin, bir uygulamanın diğer uygulamalarla iletişim kurma özelliklerini kısıtlayabilir veya kullanıcının şirket uygulamasına erişmek için PIN girmesini isteyebilirsiniz. Daha fazla bilgi için bkz.:
-  - [Uygulama koruma ilkeleri](app-protection-policies.md).
-- **Uygulama seçmeli silme**: Seçili bir kullanıcının cihazından yalnızca şirket verilerini kaldırmak için bu seçeneği kullanın. Daha fazla bilgi için bkz.:
-  - [Uygulama seçmeli silme](apps-selective-wipe.md).
-- **iOS uygulama sağlama profilleri**: IOS/ıpados uygulamaları, bir sağlama profili ve bir sertifika tarafından imzalanmış kod içerir. Sertifikanın süresi dolduğunda, uygulama artık çalıştırılamaz. Intune size süresi dolmak üzere olan uygulamaların bulunduğu cihazlara yeni sağlama profili ilkesini önceden atamak için araçlar verir. Daha fazla bilgi için bkz.:
-  - [iOS/ıpados uygulama sağlama profilleri](app-provisioning-profile-ios.md).
+Uygulama iş yükü gezinti menüsünün en üst kısmında, yaygın olarak kullanılan uygulama ayrıntıları sağlanır:
+- **Genel bakış**: kiracı adını, MDM yetkilisini, kiracı konumunu, hesap durumunu, uygulama yükleme durumunu ve uygulama koruma ilkesi durumunu görüntülemek için bu seçeneği belirleyin.
+- **Tüm uygulamalar**: kullanılabilir tüm uygulamaların listesini göstermek için bu seçeneği belirleyin. Bu sayfadan başka uygulamalar ekleyebilirsiniz. Ayrıca, her bir uygulamanın durumunu ve her uygulamanın atanıp atanmadığını da görebilirsiniz. Daha fazla bilgi için bkz. [uygulama ekleme](apps-add.md) ve [uygulama atama](apps-deploy.md).
+- **Uygulamaları izleme**
+    - **Uygulama lisansları**: Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, atayın ve izleyin. Daha fazla bilgi için bkz. [iOS toplu satın alınan program (VPP) uygulamaları](vpp-apps-ios.md) ve [Microsoft Store iş toplu satın alınan uygulamalar için](windows-store-for-business.md).
+    - **Bulunan uygulamalar**: Intune tarafından atanan veya bir cihaza yüklenen uygulamaları görüntüleyin. Daha fazla bilgi için bkz. [Intune bulunan uygulamalar](app-discovered-apps.md).
+    - **Uygulama yüklemesi durumu**: oluşturduğunuz uygulama atamasının durumunu görüntüleyin. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md#device-and-user-status-graphs).
+    - **Uygulama koruma durumu**: Seçtiğiniz kullanıcı için uygulama koruma ilkesinin durumunu görüntüleyin.
+- **Platforma göre**: kullanılabilir uygulamaları platforma göre görüntülemek için bu platformları seçin.
+    - Windows
+    - iOS
+    - Mac OS
+    - Android
+- **İlke**:
+    - **Uygulama koruma ilkeleri**: Ayarları uygulamayla ilişkilendirmek ve kullandığı şirket verilerini korumaya yardımcı olmak için bu seçeneği seçin. Örneğin, bir uygulamanın diğer uygulamalarla iletişim kurma özelliklerini kısıtlayabilir veya kullanıcının şirket uygulamasına erişmek için PIN girmesini isteyebilirsiniz. Daha fazla bilgi için bkz. [Uygulama koruma ilkeleri](app-protection-policies.md).
+    - **Uygulama yapılandırma ilkeleri**: Kullanıcı bir uygulama çalıştırdığında gerekebilecek ayarları sağlamak için bu ayarı kullanın. Daha fazla bilgi için bkz. [uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md), [iOS uygulama yapılandırma ilkeleri](app-configuration-policies-use-ios.md)ve [Android uygulama yapılandırma ilkeleri](app-configuration-policies-overview.md).
+    - **iOS uygulama sağlama profilleri**: iOS uygulamaları, bir sağlama profili ve bir sertifika tarafından imzalanmış kod içerir. Sertifikanın süresi dolduğunda, uygulama artık çalıştırılamaz. Intune size süresi dolmak üzere olan uygulamaların bulunduğu cihazlara yeni sağlama profili ilkesini önceden atamak için araçlar verir. Daha fazla bilgi için bkz. [iOS uygulama sağlama profilleri](app-provisioning-profile-ios.md).
+    - **S modu ek ilkeleri**: yönetilen S modundaki cihazlarınızda çalışacak ek uygulamalar yetkilendirmek için bu seçeneği belirleyin. Daha fazla bilgi için bkz. [S modu ek ilkeleri](~/apps/apps-win32-s-mode.md).
+    - **İlke kümeleri**: Bu seçeneği, oluşturduğunuz uygulama, ilke ve diğer yönetim nesnelerinin atanabilir bir koleksiyonunu oluşturmak için seçin. Daha fazla bilgi için bkz. [ilke kümeleri](~/fundamentals/policy-sets.md).
+- **Diğer**:   
+    - **Uygulama seçmeli silme**: Seçili bir kullanıcının cihazından yalnızca şirket verilerini kaldırmak için bu seçeneği kullanın. Daha fazla bilgi için bkz. [uygulama seçmeli silme](apps-selective-wipe.md).
+    - **Uygulama kategorileri**: Uygulama kategorisi adlarını ekleyin, sabitleyin ve silin.
+    - **E-kitaplar**: bazı uygulama depoları, şirketinizde kullanmak istediğiniz bir uygulama veya kitap için birden fazla lisans satın almanıza olanak sağlar. Daha fazla bilgi için bkz. [Toplu satın alınan uygulama ve kitapları Microsoft Intune ile yönetme](~/apps/vpp-apps.md).
+- **Yardım ve destek**: Sorun giderin, destek isteyin veya Intune durumunu görüntüleyin. Daha fazla bilgi için bkz. sorun [giderme](../fundamentals/help-desk-operators.md).
 
-Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama yönetme](app-management.md).
-
-### <a name="monitor"></a>İzle
-- **Uygulama lisansları**: Uygulama mağazalarından toplu satın alınan uygulamaları görüntüleyin, atayın ve izleyin. Daha fazla bilgi için bkz.:
-  - [iOS/ıpados toplu satın alma programı (VPP) uygulamaları](vpp-apps-ios.md).
-  - [İş İçin Microsoft Store’dan toplu satın alınan uygulamalar](windows-store-for-business.md).
-- **Bulunan Uygulamalar**: Intune tarafından atanan veya bir cihaza yüklenen uygulamaları görüntüleyin. Daha fazla bilgi için bkz. [Intune bulunan uygulamalar](app-discovered-apps.md).
-- **Uygulama Yükleme Durumu** - Oluşturduğunuz uygulama atamasının durumunu gösterir. Daha fazla bilgi için bkz. [Microsoft Intune ile uygulama bilgilerini ve atamalarını izleme](apps-monitor.md#device-and-user-status-graphs).
-- **Uygulama koruma durumu**: Seçtiğiniz kullanıcı için uygulama koruma ilkesinin durumunu görüntüleyin.
-- **Denetim günlükleri**: Tüm BT yöneticileri tarafından gerçekleştirilen Intune uygulamasıyla ilgili etkinlikleri görüntüleyin.
-
-Bu bölüm hakkında daha fazla bilgi için bkz. [Uygulama izleme](apps-monitor.md).
-
-### <a name="set-up"></a>Ayarlama
-- **IOS VPP belirteçleri**: IOS/ıpados toplu satın alma programı (VPP) lisanslarınızı uygulayın ve görüntüleyin. Daha fazla bilgi için bkz.:
-  - [iOS/ıpados toplu satın alınan uygulamalar](vpp-apps-ios.md)
+## <a name="additional-information"></a>Ek bilgiler
+Konsolun içindeki aşağıdaki öğeler uygulamayla ilgili işlevsellik sağlar:
+- **İş İçin Microsoft Mağazası**: İş İçin Microsoft Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz. Daha fazla bilgi için, bkz. [iş toplu satın alınan uygulamalar için Microsoft Store](windows-store-for-business.md).
 - **Windows Enterprise sertifikası**: Yönetilen Windows cihazlarınıza iş kolu uygulamalarını dağıtmak için kullanılan kod imzalama sertifikasını uygulayın veya durumunu görüntüleyin.
 - **Windows Symantec sertifikası**: Windows 10 Mobile cihazlarına XAP ve WP8.x appx dosyalarını dağıtmak için gereken kod imzalama sertifikasını uygulayın veya durumunu görüntüleyin.
-- **İş İçin Microsoft Mağazası**: İş İçin Microsoft Mağazası’na tümleştirmeyi kurun. Bundan sonra, satın alınan uygulamaları Intune’a eşitleyebilir, bunları atayabilir ve lisans kullanımınızı izleyebilirsiniz. Daha fazla bilgi için bkz.:
-  - [İş İçin Microsoft Store’dan toplu satın alınan uygulamalar](windows-store-for-business.md).
-- **Windows dışarıdan yükleme anahtarları**: Uygulamayı Windows mağazasından yayımlamak ve indirmek yerine doğrudan cihazlara yüklemek için kullanılabilecek bir Windows dışarıdan yükleme anahtarı ekleyin. Daha fazla bilgi için bkz.:
-  - [Bir Windows uygulamasını dışarıdan yükleme](app-sideload-windows.md).
-- **Şirket Portalı markası**: Şirket Portalı’nı özelleştirerek şirketinizin markasını ekleyin. Daha fazla bilgi için bkz.:
-  - [Şirket Portalı yapılandırması](company-portal-app.md).
-- **Uygulama kategorileri**: Uygulama kategorisi adlarını ekleyin, sabitleyin ve silin.
-- **Android iş profili**: Kuruluşunuz için onayladığınız uygulamaları onaylayın ve eşitleyin. Daha fazla bilgi için bkz.:
-  - [Android iş profili uygulamaları](apps-add-android-for-work.md).
-
-### <a name="help-and-support"></a>Yardım ve destek
-- **Yardım ve destek**: Sorun giderin, destek isteyin veya Intune durumunu görüntüleyin. Daha fazla bilgi için bkz.:
-  - [Sorunları giderme](../fundamentals/help-desk-operators.md).
+- **Windows dışarıdan yükleme anahtarları**: Uygulamayı Windows mağazasından yayımlamak ve indirmek yerine doğrudan cihazlara yüklemek için kullanılabilecek bir Windows dışarıdan yükleme anahtarı ekleyin. Daha fazla bilgi için bkz. [bir Windows uygulamasını dışarıdan yükleme](app-sideload-windows.md).
+- **Apple VPP belirteçleri**: IOS/ıpados toplu satın alma programı (VPP) lisanslarınızı uygulayın ve görüntüleyin. Daha fazla bilgi için bkz. [iOS/ıpados toplu satın alınan uygulamalar](vpp-apps-ios.md).
+- **Yönetilen Google Play**: yönetilen Google Play, Google 'ın kurumsal uygulama mağazası ve Android Enterprise uygulamalarının tek kaynağıdır. Daha fazla bilgi için bkz. [Intune Ile Android Enterprise cihazlarına yönetilen Google Play uygulamaları ekleme](~/apps/apps-add-android-for-work.md).
+- **Marka ve özelleştirme**: şirketinizin markalamasını sağlamak için şirket portalı özelleştirin. Daha fazla bilgi için bkz. [Şirket portalı Configuration](company-portal-app.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

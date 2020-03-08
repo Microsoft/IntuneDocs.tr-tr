@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e0c0d6ddafc8079d5d25a964ecb4ff3e0acfdd
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 54216f141d591c779a79bbe5878ddc8b9b0f5e60
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576311"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78893332"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune Veri Ambarı Koleksiyonları
 
@@ -130,7 +130,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 |     Özellik    |                       Açıklama                      |    Örnek    |
 |:---------------:|:------------------------------------------------------:|:-------------:|
 | DateKey         | Veri ambarında bu tarihin benzersiz tanımlayıcısı. | 20160703      |
-| FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3.7.2016 0:00 |
+| FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3\.7.2016 0:00 |
 | DayOfWeek       | Haftanın kaçıncı günü olduğu                                            | 1             |
 | DayOfMonth      | Ayın kaçıncı günü olduğu                                           | 3             |
 | DayOfYear       | Yılın kaçıncı günü olduğu                                            | 185           |
@@ -139,7 +139,7 @@ Aşağıdaki tablo, uyumluluk ilkelerinin cihazlara atanma durumunu ilke başın
 | CalendarQuarter | Takvim çeyreği                                       | 3             |
 | CalendarYear    | Takvim yılı                                          | 2016          |
 | DateKey         | Veri ambarında bu tarihin benzersiz tanımlayıcısı. | 20160703      |
-| FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3.7.2016 0:00 |
+| FullDate        | Bu tarihin tam Tarih/Saat biçiminde temsili.        | 3\.7.2016 0:00 |
 | DayOfWeek       | Haftanın kaçıncı günü olduğu                                            | 1             |
 | DayOfMonth      | Ayın kaçıncı günü olduğu                                           | 3             |
 | DayOfYear       | Yılın kaçıncı günü olduğu                                            | 185           |
@@ -663,7 +663,7 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 
 |    Özellik        |    Açıklama    |    Örnek        |
 |----------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-|    termsAndConditionsKey    |    “userTermsAndConditionsAcceptances” koleksiyonundaki bir girişe karşılık gelen anahtar    |    123    |
+|    termsAndConditionsKey    |    ' Usertermsandconditionsaccepler ' koleksiyonundaki bir girdiye karşılık gelen bir anahtar    |    123    |
 |    termsAndCondidionsId    |    Bu termsAndConditions girişinin kimliği    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    Bu hüküm ve koşullar girişinin sürümü    |    1    |
 |    name    |    Bu termsAndConditions girişinin adı.        |    Intune kullanım koşulları     |
@@ -707,9 +707,9 @@ Aşağıdaki tablo; başarılı, beklemede, başarısız veya hata durumundaki k
 
 |    Özellik    |    Açıklama    |    Örnek    |
 |-------------------------------|--------------------------------------------------------------------------------|----------------------------|
-|    dateKey    |    “dates” koleksiyonundaki tarih değerlerine karşılık gelen anahtar.     |    20180823    |
-|    userKey    |    “Kullanıcılar” koleksiyonunda bir kullanıcıyla eşleşen kullanıcı anahtarı.     |    20000    |
-|    termsAndConditionsKey    |    “termsAndConditions” koleksiyonundaki bir girişe karşılık gelen anahtar    |    1    |
+|    dateKey    |    ' Tarihlerin ' koleksiyonundaki bir tarih değerlerine karşılık gelen bir anahtar.     |    20180823    |
+|    userKey    |    ' Kullanıcılar ' koleksiyonundaki bir kullanıcıya Kullanıcı anahtarı eşleme.     |    20000    |
+|    termsAndConditionsKey    |    ' TermsAndConditions ' koleksiyonundaki bir girdiye karşılık gelen bir anahtar    |    1    |
 |    acceptedDateTimeUTC    |    Kullanıcının bu hüküm ve koşulları kabul ettiği saat    |    23.8.2018 4:01:34 ÖÖ    |
 |    lastModifiedDateTimeUTC    |    Bu girişin son değiştirildiği zaman.     |    23.8.2018 4:01:34 ÖÖ    |
 
