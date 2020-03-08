@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513104"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369425"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune'da kullanıcı ve cihaz profilleri atama
 
@@ -73,7 +73,7 @@ Windows 10 cihazlarında, profil yalnızca belirli bir işletim sistemi sürüm�
 
 Birçok kullanıcı, Kullanıcı gruplarını ne zaman kullanacağınızı ve cihaz gruplarının ne zaman kullanılacağını sorar. Yanıt, amacınız için farklılık gösterir. İşte başlamanıza yardımcı olacak bazı rehberlik.
 
-### <a name="device-groups"></a>Device groups
+### <a name="device-groups"></a>Cihaz grupları
 
 Bir cihaza, kim oturum açmış olduğunuza bakılmaksızın ayarları uygulamak istiyorsanız, profillerinizi bir cihaz grubuna atayın. Cihaz gruplarına uygulanan ayarlar, Kullanıcı değil, her zaman cihaza gider.
 
