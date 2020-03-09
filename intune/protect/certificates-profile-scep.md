@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8a8daab16d0b595444ff5cb13f97cd2703127340
-ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181900"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369881"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune 'da SCEP sertifika profilleri oluşturma ve atama
 
@@ -84,7 +84,7 @@ Altyapınızı Basit Sertifika Kayıt Protokolü (SCEP) sertifikalarını destek
 
        *Konu adı biçimi* için biçim seçenekleri şunları içerir:
 
-       - **Yapılandırılmamış**
+       - **Yapılandırılmadı**
        - **Ortak ad**
        - **E-postayı içeren ortak ad**
        - **E-posta olarak ortak ad**
