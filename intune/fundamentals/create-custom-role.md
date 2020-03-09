@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bfa2758546595d1e6237d88e128958c50759eb04
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569192"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369814"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Intune 'da özel bir rol oluşturma
 
